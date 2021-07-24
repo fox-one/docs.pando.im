@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Pando Docs',
   tagline: 'Pando are cool',
-  url: 'https://docs.pando.im',
+  url: '/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,13 +24,13 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'User Manual',
+          label: 'User Manuals',
         },
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'developer/intro',
           position: 'left',
-          label: 'Development',
+          label: 'Developer',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -109,27 +109,32 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+        // docs: {
+        //   sidebarPath: require.resolve('./sidebars.js'),
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/edit/master/website/',
+        // },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
           // You can also use your "G-" Measurement ID here.
-          trackingId: 'G-2MWG0DMS9R',
+          trackingID: 'G-2MWG0DMS9R',
           // Optional fields.
-          anonymizeIP: false, // Should IPs be anonymized?
+          anonymizeIP: true, // Should IPs be anonymized?
         },
+        sitemap: {
+          changefreq: 'daily',
+          priority: 0.5,
+          trailingSlash: false,
+        }
       },
     ],
   ],
