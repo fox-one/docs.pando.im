@@ -10,8 +10,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
-  organizationName: 'pando', // Usually your GitHub org/user name.
-  projectName: 'pando', // Usually your repo name.
+  organizationName: 'fox-one', // Usually your GitHub org/user name.
+  projectName: 'docs.pando.im', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Pando Docs',
