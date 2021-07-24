@@ -12,6 +12,9 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'fox-one', // Usually your GitHub org/user name.
   projectName: 'docs.pando.im', // Usually your repo name.
+  clientModules: [
+    require.resolve('./global.js')
+  ],
   themeConfig: {
     navbar: {
       title: 'Pando Docs',
@@ -27,10 +30,10 @@ module.exports = {
           label: 'User Manuals',
         },
         {
-          type: 'doc',
-          docId: 'developer/intro',
-          position: 'left',
+          to: '/developer/intro',
           label: 'Developer',
+          position: 'left',
+          activeBaseRegex: `/developer/`,
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -56,7 +59,7 @@ module.exports = {
             },
             {
               label: 'Developer',
-              to: '/docs/developer/intro',
+              to: '/developer/intro',
             },
           ],
         },
@@ -89,12 +92,34 @@ module.exports = {
       ],
       copyright: `Copyright © 2020 - ${new Date().getFullYear()} Pando`,
     },
+    // not working, i don't know why
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
+    // not working, so i write script in global.js
+    gtag: {
+      trackingID: 'G-2MWG0DMS9R',
+    },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
   },
   plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'developer',
+        path: 'developer',
+        routeBasePath: 'developer',
+        editCurrentVersion: false,
+        sidebarPath: require.resolve('./sidebars.js'),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: true,
+      },
+    ],
   ],
   // i18n: {
   //   defaultLocale: 'en',
@@ -121,17 +146,11 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        gtag: {
-          // You can also use your "G-" Measurement ID here.
-          trackingID: 'G-2MWG0DMS9R',
-          // Optional fields.
-          anonymizeIP: true, // Should IPs be anonymized?
-        },
         sitemap: {
           changefreq: 'daily',
           priority: 0.5,
           trailingSlash: false,
-        }
+        },
       },
     ],
   ],

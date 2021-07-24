@@ -1,6 +1,6 @@
 ---
 title: Using 4swap SDK
-sidebar_position: 2
+sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 
@@ -8,7 +8,7 @@ By default, Pando Lake uses 4swap as the liquidity provider. It's easy to exchan
 
 ## Import 4swap SDK in your project
 
-```go title="/src/components/HelloCodeTitle.js"
+```go
 import (
 	fswap "github.com/fox-one/4swap-sdk-go"
 	mtg "github.com/fox-one/4swap-sdk-go/mtg"
