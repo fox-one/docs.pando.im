@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Pando Docs',
-  tagline: 'Pando are cool',
+  tagline: 'Pando is cool',
   url: 'https://docs.pando.im',
   baseUrl: '/',
   onBrokenLinks: 'throw',
