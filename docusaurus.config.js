@@ -123,6 +123,16 @@ module.exports = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh-tw'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      'zh-tw': {
+        label: '中文',
+        direction: 'ltr',
+      },
+    },
   },
   presets: [
     [
