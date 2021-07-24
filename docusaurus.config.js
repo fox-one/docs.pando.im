@@ -41,10 +41,10 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -92,7 +92,6 @@ module.exports = {
       ],
       copyright: `Copyright © 2020 - ${new Date().getFullYear()} Pando`,
     },
-    // not working, i don't know why
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
@@ -121,10 +120,10 @@ module.exports = {
       },
     ],
   ],
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: ['en', 'zh'],
-  // },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-TW'],
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
