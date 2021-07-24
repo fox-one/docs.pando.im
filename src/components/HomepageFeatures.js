@@ -1,49 +1,60 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Pando Lake',
+    image: require('../../static/img/products/lake.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A fully decentralized protocol for automated liquidity provision.
       </>
     ),
+    user_manuals_path: '/docs/lake/intro',
+    dev_manuals_path: '/docs/developer/lake/intro',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Pando Leaf',
+    image: require('../../static/img/products/leaf.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A decentralized financial network, implement a derivatives liquidity protocol.
       </>
     ),
+    user_manuals_path: '/docs/leaf/intro',
+    dev_manuals_path: '/docs/developer/leaf/intro',
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Pando Rings',
+    image: require('../../static/img/products/rings.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        An algorithmic, autonomous interest rate protocol.
       </>
     ),
+    user_manuals_path: '/docs/rings/intro',
+    dev_manuals_path: '/docs/developer/rings/intro',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({image, title, description, user_manuals_path}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <img className={styles.featureImage} alt={title} src={image} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
+      </div>
+      <div className="text--center padding-horiz--md">
+        <Link
+          className="button button--secondary button--sm padding-horiz--md margin-horiz--md"
+          to={user_manuals_path}>
+          Learn more
+        </Link>
       </div>
     </div>
   );
