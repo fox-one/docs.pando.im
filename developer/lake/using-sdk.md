@@ -23,7 +23,7 @@ When you perform operations at Pando Lake, such as swapping crypto, adding liqui
 
 The participants of each multisig are also the members of MTG. So please read them first and save them for later using.
 
-```golang
+```go
 ctx := context.TODO()
 
 // use the 4swap's MTG api endpoint
@@ -43,7 +43,7 @@ if err != nil {
 
 To get all supported asset pairs is easy:
 
-```golang
+```go
 pairs, err := fswap.ListPairs(ctx)
 if err != nil {
 	return err
@@ -59,7 +59,7 @@ At present, you may let's Lake to decide the route, but it has the performance i
 
 To calculate route is easy. Sort the pairs according to the liquidity and call `Route` or `ReverseRoute` methods, which will return an `order` object that includes the result of calculation.
 
-```golang
+```go
 // sort first
 sort.Slice(pairs, func(i, j int) bool {
 	aLiquidity := pairs[i].BaseValue.Add(pairs[i].QuoteValue)
@@ -102,7 +102,7 @@ in which,
 
 If you are using 4swap SDK, you can also use the method `mtg.SwapAction` to simplify the process:
 
-```golang
+```go
 // the ID to trace the orders
 followID, _ := uuid.NewV4()
 
@@ -135,7 +135,7 @@ This is a common scene for arbitrage bot. Please make sure the bot have enough c
 
 We need to use [mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) client to create and send the transaction to the kenerl nodes.
 
-```golang
+```go
 // send a transaction to a multi-sign address which specified by `OpponentMultisig`
 // the OpponentMultisig.Receivers are the MTG group members
 tx, err := client.Transaction(ctx, &mixin.TransferInput{
