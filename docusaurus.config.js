@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Pando Docs',
   tagline: 'Pando are cool',
-  url: '/',
+  url: 'https://docs.pando.im',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -51,7 +51,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'User Manual',
+              label: 'User Manuals',
               to: '/docs/intro',
             },
           ],
@@ -83,7 +83,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Pando`,
+      copyright: `Copyright © 2020 - ${new Date().getFullYear()} Pando`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -91,20 +91,11 @@ module.exports = {
     },
   },
   plugins: [
-    // '@docusaurus/plugin-google-gtag',
-    // [
-    //   '@docusaurus/plugin-sitemap',
-    //   {
-    //     changefreq: 'daily',
-    //     priority: 0.5,
-    //     trailingSlash: false,
-    //   },
-    // ],
   ],
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'],
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'zh'],
+  // },
   presets: [
     [
       '@docusaurus/preset-classic',
