@@ -59,9 +59,9 @@ Compound is an implementation of MTG and a parachain of Mixin network.
 
 ## The implementation of compound protocol
 
-* [Interest rate model](../internal/compound/interest_rate_model.go) is The core implementation of compound protocol.
-* [Borrow balance](../core/borrow.go) user borrow balance contains borrow principal and borrow interest. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
-* [Accrue interest](../service/market/market.go) Accruing interest only occurs when there is a behavior that causes changes in market transaction data, such as supply, borrow, pledge, unpledge, redeem, repay, price updating. And Only calculated once in the same block.
+* [Interest rate model](https://github.com/fox-one/compound/blob/master/internal/compound/interest_rate_model.go) is The core implementation of compound protocol.
+* [Borrow balance](https://github.com/fox-one/compound/blob/master/core/borrow.go) user borrow balance contains borrow principal and borrow interest. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
+* [Accrue interest](https://github.com/fox-one/compound/blob/master/service/market/market.go) Accruing interest only occurs when there is a behavior that causes changes in market transaction data, such as supply, borrow, pledge, unpledge, redeem, repay, price updating. And Only calculated once in the same block.
 
 ```go
 	blockNumberPrior := market.BlockNumber
