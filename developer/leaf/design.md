@@ -60,7 +60,7 @@ The memo is maybe AES-encrypted, an ed25519 public key used for compound AES key
 
 ## Actions
 
-All actions supported by Pando with groups cat,flip,oracle,proposal,sys and vat. see [core/action](core/action.go) for details.
+All actions supported by Pando with groups cat,flip,oracle,proposal,sys and vat. see [core/action](https://github.com/fox-one/pando/blob/main/core/action.go) for details.
 
 ### Sys - system operations
 
