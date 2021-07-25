@@ -55,8 +55,3 @@ Due to the fluctuation of the market price, the value of a user's loan may excee
 
 ![](overview/uc_liquidity.jpg)
 
-
-## [Design](docs/design.md)
-
-## [Governance](docs/governance.md)
-
