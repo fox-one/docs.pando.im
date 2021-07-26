@@ -30,3 +30,4 @@
   2. Total Supply 
   3. Total Collateralizaiton Ratio 
   4. Next Price 
+  5. Max Available 
