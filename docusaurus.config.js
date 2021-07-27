@@ -119,6 +119,7 @@ module.exports = {
         showLastUpdateTime: true,
       },
     ],
+    'docusaurus-plugin-sass'
   ],
   i18n: {
     defaultLocale: 'en',
@@ -153,7 +154,7 @@ module.exports = {
         //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/theme.scss'), ],
         },
         sitemap: {
           changefreq: 'daily',
