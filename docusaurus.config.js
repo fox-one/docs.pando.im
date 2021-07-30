@@ -16,6 +16,21 @@ module.exports = {
     require.resolve('./global.js')
   ],
   themeConfig: {
+    algolia: {
+      apiKey: '6957e24ea18d313524b45b1e2afbc0b5',
+      indexName: 'pando',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: 'YOUR_APP_ID',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     navbar: {
       title: 'Pando Docs',
       logo: {
