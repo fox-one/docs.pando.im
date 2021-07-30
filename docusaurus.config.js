@@ -50,7 +50,7 @@ module.exports = {
           position: 'left',
           activeBaseRegex: `/developer/`,
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/fox-one/pando',
           label: 'GitHub',
