@@ -4,6 +4,10 @@ sidebar_position: 3
 date: 2021-07-31 11:18:01
 ---
 
+import Tabs from '@theme/Tabs';
+
+import TabItem from '@theme/TabItem';
+
 ## API Endpoints
 
 | Name | Endpoint |
@@ -72,8 +76,27 @@ HTTP_METHOD ${API_BASE}/${API_PATH}
 
 ## Authorize
 
-```
-POST /api/oauth
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>POST /api/oauth</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" \
+    --request POST \
+    --data 'JSON PAYLOAD' \
+    https://mtgswap-api.fox.one/api/oauth
+  </pre>
+</TabItem>
+</Tabs>
 ```
 
 Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/document/bot/getting-started/oauth) to exchange the access token with code.
@@ -81,7 +104,6 @@ Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.
 **Payload**
 
 ```json
-
 {
   // the code from Mixin Messenger's OAuth
   "code":"28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54",
@@ -108,8 +130,24 @@ The token is compatible with [Mixin API](https://developers.mixin.one/document/w
 
 ## Get Information
 
-```
-GET /api/info
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>GET /api/info</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" https://mtgswap-api.fox.one/api/info
+  </pre>
+</TabItem>
+</Tabs>
 ```
 
 Responds [MTG](https://developers.mixin.one/document/mainnet/mtg/overview) information about 4swap and Lake.
@@ -139,11 +177,27 @@ You can save the response to use it later because the MTG information wouldn't c
 
 ## List Assets
 
-```
-GET /api/assets
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>GET /api/assets</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" https://mtgswap-api.fox.one/api/assets
+  </pre>
+</TabItem>
+</Tabs>
 ```
 
-Responds supported assets of 4swap and Lake.
+Responds supported assets of 4swap or Lake.
 
 **Response**
 
@@ -162,8 +216,24 @@ Responds supported assets of 4swap and Lake.
 
 ## List Pairs
 
-```
-GET /api/pairs
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>GET /api/pairs</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" https://mtgswap-api.fox.one/api/pairs
+  </pre>
+</TabItem>
+</Tabs>
 ```
 
 Responds all supported pairs of 4swap's pairs pool.
@@ -190,8 +260,24 @@ Responds all supported pairs of 4swap's pairs pool.
 
 ## Read Volume and Liquidity
 
-```
-GET /api/stats/markets/${BASE_ASSET_ID}/${QUOTE_ASSET_ID}
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>GET /api/stats/markets/BASE_ASSET_ID/QUOTE_ASSET_ID</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" https://mtgswap-api.fox.one/api/stats/markets/BASE_ASSET_ID/QUOTE_ASSET_ID
+  </pre>
+</TabItem>
+</Tabs>
 ```
 
 Responds market stat information about two asset ids specified in the URL.
@@ -210,15 +296,31 @@ Responds market stat information about two asset ids specified in the URL.
       // volume in US dollar
       "volume": "656098.59481682"
     },
-    ...
+    // ...
   ]
 }
 ```
 
 ## Read Candlestick Data
 
-```
-GET /api/stats/markets/${BASE_ASSET_ID}/${QUOTE_ASSET_ID}/kline/v2?dur=4320h
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>GET /api/stats/markets/BASE_ASSET_ID/QUOTE_ASSET_ID/kline/v2?dur=4320h</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" https://mtgswap-api.fox.one/api/stats/markets/BASE_ASSET_ID/QUOTE_ASSET_ID/kline/v2?dur=4320h
+  </pre>
+</TabItem>
+</Tabs>
 ```
 
 Responds market K-line data about two asset ids specified in the URL.
@@ -245,8 +347,27 @@ Responds market K-line data about two asset ids specified in the URL.
 
 ## Create Action
 
-```
-POST /api/actions
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>POST /api/actions</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" \
+    --request POST \
+    --data 'JSON PAYLOAD' \
+    https://mtgswap-api.fox.one/api/actions
+  </pre>
+</TabItem>
+</Tabs>
 ```
 
 This is an API to generate an encrypted transfer by provided [action protocol](action-protocol) data. It's useful if you don't want to sign and encrypt the transfer yourself.

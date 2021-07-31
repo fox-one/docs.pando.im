@@ -82,6 +82,10 @@ log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
 ...
 ```
 
+:::info
+If you don't use 4swap SDK, you can implement your own best route algorithm ([golang version](https://github.com/fox-one/4swap-sdk-go/blob/master/route.go), [javascript version](https://github.com/fox-one/4swap-web/blob/develop/src/utils/pair/route.ts)).
+:::
+
 ## Construct a real order
 
 All required information about an order are store in the transaction memo, in JSON format:
