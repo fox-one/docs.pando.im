@@ -11,7 +11,7 @@ date: 2021-07-31 11:18:01
 | 4swap | https://mtgswap-api.fox.one |
 | Pando Lake | https://lake-api.pando.im |
 
-You can use any of them construct your API requests in form:
+You can use any of them to construct your API requests in form:
 
 ```
 HTTP_METHOD ${API_BASE}/${API_PATH}
