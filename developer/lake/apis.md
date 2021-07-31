@@ -9,7 +9,7 @@ date: 2021-07-31 11:18:01
 | Name | Endpoint |
 | --- | --- |
 | 4swap | https://mtgswap-api.fox.one |
-| Pando Lake | https://lake-api.pando.im |
+| Pando Lake | https://mtgswap-api.fox.one |
 
 You can use any of them to construct your API requests in form:
 
@@ -70,6 +70,42 @@ HTTP_METHOD ${API_BASE}/${API_PATH}
 }
 ```
 
+## Authorize
+
+```
+POST /api/oauth
+```
+
+Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/document/bot/getting-started/oauth) to exchange the access token with code.
+
+**Payload**
+
+```json
+
+{
+  // the code from Mixin Messenger's OAuth
+  "code":"28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54",
+  // leave `broker_id` and `label` to empty if you don't want to use pando Lake broker.
+  "broker_id":"5dbdb169-d56d-4b5b-b066-9b0780691b14",
+  "label":"lake"
+}
+```
+
+**Response**
+
+```json
+{
+  "ts": 1627697766645,
+  "data": {
+    "scope": "PROFILE:READ ASSETS:READ",
+    // the OAuth token
+    "token": "..."
+  }
+}
+```
+
+The token is compatible with [Mixin API](https://developers.mixin.one/document/wallet/overview). It's fine to use it to get information from Mixin API.
+
 ## Get Information
 
 ```
@@ -78,7 +114,7 @@ GET /api/info
 
 Responds [MTG](https://developers.mixin.one/document/mainnet/mtg/overview) information about 4swap and Lake.
 
-You can save it to use it later because the information would not change frequently.
+You can save the response to use it later because the MTG information wouldn't change frequently.
 
 **Response**
 
@@ -228,7 +264,8 @@ This is an API to generate an encrypted transfer by provided [action protocol](a
   // optional, broker id, leave it empty to use 4swap's default broker
   "broker_id": "",
   // optional, an UUID to trace the transfer
-  "trace_id": ""}
+  "trace_id": ""
+}
 ```
 
 **Response**

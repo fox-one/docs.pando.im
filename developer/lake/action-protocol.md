@@ -6,13 +6,15 @@ date: 2021-07-31 11:18:01
 
 4swap and Lake are MTG applications, which read [multisig transactions](https://developers.mixin.one/document/wallet/api/multisigs/tutorial) from Mixin Network.
 
-To send transfers to 4swap or Lake, you must use Mixin Network's [transfer to Mainnet API](https://developers.mixin.one/document/wallet/api/transfer-to-mainnet) to construct multisig transfers.
+To send transfers to 4swap or Lake, the developers must create multisig transfers.
 
-4swap and Lake design **Action Protocol** to distinct different behaviours of each transaction. The Action Protocol is a JSON based protocol, which uses the encrypted memo to store instruction and parameters.
+4swap and Lake design the **Action Protocol** to distinct different behaviours of each transaction. The Action Protocol is a JSON based protocol, which uses the encrypted memo to store instruction and parameters.
 
 ## Generate Actions
 
 There are two approaches to gerenate the actions.
+
+**Using SDK**
 
 If you are using [4swap SDK](https://github.com/fox-one/4swap-sdk-go), you can use the SDK's methods to simplify the process. The following example show that how to generate a swap action by  `mtg.SwapAction`.
 
@@ -39,7 +41,11 @@ if err != nil {
 log.Println("memo", memo)
 ```
 
-If you don't want to generate action yourself, call the API ["/api/actions"](apis#create-action) to get a signed transfer request that you can use it to invoke wallet directly.
+**Using API**
+
+Call the API ["/api/actions"](apis#create-action) to get a signed transfer request that you can use it to invoke wallet directly.
+
+It would be slower than the SDK approache, but you don't need to generate actions and sign them yourself
 
 ## Specification
 

@@ -95,10 +95,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              href: 'https://blog.pando.im',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/fox-one/pando',
             },
