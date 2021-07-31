@@ -152,7 +152,7 @@ Responds all supported pairs of 4swap's pairs pool.
 }
 ```
 
-## Read Pair Market Stat
+## Read Volume and Liquidity
 
 ```
 GET /api/stats/markets/${BASE_ASSET_ID}/${QUOTE_ASSET_ID}
@@ -179,7 +179,7 @@ Responds market stat information about two asset ids specified in the URL.
 }
 ```
 
-## Read Pair Market Stat
+## Read Candlestick Data
 
 ```
 GET /api/stats/markets/${BASE_ASSET_ID}/${QUOTE_ASSET_ID}/kline/v2?dur=4320h
