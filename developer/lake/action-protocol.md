@@ -14,7 +14,7 @@ To send transfers to 4swap or Lake, you must use Mixin Network's [transfer to Ma
 
 There are two approaches to gerenate the actions.
 
-If you are using [4swap SDK](https://github.com/fox-one/4swap-sdk-go), you can use the method `mtg.SwapAction` to simplify the process. The following example show that how to generate a Swap Action.
+If you are using [4swap SDK](https://github.com/fox-one/4swap-sdk-go), you can use the SDK's methods to simplify the process. The following example show that how to generate a swap action by  `mtg.SwapAction`.
 
 ```go
 // the ID to trace the orders
