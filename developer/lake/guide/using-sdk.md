@@ -1,5 +1,5 @@
 ---
-title: Using 4swap SDK
+title: Using SDK to Trade
 sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
@@ -88,17 +88,17 @@ All required information about an order are store in the transaction memo, in JS
 
 ```json
 {
-	"action": "1,{receiver_id},{follow_id},{asset_id},{slippage},{timeout}"
+  "action": "3,${receiver_id},${follow_id},${fill_asset_id},${routes},${minimum}"
 }
 ```
 
 in which,
 
-- `{receiver_id}` is the id of user who will receive the crypto from swapping
-- `{follow_id}` is a UUID to trace the order
-- `{asset_id}` is the asset's ID you are swapping for
-- `{slippage}` is the slippage ratio, e.g. 0.01 = 1%
-- `{timeout}` is the timeout in sec
+  - {receiver_id} is the id of user who will receive the LP-Token
+  - {follow_id} is a UUID to trace the transfer
+  - {fill_asset_id} is the asset's ID you are going to use for swapping
+  - {routes} is a route ids' sequence, which indicate which route you want to use.
+  - {minimum} is the minimum amount of asset you will get
 
 If you are using 4swap SDK, you can also use the method `mtg.SwapAction` to simplify the process:
 
