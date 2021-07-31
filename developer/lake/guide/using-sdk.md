@@ -152,39 +152,3 @@ tx, err := client.Transaction(ctx, &mixin.TransferInput{
 	},
 }, *pin)
 ```
-
-## Place an order via Mixin Messenger
-
-If you want to place an order via Mixin Messenger, generate a payment scheme to invoke Messenger from the webview.
-
-This is a common scene for a webapp which provide swapping service to users, like [Lake's webpage](https://lake.pando.im).
-
-We need to post `https://api.mixin.one/payments` to get a payment object which contains `code_id` to create the scheme:
-
-```typescript
-function getPayments(asset_id, amount, memo, receivers, threshold): Promise<any> {
-	const params = {
-		asset_id,
-		amount,
-		memo,
-		trace_id: uuid(),
-		opponent_multisig: { receivers, threshold },
-	};
-	// use your http request lib here
-	return http.post("/payments", { data: params });
-}
-
-...
-
-const resp = await getPayments(
-	asset_id,  // the input asset id
-	value,     // the input amount
-	memo,      // create by `SwapAction`
-	members,   // read from the mulitsig group
-	threshold, // read from the mulitsig group
-);
-
-window.location.href = `https://mixin.one/codes/${resp.coded}`;
-```
-
-

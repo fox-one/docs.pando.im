@@ -308,40 +308,4 @@ tx, err := client.Transaction(ctx, &mixin.TransferInput{
 }, *pin)
 ```
 
-If you want to integrate with Mixin Network compatible wallets, for example, [Mixin Messenger](https://mixin.one/messenger) and [Fennec](https://github.com/fox-one/fennec), use `code` and `code_url` to invoke the wallets:
-
-Mixin Messenger:
-
-```javascript
-window.location.href = resp.code_url
-```
-
-Fennec:
-
-```javascript
-// fennec ext
-let ext = null;
-// fennec context
-let ctx = null;
-// token
-let token = null;
-
-function load() {
-  // check the ext and get the context
-  if (window.__MIXIN__ && window.__MIXIN__.mixin_ext) {
-    ext = window.__MIXIN__.mixin_ext;
-    ctx = await ext.enable("demo");
-    if (ctx) {
-      token = await ctx.wallet.signToken({
-        payload: { from: "demo" }
-      });
-    }
-  }
-}
-
-function pay() {
-  // get the resp of `/api/actions`
-  // ...
-  ctx.wallet.multisigsPayment({ code: resp.code });
-}
-```
+If you want to integrate a web app with Mixin Network compatible wallets, for example, [Mixin Messenger](https://mixin.one/messenger) and [Fennec](https://github.com/fox-one/fennec), please read [Guide / Invoking Wallets](guide/invoke-wallets).
