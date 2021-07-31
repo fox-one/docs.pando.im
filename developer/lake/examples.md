@@ -11,3 +11,10 @@ The frondend project of 4swap and Lake, a full-feature web based 4swap/Lake clie
 - Source code: https://github.com/fox-one/4swap-web
 - Url: https://app.4swap.org
 
+
+## Mixin Tutorial
+
+A tutorial to make a Mixin Messenger bot from scratch, which include a function to swap crypto at 4swap or Pando Lake.
+
+- Source code: https://github.com/lyricat/mixin-tutorial
+

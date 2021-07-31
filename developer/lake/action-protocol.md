@@ -8,9 +8,42 @@ date: 2021-07-31 11:18:01
 
 To send transfers to 4swap or Lake, you must use Mixin Network's [transfer to Mainnet API](https://developers.mixin.one/document/wallet/api/transfer-to-mainnet) to construct multisig transfers.
 
-4swap and Lake design **Action Protocol** to distinct different behaviours of each transaction. The Action Protocol is a memo based JSON protocol, which uses the `memo` field in transaction to store instruction and parameters.
+4swap and Lake design **Action Protocol** to distinct different behaviours of each transaction. The Action Protocol is a JSON based protocol, which uses the encrypted memo to store instruction and parameters.
 
-## Add Liquidity
+## Generate Actions
+
+There are two approaches to gerenate the actions.
+
+If you are using [4swap SDK](https://github.com/fox-one/4swap-sdk-go), you can use the method `mtg.SwapAction` to simplify the process. The following example show that how to generate a Swap Action.
+
+```go
+// the ID to trace the orders
+followID, _ := uuid.NewV4()
+
+// build a swap action, specified the parameters
+action := mtg.SwapAction(
+	receiverID,
+	followID.String(),
+	OutputAssetID,
+	preOrder.Routes,
+	// the minimum amount of asset you will get.
+	// you may want to change this value to a number which less than preOrder.FillAmount
+	preOrder.FillAmount.Div(decimal.NewFromFloat(0.005)),
+)
+
+// generate the memo
+memo, err := action.Encode(group.PublicKey)
+if err != nil {
+	return err
+}
+log.Println("memo", memo)
+```
+
+If you don't want to generate action yourself, call the API ["/api/actions"](apis#create-action) to get a signed transfer request that you can use it to invoke wallet directly.
+
+## Specification
+
+### Add Liquidity
 
 When you are going to add liquidity to an existed pairs, you need to send two transfers of these two assets in the pair to 4swap's Mainnet address.
 
@@ -33,7 +66,7 @@ in which,
 When the two transfers have been handled by the 4swap or Lake before timeout, the user you specified in the memo `receiver_id` will receive some LP-Token of this pair.
 
 
-## Remove Liquidity
+### Remove Liquidity
 
 When you are going to remove liquidity from a pair, you need to transfer the LP-Token to the 4swap's Mainnet address. It's memo should be in such a form:
 
@@ -50,7 +83,7 @@ in which,
 
 If the transfer have been handled, the user you specified in the memo `receiver_id` will receive the equivalent crypto assets.
 
-## Swap Crypto
+### Swap Crypto
 
 When you are going to swap one crypto to another, you need to transfer the crypto which you will provide to the 4swap's Mainnet address. The transfer memo should be in such a form:
 
