@@ -6,7 +6,7 @@ date: 2021-07-22 22:33:07
 
 By default, Pando Lake uses 4swap as the liquidity provider. It's easy to exchange assets at Pando Lake by 4swap's SDK.
 
-## Import 4swap SDK in your project
+## Import 4swap SDK into your project
 
 ```go
 import (
@@ -19,9 +19,9 @@ import (
 
 ## Get the multisig group information
 
-When you perform operations at Pando Lake, such as swapping crypto, adding liquidity, removing liquidity, you must create multisig transactions and interact with Mixin Network.
+When you perform operations at Pando Lake, such as swapping crypto, adding liquidity, and removing liquidity, you must create multisig transactions and interact with Mixin Network.
 
-The participants of each multisig are also the members of MTG. So please read them first and save them for later using.
+The participants of each multisig are also the members of MTG. So please read them first and save them for later use.
 
 ```go
 ctx := context.TODO()
@@ -31,7 +31,7 @@ fswap.UseEndpoint(fswap.MtgEndpoint)
 
 // read the mtg group
 // the group information would change frequently
-// it's recommended to save it for later using
+// it's recommended to save it for later use
 group, err := fswap.ReadGroup(ctx)
 if err != nil {
 	return err
@@ -53,9 +53,9 @@ if err != nil {
 
 ## Calculate the best route to trade
 
-Before swapping crypto, we need to specify the swapping route.
+Before swapping cryptos, we need to specify the swapping route.
 
-At present, you may let's Lake to decide the route, but it has the performance issues and may slow down the bot. Because of that, it is recommended to calculate the a swapping route yourself.
+At present, you may let Lake decide the route, but it may cause the performance issues and slow down the bot. Because of that, it is recommended to calculate a swapping route yourself.
 
 To calculate route is easy. Sort the pairs according to the liquidity and call `Route` or `ReverseRoute` methods, which will return an `order` object that includes the result of calculation.
 
@@ -88,7 +88,7 @@ If you don't use 4swap SDK, you can implement your own best route algorithm ([go
 
 ## Construct a real order
 
-All required information about an order are store in the transaction memo, in JSON format:
+All required information about an order is stored in the transaction memo, in JSON format:
 
 ```json
 {
@@ -101,7 +101,7 @@ in which,
   - {receiver_id} is the id of user who will receive the LP-Token
   - {follow_id} is a UUID to trace the transfer
   - {fill_asset_id} is the asset's ID you are going to use for swapping
-  - {routes} is a route ids' sequence, which indicate which route you want to use.
+  - {routes} is a route ids' sequence, which indicates which route you want to use.
   - {minimum} is the minimum amount of asset you will get
 
 If you are using 4swap SDK, you can also use the method `mtg.SwapAction` to simplify the process:
@@ -135,9 +135,9 @@ log.Println("memo", memo)
 
 If you want the bot to place an order, send a multisig transaction from the bot.
 
-This is a common scene for arbitrage bot. Please make sure the bot have enough crypto in the bot's wallet.
+This is a common scene for arbitrage bot. Please make sure the bot has enough crypto in the bot's wallet.
 
-We need to use [mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) client to create and send the transaction to the kenerl nodes.
+We need to use [mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) client to create and send the transaction to the kernel nodes.
 
 ```go
 // send a transaction to a multi-sign address which specified by `OpponentMultisig`
