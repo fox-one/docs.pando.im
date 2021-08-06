@@ -4,7 +4,7 @@ sidebar_position: 5
 date: 2021-07-31 15:44:07
 ---
 
-**4swap** is an open protocol that privodes the basis of the decentrialized liquidity and swapping service based on a Mixin Trusted Group.
+**4swap** is an open protocol that provides the basis of the decentralized liquidity and swapping service with a Mixin Trusted Group.
 
 ## 4swap
 
@@ -16,11 +16,11 @@ You can access this broker's web interface by visiting https://4swap.org.
 
 ## Pando Lake
 
-**Pando Lake** is a 4swap broker that hosted by Pando, which named Pando Lake.
+**Pando Lake** is a 4swap broker that is hosted by Pando.
 
-Pando Lake filters the market information that only display the chosen pairs and markets, which have good liquidity and backed by solid communities.
+Pando Lake filters the market information to only display the chosen pairs and markets that have good liquidity and are backed by solid communities.
 
-Pando Lake has an individual Mixin Messenger bot (id: 7000103937), you can also access itsweb interface by visiting https://lake.pando.im.
+Pando Lake has an individual Mixin Messenger bot (id: 7000103937), you can also access its web interface by visiting https://lake.pando.im.
 
 The LP-Tokens are shared between Pando Lake and 4swap.
 
@@ -36,7 +36,7 @@ When call `POST /api/oauth` to authorize the wallet, two parameters `broker_id` 
 
 The parameter `broker_id` should be appended to the query or payload of following API requests:
 
-- POST /api/actions, it generate a transfer that could be sent to Pando Lake.
-- GET /api/pairs, it will respond with a `whitelists` field which includes asset ids that supported by Pando Lake.
+- POST /api/actions, it generates a transfer that could be sent to Pando Lake.
+- GET /api/pairs, it will respond with a `whitelists` field which includes asset ids that are supported by Pando Lake.
 
 

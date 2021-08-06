@@ -4,12 +4,12 @@ sidebar_position: 2
 date: 2021-07-22 22:33:07
 ---
 
-At present, there are two kinds of wallets are compatible with 4swap/Lake:
+At present, there are two kinds of wallets that are compatible with 4swap/Lake:
 
-- [Mixin Messenger](https://mixin.one/messenger): A mobile wallet that created by Mixin core team.
+- [Mixin Messenger](https://mixin.one/messenger): A mobile wallet that is created by Mixin core team.
 - [Fennec](https://github.com/fox-one/fennec): A browser extension wallet created by Fox.ONE team.
 
-If you are going to provide an web interface that support any of these wallet, you need to integrate your web app with the wallets and invoke them to pay at the appropriate time.
+If you are going to provide a web interface that supports any of these wallets, you need to integrate your web app with the wallets and invoke them to pay at the desired time.
 
 ## Invoke Messenger
 
@@ -19,9 +19,9 @@ At first, you need to get the `code_url` or `code` which indicates a multisig tr
 
 There are two ways to get it:
 
-1. Following the API ["/api/actions"](../apis#create-action) to create a [swap action](../action-protocol#swap-crypto)
-2. Calling the API `https://api.mixin.one/payments` to get a payment object which contains `code_id`
-3. Generating a transaction at your own backend and pass the code/code_url to the frontend.
+1. Follow the API ["/api/actions"](../apis#create-action) to create a [swap action](../action-protocol#swap-crypto)
+2. Call the API `https://api.mixin.one/payments` to get a payment object which contains `code_id`
+3. Generate a transaction at your own backend and pass the code/code_url to the frontend.
 
 Here I will show you the first ways:
 
@@ -96,9 +96,9 @@ async function pay() {
 
 ## Invoke Fennec
 
-Fennec is browser extension wallet, which store encrypted keystores in the browser.
+Fennec is browser extension wallet, which stores encrypted keystores in the browser.
 
-You don't need to call Mixin API to load assets, read profile or prepare a payment. Instead, Fennec provides its own API to do those.
+You don't need to call Mixin API to load assets, read profile or prepare a payment. Instead, Fennec provides its own API to do them all.
 
 For more information, please read the [demo's source code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp) to figure out.
 
