@@ -50,7 +50,7 @@ async function pay() {
 
   // if your web app is running in Messenger's webview
   // it will invoke the payment UI
-  window.location.href = `https://mixin.one/codes/${resp.coded}`;
+  window.location.href = `https://mixin.one/codes/${resp.code}`;
 
   // if your web also support to visit on desktop
   // you may need to show the QrCode to the users like this:
@@ -85,7 +85,7 @@ async function pay() {
 
   // if your web app is running in Messenger's webview
   // it will invoke the payment UI
-  window.location.href = `https://mixin.one/codes/${resp.coded}`;
+  window.location.href = resp.data.code_url;
 
   // if your web also support to visit on desktop
   // you may need to show the QrCode to the users like this:
