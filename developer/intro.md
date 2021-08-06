@@ -13,7 +13,7 @@ sidebar_position: 1
 **Specifications**
 
 - [RESTful APIs](developer/lake/apis): API specification.
-- [Action Protocol](ldeveloper/ake/action-protocol): a memo based JSON protocol to swap crypto, add and remove liquidity.
+- [Action Protocol](developer/lake/action-protocol): a memo based JSON protocol to swap crypto, add and remove liquidity.
 - [Compare Lake and 4swap](developer/lake/lake-and-4swap): comparision of Lake and 4swap.
 
 **Resources**
