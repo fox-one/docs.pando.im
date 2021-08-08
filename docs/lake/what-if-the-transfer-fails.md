@@ -1,14 +1,8 @@
-
-
-\---
-
+---
 title: What if the transfer fails?
-
 sidebar_position: 3
-
 date: 2021-08-08 22:33:08
-
-\---
+---
 
 Don't worry, your assets are safe and there will be no loss if the transfer fails. There are several possibilities.
 

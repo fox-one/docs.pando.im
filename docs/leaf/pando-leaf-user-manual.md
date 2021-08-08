@@ -1,16 +1,8 @@
-\---
-
+---
 title: Pando Leaf User Manual
-
 sidebar_position: 3
-
 date: 2021-08-08 22:33:07
-
-\---
-
-Welcome to Pando Leaf.
-
-
+---
 
 ## How to create a vault and mortgage coins
 

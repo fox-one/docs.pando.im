@@ -1,13 +1,8 @@
-\---
-
+---
 title: Pando Lake User Manual
-
 sidebar_position: 4
-
 date: 2021-08-08 22:33:07
-
-\---
-
+---
 
 
 If the above documentation does not solve your problem, you can refer to faq.
