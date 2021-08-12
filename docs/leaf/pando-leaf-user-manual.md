@@ -6,7 +6,7 @@ date: 2021-08-08 22:33:07
 
 ## How to create a vault and mortgage coins
 
-1. First find and open Pando Leaf, and Mixin ID is 7000103924
+1. Visit [Pando Leaf](https://leaf.pando.im), or search Mixin ID 7000103924 at Mixin Messenger
 
 2. On “My page” of Pando Leaf, click to create a vault or the “+” button at the bottom right, and the coin type selection will pop up. Choose the appropriate coin type according to your needs
 
@@ -19,7 +19,7 @@ Please pay attention to the risk warning. When the mortgage rate reaches the min
 ## How to repay the vault
 
 1. First find and open Pando Leaf, and Mixin ID is 7000103924
-2. On “My page” of Pando Leaf, find the vault to be repaid in the vault list, and click "Repay" on the operation button. If the vault is not unfolded (that is, the operation button cannot be found), click the card of the vault to unfold it 
+2. On “My page” of Pando Leaf, find the vault to be repaid in the vault list, and click "Repay" on the operation button. If the vault is not unfolded (that is, the operation button cannot be found), click the card of the vault to unfold it
 3. On the repayment page, fill in the amount of assets you intend to repay or click “Set as maximum” at the bottom right of the input box to directly repay all debts
 4. Click the "Repay" button and pay the corresponding currency
 
@@ -62,7 +62,7 @@ The significance of paying "very small amount of CNB" is to ensure that the user
 
 2. Open the robot to the "Me" page of Pando Leaf, click the button on the upper right, and click Clear Auction to enter the auction list page.
 
-3. In the auction list, find the card whose status is "Auction", and click to enter the corresponding bidding page 
+3. In the auction list, find the card whose status is "Auction", and click to enter the corresponding bidding page
 
 4. View the current auction information, enter the bid amount in the input box on the page
 
@@ -101,10 +101,10 @@ The second stage is to bid on the amount of collateral. The amount of each bid m
 
 4. Market data
  - Total mortgage
- - Total supply 
+ - Total supply
  - Total mortgage rate
  - Next price and price prediction machine
- - Up to 
+ - Up to
 
 ### Basic concepts
 
@@ -114,7 +114,7 @@ Vault refers to the fact that users provide collateral and mint coins according 
 
 #### collateral
 
-The collateral refers to the assets deposited by the user in Pando Leaf as a reliable proof of the value of the 
+The collateral refers to the assets deposited by the user in Pando Leaf as a reliable proof of the value of the
 
 #### Minting
 
@@ -180,7 +180,7 @@ In the second stage of the auction, the meaning of bidding at this stage is "I a
 
 Liquidation penalty is the punishments for those who blow up. When the vault is liquidated for auction, the debt bid limit set by the system for the auction is not the debt of the original vault, but a certain percentage of the liquidation penalty added to the debt, and the liquidation penalty after the debt being wiped will belongs to the system. Liquidation penalty is also a liquidation penalty mechanism that attempts to retrieve the collateral at no cost through the method of "the original vault owner assumes all debts."
 
- 
+
 
 ### Market data
 
@@ -194,7 +194,7 @@ The sum of the total coinage and interest of all the vaults in the entire Pando 
 
 #### Total mortgage rate
 
-The ratio of total mortgage to total debt reflects to a certain extent the security of the coins minted by Pando Leaf. 
+The ratio of total mortgage to total debt reflects to a certain extent the security of the coins minted by Pando Leaf.
 
 #### Next price and price oracle
 
@@ -204,7 +204,7 @@ Price prediction opportunities continuously record the prices of multiple channe
 
 The next price is the next price that the price oracle will provide to the system.
 
-#### Up to 
+#### Up to
 
 Since the same type of vaults share the total supply quota, each type will have a remaining quota value of this type, and the maximum value that can be provided is this value.
 
