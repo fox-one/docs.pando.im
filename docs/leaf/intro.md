@@ -4,7 +4,7 @@ sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 
-[Pando Leaf](https://leaf.pando.im) is a decentralized financial network built with the Mixin MTG (Mixin Trusted Group) technology, a place where you can deposit collateral to generate and destory [Pando USD(pUSD)](./pusd) and destroy it when repaying the generated pUSD balance.
+[Pando Leaf](https://leaf.pando.im) is a decentralized financial network built with the Mixin MTG ([Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange)) technology, a place where you can deposit collateral to generate and destory [Pando USD(pUSD)](./pusd) and destroy it when repaying the generated pUSD balance.
 
 ## How does Pando Leaf work?
 
