@@ -12,7 +12,7 @@ Current collateral is about US$43M worth of crypto, which backs about 11M pUSD. 
 
 ## Store pUSD
 
-pUSD is an [Ethereum token](https://etherscan.io/address/0xdbaef6da45984a9329c2640d19dcb9f62dc2ab66), and all of them has been transfered to Mixin Network since [Dec 23th 2020](https://etherscan.io/tx/0xccd66572e85d66cc05d50e2a16be0eb2348e34cedd34df89113e4b515caaf210). So you can store pUSD in any Mixin Network compatible wallet or Ethereum-compatible wallet.
+pUSD is an [Ethereum token](https://etherscan.io/address/0xdbaef6da45984a9329c2640d19dcb9f62dc2ab66), and has been transfered to Mixin Network since [Dec 23th 2020](https://etherscan.io/tx/0xccd66572e85d66cc05d50e2a16be0eb2348e34cedd34df89113e4b515caaf210). So you can store pUSD in any Mixin Network compatible wallet or Ethereum-compatible wallet.
 
 ## Use pUSD
 
