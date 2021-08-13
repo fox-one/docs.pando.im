@@ -6,7 +6,7 @@ date: 2021-03-20 12:38:07
 
 An implementation of the [compound protocol](https://github.com/compound-finance/compound-protocol) based on [Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) technology.
 
-## CToken
+## rToken
 
 The corresponding certificate token you obtain after you supply a number of cetain encrypted currency to the market.
 
@@ -15,25 +15,25 @@ The corresponding certificate token you obtain after you supply a number of ceta
 ### Supply
 
 Users supply encrypted currencies to the market to provide liquidity,
-and obtain the corresponding ctokens. They receive interest yields by providing liquidity.
+and obtain the corresponding rTokens. They receive interest yields by providing liquidity.
 
 ![](overview/uc_supply.jpg)
 
 ### Pledge
 
-Users have to pledge cToken to the market before any borrow.
+Users have to pledge rToken to the market before any borrow.
 
 ![](overview/uc_pledge.jpg)
 
 ### Unpledge
 
-Users take back the cToken that pledged to the market.
+Users take back the rToken that pledged to the market.
 
 ![](overview/uc_unpledge.jpg)
 
 ### Redeem
 
-Users return the CToken in exchange for corresponding encrypted currency that were supplied before, including interest yields as the reward for providing liquidity.
+Users return the rToken in exchange for corresponding encrypted currency that were supplied before, including interest yields as the reward for providing liquidity.
 
 ![](overview/uc_redeem.jpg)
 
