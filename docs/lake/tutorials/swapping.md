@@ -6,7 +6,7 @@ date: 2021-08-15 22:33:07
 
 First, find Pando Lake robot in Mixin messenger, the bot id is 7000103937
 
-(pic of searching and authorize the bot)
+![](../assets/lake-swapping-p1.png)
 
 On the Swap page, select the assets you want to pay and purchase. 
 
