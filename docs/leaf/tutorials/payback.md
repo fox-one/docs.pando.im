@@ -8,7 +8,9 @@ Paying back pUSD is useful when wanting to save a Vault from being liquidated, o
 
 To pay back, click on "Pay back" to land on the Pay Back page. Fill in the amount you intend to pay back manually or click "Set Max" to pay off all the debts. 
 
+![](../assets/payback-p1.png)
+
 Please be noted that when you click "Set Max", you will be charged slightly higher than the outstanding debt amount to successfully pay off the debt because the interests are calculated and added to the debt real-time. Any excess amount after the payment will be returned to your wallet.  
 
-(pic of pay back page and Notification when hit on Set Max)
+![](../assets/payback-p2.png)
 

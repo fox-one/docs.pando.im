@@ -8,5 +8,5 @@ Adding Collateral is useful in two scenarios. The first is when a Vault is comin
 
 To add collateral, click on "Deposit" and fill in the intended amount on the Deposit page. 
 
-(pics)
+![](../assets/add-collateral.png)
 
