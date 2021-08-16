@@ -4,7 +4,7 @@ sidebar_position: 4
 date: 2021-08-15 22:33:07
 ---
 
-Pando Leaf is built with [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg). Right now, there are 6 genesis nodes who serve the trades, they are:
+Pando Leaf is built with [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg). Right now, there are 6 genesis nodes that verify the transactions with Mixin Network and performs administrative actions, they are:
 
 - [Mixin Team](https://mixin.one/): The core develop team of Mixin Network
 - [Fox.ONE](https://fox.one/): The main development team of Pando Leaf
