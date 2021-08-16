@@ -16,6 +16,11 @@ module.exports = {
     require.resolve('./global.js')
   ],
   themeConfig: {
+    metadatas: [
+      { "http-equiv": 'cache-control', content: 'no-cache' },
+      { "http-equiv": 'expires', content: '0' },
+      { "http-equiv": 'pragma', content: 'no-cache' },
+    ],
     algolia: {
       apiKey: '6957e24ea18d313524b45b1e2afbc0b5',
       indexName: 'pando',
