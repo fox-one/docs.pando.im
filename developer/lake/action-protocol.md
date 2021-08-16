@@ -63,11 +63,11 @@ For each transfer, the memo should be constructed in the following form:
 
 in which,
 
-  - `{receiver_id}` is the id of user who will receive the LP-Token
-  - `{follow_id}` is a UUID to trace the transfer, you can use `UUID.v4()` to create one
-  - `{asset_id}` is the asset's ID you are going to deposit. For example, if you are going to add liquidity to [ETH/BTC pair](https://app.4swap.org/#/pair-info?base=43d61dcd-e413-450d-80b8-101d5e903357&quote=c6d0c728-2624-429b-8e0d-d9d19b6592fa), the asset id of these transfers are `43d61dcd-e413-450d-80b8-101d5e903357` and `c6d0c728-2624-429b-8e0d-d9d19b6592fa`
-  - `{slippage}` is the slippage ratio, e.g. 0.001 = 0.1%. It may fail if you specified a small slippage value when the market is volatile
-  - `{timeout}` is the timeout in sec. If you don't complete the two transfers in time, the crypto will be refunded to you in `timeout`.
+- `{receiver_id}` is the id of user who will receive the LP-Token
+- `{follow_id}` is a UUID to trace the transfer, you can use `UUID.v4()` to create one
+- `{asset_id}` is the opposite asset's ID of the pair you are going to deposit. For example, if you are going to add liquidity to [ETH/BTC pair](https://app.4swap.org/#/pair-info?base=43d61dcd-e413-450d-80b8-101d5e903357&quote=c6d0c728-2624-429b-8e0d-d9d19b6592fa), the asset id is `43d61dcd-e413-450d-80b8-101d5e903357` when you pay `BTC` and `c6d0c728-2624-429b-8e0d-d9d19b6592fa` otherwise.
+- `{slippage}` is the slippage ratio, e.g. 0.001 = 0.1%. It may fail if you specified a small slippage value when the market is volatile
+- `{timeout}` is the timeout in sec. If you don't complete the two transfers in time, the crypto will be refunded to you in `timeout`.
 
 If the two transfers have been handled by the 4swap or Lake before timeout, the user you specified in the memo `receiver_id` will receive some LP-Tokens of this pair.
 
@@ -84,8 +84,8 @@ When you are going to remove liquidity of a pair, you need to transfer the LP-To
 
 in which,
 
-  - `{receiver_id}` is the id of user who will receive the crypto
-  - `{follow_id}` is a UUID to trace the transfer
+- `{receiver_id}` is the id of user who will receive the crypto
+- `{follow_id}` is a UUID to trace the transfer
 
 If the transfer has been handled, the user you specified in the memo `receiver_id` will receive the equivalent crypto assets.
 
@@ -101,11 +101,11 @@ When you are going to swap one crypto to another, you need to transfer the crypt
 
 in which,
 
-  - `{receiver_id}` is the id of user who will receive the LP-Token
-  - `{follow_id}` is a UUID to trace the transfer
-  - `{fill_asset_id}` is the asset's ID you are going to use for swapping
-  - `{routes}` is a route ids' sequence, which indicate which route you want to use.
-  - `{minimum}` is the minimum amount of asset you will get
+- `{receiver_id}` is the id of user who will receive the LP-Token
+- `{follow_id}` is a UUID to trace the transfer
+- `{fill_asset_id}` is the asset's ID you are going to use for swapping
+- `{routes}` is a route ids' sequence, which indicate which route you want to use.
+- `{minimum}` is the minimum amount of asset you will get
 
 If 4swap or Lake can't get the minimun destination crypto, the swapping will be aborted and the crypto you send to the Mainnet address will be refunded.
 
