@@ -1,1 +1,0 @@
-(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[2535],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Greeting from Pando","permalink":"/zh-tw/blog/hola"}]}')}}]);
