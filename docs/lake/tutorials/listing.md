@@ -4,7 +4,7 @@ sidebar_position: 6
 date: 2021-08-15 22:33:07
 ---
 
-**[Pando Lake](https://lake.pando.im)** only allow for selected pools that have proven credentials. It not accept new pool from the public.
+**[Pando Lake](https://lake.pando.im)** only allows for selected pools that have proven credentials. It doesn't accept new pool from the public.
 
 **[4swap](https://4swap.org)** is a community-driven project that is currently allowing for any pool to be added.
 
@@ -12,7 +12,7 @@ date: 2021-08-15 22:33:07
 
 Visit Mixin's [asset-profile](https://github.com/MixinNetwork/asset-profile) page, follow the instructions at `README.md` to Mixin Network.
 
-For example, if you have a ERC-20 token named "RUM", you can add it to Mixin Network:
+For example, if you have an ERC-20 token named "RUM", you can add it to Mixin Network:
 
 1. an icon file named "icon.png", it should be 520px * 520px.
 2. a json file named "index.json", which should be a valid json file and contain the following information:
@@ -35,7 +35,7 @@ Please create a pull request when you have finished. It usually takes about 1~2 
 
 ## Create a pool at 4swap
 
-You need to Mixin Messenger or Fennec to create a pool.
+You need to head to Mixin Messenger or Fennec to create a pool.
 
 1. Make sure the 2 assets in your wallet balance is above the minimum amount of 0.00000001. If not, please deposit some to your wallet.
 2. Make sure you have above the minimum amount of 0.02 ETH in your wallet. If not, please deposit some into your wallet or swap for it at [4swap](https://app.4swap.org).
@@ -43,5 +43,5 @@ You need to Mixin Messenger or Fennec to create a pool.
 4. Visit [this page](https://app.4swap.org/#/liquidity/create), choose two assets you want to add to the pool and tap `Pay` to create a pool.
 
 :::info
-It usually cost 1~3 days to wait for the pool to be created and approved by [MTG nodes](../key-concepts/4swap-mtg). If the request is not processed in 3 days, you will receive a refund.
+It usually takes 1~3 days to wait for the pool to be created and approved by [MTG nodes](../key-concepts/4swap-mtg). If the request is not processed in 3 days, you will receive a refund.
 :::
