@@ -51,11 +51,11 @@ module.exports = {
           activeBaseRegex: `/developer/`,
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/fox-one/pando',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          href: 'https://github.com/fox-one/docs.pando.imo',
+          label: 'GitHub',
+          position: 'right',
+        },
         {
           type: 'localeDropdown',
           position: 'right',
