@@ -17,16 +17,17 @@ For example, if you have an ERC-20 token named "RUM", you can add it to Mixin Ne
 1. an icon file named "icon.png", it should be 520px * 520px.
 2. a json file named "index.json", which should be a valid json file and contain the following information:
 
-    ```json
-    {
-      // the asset id of RUM in Mixin Network
-      "asset_id": "4f2ec12c-22f4-3a9e-b757-c84b6415ea8f",
-      // RUM is a ERC-20 token, the chain id is ETH's asset id
-      "chain_id": "43d61dcd-e413-450d-80b8-101d5e903357",
-      // RUM is not listed on CoinMarketCap, so we use the empty string
-      "cmc_id": ""
-    }
-    ```
+```json
+{
+  // the asset id of RUM in Mixin Network
+  "asset_id": "4f2ec12c-22f4-3a9e-b757-c84b6415ea8f",
+  // RUM is a ERC-20 token, the chain id is ETH's asset id
+  "chain_id": "43d61dcd-e413-450d-80b8-101d5e903357",
+  // RUM is not listed on CoinMarketCap, so we use the empty string
+  "cmc_id": ""
+}
+```
+
 The commit of the above example is [here](https://github.com/MixinNetwork/asset-profile/commit/437d378f899c5837598bdb8c4e9c18ae8f21ad27).
 
 :::info
