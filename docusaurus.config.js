@@ -52,7 +52,7 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/fox-one/docs.pando.imo',
+          href: 'https://github.com/fox-one/docs.pando.im',
           label: 'GitHub',
           position: 'right',
         },
