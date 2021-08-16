@@ -12,13 +12,13 @@ You can install Fennec from Chrome web store or Firefox Add-ons:
 
 Fennec uses Mixin Network's keystore files to identify your assets and manage your wallet. There are two ways to create your keystore files.
 
-By visiting [Mixin Developer Dashboard](https://developers.mixin.one/dashboard), creating an dApp and generating a keystore file.
+The first option is to create a  dApp from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard). After creating the dApp, you can generate a keystore file.
 
 :::info
 **Mixin Developer Dashboard** is a service hosted by Mixin Core Team. You can use it to create two free dApps, but you will need to pay a fee for more dApps.
 :::
 
-By using the [Account Service providers](https://github.com/fox-one/fennec-asp), which generates a keystore file for you.
+The second option is to use the [Account Service providers](https://github.com/fox-one/fennec-asp) to generate a keystore file.
 
 :::info
 **Account Service Provider** is also an open source program that creating valid keystore files for you.

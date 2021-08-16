@@ -9,5 +9,5 @@ Mixin Messenger is developed by Mixin Core Team, who release it under the GPL-3.
 
 For users, please download the app from its official website [mixin.one](https://mixin.one/messenger).
 
-For developers, please check out its source code at here:
+For developers, please check out its source code here at:
 [Android App](https://github.com/MixinNetwork/android-app), [iOS App](https://github.com/MixinNetwork/ios-app) and [Desktop App](https://github.com/MixinNetwork/desktop-app).
