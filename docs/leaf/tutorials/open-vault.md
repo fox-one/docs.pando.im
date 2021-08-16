@@ -20,12 +20,12 @@ Click on the button "Deposit to Generate" , make the payments,and allow for some
 
 If successfully created the vault, you will receive the notification and message in the chatbox. 
 
-![](../assets/open-vault-p4.png)
+![](../assets/add-a-vault-p4.png)
 
 
 
 Do pay attention to the risk indication bar. You have to keep your **collateralization ratio**(link to the explanation required) in a safe range to avoid **liquidation** (link). When your collateralization ratio breaches the **liquidation ratio** (link), your collaterals will be in **auction** (link to auction process).  
 
-![](../assets/open-vault-p5.png)
+![](../assets/add-a-vault-p5.png)
 
 
