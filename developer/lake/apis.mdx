@@ -4,15 +4,15 @@ sidebar_position: 3
 date: 2021-07-31 11:18:01
 ---
 
-import Tabs from '@theme/Tabs';
+import Tabs from "@theme/Tabs";
 
-import TabItem from '@theme/TabItem';
+import TabItem from "@theme/TabItem";
 
 ## API Endpoints
 
-| Name | Endpoint |
-| --- | --- |
-| 4swap | https://mtgswap-api.fox.one |
+| Name       | Endpoint                    |
+| ---------- | --------------------------- |
+| 4swap      | https://mtgswap-api.fox.one |
 | Pando Lake | https://mtgswap-api.fox.one |
 
 You can use any of them to construct your API requests in form:
@@ -106,10 +106,10 @@ Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.
 ```json
 {
   // the code from Mixin Messenger's OAuth
-  "code":"28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54",
+  "code": "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54",
   // leave `broker_id` and `label` to empty if you don't want to use pando Lake broker.
-  "broker_id":"5dbdb169-d56d-4b5b-b066-9b0780691b14",
-  "label":"lake"
+  "broker_id": "5dbdb169-d56d-4b5b-b066-9b0780691b14",
+  "label": "lake"
 }
 ```
 
@@ -295,7 +295,7 @@ Responds market stat information about two asset ids specified in the URL.
       "value": "15796065.69038667",
       // volume in US dollar
       "volume": "656098.59481682"
-    },
+    }
     // ...
   ]
 }
@@ -343,7 +343,6 @@ Responds market K-line data about two asset ids specified in the URL.
   ]
 }
 ```
-
 
 ## Create Action
 
@@ -429,4 +428,4 @@ tx, err := client.Transaction(ctx, &mixin.TransferInput{
 }, *pin)
 ```
 
-If you want to integrate a web app with Mixin Network compatible wallets, for example, [Mixin Messenger](https://mixin.one/messenger) and [Fennec](https://github.com/fox-one/fennec), please read [Guide / Invoking Wallets](guide/invoke-wallets).
+If you want to integrate a web app with Mixin Network compatible wallets, for example, [Mixin Messenger](/docs/wallets/mixin-messenger) and [Fennec](/docs/wallets/fennec), please read [Guide / Invoking Wallets](guide/invoke-wallets).
