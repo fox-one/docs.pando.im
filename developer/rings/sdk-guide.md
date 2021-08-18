@@ -1,6 +1,6 @@
 ---
 title: SDK Guide
-sidebar_position: 4
+sidebar_position: 3
 date: 2021-08-16 18:40:00
 ---
 
@@ -8,35 +8,37 @@ An easier and faster way to Connect to Pando Rings engine.
 
 ## Installing
 
-```
+```sh
 go get github.com/fox-one/pando-rings-sdk-go
 ```
 
 ## Usage
 
 * Initialize the endpoint
-  
-```
+
+```go
 rings.Endpoint = "xxxxx" // e.g. rings.Endpoint = "https://compound-test-api.fox.one"
 ```
 
 * Import
-```
+
+```go
 import "github.com/fox-one/pando-rings-sdk-go"
 ```
 
 * Request all markets
-```
+
+```go
 rings.RequestAllMarkets(ctx context.Context) ([]*Market, error)
 ```
 
 * Request transactions
-```
+```go
 rings.RequestTransactions(ctx context.Context, limit int, offset time.Time) ([]*Transaction, error)
 ```
 
 * Request user action
-```
+```go
 //request supply action url
 rings.RequestSupply(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
 
@@ -69,5 +71,5 @@ rings.RequestLiquidate(ctx context.Context, followID string, supplyUserID string
 
 ```
 
-More details of sdk using, please read the [example](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Or refer to the 
+More details of sdk using, please read the [example](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Or refer to the
 [official full-featured version of Pando rings for implementation](https://github.com/fox-one/compound-app)

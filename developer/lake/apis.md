@@ -1,5 +1,5 @@
 ---
-title: RESTful APIs
+title: API Reference
 sidebar_position: 3
 date: 2021-07-31 11:18:01
 ---

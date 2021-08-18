@@ -1,10 +1,10 @@
 ---
 title: API Reference
-sidebar_position: 3
+sidebar_position: 4
 date: 2021-08-16 17:40:00
 ---
 
-This document describes the definition and usage of the restful api and RPC interface of the pando rings engine. 
+This document describes the definition and usage of the restful api and RPC interface of the pando rings engine.
 
 ## Restful API
 
@@ -222,7 +222,7 @@ message PriceRequestResp {
 
 message TransactionReq {
 	google.protobuf.Timestamp offset = 1;
-	int32 limit = 2;	
+	int32 limit = 2;
 }
 
 message Transaction {
