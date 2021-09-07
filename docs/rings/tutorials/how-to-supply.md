@@ -6,7 +6,7 @@ date: 2021-09-04 12:33:07
 
 Supplying is the first step in Pando Rings. When users supply an asset to Pando Rings, they begin earning interest instantly. Interest accrues every minute; users can withdraw their principal plus interest anytime. 
 
-To supply an asset, you can click on "I want to supply" on the Market Page. It will bring you to the list of Supply assets you can choose from. You will see [Supply Volume](./glossary) and [Supply APY](./glossary) of the asset.  
+To supply an asset, you can click on "I want to supply" on the Market Page. It will bring you to the list of Supply assets you can choose from. You will see [Supply Volume](../key-concepts/glossary)and [Supply APY](../key-concepts/glossary) of the asset.  
 
 After clicking on the asset, you will land on the Supply page. 
 
