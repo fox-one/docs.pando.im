@@ -4,7 +4,7 @@ sidebar_position: 8
 date: 2021-09-04 12:33:07
 ---
 
-#### Key Processes 
+### Key Processes 
 
 **Supply**
 
@@ -24,7 +24,7 @@ rToken is an ERC-20 token that is essentially a tokenized supply position and ca
 **Liquidation** 
 When a user's maximum borrow capacity rendered by the total collateral value cannot cover the total loan value, liquidation will happen. In the process, others repay some or all of the user's outstanding borrow on behalf of the borrower and in return receive a discounted amount of collateral held by the borrower. 
 
-#### Market 
+### Market 
 
 **Total Supply**
 
@@ -50,7 +50,7 @@ The estimated annual interest rate of an asset a borrower need to pay.
 **Collateral Factor** 
 It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. An asset that has a more solid community base and higher market recognition tends to have higher collateral factor. 
 
-#### Key Personal Metrics 
+### Key Personal Metrics 
 
 **Net APY**
 Net APY(annual percentage yield) reflects the estimatd annual net yield based on the Supply APY and Borrow APY of the very moment. It indicates whether you are making money or losing money at the current APYS. 
@@ -77,6 +77,7 @@ The total amount you have pledged as collateral.
 The total amount you haven't pledged as collateral.
  
 **Available to Withdraw** 
+
 
 **Available to Unpledge** 
 

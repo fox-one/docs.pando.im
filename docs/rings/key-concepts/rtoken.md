@@ -6,7 +6,7 @@ date: 2021-09-04 12:33:07
 
 When someone supplies an asset to Pando Rings, they are given rTokens in exchange. 
 
-With the meaning of Rings Token, rToken is an ERC-20 token that is essentially a tokenized deposit position and can be used as collateral in other liquidity pool or exchanged for other crypto assets. 
+With the meaning of Rings Token, rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets. 
 
 Every type of cryptocurrency supplied to Pand Rings has a corresponding rToken. For example, if a user supplies ETH, they will receive rETH; if a user supplies BTC, they will receive rBTC.
 
