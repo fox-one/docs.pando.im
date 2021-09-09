@@ -4,7 +4,7 @@ sidebar_position: 2
 date: 2021-09-04 12:33:07
 ---
 
-Borrowing in Pando Rings function on the collateral-backed mechanism. You need to pledge if you want to borrow later on. 
+If you want to borrow, you will need to pledge as borrowing in Pando Rings function on the collateral-backed mechanism.  
 
 After pledging, the rTokens you get from supplying will be locked into the system. You will not be able to transfer your pledged rTokens to others, but you can still gain supply interest of those you pledge.
 

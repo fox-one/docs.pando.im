@@ -4,7 +4,7 @@ sidebar_position: 4
 date: 2021-09-04 12:33:07
 ---
 
-If you want to borrow an asset in Pando Rings, you can get access by clicking on "I want to borrow " on the Market page. You will then be brought to choose the asset you want to borrow, then you will be on the Borrow page. 
+If you want to borrow an asset in Pando Rings, you can get access by clicking on "I want to borrow " on the Market page. After choosing the asset you want to borrow, you will be on the Borrow page. 
 
 (p1 borrow entry Market page)
 
