@@ -6,17 +6,23 @@ date: 2021-09-04 12:33:07
 
 ### Key Processes 
 
-**Supply**
+**Suppling**
+The process of putting an asset into Pando Rings. As a result, you get rTokens in return, and will earn interest as long as you are supplying the asset. 
 
-**Pledge** 
+**Pledging** 
+The process of locking rTokens into the system as collateral to get borrowing power. 
 
-**Unpledge** 
+**Unpledging** 
+The process of unlocking rTokens from the system and as a result, reducing the borrowing power. 
 
-**Withdraw** 
+**Withdrawing** 
+The process of getting back an asset from Pando Rings and have it back to your wallet. You will stop earning interest after you withdraw an asset.
 
-**Borrow** 
+**Borrowing** 
+The process of getting a loan in Pando Rings. 
 
-**Repay** 
+**Repaying** 
+The process of paying back your borrowed asset plus the accrued borrow interest. 
 
 **rToken** 
 rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets. 
@@ -27,19 +33,25 @@ When a user's maximum borrow capacity rendered by the total collateral value can
 ### Market 
 
 **Total Supply**
+It stands for the total supplied amount of all assets in the markets of the very moment.
 
 **Supply Volume** 
 It stands for the total supplied amount of a specific asset in the market of the very moment.
 
 **Total Borrow** 
+It stands for the total borrowed amount of all assets in the markets of the very moment.
 
 **liquidity** 
+It stands for the net amount available to borrow of all the markets of the very moment. It equals to Total Supply minus Total Borrow.
 
 **Maximum Market Availability** 
+The amount available to borrow of a specific asset. It equals to the Total Supply of an asset minus the Total Borrow of the same asset. 
 
 **24h Supply**
+It stands for the total supplied amount of all assets in the markets within the last 24 hours.
 
 **24h Borrow** 
+It stands for the total borrowed amount of all assets in the markets within the last 24 hours.
 
 **Supply APY**
 The estimated annual percentage yield for supplying an asset. 
@@ -77,9 +89,10 @@ The total amount you have pledged as collateral.
 The total amount you haven't pledged as collateral.
  
 **Available to Withdraw** 
-
+The amount of a specific asset you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows
 
 **Available to Unpledge** 
+The amount of a specific asset you can unpledge. It is your total pledged amount of the asset minus the part covering the outstanding borrow. 
 
 
 
