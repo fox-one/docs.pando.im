@@ -8,8 +8,7 @@ If you want to borrow, you will need to pledge as borrowing in Pando Rings funct
 
 After pledging, the rTokens you get from supplying will be locked into the system. You will not be able to transfer your pledged rTokens to others, but you can still gain supply interest of those you pledge.
 
-:::info
-**The difference between manually 「Pledge」 and one-stop 「Supply and Pledge」**
+:::info **The difference between manually 「Pledge」 and one-stop 「Supply and Pledge」**
 
 If you manually pledge, you can decide on the percentage of the supplied asset you want to pledge. In comparison, if you choose  to use the one-stop Supply and Pledge function (accessible from both Supply page and Borrow page), the system will pledge 100% of the rTokens while you supply.
 
