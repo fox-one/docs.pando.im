@@ -12,13 +12,15 @@ Click on the supplied asset card on the Me page, then click on "Withdraw", you w
 
 **Unpledged** shows your supplied but unpledged amount of a specific rToken. And **Supplying** shows your supply amount of the asset.  
 
+![](../assets/withdraw1.jpg)
+
 The system prioritizes withdrawing from the unpledged amount. 
 
 If the amount you intend to withdraw is not more than your unpledged amount, the system will withdraw directly from the unpledged amount. 
 
 If you do have unpledged amount and the amount you intend to withdraw is more than the unpledged, you will need to first unpledge certain amount then withdraw all the the unpledged amount to receive it in your wallet. 
 
-(pic)
+![](../assets/withdraw2.jpg)
 
 If you don't have any unpledged amount left and your pledged amount is not fully covering borrows, the system will directly withdraw for you from your pledged amount, finishing withdrawing in just one step.
 

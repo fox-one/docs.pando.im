@@ -10,4 +10,4 @@ To unpledge, click on "Unpledge" of the supplied asset card of the Supply sectio
 
 **Pledging** shows the amount of a specific asset you have pledged. **Total Pledge** is the total amount of all the assets you have pledged.  
 
-(p1)
+![](../assets/unpledge1.jpg)

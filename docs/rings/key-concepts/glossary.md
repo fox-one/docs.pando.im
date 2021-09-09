@@ -41,7 +41,7 @@ It stands for the total supplied amount of a specific asset in the market of the
 **Total Borrow** 
 It stands for the total borrowed amount of all assets in the markets of the very moment.
 
-**liquidity** 
+**Liquidity** 
 It stands for the net amount available to borrow of all the markets of the very moment. It equals to Total Supply minus Total Borrow.
 
 **Maximum Market Availability** 
