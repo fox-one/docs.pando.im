@@ -24,7 +24,7 @@ On the Supply page, you will see key metrics related to the Supply process inclu
 
 Enter the amount of the asset you want to supply, and you will see a bottom sheet asking whether you want to pledge the supply volume. The percentage on the right arrow represents [Collateral Factor](../key-concepts/glossary).
 
-As you need to pledge before borrowing on Pando Rings, if you choose "Supply and Pledge", you will immediately get the borrow capacity; or if you only want to earn some interest by supplying the asset, you can choose "Supply Only".
+As you need to pledge before borrowing on Pando Rings, if you choose "**Supply and Pledge**", you will immediately get the borrow capacity; or if you only want to earn some interest by supplying the asset, you can choose "Supply Only".
 
 ![](../assets/supply4.jpg)
 
