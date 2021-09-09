@@ -6,4 +6,4 @@ date: 2021-09-04 12:33:07
 
 Your transaction history can be found on the Me page. 
 
-(pic)
+![](../assets/history.jpg)

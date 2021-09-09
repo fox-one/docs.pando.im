@@ -12,3 +12,5 @@ When 60% ≤ Borrow / Borrow Limit < 80%, you are in medium risk of the loan bei
 When 80% ≤ Borrow / Borrow Limit < 100%, you are in high risk of the loan being liquidated;
 
 When Borrow / Borrow Limit ≥ 100%, you are in liquidation.
+
+![](../assets/risk.jpg)
