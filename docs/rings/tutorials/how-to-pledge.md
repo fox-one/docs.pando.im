@@ -15,7 +15,7 @@ If you manually pledge, you can decide on the percentage of the supplied asset y
 
 If unfortunately, the value of your pledged assets cannot cover your borrow anymore, **ALL** of your pledged assets will be subjected to [liquidation](../key-concepts/liquidation) while your unpledged assets will stay intact. 
 
-It's up to you make the tradeoff between getting more borrowing power by pledging more and pledging only partically for isolation of risk.
+It's up to you make the tradeoff between getting more borrowing power by pledging more and pledging only partially for isolation of risk.
 :::
 
 To pledge, you can click on the supplied asset card of the Supply section on the Me page. 
