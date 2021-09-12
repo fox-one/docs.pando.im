@@ -17,6 +17,6 @@ Again you need to be careful of the associated risk.
 
 :::caution
 
-Please ensure that the mortgage rate is within a safe range, which less than 150% will be [liquidated](link) totally.
+Please ensure that the mortgage rate is within a safe range, which less than 150% will be [liquidated] totally.
 
 :::
