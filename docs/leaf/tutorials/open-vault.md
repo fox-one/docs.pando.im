@@ -4,7 +4,7 @@ sidebar_position: 2
 date: 2021-08-13 12:33:07
 ---
 
-On “My page” of Pando Leaf, click on "Add a Vault" to create a vault and then select from the list from the available vault types according to your needs. 
+On “My page” of Pando Leaf, click on "Add a [Vault](https://docs.pando.im/docs/leaf/key-concepts/vaults)" to create a vault and then select from the list from the available vault types according to your needs. 
 
 ![](../assets/leaf-open-vault-p1.png)
 
@@ -25,7 +25,7 @@ Generate a vault for the first time, minting at least 100 pusd
 
 Click on the button "Deposit to Generate" , make the payments,and allow for some time for the robot to process. 
 
-If successfully created the vault, you will receive the notification and message in the chatbox. 
+If successfully created the [vault](https://docs.pando.im/docs/leaf/key-concepts/vaults), you will receive the notification and message in the chatbox. 
 
 ![](../assets/add-a-vault-p4.png)
 

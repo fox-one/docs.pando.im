@@ -1,6 +1,6 @@
 ---
 title: Which tokens are supported?
-sidebar_position: 3
+sidebar_position: 6
 date: 2021-08-15 22:33:07
 ---
 
