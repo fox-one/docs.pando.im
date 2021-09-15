@@ -19,6 +19,6 @@ It's up to you make the tradeoff between getting more borrowing power by pledgin
 
 To pledge, you can click on the supplied asset card of the Supply section on the Me page. 
 
-Drag on the progress bar to choose the percentage you want to pledge. As the amount change, the status of the risk loan indicator also change. You can pay close attention to the indicator to monitor the predicted risk of the loan after you pledge. 
+Drag on the progress bar to choose the percentage you want to pledge. As the amount change, the status of the risk loan indicator also change. It's advised that you pay close attention to the indicator to monitor the predicted risk of the loan after you pledge. 
 
 ![](../assets/pledge1.jpg)
