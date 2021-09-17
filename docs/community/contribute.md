@@ -1,6 +1,6 @@
 ---
 title: Contribute
-sidebar_position: 1
+sidebar_position: 2
 date: 2021-09-15 22:33:07
 ---
 
@@ -25,7 +25,7 @@ The documentation is organized in the following way:
   - `leaf` contains all the Pando Leaf documentation
   - `rings` contains all the Pando Rings documentation
   - `wallets` contains all documentation about wallets on Mixin Network
-  - `3rd-party-apps` lists applications built on top of Pando 
+  - `3rd-party-apps` lists applications built on top of Pando
   - `security` contains documentation concerning security issues
   - `community` contains all the community documentation
 
