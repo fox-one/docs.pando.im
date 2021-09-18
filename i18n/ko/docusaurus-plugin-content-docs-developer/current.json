@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Pando Lake": {
+    "message": "Pando Lake",
+    "description": "The label for category Pando Lake in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guide": {
+    "message": "Guide",
+    "description": "The label for category Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Pando Leaf": {
+    "message": "Pando Leaf",
+    "description": "The label for category Pando Leaf in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Pando Rings": {
+    "message": "Pando Rings",
+    "description": "The label for category Pando Rings in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Resources": {
+    "message": "Resources",
+    "description": "The label for category Resources in sidebar tutorialSidebar"
+  }
+}
