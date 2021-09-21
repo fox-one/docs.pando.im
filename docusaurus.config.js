@@ -64,6 +64,12 @@ module.exports = {
         {
           type: 'localeDropdown',
           position: 'right',
+          dropdownItemsAfter: [
+            {
+              to: '//docs.pando.im/docs/community/contribute#translation',
+              label: 'Help us translate',
+            },
+          ],
         },
       ],
     },
@@ -139,11 +145,20 @@ module.exports = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ja', 'ko', 'zh'],
     localeConfigs: {
       en: {
         label: 'English',
         direction: 'ltr',
+      },
+      ja: {
+        label: '日本語',
+      },
+      ko: {
+        label: '한국인',
+      },
+      zh: {
+        label: '中文',
       },
     },
   },
