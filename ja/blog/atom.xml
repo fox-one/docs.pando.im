@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.pando.im/ja/blog</id>
+    <title>Pando Docs Blog</title>
+    <updated>2021-09-21T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.pando.im/ja/blog"/>
+    <subtitle>Pando Docs Blog</subtitle>
+    <icon>https://docs.pando.im/ja/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Help us translate Pando Docs]]></title>
+        <id>help-us-translate</id>
+        <link href="https://docs.pando.im/ja/blog/help-us-translate"/>
+        <updated>2021-09-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pando is an open source project, and we are always looking for translators. If you are interested in translating the docs of Pando, please follow the instructions here to get started.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Greeting from Pando]]></title>
+        <id>hello</id>
+        <link href="https://docs.pando.im/ja/blog/hello"/>
+        <updated>2021-07-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello, welcome to this blog.]]></summary>
+    </entry>
+</feed>
