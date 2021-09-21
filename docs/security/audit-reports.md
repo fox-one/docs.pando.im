@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ### Download Report
 
-[Audit report from IOActive](/reports/V1.2%20Pando%20Code%20Review%20and%20Penetration%20Test%20with%20Remediation%20Status.pdf)
+[Audit report from IOActive](//docs.pando.im/reports/V1.2%20Pando%20Code%20Review%20and%20Penetration%20Test%20with%20Remediation%20Status.pdf)
 
 ### Findings and Remediation Status
 
