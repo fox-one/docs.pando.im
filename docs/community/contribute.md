@@ -4,6 +4,12 @@ sidebar_position: 2
 date: 2021-09-15 22:33:07
 ---
 
+import {
+  Improvement,
+} from "@site/src/components/admonitions";
+
+<Improvement />
+
 Pando documentation is open source. You are very welcomed to translate it into other languages to make it accessible to greater population!
 
 ## Preparation

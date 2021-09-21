@@ -4,6 +4,12 @@ sidebar_position: 4
 date: 2021-08-15 22:33:07
 ---
 
+import {
+  Improvement,
+} from "@site/src/components/admonitions";
+
+<Improvement />
+
 (to be edited)
 
 The common failure of liquidity injection is caused by exceeding slippage. Please refresh the page to get the latest trading pair data.

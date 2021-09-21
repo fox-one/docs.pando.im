@@ -4,13 +4,20 @@ sidebar_position: 8
 date: 2021-08-13 12:33:07
 ---
 
-You can go to "Auction" page to participate in auctions and check on the information of the past auctions. 
 
-Ongoing auctions are in the "Ongoing" tab. 
+import {
+  Improvement,
+} from "@site/src/components/admonitions";
+
+<Improvement />
+
+You can go to "Auction" page to participate in auctions and check on the information of the past auctions.
+
+Ongoing auctions are in the "Ongoing" tab.
 
 If there are no auctions in progress, you will see (pic of blank state)
 
-For an active auction, there are two phases. 
+For an active auction, there are two phases.
 
 For Phase 1, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt.
 

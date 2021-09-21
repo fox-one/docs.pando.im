@@ -3,6 +3,12 @@ title: Mixin Trusted Group
 sidebar_position: 2
 ---
 
+import {
+  Improvement,
+} from "@site/src/components/admonitions";
+
+<Improvement />
+
 ## Mixin Network
 
 Mixin Network is a public blockchain driven by TEE (Trusted Execution Environment) based on the DAG with aBFT. Unlike other projects which have great theories but hardly any actual implementations of blockchain transaction solution, Mixin Network provides a more secure, private, 0 fees, developer-friendly and user-friendly transaction solution with lightning speed.

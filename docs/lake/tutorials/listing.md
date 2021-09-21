@@ -4,6 +4,12 @@ sidebar_position: 6
 date: 2021-08-15 22:33:07
 ---
 
+import {
+  Improvement,
+} from "@site/src/components/admonitions";
+
+<Improvement />
+
 **[Pando Lake](https://lake.pando.im)** only allows for selected pools that have proven credentials. It doesn't accept new pool from the public.
 
 **[4swap](https://4swap.org)** is a community-driven project that is currently allowing for any pool to be added.
