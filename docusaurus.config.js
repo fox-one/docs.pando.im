@@ -38,6 +38,7 @@ module.exports = {
     },
     navbar: {
       title: 'Pando Docs',
+      hideOnScroll: true,
       logo: {
         alt: 'Pando Site Logo',
         src: 'img/logo.png',
