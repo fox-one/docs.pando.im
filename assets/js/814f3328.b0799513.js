@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[2535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Help us translate Pando Docs","permalink":"/blog/help-us-translate"},{"title":"Greeting from Pando","permalink":"/blog/hello"}]}')}}]);

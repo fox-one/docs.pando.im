@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[1713],{3457:function(a){a.exports=JSON.parse('{"translate":{"allTagsPath":"/blog/tags","slug":"translate","name":"translate","count":1,"permalink":"/blog/tags/translate"},"hello":{"allTagsPath":"/blog/tags","slug":"hello","name":"hello","count":1,"permalink":"/blog/tags/hello"}}')}}]);

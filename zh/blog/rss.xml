@@ -4,9 +4,16 @@
         <title>Pando Docs Blog</title>
         <link>https://docs.pando.im/zh/blog</link>
         <description>Pando Docs Blog</description>
-        <lastBuildDate>Tue, 21 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[New Cryptocurrency Listed]]></title>
+            <link>https://docs.pando.im/zh/blog/new-crypto-curenncy-listed-20210922</link>
+            <guid>new-crypto-curenncy-listed-20210922</guid>
+            <pubDate>Wed, 22 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[USDT(erc20), BOX, MOB and XIN are listed on Pando Rings.]]></description>
+        </item>
         <item>
             <title><![CDATA[Help us translate Pando Docs]]></title>
             <link>https://docs.pando.im/zh/blog/help-us-translate</link>
