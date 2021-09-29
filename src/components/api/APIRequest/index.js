@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 import Translate, {translate} from '@docusaurus/Translate';
 
 export default function Request({title, url, method, isPublic, base}) {
-  const apiBase = base || 'https://api.mixin.one';
+  const apiBase = base || 'https://api.4swap.org';
   return (
     <div className="request">
       <h3>
@@ -14,7 +14,7 @@ export default function Request({title, url, method, isPublic, base}) {
       <CodeBlock className={`language-bash`}>
 curl -i -X {method || 'GET'} -H "Content-Type: application/json"
           {isPublic ? ' ' : ' -H "Bearer: $TOKEN"'}
-          {` ${apiBase}${url}`}
+          {` "${apiBase}${url}"`}
       </CodeBlock>
     </div>
   );

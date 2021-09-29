@@ -27,4 +27,3 @@ There are shortcuts if your goal is to borrow - Quick Supply function is for you
 
 Similar to many other DeFi projects, Pando Rings works with the concept of overcollateralization. This means that borrowers have to supply more value than they wish to borrow to avoid liquidation.
 
-
