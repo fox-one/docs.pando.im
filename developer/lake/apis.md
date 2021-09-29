@@ -175,6 +175,48 @@ You can save the response to use it later because the MTG information wouldn't c
 }
 ```
 
+## Get Stat
+
+
+```mdx-code-block
+<Tabs
+  groupId="operating-systems"
+  defaultValue="http"
+  values={[
+    {label: 'HTTP', value: 'http'},
+    {label: 'cURL', value: 'curl'},
+  ]
+}>
+<TabItem value="http">
+  <pre><code>GET /api/stats/markets/?dur=4320h</code></pre>
+</TabItem>
+<TabItem value="curl">
+  <pre lang="bash">
+  curl --header "Content-Type: application/json" https://mtgswap-api.fox.one/api/stats/markets/?dur=4320h
+  </pre>
+</TabItem>
+</Tabs>
+```
+
+Responds historical market statistics.
+
+**Response**
+
+```json
+{
+  "ts": 1627697766503,
+  "data": [
+    {
+      "ts": 1617408000,
+      "date": "2021-04-03T00:00:00Z",
+      "value": "88919122.02992768",
+      "volume": "10727320.64681277"
+    },
+    ...
+  ]
+}
+```
+
 ## List Assets
 
 ```mdx-code-block
