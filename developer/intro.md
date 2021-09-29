@@ -12,7 +12,7 @@ sidebar_position: 1
 
 **Specifications**
 
-- [API Reference](/developer/lake/apis): RESTful API reference.
+- [API Reference](/developer/lake/apis/intro): RESTful API reference.
 - [Action Protocol](/developer/lake/action-protocol): a memo based JSON protocol to swap crypto, add and remove liquidity.
 - [Compare Lake and 4swap](/developer/lake/lake-and-4swap): comparision of Lake and 4swap.
 

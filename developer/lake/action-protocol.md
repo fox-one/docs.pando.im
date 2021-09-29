@@ -43,7 +43,7 @@ log.Println("memo", memo)
 
 **Using API**
 
-Call the API ["/api/actions"](apis#create-action) to get a signed transfer request that you can use to invoke the wallet service directly.
+Call the API ["/api/actions"](./apis/actions) to get a signed transfer request that you can use to invoke the wallet service directly.
 
 It would be slower than the SDK approach, however you would not need to generate actions and sign them yourself.
 

@@ -42,7 +42,7 @@ Please create a pull request when you have finished. It usually takes about 1~2 
 
 ## Create a pool at 4swap
 
-You need to head to [Mixin Messenger](../../wallets/mixin-messenger) or [Fennec](../../wallets/fennec) to create a pool.
+You need to head to [Mixin Messenger](../../apps/wallets/mixin-messenger) or [Fennec](../../apps/wallets/fennec) to create a pool.
 
 1. Make sure the wallet balance of the 2 assets is above the minimum amount of 0.00000001. If not, please deposit some to your wallet.
 2. Make sure you have above the minimum amount of 0.02 ETH in your wallet. If not, please deposit some into your wallet or swap for it at [4swap](https://app.4swap.org).
