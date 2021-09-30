@@ -14,7 +14,7 @@ Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/
 
 Visit [Pando lake(4swap)](https://lake.pando.im), or search Mixin ID **7000103537** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando lake(4swap).
 
-(pic to be added)
+![](../assets/lake-get-started-p1.png)
 
 Click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces.
 
@@ -34,7 +34,7 @@ Enter the "pool" page, we can see various trading pairs. We can click the right 
 
 You can also click to sort different transaction pairs based on data such as total supply and 24-hour transaction volume.
 
-![](../assets/lake-get-started-p3.png)
+![](../assets/lake-get-started-p4.png)
 
 The search function can quickly locate the trading pairs related to the currency we want to trade. For example, in above picture, searching for eth can quickly display all trading pairs related to eth.
 
