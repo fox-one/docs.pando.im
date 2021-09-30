@@ -9,7 +9,9 @@ tags: [avtivity]
 
 [Pando](https://pando.im/) is an open-source project. In order to let more people know about pando, we will launch an essay call. Articles that meet the following conditions can participate in this activities.
 
-- The content that can be written in the article includes but not limited to pando's introduction, Instructions for use, user experience, story with pando, etc. 
+<!--truncate-->
+
+- The content that can be written in the article includes but not limited to pando's introduction, Instructions for use, user experience, story with pando, etc.
 
 - At least one or more of the following URLs must be quoted in your article.
 
@@ -29,7 +31,7 @@ For example, searching for "Buy Mobilecoin ways" on google, you can find the art
 
 ### Community incentive policy
 
-Pando was a newborn baby, which needs everyone's care. We sincerely invite you to join the group that helps pando grow. 
+Pando was a newborn baby, which needs everyone's care. We sincerely invite you to join the group that helps pando grow.
 
 In the early stages of growth, the pando team will provide some rewards to thank everyone who helped pando grow. The rules are as follows:
 
@@ -38,26 +40,26 @@ In the early stages of growth, the pando team will provide some rewards to thank
 
 | Article ranking/Search results | 10,000~ 50,000 | 50,000~100,000 | 100,000~200,000 | 200,000~500,000 | Above 500,000 |
 | ------------------------------ | :------------- | :------------- | --------------- | --------------- | ------------- |
-| 1~10                           | 10             | 20             | 30              | 40              | 100           |
-| Above 10                       | 5              | 5              | 5               | 5               | 5             |
+| top 10                           | 10             | 20             | 30              | 40              | 100           |
+| the rest                       | 5              | 5              | 5               | 5               | 5             |
 
-- In particular, if the article ranked high on the homepage after searching for 1 or 2 keywords and add effective exposure to pando greatly, we will give an additional reward (up to 100 usdt). 
+- In particular, if the article ranked high on the homepage after searching for 1 or 2 keywords and add effective exposure to pando greatly, we will give an additional reward (up to 100 usdt).
 
-In order to avoid cheating, the rules need to be supplemented: 
+In order to avoid cheating, the rules need to be supplemented:
 
-- The keywords must be commonly used words, and the total number of letters contained in a word should not exceed 20.
+- The keywords must be commonly used words, and the total number of letters should not exceed 20.
 
 - The search results are based on the ranking in the privacy mode of the browser not logged in.
 -  The final interpretation of this activity belongs to Pando team.
 
-With the development of pando, other forms of feedback may also be provided to contributor above, such as NFT, project tokens, etc. 
+With the development of pando, other forms of feedback may also be provided to contributor above, such as NFT, project tokens, etc.
 
 ### How to get rewards
 
-We use [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) to send event rewards. 
+We use [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) to send event rewards.
 
 ![](./assets/how-to-get-reward.png)
 
-Click [download Mixin messenger](https://mixin.one/messenger) , search 37160854 on the homepage and send me your article url, google search keywords, and the ranking, we will issue article rewards within 5 working days if your article meets the requirements. 
+Click [download Mixin messenger](https://mixin.one/messenger) , search 37160854 on the homepage and send me your article url, google search keywords, and the ranking, we will issue article rewards within 5 working days if your article meets the requirements.
 
 Thanks for your support to pando, we have always believed , that tomorrow will be better.

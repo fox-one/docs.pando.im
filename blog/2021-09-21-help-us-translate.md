@@ -4,6 +4,7 @@ title: Help us translate Pando Docs
 author: Pando
 author_title: Pando Team
 author_image_url: https://docs.pando.im/img/logo.png
+draft: true
 tags: [translate]
 ---
 
