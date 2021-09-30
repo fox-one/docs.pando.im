@@ -1,6 +1,6 @@
 ---
 title: Swapping
-sidebar_position: 1
+sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
@@ -10,16 +10,20 @@ import {
 
 <Improvement />
 
-First, find Pando Lake robot in Mixin messenger, the bot id is 7000103937
 
-![](../assets/lake-swapping-p1.png)
 
-On the Swap page, select the assets you want to pay and purchase.
+By tapping the gear icon, you can set the [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
 
-By tapping the gear icon, you can set the slippage (skip to slippage explanation page) tolerance.
+![](../assets/swapping-p1.png)
 
-(pic of slippage setting)
 
 The route shows the steps your transaction will be processed. Algorithm calculates the optimal route so that you can receive the most asset possible.
+
+![](../assets/swapping-p2.png)
+
+
+After entering the 6-digit PIN to complete the payment, the transaction details will pop up. You can also view the transaction details in the dialog window.
+
+![](../assets/swapping-p3.png)
 
 
