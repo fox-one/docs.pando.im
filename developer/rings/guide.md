@@ -1,5 +1,5 @@
 ---
-title: SDK Guide
+title: Guide
 sidebar_position: 3
 date: 2021-08-16 18:40:00
 ---

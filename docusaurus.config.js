@@ -137,7 +137,7 @@ module.exports = {
         path: 'developer',
         routeBasePath: 'developer',
         editCurrentVersion: false,
-        sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: require.resolve('./sidebar.developer.js'),
         showLastUpdateAuthor: false,
         showLastUpdateTime: true,
       },
