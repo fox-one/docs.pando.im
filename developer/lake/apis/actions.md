@@ -78,4 +78,4 @@ tx, err := client.Transaction(ctx, &mixin.TransferInput{
 }, *pin)
 ```
 
-If you want to integrate a web app with Mixin Network compatible wallets, for example, [Mixin Messenger](/docs/apps/wallets/mixin-messenger) and [Fennec](/docs/apps/wallets/fennec), please read [Guide / Invoking Wallets](../guide/invoke-wallets).
+If you want to integrate a web app with Mixin Network compatible wallets, for example, [Mixin Messenger](/docs/apps/wallets#mixin-messenger) and [Fennec](/docs/apps/wallets#fennec), please read [Guide / Invoking Wallets](../guide/invoke-wallets).

@@ -17,7 +17,7 @@ Pando integrates the following financial protocols; all of them can be run stand
 
 4swap provides a mechanism named "Broker" that users interact with the protocol. [**Pando Lake**](lake/intro)  has its own Broker to serve the users. Additionally, **Pando Lake** has a plan to provide advanced fininancial products based on 4swap and other Pando series products.
 
-Please refer to ["Lake vs 4swap"](lake/other-faqs/lake-vs-4swap) for more information.
+Please refer to ["Lake vs 4swap"](lake/faqs/lake-vs-4swap) for more information.
 
 ### Pando Leaf
 
