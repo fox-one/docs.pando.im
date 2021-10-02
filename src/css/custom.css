@@ -5,6 +5,8 @@
  * work well for content-centric websites.
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap");
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #528deb;
@@ -15,6 +17,10 @@
   --ifm-color-primary-lighter: #5a91ea;
   --ifm-color-primary-lightest: #80aaef;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Inter", system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 .docusaurus-highlight-code-line {
@@ -39,6 +45,14 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .menu__list-item--collapsed .menu__link--sublist::after {
   transform: rotateZ(90deg) scale(0.6);
+}
+
+.menu__list-item:not(:first-child) {
+  margin-top: 2px;
+}
+
+.menu__link--sublist {
+  margin-bottom: 2px;
 }
 
 html[data-theme="dark"] .main-wrapper aside {
