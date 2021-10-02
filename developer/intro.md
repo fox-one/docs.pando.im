@@ -31,4 +31,4 @@ sidebar_position: 1
 
 ## Resources
 
-- [Examples](/developer/lake/examples)
+- [Examples](/developer/resources/examples)
