@@ -30,7 +30,6 @@ module.exports = {
         },
         'lake/action-protocol',
         'lake/lake-and-4swap',
-        'lake/examples',
       ]
     },
     {
@@ -74,6 +73,7 @@ module.exports = {
       collapsed: false,
       items: [
         'resources/open-source',
+        'resources/examples',
         'resources/sdk',
       ]
     }
