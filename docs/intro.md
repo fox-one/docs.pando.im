@@ -32,7 +32,6 @@ Pando integrates the following financial protocols; all of them can be run stand
 
 [**Pando Rings**](rings/intro) is an algorithmic, autonomous interest rate protocol. It is a place where you can lend or borrow cryptocurrencies. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.
 
-**→** [Get Started with Pando Rings](rings/tutorials/get-started)  
 **→** [Supply](rings/tutorials/how-to-supply) and [Pledge](rings/tutorials/how-to-pledge)   
 **→** [Borrow](rings/tutorials/how-to-borrow) and [Payback](rings/tutorials/how-to-repay) 
 
