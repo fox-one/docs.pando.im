@@ -15,7 +15,9 @@ Depositing collaterals and repaying the generated pUSD balance both happen in a 
 
 When a vault is liquidated, a liquidation penalty is applied and collateral is sold to repay the vault’s outstanding stablecoin balance.
 
-## About the Auction when a vault becomes liquidated
+For more techincal details, please refer to the [Pando Leaf Technical Design](/developer/leaf/design)
+
+## Auction
 
 Anyone can participate in the auction if a vault breaches the minimum required collateralization ratio and becomes liquidated.
 

@@ -4,12 +4,6 @@ sidebar_position: 1
 date: 2021-08-15 22:33:07
 ---
 
-import {
-  Improvement,
-} from "@site/src/components/admonitions";
-
-<Improvement />
-
 Liquidity provider tokens or LP tokens are ERC-20 tokens issued to liquidity providers on Pando Lake / 4swap. You can think of it as an IOU or a receipt. 
 
 LP tokens are used to track individual contributions to the overall liquidity pool, as LP tokens held correspond proportionally to the share of liquidity in the overall pool.
