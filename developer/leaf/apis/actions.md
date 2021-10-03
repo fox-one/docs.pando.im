@@ -20,16 +20,24 @@ Create an action with the parameters.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/actions" />
 
-<APIMetaPanel scope="Authorized" />
+<APIMetaPanel/>
 
 <APIPayload>{`{
-  // the amount
-  "amount": 0,
-  // the asset id
+  // the payment amount, optional
+  "amount": "1.014",
+  // the payment asset id, optional
   "asset_id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
   // an uuid to trace the transaction
   "follow_id": "17d836d0-8b15-4cba-91d4-d343ed0ad737",
-  // other parameters
+  // action parameters
+  // Vault
+  // Open a new vault: ["31","collateral id","pUSD amount"]
+  // Deposit collateral to vault: ["32","vault id"]
+  // Withdraw collateral from vault: ["33","vault id","withdraw amount"]
+  // Payback pUSD: ["34","vault id"]
+  // Generate more pUSD: ["35","vault id","pUSD amount"]
+  // Auction
+  // Bid for an auction: ["42","auction id","collateral amount wanted"]
   "parameters": [
     "string"
   ]
