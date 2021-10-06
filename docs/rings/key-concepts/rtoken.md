@@ -4,12 +4,6 @@ sidebar_position: 1
 date: 2021-09-04 12:33:07
 ---
 
-import {
-  Improvement,
-} from "@site/src/components/admonitions";
-
-<Improvement msg="contract address of rTokens"/>
-
 When someone supplies an asset to Pando Rings, they are given rTokens in exchange.
 
 With the meaning of Rings Token, rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets.
@@ -18,7 +12,7 @@ Every type of cryptocurrency supplied to Pand Rings has a corresponding rToken. 
 
 rTokens are used in the process of [supplying](./glossary), [pledging](./glossary), [unpledging](./glossary) and [withdrawing](./glossary). And it can be transferred freely to anyone in the same way you transfer any other crypto assets. Please be noted though, **once you have transferred the rTokens to others, you are no longer entitled to the corresponding underlying assets**.
 
- Each asset market has its own Supply interest rate ([Supply APY](./glossary)).  Simply by holding rTokens, the suppliers earn interest. 
+ Each asset market has its own Supply interest rate ([Supply APY](./glossary)).  Simply by holding rTokens, the suppliers earn **compound** interest. 
 
  rTokens accumulate interest through the exchange rate against the corresponding Tokens. Over time, each rToken becomes convertible into an increasing amount of its underlying asset, even while the number of rTokens in your wallet stays the same. 
 
