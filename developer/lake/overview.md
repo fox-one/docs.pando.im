@@ -1,44 +1,52 @@
 ---
 title: Overview
 sidebar_position: 1
-date: 2021-07-31 14:38:07
+date: 2021-09-30 14:38:07
 ---
 
+Pando Lake is an [Uniswap](https://uniswap.org) v2 implementation built with the MTG technology on Mixin Network. Benefit by Mixin's amazing TPS, Pando Lake has outstanding performance on tradings, most transactions can be confirmed in seconds.
 
-## Pando Lake Design
+## An Intro to Pando Lake
 
-> Pando Lake is a MTG implementation on Mixin Network of Uniswap V2
+### Governance
 
-Pando Lake is an automated liquidity protocol powered by a constant product formula and implemented in [Mixin Multisig Groups](https://developers.mixin.one/document/mainnet/mtg/overview). It obviates the need for single Mixin Dapp, prioritizing decentralization, censorship resistance, and security.
+Pando lake is maintained by five trusted nodes. Proposals such as create new pools must be approved by at least three nodes.
 
-Anyone can become a liquidity provider (LP) for a pool by depositing an equivalent value of each underlying token in return for pool tokens. These tokens track pro-rata LP shares of the total reserves, and can be redeemed for the underlying assets at any time.
+### Pool
 
-Pairs act as automated market makers, standing ready to accept one token for the other as long as the “constant product” formula is preserved. This formula, most simply expressed as **x * y = k**, states that trades must not change the product (k) of a pair’s reserve balances (x and y). Because k remains unchanged from the reference frame of a trade, it is often referred to as the invariant. This formula has the desirable property that larger trades (relative to reserves) execute at exponentially worse rates than smaller ones.
+Each Pool holds two tokens, which together represent a trading pair for those assets. 
+Liquidity providers deposit tokens into pool to let traders trade；In return, the trade fees are all given to the liquidity provider according to the liquidity contribution ratio.
 
-> A modified [Curve](https://curve.fi) formula used on the stablecoin pools like USDT/USDC.
+### LP Token
 
-## Deposit
+Each pool has a unique token (LP Token) to represent circulating liquidity. Holding LP Token is a proof of liquidity providing, and the withdrawal of liquidity also requires payment of LP Token.
 
-Each Pando Lake liquidity pool is a trading venue for a pair of Mixin Mainnet tokens. When a pool is created by the governance, its balances of each token are 0; in order for the pool to begin facilitating trades, someone must seed it with an initial deposit of each token. This first liquidity provider is the one who sets the initial price of the pool.
+The total market value of LP Token is equal to the sum of the market value of the two tokens in the Pool.
 
-The number of liquidity tokens This first liquidity provider will receive would equal ```sqrt(x*y)```, where x and y represent the amount of each token provided. For the following providers, the number will be ```min(x/reserve_x,y/reserve_y)*liquidity_shares```.
+## Actions
 
-![deposit](./assets/pando_lake_deposit.png)
+### Deposit
 
-## Withdraw
+Increase the reserves of a Pool to become liquidity provider.
 
-To retrieve the underlying liquidity, plus any fees accrued, liquidity providers must give back their liquidity tokens, effectively exchanging them for their portion of the liquidity pool, plus the proportional fee allocation.
+![deposit action](assets/pando_lake_deposit_action.png)
 
-The number of tokens retrieved will be ```lp_token/liquidity_shares*reserve_x``` and ```lp_token/liquidity_shares*reserve_y```.
+### Withdraw
 
-![withdraw](./assets/pando_lake_withdraw.png)
+Pay LP Token back to the Pool to withdraw tokens inside. The reserves of the Pool will be decreased.
 
-## Swap
+![withdraw action](assets/pando_lake_withdraw_action.png)
 
-From the constant product formula it follows that the price of that token A is simply price_token_A = reserve_token_B / reserve_token_A. The market price only moves as the reserve ratio of the tokens in the pool changes, which happens when someone trades against it.
+### Trade
 
-The swapping rule is the constant product formula. When either token is withdrawn, a proportional amount of the other must be deposited, in order to make the constant(```k```) unchange.
+Pools are always take the initiative to deal with traders automatically. Users can trade through the pools at any side, Pando Lake supports up to 4 pools for one transaction.
 
-Pando Lake applies a 0.3% fee (0.04% for stablecoin pools) to trades, which is added to reserves to increases ```k``` actually as a payout to liquidation providers.
+![trade action](assets/pando_lake_trade_action.png)
 
-![swap](./assets/pando_lake_swap.png)
+## Summary
+
+Pando Lake has achieved the goal that decentralized the consensus among trusted nodes, bringing the dex service with multiple AMM formula to all users of the Mixin Network.
+
+Pando Lake has performed well but is far from enough. We are working some new pools to make the liquidity more flexible and efficient. The management of trusted nodes needs to be more open to attract more participants too.
+
+
