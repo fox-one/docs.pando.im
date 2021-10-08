@@ -54,10 +54,10 @@ It stands for the total supplied amount of all assets in the markets within the 
 It stands for the total borrowed amount of all assets in the markets within the last 24 hours.
 
 **Supply APY**
-The estimated annual percentage yield for supplying an asset. It's calculated every 15 seconds.
+The estimated annual percentage yield for supplying an asset. The interest is compounded and is calculated every 15 seconds.
 
 **Borrow APY**
-The estimated annual interest rate of an asset a borrower need to pay. It's calculated every 15 seconds.
+The estimated annual interest rate of an asset a borrower need to pay. The interest is compounded and is calculated every 15 seconds.
 
 **Collateral Factor**
 It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors.
