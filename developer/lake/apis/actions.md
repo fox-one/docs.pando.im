@@ -37,6 +37,7 @@ This is an API to generate an encrypted transfer by provided [action protocol](.
 <APIRequest
   title="Create an action"
   method="POST"
+  base="https://api.4swap.org/api"
   url='/actions --data PAYLOAD'
 />
 

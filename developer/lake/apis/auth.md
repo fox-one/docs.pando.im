@@ -37,6 +37,7 @@ Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.
   title="Exchange an access token"
   method="POST"
   isPublic
+  base="https://api.4swap.org/api"
   url='/oauth --data PAYLOAD'
 />
 
