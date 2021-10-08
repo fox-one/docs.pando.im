@@ -39,16 +39,24 @@ This API will respond all auctions.
 {
   "flips": [
     {
+      // ActionKick: the auction begins, any bid are accepted
+      // ActionBid: the auction bidding
+      // ActionDeal: the auction is over
       "action": 0,
       "art": "string",
+      // the current amount of bid
       "bid": "string",
       "collateral_id": "string",
       "created_at": "2021-10-02",
+      // auction end time
       "end": "2021-10-02",
       "guy": "string",
       "id": "string",
-      "lot": "string",
-      "tab": "string",
+      // the amount of auctioned collateral
+      "lot": "100",
+      // the max amount of bid accepted
+      "tab": "2",
+      // bid end time
       "tic": "2021-10-02",
       "vault_id": "string"
     }
