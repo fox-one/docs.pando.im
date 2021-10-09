@@ -82,7 +82,7 @@ This API will respond all vaults.
 
 This API will respond one vault with `:id`
 
-<APIEndpoint base="https://leaf-api.pando.im/api" url="/vat/:id" />
+<APIEndpoint base="https://leaf-api.pando.im/api" url="/vats/:id" />
 
 <APIMetaPanel />
 
@@ -96,7 +96,7 @@ This API will respond one vault with `:id`
   method="GET"
   isPublic
   base="https://leaf-api.pando.im/api"
-  url='/vaults/52010fd0-6a9d-393c-abcb-ca997d950bf5'
+  url='/vats/52010fd0-6a9d-393c-abcb-ca997d950bf5'
 />
 
 ```json title="Response"

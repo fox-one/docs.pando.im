@@ -20,7 +20,7 @@ Create an action with the parameters.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/actions" />
 
-<APIMetaPanel/>
+<APIMetaPanel scope="Authorized"/>
 
 <APIPayload>{`
 {
