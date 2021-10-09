@@ -34,30 +34,54 @@ This API will respond all supported collaterals.
 {
   "collaterals": [
     {
-      "art": "string",
-      "beg": "string",
-      "box": "string",
-      "chop": "string",
+      // normalized debt
+      "art": "number",
+      // minimum bid increase
+      "beg": "number",
+      // max pUSD out for liquidation 
+      "box": "number",
+      // the liquidation penalty
+      "chop": "number",
       "created_at": "2021-10-02",
+      // the asset id of debt
       "dai": "string",
-      "debt": "string",
-      "dunk": "string",
-      "dust": "string",
-      "duty": "string",
+      // total pUSD issued
+      "debt": "number",
+      // max liquidation Quantity per auction
+      "dunk": "number",
+      // debt floor per vault
+      "dust": "number",
+      // stability fee
+      "duty": "number",
+      // the asset id of collateral
       "gem": "string",
+      // id of this collateral type
       "id": "string",
-      "ink": "string",
-      "line": "string",
-      "litter": "string",
+      // locked Collateral
+      "ink": "number",
+      // debt Ceiling 
+      "line": "number",
+      // balance of pUSD out for liquidation
+      "litter": "number",
+      // status of this collateral type
       "live": true,
-      "mat": "string",
+      // liquidation ratio, eg 150%
+      "mat": "number",
+      // name of this collateral type
       "name": "string",
+      // number of vaults belong to this collateral type
       "number_of_vaults": 0,
-      "price": "string",
-      "rate": "string",
+      // current price of gem/dai
+      "price": "number",
+      // accumulated Rates
+      "rate": "number",
+      // the update date of `rate`
       "rho": "2021-10-02",
-      "supply": "string",
+      // total debt supplied
+      "supply": "number",
+      // total auction length
       "tau": 0,
+      // single bid lifetime
       "ttl": 0
     }
   ]
