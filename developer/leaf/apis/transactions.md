@@ -96,6 +96,7 @@ This API will respond one transaction with `:follow_id`. The `follow_id` is an u
   "id": "string",
   "msg": "string",
   "parameters": "string",
+  // Abort|Ok
   "status": 0
 }
 ```

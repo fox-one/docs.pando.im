@@ -44,7 +44,9 @@ This API will respond all vaults.
         "id": "52010fd0-6a9d-393c-abcb-ca997d950bf5",
         "created_at": "2021-04-27T10:51:16Z",
         "collateral_id": "d0ec4cc7-edf6-5359-bf23-41fc9d26444e",
+        // locked Collateral
         "ink": "2",
+        // normalized debt
         "art": "30530.6925452775230346",
         "identity_id": "1"
       },
