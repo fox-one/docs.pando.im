@@ -16,7 +16,7 @@ import {
 
 This is an API to generate an encrypted transfer by provided [action protocol](../action-protocol) data. It's useful if you don't want to sign and encrypt the transfer yourself.
 
-<APIEndpoint url="/actions" />
+<APIEndpoint base="https://api.4swap.org/api" url="/actions" />
 
 <APIMetaPanel scope="Authorized" />
 
