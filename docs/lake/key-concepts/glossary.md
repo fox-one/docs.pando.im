@@ -15,7 +15,6 @@ import {
 1. [Swapping](https://docs.pando.im/docs/lake/tutorials/swapping)
 2. [Slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
 3. Price impact
-4. 
 
 ### Liquitity Related
 
