@@ -10,7 +10,7 @@ import {
 
 <Improvement />
 
-Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/wallets/fennec) (web wallet) and the following content takes mixin messenger wallet as an example.
+Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.
 
 Visit [Pando lake(4swap)](https://lake.pando.im), or search Mixin ID **7000103537** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando lake(4swap).
 
