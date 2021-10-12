@@ -10,7 +10,6 @@ import {
 
 <Improvement />
 
-(to be edited)
 
 The common failure of liquidity injection is caused by exceeding slippage. Please refresh the page to get the latest trading pair data.
 

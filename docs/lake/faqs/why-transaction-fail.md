@@ -4,14 +4,12 @@ sidebar_position: 3
 date: 2021-08-15 22:33:07
 ---
 
-
 import {
   Improvement,
 } from "@site/src/components/admonitions";
 
 <Improvement />
 
-(to be edited)
 
 Common transaction failures are caused by the transaction exceeding slippage. Please refresh the page to obtain the latest transaction pair data.
 
