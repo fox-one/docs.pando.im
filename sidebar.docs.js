@@ -75,6 +75,7 @@ module.exports = {
             'leaf/key-concepts/liquidation',
             'leaf/key-concepts/price-oracles',
             'leaf/key-concepts/mtg',
+            'leaf/key-concepts/pando-seed',
             'leaf/key-concepts/glossary',
           ]
         },
@@ -97,6 +98,7 @@ module.exports = {
           type: "category",
           label: "Tutorials",
           items: [
+            'rings/tutorials/rings-get-started',
             'rings/tutorials/how-to-supply',
             'rings/tutorials/how-to-pledge',
             'rings/tutorials/how-to-unpledge',
