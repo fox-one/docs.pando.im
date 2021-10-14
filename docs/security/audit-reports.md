@@ -69,15 +69,55 @@ This issue is very hard to exploit, so the Mixin Team decided to ignore this iss
 
 ### Download Report
 
-WIP
+[Audit Report from Least Authority](link)
 
 ### Findings and Remediation Status
 
-| ID | Title | Total Risk | Status |
-| --- | --- | --- | --- |
+| ID   | Title                                                     | Status     |
+| ---- | --------------------------------------------------------- | ---------- |
+| A    | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
+| B    | Security Roadmap Nonexistent                              | Won't fix |
+| C    | Protocol Specifications Nonexistent                       |        |
+| D    | Secrets Are Shared and Persist in Plain Text              | Won't fix |
+| E    | Use of Unauthenticated Encryption Mode                    | Won't fix |
+| F    | Input Not Checked When Adding or Removing PKCS #7 Padding | Won't fix |
+| G    | Excess Centralization                                     |  |
 
+### Responses to Findings
 
-### Issue Analysis
+**Finding A: No Provision to Handle Compromise of Shared MTG Key**
 
-WIP
+In the begining, the purpose of the shared key is to encrypt the memo. In the previous version, Pando Leaf and Rings put `user_id` in the memo, and the shared key is used to encrypt it.
+
+However, to better protect the user's privacy, we upgrade the Mixin Network, that adding `user_id` in the UTXO directly. Now Pando has already remove the `user_id` from the memo so there is no sensitive information in the memo.
+
+To make the protocol more campatible, we keep the support of the encrypted memo. But it's totally fine to use plain-text in memo and leave it unencrypted. In another word, the shared key is not important anymore.
+
+**Finding B: Security Roadmap Nonexistent** 
+
+Actually we have a Roadmap with security related plans. We will update the roadmap in the future.
+
+**Finding C: Protocol Specifications Nonexistent** 
+
+We have already provided some specifications for the protocol. Please check them out https://docs.pando.im/developer/intro.
+
+In the future, we will provide more documentation here.
+
+**Finding D: Secrets Are Shared and Persist in Plain Text**
+
+We have own way to manage the secrets and keep the deployment environment secure.
+
+**Finding E: Use of Unauthenticated Encryption Mode**
+
+We are using AES-CBC in the memo encryption. It's better to switch to AES-GCM. However, because of the explanation of the **Finding A**, Pando decided to ignore this issue.
+
+**Finding F: Input Not Checked When Adding or Removing PKCS #7 Padding**
+
+Same as above.
+
+**Finding G: Excess Centralization** 
+
+Yes, right now, it is hard to add new members to the MTG or remove the existed. 
+
+We are working on a new governance system to make it possible to add and remove MTG members. The new governance system will be released in the future.
 
