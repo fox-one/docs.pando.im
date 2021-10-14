@@ -22,6 +22,14 @@ If you do have unpledged amount and the amount you intend to withdraw is more th
 
 ![](../assets/withdraw2.jpg)
 
+:::info
+
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+
+:::
+
+
+
 If you don't have any unpledged amount left and your pledged amount is not fully covering borrows, the system will directly withdraw for you from your pledged amount, finishing withdrawing in just one step.
 
 If you have outstanding borrow, it is possible that you cannot withdraw the same amount you have supplied. In this case, please return part or total amount of your borrow first. 

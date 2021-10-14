@@ -11,3 +11,10 @@ To unpledge, click on "Unpledge" of the supplied asset card of the Supply sectio
 **Pledging** shows the amount of a specific asset you have pledged. **Total Pledge** is the total amount of all the assets you have pledged.  
 
 ![](../assets/unpledge1.jpg)
+
+:::info
+
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+
+:::
+
