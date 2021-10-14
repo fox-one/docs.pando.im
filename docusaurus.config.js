@@ -175,12 +175,16 @@ module.exports = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        // },
+        blog: {
+          feedOptions: {
+            type: 'all',
+            title: "Pando Blog"
+          }
+          // showReadingTime: true,
+          // Please change this to your repo.
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        },
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/theme.scss'), ],
         },
