@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Pando Docs Blog</title>
+        <title>Pando Blog</title>
         <link>https://docs.pando.im/ko/blog</link>
         <description>Pando Docs Blog</description>
         <lastBuildDate>Wed, 29 Sep 2021 00:00:00 GMT</lastBuildDate>

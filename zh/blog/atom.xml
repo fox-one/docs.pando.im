@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.pando.im/zh/blog</id>
-    <title>Pando Docs Blog</title>
+    <title>Pando Blog</title>
     <updated>2021-09-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.pando.im/zh/blog"/>
