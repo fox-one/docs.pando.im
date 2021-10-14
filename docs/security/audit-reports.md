@@ -13,7 +13,7 @@ import {
 
 ### Download Report
 
-[Audit report from IOActive](//docs.pando.im/reports/V1.2%20Pando%20Code%20Review%20and%20Penetration%20Test%20with%20Remediation%20Status.pdf)
+[Audit report from IOActive](//docs.pando.im/reports/ioactive-report.pdf)
 
 ### Findings and Remediation Status
 
@@ -69,7 +69,8 @@ This issue is very hard to exploit, so the Mixin Team decided to ignore this iss
 
 ### Download Report
 
-[Audit Report from Least Authority](link)
+[Audit Report from Least Authority](//docs.pando.im/reports/least-authority-report.pdf)
+
 
 ### Findings and Remediation Status
 
