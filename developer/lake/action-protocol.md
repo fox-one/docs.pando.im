@@ -109,3 +109,11 @@ in which,
 
 If 4swap or Lake can't get the minimun destination crypto, the swapping will be aborted and the crypto you send to the Mainnet address will be refunded.
 
+## Parsing 4swap or Lake transfer memo
+
+```json5
+{
+  "s": "4swapTrade|4swapRefund", // 4swapTrade: swap Successful, 4swapRefund: swap failed
+  "t": "bf0c984d-7f8a-424e-bddd-473fcf5f7020", // follow id
+}
+```
