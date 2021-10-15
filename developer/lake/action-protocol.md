@@ -111,6 +111,8 @@ If 4swap or Lake can't get the minimun destination crypto, the swapping will be 
 
 ## Parsing 4swap or Lake transfer memo
 
+> The transfer memo is a base64 decoded json string
+
 ```json5
 {
   "s": "4swapTrade|4swapRefund", // 4swapTrade: swap Successful, 4swapRefund: swap failed
