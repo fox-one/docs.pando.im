@@ -83,7 +83,7 @@ module.exports = {
           type: "category",
           label: "FAQs",
           items: [
-            'leaf/faqs/emergency-shutdown',
+          
           ]
         },
       ]

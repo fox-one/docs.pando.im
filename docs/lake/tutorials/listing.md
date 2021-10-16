@@ -47,7 +47,14 @@ You need to head to [Mixin Messenger](../../apps/wallets#mixin-messenger) or [Fe
 1. Make sure the wallet balance of the 2 assets is above the minimum amount of 0.00000001. If not, please deposit some to your wallet.
 2. Make sure you have above the minimum amount of 0.02 ETH in your wallet. If not, please deposit some into your wallet or swap for it at [4swap](https://app.4swap.org).
 3. Visit [this page](https://app.4swap.org/#/me), tap "connect" to connect with your wallet.
+
+![](../assets/lake-get-started-p2.png)
+
 4. Visit [this page](https://app.4swap.org/#/liquidity/create), choose two assets you want to add to the pool and tap `Pay` to create a pool.
+
+We will comprehensively consider whether to list the currency based on coinmarketcap ranking, transaction volume, and exchange support.
+
+You can also contact 37160854 at mixin messenger to inquire about the listing of leaf/rings.
 
 :::info
 It usually takes 1~3 days to wait for the pool to be created and approved by [MTG nodes](../key-concepts/mtg). If the request is not processed in 3 days, you will receive a refund.
