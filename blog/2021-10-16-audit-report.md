@@ -7,11 +7,11 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [audit report]
 ---
 
-I'm glad to tell you that the Pando has been audited by IOActive & LeastAuthority.  View the results below:
+Pando has been audited by IOActive & LeastAuthority. Click the link below to view the results.
 
 [https://docs.pando.im/docs/security/audit-reports/](https://docs.pando.im/docs/security/audit-reports/)
 
-The audit report supports downloading and viewing. At the same time, we listed the problems reflected in the audit report, fixed bugs, and proposed targeted analysis.
+We listed the problems reflected in the audit report, fixed the bugs, and proposed targeted analysis, and the audit report is supported for download to viewing. 
 
-The subsequent pando series of products will complete all audits one after another. As we said, pando is an open source project and worthy of trust.
+pando is an open source project, and it is trustworthy. pando series will complete all the audits one after another and publish them on the official website.
 
