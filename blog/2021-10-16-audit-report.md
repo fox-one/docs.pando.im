@@ -13,5 +13,5 @@ Pando has been audited by IOActive & LeastAuthority. Click the link below to vie
 
 We listed the problems reflected in the audit report, fixed the bugs, and proposed targeted analysis, and the audit report is supported for download to viewing. 
 
-pando is an open source project, and it is trustworthy. pando series will complete all the audits one after another and publish them on the official website.
+Pando is an open source project, and it is trustworthy. pando series will complete all the audits one after another and publish them on the official website.
 
