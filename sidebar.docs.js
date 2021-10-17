@@ -116,6 +116,7 @@ module.exports = {
             'rings/key-concepts/rtoken',
             'rings/key-concepts/net-apy',
             'rings/key-concepts/loan-risk-indicator',
+            'rings/key-concepts/interest-model',
             'rings/key-concepts/liquidation',
             'rings/key-concepts/supported-crypto',
             'rings/key-concepts/glossary',

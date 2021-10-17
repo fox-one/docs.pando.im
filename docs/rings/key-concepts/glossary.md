@@ -60,7 +60,7 @@ The estimated annual percentage yield for supplying an asset. The interest is co
 The estimated annual interest rate of an asset a borrower need to pay. The interest is compounded and is calculated every 15 seconds.
 
 **Collateral Factor**
-It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors.
+It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors. Borrowing allowance, or borrowing capacity is determined as (pledged asset * its collateral factor). Each borrow is thus always initially over-collateralized.
 
 ### Key Personal Metrics
 
