@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Pando Blog</title>
+        <link>https://docs.pando.im/es/blog</link>
+        <description>Pando Docs Blog</description>
+        <lastBuildDate>Sat, 16 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Pando's audit report is released]]></title>
+            <link>https://docs.pando.im/es/blog/audit-report-20211016</link>
+            <guid>audit-report-20211016</guid>
+            <pubDate>Sat, 16 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pando has been audited by IOActive & LeastAuthority. Click the link below to view the results.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Write about Pando and Win Awards]]></title>
+            <link>https://docs.pando.im/es/blog/activity-20210922</link>
+            <guid>activity-20210922</guid>
+            <pubDate>Wed, 29 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pando is an open-source project. In order to let more people know about pando, we will launch an essay call. Articles that meet the following conditions can participate in this activities.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[New Cryptocurrency Listed]]></title>
+            <link>https://docs.pando.im/es/blog/new-crypto-curenncy-listed-20210922</link>
+            <guid>new-crypto-curenncy-listed-20210922</guid>
+            <pubDate>Wed, 22 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[USDT(erc20), BOX, MOB and XIN are listed on Pando Rings.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Greeting from Pando]]></title>
+            <link>https://docs.pando.im/es/blog/hello</link>
+            <guid>hello</guid>
+            <pubDate>Sat, 24 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hello, welcome to this blog.]]></description>
+        </item>
+    </channel>
+</rss>
