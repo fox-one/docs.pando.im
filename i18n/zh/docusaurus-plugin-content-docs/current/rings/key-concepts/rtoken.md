@@ -12,9 +12,9 @@ Every type of cryptocurrency supplied to Pand Rings has a corresponding rToken. 
 
 rTokens are used in the process of [supplying](./glossary), [pledging](./glossary), [unpledging](./glossary) and [withdrawing](./glossary). And it can be transferred freely to anyone in the same way you transfer any other crypto assets. Please be noted though, **once you have transferred the rTokens to others, you are no longer entitled to the corresponding underlying assets**.
 
- Each asset market has its own Supply interest rate ([Supply APY](./glossary)).  Simply by holding rTokens, the suppliers earn **compound** interest. 
+ Each asset market has its own Supply interest rate ([Supply APY](./glossary)).  Simply by holding rTokens, the suppliers earn **compound** interest.
 
- rTokens accumulate interest through the exchange rate against the corresponding Tokens. Over time, each rToken becomes convertible into an increasing amount of its underlying asset, even while the number of rTokens in your wallet stays the same. 
+ rTokens accumulate interest through the exchange rate against the corresponding Tokens. Over time, each rToken becomes convertible into an increasing amount of its underlying asset, even while the number of rTokens in your wallet stays the same.
 
  When you [withdraw](./glossary), your rTokens will be converted back to the corresponding Tokens. This is when you will get back your amount you put in as well as the interest yield. **The interest yield will not be distributed while you are holding the rTokens. You will receive it only after you've withdrawed the asset to your wallet.**
 
@@ -22,7 +22,7 @@ You can withdraw the underlying asset from rToken at any time, granted that Pand
 
 #### Trace rTokens here:
 
-[rUSD (rToken against pUSD)](https://etherscan.io/address/0x3e09ebcb505f085f7b802419cfc92370fd840276) 
+[rUSD (rToken against pUSD)](https://etherscan.io/address/0x3e09ebcb505f085f7b802419cfc92370fd840276)
 
 [rETH (rToken against ETH)](https://etherscan.io/address/0x7bb6a8ed5a15396adedea940714a1ebc7d8e9f6a)
 

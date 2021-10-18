@@ -16,9 +16,11 @@ import {
 
 This API will MTG information about 4swap and Lake.
 
+````mdx-code-block
 :::info
 You can save the response to use it later because the MTG information wouldn't change frequently.
 :::
+````
 
 <APIEndpoint base="https://api.4swap.org/api" url="/info" />
 

@@ -14,11 +14,13 @@ Click on "Connect Wallet" to start. Be sure to authorize otherwise data related 
 
 ![](../assets/lake-get-started-p2.png)
 
+````mdx-code-block
 :::tip
 
 Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
 
 :::
+````
 
 Let's get to know the homepage of pando lake(4swap).
 

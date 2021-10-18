@@ -10,10 +10,11 @@ If the total amount of the liquidity pool is large, the transaction amount is ne
 
 When the impact reaches a certain level, the price on 4swap is different from the prices on other exchanges, which will form an arbitrage space. There are many automatic arbitrage robots working hard all the time to ensure consistent prices.
 
+````mdx-code-block
 :::caution
 
 It is important to pay attention to the size of the transaction amount relative to the total amount of liquidity. If the transaction amount is too high relative to the total amount of the liquidity pool, the transaction price will seriously deviate from the market price, resulting in greater losses.
 
 :::
-
+````
 

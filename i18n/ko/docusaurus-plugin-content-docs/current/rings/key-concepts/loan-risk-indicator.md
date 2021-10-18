@@ -3,7 +3,8 @@ title: Loan Risk Indicator
 sidebar_position: 3
 date: 2021-09-04 12:33:07
 ---
-[Borrow](./glossary) / [Borrow Limit](./glossary) is used to indicate your loan risk. 
+
+[Borrow](./glossary) / [Borrow Limit](./glossary) is used to indicate your loan risk.
 
 When Borrow / Borrow Limit is <60%, you are in low risk of the loan being [liquidated](./glossary);
 

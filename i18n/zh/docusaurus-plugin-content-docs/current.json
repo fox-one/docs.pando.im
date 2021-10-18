@@ -3,40 +3,48 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docs.category.Pando Lake & 4swap": {
-    "message": "Pando Lake & 4swap",
-    "description": "The label for category Pando Lake & 4swap in sidebar docs"
+  "sidebar.tutorialSidebar.category.Pando Lake": {
+    "message": "Pando Lake",
+    "description": "The label for category Pando Lake in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Tutorials": {
+  "sidebar.tutorialSidebar.category.Tutorials": {
     "message": "Tutorials",
-    "description": "The label for category Tutorials in sidebar docs"
+    "description": "The label for category Tutorials in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Key Concepts": {
+  "sidebar.tutorialSidebar.category.Key Concepts": {
     "message": "Key Concepts",
-    "description": "The label for category Key Concepts in sidebar docs"
+    "description": "The label for category Key Concepts in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.FAQs": {
-    "message": "FAQs",
-    "description": "The label for category FAQs in sidebar docs"
+  "sidebar.tutorialSidebar.category.Other FAQs": {
+    "message": "Other FAQs",
+    "description": "The label for category Other FAQs in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Pando Leaf": {
+  "sidebar.tutorialSidebar.category.Pando Leaf": {
     "message": "Pando Leaf",
-    "description": "The label for category Pando Leaf in sidebar docs"
+    "description": "The label for category Pando Leaf in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Pando Rings": {
+  "sidebar.tutorialSidebar.category.Liquidation": {
+    "message": "Liquidation",
+    "description": "The label for category Liquidation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Pando Rings": {
     "message": "Pando Rings",
-    "description": "The label for category Pando Rings in sidebar docs"
+    "description": "The label for category Pando Rings in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Applications": {
-    "message": "Applications",
-    "description": "The label for category Applications in sidebar docs"
+  "sidebar.tutorialSidebar.category.Wallets": {
+    "message": "Wallets",
+    "description": "The label for category Wallets in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Security": {
+  "sidebar.tutorialSidebar.category.3rd-party Applications": {
+    "message": "3rd-party Applications",
+    "description": "The label for category 3rd-party Applications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Security": {
     "message": "Security",
-    "description": "The label for category Security in sidebar docs"
+    "description": "The label for category Security in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Community": {
+  "sidebar.tutorialSidebar.category.Community": {
     "message": "Community",
-    "description": "The label for category Community in sidebar docs"
+    "description": "The label for category Community in sidebar tutorialSidebar"
   }
 }

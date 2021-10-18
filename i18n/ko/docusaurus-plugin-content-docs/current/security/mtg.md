@@ -13,8 +13,7 @@ Mixin Network is a public blockchain driven by TEE (Trusted Execution Environmen
 
 ![](./assets/overview-architecture.svg)
 
-Basically, MTG is a Multi-signature custodian consensus solution. Several teams will be selected and arranged as the “Trusted Group” in Pando, becoming the “Nodes”.
-Concensus has to be reached among the nodes to perform certain administrative actions. As a result, stable services and asset safety are guaranteed.
+Basically, MTG is a Multi-signature custodian consensus solution. Several teams will be selected and arranged as the “Trusted Group” in Pando, becoming the “Nodes”. Concensus has to be reached among the nodes to perform certain administrative actions. As a result, stable services and asset safety are guaranteed.
 
 For example, let’s say there is a M/N multi-sig group where M represents the number of nodes, and the group manages some assets in the multi-sig address. When one of the nodes needs to transfer some assets out, it needs to collect at least N signatures from others to perform the action.
 

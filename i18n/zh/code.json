@@ -1,40 +1,4 @@
 {
-  "This Article needs additional information.": {
-    "message": "This Article needs additional information."
-  },
-  "Please help improve it by": {
-    "message": "Please help improve it by"
-  },
-  "polishing the content": {
-    "message": "polishing the content"
-  },
-  "com.api_endpoint": {
-    "message": "com.api_endpoint"
-  },
-  "com.api_params.required": {
-    "message": "com.api_params.required"
-  },
-  "com.api_params.parameters": {
-    "message": "com.api_params.parameters"
-  },
-  "com.api_metapanel.public": {
-    "message": "com.api_metapanel.public"
-  },
-  "com.api_metapanel": {
-    "message": "com.api_metapanel"
-  },
-  "com.api_metapanel.authorization": {
-    "message": "com.api_metapanel.authorization"
-  },
-  "com.api_metapanel.limitation": {
-    "message": "com.api_metapanel.limitation"
-  },
-  "com.api_payload": {
-    "message": "com.api_payload"
-  },
-  "com.api_request": {
-    "message": "com.api_request"
-  },
   "theme.NotFound.title": {
     "message": "Page Not Found",
     "description": "The title of the 404 page"
@@ -230,5 +194,32 @@
   "theme.SearchBar.label": {
     "message": "Search",
     "description": "The ARIA label and placeholder for search button"
+  },
+  "com.api_request": {
+    "message": "Example request"
+  },
+  "com.api_payload": {
+    "message": "Payload"
+  },
+  "com.api_params.required": {
+    "message": "*required"
+  },
+  "com.api_params.parameters": {
+    "message": "Parameters"
+  },
+  "com.api_metapanel": {
+    "message": "Authentication and options"
+  },
+  "com.api_metapanel.public": {
+    "message": "Public Access"
+  },
+  "com.api_metapanel.authorization": {
+    "message": "Authorization"
+  },
+  "com.api_metapanel.limitation": {
+    "message": "Limitation"
+  },
+  "com.api_endpoint": {
+    "message": "Endpoint URL"
   }
 }

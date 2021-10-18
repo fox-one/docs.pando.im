@@ -36,9 +36,11 @@ For example, if you have an ERC-20 token named "RUM", you can add it to Mixin Ne
 
 The commit of the above example is [here](https://github.com/MixinNetwork/asset-profile/commit/437d378f899c5837598bdb8c4e9c18ae8f21ad27).
 
+````mdx-code-block
 :::info
 Please create a pull request when you have finished. It usually takes about 1~2 days for Mixin Network to process your pull request.
 :::
+````
 
 ## Create a pool at 4swap
 
@@ -56,6 +58,8 @@ We will comprehensively consider whether to list the currency based on coinmarke
 
 You can also contact 37160854 at mixin messenger to inquire about the listing of leaf/rings.
 
+````mdx-code-block
 :::info
 It usually takes 1~3 days to wait for the pool to be created and approved by [MTG nodes](../key-concepts/mtg). If the request is not processed in 3 days, you will receive a refund.
 :::
+````

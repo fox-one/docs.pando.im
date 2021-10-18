@@ -16,8 +16,10 @@ Entry 3: If you have previously provided liquidity, you can find the pool on the
 
 ![](../assets/remove-liquidity-p3.png)
 
+````mdx-code-block
 :::tip
 
 There is no handling fee for remove liquidity.
 
 :::
+````

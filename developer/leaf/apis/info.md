@@ -19,9 +19,11 @@ import {
 
 This API will respond the MTG information of Pando Leaf.
 
+````mdx-code-block
 :::info
 You can save the response to use it later because the MTG information wouldn't change frequently.
 :::
+````
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/info" />
 

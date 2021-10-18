@@ -15,15 +15,18 @@ Data changes to the latest, and you can see details about this generating in cha
 
 Again you need to be careful of the associated risk. 
 
+````mdx-code-block
 :::caution
 
 Please ensure that the mortgage rate is within a safe range, which less than 150% will be [liquidated] totally.
 
 :::
+````
 
+````mdx-code-block
 :::info
 
 You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 
 :::
-
+````

@@ -14,11 +14,11 @@ Click on "Connect Wallet" to start. Be sure to authorize otherwise data related 
 
 ![](../assets/leaf-get-started-p2.png)
 
+````mdx-code-block
 :::tip
-
 Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
-
 :::
+````
 
 Let's get to know the homepage of pando leaf.
 
@@ -34,11 +34,11 @@ Take the above picture as an example, the current mortgage rate is 4414.4%, and 
 
 Combined with the current price and the next price, it can be considered safe.
 
+````mdx-code-block
 :::caution
-
 Please ensure that the collateral Ratio is within a safe range, which less than 150% will be liquidated totally.
-
 :::
+````
 
 Go and try it.
 

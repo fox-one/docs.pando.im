@@ -3,28 +3,24 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docs.category.Pando Lake & 4swap": {
-    "message": "Pando Lake & 4swap",
-    "description": "The label for category Pando Lake & 4swap in sidebar docs"
+  "sidebar.tutorialSidebar.category.Pando Lake": {
+    "message": "Pando Lake",
+    "description": "The label for category Pando Lake in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Guide": {
+  "sidebar.tutorialSidebar.category.Guide": {
     "message": "Guide",
-    "description": "The label for category Guide in sidebar docs"
+    "description": "The label for category Guide in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.API Reference": {
-    "message": "API Reference",
-    "description": "The label for category API Reference in sidebar docs"
-  },
-  "sidebar.docs.category.Pando Leaf": {
+  "sidebar.tutorialSidebar.category.Pando Leaf": {
     "message": "Pando Leaf",
-    "description": "The label for category Pando Leaf in sidebar docs"
+    "description": "The label for category Pando Leaf in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Pando Rings": {
+  "sidebar.tutorialSidebar.category.Pando Rings": {
     "message": "Pando Rings",
-    "description": "The label for category Pando Rings in sidebar docs"
+    "description": "The label for category Pando Rings in sidebar tutorialSidebar"
   },
-  "sidebar.docs.category.Resources": {
+  "sidebar.tutorialSidebar.category.Resources": {
     "message": "Resources",
-    "description": "The label for category Resources in sidebar docs"
+    "description": "The label for category Resources in sidebar tutorialSidebar"
   }
 }

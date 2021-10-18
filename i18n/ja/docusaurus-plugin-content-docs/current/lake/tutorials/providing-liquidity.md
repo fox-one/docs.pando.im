@@ -22,8 +22,7 @@ After adding liquidity, you will receive the corresponding lp tken in the dialog
 
 ![](../assets/add-liquidity-p4.png)
 
-
-
+````mdx-code-block
 :::tip
 
 1. Two type of crypto currencies must be added at the same time to provide liquidity successfully and obtain LP tokens. If you only add one then exit the page, or you don't get an LP token after the addition, don't worry, the currency you paid will be refunded in ten minutes.
@@ -31,3 +30,4 @@ After adding liquidity, you will receive the corresponding lp tken in the dialog
 2. There is no handling fee for add liquidity.
 
 :::
+````

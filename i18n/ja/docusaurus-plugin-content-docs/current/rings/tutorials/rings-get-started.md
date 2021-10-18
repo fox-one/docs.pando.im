@@ -1,5 +1,5 @@
 ---
-title: Get Started 
+title: Get Started
 sidebar_position: 1
 date: 2021-10-10 12:33:07
 ---
@@ -14,11 +14,11 @@ Click on "I Want To Supply" and choose a crypto currency（like USDT). Then clic
 
 ![](../assets/rings-get-started-p2.png)
 
+````mdx-code-block
 :::tip
-
 Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
-
 :::
+````
 
 The following links can quickly jump to the description of related operations.
 

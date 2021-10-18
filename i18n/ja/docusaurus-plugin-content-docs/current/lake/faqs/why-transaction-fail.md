@@ -4,9 +4,7 @@ sidebar_position: 3
 date: 2021-08-15 22:33:07
 ---
 
-import {
-  Improvement,
-} from "@site/src/components/admonitions";
+import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
@@ -17,6 +15,4 @@ The information displayed by Pando Lakeon the web page is the estimated informat
 
 We provide a parameter name slippage, which can be set on the gear ⚙ icon button on the right side of the transaction button. The slippage is the difference between the estimated information and the actual transaction result during Pando Laketransactions.
 
-The greater the slippage, the higher the tolerance for the expected difference in the transaction, and the success rate of the transaction will increase, but it may also result in greater losses.
-The smaller the slippage, the lower the tolerance for the expected difference of the transaction, the lower the transaction success rate, but each order will be more in line with the estimated situation you see on the web page.
-The default value of slippage is 1%, that is, when the actual transaction differs from the estimated transaction amount you see on the webpage by more than 1%, the Pando Lake engine will reject the transaction.
+The greater the slippage, the higher the tolerance for the expected difference in the transaction, and the success rate of the transaction will increase, but it may also result in greater losses. The smaller the slippage, the lower the tolerance for the expected difference of the transaction, the lower the transaction success rate, but each order will be more in line with the estimated situation you see on the web page. The default value of slippage is 1%, that is, when the actual transaction differs from the estimated transaction amount you see on the webpage by more than 1%, the Pando Lake engine will reject the transaction.

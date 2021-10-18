@@ -4,9 +4,7 @@ sidebar_position: 4
 date: 2021-08-15 22:33:07
 ---
 
-import {
-  Improvement,
-} from "@site/src/components/admonitions";
+import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 

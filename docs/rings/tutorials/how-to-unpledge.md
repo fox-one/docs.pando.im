@@ -12,9 +12,8 @@ To unpledge, click on "Unpledge" of the supplied asset card of the Supply sectio
 
 ![](../assets/unpledge1.jpg)
 
+````mdx-code-block
 :::info
-
 You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
-
 :::
-
+````

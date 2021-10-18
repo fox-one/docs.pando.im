@@ -3,9 +3,7 @@ title: Audit Reports
 sidebar_position: 3
 ---
 
-import {
-  Improvement,
-} from "@site/src/components/admonitions";
+import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
@@ -17,15 +15,15 @@ import {
 
 ### Findings and Remediation Status
 
-| ID | Title | Total Risk | Status |
-| --- | --- | --- | --- |
-| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | High | Fixed |
-| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities | High | Fixed |
-| MP-01 | Lack of Certificate Pinning | Medium |  |
-| MP-02 | Insufficient JailBreak Detection | Medium |  |
-| MP-03 | App Transport Security Disabled | Low |  |
-| MP-04 | RPATH Set in Binary | Low |  |
-| MP-05 | Binary Users Insecure APIs | Low |  |
+| ID    | Title                                                                         | Total Risk | Status |
+| ----- | ----------------------------------------------------------------------------- | ---------- | ------ |
+| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | High       | Fixed  |
+| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities                   | High       | Fixed  |
+| MP-01 | Lack of Certificate Pinning                                                   | Medium     |        |
+| MP-02 | Insufficient JailBreak Detection                                              | Medium     |        |
+| MP-03 | App Transport Security Disabled                                               | Low        |        |
+| MP-04 | RPATH Set in Binary                                                           | Low        |        |
+| MP-05 | Binary Users Insecure APIs                                                    | Low        |        |
 
 ### Issue Analysis
 
@@ -74,15 +72,15 @@ This issue is very hard to exploit, so the Mixin Team decided to ignore this iss
 
 ### Findings and Remediation Status
 
-| ID   | Title                                                     | Status     |
-| ---- | --------------------------------------------------------- | ---------- |
-| A    | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
-| B    | Security Roadmap Nonexistent                              | Won't fix |
-| C    | Protocol Specifications Nonexistent                       |        |
-| D    | Secrets Are Shared and Persist in Plain Text              | Won't fix |
-| E    | Use of Unauthenticated Encryption Mode                    | Won't fix |
-| F    | Input Not Checked When Adding or Removing PKCS #7 Padding | Won't fix |
-| G    | Excess Centralization                                     |  |
+| ID | Title                                                     | Status    |
+| -- | --------------------------------------------------------- | --------- |
+| A  | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
+| B  | Security Roadmap Nonexistent                              | Won't fix |
+| C  | Protocol Specifications Nonexistent                       |           |
+| D  | Secrets Are Shared and Persist in Plain Text              | Won't fix |
+| E  | Use of Unauthenticated Encryption Mode                    | Won't fix |
+| F  | Input Not Checked When Adding or Removing PKCS #7 Padding | Won't fix |
+| G  | Excess Centralization                                     |           |
 
 ### Responses to Findings
 
@@ -94,11 +92,11 @@ However, to better protect the user's privacy, we upgrade the Mixin Network, tha
 
 To make the protocol more campatible, we keep the support of the encrypted memo. But it's totally fine to use plain-text in memo and leave it unencrypted. In another word, the shared key is not important anymore.
 
-**Finding B: Security Roadmap Nonexistent** 
+**Finding B: Security Roadmap Nonexistent**
 
 Actually we have a Roadmap with security related plans. We will update the roadmap in the future.
 
-**Finding C: Protocol Specifications Nonexistent** 
+**Finding C: Protocol Specifications Nonexistent**
 
 We have already provided some specifications for the protocol. Please check them out https://docs.pando.im/developer/intro.
 
@@ -116,9 +114,9 @@ We are using AES-CBC in the memo encryption. It's better to switch to AES-GCM. H
 
 Same as above.
 
-**Finding G: Excess Centralization** 
+**Finding G: Excess Centralization**
 
-Yes, right now, it is hard to add new members to the MTG or remove the existed. 
+Yes, right now, it is hard to add new members to the MTG or remove the existed.
 
 We are working on a new governance system to make it possible to add and remove MTG members. The new governance system will be released in the future.
 

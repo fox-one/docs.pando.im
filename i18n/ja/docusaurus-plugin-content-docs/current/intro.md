@@ -3,7 +3,7 @@ title: User Manuals
 sidebar_position: 1
 ---
 
-## Introduction
+## 紹介
 
 Pando is a decentrialized financial network built with [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg), including a series of open financial protocols.
 
@@ -17,7 +17,7 @@ Pando integrates the following financial protocols; all of them can be run stand
 
 **→** [Get Started with 4swap](lake/tutorials/get-started)  
 **→** [Swap!](lake/tutorials/swapping)  
-**→** [Provide Liquidity](lake/tutorials/providing-liquidity) and [Remove Liquidity](lake/tutorials/removing-liquidity)  
+**→** [Provide Liquidity](lake/tutorials/providing-liquidity) and [Remove Liquidity](lake/tutorials/removing-liquidity)
 
 ### Pando Leaf
 
@@ -25,7 +25,7 @@ Pando integrates the following financial protocols; all of them can be run stand
 
 **→** [Get Started with Pando Leaf](leaf/tutorials/get-started)  
 **→** [Open a Vault](leaf/tutorials/open-vault)  
-**→** [Payback](leaf/tutorials/payback)  
+**→** [Payback](leaf/tutorials/payback)
 
 
 ### Pando Rings
@@ -33,7 +33,7 @@ Pando integrates the following financial protocols; all of them can be run stand
 [**Pando Rings**](rings/intro) is an algorithmic, autonomous interest rate protocol. It is a place where you can lend or borrow cryptocurrencies. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.
 
 **→** [Supply](rings/tutorials/how-to-supply) and [Pledge](rings/tutorials/how-to-pledge)   
-**→** [Borrow](rings/tutorials/how-to-borrow) and [Payback](rings/tutorials/how-to-repay) 
+**→** [Borrow](rings/tutorials/how-to-borrow) and [Payback](rings/tutorials/how-to-repay)
 
 ## Questions?
 

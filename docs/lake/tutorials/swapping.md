@@ -28,6 +28,7 @@ After entering the 6-digit PIN to complete the payment, the transaction details 
 
 Click to view [transaction fees](https://docs.pando.im/docs/lake/key-concepts/trading-fee).
 
+````mdx-code-block
 :::caution
 
 Please pay attention to the price effect when swapping. 
@@ -35,3 +36,4 @@ Please pay attention to the price effect when swapping.
 When the price impact is too high, it means that the transaction is lack of liquidity or the transaction amount is too large, and continuing trading may cause greater losses.
 
 :::
+````

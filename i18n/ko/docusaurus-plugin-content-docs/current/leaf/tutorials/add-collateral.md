@@ -10,9 +10,6 @@ To add collateral, click on "Deposit" and fill in the intended amount on the Dep
 
 ![](../assets/leaf-add-collateral-p1.png)
 
-Pay 4 MOB token and see Details, 
-the collateral Increase from 
-96.8865 to 100.8865. You can see details 
-about this adding in chat window.
+Pay 4 MOB token and see Details, the collateral Increase from 96.8865 to 100.8865. You can see details about this adding in chat window.
 
 ![](../assets/leaf-add-collateral-p2.png)

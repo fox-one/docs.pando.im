@@ -14,17 +14,19 @@ Click on "Connect Wallet" to start. Be sure to authorize otherwise data related 
 
 ![](../assets/lake-get-started-p2.png)
 
+````mdx-code-block
 :::tip
 
 Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
 
 :::
+````
 
 Let's get to know the homepage of pando lake(4swap).
 
 ![](../assets/lake-get-started-p3.png)
 
-Enter the "pool" page, we can see various trading pairs. We can click the right arrow ➡️ at the top right to view the data analysis. 
+Enter the "pool" page, we can see various trading pairs. We can click the right arrow ➡️ at the top right to view the data analysis.
 
 You can also click to sort different transaction pairs based on data such as total supply and 24-hour transaction volume.
 

@@ -6,7 +6,7 @@ date: 2021-08-15 22:33:07
 
 ### Slippage
 
-In financial trading, slippage is a term that refers to the difference between a trade’s expected price and the actual price at which the trade is executed. 
+In financial trading, slippage is a term that refers to the difference between a trade’s expected price and the actual price at which the trade is executed.
 
 ### Impermanent Loss
 

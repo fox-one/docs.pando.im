@@ -22,11 +22,11 @@ The security audit is conducted by the following teams:
 
 Pando products' auditing process is described in the following table:
 
-| Product | Auditing Process |
-| ------- | ---------------- |
-| Pando Leaf | Completed |
-| Pando Rings | Completed |
-| Pando Lake | Not started |
-| 4swap | Not started |
+| Product     | Auditing Process |
+| ----------- | ---------------- |
+| Pando Leaf  | Completed        |
+| Pando Rings | Completed        |
+| Pando Lake  | Not started      |
+| 4swap       | Not started      |
 
 Please refer to the [Audit Reports](./audit-reports) for the auditing results.

@@ -14,11 +14,11 @@ Click on "+" and you will land on the page to create a specific vault.
 
 On the corresponding minting page, respectively fill in the amount of the asset you intend to deposit and the amount of the asset you wish to generate
 
+````mdx-code-block
 :::tip
-
 Generate a vault for the first time, minting at least 100 pusd
-
 :::
+````
 
 ![](../assets/leaf-open-vault-p3.png)
 
@@ -30,12 +30,11 @@ If successfully created the [vault](https://docs.pando.im/docs/leaf/key-concepts
 ![](../assets/add-a-vault-p4.png)
 
 
+````mdx-code-block
 :::caution
-
 Do pay attention to the risk indication bar.
-
 :::
- 
+````
 
 You have to keep your **collateralization ratio**(link to the explanation required) in a safe range（above 150%） to avoid **liquidation** (link). When your collateralization ratio breaches the **liquidation ratio** (link), your collaterals will be in **auction** (link to auction process).  
 

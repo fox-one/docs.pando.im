@@ -32,12 +32,11 @@ The [loan risk indicator](../key-concepts/loan-risk-indicator) changes with the 
 
 **Current (Asset name) Borrow** indicates your current borrow amount of a specific asset. **Total Borrow** indicates the total amount of all the assets you have borrowed. **Maximum Market Availability** shows the amount available to borrow of a specific asset. If the amount you intend to borrow is more than the Maximum Market Availability, your order won't come through - you can borrow at most at the Maximum Market Availability.
 
+````mdx-code-block
 :::info
-
 You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
-
 :::
-
+````
 
 
 
