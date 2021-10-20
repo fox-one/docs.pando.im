@@ -36,7 +36,7 @@
     "description": "The label for category Wallets in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.3rd-party Applications": {
-    "message": "3rd-party Applications",
+    "message": "第三方应用程序",
     "description": "The label for category 3rd-party Applications in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Security": {
@@ -46,5 +46,41 @@
   "sidebar.tutorialSidebar.category.Community": {
     "message": "Community",
     "description": "The label for category Community in sidebar tutorialSidebar"
+  },
+  "sidebar.docs.category.Pando Lake & 4swap": {
+    "message": "Pando Lake & 4swap",
+    "description": "The label for category Pando Lake & 4swap in sidebar docs"
+  },
+  "sidebar.docs.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar docs"
+  },
+  "sidebar.docs.category.Key Concepts": {
+    "message": "Key Concepts",
+    "description": "The label for category Key Concepts in sidebar docs"
+  },
+  "sidebar.docs.category.FAQs": {
+    "message": "FAQs",
+    "description": "The label for category FAQs in sidebar docs"
+  },
+  "sidebar.docs.category.Pando Leaf": {
+    "message": "Pando Leaf",
+    "description": "The label for category Pando Leaf in sidebar docs"
+  },
+  "sidebar.docs.category.Pando Rings": {
+    "message": "Pando Rings",
+    "description": "The label for category Pando Rings in sidebar docs"
+  },
+  "sidebar.docs.category.Applications": {
+    "message": "Applications",
+    "description": "The label for category Applications in sidebar docs"
+  },
+  "sidebar.docs.category.Security": {
+    "message": "Security",
+    "description": "The label for category Security in sidebar docs"
+  },
+  "sidebar.docs.category.Community": {
+    "message": "Community",
+    "description": "The label for category Community in sidebar docs"
   }
 }

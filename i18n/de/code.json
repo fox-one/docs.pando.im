@@ -221,5 +221,14 @@
   },
   "com.api_endpoint": {
     "message": "Endpoint URL"
+  },
+  "This Article needs additional information.": {
+    "message": "This Article needs additional information."
+  },
+  "Please help improve it by": {
+    "message": "Please help improve it by"
+  },
+  "polishing the content": {
+    "message": "polishing the content"
   }
 }

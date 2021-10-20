@@ -1,5 +1,5 @@
 ---
-title: Audit Reports
+title: 审计报告
 sidebar_position: 3
 ---
 
@@ -7,72 +7,72 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
-## Audit Reports from IOActive
+## IOActive 的审计报告
 
-### Download Report
+### 下载报告
 
-[Audit report from IOActive](//docs.pando.im/reports/ioactive-report.pdf)
+[IOActive 的审计报告](//docs.pando.im/reports/ioactive-report.pdf)
 
-### Findings and Remediation Status
+### 调查结果和补救措施状况
 
-| ID    | Title                                                                         | Total Risk | Status |
-| ----- | ----------------------------------------------------------------------------- | ---------- | ------ |
-| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | High       | Fixed  |
-| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities                   | High       | Fixed  |
-| MP-01 | Lack of Certificate Pinning                                                   | Medium     |        |
-| MP-02 | Insufficient JailBreak Detection                                              | Medium     |        |
-| MP-03 | App Transport Security Disabled                                               | Low        |        |
-| MP-04 | RPATH Set in Binary                                                           | Low        |        |
-| MP-05 | Binary Users Insecure APIs                                                    | Low        |        |
+| ID    | 标题                                                                            | 总风险 | 状态  |
+| ----- | ----------------------------------------------------------------------------- | --- | --- |
+| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | 高   | 已修复 |
+| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities                   | 高   | 已修复 |
+| MP-01 | Lack of Certificate Pinning                                                   | 中等  |     |
+| MP-02 | Insufficient JailBreak Detection                                              | 中等  |     |
+| MP-03 | App Transport Security Disabled                                               | 低   |     |
+| MP-04 | RPATH Set in Binary                                                           | 低   |     |
+| MP-05 | Binary Users Insecure APIs                                                    | 低   |     |
 
-### Issue Analysis
+### 问题分析
 
 **MP-07: Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance**
 
-This issue is caused by an incorrect logic in `Payee.handleRepayEvent()`. Please read IOActive audit report (from p3 to p8) for more details.
+这个问题是由 `Payee.handleRepayEvent()` 的不正确逻辑引起的。 详情请参阅 IOActive 审计报告（第3页至第8页）。
 
 **MP-07: General - Outdated Web Server with Multiple Vulnerabilities**
 
-This issue is caused by an outdated web server that provides API endpoints. Please read IOActive audit report (from p3 to p8) for more details.
+这个问题是由一个提供API端点的过时Web服务器引起的。 详情请参阅 IOActive 审计报告（第3页至第8页）。
 
 **MP-01: Lack of Certificate Pinning**
 
-This is an issue related to the Mixin Messenger.
+这是一个与 Mixin Messenger 相关的问题。
 
-At present, most Apps reply entirely to the certifications that operating system maintains and do not determine which certificate to trust or not. Attackers who break the operating system's trust storage or hack a root CA can set up a man-in-the-middle attack and capture the transmitted data between the App and the server.
+目前，大多数 App 完全信任操作系统的所有有效证书，而不是自行决定是否信任哪个证书。 破坏操作系统信任存储或破解根证书的攻击者可以设置中间人攻击，并捕获应用程序和服务器之间传送的数据。
 
-Mixin Team and Pando Team are not responsible for ensuring the safety of user's local operating system and the root CA. After discussing with the Mixin Team, we decided to ignore this issue for now.
+Mixin团队和Pando团队不负责确保用户的本地操作系统和CA系统的安全。 在与 Mixin Team 讨论之后，我们决定现在忽视这个问题。
 
 **MP-02: Insufficient JailBreak Detection**
 
-This is an issue related to the Mixin Messenger iOS.
+这是一个与 Mixin Messenger iOS 相关的问题。
 
-Mixin Team is not responsible for ensuring the safety of user's local operating system, so they decided to ignore this issue for now.
+Mixin 团队不负责确保用户的本地操作系统的安全，因此他们现在决定忽略这个问题。
 
 **MP-03: App Transport Security Disabled**
 
-This is an issue related to the Mixin Messenger iOS.
+这是一个与 Mixin Messenger iOS 相关的问题。
 
-In the report, it mentions that ATS is disabled for requests from WebView. It's not a flaw of App because the users are allowed to use the WebView to visit HTTP webpages.
+报告中提到，对于 WebView 中的请求，ATS 选项是禁用的。 这不是应用程序的缺陷，因为用户可以使用 WebView 访问 HTTP 网页。
 
 **MP-04: RPATH Set in Binary**
 
-This issue is very hard to exploit, so the Mixin Team decided to ignore this issue for now.
+这个问题很难加以利用，所以 Mixin Team 现在决定无视这个问题。
 
 **MP-05: Binary Users Insecure APIs**
 
-This issue is very hard to exploit, so the Mixin Team decided to ignore this issue for now.
+这个问题很难加以利用，所以 Mixin Team 现在决定无视这个问题。
 
-## Audit Reports from LeastAuthority
+## LeastAuthority 的审计报告
 
-### Download Report
+### 下载报告
 
-[Audit Report from Least Authority](//docs.pando.im/reports/least-authority-report.pdf)
+[LeastAuthority 的审计报告](//docs.pando.im/reports/least-authority-report.pdf)
 
 
-### Findings and Remediation Status
+### 调查结果和补救措施状况
 
-| ID | Title                                                     | Status    |
+| ID | 标题                                                        | 状态        |
 | -- | --------------------------------------------------------- | --------- |
 | A  | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
 | B  | Security Roadmap Nonexistent                              | Won't fix |
@@ -82,41 +82,41 @@ This issue is very hard to exploit, so the Mixin Team decided to ignore this iss
 | F  | Input Not Checked When Adding or Removing PKCS #7 Padding | Won't fix |
 | G  | Excess Centralization                                     |           |
 
-### Responses to Findings
+### 对调查结果的回应
 
 **Finding A: No Provision to Handle Compromise of Shared MTG Key**
 
-In the begining, the purpose of the shared key is to encrypt the memo. In the previous version, Pando Leaf and Rings put `user_id` in the memo, and the shared key is used to encrypt it.
+在开始时，共享密钥的目的是加密 memo。 在之前版本中，Pando Leaf 和 Rings 在 memo 中放置 `user_id` ，共享密钥用于加密它。
 
-However, to better protect the user's privacy, we upgrade the Mixin Network, that adding `user_id` in the UTXO directly. Now Pando has already remove the `user_id` from the memo so there is no sensitive information in the memo.
+然而，为了更好地保护用户的隐私，我们升级了 Mixin Network，直接在 UTXO 中添加 `user_id`。 现在 Pando 已经从 memo 中删除了 `user_id` ，因此 memo 中没有敏感信息了。
 
-To make the protocol more campatible, we keep the support of the encrypted memo. But it's totally fine to use plain-text in memo and leave it unencrypted. In another word, the shared key is not important anymore.
+为了使协议保持兼容，我们依然保持对加密 memo 的支持。 但如果在 memo 中使用不加密的文本，也没有问题。 也就是说，共享密钥不再重要。
 
 **Finding B: Security Roadmap Nonexistent**
 
-Actually we have a Roadmap with security related plans. We will update the roadmap in the future.
+实际上，我们有一份带有安全相关计划的路线图。 我们今后将更新路线图。
 
 **Finding C: Protocol Specifications Nonexistent**
 
-We have already provided some specifications for the protocol. Please check them out https://docs.pando.im/developer/intro.
+我们已经为协议提供了一些 specifications。 请查看 https://docs.pando.im/developer/intro 。
 
-In the future, we will provide more documentation here.
+今后，我们将在这里提供更多文档。
 
 **Finding D: Secrets Are Shared and Persist in Plain Text**
 
-We have own way to manage the secrets and keep the deployment environment secure.
+我们有自己的方法来管理密钥和保持部署环境的安全。
 
 **Finding E: Use of Unauthenticated Encryption Mode**
 
-We are using AES-CBC in the memo encryption. It's better to switch to AES-GCM. However, because of the explanation of the **Finding A**, Pando decided to ignore this issue.
+我们在 memo 加密中使用了 AES-CBC。 理论上说最好切换到 AES-GCM。 然而，由于 **Finding A**的解释，Pando 决定忽略这个问题。
 
 **Finding F: Input Not Checked When Adding or Removing PKCS #7 Padding**
 
-Same as above.
+同上所述
 
 **Finding G: Excess Centralization**
 
-Yes, right now, it is hard to add new members to the MTG or remove the existed.
+是的，现在很难为 MTG 添加新成员或删除现有成员。
 
-We are working on a new governance system to make it possible to add and remove MTG members. The new governance system will be released in the future.
+我们正在努力建立一个新的管理制度，以便能够增加和删除 MTG 成员。 今后将推出新的治理制度。
 

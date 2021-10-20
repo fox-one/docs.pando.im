@@ -4,7 +4,7 @@ sidebar_position: 1
 date: 2021-09-30 23:18:01
 ---
 
-Pando Lake and 4swap provide a simple, developer-friendly APIs for 3rd-party developers.
+Pando Lake 和 4swap 为第三方开发者提供了简洁、开发者友好的 API.
 
 ## API Endpoints
 
