@@ -1,11 +1,11 @@
 ---
-title: What's the difference between Lake and 4swap
+title: Lake和4swap的区别
 sidebar_position: 1
 date: 2021-08-15 22:33:07
 ---
 
-4swap provide a the foundational protocols for both Pando Lake and 4swap, which has a mechanism named "Broker" that users interact with the protocol.
+4swap为Pando Lake和4swap 提供了基础协议，它有一个名为“代理”的机制，用户可以通过“代理”与协议进行交互。
 
-- **Pando Lake** - Pando Lake has own broker to deal with the transactions sent to it to serve its users because it only allow for selected pools that have strong community base and proven credentials. In the future, Pando Lake has a plan to provide advanced fininancial products based on 4swap and other Pando series products.
-- **4swap** - 4swap is totally driven by the community, anyone can join the community and send request to [list new pools](../tutorials/listing).
+- **Pando Lake** —— Pando Lake 有自己的代理来处理发送给它的交易来为其用户提供服务，因为它只允许具有强大社区基础和经过验证的资金池。 未来，Pando Lake 计划提供基于 4swap 和 其他 Pando 系列产品的高级金融产品。
+- **4swap** —— 4swap是一个完全由社区驱动，任何人都能加入社区并请求 [添加新资金池](../tutorials/listing)。
 

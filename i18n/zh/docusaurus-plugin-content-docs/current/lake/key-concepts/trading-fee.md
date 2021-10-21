@@ -1,9 +1,9 @@
 ---
-title: Trading Fees
+title: 交易费
 sidebar_position: 5
 date: 2021-09-29 22:33:07
 ---
 
-For the pairs pUSD-USDT(ERC-20), pUSD-USDT(TRC-20), pUSD-USDC, pUSD-DAI, and BTC-wBTC, the swapping fee is 0.04%. For the rest of pairs, the swapping fee is 0.3%.
+对于 pUSD-USDT(ERC-20), pUSD-USDT(TRC-20), pUSD-USDC, pUSD-DAI, 和 BTC-wBTC 交易对, 交换手续费为 0.04%。 其余的交易对，交换手续费为0.3%。
 
-The trading fee is paid to all liquidity providers proportional to their shares of the liquidity pool.
+交易费按照资金流动性提供者在流动性池中提供的资金份额比例，支付给所有的资金流动性提供者。

@@ -1,6 +1,6 @@
 {
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "Página No Encontrada",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
@@ -12,7 +12,7 @@
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "Cerrar",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.paginator.navAriaLabel": {
@@ -32,7 +32,7 @@
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "Etiquetas:",
     "description": "The label alongside a tag list"
   },
   "theme.blog.post.readMore": {
@@ -56,7 +56,7 @@
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "Etiquetas",
     "description": "The title of the tag list page"
   },
   "theme.blog.post.plurals": {

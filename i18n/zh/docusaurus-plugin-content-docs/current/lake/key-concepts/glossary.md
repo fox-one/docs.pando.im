@@ -1,23 +1,23 @@
 ---
-title: Glossary
+title: 词汇表
 sidebar_position: 6
 date: 2021-08-15 22:33:07
 ---
 
-### Swapping Related
+### 交易相关
 
-1. [Swapping](https://docs.pando.im/docs/lake/tutorials/swapping)
-2. [Slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
-3. Price impact
+1. [交易](https://docs.pando.im/docs/lake/tutorials/swapping)
+2. [滑点](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
+3. 价格影响
 
-### Liquitity Related
+### 流动性相关
 
-1. [Providing Liquidity](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)
-2. [Remove Liquidity](https://docs.pando.im/docs/lake/tutorials/removing-liquidity)
-3. [Lp-token](https://docs.pando.im/docs/lake/key-concepts/lp-token)
+1. [提供流动性](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)
+2. [移除流动性](https://docs.pando.im/docs/lake/tutorials/removing-liquidity)
+3. [Lp-代币](https://docs.pando.im/docs/lake/key-concepts/lp-token)
 
-### Others
+### 其他
 
-1. [Impermanent Loss](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
-2. [Automated Market Maker(AMM)](https://docs.pando.im/docs/lake/key-concepts/amm-mechanism)
+1. [无常损失](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
+2. [自动化做市商（AMM）](https://docs.pando.im/docs/lake/key-concepts/amm-mechanism)
 3. [Mixin Trust Group(MTG)](https://docs.pando.im/docs/lake/key-concepts/mtg)

@@ -6,19 +6,19 @@ date: 2021-09-29 22:33:07
 
 Pando Rings supports the following cryptocurrencies:
 
-| Symbol | Name       | Collateral Factor |
-| ------ | ---------- | ----------------- |
-| BTC    | Bitcoin    | 65%               |
-| ETH    | Ethereum   | 65%               |
-| LTC    | Litecoin   | 65%               |
-| EOS    | EOS        | 65%               |
-| DOT    | Polkadot   | 65%               |
-| pUSD   | Pando USD  | 65%               |
-| USDT   | Tether USD | 0%                |
-| XIN    | Mixin      | 0%                |
-| MOB    | MoblieCoin | 0%                |
+| Symbol | Name   | Collateral Factor |
+| ------ | ------ | ----------------- |
+| BTC    | 비트코인   | 65%               |
+| ETH    | 이더리움   | 65%               |
+| LTC    | 라이트코인  | 65%               |
+| EOS    | 이오스    | 65%               |
+| DOT    | 폴카닷    | 65%               |
+| pUSD   | 판도 USD | 65%               |
+| USDT   | 테더 USD | 0%                |
+| XIN    | 믹스인    | 0%                |
+| MOB    | 모바일코인  | 0%                |
 
-## Will Pando Rings support other cryptocurrencies?
+## Pando Rings는 다른 암호화폐도 지원할 예정인가요?
 
 Yes.
 

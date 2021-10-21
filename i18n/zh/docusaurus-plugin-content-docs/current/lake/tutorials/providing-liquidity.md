@@ -1,33 +1,33 @@
 ---
-title: Providing liquidity
+title: 提供流动性
 sidebar_position: 3
 date: 2021-08-15 22:33:07
 ---
 
-There are three ways to add liquidity.
+有三种方式可以添加流动性。
 
-Entry 1: Pools page - click on the specific pool - Pool page "+"
+入口 1：流动池 页面——点击指定的池——“+”
 
 ![](../assets/add-liquidity-p1.png)
 
-Entry 2: If you are already on the Swap page, find "Add Liquidity" in the Assets pool section
+入口 2：如果你已经在交易页面，在资金池部分找到“+流动性”
 
 ![](../assets/add-liquidity-p2.png)
 
-Entry 3: If you have previously provided liquidity, you can find the pool on the Me page. Click on the pool and you will see "+'
+入口 3：如果您之前提供过流动性，您可以在“我的”页面上找到该池。 点击这个池你将看到“+”
 
 ![](../assets/add-liquidity-p3.png)
 
-After adding liquidity, you will receive the corresponding lp tken in the dialog window.
+添加流动性后，您将在对话窗口中收到相应的LP代币。
 
 ![](../assets/add-liquidity-p4.png)
 
 ````mdx-code-block
 :::tip
 
-1. Two type of crypto currencies must be added at the same time to provide liquidity successfully and obtain LP tokens. If you only add one then exit the page, or you don't get an LP token after the addition, don't worry, the currency you paid will be refunded in ten minutes.
+1. 必须同时添加两种加密货币才能成功提供流动性并获得 LP 代币。 如果您只添加了一种货币然后就退出页面，或者您在添加货币后没有得到LP代币，别担心，您支付的货币将在10分钟内退还。
 
-2. There is no handling fee for add liquidity.
+2. 添加流动性没有手续费。
 
 :::
 ````

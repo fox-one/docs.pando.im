@@ -1,13 +1,13 @@
 ---
-title: Checking asset information
+title: 检查资产信息
 sidebar_position: 5
 date: 2021-08-15 22:33:07
 ---
 
-Search the asset you are interested - click on the asset icon on the pool page, then you will land on the asset information page.
+搜索您感兴趣的资产——点击矿池页面的资产图标，然后你将进入资产信息页面。
 
 ![](../assets/asset-info.png)
 
-You can click 🔄 to switch the price display, and click the ➡️ to view more information.
+您可以点击🔄切换价格显示，点击➡️查看更多信息。
 
-Swipe down on the screen, and I can see the relevant chart of the trading pair and a small amount of historical transaction records.
+向下滑动屏幕，可以看到交易对的相关图表和少量历史交易记录。

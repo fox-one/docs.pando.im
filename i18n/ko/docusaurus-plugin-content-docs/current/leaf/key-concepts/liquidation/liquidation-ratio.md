@@ -1,11 +1,11 @@
 ---
-title: Liquidation Ratio
+title: 청산 비율
 sidebar_position: 2
 date: 2021-08-13 14:33:07
 ---
 
-The Liquidation Ratio is the minimum required collateralization level for each Vault type before it is considered undercollateralized and subject to liquidation.
+청산 비율은 담보 부족으로 간주되어 청산 대상이 되기 전에 각 볼트 유형에 필요한 최소 담보 수준입니다.
 
-Each Vault type’s Liquidation Ratio is determined by a combination of the collateral’s risk profile and the Stability Fee. There may be multiple Vault types for each collateral, with varying Liquidation Ratios and Stability Fees.
+각 볼트 유형의 청산 비율은 담보물의 위험 프로파일과 안정성 수수료의 조합에 의해 결정됩니다. 각 담보물의 청산 비율과 안정성 수수료에 따라 여러 가지 볼트 유형이 있을 수 있습니다.
 
-Liquidation Ratio = (Collateral Amount x Collateral Price) ÷ Generated pUSD × 100
+청산 비율 = (담보 금액 x 담보 가격) ÷ 생성된 pUSD × 100

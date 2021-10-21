@@ -1,19 +1,19 @@
 ---
-title: How are prices determined?
+title: 价格由何决定？
 sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
-Every transaction on pando lake/4swap will have an impact on the price.
+Pando Lake/4swap 上的每笔交易都会对价格产生影响。
 
-If the total amount of the liquidity pool is large, the transaction amount is negligible relative to the depth of the liquidity pool, and this transaction will have a very low price impact, which called [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss/).
+如果流动池的总量很大，交易量相对于流动池的深度来说是微不足道的，这笔交易将会有非常小的价格影响，这叫做 [滑点](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss/)。
 
-When the impact reaches a certain level, the price on 4swap is different from the prices on other exchanges, which will form an arbitrage space. There are many automatic arbitrage robots working hard all the time to ensure consistent prices.
+当影响达到一定程度，4swap的价格与其他交易所的价格不同时，将形成套利空间。 有许多自动套利机器人一直在努力确保价格一致。
 
 ````mdx-code-block
 :::caution
 
-It is important to pay attention to the size of the transaction amount relative to the total amount of liquidity. If the transaction amount is too high relative to the total amount of the liquidity pool, the transaction price will seriously deviate from the market price, resulting in greater losses.
+重要的是，要注意交易金额相对于流动性总量的大小。 如果交易金额相对于流动池的总量过高，交易价格将严重偏离市场价格，造成较大的损失。
 
 :::
 ````

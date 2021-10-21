@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "다음",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Pando Lake": {
@@ -8,7 +8,7 @@
     "description": "The label for category Pando Lake in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guide": {
-    "message": "Guide",
+    "message": "가이드",
     "description": "The label for category Guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Leaf": {
@@ -20,7 +20,7 @@
     "description": "The label for category Pando Rings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Resources": {
-    "message": "Resources",
+    "message": "리소스",
     "description": "The label for category Resources in sidebar tutorialSidebar"
   },
   "sidebar.docs.category.Pando Lake & 4swap": {
@@ -28,11 +28,11 @@
     "description": "The label for category Pando Lake & 4swap in sidebar docs"
   },
   "sidebar.docs.category.Guide": {
-    "message": "Guide",
+    "message": "가이드",
     "description": "The label for category Guide in sidebar docs"
   },
   "sidebar.docs.category.API Reference": {
-    "message": "API Reference",
+    "message": "API 참조",
     "description": "The label for category API Reference in sidebar docs"
   },
   "sidebar.docs.category.Pando Leaf": {
@@ -44,7 +44,7 @@
     "description": "The label for category Pando Rings in sidebar docs"
   },
   "sidebar.docs.category.Resources": {
-    "message": "Resources",
+    "message": "리소스",
     "description": "The label for category Resources in sidebar docs"
   }
 }

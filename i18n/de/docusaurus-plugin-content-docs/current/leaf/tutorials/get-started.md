@@ -29,7 +29,7 @@ You are required to [add a vault](https://docs.pando.im/docs/leaf/tutorials/open
 
 BTC locked is your collateral in the vault. We can see 1 btc in the inmage means we pledged 1 btc in pando leaf.
 
-What needs to be focused on is collateral Ratio, [Liquadation Price](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio), [current price and Next price](https://docs.pando.im/docs/leaf/key-concepts/price-oracles).
+Worauf man sich fokussieren sollte, ist der Besicherungsgrad, [Liquiditätspreis,](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio), [Währungspreis und nächste Preis](https://docs.pando.im/docs/leaf/key-concepts/price-oracles).
 
 Take the above picture as an example, the current mortgage rate is 4414.4%, and the liquidation price is 1500 pusd, which means that when the price of BTC drops to 1500 pusd, it will be forced to enter the liquidation process.
 

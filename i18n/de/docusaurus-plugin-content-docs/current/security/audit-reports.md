@@ -1,5 +1,5 @@
 ---
-title: Audit Reports
+title: Auditberichte
 sidebar_position: 3
 ---
 
@@ -7,9 +7,9 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
-## Audit Reports from IOActive
+## Auditberichte von IOActive
 
-### Download Report
+### Bericht Herunterladen
 
 [Audit report from IOActive](//docs.pando.im/reports/ioactive-report.pdf)
 

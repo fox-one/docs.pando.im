@@ -1,22 +1,22 @@
 ---
-title: Liquidity Provider Token (LP Token)
+title: 流动性提供者代币(LP 代币)
 sidebar_position: 1
 date: 2021-08-15 22:33:07
 ---
 
-Liquidity provider tokens or LP tokens are ERC-20 tokens issued to liquidity providers on Pando Lake / 4swap. You can think of it as an IOU or a receipt.
+流动性提供者代币或 LP 代币是在 Pando Lake / 4swap 上发行给流动性提供者的 ERC-20 代币。 您可以将其视为借据或收据。
 
-LP tokens are used to track individual contributions to the overall liquidity pool, as LP tokens held correspond proportionally to the share of liquidity in the overall pool.
+LP 代币用于跟踪个人对整体流动池的贡献，因为持有的 LP 代币与整个流动池中的流动性份额成正比。
 
-At the most basic level, LP tokens work on the following formula:
+在最基本的层面上，LP 代币按照以下公式发挥作用：
 
-**Total Value of Liquidity Pool / Circulating Supply of LP Tokens =  Value of 1 LP Token**
+**流动池总价值/LP代币流通供应量=1LP代币的价值**
 
-Just like other assets, the LP tokens can be transerred and traded.
+就像其他资产一样，LP 代币可以转让和交易。
 
-Whenever a trade occurs, a [fee](./trading-fee) is charged to the transaction sender. This fee is distributed pro-rata to all LPs in the pool upon completion of the trade.
+每当交易发生时，都会向发起交易的人收取[服务费](./trading-fee)。 该服务费在交易完成后按比例分配给流动池中的所有流动性提供者。
 
-To retrieve the underlying liquidity, plus any fees accrued, liquidity providers can remove liquidity, "burning" their liquidity tokens. This will allow them to exchange LP tokens for their portion of the liquidity pool, plus the proportional fee allocation. **The yield will not be distributed while the user is still holding the LP tokens.**
+为了恢复基础流动性，加上任何积累的服务费，流动性提供者可以移除流动性，“燃烧”他们的流动性代币。 这将允许他们兑换LP代币以换回他们在流动性池中的份额，以及按比例分配的费用。 **当用户仍然持有LP代币时，不会分配收益。**
 
 
 

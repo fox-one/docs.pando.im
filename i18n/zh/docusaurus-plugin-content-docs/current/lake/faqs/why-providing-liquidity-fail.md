@@ -1,5 +1,5 @@
 ---
-title: Why did I fail in providing liquidity?
+title: 为什么我提供流动性失败？
 sidebar_position: 4
 date: 2021-08-15 22:33:07
 ---
@@ -9,12 +9,12 @@ import { Improvement, } from "@site/src/components/admonitions";
 <Improvement />
 
 
-The common failure of liquidity injection is caused by exceeding slippage. Please refresh the page to get the latest trading pair data.
+流动性注入失败的常见原因是超额滑点。 请刷新页面以获取交易对的最新数据。
 
-When injecting liquidity, there is a very important principle: the injection behavior should not change the current trading pair price.
+在注入流动性时，有一个非常重要的原则：注入行为不应改变交易对的当前价格。
 
-Therefore, there is also the concept of slippage when injecting liquidity. When injecting liquidity, the proportion of assets in the liquidity pool is changed due to the trading behavior of others, or in a more general sense, the price of the liquidity pool occurs due to the transaction. Big change. There is a difference between the injected assets and the current liquidity pool ratio. If the difference exceeds a certain ratio, the liquidity injection will fail. That is, slippage is exceeded.
+因此，在注入流动性时也存在滑点的概念。 在注入流动性时，流动性池中资产的比例因他人的交易行为而发生变化，或者从更一般意义上讲，流动池的价格因交易而发生变化。 大幅变化： 注入资产与当前流动资金池比例存在差异。 如果差额超过一定比例，流动性注入将会失败。 这就是，超额滑点。
 
-There is also a situation where the injection fails, that is, the two assets injected are too small to obtain the minimum amount of LP shares. It will also lead to failure to inject liquidity.
+还有一种情况注入失败是，注入的两种资产太小，无法获得最小数量的LP份额。 这也将导致注入流动性失败。
 
-If you encounter other situations in the transaction that cause the transaction to fail, please contact our community manager-Chris (ID: 37160854) or ask questions in the Pando Lakeofficial community (ID: 7000103578)
+如果您遇到其他在交易中导致交易失败的情况，请联系我们的社区经理Chris (ID: 37160854)，或者在Pando Lake官方社群(ID: 7000103578)提问。

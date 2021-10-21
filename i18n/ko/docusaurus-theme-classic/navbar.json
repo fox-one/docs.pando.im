@@ -1,22 +1,22 @@
 {
   "title": {
-    "message": "Pando Docs",
+    "message": "Pando 문서",
     "description": "The title in the navbar"
   },
   "item.label.User Manuals": {
-    "message": "User Manuals",
+    "message": "사용자 설명서",
     "description": "Navbar item with label User Manuals"
   },
   "item.label.Developer": {
-    "message": "Developer",
+    "message": "개발자",
     "description": "Navbar item with label Developer"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "블로그",
     "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
-    "message": "GitHub",
+    "message": "깃허브",
     "description": "Navbar item with label GitHub"
   }
 }

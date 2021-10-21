@@ -1,25 +1,25 @@
 ---
-title: Removing liquidity
+title: 移除流动性
 sidebar_position: 4
 date: 2021-08-15 22:33:07
 ---
 
-Entry 1: Pools page - click on the specific pool - Pool page "-"
+入口 1：流动池 页面 - 点击指定的池 - 流动池 “-”
 
 ![](../assets/remove-liquidity-p1.png)
 
-Entry 2: If you are already on the Swap page, find "remove Liquidity" in the Assets pool section
+入口 2：如果你已经在交易页面，在资金池部分找到“-流动性”
 
 ![](../assets/remove-liquidity-p2.png)
 
-Entry 3: If you have previously provided liquidity, you can find the pool on the Me page. Click on the pool and you will see "-"
+入口 3：如果您之前提供过流动性，您可以在“我的”页面上找到该池。 点击这个池你将看到“-”
 
 ![](../assets/remove-liquidity-p3.png)
 
 ````mdx-code-block
 :::tip
 
-There is no handling fee for remove liquidity.
+移除流动性没有手续费。
 
 :::
 ````

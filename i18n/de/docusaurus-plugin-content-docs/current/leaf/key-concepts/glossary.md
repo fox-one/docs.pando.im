@@ -1,5 +1,5 @@
 ---
-title: Glossary
+title: Glossar
 sidebar_position: 5
 date: 2021-08-13 12:33:07
 ---
@@ -9,9 +9,9 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
-### Basic Concepts
-1. [Vault](https://docs.pando.im/docs/leaf/key-concepts/vaults)
-2. [Collateral](https://docs.pando.im/docs/leaf/tutorials/add-collateral)
+### Grundkonzepte
+1. [Tresor](https://docs.pando.im/docs/leaf/key-concepts/vaults)
+2. [Kreditsicherungsmittel](https://docs.pando.im/docs/leaf/tutorials/add-collateral)
 3. Coin Minting
 4. Debts
 

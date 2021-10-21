@@ -4,11 +4,11 @@
     "description": "The title in the navbar"
   },
   "item.label.User Manuals": {
-    "message": "User Manuals",
+    "message": "Gebrauchsanleitung",
     "description": "Navbar item with label User Manuals"
   },
   "item.label.Developer": {
-    "message": "Developer",
+    "message": "Entwickler",
     "description": "Navbar item with label Developer"
   },
   "item.label.Blog": {

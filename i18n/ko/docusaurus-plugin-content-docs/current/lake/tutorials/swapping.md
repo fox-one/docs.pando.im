@@ -1,38 +1,37 @@
 ---
-title: Swapping
+title: 스와핑
 sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
 
-By tapping the gear icon, you can set the [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
+기어 아이콘을 탭하여 [슬립페이지](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)를 설정할 수 있습니다.
 
 ![](../assets/swapping-p1.png)
 
 
 
-The route shows the steps your transaction will be processed.
+이 경로는 거래가 처리될 단계를 보여줍니다.
 
 ![](../assets/swapping-p2.png)
 
-Algorithm calculates the optimal route so that you can receive the most asset possible.
+알고리즘은 가능한 많은 자산을 받을 수 있도록 최적의 경로를 계산합니다.
 
 
 
-![](../assets/swapping-p3.png) After entering the 6-digit PIN to complete the payment, the transaction details will pop up. You can also view the transaction details in the dialog window.
+![](../assets/swapping-p3.png) 6자리 PIN을 입력하여 결제를 완료하면 거래 내역이 팝업됩니다. 대화 창에서 거래 세부 정보를 볼 수도 있습니다.
 
 
 
 ![](../assets/swap-p.png)
 
-Click to view [transaction fees](https://docs.pando.im/docs/lake/key-concepts/trading-fee).
+[거래 수수료](https://docs.pando.im/docs/lake/key-concepts/trading-fee)를 보려면 클릭하세요.
 
 ````mdx-code-block
-:::caution
+:::주의
+스와핑 시 가격 영향에 유의하시기 바랍니다. 
 
-Please pay attention to the price effect when swapping. 
-
-When the price impact is too high, it means that the transaction is lack of liquidity or the transaction amount is too large, and continuing trading may cause greater losses.
+가격 영향이 너무 크다는 것은 거래의 유동성이 부족하거나 거래 금액이 너무 크다는 의미이며, 거래를 지속하면 손실이 더 커질 수 있습니다.
 
 :::
 ````

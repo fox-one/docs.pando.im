@@ -1,21 +1,21 @@
 ---
-title: Automated Market Maker (AMM)
+title: 自动化做市商（AMM）
 sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
 
-### What Is an Automated Market Maker?
+### 什么是自动做市商？
 
-> An automated market maker (AMM) is a system that provides liquidity to the exchange it operates in through automated trading.
+> 自动做市商 (AMM) 是一种通过自动交易为交易所运营提供资金流动性的系统。
 
-AMM systems took off after they were first implemented by Shearson Lehman Brothers and ATD in the early 1990s — before their invention, order books were created by humans who manually initiated trades meant to enhance the liquidity of the market.
+AMM 系统在 1990 年代初由 Shearson Lehman 兄弟 和 ATD 首次实施后开始快速发展——在他们发明之前，订单簿是由手动发起的交易，为了提高市场的流动性的人创建的。
 
-This approach was the reason for some slippage and latency in price discovery on the markets. Furthermore, market makers were also accused of market manipulation. When introduced, AMMs solved all the issues caused by human market makers. Now, these types of systems are also being introduced in blockchain-based decentralized exchanges.
+市场发现，这种做法是造成价格滑点和价格延迟的原因。 此外，做市商也被指控操纵市场。 在引入后，AMM们解决了人类做市商造成的所有问题。 现在，这些类型的系统也被引入基于区块链的去中心化交易所。
 
-On AMM-based decentralized exchanges, the traditional order book is replaced by liquidity pools that are pre-funded on-chain for both assets of the trading pair. The liquidity is provided by other users who also earn passive income on their deposit through trading fees based on the percentage of the liquidity pool that they provide.
+在基于 AMM 的去中心化交易所，传统的订单簿被流动池所取代，这些流动池在链上为交易对的两种资产预先提供资金。 流动性由其他用户提供，这些用户根据他们提供的流动性百分比，从交易费存款中获得被动收入。
 
-One decentralized exchange that has implemented an AMM is Uniswap. Uniswap is an Ethereum-based decentralized exchange which allows its users to both supply liquidity to earn passive income or exchange between various assets.
+Uniswap 是一个实施 AMM 的去中心化交易所。 Uniswap 是一个基于以太坊的去中心化交易所，它允许其用户提供流动性以赚取被动收入或在各种资产之间进行交换。
 
-Original link 🔗 [What Is an Automated Market Maker?](https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm)
+原始链接 🔗 [什么是自动化做市商？](https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm)
 
