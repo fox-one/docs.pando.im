@@ -13,7 +13,7 @@ import { Improvement, } from "@site/src/components/admonitions";
 1. [Tresor](https://docs.pando.im/docs/leaf/key-concepts/vaults)
 2. [Kreditsicherungsmittel](https://docs.pando.im/docs/leaf/tutorials/add-collateral)
 3. Coin Minting
-4. Debts
+4. Schulden
 
 ### Vaults related
 1. [Deposit](https://docs.pando.im/docs/leaf/tutorials/add-collateral)

@@ -1,10 +1,10 @@
 ---
-title: How are prices determined?
+title: 가격은 어떻게 결정되나요?
 sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
-Every transaction on pando lake/4swap will have an impact on the price.
+Pando lake/4swap에서의 모든 거래는 가격에 영향을 미칠 것입니다.
 
 If the total amount of the liquidity pool is large, the transaction amount is negligible relative to the depth of the liquidity pool, and this transaction will have a very low price impact, which called [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss/).
 
