@@ -9,8 +9,8 @@
     <icon>https://docs.pando.im/ja/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[Being A Contributor Of Pando With Honors & Awards]]></title>
-        <id>translator</id>
-        <link href="https://docs.pando.im/ja/blog/translator"/>
+        <id>Being A Contributor Of Pando With Honors &amp; Awards</id>
+        <link href="https://docs.pando.im/ja/blog/2021/10/21/translate"/>
         <updated>2021-10-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Pando is an open-source project. Thank you to everyone who has contributed to the growth of Pando.]]></summary>
     </entry>
