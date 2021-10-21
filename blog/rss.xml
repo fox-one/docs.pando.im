@@ -4,9 +4,16 @@
         <title>Pando Blog</title>
         <link>https://docs.pando.im/blog</link>
         <description>Pando Docs Blog</description>
-        <lastBuildDate>Sat, 16 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Being A Contributor Of Pando With Honors & Awards]]></title>
+            <link>https://docs.pando.im/blog/audit-report-20211016</link>
+            <guid>audit-report-20211016</guid>
+            <pubDate>Thu, 21 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pando is an open-source project. Thank you to everyone who has contributed to the growth of Pando.]]></description>
+        </item>
         <item>
             <title><![CDATA[Pando's audit report is released]]></title>
             <link>https://docs.pando.im/blog/audit-report-20211016</link>
