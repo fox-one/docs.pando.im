@@ -1,5 +1,4 @@
 ---
-slug: translator
 title: Being A Contributor Of Pando With Honors & Awards
 author: Pando
 author_title: Pando Team
