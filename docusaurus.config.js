@@ -146,7 +146,7 @@ module.exports = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es', 'ja', 'ko', 'zh'],
+    locales: ['en', 'es', 'ja', 'ko', 'de', 'zh'],
     localeConfigs: {
       en: {
         label: 'English',
@@ -160,6 +160,9 @@ module.exports = {
       },
       ko: {
         label: '한국인',
+      },
+      de: {
+        label: 'Deutsch',
       },
       zh: {
         label: '中文',
