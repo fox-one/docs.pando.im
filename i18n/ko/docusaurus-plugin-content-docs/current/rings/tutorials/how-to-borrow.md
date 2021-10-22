@@ -1,40 +1,40 @@
 ---
-title: Borrowing assets from Pando Rings
+title: Pando Rings에서 자산 대출
 sidebar_position: 5
 date: 2021-09-04 12:33:07
 ---
 
-If you want to borrow an asset in Pando Rings, you can get access by clicking on "I want to borrow " on the Market page. After choosing the asset you want to borrow, you will be on the Borrow page.
+Pando Rings에서 자산을 대출하고 싶으면 마켓 페이지에서 '대출하고 싶습니다'를 클릭하면 접속이 가능합니다. 대출하려는 자산을 선택한 후 대출 페이지로 이동합니다.
 
 ![](../assets/borrow1.jpg)
 
-If you have already entered the Market Overview page and have chosen to view statistics of a specific market, you can also go to borrow from the asset statistics page.
+시장 개요 페이지에 들어가 특정 시장의 통계를 보기로 선택한 경우 자산 통계 페이지에서도 대출할 수 있습니다.
 
 ![](../assets/borrow2.jpg)
 
-If you haven't had any borrow yet, you will also find access to borrow on the Me page. However, if you have outstanding borrow already, you will only be able to see cards of your borrow assets here.
+아직 대출을 받지 않은 경우 Me 페이지에서도 대출에 대한 액세스 권한을 부여 받을 수 있습니다. 다만 이미 대출금 잔액이 있는 경우 여기에서는 대출 자산 카드만 볼 수 있습니다.
 
 ![](../assets/borrow3.jpg)
 
-After landing on the Borrow page, if you have enough [borrow balance](../key-concepts/glossary), you can finish borrow within no time.
+대출 페이지에 접속한 후 충분한 [대출 잔액](../key-concepts/glossary)이 있으면 즉시 대출을 완료할 수 있습니다.
 
 ![](../assets/borrow4.jpg)
 
-Or if you don't have enough borrow balance, you can get more by clicking on "increase balance". You can then conveniently get borrow capacity by choosing from the assets that you have supplied but not pledged (remember any borrow from Pando Rings has to be collateral-backed) or if you need more borrow capacity than the unpledged assets can produce, you can click on "Add new supply" to supply and pledge **all** of your new supply.
+대출 잔액이 부족한 경우 "잔액 증가"를 클릭하여 더 많은 대출금을 얻을 수 있습니다. 그런 다음 공급은 했지만 담보 약정은 하지 않은 자산에서 선택하여 편리하게 대출 능력을 얻을 수 있습니다(Pando Rings에서 대출하려면 담보가 뒷받침되어야 함). "새로운 공급 추가"에서 새 공급량의 **전부**를 공급하고 체결합니다.
 
 ![](../assets/borrow5.jpg)
 
 ![](../assets/borrow6.jpg)
 
-Now that you have increased your borrow balance, you can borrow as you like from the borrow page. :)
+이제 대출 잔액이 늘었으니 대출 페이지에서 원하시는 대로 대출할 수 있습니다. :)
 
-The [loan risk indicator](../key-concepts/loan-risk-indicator) changes with the amount you enter and predicts whether your borrow will be within an acceptable risk level.
+[대출 위험 지표](../key-concepts/loan-risk-indicator)는 입력한 금액에 따라 변경되며 대출이 허용 가능한 위험 수준 내에 있는지 예측합니다.
 
-**Current (Asset name) Borrow** indicates your current borrow amount of a specific asset. **Total Borrow** indicates the total amount of all the assets you have borrowed. **Maximum Market Availability** shows the amount available to borrow of a specific asset. If the amount you intend to borrow is more than the Maximum Market Availability, your order won't come through - you can borrow at most at the Maximum Market Availability.
+**현재(자산명) 차입금**은 특정 자산의 현재 차입금액을 나타냅니다. **총 차입금**은 당신이 차용한 모든 자산의 총액을 나타냅니다. **최대 시장 가용성**은 특정 자산을 빌릴 수 있는 금액을 보여줍니다. 차용하려는 금액이 최대 시장 가용성보다 많으면 주문이 완료되지 않습니다. 최대 시장 가용성 안에서 빌릴 수 있습니다.
 
 ````mdx-code-block
 :::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+이 작업을 지원하려면 [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed)가 필요할 수 있습니다.
 :::
 ````
 

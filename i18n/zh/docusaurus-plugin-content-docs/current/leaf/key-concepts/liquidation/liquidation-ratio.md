@@ -1,11 +1,11 @@
 ---
-title: Liquidation Ratio
+title: 清算率
 sidebar_position: 2
 date: 2021-08-13 14:33:07
 ---
 
-The Liquidation Ratio is the minimum required collateralization level for each Vault type before it is considered undercollateralized and subject to liquidation.
+清算率指的是每种类型的金库在被认为抵押不足必须清算之前所要求的最小的担保比例。
 
-Each Vault type’s Liquidation Ratio is determined by a combination of the collateral’s risk profile and the Stability Fee. There may be multiple Vault types for each collateral, with varying Liquidation Ratios and Stability Fees.
+每一种类型的金库的清算率由抵押品的风险预测与稳定费率决定。 每种抵押品可能有多种金库类型，清算率和稳定费各不相同。
 
-Liquidation Ratio = (Collateral Amount x Collateral Price) ÷ Generated pUSD × 100
+清算率 = (抵押品数额 x 担保价格) ÷ 生成的 pUSD  x 100

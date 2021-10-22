@@ -1,72 +1,72 @@
 ---
-title: Overview
+title: 总览
 sidebar_position: 1
 date: 2021-03-20 12:38:07
 ---
 
-Pando is a decentralized financial network built with the MTG technology, and its underlying financial algorithm is inspired by [MakerDao](https://makerdao.com) and Synthetix.
+Pando 是一个使用 MTG 技术构建的去中心化金融网络，其底层金融算法的灵感来自 [MakerDao](https://makerdao.com) 和 Synthetix。
 
-Pando takes multiple over-collateralized assets and grows multiple Pando assets, which(the grown Pando assets), e.g. pUSD, can also be used as a pledge.
+Pando 获取多个超额抵押资产并增长 Pando 多签资产，其中（增长的 Pando 资产），例如 pUSD，也可以作为质押物。
 
-## An Intro to Pando
+## Pando 简介
 
 ### pUSD
 
-pUSD is a stable coin launched on Dec 25, 2020. Since the launch, the backing ratio of pUSD has always been higher than 200%.
+pUSD 是一种稳定币，于 2020 年 12 月 25 日推出。 自推出以来，pUSD 的抵押率一直高于 200%。
 
-### Pledge
+### 抵押
 
-Nodes have the ability to add any asset as a pledge by voting. Once nodes vote one asset to be a pledge, anybody can borrow pUSD by providing enough specified asset.
+节点可以通过投票添加任何资产作为质押。 一旦节点投票将一项资产作为质押，任何人都可以通过提供足够的指定资产来借出 pUSD。
 
-Nodes also have the ability to adjust various parameters of pledges by voting.
+节点还可以通过投票来调整质押的各种参数。
 
-All assets supported by Mixin Network, including BTC, ETH, etc, are potential pledges for Pando.
+Mixin Network 支持的所有资产，包括 BTC、ETH 等，都是 Pando 的潜在质押物。
 
-### Vaults
+### 金库（抵押库）
 
-All approved pledges can be deposited in the Pando multi-signature address to create a vault to generate pUSD for any Pando user.
+所有批准的质押物都可以存入 Pando 多重签名地址，以创建一个金库，为任何 Pando 用户生成 pUSD。
 
-As long as the price of the pledge is higher than the minimum requirement, the creators have the complete control of their vaults.
+只要质押的平仓价格高于最低要求，金库创建者就可以完全控制他们的金库。
 
-### Interact with Pando
+### 与 Pando 交互
 
-Both users and node administrators must use multi-signature transactions to interact with Pando.
+用户和节点管理员都必须使用多重签名交易才能与 Pando 进行交互。
 
-The methods and parameters of the transactions are all written in the memo which contains extra information of each transfer.
+交易的方法和参数都写在备忘录中，备忘录包含每次转账的额外信息。
 
-Currently, in order to protect user privacy, all information in the memo must be encrypted by the following algorithm:
+目前，为了保护用户隐私，备忘录中的所有信息都必须通过以下算法进行加密：
 
-Pando will generate a pair of ed25519 public and private keys at first, and publish the public key.
+Pando首先会生成一对ed25519公私钥，并发布公钥。
 
-For each transaction, the user generates a pair of temporary ed25519 public and private keys, and generates a string of 32-bit bytes.
+对于每笔交易，用户生成一对临时的 ed25519 公钥和私钥，并生成一个 32 位字节的字符串。
 
-The first 16 bits of these bytes will be the key for AES encryption, and the last 16 bits will be the `iv` of AES encryption.
+这些字节的前 16 位将是 AES 加密的密钥，后 16 位将是 AES 加密的 `iv`。
 
-These bytes must encrypt the original memo and generate a result we call it encrypted bytes. The client should put encrypted bytes and the user’s public key ​​together and encode in base64 as the final memo for the transfer.
+这些字节必须加密原始Memo并生成我们称之为加密字节的结果。 客户端应该将加密的字节和用户的公钥放在一起，并以 base64 编码作为转账的最终Memo。
 
-The nodes of Pando synchronize all transfers from the Mixin Network. When a node recognizes a valid transfer, it performs a reverse operation to restore the key and iv encrypted by AES, and then decrypts the parameters of the action.
+Pando 的节点同步来自 Mixin 网络的所有转账。 当一个节点识别到一个有效的传输时，它会执行一个反向操作来恢复由 AES 加密的 key 和 iv，然后解密该操作的参数。
 
-The nodes need to ensure that they process the user interaction in the same order to ensure that the data stored in the database is completely consistent with other nodes; It should follow the same order when transferring money to ensure that all nodes choose when completing the transfer in the same utxo.
+节点需要保证它们以相同的顺序处理用户交互，以确保数据库中存储的数据与其他节点完全一致； 转账时应该遵循相同的顺序，以确保所有节点在同一个utxo中完成转账。
 
-### Liquidate high-risk vaults
+### 清算高风险金库
 
-In order to ensure that there is always enough pledge in Pando to endorse the loaned pUSD, all vaults will require an excess mortgage such as 150%.
+为了确保 Pando 中始终有足够的质押来背书借出的 pUSD，所有金库都将需要超额抵押，例如 150%。
 
-When the value of the mortgaged assets is insufficient due to market price fluctuations, the vault will enter a high-risk state and be open for liquidation to redeem the pUSD.The liquidation is carried out as auction:
+当抵押资产因市场价格波动而价值不足时，金库将进入高风险状态并开放清算以赎回pUSD。清算以拍卖方式进行：
 
-- If the pUSD got by the auction is enough to pay off the debt in the vault and the liquidation penalty, the auction will sell just the enough amount of pledge to cover the debt and the remaining pledge will be returned to the original owner.
-- If the pUSD got from the auction of the pledge is not enough to pay off the debt and the liquidation penalty, the loss will become Pando’s liability and be shared by all nodes.
+- 如果拍卖得到的 pUSD 足以清偿金库中的债务和清算罚款，则拍卖将出售足够数量的质押物来弥补债务，剩余的质押物将退还给原所有者。
+- 如果拍卖质押得到的 pUSD 不足以清偿债务和清算罚款，损失将成为 Pando 的责任并由所有节点分担。
 
-### Price Oracle
+### 价格预示
 
-Pando needs to synchronize the prices of the pledged assets to update the collateral rate of the vaults and liquidate the high-risk vaults.
+Pando 需要同步质押资产的价格，以更新金库的抵押率并清算高风险金库。
 
-The price data of Pando relies on an external decentralized price service. Pando will not use the price data directly.
+Pando 的价格数据依赖于外部的去中心化价格服务。 Pando 不会直接使用价格数据。
 
-Pando adds an one-hour delay to all price data. During this period, if someone attacks a price service, the nodes can vote to change the state of the pledge to be frozen urgently. Nodes can also vote for new prices.
+Pando 为所有价格数据增加了一小时的延迟。 在此期间，如果有人攻击价格服务，节点可以投票改变质押状态，紧急冻结。 节点还可以投票支持新价格。
 
-### Summary and future works
+### 总结与未来工作
 
-Pando has achieved the goal that decentralized the consensus among trusted nodes, bringing the stable coin minting service to all users of the Mixin Network.
+Pando 实现了去中心化可信节点共识的目标，为 Mixin Network 的所有用户带来稳定的铸币服务。
 
-Pando also reserves the ability to extend the lending to non-stable assets. For example, it can issue a 1:1 token pTesla against Tesla stock on the Mixin network, and then plege the Bitcoin on Pando to generate pTesla, which will build connections between the assets in the Mixin Network and the external assets of outside world.
+Pando 还保留将贷款扩展到非稳定资产的能力。 例如，它可以在 Mixin 网络上针对 Tesla 股票发行 1:1 的代币 pTesla，然后在 Pando 上质押比特币以生成 pTesla，这将在 Mixin 网络中的资产与外部世界的资产之间建立连接。

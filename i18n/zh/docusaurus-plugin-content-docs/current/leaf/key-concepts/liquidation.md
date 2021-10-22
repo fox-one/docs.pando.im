@@ -1,41 +1,41 @@
 ---
-title: Liquidation
+title: 清算
 date: 2021-07-28 22:33:07
 ---
 
-## Auction Process
+## 拍卖流程
 
-When a vault breaches the minimum required collateralization ratio, it will be liquidated and the collateral will be on auction. Anyone can participate in the auction. The ongoing auction can be found in the Ongoing section on the Auctions page.
+当金库违反最低要求的抵押比率时，它将被清算，抵押品将被拍卖。 任何人都可以参加拍卖。 正在进行的拍卖可以在拍卖页面的“进行中”部分找到。
 
-There are TWO phases of the auction.
+拍卖分为两个阶段。
 
-**For Phase 1**, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+**第1阶段**，参与者以不少于之前投标金额3%的增量出价，以支付最高金额的未偿债务。 如果在12小时内，没有人愿意支付总债务，拍卖已经结束，愿意支付最高金额债务的投标人将把所有抵押品收入囊肿。 或者，如果有人竞标支付总债务，那么拍卖将进入第二阶段。
 
-**For Phase 2**, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt. The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.
+**对于第2阶段**，参与者在接受支付总债务的抵押品的最小部分时，以不少于之前投标金额的3%的递减价出价。 竞拍成功者需要偿还所有债务，以换取他(她)提交出价的最小金额的抵押品。
 
-## Liquidation Ratio
+## 清算比例
 
-The Liquidation Ratio is the minimum required collateralization level for each Vault type before it is considered undercollateralized and subject to liquidation.
+清算比率是每种金库类型在被视为抵押不足和需要清算之前的最低抵押水平。
 
-Each Vault type’s Liquidation Ratio is determined by a combination of the collateral’s risk profile and the Stability Fee. There may be multiple Vault types for each collateral, with varying Liquidation Ratios and Stability Fees.
-
-```
-Liquidation Ratio = (Collateral Amount x Collateral Price) ÷ Generated pUSD × 100
-```
-
-## Liquidation Price
-
-The Liquidation Price is the price at which a Vault becomes vulnerable to liquidation.
-
-Vault owners can lower their liquidation price by adding more collateral or returning pUSD to the Vault.
+每个金库类型的清算比率由抵押品的风险概况和稳定费用组合决定。 每种抵押品可能有各自的金库类型，清算比率和稳定费用各不相同。
 
 ```
-Liquidation Price = (Generated pUSD * Liquidation Ratio) / (Amount of Collateral)
+清算比率=(抵押品数量x抵押品价格)÷生成的pUSD×100
 ```
 
-## Liquidation Penalty
+## 清算价格
 
-A Liquidation Penalty is a fee paid by Vault owners when the value of their collateral reaches the Vault's Liquidation Price.
+清算价格是金库容易受到清算的代价。
 
-The Liquidation Penalty is added to the Vault’s total outstanding generated pUSD when liquidation occurs, which results in more collateral being sold at auction.
+金库所有者可以通过向金库中添加更多抵押品或退还pUSD来降低清算价格。
+
+```
+清算价格=(产生的pUSD*清算比率)/(抵押品金额)
+```
+
+## 清算罚金
+
+清算罚金是抵押资产所有者在抵押品价值达到抵押清算价格时支付的费用。
+
+当清算发生时，清算罚金会被添加到抵押资产未偿产生的pUSD总额中，这导致更多的抵押品在拍卖会上出售。
 

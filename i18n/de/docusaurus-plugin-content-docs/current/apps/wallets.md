@@ -5,13 +5,13 @@ sidebar_position: 1
 
 ## Mixin Messenger
 
-[Mixin Messenger](https://mixin.one/messenger) is an open source cryptocurrency wallet, which supports almost all popular cryptocurrencies.
+[Mixin Messenger](https://mixin.one/messenger) ist eine Open-Source-Kryptowährungs-Wallet, die fast alle gängigen Kryptowährungen unterstützt.
 
-Mixin Messenger is developed by Mixin Core Team, who release it under the GPL-3.0 license.
+Mixin Messenger wird vom Mixin Core Team entwickelt, das es unter der GPL-3.0-Lizenz veröffentlicht.
 
-For users, please download the app from its official website [mixin.one](https://mixin.one/messenger).
+Benutzer können die App von der offiziellen Website [mixin.one](https://mixin.one/messenger) herunterladen.
 
-For developers, please check out its source code here at: [Android App](https://github.com/MixinNetwork/android-app), [iOS App](https://github.com/MixinNetwork/ios-app) and [Desktop App](https://github.com/MixinNetwork/desktop-app).
+Entwickler können den Quellcode unter folgender Adresse einsehen: [Android-App](https://github.com/MixinNetwork/android-app), [iOS-App](https://github.com/MixinNetwork/ios-app) und [Desktop-App](https://github.com/MixinNetwork/desktop-app).
 
 
 ## Fennec

@@ -1,16 +1,16 @@
 ---
-title: Leaf API Overview
+title: Leaf API 概述
 sidebar_position: 1
 date: 2021-10-01 23:18:01
 ---
 
-Pando Lake and 4swap provide a simple, developer-friendly APIs for 3rd-party developers.
+Pando Lake and 4swap provide a set of simple, developer-friendly APIs for 3rd-party developers.
 
-## API Endpoints
+## 目前使用的 API 端点
 
-| Name    | Endpoint                      |
-| ------- | ----------------------------- |
-| Primary | https://leaf-api.pando.im/api |
+| 名称 | 端点                            |
+| -- | ----------------------------- |
+| 主要 | https://leaf-api.pando.im/api |
 
 ```
 HTTP_METHOD ${API_BASE}/${API_PATH}

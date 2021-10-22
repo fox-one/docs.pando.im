@@ -1,22 +1,22 @@
 ---
-title: Read Collaterals
+title: 读取抵押物
 sidebar_position: 4
 date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read All Collaterals
+## 读取所有抵押物
 
 ### GET /cats
 
-This API will respond all supported collaterals.
+此 API 将返回所有支持的抵押物资产类型。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read supported assets" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats' />
+<APIRequest title="读取支持的资产" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats' />
 
 ```json title="Response"
 {
@@ -76,11 +76,11 @@ This API will respond all supported collaterals.
 }
 ```
 
-## Read Single Collateral
+## 读取单个抵押物
 
 ### GET /cats/:id
 
-This API will respond one collateral with `:id`
+此 API 将用 `:id` 返回单个抵押物信息。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats/:id" />
 
@@ -88,7 +88,7 @@ This API will respond one collateral with `:id`
 
 <APIParams p-id="the collateral id" p-id-required="{true}" />
 
-<APIRequest title="Read one collateral by ID" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats/d0ec4cc7-edf6-5359-bf23-41fc9d26444e' />
+<APIRequest title="通过ID读取单个抵押物" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats/d0ec4cc7-edf6-5359-bf23-41fc9d26444e' />
 
 ```json title="Response"
 {

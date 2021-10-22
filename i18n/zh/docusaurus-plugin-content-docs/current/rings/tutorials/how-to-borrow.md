@@ -1,40 +1,40 @@
 ---
-title: Borrowing assets from Pando Rings
+title: 从Pando Rings借出资产
 sidebar_position: 5
 date: 2021-09-04 12:33:07
 ---
 
-If you want to borrow an asset in Pando Rings, you can get access by clicking on "I want to borrow " on the Market page. After choosing the asset you want to borrow, you will be on the Borrow page.
+如果您想从 Pando Rings 中借贷，您可以通过点击市场页面上的“我想借”来访问。 选择要借用的资产后，您将进入借用页面。
 
 ![](../assets/borrow1.jpg)
 
-If you have already entered the Market Overview page and have chosen to view statistics of a specific market, you can also go to borrow from the asset statistics page.
+如果您已经进入市场总览页面并选择查看具体市场的数据，您也可以从资产统计页面进行借贷。
 
 ![](../assets/borrow2.jpg)
 
-If you haven't had any borrow yet, you will also find access to borrow on the Me page. However, if you have outstanding borrow already, you will only be able to see cards of your borrow assets here.
+如果你还没有进行过任何借贷，你也可以从我的页面找到借贷的通道。 但是，如果你已经有了未偿还的贷款，你就只能在这里看到你的借贷资产的卡片。
 
 ![](../assets/borrow3.jpg)
 
-After landing on the Borrow page, if you have enough [borrow balance](../key-concepts/glossary), you can finish borrow within no time.
+在登录了借款页面后, 如果你有足够的 [借款平衡](../key-concepts/glossary), 你就可以随时借款.
 
 ![](../assets/borrow4.jpg)
 
-Or if you don't have enough borrow balance, you can get more by clicking on "increase balance". You can then conveniently get borrow capacity by choosing from the assets that you have supplied but not pledged (remember any borrow from Pando Rings has to be collateral-backed) or if you need more borrow capacity than the unpledged assets can produce, you can click on "Add new supply" to supply and pledge **all** of your new supply.
+或者如果你没有足够的借贷余额，你可以通过点击“增加余额”来获得更多。 然后您可以方便地从您已经提供但还未抵押的资产中获得借贷资格(请记住任何从Pando Rings的借贷必须是有抵押品担保的)，或者如果您需要比未抵押的资产能够产生的更多的借贷资格。 您可以点击"添加新的抵押"来供应和保证 **所有** 的新抵押。
 
 ![](../assets/borrow5.jpg)
 
 ![](../assets/borrow6.jpg)
 
-Now that you have increased your borrow balance, you can borrow as you like from the borrow page. :)
+由于您已经增加了您的借款余额，您可以从借款页面借到您想借到的款。 :)
 
-The [loan risk indicator](../key-concepts/loan-risk-indicator) changes with the amount you enter and predicts whether your borrow will be within an acceptable risk level.
+[贷款风险指示器](../key-concepts/loan-risk-indicator) 会随着您输入的数量而变化，并预测您的借贷是否在可接受的风险范围内。
 
-**Current (Asset name) Borrow** indicates your current borrow amount of a specific asset. **Total Borrow** indicates the total amount of all the assets you have borrowed. **Maximum Market Availability** shows the amount available to borrow of a specific asset. If the amount you intend to borrow is more than the Maximum Market Availability, your order won't come through - you can borrow at most at the Maximum Market Availability.
+**当前 (资产名称) 借贷** 表示您当前的具体资产借贷金额。 **总借贷** 表示您所借的所有资产的总金额。 **最大市场可用额度** 显示了具体资产可以借贷的金额。 如果您打算借贷的金额超过最大市场可用额度， 您的订单不会成交——您的最大借贷额度是最大市场可用额度。
 
 ````mdx-code-block
-:::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+:::信息
+您可能需要 [Pando Seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) 来完成这项操作.
 :::
 ````
 

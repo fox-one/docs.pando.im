@@ -1,22 +1,22 @@
 ---
-title: Read Assets
+title: 读取资产
 sidebar_position: 3
 date: 2021-09-30 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read All Assets
+## 读取所有资产
 
 ### GET /assets
 
-This API will respond all supported crypto assets.
+此 API 将返回所有支持的加密资产。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read supported assets" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets' />
+<APIRequest title="读取支持的资产" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets' />
 
 ```json title="Response"
 {
@@ -46,11 +46,11 @@ This API will respond all supported crypto assets.
 }
 ```
 
-## Read Single Asset
+## 读取单个资产
 
 ### GET /assets/:asset_id
 
-This API will respond one crypto asset with `:asset_id`
+此 API 将用 `:asset_id` 返回一个加密资产
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets/:asset_id" />
 
@@ -58,7 +58,7 @@ This API will respond one crypto asset with `:asset_id`
 
 <APIParams p-asset_id="the asset id" p-asset_id-required="{true}" />
 
-<APIRequest title="Read one asset" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
+<APIRequest title="读取单个资产" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
 
 ```json title="Response"
 {

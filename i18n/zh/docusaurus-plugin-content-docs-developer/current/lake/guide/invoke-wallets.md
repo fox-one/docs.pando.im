@@ -1,31 +1,31 @@
 ---
-title: Invoke Wallets
+title: 调用钱包
 sidebar_position: 2
 date: 2021-07-22 22:33:07
 ---
 
-At present, there are two kinds of wallets that are compatible with 4swap/Lake:
+目前有两种钱包与 4swap/Lake 兼容：
 
-- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): A mobile wallet that is created by Mixin core team.
-- [Fennec](/docs/apps/wallets#fennec): A browser extension wallet created by Fox.ONE team.
+- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): Mixin 核心团队创建的移动钱包。
+- [Fennec](/docs/apps/wallets#fennec): Fox.ONE 团队创建的浏览器扩展钱包。
 
-If you are going to provide a web interface that supports any of these wallets, you need to integrate your web app with the wallets and invoke them to pay at the desired time.
+如果您想要提供一个支持这些钱包的应用， 您需要将您的应用与钱包整合起来，并在需要的时候调用它们来处理付款。
 
-## Invoke Messenger
+## 调用Mixin Messenger
 
-To invoke the payment interface of Mixin Messenger is pretty simple:
+调用Mixin Messenger的付款接口非常简单：
 
-At first, you need to get the `code_url` or `code` which indicates a multisig transfer need to confirm.
+首先，您需要获取 `code_url` 或 `code` 来表示多签转账需要被确认。
 
-There are two ways to get it:
+有两种方法来获取它:
 
-1. Follow the API ["/api/actions"](../apis/actions) to create a [swap action](../action-protocol#swap-crypto)
-2. Call the API `https://api.mixin.one/payments` to get a payment object which contains `code_id`
-3. Generate a transaction at your own backend and pass the code/code_url to the frontend.
+1. 按照API ["/api/actions"](../apis/actions) 创建一个 [swap action](../action-protocol#swap-crypto)
+2. 调用  `https://api.mixin.one/payments` API 来获取包含 `code_id` 的付款对象
+3. 在您的后端生成交易，并将code/code_url传递到前端。
 
-Here I will show you the first ways:
+在这里，我将向您展示第一种方法：
 
-### Way 1
+### 方式1
 
 ```javascript
 const BTC_ASSET_ID = 'c6d0c728-2624-429b-8e0d-d9d19b6592fa';
@@ -34,32 +34,32 @@ const ETH_ASSET_ID = '43d61dcd-e413-450d-80b8-101d5e903357';
 async function pay() {
   const follow_id = uuid.v4();
 
-  // construct the memo
+  // 构造memo
   const memo = `3,${YOUR_USER_ID},${follow_id},${ETH_ASSET_ID},${''},${'0.0001'}`;
 
-  // create action to swap from BTC to ETH
+  // 从 BTC swap 到 ETH
   const resp = await http.post(`/actions`, {
     data: {
       action: memo,
       amount: "0.0001",
       asset_id: BTC_ASSET_ID,
-      // or leave broker_id empty
+      // 或留空 broker_id
       broker_id: '5dbdb169-d56d-4b5b-b066-9b0780691b14',
     }
   });
 
-  // if your web app is running in Messenger's webview
-  // it will invoke the payment UI
+  // 如果您的 web app 在 Messenger的 webview 里运行
+  // 它将调用 payment UI
   window.location.href = `https://mixin.one/codes/${resp.code}`;
 
-  // if your web also support to visit on desktop
-  // you may need to show the QrCode to the users like this:
+  // 如果您的 web app 同时支持桌面端运行
+  // 您可能需要向您的用户展示这样的二维码:
   // const qrCode = generateQrCode(`https://mixin.one/codes/${resp.coded}`)
   // showQrCodeDialog();
 }
 ```
 
-### Way 2
+### 方式2
 
 ```javascript
 const BTC_ASSET_ID = 'c6d0c728-2624-429b-8e0d-d9d19b6592fa';
@@ -68,10 +68,10 @@ const ETH_ASSET_ID = '43d61dcd-e413-450d-80b8-101d5e903357';
 async function pay() {
   const follow_id = uuid.v4();
 
-  // construct the memo
+  // 构造memo
   const memo = `3,${YOUR_USER_ID},${follow_id},${ETH_ASSET_ID},${''},${'0.0001'}`;
 
-  // create action to swap from BTC to ETH
+  // 从 BTC swap 到 ETH
   const resp = await http.post(`https://api.mixin.one/payments`, {
     data: {
       BTC_ASSET_ID,
@@ -83,24 +83,24 @@ async function pay() {
     }
   });
 
-  // if your web app is running in Messenger's webview
-  // it will invoke the payment UI
+  // 如果您的 web app 在 Messenger的 webview 里运行
+  // 它将调用 payment UI
   window.location.href = resp.data.code_url;
 
-  // if your web also support to visit on desktop
-  // you may need to show the QrCode to the users like this:
+  // 如果您的 web app 同时支持桌面端运行
+  // 您可能需要向您的用户展示这样的二维码:
   // const qrCode = generateQrCode(`https://mixin.one/codes/${resp.coded}`)
   // showQrCodeDialog();
 }
 ```
 
-## Invoke Fennec
+## 调用Fennec
 
-Fennec is browser extension wallet, which stores encrypted keystores in the browser.
+Fennec 是在浏览器中储存加密密钥的浏览器扩展钱包。
 
-You don't need to call Mixin API to load assets, read profile or prepare a payment. Instead, Fennec provides its own API to do them all.
+您不需要调用 Mixin API 来加载资产、读取个人资料或准备付款。 相反，Fennec 提供自己的 API 来做所有的事情。
 
-For more information, please read the [demo's source code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp) to figure out.
+欲了解更多信息，请阅读 [demo的源代码](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp)
 
 ```javascript
 // fennec ext
@@ -129,10 +129,10 @@ const ETH_ASSET_ID = '43d61dcd-e413-450d-80b8-101d5e903357';
 function pay() {
   const follow_id = uuid.v4();
 
-  // construct the memo
+  // 构造memo
   const memo = `3,${YOUR_USER_ID},${follow_id},${ETH_ASSET_ID},${''},${'0.0001'}`;
 
-  // create action to swap from BTC to ETH
+  // 从 BTC swap 到 ETH
   const resp = await http.post(`/actions`, {
     data: {
       action: memo,

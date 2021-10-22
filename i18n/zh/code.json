@@ -160,7 +160,7 @@
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "One document found|{count} documents found",
+    "message": "一份文档已被找到|{count} 文档已被找到",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.existingResultsTitle": {
@@ -180,7 +180,7 @@
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "Search by Algolia",
+    "message": "使用Algolia搜索",
     "description": "The ARIA label for Algolia mention"
   },
   "theme.SearchPage.noResultsText": {
@@ -188,47 +188,47 @@
     "description": "The paragraph for empty search result"
   },
   "theme.SearchPage.fetchingNewResults": {
-    "message": "Fetching new results...",
+    "message": "正在获取新的搜索结果...",
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "搜索",
     "description": "The ARIA label and placeholder for search button"
   },
   "com.api_request": {
-    "message": "Example request"
+    "message": "请求示例"
   },
   "com.api_payload": {
-    "message": "Payload"
+    "message": "负载"
   },
   "com.api_params.required": {
-    "message": "*required"
+    "message": "*标注的为必填项目"
   },
   "com.api_params.parameters": {
-    "message": "Parameters"
+    "message": "参数"
   },
   "com.api_metapanel": {
-    "message": "Authentication and options"
+    "message": "认证和选项"
   },
   "com.api_metapanel.public": {
-    "message": "Public Access"
+    "message": "公开访问"
   },
   "com.api_metapanel.authorization": {
-    "message": "Authorization"
+    "message": "授权"
   },
   "com.api_metapanel.limitation": {
-    "message": "Limitation"
+    "message": "限制"
   },
   "com.api_endpoint": {
-    "message": "Endpoint URL"
+    "message": "API 终点 URL"
   },
   "This Article needs additional information.": {
-    "message": "This Article needs additional information."
+    "message": "该条需要补充信息。"
   },
   "Please help improve it by": {
-    "message": "Please help improve it by"
+    "message": "请通过以下方式帮助改进它"
   },
   "polishing the content": {
-    "message": "polishing the content"
+    "message": "润色内容"
   }
 }

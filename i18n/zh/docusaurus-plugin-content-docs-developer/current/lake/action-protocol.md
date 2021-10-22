@@ -1,59 +1,60 @@
 ---
-title: Action Protocol
+title: 操作协议
 sidebar_position: 4
 date: 2021-07-31 11:18:01
 ---
 
-4swap and Lake are MTG applications, which read [multisig transactions](https://developers.mixin.one/document/wallet/api/multisigs/tutorial) from Mixin Network.
+4swap 和 Lake 是MTG 应用程序，从 Mixin 网络读取 [多重签名交易](https://developers.mixin.one/document/wallet/api/multisigs/tutorial)。
 
-To send transfers to 4swap or Lake, the developers must create multisig transfers.
+要发送转账到 4swap 或 Lake，开发人员必须创建多签转账。
 
-4swap and Lake design the **Action Protocol** to illustrate behaviors of each transaction. The Action Protocol is a JSON based protocol, which uses the encrypted memo to store instruction and parameters.
+4swap 和 Lake 设计了 **操作协议 (Action Protocol)** 来阐述每次交易的行为。 操作协议是基于 JSON 的协议，它使用加密memo来存储指令和参数。
 
-## Generate Actions
+## 生成操作
 
-There are two approaches to generate the actions.
+有两种办法来生成操作。
 
-**Using SDK**
+**使用 SDK**
 
-If you are using [4swap SDK](https://github.com/fox-one/4swap-sdk-go), you can use the SDK's methods to simplify the process. The following example showcases how to generate a swap action by  `mtg.SwapAction`.
+如果您正在使用 [4swap SDK](https://github.com/fox-one/4swap-sdk-go)，您可以使用 SDK 的方法来简化过程。 下面的示例展示了如何由  `mtg.SwapAction` 生成一个交换操作。
 
 ```go
-// the ID to trace the orders
+// 追踪订单
 followID, _ := uuid.NewV4()
 
-// build a swap action, specified the parameters
-action := mtg.SwapAction(
+// 构建交换动作，指定参数
+action := mtg。 wapAction(
     receiverID,
     followID.String(),
     OutputAssetID,
-    preOrder.Routes,
-    // the minimum amount of asset you will get.
-    // you may want to change this value to a number which is less than preOrder.FillAmount
+    preorder. outes,
+    // 您将获得的资产的最低数量。
+    // 您可能会希望将这个数值改成稍小于 preOrder.FillAmount 的数值
     preOrder.FillAmount.Div(decimal.NewFromFloat(0.005)),
 )
 
-// generate the memo
+// 生成 memo
 memo, err := action.Encode(group.PublicKey)
 if err != nil {
     return err
 }
 log.Println("memo", memo)
+)
 ```
 
-**Using API**
+**使用 API**
 
-Call the API ["/api/actions"](./apis/actions) to get a signed transfer request that you can use to invoke the wallet service directly.
+调用 API ["/api/actions"](./apis/actions) 来获取签名传输请求，该请求可以让您直接调用钱包提供的服务。
 
-It would be slower than the SDK approach, however you would not need to generate actions and sign them yourself.
+这将比SDK方法慢，但你不需要自己发起行动(generate actions)并签名。
 
-## Specification
+## 规范
 
-### Add Liquidity
+### 添加流动性
 
-When you are going to add liquidity to an existing pair, you need to send two transfers of these two assets in the pair to 4swap's Mainnet address.
+当您要添加流动性到现有的交易对时， 您需要将这两种资产分两次转账发送给4swap的Mainnet地址。
 
-For each transfer, the memo should be constructed in the following form:
+对于每次转账，memo应以以下形式构造：
 
 ```json
 {
@@ -61,20 +62,20 @@ For each transfer, the memo should be constructed in the following form:
 }
 ```
 
-in which,
+其中：
 
-- `{receiver_id}` is the id of user who will receive the LP-Token
-- `{follow_id}` is a UUID to trace the transfer, you can use `UUID.v4()` to create one
-- `{asset_id}` is the opposite asset's ID of the pair you are going to deposit. For example, if you are going to add liquidity to [ETH/BTC pair](https://app.4swap.org/#/pair-info?base=43d61dcd-e413-450d-80b8-101d5e903357&quote=c6d0c728-2624-429b-8e0d-d9d19b6592fa), the asset id is `43d61dcd-e413-450d-80b8-101d5e903357` when you pay `BTC` and `c6d0c728-2624-429b-8e0d-d9d19b6592fa` otherwise.
-- `{slippage}` is the slippage ratio, e.g. 0.001 = 0.1%. It may fail if you specified a small slippage value when the market is volatile
-- `{timeout}` is the timeout in sec. If you don't complete the two transfers in time, the crypto will be refunded to you in `timeout`.
+- `{receiver_id}` 是 LP-Token 接受者的user id
+- `{follow_id}` 是用来追踪转账的 UUID ，您可以使用 `UUID.v4()` 来创建一个
+- `{asset_id}` 是您将要存入的对应资产 ID。 例如，如果您要将流动性添加到 [ETH/BTC 交易对](https://app.4swap.org/#/pair-info?base=43d61dcd-e413-450d-80b8-101d5e903357&quote=c6d0c728-2624-429b-8e0d-d9d19b6592fa)， asset_id就是 `43d61dcd-e413-450d-80b8-101d5e903357`，当您付款 `BTC`时， 对应asset_id就是 `c6d0c728-2224-429b-8e0d-9d19b6592fa`
+- `{slippage}` 是滑点的比率，例如：0.001 = 0.1%。 如果当市场发生变动时，指定了一个小的滑点值可能会导致失败
+- `{timeout}` 是以秒为单位的超时。 如果您没有及时完成这两笔转账，资产将在 `timeout`时间退还给您。
 
-If the two transfers have been handled by the 4swap or Lake before timeout, the user you specified in the memo `receiver_id` will receive some LP-Tokens of this pair.
+如果这两项转账在超时之前成功由4swap或Lake处理， 您在 memo的`receiver_id` 中指定的用户将收到此对应的 LP-Token。
 
 
-### Remove Liquidity
+### 移除流动性
 
-When you are going to remove liquidity of a pair, you need to transfer the LP-Tokens to the 4swap's Mainnet address. Its memo should be in such a form:
+当您要移除对应的流动性时，您需要将LP-Token转账到4swap的Mainnet地址。 它的Memo应采取这样的形式：
 
 ```json
 {
@@ -82,16 +83,16 @@ When you are going to remove liquidity of a pair, you need to transfer the LP-To
 }
 ```
 
-in which,
+其中：
 
-- `{receiver_id}` is the id of user who will receive the crypto
-- `{follow_id}` is a UUID to trace the transfer
+- `{receiver_id}` 是返回资产接受者的user id
+- `{follow_id}` 是用来跟踪转账记录的UUID
 
-If the transfer has been handled, the user you specified in the memo `receiver_id` will receive the equivalent crypto assets.
+如果转账已被处理，您在 memo的`receiver_id` 中指定的用户将收到等量的加密资产。
 
-### Swap Crypto
+### Swap 交换加密货币
 
-When you are going to swap one crypto to another, you need to transfer the crypto which you intend to provide to the 4swap's Mainnet address. The transfer memo should be in such a form:
+当你要交换一个资产到另一个资产时。 您需要将您打算提供的资产转账给4swap的Mainnet地址。 它的Memo应采取这样的形式：
 
 ```json
 {
@@ -99,19 +100,19 @@ When you are going to swap one crypto to another, you need to transfer the crypt
 }
 ```
 
-in which,
+其中：
 
-- `{receiver_id}` is the id of user who will receive the LP-Token
-- `{follow_id}` is a UUID to trace the transfer
-- `{fill_asset_id}` is the asset's ID you are going to use for swapping
-- `{routes}` is a route ids' sequence, which indicate which route you want to use.
-- `{minimum}` is the minimum amount of asset you will get
+- `{receiver_id}` 是 LP-Token 接受者的user id
+- `{follow_id}` 是用来跟踪转账记录的UUID
+- `{fill_asset_id}` 是您准备用于交换的资产的 ID
+- `{routes}` 是路由ID的序列，它表明您想使用哪个路由
+- `{minimum}` 是您期望得到的资产的最小数量
 
-If 4swap or Lake can't get the minimun destination crypto, the swapping will be aborted and the crypto you send to the Mainnet address will be refunded.
+如果4swap 或 Lake 无法取得最小数量的目标资产， 交换将被中止，您发送到Mainnet地址的资产将被退款。
 
-## Parsing 4swap or Lake transfer memo
+## 解析 4swap 或 Lake 的转账 memo
 
-> The transfer memo is a base64 decoded json string
+> 转账Memo是一个 base64 解码的 json 字符串
 
 ```json5
 {

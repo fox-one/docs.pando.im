@@ -4,7 +4,7 @@ sidebar_position: 5
 date: 2021-08-15 22:33:07
 ---
 
-Pando Leaf 是由 [Mixin Trusted Group](https://developers. mixin. one/document/mainnet/mtg) 构建的。 目前，有 5 个创世节点通过 Mixin Network 验证交易并执行管理操作，它们是：
+4swap 是基于 [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg) 构建的。 目前，有 5 个创世节点通过 Mixin Network 验证交易并执行管理操作，它们是：
 
 - [Mixin Team](https://mixin.one/): Mixin Network核心开发团队
 - [Fox.ONE](https://fox.one/): 4swap主要开发团队

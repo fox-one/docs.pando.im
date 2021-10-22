@@ -4,39 +4,39 @@ sidebar_position: 1
 date: 2021-09-04 12:33:07
 ---
 
-When someone supplies an asset to Pando Rings, they are given rTokens in exchange.
+当有人向Pando Rings提供资产时，他们会获得rTokens。
 
-With the meaning of Rings Token, rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets.
+RToken是一种ERC-20令牌，本质上是一个令牌化的供应头寸，可以用作其他流动性池的抵押品或交换其他加密资产。
 
-Every type of cryptocurrency supplied to Pand Rings has a corresponding rToken. For example, if a user supplies ETH, they will receive rETH; if a user supplies BTC, they will receive rBTC.
+供应Pand Rings的每一种加密货币都有相应的 rToken。 例如，如果用户提供 ETH，他们会收到rETH；如果用户提供 BTC，他们会收到rBTC。
 
-rTokens are used in the process of [supplying](./glossary), [pledging](./glossary), [unpledging](./glossary) and [withdrawing](./glossary). And it can be transferred freely to anyone in the same way you transfer any other crypto assets. Please be noted though, **once you have transferred the rTokens to others, you are no longer entitled to the corresponding underlying assets**.
+rTokens用于 [供应](./glossary), [抵押](./glossary), [取消抵押](./glossary) 和 [提取](./glossary) 它可以像转移任何其他加密资产一样自由转让给任何人。 不过请注意，**一旦您将rTokens转让给他人，您将不再有权获得相应的抵押资产**。
 
- Each asset market has its own Supply interest rate ([Supply APY](./glossary)).  Simply by holding rTokens, the suppliers earn **compound** interest.
+ 每个资产市场都有自己的供货利率([Supply APY](./glossary))。  只需持有rTokens，供应者即可赚取**复合**利息。
 
- rTokens accumulate interest through the exchange rate against the corresponding Tokens. Over time, each rToken becomes convertible into an increasing amount of its underlying asset, even while the number of rTokens in your wallet stays the same.
+ rTokens通过相应代币的汇率积累利息。 随着时间的推移，即使钱包中的rToken数量保持不变，每个rToken也可以转换为越来越多的基础资产。
 
- When you [withdraw](./glossary), your rTokens will be converted back to the corresponding Tokens. This is when you will get back your amount you put in as well as the interest yield. **The interest yield will not be distributed while you are holding the rTokens. You will receive it only after you've withdrawed the asset to your wallet.**
+ 当您[提取](./glossary)时，您的rTokens将转换为相应的代币。 此时，您将收回您投入的金额和利息收益率。 **当您持有rTokens时，利息收益率不会进行分配。 只有在将资产提取到钱包后，您才会收到利息分配。**
 
-You can withdraw the underlying asset from rToken at any time, granted that Pando Rings has enough market [liquidity](./glossary) of the asset.
+如果您的Pando Rings有足够的市场[流动性](./glossary)，您可以随时从rToken中提取基础资产。
 
-#### Trace rTokens here:
+#### 在这里追踪 rTokens：
 
 [rUSD (rToken against pUSD)](https://etherscan.io/address/0x3e09ebcb505f085f7b802419cfc92370fd840276)
 
-[rETH (rToken against ETH)](https://etherscan.io/address/0x7bb6a8ed5a15396adedea940714a1ebc7d8e9f6a)
+[rETH (rtoken against ETH)](https://etherscan.io/address/0x7bb6a8ed5a15396adedea940714a1ebc7d8e9f6a)
 
-[rUSDT (rToken against USDT)](https://etherscan.io/address/0x2fe5203c59f84ceb90ea078821bf419b4c0bb6da)
+[rUSD (rToken against USDT)](https://etherscan.io/address/0x2fe5203c59f84ceb90ea078821bf419b4c0bb6da)
 
 [rDOT (rToken against DOT)](https://etherscan.io/address/0x230d8b253cc1c6d43e408cd14907c1fc5fc8eb91)
 
-[rEOS (rToken against EOS)](https://etherscan.io/address/0xee3ecf819b1eb872588d3430ab71145d4bf8be2d)
+[rEOS (rtoken against EOS)](https://etherscan.io/address/0xee3ecf819b1eb872588d3430ab71145d4bf8be2d)
 
 [rLTC (rToken against LTC)](https://etherscan.io/address/0x6f5d7697ba37ebb893e31770fd587c41409351b3)
 
 [rBTC (rToken against BTC)](https://etherscan.io/address/0xe97030e28279182707e977663ea950a99e4af6d7)
 
-[rXIN (rToken against XIN)](https://etherscan.io/address/0xcf8c6b077abe14bd203707876209492b62407c45)
+[rXIN (rtoken against XIN)](https://etherscan.io/address/0xcf8c6b077abe14bd203707876209492b62407c45)
 
 [rMOB (rToken against MOB)](https://etherscan.io/address/0xd3cd1519fc64c20c3ec7c061a88ee23065ddd5ed)
 

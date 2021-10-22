@@ -1,16 +1,16 @@
 ---
-title: Read Vaults
+title: 读取金库
 sidebar_position: 6
 date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read All Vaults
+## 读取所有金库
 
 ### GET /vats
 
-This API will respond all vaults.
+此 API 将返回所有已创建的金库。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vats" />
 
@@ -18,7 +18,7 @@ This API will respond all vaults.
 
 <APIParams p-cursor="the cursor to start from" p-limit="the limitation of items in response" />
 
-<APIRequest title="Read all vaults" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats' />
+<APIRequest title="读取所有金库" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats' />
 
 ```json title="Response"
 {
@@ -29,9 +29,9 @@ This API will respond all vaults.
         "id": "52010fd0-6a9d-393c-abcb-ca997d950bf5",
         "created_at": "2021-04-27T10:51:16Z",
         "collateral_id": "d0ec4cc7-edf6-5359-bf23-41fc9d26444e",
-        // locked Collateral
+        //抵押物
         "ink": "2",
-        // normalized debt
+        //标准化债务 (normalized debt)
         "art": "30530.6925452775230346",
         "identity_id": "1"
       },
@@ -61,11 +61,11 @@ This API will respond all vaults.
 }
 ```
 
-## Read Single Vault
+## 读取单个金库
 
 ### GET /vat/:id
 
-This API will respond one vault with `:id`
+此 API 将根据 `:id` 返回单个金库。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vats/:id" />
 
@@ -73,7 +73,7 @@ This API will respond one vault with `:id`
 
 <APIParams p-id="the vault id" p-id-required="{true}" />
 
-<APIRequest title="Read one vault" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats/52010fd0-6a9d-393c-abcb-ca997d950bf5' />
+<APIRequest title="读取单个金库" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats/52010fd0-6a9d-393c-abcb-ca997d950bf5' />
 
 ```json title="Response"
 {
@@ -89,11 +89,11 @@ This API will respond one vault with `:id`
 }
 ```
 
-## Read All Vault Events
+## 读取金库的所有事件
 
 ### GET /vat/:id/events
 
-This API will respond all events of one vault with `:id`
+此 API 将根据 `:id` 返回一个金库的所有事件。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vat/:id/events" />
 
@@ -101,7 +101,7 @@ This API will respond all events of one vault with `:id`
 
 <APIParams p-id="the vault id" p-id-required="{true}" />
 
-<APIRequest title="Read all events of one vault" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vaults/52010fd0-6a9d-393c-abcb-ca997d950bf5/events' />
+<APIRequest title="读取一个金库的所有事件" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vaults/52010fd0-6a9d-393c-abcb-ca997d950bf5/events' />
 
 ```json title="Response"
 {
@@ -131,11 +131,11 @@ This API will respond all events of one vault with `:id`
 ```
 
 
-## Read My Vaults
+## 读取我的金库
 
 ### GET /me/vats
 
-This API will respond all vaults belonging to current user.
+此 API 将返回当前用户的所有金库。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/me/vats" />
 
@@ -143,7 +143,7 @@ This API will respond all vaults belonging to current user.
 
 <APIParams p-cursor="the cursor to start from" p-limit="the limitation of items in response" />
 
-<APIRequest title="Read all vaults of a user" method="GET" base="https://leaf-api.pando.im/api" url='/me/vats' />
+<APIRequest title="读取一个用户的所有金库" method="GET" base="https://leaf-api.pando.im/api" url='/me/vats' />
 
 ```json title="Response"
 {

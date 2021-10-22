@@ -1,66 +1,66 @@
 ---
-title: Technical Design
+title: 技术设计
 sidebar_position: 2
 date: 2021-03-20 12:38:07
 ---
 
-# Design
+# 设计
 
-## Architecture
+## 架构
 
-Rings is an implementation of MTG and a parachain of Mixin network.
+Rings 是 MTG 的一个实现，也是 Mixin 网络的平行链。
 
 ![](design/architecture.jpg)
 
-#### Mixin MTG struct
+#### Mixin MTG 结构
 
 ![](design/mixin_mtg_struct.jpg)
 
 
-#### MTG system data flow
-* The user transfers a payment(UTXO) that carries business data to the Mixin network.
-* Rings syncs the outputs(UTXO) by parsing the business data(in output.memo)
-* Rings dispatchs the business action(included in business data) and processes each action(supply, borrow...)
+#### MTG系统数据流
+* 用户将携带业务数据（UTXO）转账到 Mixin 网络。
+* Rings 通过解析业务数据（在 output.memo 中）同步输出（UTXO）
+* Rings 调度业务操作（包含在业务数据中）并处理每个操作（供应、借出...）
 
 ![](design/workflow.jpg)
 
-In MTG system, There are two main roles, one is `Payee`, and the another is `cashier`, All business logic is implemented based on these two roles.
+在MTG系统中，主要有两个角色，一个是`Payee`，另一个是`cashier`，所有的业务逻辑都是基于这两个角色来实现的。
 
-* `Payee` receiving the outputs(transactions), decoding the business data from `Output.Memo`, dispatching `actions` ![](design/f_payee.jpg)
+* `Payee` 接收输出（交易），从`Output.Memo` 解码业务数据，调度`actions` ![](design/f_payee.jpg)
 
-* `cashier` spending the token, transfering the token to user ![](design/f_cashier.jpg)
+* `cashier` 消费代币，将代币转给用户 ![](design/f_cashier.jpg)
 
-#### Rings actions
+#### Rings操作
 
-* `Supply`, Suppose users supply the underlying token `ETH` and gain the equity token `rETH` ![](design/tl_supply.jpg)
+* `供应`，假设用户提供底层通证`ETH`，获得权益通证`rETH` ![](design/tl_supply.jpg)
 
-* `Pledge`, Suppose users pledge the equity token `rETH`, meains that users should pay `rETH` to the Rings system ![](design/tl_pledge.jpg)
+* `质押`，假设用户质押权益代币`rETH`，即用户向Rings系统支付`rETH` ![](design/tl_pledge.jpg)
 
-* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some gas `CNB` and will get the equity token `rETH` back ![](design/tl_unpledge.jpg)
+* `取消质押`，假设用户对权益代币`rETH`进行质押，即用户支付一定的gas`CNB`，即可获得权益代币`rETH` 返回 ![](design/tl_unpledge.jpg)
 
-* `Redeem`, Suppose users redeem the underlying token `ETH` from the system, means that users should pay equity token `rETH` and whill get the quivalent underlying token `ETH` back ![](design/tl_redeem.jpg)
+* `赎回`，假设用户从系统中赎回底层代币`ETH`，即用户支付权益代币`rETH`，即可获得等价的底层代币`ETH` 返回 ![](design/tl_redeem.jpg)
 
-* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some gas `CNB` and will gain the expected underlying token `USDT` ![](design/tl_borrow.jpg)
+* `借出`，假设用户需要借入底层代币`USDT`，即用户需要支付一定的gas`CNB`，将获得预期的底层代币`USDT` ![](design/tl_borrow.jpg)
 
-* `Repay`, Suppose users repay `USDT`, means that users pay `USDT` and the users' debt will be reduced ![](design/tl_repay.jpg)
+* `还款`，假设用户偿还`USDT`，即用户支付`USDT`，用户的债务就会减少 ![](design/tl_repay.jpg)
 
-* `quick_pledge`, Suppose users supply the underlying token `ETH` and no equity token `rETH` returns to users ![](design/tl_quick_pledge.jpg)
-* `qick_redeem`, Suppose users redeem `ETH`, users only pay some gas `CNB`, and will get the underlying token `ETH` back ![](design/tl_quick_redeem.jpg)
-* `quick_borrow`, Suppose users can supply `ETH` or `rETH` and can borrow `USDT` directory ![](design/tl_quick_borrow.jpg)
+* `快速质押`，假设用户提供底层代币`ETH`，没有权益代币`rETH`返还给用户 ![](design/tl_quick_pledge.jpg)
+* `快速赎回`，假设用户赎回`ETH`，用户只需支付一定的gas`CNB`，即可赎回底层代币`ETH` ![](design/tl_quick_redeem.jpg)
+* `快速借出`，假设用户可以供应`ETH`或`rETH`，可以借用`USDT` ![](design/tl_quick_borrow.jpg)
 
 
-* `Liquidation`, Suppose User A has Pledged `ETH` and Borrowed `USDT`, once The liquidity of user A's account less than or equal zero, it can be liquidated by other users ![](design/tl_liquidation.jpg)
+* `清算`，假设用户A质押了`ETH`并借入了`USDT`，一旦用户A账户的流动性小于等于0，就可以被其他用户清算 ![](design/tl_liquidation.jpg)
 
-* `Proposal actions`, all governance work produces effects through proposal voting, the current proposals include these:
-    1. `market` for creating market or updating market
-    2. `open-market` for opening market
-    3. `close-market` for closing market
-    4. `allowlist` whether to allow liquidation
-    5. `add-oracle-signer` add the price oracle signer that provides market price
-    6. `rm-oracle-signer` remove the price oracle signer
-    7. `withdraw` withdraw the reserves from the market ![](design/f_proposal.jpg)
+* `提案`，所有治理工作通过提案投票产生效果，目前的提案包括：
+    1. `market` 用于创建市场或更新市场
+    2. `open-market` 用于开放市场
+    3. `close-market` 用于关闭市场
+    4. `allowlist` 是否允许清算
+    5. `add-oracle-signer` 添加提供市场价格的oracle签名者
+    6. `rm-oracle-signer` 移除 oracle 签名者
+    7. `withdraw` 从市场上撤回准备金 ![](design/f_proposal.jpg)
 
-## Code struct
+## 代码结构
 
 ```
 
@@ -81,21 +81,21 @@ In MTG system, There are two main roles, one is `Payee`, and the another is `cas
 
 ```
 
-* [cmd](https://github.com/fox-one/compound/tree/master/cmd) command entry, including start api server and worker and governance tools
-* [config](https://github.com/fox-one/compound/tree/master/config) default config directory
-* [docs](https://github.com/fox-one/compound/tree/master/docs) project documents
-* [core](https://github.com/fox-one/compound/tree/master/core) directory of project's models
-* [pkg](https://github.com/fox-one/compound/tree/master/pkg) project packages that can be exported
-* [service](https://github.com/fox-one/compound/tree/master/service) directory of business codes
-* [store](https://github.com/fox-one/compound/tree/master/store) data repository(data may be stored in database or redis or memory cache)
-* [worker](https://github.com/fox-one/compound/tree/master/worker) directory for jobs that processing data in background
-* [handler](https://github.com/fox-one/compound/tree/master/handler) just for exported apis
-* [Dockerfile](https://github.com/fox-one/compound/tree/master/Dockerfile) for deployment
-* [deploy](https://github.com/fox-one/compound/tree/master/deploy) store configs and tools of deployment
+* [cmd](https://github.com/fox-one/compound/tree/master/cmd) 命令入口，包括启动 api server 和 worker 以及治理工具
+* [config](https://github.com/fox-one/compound/tree/master/config) 默认配置目录
+* [docs](https://github.com/fox-one/compound/tree/master/docs) 项目文档
+* [core](https://github.com/fox-one/compound/tree/master/core) 项目模型目录
+* [pkg](https://github.com/fox-one/compound/tree/master/pkg) 可以导出的项目包
+* [service](https://github.com/fox-one/compound/tree/master/service) 业务代码目录
+* [store](https://github.com/fox-one/compound/tree/master/store)数据存储库（数据可能存储在数据库或redis或内存缓存中）
+* [worker](https://github.com/fox-one/compound/tree/master/worker) 目录，用于在后台处理数据的作业
+* [handler](https://github.com/fox-one/compound/tree/master/handler) 仅用于导出的 api
+* [Dockerfile](https://github.com/fox-one/compound/tree/master/Dockerfile) 用于部署
+* [deploy](https://github.com/fox-one/compound/tree/master/deploy) 存储配置和部署工具
 * [main.go](https://github.com/fox-one/compound/tree/master/main.go)
 * [Makefile](https://github.com/fox-one/compound/tree/master/Makefile)
 
-### [configuration template](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
+### [配置模板](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
 
 ```
 # Fixed value : 1603382400 
@@ -147,49 +147,49 @@ group:
     amount: 0.00000001
 ```
 
-#### [Rest APIs](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go) exported for application layer, including:
+#### 为应用层导出的[Rest API](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go)，包括：
 
 ```
-/markets/all   //response all markets
-/transactions  //response compound transactions
-/price-requests // for price oracle calling
+/markets/all //响应所有市场
+/transactions //响应复合事务
+/price-requests // 用于价格预言机调用
 ```
 
-#### Worker
-* [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) Processes the pending transfers. prepare for transfering a transaction to Mixin network.
-* [syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) Syncs the outputs(UTXO) from Mixin network.
-* [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) Transfers raw transaction to Mixin network.
-* [spentsync](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go) syncs and updates the transfer state.
-* [priceoracle](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go) Fetches a price and put the price on the chain.
-* [payee](https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go) processes outputs and dispatches business actions.
+#### 工作人员
+* [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) 处理待处理的转账。 准备将交易转移到 Mixin 网络。
+* [syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) 同步 Mixin 网络的输出（UTXO）。
+* [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) 将原始交易转移到 Mixin 网络。
+* [spentsync](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go) 同步并更新传输状态。
+* [priceoracle](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go) 获取价格并将价格放到链上。
+* [payee](https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go) 处理输出并调度业务操作。
 
-#### Action processing
-* [borrow](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go) handles the borrow action event.
-* [supply](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go) handles the supply action event.
-* [pledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go) handles the pledge action event.
-* [unpledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go) handles the unpledge action event.
-* [redeem](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go) handles the redeem action event.
-* [repay](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go) handles the repay action event.
-* [liquidation](https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go) handles the liquidation action event
-* [proposal](https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go) handles and dispatches the proposal actions, include: adding market, updating market, closing or opening market, adding or removing allowlist, withdraw
-* [price](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go) handles the price protocal action event.
+#### 操作处理
+* [borrow](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go) 处理借出事件。
+* [supply](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go) 处理供应事件。
+* [pledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go) 处理质押事件。
+* [unpledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go) 处理取消抵押事件。
+* [redeem](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go) 处理赎回事件。
+* [repay](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go) 处理还款事件。
+* [liquidation](https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go)处理清算行动事件。
+* [proposal](https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go) 处理和调度提案动作，包括：添加市场、更新市场，关闭或打开市场，添加或删除许可名单，取回。
+* [price](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go) 处理价格协议事件。
 
 
-### Market Trade-Curbing Mechanism
+### 市场保护机制
 
-> Close the market when the price of a certain market is abnormal.
+> 当某个市场的价格出现异常时关闭市场。
 
-* When the price of a market is maliciously attacked, managers have the right to execute the `close-market` order and apply for a closed-market vote. If the request is approved, the market will be closed.
-* Trades are prohibited in closed markets.
-* However, as long as there are closed markets, liquidation of all markets will be prohibited, because liquidation will affect the liquidity of all market accounts of users.
+* 当市场价格受到恶意攻击时，管理者有权执行`close-market`指令并申请关闭市场投票。 如果投票获得批准，市场将被关闭。
+* 禁止在已关闭的市场进行交易。
+* 但是，只要有封闭的市场，所有市场的平仓都会被禁止，因为平仓会影响用户所有市场账户的流动性。
 
-## The implementation of compound protocol
+## compound协议的实现
 
-* [Interest rate model](https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go) is The core implementation of compound protocol.
+* [利率模型](https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go)是compound协议的核心实现。
 
-* [Borrow balance](https://github.com/fox-one/compound/tree/master/core/borrow.go) user borrow balance contains borrow principal and borrow interest. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
+* [欠款余额](https://github.com/fox-one/compound/tree/master/core/borrow.go) 用户欠款余额包含借出本金和借款利息。 `balance = borrow.principal * market.borrow_index / borrow.interest_index`
 
-* [Accrue interest](https://github.com/fox-one/compound/tree/master/service/market/market.go) Accruing interest only occurs when there is a behavior that causes changes in market transaction data, such as supply, borrow, pledge, unpledge, redeem, repay, price updating. And Only calculated once in the same block.
+* [应计利息](https://github.com/fox-one/compound/tree/master/service/market/market.go) 应计利息仅在市场交易数据中存在导致变化的行为时发生，例如供应、借入、质押、取消质押、赎回、偿还、价格更新。 并且只在同一个区块中计算一次。
 
 ```
     blockNumberPrior := market.BlockNumber

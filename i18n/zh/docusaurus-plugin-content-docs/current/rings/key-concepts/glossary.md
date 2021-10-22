@@ -4,67 +4,67 @@ sidebar_position: 20
 date: 2021-09-04 12:33:07
 ---
 
-### Key Processes
+### 关键流程
 
-**Suppling** The process of putting an asset into Pando Rings. As a result, you get rTokens in return, and will earn interest as long as you are supplying the asset.
+**供应**将资产添加到Pando Rings的过程。 作为结果，您将得到rTokens作为回报，并且只要您供应资产您就能赚取利息。
 
-**Pledging** The process of locking rTokens into the system as collateral to get borrowing power.
+**担保**将rTokens锁在系统中作为抵押品以获得借贷资格的过程。
 
-**Unpledging** The process of unlocking rTokens from the system and as a result, reducing the borrowing power.
+**取消担保**从系统中解锁已锁定的rTokens的过程，并且因此减少了借贷资格。
 
-**Withdrawing** The process of getting back an asset from Pando Rings and have it back to your wallet. You will stop earning interest after you withdraw an asset.
+**提取**从Pando Rings取回一个资产并将其返回到您的钱包的过程。 在您提取资产后您将停止获得利息。
 
-**Borrowing** The process of getting a loan in Pando Rings.
+**借贷**在Pando Rings获得一笔贷款的过程。
 
-**Repaying** The process of paying back your borrowed asset plus the accrued borrow interest.
+**还款**偿还您所借的资产以及累积的利息的过程。
 
-**rToken** rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets.
+**rToken<**rToken是一种ERC-20代币，本质上是一种代币化的供应情况，可以用作其他流动性池的抵押品或者交换其他加密资产。
 
-**Liquidation** When a user's maximum borrow capacity rendered by the total collateral value cannot cover the total loan value, liquidation will happen. In the process, others repay some or all of the user's outstanding borrow on behalf of the borrower and in return receive a discounted amount of collateral held by the borrower.
+**清算**当一个用户由抵押品的总价值提供的最大借贷资格不能涵盖其借款总值时，将会进行清算。 在这一过程中，其他人代表借款人偿还部分或者全部未偿还的贷款，作为回报他们会以折扣价获得借款人持有的抵押品。
 
-### Market
+### 市场
 
-**Total Supply** It stands for the total supplied amount of all assets in the markets of the very moment.
+**总供应量**它代表的是当前市场上供应的所有资产的总量。
 
-**Supply Volume** It stands for the total supplied amount of a specific asset in the market of the very moment.
+**供应量**它代表的是当前市场上供应的具体资产的总量。
 
-**Total Borrow** It stands for the total borrowed amount of all assets in the markets of the very moment.
+**借贷总额**它代表的是当前市场上所有资产的借贷总额。
 
-**Liquidity** It stands for the net amount available to borrow of all the markets of the very moment. It equals to Total Supply minus Total Borrow.
+**流动性**它代表的是当前所有市场可用于借贷的净额。 它等于总供应量减去总借款量。
 
-**Maximum Market Availability** The amount available to borrow of a specific asset. It equals to the Total Supply of an asset minus the Total Borrow of the same asset.
+**最大市场可用额度** 显示了具体资产可借的金额。 它等于同一个资产的总供应量减去总借款量。
 
-**24h Supply** It stands for the total supplied amount of all assets in the markets within the last 24 hours.
+**24小时供应量**它表示的是过去24小时内市场提供的所有资产的总量。
 
-**24h Borrow** It stands for the total borrowed amount of all assets in the markets within the last 24 hours.
+**24小时借款量**它表示的是过去24小时内市场借出的所有资产的总量。
 
-**Supply APY** The estimated annual percentage yield for supplying an asset. The interest is compounded and is calculated every 15 seconds.
+**供应APY** 供应资产的估计年收益率。 利息是按复利计算的，每15秒计算一次。
 
-**Borrow APY** The estimated annual interest rate of an asset a borrower need to pay. The interest is compounded and is calculated every 15 seconds.
+**借APY** 借款人需要支付的资产的估计年利率。 利息是按复利计算的，每15秒计算一次。
 
-**Collateral Factor** It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors. Borrowing allowance, or borrowing capacity is determined as (pledged asset * its collateral factor). Each borrow is thus always initially over-collateralized.
+**抵押系数** 它代表了您可以借入质押资产价值的最大百分比。 每种资产的抵押系数不同。 一般来说，市值占比较大或流动性优秀资产具有较高的抵押系数，而市值占比较低的小币种或流动性相对较差的资产具有较低的抵押系数。 借款限额或者借款资格由(质押资产*其抵押系数) 决定。 因此每笔借款最初总是超额抵押。
 
-### Key Personal Metrics
+### 个人密钥指标
 
-**Net APY** Net APY(annual percentage yield) reflects the estimatd annual net yield based on the Supply APY and Borrow APY of the very moment. It indicates whether you are making money or losing money at the current APYS.
+**Net APY**Net APY(净存款年收益) 反映的是根据当前的供应量APY和借贷量APY估计的净年化收益。 它表示您在当前的APYS是赚钱还是亏钱。
 
-**Borrow Limit** The maximum amount you can borrow. You can increase your borrow limit by increasing the collateral (pledging more assets).
+**借款限额**您的可借最大数额。 您可以通过增加抵押品(质押更多资产) 来增加借款限额。
 
-**Borrow Balance** Borrow Balance = Borrow Limit - Your Borrow. It is the amount you can yet to borrow. If your Borrow Balance is 0, you cannot borrow any asset anymore.
+**借款余额** 借款余额= 借款限额-您的借款。 这是您还可以借到的金额。 如果您的借款余额为0，您不能再借到任何资产。
 
-**Borrow/Borrow Limit** It is the percentage of a user's Borrow against the maximum borrow capacity. Itis used to indicate your loan risk.
+**借贷/借贷限额**：是用户借贷资格的最大百分比。 这被用来表示您的借款风险。
 
-**My Supply** The total amount of all the assets you have supplied (principal plus the accrued interests).
+**我的抵押**：您抵押的所有资产的总额(本金加上累积的利息)。
 
-**My Borrow** The total amount of all the assets you have borrowed (principal plus the accrued interests).
+**我的借贷**：您借贷的所有资产的总额(本金加上累积的利息)。
 
-**Total Pledge** The total amount you have pledged as collateral.
+**担保总额**：您担保为抵押品的总额。
 
-**Total Unpledged** The total amount you haven't pledged as collateral.
+**未担保总额**：您未担保为抵押品的总额。
 
-**Available to Withdraw** The amount of a specific asset you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows
+**可提取**您可以提取的某一具体资产的数额。 这是您未提供担保的资产额和您超出借款额的担保的总和。
 
-**Available to Unpledge** The amount of a specific asset you can unpledge. It is your total pledged amount of the asset minus the part covering the outstanding borrow.
+**可取消担保**：您可以取消对某一具体资产担保的数额。 这是您的资产总质押数额减去未偿还贷款部分。
 
 
 

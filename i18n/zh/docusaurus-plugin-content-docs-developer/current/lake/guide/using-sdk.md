@@ -1,12 +1,12 @@
 ---
-title: Using SDK to Trade
+title: 使用 SDK 进行交易
 sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 
-By default, Pando Lake uses 4swap as the liquidity provider. It's easy to exchange assets at Pando Lake by 4swap's SDK.
+默认情况下，Pando Lake 使用 4swap 作为流动资金提供者。 很容易通过4swap的SDK在Pando Lake上交换资产。
 
-## Import 4swap SDK into your project
+## 导入4swap SDK 到您的项目
 
 ```go
 import (
@@ -17,16 +17,16 @@ import (
 )
 ```
 
-## Get the multisig group information
+## 获取多签组信息
 
-When you perform operations at Pando Lake, such as swapping crypto, adding liquidity, and removing liquidity, you must create multisig transactions and interact with Mixin Network.
+当您在 Pando Lake 执行操作时，例如swap操作，添加流动性和移除流动性时，您必须创建多签交易并与 Mixin 网络交互。
 
-The participants of each multisig are also the members of MTG. So please read them first and save them for later use.
+每个多签参与者也是MTG的成员。 所以请先请求一次，然后保存以备以后使用。
 
 ```go
 ctx := context.TODO()
 
-// use the 4swap's MTG api endpoint
+// 用 4swap's MTG api 端点
 fswap.UseEndpoint(fswap.MtgEndpoint)
 
 // read the mtg group
@@ -39,9 +39,9 @@ if err != nil {
 ...
 ```
 
-## Get all tradable pairs
+## 获取所有可用交易对
 
-To get all supported asset pairs is easy:
+要获得所有支持的资产对是很容易的：
 
 ```go
 pairs, err := fswap.ListPairs(ctx)
@@ -51,23 +51,23 @@ if err != nil {
 ...
 ```
 
-## Calculate the best route to trade
+## 计算最佳交易路径
 
-Before swapping cryptos, we need to specify the swapping route.
+在swap之前，我们需要指定交换路线。
 
-At present, you may let Lake decide the route, but it may cause the performance issues and slow down the bot. Because of that, it is recommended to calculate a swapping route yourself.
+目前，你可以让Lake决定交易路线，但它可能会造成性能问题并减慢机器人的速度。 因此，建议自行计算一个交换路线。
 
-To calculate route is easy. Sort the pairs according to the liquidity and call `Route` or `ReverseRoute` methods, which will return an `order` object that includes the result of calculation.
+计算路由非常容易。 根据流动性排序并调用 `Route` 或 `ReverseRoute` 方法 返回一个 `order` 对象，其中包含计算结果。
 
 ```go
-// sort first
+// 先排序
 sort.Slice(pairs, func(i, j int) bool {
     aLiquidity := pairs[i].BaseValue.Add(pairs[i].QuoteValue)
     bLiquidity := pairs[j].BaseValue.Add(pairs[j].QuoteValue)
     return aLiquidity.GreaterThan(bLiquidity)
 })
 
-// calculate the route
+// 计算路径
 // InputAssetID - the id of the asset you want to paid
 // OutputAssetID - the id of the asset you trade for
 // InputAmount - the amount to calucate the route, for example, 1000
@@ -76,7 +76,7 @@ if err != nil {
     return err
 }
 
-// you can read the best route from Order.RouteAssets, which is an array of asset_id
+// 你可以通过 Order.RouteAssets 读取最佳路径, 会返回一个包含asset_id的数组
 log.Printf("Route: %v", preOrder.RouteAssets)
 log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
 ...
@@ -84,13 +84,13 @@ log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
 
 ````mdx-code-block
 :::info
-If you don't use 4swap SDK, you can implement your own best route algorithm ([golang version](https://github.com/fox-one/4swap-sdk-go/blob/master/route.go), [javascript version](https://github.com/fox-one/4swap-web/blob/develop/src/utils/pair/route.ts)).
+如果你不使用4swap SDK, 你可以实现你自己最好的路由算法([Golang版本](https://github.com/fox-one/4swap-sdk-go/blob/master/route.go), [javascript 版本](https://github.com/fox-one/4swap-web/blob/develop/src/utils/pair/route.ts))。
 :::
 ````
 
-## Construct a real order
+## 构造一个真实的交易
 
-All required information about an order is stored in the transaction memo, in JSON format:
+所有必需的订单信息都存储在交易memo中，格式为 JSON ：
 
 ```json
 {
@@ -98,32 +98,32 @@ All required information about an order is stored in the transaction memo, in JS
 }
 ```
 
-in which,
+其中：
 
-  - {receiver_id} is the id of user who will receive the LP-Token
-  - {follow_id} is a UUID to trace the transfer
-  - {fill_asset_id} is the asset's ID you are going to use for swapping
-  - {routes} is a route ids' sequence, which indicates which route you want to use.
-  - {minimum} is the minimum amount of asset you will get
+  - {receiver_id} 是 LP-Token 接受者的user id
+  - {follow_id} 是用来跟踪转账记录的UUID
+  - {fill_asset_id} 是您准备用于交换的资产的 ID
+  - {routes} 是路由ID的序列，它表明您想使用哪个路由
+  - {minimum} 是您期望得到的资产的最小数量
 
-If you are using 4swap SDK, you can also use the method `mtg.SwapAction` to simplify the process:
+如果您正在使用 4swap SDK，您也可以使用方法 `mtg.SwapAction` 来简化过程：
 
 ```go
-// the ID to trace the orders
+// 追踪订单
 followID, _ := uuid.NewV4()
 
-// build a swap action, specified the parameters
-action := mtg.SwapAction(
+// 构建交换动作，指定参数
+action := mtg。 wapAction(
     receiverID,
     followID.String(),
     OutputAssetID,
-    preOrder.Routes,
-    // the minimum amount of asset you will get.
-    // you may want to change this value to a number which less than preOrder.FillAmount
+    preorder. outes,
+    // 您将获得的资产的最低数量。
+    // 您可能会希望将这个数值改成稍小于 preOrder.FillAmount 的数值
     preOrder.FillAmount.Div(decimal.NewFromFloat(0.005)),
 )
 
-// generate the memo
+// 生成 memo
 memo, err := action.Encode(group.PublicKey)
 if err != nil {
     return err
@@ -133,22 +133,24 @@ log.Println("memo", memo)
 
 ```
 
-## Place an order programmatically
+## 用程序下订单
 
-If you want the bot to place an order, send a multisig transaction from the bot.
+如果你想要机器人下订单，请从机器人发送多签交易。
 
-This is a common scene for arbitrage bot. Please make sure the bot has enough crypto in the bot's wallet.
+这是套利机器人的常见使用场景。 请确保在机器人的钱包中有足够数量的加密货币。
 
-We need to use [mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) client to create and send the transaction to the kernel nodes.
+我们需要使用 [mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) 客户端来创建和发送交易到内核节点。
 
 ```go
-// send a transaction to a multi-sign address which specified by `OpponentMultisig`
-// the OpponentMultisig.Receivers are the MTG group members
+// 将交易发送到由 `OpponentMultisig` 指定的多签地址 
+// OpponentMultisig.Receivers 都是 MTG Group 的成员
 tx, err := client.Transaction(ctx, &mixin.TransferInput{
-    AssetID: payAssetID,
+    AssetID: assetID,
     Amount:  decimal.RequireFromString(amount),
     TraceID: mixin.RandomTraceID(),
-    Memo:    memo,
+  // the `action` field in the response
+    Memo:    resp.Action,
+  // the MTG members from `/api/information`
     OpponentMultisig: struct {
         Receivers []string `json:"receivers,omitempty"`
         Threshold uint8    `json:"threshold,omitempty"`

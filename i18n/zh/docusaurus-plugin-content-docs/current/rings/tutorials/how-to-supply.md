@@ -1,30 +1,30 @@
 ---
-title: Supplying assets to Pando Rings
+title: 向Pando Rings供应资产
 sidebar_position: 2
 date: 2021-09-04 12:33:07
 ---
 
-Supplying is the first step in Pando Rings. When users supply an asset to Pando Rings, they begin earning interest instantly. Interest accrues every minute; users can withdraw their principal plus interest anytime.
+供应是使用Pando Rings的第一步。 当用户向Pando Rings供应资产时，他们便可以立即开始赚取利息。 每分钟都会产生利息； 用户可以随时提取本金加利息。
 
-To supply an asset, you can click on "I want to supply" on the Market Page. It will bring you to the list of Supply assets you can choose from. You will see [Supply Volume](../key-concepts/glossary)and [Supply APY](../key-concepts/glossary) of the asset.
+要供应资产，您可以点击市场页面上的“我想供应”。 它将带您进入您可以选择的供应资产列表。 您将看到资产的[供应量](../key-concepts/glossary)和[供应APY](../key-concepts/glossary)。
 
-After clicking on the asset, you will land on the Supply page.
+单击资产后，您将进入供应页面。
 
 ![](../assets/supply1.jpg)
 
-You can also find the entry to supply if you already entered the Market Overview page and have chosen to view statistics of a specific market. You will find the Supply entry on the asset statistics page.
+如果您已经进入市场概览页面，并选择查看特定市场的统计数据，您也可以找到供应条目。 您将在资产统计页面上找到供应条目。
 
 ![](../assets/supply2.jpg)
 
-If you haven't supplied any asset, you can also find the entry to supply on the Me page. Clicking on "Go to supply" and you will land on the Supply page.
+如果您尚未提供任何资产，您还可以在“我”页面上找到要提供的条目。 单击“转到供应”，您将进入供应页面。
 
 ![](../assets/supply3.jpg)
 
-On the Supply page, you will see key metrics related to the Supply process including the asset's Supply APY, amount you have supplied of the specific asset ("**Supplying**"), the total amount of all the assets you have supplied (**Total Supply**), the total amount you haven't pledged as collateral (**Total Unpledged**) and the exchange rate between the rToken and its underlying asset.
+在供应页面上，您将看到与供应流程相关的关键指标，包括资产的供应 APY、您为特定资产提供的数量（“**供应**”）、 您提供的所有资产的总金额（**总供应量**），您尚未抵押作为抵押品的总金额（**总金额 未抵押**）以及 rToken 与其标的资产之间的汇率。
 
-Enter the amount of the asset you want to supply, and you will see a bottom sheet asking whether you want to pledge the supply volume. The percentage on the right arrow represents [Collateral Factor](../key-concepts/glossary).
+输入您要供应的资产数量，您将看到一个底部的表格，询问您是否要质押供应量。 右侧箭头上的百分比代表[抵押物因素](../key-concepts/glossary)。
 
-As you need to pledge before borrowing on Pando Rings, if you choose "**Supply and Pledge**", you will immediately get the borrow capacity; or if you only want to earn some interest by supplying the asset, you can choose "Supply Only".
+由于在Pando Rings上借款前需要质押，如果选择“**供应并质押**”，您将立即获得借款能力； 或者如果您只想通过提供资产赚取一些利息，您可以选择“仅提供”。
 
 ![](../assets/supply4.jpg)
 

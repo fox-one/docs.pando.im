@@ -1,347 +1,347 @@
 ---
-title: Technical Design
+title: 技术设计
 sidebar_position: 2
 date: 2021-07-12 23:33:07
 ---
 
-# Pando Leaf Design Document
+# Pando Leaf 设计文档
 
-## Interact with Pando
+## 与 Pando 交互
 
-All participants of Pando complete the interaction by transferring tokens to the multisig wallet. Node worker **Syncer** syncs the payments as mixin multisig outputs; another worker **Payee** processes all outputs in order.
+Pando 的所有参与者通过将token发送到多签钱包来完成交互。 节点 Worker 中的 **Syncer** 将所有付款同步为 mixin 多签输出；另有一个 Woker **Payee** 按顺序处理所有输出。
 
-![Pando Design](design/mtg_design.png)
+![Pando Leaf 设计](design/mtg_design.png)
 
-### Mixin Multisig Output
+### Mixin 多签输出
 
-**Output:**
+**输出:**
 
-| field     | description      |
-| --------- | ---------------- |
-| Sender    | user mixin id    |
-| CreatedAt | payment time     |
-| AssetID   | payment asset id |
-| Amount    | payment amount   |
-| Memo      | extra message    |
+| 字段      | 描述          |
+| ------- | ----------- |
+| Sender  | 用户 mixin id |
+| 创建      | 付款时间        |
+| AssetID | 付款资产ID      |
+| Amount  | 付款金额        |
+| Memo    | 附加消息        |
 
-**Output Memo:**
+**输出Memo：**
 
-Memo contain the **TransactionAction** information, see details in [DecodeTransactionAction](https://github.com/fox-one/pando/blob/main/core/action.go).
+Memo 包含 **TransactionAction** 信息，详情见 [DecodeTransactionAction](https://github.com/fox-one/pando/blob/main/core/action.go)。
 
-The memo is maybe AES-encrypted, an ed25519 public key used for compound AES key/iv will be in the first 32 bytes.
+Memo可能是AES加密的，一个用于复合AESkey/iv的ed25519公钥将出现在 Memo 的前32字节。
 
-### TransactionAction Definition
+### TransactionAction 定义
 
-| field    | description                                | type  |
-| -------- | ------------------------------------------ | ----- |
-| FollowID | user defined trace id for this transaction | uuid  |
-| Body     | action type & relevant parameters          | bytes |
+| 字段       | 描述                            | 类型    |
+| -------- | ----------------------------- | ----- |
+| FollowID | 用户为此 transaction 定义的 trace id | uuid  |
+| Body     | 操作类型 & 相关参数                   | bytes |
 
 ## Workers
 
-1. **Syncer** sync unhanded utxo by mixin messenger api & store into WalletStore as **outputs** in updated asc order.
-2. **Payee** pull unhanded utxo from WalletStore in order and parse memo to get the action then handle it. Transfers may be created during handling.
-3. **Assigner** select enough unspent UTXO and assign to a pending transfer.
-4. **Cashier** pull unhandled transfers from WalletStore in order, then request & sign multisig transfer. If enough signatures collected, generate a raw transaction.
-5. **TxSender** commit raw transactions to Mixin Network.
+1. **同步** 通过mixin Messenger api同步未处理的utxo& 存储到钱包商店 **输出** 按更新的asc顺序。
+2. **付款人**按顺序从钱包商店拉取未处理的utxo，然后解析备忘录以获取操作，然后处理它。 转账可能会在处理过程中被创建。
+3. **分配器** 选择足够的未使用的 UTXO 并分配到未处理的转账。
+4. **出纳**按顺序从钱包商店提取未处理的转账，然后请求& 签署多方签名转账。 如果收集到足够的签名，则生成一个新的交易。
+5. **TxSender**将新的交易提交到Mixin网络。
 
-### Syncer Workflow
+### Syncer 工作流程
 
-![Syncer Workflow](design/pando-syncer.png)
+![Syncer 工作流程](design/pando-syncer.png)
 
-### Payee Workflow
+### Payee 工作流程
 
-![Payee Workflow](design/pando-payee.png)
+![Payee 工作流程](design/pando-payee.png)
 
-### Assigner & Cashier & TxSender Workflow
+### Assigner & Cashier & TxSender 工作流程
 
-![Assigner & Cashier Workflow](design/pando-cashier.png)
+![Assigner & Cashier 工作流程](design/pando-cashier.png)
 
-## Actions
+## 操作
 
-All actions supported by Pando with groups cat,flip,oracle,proposal,sys and vat. see [core/action](https://github.com/fox-one/pando/blob/main/core/action.go) for details.
+Pando 支持的所有带有cat、flip、oracle、proposal、sys和vat的操作。 详情见 [core/action](https://github.com/fox-one/pando/blob/main/core/action.go)。
 
-### Sys - system operations
+### Sys - 系统操作
 
-#### #1 Withdraw
+#### #1 提现
 
 > pkg/maker/sys/withdraw.go
 
-withdraw any assets from the multisig wallet, proposal required.
+从多签钱包中提取任何资产，需要发起提案。
 
-**Parameters:**
+**参数:**
 
-| name     | type | description         |
-| -------- | ---- | ------------------- |
-| asset    | uuid | withdraw asset id   |
-| amount   | uuid | withdraw amount     |
-| opponent | uuid | receiver's mixin id |
+| 名称       | 类型   | 描述            |
+| -------- | ---- | ------------- |
+| 资产       | uuid | 提取资产ID        |
+| 数量       | uuid | 提现数量          |
+| opponent | uuid | 接收者的 mixin id |
 
-### Proposal - governance system
+### 提案 - 治理系统
 
 #### #11 Make
 
 > pkg/maker/proposal/make.go
 
-create a new proposal
+创建一个新的提案
 
-**Parameters:**
+**参数:**
 
-| name | type  | description                                         |
-| ---- | ----- | --------------------------------------------------- |
-| data | bytes | action type & parameters will be executed if passed |
+| 名称   | 类型    | 描述               |
+| ---- | ----- | ---------------- |
+| data | bytes | 动作类型& 如果参数传入将被执行 |
 
 #### #12 Shout
 
 > pkg/maker/proposal/shout.go
 
-request node administrator to vote for this proposal
+请求节点管理员为此提案投票
 
-**Parameters:**
+**参数:**
 
-| name | type | description       |
-| ---- | ---- | ----------------- |
-| id   | uuid | proposal trace id |
+| 名称 | 类型   | 描述     |
+| -- | ---- | ------ |
+| id | uuid | 提案追踪ID |
 
-#### #13 Vote
+#### #13 投票
 
 > pkg/maker/proposal/vote.go
 
-vote for a proposal, nodes only. If enough votes collected, the attached action will be executed on all nodes automatically.
+仅节点可以投票支持提案。 如果收集了足够的选票，附加操作将自动在所有节点上执行。
 
-**Parameters:**
+**参数:**
 
-| name | type | description       |
-| ---- | ---- | ----------------- |
-| id   | uuid | proposal trace id |
+| 名称 | 类型   | 描述     |
+| -- | ---- | ------ |
+| id | uuid | 提案追踪ID |
 
-### Cat - manager collaterals
+### Cat - 管理者抵押物
 
-#### #21 Create
+#### #21 创建
 
 > pkg/maker/cat/create.go
 
-create a new collateral type, proposal required.
+创建一个新的抵押类型，需要提案。
 
-**Parameters:**
+**参数:**
 
-| name | type   | description          |
-| ---- | ------ | -------------------- |
-| gem  | uuid   | collateral asset id  |
-| dai  | uuid   | debt asset id        |
-| name | string | collateral type name |
+| 名称   | 类型     | 描述     |
+| ---- | ------ | ------ |
+| gem  | uuid   | 抵押资产ID |
+| dai  | uuid   | 债务资产ID |
+| name | string | 抵押品类名称 |
 
-#### #22 Supply
+#### #22 供应
 
 > pkg/maker/cat/supply.go
 
-supply dai token to increase the total debt ceiling for this collateral type. Payment asset id must be equal to the debt asset id.
+供应dai币以增加这种抵押品类的总债务上限。 付款资产ID必须等于债务资产ID。
 
-**Parameters:**
+**参数:**
 
-| name | type | description         |
-| ---- | ---- | ------------------- |
-| id   | uuid | collateral trace id |
+| 名称 | 类型   | 描述       |
+| -- | ---- | -------- |
+| id | uuid | 抵押资产追踪ID |
 
-#### #23 Edit
+#### #23 编辑
 
 > pkg/maker/cat/edit.go
 
-modify collateral's one or more attributes, proposal required.
+如果需要修改抵押资产的一个或多个属性，必须进行提案。
 
-**Parameters:**
+**参数:**
 
-| name  | type   | description         |
-| ----- | ------ | ------------------- |
-| id    | uuid   | collateral trace id |
-| key   | string | attribute name      |
-| value | string | attributes value    |
+| 名称    | 类型     | 描述       |
+| ----- | ------ | -------- |
+| id    | uuid   | 抵押资产追踪ID |
+| key   | string | 属性名称     |
+| value | string | 属性值      |
 
 #### #24 Fold
 
 > pkg/maker/cat/fold.go
 
-modify the debt multiplier(rate), creating / destroying corresponding debt.
+修改债务乘数(利率)，创建/销毁相应的债务。
 
-**Parameters:**
+**参数:**
 
-| name | type | description         |
-| ---- | ---- | ------------------- |
-| id   | uuid | collateral trace id |
+| 名称 | 类型   | 描述       |
+| -- | ---- | -------- |
+| id | uuid | 抵押资产追踪ID |
 
-### Vat - manager vaults
+### Vat - 管理者金库
 
-#### #31 Open
+#### #31 打开
 
 > pkg/maker/vat/open.go
 
-open a new vault with the special collateral type
+用某特定抵押资产新建一个金库
 
-**Parameters:**
+**参数:**
 
-| name | type    | description         |
-| ---- | ------- | ------------------- |
-| id   | uuid    | collateral trace id |
-| debt | decimal | initial debt        |
+| 名称   | 类型      | 描述      |
+| ---- | ------- | ------- |
+| id   | uuid    | 抵押品追踪ID |
+| debt | decimal | 初始借款    |
 
-#### #32 Deposit
+#### #32 存入
 
 > pkg/maker/vat/deposit.go
 
-transfer collateral into a Vault.
+将抵押品加入保险库。
 
-**Parameters:**
+**参数:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| 名称 | 类型   | 描述     |
+| -- | ---- | ------ |
+| id | uuid | 金库追踪ID |
 
-#### #33 Withdraw
+#### #33 提取
 
 > pkg/maker/vat/withdraw.go
 
-withdraw collateral from a Vault, vault owner only.
+从金库取出抵押品，仅金库拥有者可用。
 
-**Parameters:**
+**参数:**
 
-| name | type    | description          |
-| ---- | ------- | -------------------- |
-| id   | uuid    | vault trace id       |
-| dink | decimal | change in collateral |
+| 名称   | 类型      | 描述     |
+| ---- | ------- | ------ |
+| id   | uuid    | 金库追踪ID |
+| dink | decimal | 更改抵押物  |
 
-#### #34 Payback
+#### #34 还款
 
 > pkg/maker/vat/payback.go
 
-decrease Vault debt.
+减少金库债务。
 
-**Parameters:**
+**参数:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| 名称 | 类型   | 描述     |
+| -- | ---- | ------ |
+| id | uuid | 金库追踪ID |
 
-#### #35 Generate
+#### #35 铸币
 
 > pkg/maker/vat/generate.go
 
-increase Vault debt, vault owner only.
+增加金库债务，仅金库拥有者可用。
 
-**Parameters:**
+**参数:**
 
-| name | type    | description    |
-| ---- | ------- | -------------- |
-| id   | uuid    | vault trace id |
-| debt | decimal | change in debt |
+| 名称   | 类型      | 描述     |
+| ---- | ------- | ------ |
+| id   | uuid    | 金库追踪ID |
+| debt | decimal | 债务变化   |
 
-### Flip - manager auctions
+### 翻转-管理者拍卖
 
 #### #41 Kick
 
 > pkg/maker/flip/kick.go
 
-put collateral up for auction from an unsafe vault.
+对不安全金库中放置的抵押品进行拍卖。
 
-**Parameters:**
+**参数:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| 名称 | 类型   | 描述     |
+| -- | ---- | ------ |
+| id | uuid | 金库追踪ID |
 
 #### #42 Bid
 
 > pkg/maker/flip/bid.go
 
-pay dai to participate in the auction.
+支付dai参与拍卖
 
-> Starting in the tend-phase, bidders compete for a fixed lot amount of Gem with increasing bid amounts of Dai. Once tab amount of Dai has been raised, the auction moves to the dent-phase. The point of the tend phase is to raise Dai to cover the system's debt. During the dent-phase bidders compete for decreasing lot amounts of Gem for the fixed tab amount of Dai. Forfeited Gem is returned to the liquidated vault for the owner to retrieve. The point of the dent phase is to return as much collateral to the Vault holder as the market will allow.
+> 从招标阶段开始，投标人们通过不断增加dai的投标金额竞争一定数量的Gem。 一旦Dai的数量增加，拍卖将进入dent阶段。 倾向阶段的重点是提高dai来偿还系统债务。 在dent阶段，竞标者竞相减少对固定数量Dai竞价的Gem数量。 丧失的Gem会被退回到已清算的金库，让所有者提取。 Dent阶段的重点是在市场允许的情况下将尽可能多的抵押品退还给金库所有者。
 
-**Parameters:**
+**参数:**
 
-| name | type    | description       |
-| ---- | ------- | ----------------- |
-| id   | uuid    | flip trace id     |
-| lot  | decimal | collateral amount |
+| 名称  | 类型      | 描述     |
+| --- | ------- | ------ |
+| id  | uuid    | 翻转追踪ID |
+| lot | decimal | 抵押数量   |
 
-#### #43 Deal
+#### #43 交易
 
 > pkg/maker/flip/deal.go
 
-claim a winning bid / settles a completed auction
+认领中标/完成拍卖
 
-**Parameters:**
+**参数:**
 
-| name | type | description   |
-| ---- | ---- | ------------- |
-| id   | uuid | flip trace id |
+| 名称 | 类型   | 描述     |
+| -- | ---- | ------ |
+| id | uuid | 翻转追踪ID |
 
 ### Oracle - manager price oracle
 
-#### #51 Create
+#### #51 创建
 
 > pkg/maker/oracle/create.go
 
-register a new oracle for the asset, proposal required.
+为资产注册一个新的oracle必须提案。
 
-**Parameters:**
+**参数:**
 
-| name      | type      | description                              |
-| --------- | --------- | ---------------------------------------- |
-| id        | uuid      | asset id                                 |
-| price     | decimal   | initial price                            |
-| hop       | int64     | time delay in seconds between poke calls |
-| threshold | int64     | number of governors required when poke   |
-| ts        | timestamp | request timestamp                        |
+| 名称    | 类型      | 描述                    |
+| ----- | ------- | --------------------- |
+| id    | uuid    | 资产 Id                 |
+| price | decimal | 初始价格                  |
+| hop   | int64   | poke calls之间时间有数秒的延迟。 |
+| 阀值    | int64   | poke时需要的统治者数量。        |
+| ts    | 时间戳     | 请求的时间戳                |
 
-#### #52 Edit
+#### #52 编辑
 
 > pkg/maker/oracle/edit.go
 
-modify an oracle's next price, hop & threshold, proposal required.
+修改某一oracle的下一个价格，hop& 阈值，需要提案。
 
-**Parameters:**
+**参数:**
 
-| name  | type   | description      |
-| ----- | ------ | ---------------- |
-| id    | uuid   | asset id         |
-| key   | string | attribute name   |
-| value | string | attributes value |
+| 名称 | 类型     | 描述    |
+| -- | ------ | ----- |
+| id | uuid   | 资产 id |
+| 密钥 | string | 属性名称  |
+| 值  | string | 属性值   |
 
-#### #53 Poke
+#### #53 点数
 
 > pkg/maker/oracle/poke.go
 
-updates the current feed value and queue up the next one.
+更新当前提要值，并排队等待下一个提要值。
 
-**Parameters:**
+**参数:**
 
-| name  | type      | description       |
-| ----- | --------- | ----------------- |
-| id    | uuid      | asset id          |
-| price | decimal   | new next price    |
-| ts    | timestamp | request timestamp |
+| 名称 | 类型   | 描述      |
+| -- | ---- | ------- |
+| id | uuid | 资产 Id   |
+| 价格 | 小数   | 下一个新的价格 |
+| ts | 时间戳  | 请求时间戳   |
 
 #### #54 Rely
 
 > pkg/maker/oracle/rely.go
 
-add a new price feed to the whitelist, proposal required
+在白名单中添加新的价格提要，需要提案
 
-**Parameters:**
+**参数:**
 
-| name | type  | description   |
-| ---- | ----- | ------------- |
-| id   | uuid  | feed mixin id |
-| key  | bytes | public key    |
+| 名称  | 类型   | 描述         |
+| --- | ---- | ---------- |
+| id  | uuid | 提要mixin id |
+| key | 字节   | 公钥         |
 
 #### #55 Deny
 
 > pkg/maker/oracle/deny.go
 
-remove a price feed from the whitelist, proposal required
+从白名单中删去一个价格源，需要提案。
 
-**Parameters:**
+**参数:**
 
-| name | type | description   |
-| ---- | ---- | ------------- |
-| id   | uuid | feed mixin id |
+| 名称 | 类型   | 描述            |
+| -- | ---- | ------------- |
+| id | uuid | feed mixin id |

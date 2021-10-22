@@ -1,36 +1,36 @@
 ---
-title: Withdrawing assets from Pando Rings
+title: 从Pando 借贷中提取资产
 sidebar_position: 7
 date: 2021-09-04 12:33:07
 ---
 
-When you want to get back the asset you supplied to the market, you will need to withdraw. After withdrawing, you will stop earning supply interest.
+当您想收回您提供给市场的资产时，您需要执行提取操作。 提取后，您将不再获得供应利息。
 
-Click on the supplied asset card on the Me page, then click on "Withdraw", you will then land on the Withdraw page.
+单击“我的”页面上提供的资产卡，然后单击“提取”，然后您将登录“提取”页面。
 
-**Available to withdraw** shows the amount you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows.
+**可提取**显示您可以提取的金额。 这是您的未抵押的资产金额以及未涵盖借款的抵押金额的总和。
 
-**Unpledged** shows your supplied but unpledged amount of a specific rToken. And **Supplying** shows your supply amount of the asset.
+**未抵押**显示您供应但未抵押的特定rToken金额。 **供应**显示您的资产供应量。
 
 ![](../assets/withdraw1.jpg)
 
-The system prioritizes withdrawing from the unpledged amount.
+该系统会优先从未抵押的资产中进行提取。
 
-If the amount you intend to withdraw is not more than your unpledged amount, the system will withdraw directly from the unpledged amount.
+如果您打算提取的金额不超过您的未抵押金额，系统将直接从未抵押金额中提取。
 
-If you do have unpledged amount and the amount you intend to withdraw is more than the unpledged, you will need to first unpledge certain amount then withdraw all the the unpledged amount to receive it in your wallet.
+如果您确实有未抵押金额，并且您打算提取的金额超过未抵押金额，您首先需要取消一定的抵押金额，然后提取所有未抵押金额才能在钱包中收到。
 
 ![](../assets/withdraw2.jpg)
 
 ````mdx-code-block
 :::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+您可能需要 [Pando Seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) 去协助这项操作。
 :::
 ````
 
-If you don't have any unpledged amount left and your pledged amount is not fully covering borrows, the system will directly withdraw for you from your pledged amount, finishing withdrawing in just one step.
+如果您没有剩余的未抵押金额，并且您的抵押金额没有完全用于借款，系统将直接为您从抵押金额中提取，只需一步即可完成提取。
 
-If you have outstanding borrow, it is possible that you cannot withdraw the same amount you have supplied. In this case, please return part or total amount of your borrow first.
+如果您有未偿借款，您可能无法提取与您提供的相同金额。 在这种情况下，请先退还部分或全部借款金额。
 
-Please be noted that, if you have outstanding borrow, withdrawing from your pledged amount, or in other words, unpledging rTokens, will reduce your borrow capacity (borrow limit), affecting your loan risk level. The reasoning behind is, because your borrow stays the same, when your borrow limit decreases, your borrow will take a bigger percentage of your borrow limit. Please be cautious with your withdrawing and avoid [liquidation](../key-concepts/liquidation) of your pledged assets. 
+请注意，如果您有未偿借款，从您的抵押金额中提取资产，或者取消抵押的rTokens，将降低您的借款能力(借款限额)，影响您的贷款风险水平。 背后的原因是由于您的借款保持不变，当您的借款限额下降时，您的借款将占借款限额的更大比例。 请谨慎提取，避免您的质押资产被[清算](../key-concepts/liquidation)。 
 

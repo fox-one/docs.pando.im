@@ -1,42 +1,42 @@
 ---
-title: Compare Lake and 4swap
+title: 比较 Lake 和 4swap
 sidebar_position: 5
 date: 2021-07-31 15:44:07
 ---
 
-**4swap** is an open protocol that provides the basis of the decentralized liquidity and swapping service with a Mixin Trusted Group.
+**4swap** 是一种开放协议，为 Mixin MTG组提供去中心化流动性和交换服务的基础。
 
 ## 4swap
 
-**4swap Broker** is the interface that users interact with 4swap protocol.
+**4swap Broker** 是用户与 4swap 协议交互的接口。
 
-The default broker is the 4swap Mixin Messenger bot (id: 7000103537). If you don't specify a broker ID in the requests, all information about assets, pairs, market, orders will be responded by this broker.
+默认broker是 4swap Mixin Messenger bot（ID：7000103537）。 如果您未在请求中指定broker ID，则有关资产种类、交易对、市场数据、订单数据都将由该broker响应。
 
-You can access this broker's web interface by visiting https://4swap.org.
+您可以通过访问 https://4swap.org 访问该broker的 Web 界面。
 
 ## Pando Lake
 
-**Pando Lake** is a 4swap broker that is hosted by Pando.
+**Pando Lake** 是由 Pando 托管的 4swap broker。
 
-Pando Lake filters the market information to only display the chosen pairs and markets that have good liquidity and are backed by solid communities.
+Pando Lake 过滤市场信息，以仅显示具有良好流动性并有可靠社区支持的货币对和市场。
 
-Pando Lake has an individual Mixin Messenger bot (id: 7000103937), you can also access its web interface by visiting https://lake.pando.im.
+Pando Lake 有一个单独的 Mixin Messenger bot（id：7000103937），您也可以通过访问 https://lake.pando.im 访问其 Web 界面。
 
-The LP-Tokens are shared between Pando Lake and 4swap.
+LP Token在 Pando Lake 和 4swap 之间共享。
 
-### Integrate with Pando Lake
+### 与 Pando Lake 整合
 
-The broker id of Pando Lake is `5dbdb169-d56d-4b5b-b066-9b0780691b14`, which is used in requests.
+Pando Lake的broker id为`5dbdb169-d56d-4b5b-b066-9b0780691b14`，通常用于请求中。
 
-**Authorize to Lake**
+**授权到 Lake**
 
-When call `POST /api/oauth` to authorize the wallet, two parameters `broker_id` and `label` must be specified, in which `label` should be a string "lake".
+调用`POST /api/oauth`对钱包进行授权时，必须指定两个参数`broker_id`和`label`，其中`label` 应该是一个字符串“lake”。
 
-**Other APIs**
+**其他 API**
 
-The parameter `broker_id` should be appended to the query or payload of following API requests:
+参数 `broker_id` 应附加到以下 API 请求的查询或载荷中：
 
-- POST /api/actions, it generates a transfer that could be sent to Pando Lake.
-- GET /api/pairs, it will respond with a `whitelists` field which includes asset ids that are supported by Pando Lake.
+- POST /api/actions，它会生成一个可以发送到 Pando Lake 的转账。
+- GET /api/pairs，它将以 `whitelists` 字段响应，其中包含 Pando Lake 支持的资产 ID。
 
 

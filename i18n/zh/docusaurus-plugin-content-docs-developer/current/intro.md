@@ -1,34 +1,34 @@
 ---
-title: Introducation
+title: 介绍
 sidebar_position: 1
 ---
 
 ## Pando Lake / 4swap
 
-**Develop Guide**
+**开发文档**
 
-  - [Using SDK to Trade](/developer/lake/guide/using-sdk): use a golang sdk to swap crypto at 4swap/Lake.
-  - [Invoke Wallets](/developer/lake/guide/invoke-wallets): call the payment dialog up to complete a transfer with Mixin Network compatible wallets.
+  - [使用 SDK 交易](/developer/lake/guide/using-sdk): 使用 Golang SDK 在4swap/Lake 交易数字资产
+  - [调用钱包](/developer/lake/guide/invoke-wallets)：调用支付对话框以完成与 Mixin Network 兼容钱包的转账。
 
-**Specifications**
+**规范**
 
-- [API Reference](/developer/lake/apis/overview): RESTful API reference.
-- [Action Protocol](/developer/lake/action-protocol): a memo based JSON protocol to swap crypto, add and remove liquidity.
-- [Compare Lake and 4swap](/developer/lake/lake-and-4swap): comparision of Lake and 4swap.
+- [API 参考](/developer/lake/apis/overview): RESTful API 参考
+- [Action Protocol](/developer/lake/action-protocol): 一种基于 JSON 协议的Memo，用于交换加密、添加和移除流动性。
+- [对比Lake和4swap](/developer/lake/lake-and-4swap): 对比Lake和4swap
 
 ## Pando Leaf
 
-**Specifications**
+**规范**
 
-- [API Reference](/developer/leaf/apis/overview): RESTful API reference.
+- [API 参考](/developer/leaf/apis/overview): RESTful API 参考
 
 
 ## Pando Rings
 
-- [API Reference](/developer/rings/apis): RESTful API reference.
-- [SDK Guide](/developer/rings/guide): An easier and faster way to Connect to Pando Rings engine.
+- [API 参考](/developer/rings/apis): RESTful API 参考
+- [SDK 指南](/developer/rings/guide): 连接到 Pando Rings 引擎的更简单和更快的方法。
 
 
-## Resources
+## 资源
 
-- [Examples](/developer/resources/examples)
+- [示例](/developer/resources/examples)

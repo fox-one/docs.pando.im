@@ -1,5 +1,5 @@
 ---
-title: Read Info
+title: 读取信息
 sidebar_position: 2
 date: 2021-09-30 23:18:01
 ---
@@ -7,15 +7,15 @@ date: 2021-09-30 23:18:01
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
 
-## Read MTG Info
+## 读取 MTG 信息
 
 ### GET /info
 
-This API will respond the MTG information of Pando Leaf.
+此 API 将返回 Pando Leaf 的 MTG 信息。
 
 ````mdx-code-block
 :::info
-You can save the response to use it later because the MTG information wouldn't change frequently.
+因为 MTG 信息不会频繁更改，您可以保存返回值以便之后使用。
 :::
 ````
 
@@ -23,7 +23,7 @@ You can save the response to use it later because the MTG information wouldn't c
 
 <APIMetaPanel />
 
-<APIRequest title="Read MTG info" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/info' />
+<APIRequest title="读取 MTG 信息" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/info' />
 
 ```json title="Response"
 {
@@ -44,17 +44,17 @@ You can save the response to use it later because the MTG information wouldn't c
 }
 ```
 
-## Read Server Time
+## 读取服务器时间
 
 ### GET /time
 
-This API will respond the server time of Pando Leaf.
+此 API 将返回 Pando Leaf 的服务器时间。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/time" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read the server time" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/time' />
+<APIRequest title="读取服务器时间" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/time' />
 
 ```json title="Response"
 {

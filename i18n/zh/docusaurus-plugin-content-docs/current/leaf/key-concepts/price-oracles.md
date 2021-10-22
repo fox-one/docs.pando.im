@@ -1,8 +1,8 @@
 ---
-title: Price Oracles
+title: 价格预言机
 sidebar_position: 3
 date: 2021-08-13 12:33:07
 ---
 
-Current price in Pando Leaf is not real-time market price of the assets. Instead, it delays 30 minutes - that is why you see the "Next Price". This design is to allow time for users to respond so as to mitigate the risk of liquidation from sudden decrease in the collateralization ratio as a result of potential extreme market volatility.
+Pando Leaf中资产的当前价格并不是实时市场价。 而是有30分钟的价格延迟——这就是为什么你会看到“下一个价格”。 这种设计是为了让用户有时间做出反应，以减轻由于潜在的极端市场波动导致的抵押率突然下降，进而导致的清算风险。
 

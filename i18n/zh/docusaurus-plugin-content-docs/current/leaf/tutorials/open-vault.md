@@ -1,42 +1,42 @@
 ---
-title: Opening a Vault
+title: 创建金库
 sidebar_position: 2
 date: 2021-08-13 12:33:07
 ---
 
-On “My page” of Pando Leaf, click on "Add a [Vault](https://docs.pando.im/docs/leaf/key-concepts/vaults)" to create a vault and then select from the list from the available vault types according to your needs.
+在Pando Leaf”个人页面“中，点击添加[金库](https://docs.pando.im/docs/leaf/key-concepts/vaults)来创建一个金库，然后根据您的需求从可选金库类型中进行选择。
 
 ![](../assets/leaf-open-vault-p1.png)
 
-Click on "+" and you will land on the page to create a specific vault.
+点击"+"，您将跳转到可以创建指定金库的页面。
 
 ![](../assets/add-a-vault-p2.png)
 
-On the corresponding minting page, respectively fill in the amount of the asset you intend to deposit and the amount of the asset you wish to generate
+在相应的铸币页面， 分别填入你打算存入的资产数量和想要生成的资产数量
 
 ````mdx-code-block
-:::tip
-Generate a vault for the first time, minting at least 100 pusd
-:::
+:::提示
+首次创建金库时，最少需要生成100 pUSD。
+::::
 ````
 
 ![](../assets/leaf-open-vault-p3.png)
 
 
-Click on the button "Deposit to Generate" , make the payments,and allow for some time for the robot to process.
+点击按钮"存入资产以生成"，发起支付，等待机器人处理。
 
-If successfully created the [vault](https://docs.pando.im/docs/leaf/key-concepts/vaults), you will receive the notification and message in the chatbox.
+如果成功创建了 [金库](https://docs.pando.im/docs/leaf/key-concepts/vaults)，你将在机器人对话框中收到通知消息。
 
 ![](../assets/add-a-vault-p4.png)
 
 
 ````mdx-code-block
 :::caution
-Do pay attention to the risk indication bar.
+务必注意风险提示条。
 :::
 ````
 
-You have to keep your **collateralization ratio**(link to the explanation required) in a safe range（above 150%） to avoid **liquidation** (link). When your collateralization ratio breaches the **liquidation ratio** (link), your collaterals will be in **auction** (link to auction process).
+You have to keep your collateralization ratio in a safe range（above 150%） to avoid [liquidation](https://docs.pando.im/docs/leaf/key-concepts/liquidation). When your collateralization ratio breaches the [liquidation ratio](https://docs.pando.im/docs/leaf/key-concepts/liquidation), your collaterals will be in [auction](https://docs.pando.im/docs/leaf/tutorials/auction-participation).
 
 ![](../assets/add-a-vault-p5.png)
 

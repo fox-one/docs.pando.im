@@ -4,16 +4,16 @@ sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
-Pando lake/4swap에서의 모든 거래는 가격에 영향을 미칠 것입니다.
+Pando lake/4swap에서의 모든 거래는 가격에 영향을 미칩니다.
 
-If the total amount of the liquidity pool is large, the transaction amount is negligible relative to the depth of the liquidity pool, and this transaction will have a very low price impact, which called [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss/).
+유동성 풀의 총액이 크고 유동성 풀의 깊이에 비해 거래량이 미미하면 이 거래는 가격에 미치는 영향이 매우 낮습니다. 우리는 거래가 가격에 미치는 이러한 영향을 [슬리피지(slippage)](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss/)라고 부릅니다.
 
-When the impact reaches a certain level, the price on 4swap is different from the prices on other exchanges, which will form an arbitrage space. There are many automatic arbitrage robots working hard all the time to ensure consistent prices.
+영향이 일정 수준에 도달하면 4swap의 가격이 다른 거래소의 가격과 달라져 차익거래 공간이 생깁니다. 일관된 가격을 보장하기 위해 열심히 일하는 많은 자동 차익 거래 로봇들이 있습니다.
 
 ````mdx-code-block
 :::caution
 
-It is important to pay attention to the size of the transaction amount relative to the total amount of liquidity. If the transaction amount is too high relative to the total amount of the liquidity pool, the transaction price will seriously deviate from the market price, resulting in greater losses.
+유동성 총액 대비 거래대금의 규모에 주목해야 합니다. 유동성 풀의 총액 대비 거래금액이 너무 많으면 거래가격이 시장가격에서 크게 벗어나 손실을 입게 됩니다.
 
 :::
 ````

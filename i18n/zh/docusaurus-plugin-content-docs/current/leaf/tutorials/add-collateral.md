@@ -1,15 +1,15 @@
 ---
-title: Add Collateral
+title: 增加抵押物
 sidebar_position: 5
 date: 2021-08-13 12:33:07
 ---
 
-Adding Collateral is useful in two scenarios. The first is when a Vault is coming close to being **liquidated** (link to liquidation), adding collateral can save the Vault. The second is when a Vault owner wants to increase their capacity for generating pUSD, adding collateral will increase the maximum amount of pUSD that can be generated.
+添加抵押物在两种情况下是有用的。 第一种情况是抵押资产接近 **被平仓清算** (与平仓清算相关)，添加抵押物可以保住之前抵押的资产。 第二种情况是，抵押资产的所有人想要增加铸造pUSD的能力，添加抵押可以增大能够铸造pUSD的最大值。
 
-To add collateral, click on "Deposit" and fill in the intended amount on the Deposit page. And then enter the quantity of collateral you want to add and click Deposit in picture on the right
+若要添加抵押物，请单击“存入”，并在存入页面填写你预定存入的金额。 然后输入您想要添加的抵押数量，并单击右侧图片的存入
 
 ![](../assets/leaf-add-collateral-p1.png)
 
-Pay 4 MOB token and see Details, the collateral Increase from 96.8865 to 100.8865. You can see details about this adding in chat window.
+支付 4 MOB币后查看详情， 抵押资产 从 96.8865 增加到100.8865。 您可以在聊天窗口中看到存入资产的详细信息 。
 
 ![](../assets/leaf-add-collateral-p2.png)

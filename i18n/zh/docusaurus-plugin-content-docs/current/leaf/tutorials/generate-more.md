@@ -1,32 +1,32 @@
 ---
-title: Generating More pUSD
+title: 铸造更多pUSD
 sidebar_position: 4
 date: 2021-08-13 12:33:07
 ---
 
-To generate pUSD, click on "Generate" and fill in the amount you want to generate on the Generate page.
+要铸造pUSD，请单击“铸造”，并在铸造页面上填写铸造的金额。
 
 ![](../assets/leaf-generate-p1.png)
 
-Data changes to the latest, and you can see details about this generating in chat window.
+数据更改为最新版本，您可以在聊天窗口中查看有关此次铸造的详细信息。
 
 ![](../assets/leaf-generate-p2.png)
 
 
-Again you need to be careful of the associated risk.
+同时，您需要小心相关风险。
 
 ````mdx-code-block
-:::caution
+::::注意
 
-Please ensure that the mortgage rate is within a safe range, which less than 150% will be [liquidated] totally.
+请确保抵押利率在一个安全范围内，抵押率低于150%[liquidated]抵押资产将完全被平仓清算。
 
 :::
 ````
 
 ````mdx-code-block
-:::info
+:::信息
 
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+您可能需要[pando 种子](https://docs.pando.im/docs/leaf/key-concepts/pando-seed)来协助此操作。
 
 :::
 ````

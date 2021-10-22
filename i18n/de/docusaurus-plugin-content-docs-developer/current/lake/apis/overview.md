@@ -1,14 +1,14 @@
 ---
-title: Lake API Overview
+title: Lake API Übersicht
 sidebar_position: 1
-date: 2021-09-30 23:18:01
+date: 30-09-2021 23:18:01
 ---
 
-Pando Lake and 4swap provide a simple, developer-friendly APIs for 3rd-party developers.
+Pando Lake und 4swap bieten einfache, entwicklerfreundliche APIs für Drittentwickler.
 
-## API Endpoints
+## API-Endpunkte
 
-| Name        | Endpoint                        |
+| Name        | Endpunkt                        |
 | ----------- | ------------------------------- |
 | Primary     | https://api.4swap.org/api       |
 | Alternative | https://mtgswap-api.fox.one/api |

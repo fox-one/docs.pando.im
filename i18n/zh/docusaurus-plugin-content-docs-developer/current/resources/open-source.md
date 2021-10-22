@@ -1,15 +1,15 @@
 ---
-title: Open Source
+title: 开放源代码
 sidebar_position: 1
 date: 2021-08-17 18:59:07
 ---
 
 - **Pando Lake & 4swap**
-  - Node's source code is not ready yet.
+  - 节点源代码尚未准备就绪。
   - [WebApp](https://github.com/fox-one/4swap-web)
 - **Pando Leaf**
-  - [Node](https://github.com/fox-one/pando)
+  - [节点](https://github.com/fox-one/pando)
   - [WebApp](https://github.com/fox-one/pando-leaf-web)
 - **Pando Rings**
-  - [Node](https://github.com/fox-one/compound)
+  - [节点](https://github.com/fox-one/compound)
   - [WebApp](https://github.com/fox-one/pando-rings-web)

@@ -1,51 +1,51 @@
 ---
-title: Overview
+title: 概述
 sidebar_position: 1
 date: 2021-09-30 14:38:07
 ---
 
-Pando Lake is an [Uniswap](https://uniswap.org) v2 implementation built with the MTG technology on Mixin Network. Benefit by Mixin's amazing TPS, Pando Lake has outstanding performance on tradings, most transactions can be confirmed in seconds.
+Pando Lake 是一个 在 Mixin 网络上使用 MTG 技术构建的[Uniswap](https://uniswap.org) v2 实现。 受益于Mixin了不起的TPS，Pando Lake在交易上表现出色，大多数交易可以在几秒钟内确认。
 
-## An Intro to Pando Lake
+## Pando Lake 简介
 
-### Governance
+### 治理
 
-Pando lake is maintained by five trusted nodes. Proposals such as create new pools must be approved by at least three nodes.
+Pando lake 由五个可信节点维护。 创建新池之类的提议必须至少得到三个节点的批准。
 
-### Pool
+### 流动池
 
-Each Pool holds two tokens, which together represent a trading pair for those assets. Liquidity providers deposit tokens into pool to let traders trade；In return, the trade fees are all given to the liquidity provider according to the liquidity contribution ratio.
+每个流动池持有两个代币，它们共同代表这些资产的交易对。 流动性提供者将代币存入池中，让交易者进行交易；作为回报，交易费用根据流动性贡献比例全部给予流动性提供者。
 
-### LP Token
+### LP 代币
 
-Each pool has a unique token (LP Token) to represent circulating liquidity. Holding LP Token is a proof of liquidity providing, and the withdrawal of liquidity also requires payment of LP Token.
+每个矿池都有一个唯一的代币（LP Token）来代表流通的流动性。 持有LP Token是提供流动性的证明，提取流动性也需要支付LP Token。
 
-The total market value of LP Token is equal to the sum of the market value of the two tokens in the Pool.
+LP Token 的总市值等于矿池中两个代币的市值之和。
 
-## Actions
+## 操作
 
-### Deposit
+### 存入
 
-Increase the reserves of a Pool to become liquidity provider.
+增加矿池的储备成为流动性提供者。
 
-![deposit action](assets/pando_lake_deposit_action.png)
+![存款操作](assets/pando_lake_deposit_action.png)
 
-### Withdraw
+### 取回
 
-Pay LP Token back to the Pool to withdraw tokens inside. The reserves of the Pool will be decreased.
+将 LP Token 支付回流动池以提取其中的 Token。 流动池的储备将减少。
 
-![withdraw action](assets/pando_lake_withdraw_action.png)
+![取款操作](assets/pando_lake_withdraw_action.png)
 
-### Trade
+### 交易
 
-Pools are always take the initiative to deal with traders automatically. Users can trade through the pools at any side, Pando Lake supports up to 4 pools for one transaction.
+矿池总是自动处理交易者的请求。 用户可以通过任意一方的矿池进行交易，Pando Lake 最多支持 4 个矿池进行一笔交易。
 
-![trade action](assets/pando_lake_trade_action.png)
+![交易操作](assets/pando_lake_trade_action.png)
 
-## Summary
+## 总结
 
-Pando Lake has achieved the goal that decentralized the consensus among trusted nodes, bringing the dex service with multiple AMM formula to all users of the Mixin Network.
+Pando Lake 实现了去中心化可信节点共识的目标，为 Mixin Network 的所有用户带来了具有多种 AMM 公式的 dex 服务。
 
-Pando Lake has performed well but is far from enough. We are working some new pools to make the liquidity more flexible and efficient. The management of trusted nodes needs to be more open to attract more participants too.
+Pando Lake 表现不错，但还远远不够。 我们正在开发一些新的流动池，以使流动性更加灵活和高效。 可信节点的管理也需要更加开放，以吸引更多的参与者。
 
 

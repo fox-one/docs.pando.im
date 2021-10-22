@@ -1,94 +1,94 @@
 ---
-title: Contribute
+title: 贡献
 sidebar_position: 2
 date: 2021-09-15 22:33:07
 ---
 
-Pando documentation is open source. You are very welcomed to translate it into other languages to make it accessible to greater population!
+Pando 文档是开源的。 非常欢迎您将其翻译成其他语言，让更多的人能够使用它！
 
-## Preparation
+## 准备
 
-Pando documentation is based on [Docusaurus](https://docusaurus.io/docs/en/latest/), a static site generator for React.js.
+Pando 文档是基于 [Docusaurus](https://docusaurus.io/docs/en/latest/) 生成的，Docusaurus 是一种基于 React 的静态网站生成器。
 
-- You need to ensure that you have Yarn installed
-- Clone the repository of the document
-- Run `yarn` in the root of the repo
-- Run `yarn start` to preview the documentation
+- 确保你已经安装了Yarn
+- 克隆文档的仓库
+- 在仓库的根目录下运行 ` yarn `
+- 运行 `yarn启动` 来预览文档
 
-## Document Structure
+## 文档结构
 
-The documentation is organized in the following way:
+Pando 文档是按以下的方式组织编排的：
 
-- all source is in the `docs` directory and `developer` directory
-- the `docs` directory contains the following subdirectories:
-  - `lake` contains all the Pando Lake & 4swap documentation
-  - `leaf` contains all the Pando Leaf documentation
-  - `rings` contains all the Pando Rings documentation
-  - `wallets` contains all documentation about wallets on Mixin Network
-  - `3rd-party-apps` lists applications built on top of Pando
-  - `security` contains documentation concerning security issues
-  - `community` contains all the community documentation
-- the `developer` directory contains the following subdirectories:
-  - `lake` contains the dev documentation of Pando Lake and 4swap
-  - `leaf` contains the dev documentation of Pando Leaf
-  - `rings` contains the dev documentation of Pando Rings
-  - `resources` contains the resources
-- the sidebar of `docs` is defined in `sidebar.docs.js`, the sidebar of `developer` is defined in `sidebar.developer.js`
+- 所有源文件都在 `docs` 和 `developer` 文件夹下
+- `docs` 文件夹下包含以下几个子文件夹
+  - `lake` 包含所有 Pando Lake& 4swap 的文档
+  - `leaf` 包含所有 Pando Leaf 的文档
+  - `rings` 包含所有 Pando Rings 的文档
+  - `wallets` 包含所有关于 Mixin 网络钱包的文档
+  - `3rd-party-apps` 列出一些基于 Pando 构建的第三方应用程序
+  - `security` 包含与安全有关的文档
+  - `community` 包含所有社区相关的文档
+- `developer` 文件夹下包含以下几个子文件夹
+  - `lake` 包含 Pando Lake 和 4swap的开发文档
+  - `leaf` 包含 Pando Leaf 的开发文档
+  - `rings` 包含 Pando Rings 的开发文档
+  - `resources` 包含一些相关资源文件
+- `docs` 的侧边栏在 `sidebar.docs.js` 代码文件中定义，`developer` 的侧边栏在 `sidebar.developer.js` 代码文件中定义
 
-## Translation
+## 翻译工具
 
-### Translate at Crowdin
+### 用 Crowdin 翻译
 
-If you're not familiar with Github and the i18n of Pando, we recommend you to use Crowdin to help us translate the docs.
+如果你不熟悉 Github 和 Pando 的 i18n，我们推荐你使用 Crowdin 来帮助我们翻译文档。
 
-1. [Tap here](https://pando.crowdin.com/u/signup) to sign-up an account of Crowdin
-2. Browse the translation status and progress at [Pando's Page at Crwodin](https://pando.crowdin.com/)
-3. Get familiar with the Crowdin translation UI, as you will need to use it to translate JSON and Markdown files
+1. [点击这里](https://pando.crowdin.com/u/signup)来注册一个 Crowdin 账户
+2. 在[Crwodin的Pando页面](https://pando.crowdin.com/) 查看翻译状态和进度
+3. 熟悉 Crowdin 翻译界面，因为你将会需要使用它来翻译 JSON 和 Markdown 格式的文件
 
-### Translate at Github
+### 用 Github 翻译
 
-#### Generate new translation files for new languages
+#### 为新的语言生成新的翻译文件
 
-If you're the maintainer of this project, please follow the instructions in the [i18n tutorial](https://docusaurus.io/docs/i18n/tutorial) to add a new language.
+如果你是这个项目的维护者，请按照[ i18n 教程](https://docusaurus.io/docs/i18n/tutorial) 中的指示来添加一种新的语言。
 
 
-**Translate the index page**
+**翻译索引页面**
 
-Please follow the instructions [here](https://docusaurus.io/docs/i18n/tutorial#use-the-translation-apis) to translate your index page and react components.
+请按照 [此处](https://docusaurus.io/docs/i18n/tutorial#use-the-translation-apis) 的指示来翻译索引页面和 React 组件。
 
-**Generate/Update json files**
+**生成/更新 json 文件**
 
 ```bash
 yarn run write-translations --locale $LANG_CODE
 ```
 
-The `$LANG_CODE` is the language code of the language you want to generate. For example, if you want to generate the translation files for the French language, you should use `fr`.
+`$LANG_CODE` 是你想要生成的语言的代码。 例如，如果想生成法语的翻译文件，就应该使用`fr`。
 
-The translation files are generated in the `i18n/$LANG_CODE/` directory.
+翻译文件生成在 `i18n/$LANG_CODE/` 文件夹下。
 
-**Generate Markdown files**
+**生成 Markdown 文件**
 
-Copy the docs Markdown files to `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, and translate them:
+将文档Markdown文件复制到`i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`，并翻译它们：
 
 ```bash
 mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
 cp -r docs/** i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
 ```
 
-#### Translate the documents
+#### 翻译文档
 
-All the documents are placed in the `i18n/$LANG_CODE/` according to the languages.
+所有文档都根据语言被放置在 `i18n/$LANG_CODE/` 中。
 
-- `i18n/$LANG_CODE/code.json`: the translation of the index page and the text used by docusaurus.
-- `i18n/$LANG_CODE/docusaurus-theme-classic/footer.json`: the translation of footer.
-- `i18n/$LANG_CODE/docusaurus-theme-classic/navbar.json`: the translation of navbar.
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current.json`: the label of category on sidebar.
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current/**`: the markdown files of documents.
+- `i18n/$LANG_CODE/code.json`: 索引页面和文档使用的 docusaurus 进行翻译。
+- `i18n/$LANG_CODE/docusaurus-theme-classic/footer.json`页脚翻译。
+- `i18n/$LANG_CODE/docusaurus-theme-classic/navbar.json`: 导航栏翻译。
+- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current.json`: 侧边栏类别标签。
+- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current/**`：文档的markdown文件。
 
-**Preview the translation**
+**翻译预览**
 
 ```bash
-yarn run start --locale $LANG_CODE
+yarn 运行启动 --locale $LANG_CODE
 ```
 
 

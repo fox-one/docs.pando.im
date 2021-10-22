@@ -1,46 +1,46 @@
 ---
-title: Get Started
+title: 开始使用
 sidebar_position: 1
 date: 2021-08-13 12:33:07
 ---
 
-Pando leaf supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.
+Pando Leaf 支持 [Mixin Messenger](https://docs.pando.im/docs/wallets/mixin-messenger) 钱包 和 [Fennec](https://docs.pando.im/docs/apps/wallets) (web钱包) ，下面的内容以Mixin Messenger钱包为例进行说明。
 
-Visit [Pando Leaf](https://leaf.pando.im), or search Mixin ID **7000103924** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando leaf.
+访问 [Pando leaf](https://leaf.pando.im)，或者在Mixin Messenger App中搜索 Mixin ID **7000103924** 并点击蓝色数字。 然后添加机器人并点击小机器人头像打开Pando leaf。
 
 ![](../assets/leaf-get-started-p1.png)
 
 
-Click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces
+点击“连接钱包”来开始。 请务必授权，否则与您的资产相关的数据将无法显示在界面上。
 
 ![](../assets/leaf-get-started-p2.png)
 
 ````mdx-code-block
 :::tip
-Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
+完整检查并授权. 授权只能查看，并不能使用您的资产。 它是安全的。
 :::
 ````
 
-Let's get to know the homepage of pando leaf.
+一起来了解一下Pando Lake的主页吧。
 
 ![](../assets/leaf-get-start-p3.png)
 
-You are required to [add a vault](https://docs.pando.im/docs/leaf/tutorials/open-vault) when first enter.  Let's focus on the screenshot on the right.
+您必须在 [首次进入时添加金库](https://docs.pando.im/docs/leaf/tutorials/open-vault)。  让我们聚焦于右侧的屏幕截图。
 
-BTC locked is your collateral in the vault. We can see 1 btc in the inmage means we pledged 1 btc in pando leaf.
+锁定的BTC是您金库的抵押品。 当我们可以看到1个btc，意味着我们在pando leaf中抵押了1btc。
 
-What needs to be focused on is collateral Ratio, [Liquadation Price](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio), [current price and Next price](https://docs.pando.im/docs/leaf/key-concepts/price-oracles).
+需要关注的是抵押比率，[清算价格](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio)，[当前价格和下一个价格](https://docs.pando.im/docs/leaf/key-concepts/price-oracles)。
 
-Take the above picture as an example, the current mortgage rate is 4414.4%, and the liquidation price is 1500 pusd, which means that when the price of BTC drops to 1500 pusd, it will be forced to enter the liquidation process.
+以上图为例，目前的抵押贷款利率为4414.4%，清算价格为1500pusd，这意味着当BTC价格降至1500pusd时，它将被迫进入清算流程。
 
-Combined with the current price and the next price, it can be considered safe.
+结合当前价格和下一个价格，它可以被认为是安全的。
 
 ````mdx-code-block
 :::caution
-Please ensure that the collateral Ratio is within a safe range, which less than 150% will be liquidated totally.
+请确保抵押利率在一个安全范围内，抵押率低于150%抵押资产将完全被平仓清算。
 :::
 ````
 
-Go and try it.
+来吧，试一试！
 
 

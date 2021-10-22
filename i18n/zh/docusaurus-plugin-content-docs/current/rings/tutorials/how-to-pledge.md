@@ -1,27 +1,27 @@
 ---
-title: Pledging rTokens to get borrow capacity
+title: 抵押rTokens以获得借款能力。
 sidebar_position: 3
 date: 2021-09-04 12:33:07
 ---
 
-If you want to borrow, you will need to pledge as borrowing in Pando Rings function on the collateral-backed mechanism.
+如果您想借款，您需要在抵押支持机制的基础上在Pando Rings中借款。
 
-After pledging, the rTokens you get from supplying will be locked into the system. You will not be able to transfer your pledged rTokens to others, but you can still gain supply interest of those you pledge.
+抵押后，您从供应中获得的rTokens将被锁定在系统中。 您将无法将您抵押的rToken转让给其他人，但您仍然可以从您抵押的相应令牌中获得供应权益。
 
 ````mdx-code-block
 :::info
-**The difference between manually "Pledge" and one-stop "Supply and Pledge"**
+**手动"抵押"和一站式"供应和抵押"之间的差异**
 
-If you manually pledge, you can decide on the percentage of the supplied asset you want to pledge. In comparison, if you choose  to use the one-stop Supply and Pledge function (accessible from both Supply page and Borrow page), the system will pledge 100% of the rTokens while you supply.
+如果您手动抵押，您可以决定要抵押的供应资产的百分比。 相比之下，如果您选择使用一站式供应和抵押功能(可以从供应页面和借款页面访问)，系统将在您供应的同时抵押100%的rTokens。
 
-If unfortunately, the value of your pledged assets cannot cover your borrow anymore, **ALL** of your pledged assets will be subjected to [liquidation](../key-concepts/liquidation) while your unpledged assets will stay intact.
+如发生不幸时您抵押的资产价值无法覆盖您的借款，**您的**所有**质押资产都将受到清算[liquidation](../key-concepts/liquidation)，而您未抵押的资产将保持不变。
 
-It's up to you make the tradeoff between getting more borrowing power by pledging more and pledging only partially for isolation of risk.
+这取决于您通过抵押更多抵押物获得更多借贷能力或者只进行部分抵押物抵押两者之间权衡后做出的风险隔离。
 :::
 ````
 
-To pledge, you can click on the supplied asset card of the Supply section on the Me page.
+进行抵押时，您可以单击“我的”页面上“供应”部分的已供应资产卡。
 
-Drag on the progress bar to choose the percentage you want to pledge. As the amount change, the status of the risk loan indicator also change. It's advised that you pay close attention to the indicator to monitor the predicted risk of the loan after you pledge.
+您可以拖动进度条来决定要抵押的百分比。 随着金额的变化，贷款风险指标状态也会相应发生变化。 建议您在抵押后密切关注相关指标，以监控贷款的风险预测。
 
 ![](../assets/pledge1.jpg)

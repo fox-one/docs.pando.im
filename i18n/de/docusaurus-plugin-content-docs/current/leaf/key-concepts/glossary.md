@@ -12,7 +12,7 @@ import { Improvement, } from "@site/src/components/admonitions";
 ### Grundkonzepte
 1. [Tresor](https://docs.pando.im/docs/leaf/key-concepts/vaults)
 2. [Kreditsicherungsmittel](https://docs.pando.im/docs/leaf/tutorials/add-collateral)
-3. Coin Minting
+3. Münzprägen
 4. Schulden
 
 ### Vaults related
@@ -26,7 +26,7 @@ import { Improvement, } from "@site/src/components/admonitions";
 8. Stability Fee
 
 ### Liquidation Related
-1. [Auction](https://docs.pando.im/docs/leaf/key-concepts/liquidation/leaf-auction-process)
+1. [Auktion](https://docs.pando.im/docs/leaf/key-concepts/liquidation/leaf-auction-process)
 2. Bidding on the Debt
 3. Bidding on the Collateral
 4. [Liquidation Penalty](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-penalty)

@@ -1,97 +1,97 @@
 ---
-title: Interest Rate Determination
+title: 利率确定
 sidebar_position: 4
 date: 2021-10-16 12:33:07
 ---
 
-All interest rates in Pando Rings are determined as a function of **utilization rate**. **With the changes in the utilization rate, interest rates continuously fluctuate.**
+Pando Rings的所有利率都是由**利用率**函数决定的。 **随着利用率的变化，利率不断波动。**
 
 
-### The Utilization Rate
+### 利用率
 
-The utilization rate for a money market is defined as:
+资金市场的利用率定义如下：
 
 
 ``````
-Utilization_rate = market.total_borrows/(market.total_cash + market.borrows - market.reserves)
+Utilization_rate = market.total_bots/(market.total_cash + market.bots - market.reserves)
 ``````
 
 Where
-- market.total_borrows refers to the amount of total borrow of a certain money market
-- market.total_cash refers to the amount left in the system of a certain money market
-- market.reserves refers to the amount that is kept as profit of a certain money market
+- market.total_borrows是指特定代币市场的借款总额
+- market.total_cash是指特定代币市场系统中剩余的金额
+- market.reserves是指作为特定代币市场的保留利润金额
 
-The formula can be interpreted roughly as the percentage of money borrowed out of the total money supplied.
+该公式大致可以理解为借出资金占总供应资金的百分比。
 
-A high utilization rate signifies that demand is high and a lot of borrowing is taking place, so interest rates go up as an incentive to get more people to inject cash into the system. A low utilization rate signifies that demand for borrowing is low, so interest rates go down to encourage more people to borrow cash from the system.
+高利用率意味着需求旺盛，大量借款正在发生，利率上升则是为了激励更多人向系统内注入资金。 低利用率意味着借款需求较低，利率下降则可以鼓励更多人从系统中借出资金。
 
 
-### Borrow rate
+### 借款率
 
-Currently, the borrow rate model of all money markets on Rings follow the Jump Rate model.
+目前，Pando Rings市场内所有代币的借款利率模型都遵循跳跃利率模型。
 
-In this model, there is a key parameter defined as **Kink**, which is a value of the utilization rate and creates a sharp turning point where the interest rates spike.
+在这个模型中，有一个关键参数被定义为**Kink**，代表利用率的值，并为利率起伏开辟了一个灵敏的转折点。
 
-The borrow rate of the jump rate model is defined as:
+跳跃利率模型的借贷利率定义如下：
 
-**When the utilization rate ≤ Kink:**
+**当利用率≤Kink时：**
 
 ```
 Borrow_interest_rate = multiplier * market.utilization_rate + base_rate
 ```
 
-**When the utilization rate > Kink:**
+**当利用率 > Kink时：**
 
 ```
 Borrow_interest_rate = multiplier * Kink + jump_multiplier * (market.utilization_rate - Kink) + base_rate
 ```
 
-Where
-- base_rate per year is the minimum borrowing rate
-- multiplier per year is the rate of increase in interest rate with respect to utilization
-- Kink is the point in the model in which the model follows the jump multiplier
-- jump_multiplier per year is the rate of increase in interest rate with respect to utilization after the Kink
+其中：
+- 每年的基本利率是最低借款利率
+- 每年的乘数是利用率的增长率
+- Kink是模型中跟随跳跃乘数的点
+- 每年的跳跃乘数是Kink之后相对于利用率的利率增长率
 
-### Supply rate
+### 供应率
 
-The supply rate is calculated as follows:
+供应率计算方法如下：
 
 ```
 Supply_interest_rate = Borrow_interest_rate * market.utilization_rate * (1 - market.reserve_factor)
 ```
 
-Where
-- market.utilization_rate is the utilization rate of a certain market
-- market.reserve_factor controls what percentage of the interest borrowers pay for a certain market is kept within the system to protect lenders against borrow default and liquidation malfunction
-- Borrow_interest_rate is the interest rate that borrowers pay for a certian market
+其中：
+- market.utilization_rate 是某个市场的利用率
+- market.reserve_factor 借款人为某个市场支付的利息百分比被保留在系统内，以保护贷方免受借款违约和清算故障的影响
+- Borrow_interest_rate 是借款人为某个市场支付的利率
 
 
-### Parameters of all Pando Rings' money markets
-(last updated on Oct 18, 2021)
+### 所有Pando Rings货币市场的参数
+(最近一次更新于2021年10月18日)
 
-Currently, all money markets has a Kink of 80%, meaning, when utilization ratio reaches 80%, both the supply and borrow interest rates will have a sudden jump.
+目前，所有货币市场都有80%的kink，也就是说，当利用率达到80%时，供给利率和借款利率都会突然升高。
 
-| Symbol | Name       | base_rate | reserve_factor | multiplier | jump_multiplier | kink |
-| ------ | ---------- | --------- | -------------- | ---------- | --------------- | ---- |
-| pUSD   | Pando USD  | 0%        | 15%            | 5.8%       | 1.476           | 80%  |
-| USDT   | Tether USD | 0%        | 15%            | 5.8%       | 1.476           | 80%  |
-| BTC    | Bitcoin    | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| ETH    | Ethereum   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| LTC    | Litecoin   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| EOS    | EOS        | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| DOT    | Polkadot   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| XIN    | Mixin      | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| MOB    | MoblieCoin | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| BOX    | BoxToken   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| DOGE   | DogeCoin   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-
-
-For pUSD and USDT: ![](../assets/stablecoin-model.png)
-
-For BTC, ETH, LTC, EOS. DOT, XIN, MOB, BOX and DOGE: ![](../assets/othercoins-model.png)
+| 币种   | 名称          | base_rate | reserve_factor | 乘数     | 跳跃乘数   | kink |
+| ---- | ----------- | --------- | -------------- | ------ | ------ | ---- |
+| pUSD | Pando USD   | 0%        | 15%            | 5.8%   | 1.476  | 80%  |
+| USDT | Tether USD  | 0%        | 15%            | 5.8%   | 1.476  | 80%  |
+| BTC  | Bitcoin     | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| ETH  | Ethereum    | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| LTC  | Litecoin    | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| EOS  | EOS         | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| DOT  | 波卡 Polkadot | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| XIN  | Mixin       | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| MOB  | MoblieCoin  | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| BOX  | BoxToken    | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
+| DOGE | DogeCoin    | 0%        | 20%            | 29.13% | 3.6255 | 80%  |
 
 
-It is important to understand the interest rate model of your selected money markets and monitor the changes in the interest rates for the profitability and safety of your assets. 
+对于pUSD 和 USDT： ![](../assets/stablecoin-model.png)
+
+对于BTC, ETH, LTC, EOS。 DOT, XIN, MOB, BOX 和 DOGE： ![](../assets/othercoins-model.png)
+
+
+为了您的资产的盈利和资产安全，了解您选择的货币市场的利率模型并监控利率的变化非常重要。 
 
 
 

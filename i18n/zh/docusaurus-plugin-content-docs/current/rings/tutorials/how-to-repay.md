@@ -1,19 +1,19 @@
 ---
-title: Repaying your borrow in Pando Rings
+title: 在Pando Rings偿还借款
 sidebar_position: 6
 date: 2021-09-04 12:33:07
 ---
 
-If you want to pay back your borrowed asset, you can go to repay.
+如果您想偿还您所借的资产，您可以进行偿还。
 
-You can access it by clicking on the borrowed asset card of the borrow secion on the Me page.
+您可以通过单击“我的”页面上的借用资产卡来访问它。
 
-You can drag on the progress bar to decide on the percentage you want to repay.
+您可以拖动进度条来决定要偿还的百分比。
 
 ![](../assets/repay1.jpg)
 
-If you want to pay off the loan, you can drag the progress bar all the way to the right and click on "Payback".
+如果您想全额偿还贷款，您可以一直向右拖动进度条，然后单击“还款”。
 
-Please be noted that due to the real-time calculation of borrow interest, the actual amount to pay off your Borrow might be slightly higher than the amount shown on the screen. So we will charge you slightly a bit more to make sure the borrow will be paid off, then any excess amount will be returned to your wallet after your payment.
+请注意，由于借款利息是实时计算的，偿还借款的实际金额可能略高于屏幕上显示的金额。 因此，我们将向您收取略高一点的费用，以确保借款得到足额偿还，然后对于超出还款金额的部分将在您付款后退还到您的钱包中。
 
 ![](../assets/repay2.jpg)

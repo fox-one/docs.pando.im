@@ -4,26 +4,26 @@ sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 
-[Pando Leaf](https://leaf.pando.im) is a decentralized financial network built with the Mixin MTG ([Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange)) technology, a place where you can deposit collateral to generate and destory [Pando USD(pUSD)](./pusd) and destroy it when repaying the generated pUSD balance.
+[Pando Leaf](https://leaf.pando.im) 是一个基于 Mixin MTG ([Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange)) 技术构建的去中心化金融网络， 您可以在此存入抵押品以生成 [Pando USD(pUSD)](./pusd) 以及在偿还pUSD余额时销毁它。
 
-## How does Pando Leaf work?
+## Pando Leaf是如何工作的？
 
-Depositing collaterals and repaying the generated pUSD balance both happen in a **vault**.
+存入抵押品和偿还生成的 pUSD 余额都发生在**金库**中。
 
-- Vaults are not free. Generating the stablecoin requires the payment of stability fee. To reclaim collateral, users must repay the previously generated stablecoin and the accumulated stability fee.
-- Vaults are required to be overcollateralized. Vault owners should uphold the liquidation price/liquidation ratio (which is the minimum collateralization ratio) to avoid the **liquidation** of their positions.
+- 金库不是免费的。 生成稳定币需要支付稳定性费用。 要想收回抵押品，用户必须支付之前生成的稳定币和因此累积的稳定费。
+- 金库需要超额抵押。 金库所有者应维持清算价格/清算率（即最低抵押率），以避免其头寸被**清算**。
 
-When a vault is liquidated, a liquidation penalty is applied and collateral is sold to repay the vault’s outstanding stablecoin balance.
+当金库被清算时，将施加清算罚款并且抵押品将被出售以偿还金库的未偿还稳定币余额。
 
-For more techincal details, please refer to the [Pando Leaf Technical Design](/developer/leaf/design)
+更多的技术细节，请参考[Pando Leaf 技术设计](/developer/leaf/design)。
 
-## Auction
+## 拍卖
 
-Anyone can participate in the auction if a vault breaches the minimum required collateralization ratio and becomes liquidated.
+如果金库违反最低要求的抵押率并被清算，任何人都可以参与拍卖。
 
-There are two phases of the auction - For the first phase, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+拍卖分为两个阶段 —— 在第一阶段，参与者以不低于前一次竞拍金额 3% 的增量出价，以支付未偿债务的最高金额。 如果在 12 小时内没有人愿意承担全部债务，则拍卖结束，愿意承担最高债务的竞拍人将竞得所有抵押品。 如果有人出价支付总债务，则拍卖将进入第二阶段。
 
-For the second phase, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt.
+在第二阶段，竞拍者以不低于前一次竞标数量的 3% 递减竞拍，接受获得最少的抵押品并支付全部债务。
 
 
 

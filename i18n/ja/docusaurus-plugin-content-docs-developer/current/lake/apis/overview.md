@@ -1,45 +1,45 @@
 ---
-title: Lake API Overview
+title: Lake API 概要
 sidebar_position: 1
 date: 2021-09-30 23:18:01
 ---
 
-Pando Lake and 4swap provide a simple, developer-friendly APIs for 3rd-party developers.
+Pando Lake と 4swap は、サードパーティ開発者向けのシンプルで開発者フレンドリーなAPIsを提供します。
 
-## API Endpoints
+## API エンドポイント
 
-| Name        | Endpoint                        |
+| ネーム         | エンドポイント                         |
 | ----------- | ------------------------------- |
 | Primary     | https://api.4swap.org/api       |
 | Alternative | https://mtgswap-api.fox.one/api |
 
-You can use any of them to construct your API requests in form:
+これらのいずれかを使用し、APIリクエストをフォームで作成できます:
 
 ```
 HTTP_METHOD ${API_BASE}/${API_PATH}
 ```
 
-## Entities
+## エンティティ
 
-Some entities are widely used in the API responses.
+一部のエンティティはAPIレスポンスで広く使用されています。
 
-### Pair Entity
+### ペアエンティティ
 
 ```json
 {
-  // the asset id of base and quote assets
+  // baseとquote assetsのasset id
   "base_asset_id": "c94ac88f-4671-3976-b60a-09064f1811e8",
   "quote_asset_id": "f5ef6b5d-cc5a-3d90-b2c0-a2fd386e7a3c",
-  // the amount of base and quote assets
+  // baseとquote assetsの数量
   "base_amount": "827.7243632",
   "quote_amount": "57701.51287515",
-  // the liquidity of this pair
+  // このペアの流動性
   "liquidity": "6588.04146863",
-  // the asset id of LP-Token of this pair
+  // このペアのLPトークンのasset id
   "liquidity_asset_id": "b34633de-4012-38e3-88a9-1f41eafdf45a",
-  // the route id of this pair
+  // このペアのroute id
   "route_id": 1,
-  // fee 0.3%
+  // 手数料 0.3%
   "fee_percent": "0.003",
   "max_liquidity": "100000000",
   "base_value": "301753.29",
@@ -70,6 +70,6 @@ Some entities are widely used in the API responses.
   // price in US Dollar
   "price": "84447.541565189134",
   // extra information of this assets
-  "extra": {"circulation":"109542949","name":"Ethereum","explorer":"https://etherscan.io/","intro":{"en":["Ethereum is a decentralized open-source blockchain system that features its own cryptocurrency, Ether. ETH works as a platform for numerous other cryptocurrencies, as well as for the execution of decentralized smart contracts.","Ethereum was first described in a 2013 whitepaper by Vitalik Buterin. Buterin, along with other co-founders, secured funding for the project in an online public crowd sale in the summer of 2014 and officially launched the blockchain on July 30, 2015.","Ethereum’s own purported goal is to become a global platform for decentralized applications, allowing users from all over the world to write and run software that is resistant to censorship, downtime and fraud."]},"website":"https://www.ethereum.org/","issue":"2014/7/24","total":"109542949"}
+  "extra": {"circulation":"109542949","name":"Ethereum","explorer":"https://etherscan.io/","intro":{"en":["Ethereum is a decentralized open-source blockchain system that features its own cryptocurrency, Ether. ETH works as a platform for numerous other cryptocurrencies, as well as for the execution of decentralized smart contracts.","Ethereum was first described in a 2013 whitepaper by Vitalik Buterin. Buterinと他の共同創設者と一緒に、2014年夏のオンライン公開セールでプロジェクトの資金を確保し、2015年7月30日にブロックチェーンを正式ローンチしました。 「Ethereumが主張する目標は、分散型アプリケーションのグローバルプラットフォームになることです。 世界中のユーザーが、検閲、ダウンタイム、不正行為に強いソフトウェアを書いて実行できるようにします。 ]},"website":"https://www.etherum.org/","issue":"2014/7/24","total":"109542949"}
 }
 ```

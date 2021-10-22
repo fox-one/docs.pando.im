@@ -1,11 +1,11 @@
 ---
-title: 스와핑
+title: Swapping
 sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
 
-기어 아이콘을 탭하여 [슬립페이지](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)를 설정할 수 있습니다.
+기어 아이콘을 탭하여 [슬리피지(slippage)](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)를 설정할 수 있습니다.
 
 ![](../assets/swapping-p1.png)
 
@@ -19,19 +19,20 @@ date: 2021-08-15 22:33:07
 
 
 
-![](../assets/swapping-p3.png) 6자리 PIN을 입력하여 결제를 완료하면 거래 내역이 팝업됩니다. 대화 창에서 거래 세부 정보를 볼 수도 있습니다.
+![](../assets/swapping-p3.png) 6자리 PIN을 입력하여 결제를 완료하면 거래 내역이 팝업됩니다. 대화 창에서도 거래 내역을 확인할 수 있습니다.
 
 
 
 ![](../assets/swap-p.png)
 
-[거래 수수료](https://docs.pando.im/docs/lake/key-concepts/trading-fee)를 보려면 클릭하세요.
+[거래 수수료](https://docs.pando.im/docs/lake/key-concepts/trading-fee)를 보시려면 클릭하세요.
 
 ````mdx-code-block
-:::주의
-스와핑 시 가격 영향에 유의하시기 바랍니다. 
+:::caution
 
-가격 영향이 너무 크다는 것은 거래의 유동성이 부족하거나 거래 금액이 너무 크다는 의미이며, 거래를 지속하면 손실이 더 커질 수 있습니다.
+swapping 시 가격 영향에 유의하시기 바랍니다. 
+
+가격 영향이 너무 크다는 것은 거래의 유동성이 부족하거나 거래 금액이 너무 크다는 것을 의미하며, 거래를 지속하면 손실이 더 커질 수 있습니다.
 
 :::
 ````

@@ -1,20 +1,20 @@
 ---
-title: Paying Back pUSD
+title: 偿还 pUSD
 sidebar_position: 6
 date: 2021-08-13 12:33:07
 ---
 
-Paying back pUSD is useful when wanting to save a Vault from being liquidated, or the Vault owner wants to decrease the size of their position or to free up the collateral.
+如果想避免金库被清算，或者金库所有者想降低抵押比例释放抵押物时，可以通过偿还pUSD实现。
 
-To pay back, click on "Pay back" to land on the Pay Back page. Fill in the amount you intend to pay back manually or click "Set Max" to pay off all the debts.
+如果要进行还款，请单击“还款”以登录“还款”页面。 您可以手动填写您打算偿还的金额，或单击“全额还款”以偿还所有债务。
 
 ![](../assets/leaf-payback-p1.png)
 
-The debt reduce from 13000 to 12000 pusd after repaying the pusd, and you can also see the details of this repayment in the chat window.
+当您偿还pusd后，债务从13000pusd减少到12000pusd，您也可以在聊天窗口中查看还款的详细信息。
 
 ![](../assets/leaf-payback-p2.png)
 
-Please be noted that when you click "Set Max", you will be charged slightly higher than the outstanding debt amount to successfully pay off the debt because the interests are calculated and added to the debt real-time. Any excess amount after the payment will be returned to your wallet.
+请注意，当您单击“全额还款”时，您将被收取略高于未偿债务金额的费用，以便于能成功偿还债务，因为债务利息是实时计算并被添加到债务中的。 付款后的任何超出的还款金额都将退回到您的钱包中。
 
 ![](../assets/payback-p2.png)
 

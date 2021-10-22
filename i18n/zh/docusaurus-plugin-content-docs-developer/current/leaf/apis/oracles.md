@@ -1,22 +1,22 @@
 ---
-title: Read Oracles
+title: 读取Oracles
 sidebar_position: 7
 date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read All Oracles
+## 读取所有Oracles
 
 ### GET /oracles
 
-This API will respond all oracles.
+此 API 将返回所有Oraces。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read all oracles" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles' />
+<APIRequest title="读取所有Oracles" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles' />
 
 ```json title="Response"
 {
@@ -48,11 +48,11 @@ This API will respond all oracles.
 }
 ```
 
-## Read Single Oracle
+## 读取单个Oracle
 
 ### GET /oracles/:id
 
-This API will respond one oracle with asset_id `:id`
+此 API 将根据asset_id `:id` 返回一个Oracle。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles/:id" />
 
@@ -60,7 +60,7 @@ This API will respond one oracle with asset_id `:id`
 
 <APIParams p-id="the asset id" p-id-required="{true}" />
 
-<APIRequest title="Read one oracle" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
+<APIRequest title="读取单个Oracle" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
 
 ```json title="Response"
 {

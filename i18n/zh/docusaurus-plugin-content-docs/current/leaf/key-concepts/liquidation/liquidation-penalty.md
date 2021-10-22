@@ -1,10 +1,10 @@
 ---
-title: Liquidation Penalty
+title: 清算罚金
 sidebar_position: 4
 date: 2021-08-13 14:33:07
 ---
 
-A Liquidation Penalty is a fee paid by Vault owners when the value of their collateral reaches the Vault's Liquidation Price.
+清算罚金是金库所有者在抵押品价值达到金库清算价格时支付的费用。
 
-The Liquidation Penalty is added to the Vault’s total outstanding generated pUSD when liquidation occurs, which results in more collateral being sold at auction.
+当清算发生时，清算罚金会添加到金库未偿产生的pUSD总额中，这导致更多的抵押品在拍卖时出售。
 

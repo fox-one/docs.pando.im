@@ -1,20 +1,20 @@
 ---
-title: Examples
+title: 示例
 sidebar_position: 6
 date: 2021-07-31 13:03:07
 ---
 
 ## 4swap Web
 
-The frontend project of 4swap and Lake, a full-feature web based client.
+4swap 和 Pando Lake的前端项目，一个具备完整功能的客户端。
 
-- Source code: https://github.com/fox-one/4swap-web
+- 源代码: https://github.com/fox-one/4swap-web
 - Url: https://app.4swap.org
 
 
-## Mixin Tutorial
+## Mixin教程
 
-A tutorial of making a Mixin Messenger bot from scratch, a bot which includes a function to swap crypto at 4swap or Pando Lake.
+从零开始制作 Mixin Messenger 机器人的教程，此机器人包含在 4swap 或 Pando Lake 上交换加密货币的功能。
 
-- Source code: https://github.com/lyricat/mixin-tutorial
+- 源代码: https://github.com/lyricat/mixin-tutorial
 

@@ -1,16 +1,16 @@
 ---
-title: Read Market
+title: 读取市场
 sidebar_position: 3
 date: 2021-09-30 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read Global Statistics
+## 读取全局统计数据
 
 ### GET /states/markets
 
-This API will respond historical market statistics
+此 API 将返回市场的历史数据。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/?dur=:dur" />
 
@@ -18,7 +18,7 @@ This API will respond historical market statistics
 
 <APIParams p-dur="The duration. for example, 4320h means latest 180 days"/>
 
-<APIRequest title="Read market statistics" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
+<APIRequest title="读取市场统计数据" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
 
 ```json title="Response"
 {
@@ -27,9 +27,9 @@ This API will respond historical market statistics
     {
       "ts": 1617408000,
       "date": "2021-04-03T00:00:00Z",
-      // liquidity in US dollar
+      //以美元计算的流动性
       "value": "88919122.02992768",
-      // liquidity in US dollar
+      //以美元计算的流动性
       "volume": "10727320.64681277"
     },
     ...
@@ -37,11 +37,11 @@ This API will respond historical market statistics
 }
 ```
 
-## Read Pair Statistics
+## 读取交易对数据
 
 ### GET /states/markets/:base/:quote
 
-This API will respond historical market statistics specified by base and quote asset.
+此 API 将返回由base和quote asset指定的历史市场统计数据。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/?dur=:dur" />
 
@@ -49,7 +49,7 @@ This API will respond historical market statistics specified by base and quote a
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
+<APIRequest title="读取ETH BTC的市场统计" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
 
 ```json title="Response"
 {
@@ -58,9 +58,9 @@ This API will respond historical market statistics specified by base and quote a
     {
       "ts": 1617408000,
       "date": "2021-04-03T00:00:00Z",
-      // liquidity in US dollar
+      //以美元计算的流动性
       "value": "88919122.02992768",
-      // liquidity in US dollar
+      //以美元计算的流动性
       "volume": "10727320.64681277"
     },
     ...
@@ -68,11 +68,11 @@ This API will respond historical market statistics specified by base and quote a
 }
 ```
 
-## Read Candlestick Data
+## 读取蜡烛图数据
 
 ### GET /states/markets/:base/:quote/kline/v2?dur=:dur
 
-This API will respond the candlestick data specified by base and quote asset.
+此 API 将返回由base和quote asset指定的蜡烛图数据。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/kline/v2?dur=:dur" />
 
@@ -80,18 +80,18 @@ This API will respond the candlestick data specified by base and quote asset.
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
+<APIRequest title="读取ETH BTC的市场统计" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
 
 ```json title="Response"
 {
   "ts": 1627697766503,
   "data": [
     [
-      // timestamp
+      // 时间辍
       1612148400,
-      // price of base / quote
+      // base / quote 的价格
       "0.039304863681",
-      // price of quote / base
+      // base / quote 的价格
       "25.442131511901"
     ]
     ...

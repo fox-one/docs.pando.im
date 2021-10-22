@@ -1,31 +1,31 @@
 ---
-title: Participating in the Auction
+title: 参与拍卖
 sidebar_position: 8
 date: 2021-08-13 12:33:07
 ---
 
 
-You can go to "Auction" page to participate in auctions and check on the information of the past auctions.
+您可以在“拍卖”页面参与拍卖，并且可以查看过去的拍卖信息。
 
-Ongoing auctions are in the "Ongoing"(at Auction) tab.
+“拍卖中”（在拍卖页面）标签页里是正在进行的拍卖。
 
 ![](../assets/auction-p1.png)
 
-If there are no auctions in progress, you will see pic of blank state.
+如果没有正在进行中的拍卖，您将看到空白页。
 
 ![](../assets/auction-p2.png)
 
-For an active auction, there are two phases.
+进行中的拍卖，分为两个阶段。
 
-For Phase 1, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt.
+阶段 1，参与者以不低于前一次竞拍金额 3% 的增量出价，以支付未偿债务的最高金额。
 
-If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+如果在 12 小时内没有人愿意承担全部债务，则拍卖结束，愿意承担最高债务的竞拍人将竞得所有抵押品。 如果有人出价支付总债务，则拍卖将进入第二阶段。
 
 ![](../assets/auction-p3.png)
 
-For Phase 2, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt.
+阶段 2，竞拍者以不低于前一次竞标数量的 3% 递减竞拍，接受获得最少的抵押品并支付全部债务。
 
-The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.
+获胜者将需要偿还所有债务以换取他(她)提交投标的最小数量抵押品。
 
 
 ![](../assets/auction-p4.png)

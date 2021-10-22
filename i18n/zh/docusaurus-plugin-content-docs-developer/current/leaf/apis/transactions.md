@@ -1,22 +1,22 @@
 ---
-title: Read Transactions
+title: 读取交易
 sidebar_position: 8
 date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read All Transactions
+## 读取所有交易
 
 ### GET /transactions
 
-This API will respond all transactions.
+此 API 将返回所有交易记录。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read all transactions" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/transactions' />
+<APIRequest title="读取所有交易" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/transactions' />
 
 ```json title="Response"
 {
@@ -53,11 +53,11 @@ This API will respond all transactions.
 }
 ```
 
-## Read Single Transaction
+## 读取单笔交易
 
 ### GET /transactions/:follow_id
 
-This API will respond one transaction with `:follow_id`. The `follow_id` is an uuid that you specified when you created the [`action`](./actions).
+此 API 将根据 `:follow_id` 返回一次交易信息。 `follow_id` 是你在创建 [动作(Action)``](./actions) 时能够指定的一个 UUID。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" />
 
@@ -65,7 +65,7 @@ This API will respond one transaction with `:follow_id`. The `follow_id` is an u
 
 <APIParams p-follow_id="the follow id" p-follow_id-required="{true}" />
 
-<APIRequest title="Read one transaction" method="GET" base="https://leaf-api.pando.im/api" url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129' />
+<APIRequest title="读取单笔交易" method="GET" base="https://leaf-api.pando.im/api" url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129' />
 
 ```json title="Response"
 {

@@ -1,17 +1,17 @@
 ---
-title: Get Started
+title: Los geht's
 sidebar_position: 1
 date: 2021-08-13 12:33:07
 ---
 
-Pando leaf supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.
+Pando Leaf unterstützt den [Minxin Messenger](https://docs.pando.im/docs/wallets/mixin-messenger) Geldbeutel und [fennec](https://docs.pando.im/docs/apps/wallets) (Online Geldbeutel). Der folgende Inhalt nimmt den Minxin Messenger Geldbeutel als einen Beispiel.
 
-Visit [Pando Leaf](https://leaf.pando.im), or search Mixin ID **7000103924** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando leaf.
+Besuchen Sie [Pando Leaf](https://leaf.pando.im) oder suchen Sie Mixin ID **7000103924** in dem Mixin Messenger App. Dann klicken Sie die blaue Nummer. Anschließend klicken Sie "+Add Bot" und danach den Roboterprofil um Pando Leaf zu öffnen.
 
 ![](../assets/leaf-get-started-p1.png)
 
 
-Click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces
+Klicken Sie " Geldbeutel verbinden" um zu starten. Vergewissern Sie sich, dass Sie die Genehmigung erteilt haben, sonst können die Daten Ihrer Assets nicht auf das Interface angezeigt werden
 
 ![](../assets/leaf-get-started-p2.png)
 
@@ -29,7 +29,7 @@ You are required to [add a vault](https://docs.pando.im/docs/leaf/tutorials/open
 
 BTC locked is your collateral in the vault. We can see 1 btc in the inmage means we pledged 1 btc in pando leaf.
 
-Worauf man sich fokussieren sollte, ist der Besicherungsgrad, [Liquiditätspreis,](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio), [Währungspreis und nächste Preis](https://docs.pando.im/docs/leaf/key-concepts/price-oracles).
+Worauf man sich fokussieren sollte, ist der Besicherungsgrad, [Liquiditätspreis,](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio), [aktueller Preis und nachfolgender Preis](https://docs.pando.im/docs/leaf/key-concepts/price-oracles).
 
 Take the above picture as an example, the current mortgage rate is 4414.4%, and the liquidation price is 1500 pusd, which means that when the price of BTC drops to 1500 pusd, it will be forced to enter the liquidation process.
 
