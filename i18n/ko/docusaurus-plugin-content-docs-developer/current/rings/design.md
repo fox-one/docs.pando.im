@@ -131,7 +131,7 @@ group:
   private_key: ~
   # The private key used by the current node for user data signing
   sign_key: ~
-  # administratories of thie node
+  # administratories of this node
   admins:
     - ~
     - ~
