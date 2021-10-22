@@ -36,7 +36,7 @@ Do pay attention to the risk indication bar.
 :::
 ````
 
-You have to keep your **collateralization ratio**(link to the explanation required) in a safe range（above 150%） to avoid **liquidation** (link). When your collateralization ratio breaches the **liquidation ratio** (link), your collaterals will be in **auction** (link to auction process).  
+You have to keep your collateralization ratio in a safe range（above 150%） to avoid **liquidation** (https://docs.pando.im/docs/leaf/key-concepts/liquidation). When your collateralization ratio breaches the **liquidation ratio** (https://docs.pando.im/docs/leaf/key-concepts/liquidation), your collaterals will be in **auction** (https://docs.pando.im/docs/leaf/tutorials/auction-participation).  
 
 ![](../assets/add-a-vault-p5.png)
 

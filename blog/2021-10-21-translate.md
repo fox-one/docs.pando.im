@@ -41,11 +41,11 @@ Click on the link blew to read the detailed operating instructions. Focus on the
 
 A：Probably a modifying syntax error. When you encounter code that modifies the formatting during translation, leave it unchanged. For example: 
 
-`You have to keep your <strong x-id="1">collateralization ratio</strong>(link to the explanation required) in a safe range（above 150%） to avoid <strong x-id="1">liquidation</strong> (link).`
+`You have to keep your collateralization ratio in a safe range（above 150%） to avoid <strong x-id="1">liquidation</strong> (https://docs.pando.im/docs/leaf/key-concepts/liquidation).`
 
 The above is the original text, translated into Korean as follows:
 
-`청산을 피하기 위해 <strong x-id="1">담보 비율</strong>(설명서에 연결) 을 안전한 범위( 150% 이상) 로 <strong x-id="1">유지해야 합니다. </strong>(링크).`
+`청산을 피하기 위해 담보 비율 을 안전한 범위( 150% 이상) 로 <strong x-id="1">유지해야 합니다. </strong>(https://docs.pando.im/docs/leaf/key-concepts/liquidation).`
 
 **Q: translation contains 1 extra symbol"("**
 
