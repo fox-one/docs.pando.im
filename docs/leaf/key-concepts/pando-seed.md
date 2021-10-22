@@ -8,7 +8,7 @@ Pando seed(PS) is launched on Aug 4,2021 BigONE, Exin, FOX, Poolin and Team Mixi
 
 ## Claim PS
 
-You can claim 1.024 Pando Seed Token on the Pando Seed robot every day.
+You can claim 1.024 Pando Seed Token on the Pando Seed robot three times every day.
 
 ![](../assets/pando-seed.png)
 
