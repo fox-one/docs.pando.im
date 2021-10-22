@@ -41,17 +41,19 @@ Click on the link blew to read the detailed operating instructions. Focus on the
 
 A：Probably a modifying syntax error. When you encounter code that modifies the formatting during translation, leave it unchanged. For example: 
 
-`You have to keep your collateralization ratio in a safe range（above 150%） to avoid <strong x-id="1">liquidation</strong> (https://docs.pando.im/docs/leaf/key-concepts/liquidation).`
+`You have to keep your collateralization ratio in a safe range（above 150%） to avoid <strong x-id="1">[liquidation]</strong> (https://docs.pando.im/docs/leaf/key-concepts/liquidation).`
 
 The above is the original text, translated into Korean as follows:
 
-`청산을 피하기 위해 담보 비율 을 안전한 범위( 150% 이상) 로 <strong x-id="1">유지해야 합니다. </strong>(https://docs.pando.im/docs/leaf/key-concepts/liquidation).`
+`청산을 피하기 위해 담보 비율 을 안전한 범위( 150% 이상) 로 <strong x-id="1"[>유지해야 합니다.]</strong>(https://docs.pando.im/docs/leaf/key-concepts/liquidation).`
 
-**Q: translation contains 1 extra symbol"("**
+**Q: Translation contains 1 extra symbol"("**
 
 A: This error usually occurs when Chinese brackets are used, just click Save Anyway.
 
+**Q:what's the differences between translators and proofreaders?**
 
+A: Proofreaders need to review the text saved by other translators. All text should be reviewed and approved by the proofreaders before they are merging to the source code. So the proofreaders will receive more rewards than regular translators. Of course, proofreaders are translator. they can also do the translation.
 
 ### Honors and Awards
 
