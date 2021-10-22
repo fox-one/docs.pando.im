@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.pando.im/de/blog</id>
+    <title>Pando Blog</title>
+    <updated>2021-10-21T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.pando.im/de/blog"/>
+    <subtitle>Pando Docs Blog</subtitle>
+    <icon>https://docs.pando.im/de/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Being A Contributor Of Pando With Honors & Awards]]></title>
+        <id>Being A Contributor Of Pando With Honors &amp; Awards</id>
+        <link href="https://docs.pando.im/de/blog/2021/10/21/translate"/>
+        <updated>2021-10-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pando is an open-source project. Thank you to everyone who has contributed to the growth of Pando.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pando's audit report is released]]></title>
+        <id>audit-report-20211016</id>
+        <link href="https://docs.pando.im/de/blog/audit-report-20211016"/>
+        <updated>2021-10-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pando has been audited by IOActive & LeastAuthority. Click the link below to view the results.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Write about Pando and Win Awards]]></title>
+        <id>activity-20210922</id>
+        <link href="https://docs.pando.im/de/blog/activity-20210922"/>
+        <updated>2021-09-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pando is an open-source project. In order to let more people know about pando, we will launch an essay call. Articles that meet the following conditions can participate in this activities.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Cryptocurrency Listed]]></title>
+        <id>new-crypto-curenncy-listed-20210922</id>
+        <link href="https://docs.pando.im/de/blog/new-crypto-curenncy-listed-20210922"/>
+        <updated>2021-09-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[USDT(erc20), BOX, MOB and XIN are listed on Pando Rings.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Greeting from Pando]]></title>
+        <id>hello</id>
+        <link href="https://docs.pando.im/de/blog/hello"/>
+        <updated>2021-07-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello, welcome to this blog.]]></summary>
+    </entry>
+</feed>

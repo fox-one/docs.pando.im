@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[5910],{4429:function(a){a.exports=JSON.parse('{"allTagsPath":"/de/blog/tags","slug":"audit-report","name":"audit report","count":1,"permalink":"/de/blog/tags/audit-report"}')}}]);
