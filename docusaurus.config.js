@@ -99,7 +99,7 @@ module.exports = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/',
+              href: 'https://twitter.com/pando_im',
             },
           ],
         },
