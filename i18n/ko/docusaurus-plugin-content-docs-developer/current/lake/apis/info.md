@@ -1,18 +1,18 @@
 ---
-title: Read MTG Info
+title: MTG 정보 읽기
 sidebar_position: 3
 date: 2021-09-30 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+"@site/src/components/api"에서 { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
 
-## GET /info
+## GET /정보
 
-This API will MTG information about 4swap and Lake.
+이 API는 4swap과 Lake에 대한 MTG 정보를 제공할 것입니다.
 
 ````mdx-code-block
 :::info
-You can save the response to use it later because the MTG information wouldn't change frequently.
+MTG 정보가 자주 변경되지 않으므로 나중에 사용하기 위해 응답을 저장할 수 있습니다.
 :::
 ````
 
@@ -20,16 +20,16 @@ You can save the response to use it later because the MTG information wouldn't c
 
 <APIMetaPanel />
 
-<APIRequest title="Read MTG info" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
+<APIRequest title="MTG 정보 읽기" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
 
 
-**Response**
+**응답**
 
 ```json
 {
   "ts": 1627697766645,
   "data": {
-    // user id of MTG members
+    // MTG 구성원의 사용자 ID
     "members": [
       "a753e0eb-3010-4c4a-a7b2-a7bda4063f62",
       "099627f8-4031-42e3-a846-006ee598c56e",
@@ -38,7 +38,7 @@ You can save the response to use it later because the MTG information wouldn't c
       "e4bc0740-f8fe-418c-ae1b-32d9926f5863"
     ],
     "public_key": "dt351xp3KjNlVCMqBYUeUSF45upCEiReSZAqcjcP/Lc=",
-    // multisig threshold
+    // 다중서명 임계값
     "threshold": 3
   }
 }

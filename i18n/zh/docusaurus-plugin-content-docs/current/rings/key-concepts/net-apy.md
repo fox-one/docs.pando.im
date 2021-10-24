@@ -8,9 +8,9 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement msg="better math formula: https://docusaurus.io/docs/markdown-features/math-equations"/>
 
-Net APY(annual percentage yield) reflects the estimatd annual net yield based on the [Supply APY](./glossary) and [Borrow APY](./glossary) of the very moment. 它表示您在当前的APYS是在赚钱还是在亏钱。
+净年化收益率反映了基于当时 [供应年化利率](./glossary) 和 [贷款年化利率](./glossary) 的净年化收益率。 它反映了您在当前的年化收益率是赚钱还是亏钱。
 
-净APY = [∑(资产的供应量x其供应APY)-∑(资产的借款x其借款APY)]/总供应量
+净年化收益率 = [ ∑(资产的供应量 x 资产的供应年化利率) - ∑(资产的贷款量 x 资产的贷款年化利率) ] / 总供应量
 
-举个例子，您提供了两种资产：BTC 和 ETH；您借了两种资产： [pUSD](/docs/leaf/pusd) 和 USDC。 您目前的净APY将是：
-{[(BTC Supply * BTC Supply APY) + (ETH Supply * ETH Supply APY)] - [(pUSD Borrow * pUSD Borrow APY) + (USDC Borrow * USDC Borrow APY)]}(BTC Supply + EtH Supply)
+例如，您提供了两种资产：BTC 和 ETH；您贷了两种资产：[pUSD](/docs/leaf/pusd) 和 USDC。 您当前的净年化收益率将是：
+{[(BTC供应量 * BTC供应年化利率) + (ETH供应量 * ETH供应年化利率)] - [(pUSD贷款量 * pUSD贷款年化利率) + (USDC贷款量 * USDC贷款年化利率)]}/(BTC供应量 + Eth供应量)

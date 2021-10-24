@@ -4,13 +4,13 @@ sidebar_position: 3
 date: 2021-09-30 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+"@site/src/components/api"에서 { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 가져오기;
 
-## Read Global Statistics
+## 글로벌 통계 읽기
 
 ### GET /states/markets
 
-This API will respond historical market statistics
+이 API는 과거 시장 통계에 응답합니다.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/?dur=:dur" />
 
@@ -18,7 +18,7 @@ This API will respond historical market statistics
 
 <APIParams p-dur="The duration. for example, 4320h means latest 180 days"/>
 
-<APIRequest title="Read market statistics" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
+<APIRequest title="시장 통계 읽기" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
 
 ```json title="Response"
 {
@@ -27,9 +27,9 @@ This API will respond historical market statistics
     {
       "ts": 1617408000,
       "date": "2021-04-03T00:00:00Z",
-      // liquidity in US dollar
+      // 미국 달러의 유동성
       "value": "88919122.02992768",
-      // liquidity in US dollar
+      // 미국 달러의 유동성
       "volume": "10727320.64681277"
     },
     ...
@@ -37,11 +37,11 @@ This API will respond historical market statistics
 }
 ```
 
-## Read Pair Statistics
+## 페어 통계 읽기
 
 ### GET /states/markets/:base/:quote
 
-This API will respond historical market statistics specified by base and quote asset.
+이 API는 기준 및 견적 자산별로 지정된 과거 시장 통계에 응답합니다.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/?dur=:dur" />
 
@@ -49,7 +49,7 @@ This API will respond historical market statistics specified by base and quote a
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
+<APIRequest title="ETH-BTC의 시장 통계 읽기" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
 
 ```json title="Response"
 {
@@ -58,9 +58,9 @@ This API will respond historical market statistics specified by base and quote a
     {
       "ts": 1617408000,
       "date": "2021-04-03T00:00:00Z",
-      // liquidity in US dollar
+      // 미국 달러의 유동성
       "value": "88919122.02992768",
-      // liquidity in US dollar
+      // 미국 달러의 유동성
       "volume": "10727320.64681277"
     },
     ...
@@ -68,11 +68,11 @@ This API will respond historical market statistics specified by base and quote a
 }
 ```
 
-## Read Candlestick Data
+## 차트 데이터 읽기
 
 ### GET /states/markets/:base/:quote/kline/v2?dur=:dur
 
-This API will respond the candlestick data specified by base and quote asset.
+이 API는 기준 및 견적 자산별로 지정된 차트 데이터에 응답합니다.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/kline/v2?dur=:dur" />
 
@@ -80,18 +80,18 @@ This API will respond the candlestick data specified by base and quote asset.
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
+<APIRequest title="ETH-BTC의 시장 통계 읽기" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
 
 ```json title="Response"
 {
   "ts": 1627697766503,
   "data": [
     [
-      // timestamp
+      // 타임스탬프
       1612148400,
-      // price of base / quote
+      // 기준 가격/견적 가격
       "0.039304863681",
-      // price of quote / base
+      // 기준 가격/견적 가격
       "25.442131511901"
     ]
     ...

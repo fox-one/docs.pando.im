@@ -4,28 +4,28 @@ sidebar_position: 2
 date: 2021-07-22 22:33:07
 ---
 
-At present, there are two kinds of wallets that are compatible with 4swap/Lake:
+現在、4swap/Lakeと互換性のあるウォレットは2種類あります。
 
-- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): A mobile wallet that is created by Mixin core team.
-- [Fennec](/docs/apps/wallets#fennec): A browser extension wallet created by Fox.ONE team.
+- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): Mixinコアチームによって作成されたモバイルウォレット。
+- [Fennec](/docs/apps/wallets#fennec): Fox.ONEチームが作成したブラウザ拡張ウォレット。
 
-If you are going to provide a web interface that supports any of these wallets, you need to integrate your web app with the wallets and invoke them to pay at the desired time.
+これらいずれかのウォレットをサポートするウェブインターフェースを提供する場合、ウォレットをウェブアプリに統合し、所望時間に支払うよう呼び出す必要があります。
 
 ## Invoke Messenger
 
-To invoke the payment interface of Mixin Messenger is pretty simple:
+Mixin Messengerの決済インターフェースを呼び出す方法はとてもシンプルです:
 
-At first, you need to get the `code_url` or `code` which indicates a multisig transfer need to confirm.
+まず最初に、承認する必要のあるマルチシグ転送を示す`code_url`か`code`を取得する必要があります。
 
-There are two ways to get it:
+取得方法は二つあります:
 
-1. Follow the API ["/api/actions"](../apis/actions) to create a [swap action](../action-protocol#swap-crypto)
-2. Call the API `https://api.mixin.one/payments` to get a payment object which contains `code_id`
-3. Generate a transaction at your own backend and pass the code/code_url to the frontend.
+1. API ["/api/actions"](../apis/actions) に従い、 [スワップアクション](../action-protocol#swap-crypto) を作成します
+2. API `https://api.mixin.one/payments` を呼び出して、 `code_id` を含む支払いオブジェクトを取得してください。
+3. 自身のバックエンドでトランザクションを生成し、code/code_urlをフロントエンドに渡してください。
 
-Here I will show you the first ways:
+一つ目の方法を紹介します:
 
-### Way 1
+### 方法1
 
 ```javascript
 const BTC_ASSET_ID = 'c6d0c728-2624-429b-8e0d-d9d19b6592fa';
@@ -59,7 +59,7 @@ async function pay() {
 }
 ```
 
-### Way 2
+### 方法2
 
 ```javascript
 const BTC_ASSET_ID = 'c6d0c728-2624-429b-8e0d-d9d19b6592fa';
@@ -96,11 +96,11 @@ async function pay() {
 
 ## Invoke Fennec
 
-Fennec is browser extension wallet, which stores encrypted keystores in the browser.
+Fennec はブラウザ拡張ウォレットで、ブラウザに暗号化されたキーストアを格納します。
 
-You don't need to call Mixin API to load assets, read profile or prepare a payment. Instead, Fennec provides its own API to do them all.
+アセットのロードやプロフィールの読み込み、支払い準備のとために Mixin APIを呼び出す必要はありません。 その代わりに、Fennecはそれら全てを実行する独自APIを提供しています。
 
-For more information, please read the [demo's source code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp) to figure out.
+詳細については、 [デモのソースコード](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp) を参照してください。
 
 ```javascript
 // fennec ext

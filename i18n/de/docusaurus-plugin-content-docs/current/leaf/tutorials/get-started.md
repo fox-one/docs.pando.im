@@ -21,11 +21,11 @@ Check all and authorize. Authorization can only view but cannot use your assets.
 :::
 ````
 
-Let's get to know the homepage of pando leaf.
+Lernen Sie die Webseite von Pando Leaf kennen.
 
 ![](../assets/leaf-get-start-p3.png)
 
-You are required to [add a vault](https://docs.pando.im/docs/leaf/tutorials/open-vault) when first enter.  Let's focus on the screenshot on the right.
+Bei dem ersten Einloggen müssen Sie [einen Tresor ](https://docs.pando.im/docs/leaf/tutorials/open-vault) hinzufügen.  Let's focus on the screenshot on the right.
 
 BTC locked is your collateral in the vault. We can see 1 btc in the inmage means we pledged 1 btc in pando leaf.
 

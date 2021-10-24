@@ -8,7 +8,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ## GET /pairs
 
-This API will respond all supported pairs.
+このAPIはサポートされている全てのペアに応答します。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/pairs" />
 
@@ -36,7 +36,7 @@ This API will respond all supported pairs.
 
 ### Coinmarketcap Compatible API for /pairs
 
-The API will respond all supported pairs. It's compatible with Coinmarketcap's requirements.
+このAPIはサポートされている全てのペアに応答します。 これはCoinMarketCapの要件と互換性があります。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/cmc/pairs" />
 
@@ -50,11 +50,11 @@ The API will respond all supported pairs. It's compatible with Coinmarketcap's r
   "data": {
     // combination of 2 crypto's asset_ids
     "05c5ac01-31f9-4a69-aa8a-ab796de1d041_31d2ea9c-95eb-3355-b65b-ba096853bc18": {
-      // Monero's asset id
+      // モネロのアセットID
       "base_id": "05c5ac01-31f9-4a69-aa8a-ab796de1d041",
       "base_name": "Monero",
       "base_symbol": "XMR",
-      // pUSD's asset id
+      // pUSDのアセットid
       "quote_id": "31d2ea9c-95eb-3355-b65b-ba096853bc18",
       "quote_name": "Pando USD",
       "quote_symbol": "pUSD",

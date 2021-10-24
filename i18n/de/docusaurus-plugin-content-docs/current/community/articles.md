@@ -1,21 +1,21 @@
 ---
-title: Articles
+title: Artikel
 sidebar_position: 3
-date: 2021-09-15 22:33:07
+date: 15-09-2021 22:33:07
 ---
 
-Pando value thoughts from all community members. Contents contributed by community memebers are collected here!
+Pando schätzt die Gedanken aller Community-Mitglieder. Inhalte, die von Community-Mitgliedern beigetragen werden, werden hier gesammelt!
 
-You can submit your content [here](https://github.com/fox-one/docs.pando.im/tree/master/docs/community/articles.md). Just put it into the corresponding categories below.
+Sie können Ihre Inhalte [hier](https://github.com/fox-one/docs.pando.im/tree/master/docs/community/articles.md) einreichen. Tragen Sie sie einfach in die entsprechenden Kategorien unten ein.
 
-Use the format: \[Put the title of your content here\](put the link of your content here)
+Verwenden Sie das Format: \[Geben Sie hier den Titel Ihres Inhalts an\](geben Sie hier den Link zu Ihrem Inhalt an)
 
-### Tutorials
+### Anleitungen
 
-Community members write on how to use Pando products.
+Mitglieder der Community schreiben über die Verwendung von Pando-Produkten.
 
-[玩转Mixin系列十二：如何使用Pando Rings借贷(Payment Required)](https://prsdigg.com/articles/39cae74e-385c-4eab-9b45-cc58800e0493) - on how to use Pando Rings (Chinese)
+[玩转Mixin系列十二：如何使用Pando Ringe借贷(Zahlungspflichtig)](https://prsdigg.com/articles/39cae74e-385c-4eab-9b45-cc58800e0493) - Wie man Pando Ringe benutzt (Chinesisch)
 
-### Blog Posts
+### Blog-Beiträge
 
-Community members' thoughts, observations, and analysis of Pando.
+Die Gedanken, Beobachtungen und Analysen der Community-Mitglieder zu Pando.

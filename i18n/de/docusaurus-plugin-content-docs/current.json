@@ -24,7 +24,7 @@
     "description": "The label for category Pando Leaf in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Liquidation": {
-    "message": "Liquidität",
+    "message": "Liquidation",
     "description": "The label for category Liquidation in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Rings": {
@@ -32,7 +32,7 @@
     "description": "The label for category Pando Rings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Wallets": {
-    "message": "Geldbeutel",
+    "message": "Wallets",
     "description": "The label for category Wallets in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.3rd-party Applications": {
@@ -44,7 +44,7 @@
     "description": "The label for category Security in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Community": {
-    "message": "Gemeinschaft",
+    "message": "Community",
     "description": "The label for category Community in sidebar tutorialSidebar"
   },
   "sidebar.docs.category.Pando Lake & 4swap": {
@@ -72,7 +72,7 @@
     "description": "The label for category Pando Rings in sidebar docs"
   },
   "sidebar.docs.category.Applications": {
-    "message": "Applications",
+    "message": "Anwendungen",
     "description": "The label for category Applications in sidebar docs"
   },
   "sidebar.docs.category.Security": {

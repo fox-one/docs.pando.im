@@ -36,7 +36,7 @@ date: 2021-08-13 12:33:07
 :::
 ````
 
-You have to keep your collateralization ratio in a safe range（above 150%） to avoid [liquidation](https://docs.pando.im/docs/leaf/key-concepts/liquidation). When your collateralization ratio breaches the [liquidation ratio](https://docs.pando.im/docs/leaf/key-concepts/liquidation), your collaterals will be in [auction](https://docs.pando.im/docs/leaf/tutorials/auction-participation).
+您必须将您的抵押率保持在一个安全范围内（超过150%），才能避免 [被清算](https://docs.pando.im/docs/leaf/key-concepts/liquidation)。 当你的抵押率例触及[清算率](https://docs.pando.im/docs/leaf/key-concepts/liquidation) 你的抵押物将被[拍卖](https://docs.pando.im/docs/leaf/tutorials/auction-participation) 。
 
 ![](../assets/add-a-vault-p5.png)
 

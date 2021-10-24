@@ -1,39 +1,39 @@
 ---
-title: Action Protocol
+title: 액션 프로토콜
 sidebar_position: 4
 date: 2021-07-31 11:18:01
 ---
 
-4swap and Lake are MTG applications, which read [multisig transactions](https://developers.mixin.one/document/wallet/api/multisigs/tutorial) from Mixin Network.
+4swap 및 Lake는 MTG 애플리케이션으로 Mixin Network에서 [다중 서명 트랜잭션](https://developers.mixin.one/document/wallet/api/multisigs/tutorial)을 읽습니다.
 
-To send transfers to 4swap or Lake, the developers must create multisig transfers.
+4swap 또는 Lake로 송금을 보내려면 개발자가 다중 서명 송금을 생성해야 합니다.
 
-4swap and Lake design the **Action Protocol** to illustrate behaviors of each transaction. The Action Protocol is a JSON based protocol, which uses the encrypted memo to store instruction and parameters.
+4swap과 Lake는 각 트랜잭션의 동작을 설명하기 위해 **액션 프로토콜**을 디자인합니다. 액션 프로토콜은 암호화된 메모를 사용하여 명령과 매개변수를 저장하는 JSON 기반 프로토콜입니다.
 
-## Generate Actions
+## 액션 생성
 
-There are two approaches to generate the actions.
+액션을 생성하는 두 가지 접근 방식이 있습니다.
 
-**Using SDK**
+**SDK를 사용하는 방법**
 
-If you are using [4swap SDK](https://github.com/fox-one/4swap-sdk-go), you can use the SDK's methods to simplify the process. The following example showcases how to generate a swap action by  `mtg.SwapAction`.
+[4swap SDK](https://github.com/fox-one/4swap-sdk-go)를 사용하는 경우 SDK의 방법을 사용하여 프로세스를 단순화할 수 있습니다. 다음 예는 `mtg.SwapAction`으로 스왑 작업을 생성하는 방법을 보여줍니다.
 
 ```go
-// the ID to trace the orders
+// 주문을 추적하는 ID
 followID, _ := uuid.NewV4()
 
-// build a swap action, specified the parameters
+// 스왑 작업 빌드, 매개 변수 지정
 action := mtg.SwapAction(
     receiverID,
     followID.String(),
     OutputAssetID,
     preOrder.Routes,
-    // the minimum amount of asset you will get.
-    // you may want to change this value to a number which is less than preOrder.FillAmount
+    // 당신이 얻을 수 있는 자산의 최소 금액.
+    // 이 값을 preOrder.FillAmount보다 작은 숫자로 변경할 수 있습니다.
     preOrder.FillAmount.Div(decimal.NewFromFloat(0.005)),
 )
 
-// generate the memo
+// 메모 생성
 memo, err := action.Encode(group.PublicKey)
 if err != nil {
     return err
@@ -41,19 +41,19 @@ if err != nil {
 log.Println("memo", memo)
 ```
 
-**Using API**
+**API를 사용하는 방법**
 
-Call the API ["/api/actions"](./apis/actions) to get a signed transfer request that you can use to invoke the wallet service directly.
+지갑 서비스를 직접 호출하는 데 사용할 수 있는 서명된 전송 요청을 받으려면 API ["/api/actions"](./apis/actions)를 호출하십시오.
 
-It would be slower than the SDK approach, however you would not need to generate actions and sign them yourself.
+SDK 접근 방식보다 느리지만 작업을 생성하고 직접 서명할 필요는 없습니다.
 
-## Specification
+## 일반정보 및 사양
 
-### Add Liquidity
+### 유동성 추가
 
-When you are going to add liquidity to an existing pair, you need to send two transfers of these two assets in the pair to 4swap's Mainnet address.
+기존 페어에 유동성을 추가하려면 페어에 있는 이 두 자산을 각각 4swap의 메인넷 주소로 보내야 합니다.
 
-For each transfer, the memo should be constructed in the following form:
+각 전송에 대해 메모는 다음 형식으로 구성되어야 합니다.
 
 ```json
 {
@@ -61,20 +61,20 @@ For each transfer, the memo should be constructed in the following form:
 }
 ```
 
-in which,
+그 중,
 
-- `{receiver_id}` is the id of user who will receive the LP-Token
-- `{follow_id}` is a UUID to trace the transfer, you can use `UUID.v4()` to create one
-- `{asset_id}` is the opposite asset's ID of the pair you are going to deposit. For example, if you are going to add liquidity to [ETH/BTC pair](https://app.4swap.org/#/pair-info?base=43d61dcd-e413-450d-80b8-101d5e903357&quote=c6d0c728-2624-429b-8e0d-d9d19b6592fa), the asset id is `43d61dcd-e413-450d-80b8-101d5e903357` when you pay `BTC` and `c6d0c728-2624-429b-8e0d-d9d19b6592fa` otherwise.
-- `{slippage}` is the slippage ratio, e.g. 0.001 = 0.1%. It may fail if you specified a small slippage value when the market is volatile
-- `{timeout}` is the timeout in sec. If you don't complete the two transfers in time, the crypto will be refunded to you in `timeout`.
+- `{receiver_id}` 는 LP-Token을 받을 사용자의 ID입니다.
+- `{follow_id}` 는 전송을 추적하기 위한 UUID입니다. `UUID.v4()`를 사용하여 생성할 수 있습니다.
+- `{asset_id}` 는 입금할 페어의 반대쪽 자산 ID입니다. 예를 들어 [ETH/BTC 거래 페어](https://app.4swap.org/#/pair-info?base=43d61dcd-e413-450d-80b8-101d5e903357&quote=c6d0c728-2624-429b에 유동성을 추가하려는 경우 -8e0d-d9d19b6592fa), asset_id는 `43d61dcd-e413-450d-80b8-101d5e903357`이며, `BTC`를 지불하려면 asset_id `c6d0c728-2224-429b-8e0d-9d19b6592fa`입니다.
+- `{slippage}` 는 슬리피지(slippage) 비율입니다. 예: 0.001 = 0.1% 시장의 변동성이 심할 때 작은 슬리피지 값을 지정하면 실패할 수 있습니다.
+- `{timeout}` 는 시간 초과(초) 입니다. 두 개의 전송을 제 시간에 완료하지 않으면 `timeout` 내에 암호화폐가 환불됩니다.
 
-If the two transfers have been handled by the 4swap or Lake before timeout, the user you specified in the memo `receiver_id` will receive some LP-Tokens of this pair.
+두 전송이 시간 초과 전에 4swap 또는 Lake에 의해 처리된 경우, 메모 `receiver_id`에 지정한 사용자는 이 페어의 LP-Token 을 받게 됩니다.
 
 
-### Remove Liquidity
+### 유동성 제거
 
-When you are going to remove liquidity of a pair, you need to transfer the LP-Tokens to the 4swap's Mainnet address. Its memo should be in such a form:
+한 페어의 유동성을 제거하려면 LP-Token을 4swap의 메인넷 주소로 이전해야 합니다. 메모는 다음과 같은 형식이어야 합니다.
 
 ```json
 {
@@ -82,16 +82,16 @@ When you are going to remove liquidity of a pair, you need to transfer the LP-To
 }
 ```
 
-in which,
+그 중,
 
-- `{receiver_id}` is the id of user who will receive the crypto
-- `{follow_id}` is a UUID to trace the transfer
+- `{receiver_id}` 는 암호화폐를 받을 사용자의 Id입니다.
+- `{follow_id}` 는 전송을 추적하는 UUID입니다.
 
-If the transfer has been handled, the user you specified in the memo `receiver_id` will receive the equivalent crypto assets.
+전송이 처리되면 메모 `receiver_id`에 지정한 사용자가 동등한 암호화폐 자산을 받게 됩니다.
 
-### Swap Crypto
+### 암호화폐 스왑
 
-When you are going to swap one crypto to another, you need to transfer the crypto which you intend to provide to the 4swap's Mainnet address. The transfer memo should be in such a form:
+하나의 암호화폐를 다른 암호화폐로 교환하려면 교환하려는 암호화폐를 4swap의 메인넷 주소로 전송해야 합니다. 전송 메모는 다음과 같은 형식이어야 합니다.
 
 ```json
 {
@@ -99,19 +99,19 @@ When you are going to swap one crypto to another, you need to transfer the crypt
 }
 ```
 
-in which,
+그 중,
 
-- `{receiver_id}` is the id of user who will receive the LP-Token
-- `{follow_id}` is a UUID to trace the transfer
-- `{fill_asset_id}` is the asset's ID you are going to use for swapping
-- `{routes}` is a route ids' sequence, which indicate which route you want to use.
-- `{minimum}` is the minimum amount of asset you will get
+- `{receiver_id}` 는 LP-Token을 받을 사용자의 ID입니다.
+- `{follow_id}` 는 전송을 추적하는 UUID입니다.
+- `{fill_asset_id}` 는 교환에 사용할 자산의 ID입니다.
+- `{routes}`는 사용하려는 경로를 나타내는 경로 Id의 시퀀스입니다.
+- `{minimum}`는 당신이 얻을 수 있는 최소 금액 입니다.
 
-If 4swap or Lake can't get the minimun destination crypto, the swapping will be aborted and the crypto you send to the Mainnet address will be refunded.
+4swap 또는 Lake가 최소 대상의 암호화폐를 얻지 못하면 스와핑이 중단되고 메인넷 주소로 보내는 암호화폐가 환불됩니다.
 
-## Parsing 4swap or Lake transfer memo
+## 4swap 또는 Lake 송금 메모 분석
 
-> The transfer memo is a base64 decoded json string
+> 전송 메모는 base64로 디코딩된 json 문자열입니다.
 
 ```json5
 {

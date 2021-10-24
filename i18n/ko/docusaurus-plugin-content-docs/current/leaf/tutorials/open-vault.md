@@ -36,7 +36,7 @@ Pando Leaf의 "내 페이지"에서 "[볼트](https://docs.pando.im/docs/leaf/ke
 :::
 ````
 
-You have to keep your collateralization ratio in a safe range（above 150%） to avoid [liquidation](https://docs.pando.im/docs/leaf/key-concepts/liquidation). When your collateralization ratio breaches the [liquidation ratio](https://docs.pando.im/docs/leaf/key-concepts/liquidation), your collaterals will be in [auction](https://docs.pando.im/docs/leaf/tutorials/auction-participation).
+[청산](https://docs.pando.im/docs/leaf/key-concepts/liquidation)을 방지하려면 담보 비율을 안전한 범위(150% 이상) 로 유지해야 합니다. 담보 비율이 [청산 비율](https://docs.pando.im/docs/leaf/key-concepts/liquidation)을 위반하면 담보물은 청산되며 [경매](https://docs.pando.im/docs/leaf/tutorials/auction-participation)로 넘어갑니다.
 
 ![](../assets/add-a-vault-p5.png)
 

@@ -4,14 +4,14 @@ sidebar_position: 3
 date: 2021-09-04 12:33:07
 ---
 
-[Borrow](./glossary) / [Borrow Limit](./glossary) is used to indicate your loan risk.
+[贷款](./glossary) / [贷款限额](./glossary) 用于表示您的贷款风险。
 
-When Borrow / Borrow Limit is <60%, you are in low risk of the loan being [liquidated](./glossary);
+当 贷款 / 贷款限额 <60%， 您处于贷款被 [清算](./glossary) 的低风险;
 
-When 60% ≤ Borrow / Borrow Limit < 80%, you are in medium risk of the loan being liquidated;
+当 60% ≤ 贷款 / 贷款限额 < 80%，您处于贷款被清算的中等风险;
 
-When 80% ≤ Borrow / Borrow Limit < 100%, you are in high risk of the loan being liquidated;
+当 80% ≤ 贷款 / 贷款限额 < 100%，您处于贷款被清算的高风险;
 
-When Borrow / Borrow Limit ≥ 100%, you are in liquidation.
+当 贷款 / 贷款限额 ≥ 100%，您正处于清算中。
 
 ![](../assets/risk.jpg)

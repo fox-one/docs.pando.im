@@ -17,32 +17,32 @@ Entwickler können den Quellcode unter folgender Adresse einsehen: [Android-App]
 ## Fennec
 
 
-[Fennec](https://github.com/fox-one/fennec) is an open source browser extension that allows you to easily manage your own crypto assets wallet of Mixin Network.
+[Fennec](https://github.com/fox-one/fennec) ist eine Open-Source-Browser-Erweiterung, mit der Sie Ihre eigene Brieftasche für Krypto-Assets von Mixin Network einfach verwalten können.
 
-You can install Fennec from Chrome web store or Firefox Add-ons:
+Sie können Fennec über den Chrome Web Store oder Firefox Add-ons installieren:
 
 - [Chrome Store](https://chrome.google.com/webstore/detail/fennec/eincngenkhohbbfpkohipekcmnkfamjp)
 - [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/fennec/)
 
-Fennec uses Mixin Network's keystore files to identify your assets and manage your wallet. There are two ways to create your keystore files.
+Fennec verwendet Mixin Network's Keystore-Dateien, um Ihre Assets zu identifizieren und Ihre Wallet zu verwalten. Es gibt zwei Möglichkeiten, Ihre Keystore-Dateien zu erstellen.
 
-The first option is to create a  dApp from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard). After creating the dApp, you can generate a keystore file.
+Die erste Option ist, eine dApp aus [Mixin Developer Dashboard](https://developers.mixin.one/dashboard) zu erstellen. Nach dem Erstellen der dApp können Sie eine Keystore-Datei generieren.
 
 ````mdx-code-block
 :::info
-**Mixin Developer Dashboard** is a service hosted by Mixin Core Team. You can use it to create two free dApps, but you will need to pay a fee for more dApps.
+**Mixin Developer Dashboard** ist ein Dienst, der vom Mixin Core Team bereitgestellt wird. Sie können damit kostenlos zwei dApps erstellen, aber für weitere dApps müssen Sie eine Gebühr bezahlen.
 :::
 ````
 
-The second option is to use the [Account Service providers](https://github.com/fox-one/fennec-asp) to generate a keystore file.
+Die zweite Option besteht darin, die [Account Service providers](https://github.com/fox-one/fennec-asp) zu verwenden, um eine Keystore-Datei zu erstellen.
 
 ```mdx-code-block
 :::info
-**Account Service Provider** is also an open source program that creating valid keystore files for you.
- You can host an instance yourself or use one from the 3rd party hoster.
+**Account Service Provider** ist auch ein Open-Source-Programm, das gültige Keystore-Dateien für Sie erstellt.
+ Sie können eine Instanz selbst hosten oder eine von einem Drittanbieter verwenden.
 
-The hoster has the permission to view the transactions and assets of your wallet (but no permission to operate your wallet). Please make sure you trust the 3rd party hoster before using it.
+Der Hoster hat die Berechtigung, die Transaktionen und das Asset Ihrer Wallet einzusehen (aber keine Berechtigung, Ihre Wallet zu betreiben). Bitte stellen Sie sicher, dass Sie dem Drittanbieter vertrauen, bevor Sie ihn verwenden.
 :::
 ```
 
-For more information, please refer to [Fennec repo](https://github.com/fox-one/fennec) and [Fennec-asp repo](https://github.com/fox-one/fennec-asp).
+Weitere Informationen finden Sie unter [Fennec repo](https://github.com/fox-one/fennec) und [Fennec-asp repo](https://github.com/fox-one/fennec-asp).

@@ -4,7 +4,7 @@ sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 
-[Pando Lake](https://lake.pando.im) is a decentralized protocol for automated liquidity provision built with the Mixin MTG (Mixin Trusted Group) technology, an alternative to smart contracts on Mixin Network.
+[Pando Lake](https://lake.pando.im) は、Mixin MTG(Mixin Trusted Group)テクノロジーが構築した自動流動性供給のための分散型プロトコルです。Mixin Networkのスマートコントラクトに代わるものです。
 
 It uses combined algorithms - functioning on a Curve-like, bespoke low slippage, low trading fee algorithm specifically for swapping between stablecoins and on the constant product formula `x*y=k` for the rest of pairs.
 

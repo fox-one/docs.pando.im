@@ -4,32 +4,32 @@ sidebar_position: 2
 date: 2021-09-15 22:33:07
 ---
 
-Pando 文档是开源的。 非常欢迎您将其翻译成其他语言，让更多的人能够使用它！
+Pando 文档是开源的。 非常欢迎您将其翻译成其他语言，让它被更多人接受！
 
 ## 准备
 
-Pando 文档是基于 [Docusaurus](https://docusaurus.io/docs/en/latest/) 生成的，Docusaurus 是一种基于 React 的静态网站生成器。
+Pando 文档是基于 [Docusaurus](https://docusaurus.io/docs/en/latest/) 生成的，Docusaurus 是基于 React 构建的站点生成器。
 
 - 确保你已经安装了Yarn
 - 克隆文档的仓库
 - 在仓库的根目录下运行 ` yarn `
-- 运行 `yarn启动` 来预览文档
+- 运行 `yarn start` 来预览文档
 
 ## 文档结构
 
-Pando 文档是按以下的方式组织编排的：
+Pando 文档是按照以下方式组织的：
 
 - 所有源文件都在 `docs` 和 `developer` 文件夹下
 - `docs` 文件夹下包含以下几个子文件夹
-  - `lake` 包含所有 Pando Lake& 4swap 的文档
+  - `lake` 包含所有 Pando Lake & 4swap 的文档
   - `leaf` 包含所有 Pando Leaf 的文档
   - `rings` 包含所有 Pando Rings 的文档
-  - `wallets` 包含所有关于 Mixin 网络钱包的文档
+  - `wallets` 包含所有关于 Mixin Network 钱包的文档
   - `3rd-party-apps` 列出一些基于 Pando 构建的第三方应用程序
   - `security` 包含与安全有关的文档
   - `community` 包含所有社区相关的文档
 - `developer` 文件夹下包含以下几个子文件夹
-  - `lake` 包含 Pando Lake 和 4swap的开发文档
+  - `lake` 包含 Pando Lake 和 4swap 的开发文档
   - `leaf` 包含 Pando Leaf 的开发文档
   - `rings` 包含 Pando Rings 的开发文档
   - `resources` 包含一些相关资源文件
@@ -68,7 +68,7 @@ yarn run write-translations --locale $LANG_CODE
 
 **生成 Markdown 文件**
 
-将文档Markdown文件复制到`i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`，并翻译它们：
+将 docs 文件夹下的 Markdown文件复制到 `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current` 文件夹下，并翻译：
 
 ```bash
 mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
@@ -77,18 +77,18 @@ cp -r docs/** i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
 
 #### 翻译文档
 
-所有文档都根据语言被放置在 `i18n/$LANG_CODE/` 中。
+所有文档都根据语言被放置在 `i18n/$LANG_CODE/` 文件夹内。
 
-- `i18n/$LANG_CODE/code.json`: 索引页面和文档使用的 docusaurus 进行翻译。
-- `i18n/$LANG_CODE/docusaurus-theme-classic/footer.json`页脚翻译。
-- `i18n/$LANG_CODE/docusaurus-theme-classic/navbar.json`: 导航栏翻译。
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current.json`: 侧边栏类别标签。
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current/**`：文档的markdown文件。
+- `i18n/$LANG_CODE/code.json`: 索引页面和被 docusaurus 使用的文本的翻译
+- `i18n/$LANG_CODE/docusaurus-theme-classic/footer.json` 页脚的翻译
+- `i18n/$LANG_CODE/docusaurus-theme-classic/navbar.json`: 导航栏的翻译
+- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current.json`: 侧边栏的类别标签
+- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current/**`：文档的markdown文件
 
 **翻译预览**
 
 ```bash
-yarn 运行启动 --locale $LANG_CODE
+yarn run start --locale $LANG_CODE
 ```
 
 

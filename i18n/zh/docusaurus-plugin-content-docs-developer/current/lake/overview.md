@@ -4,7 +4,7 @@ sidebar_position: 1
 date: 2021-09-30 14:38:07
 ---
 
-Pando Lake 是一个 在 Mixin 网络上使用 MTG 技术构建的[Uniswap](https://uniswap.org) v2 实现。 受益于Mixin了不起的TPS，Pando Lake在交易上表现出色，大多数交易可以在几秒钟内确认。
+Pando Lake 是一个 在 Mixin Network 上使用 MTG 技术搭建的 [Uniswap](https://uniswap.org) v2 应用。 得益于Mixin超乎寻常的TPS，Pando Lake在交易上表现出色，大多数交易几秒钟内就能完成确认。
 
 ## Pando Lake 简介
 

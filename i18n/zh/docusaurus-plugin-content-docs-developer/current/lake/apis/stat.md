@@ -87,7 +87,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
   "ts": 1627697766503,
   "data": [
     [
-      // 时间辍
+      // 时间戳
       1612148400,
       // base / quote 的价格
       "0.039304863681",

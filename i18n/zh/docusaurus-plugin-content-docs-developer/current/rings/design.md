@@ -8,7 +8,7 @@ date: 2021-03-20 12:38:07
 
 ## 架构
 
-Rings 是 MTG 的一个实现，也是 Mixin 网络的平行链。
+Rings 是 MTG 的一个实现，也是 Mixin Network的平行链。
 
 ![](design/architecture.jpg)
 
@@ -36,16 +36,16 @@ Rings 是 MTG 的一个实现，也是 Mixin 网络的平行链。
 
 * `质押`，假设用户质押权益代币`rETH`，即用户向Rings系统支付`rETH` ![](design/tl_pledge.jpg)
 
-* `取消质押`，假设用户对权益代币`rETH`进行质押，即用户支付一定的gas`CNB`，即可获得权益代币`rETH` 返回 ![](design/tl_unpledge.jpg)
+* `取消质押`，假设用户对权益代币`rETH`进行质押，即用户支付一定的`CNB` gas费，即可获得权益代币`rETH` 返回 ![](design/tl_unpledge.jpg)
 
 * `赎回`，假设用户从系统中赎回底层代币`ETH`，即用户支付权益代币`rETH`，即可获得等价的底层代币`ETH` 返回 ![](design/tl_redeem.jpg)
 
-* `借出`，假设用户需要借入底层代币`USDT`，即用户需要支付一定的gas`CNB`，将获得预期的底层代币`USDT` ![](design/tl_borrow.jpg)
+* `借出`，假设用户需要借入底层代币`USDT`，即用户需要支付一定的`CNB` gas费，将获得预期的底层代币`USDT` ![](design/tl_borrow.jpg)
 
 * `还款`，假设用户偿还`USDT`，即用户支付`USDT`，用户的债务就会减少 ![](design/tl_repay.jpg)
 
 * `快速质押`，假设用户提供底层代币`ETH`，没有权益代币`rETH`返还给用户 ![](design/tl_quick_pledge.jpg)
-* `快速赎回`，假设用户赎回`ETH`，用户只需支付一定的gas`CNB`，即可赎回底层代币`ETH` ![](design/tl_quick_redeem.jpg)
+* `快速赎回`，假设用户赎回`ETH`，用户只需支付一定的`CNB` gas费，即可赎回底层代币`ETH` ![](design/tl_quick_redeem.jpg)
 * `快速借出`，假设用户可以供应`ETH`或`rETH`，可以借用`USDT` ![](design/tl_quick_borrow.jpg)
 
 
@@ -145,6 +145,9 @@ group:
   vote:
     asset: 965e5c6e-434c-3fa9-b780-c50f43cd955c
     amount: 0.00000001
+ 
+Text
+XPath: /pre[2]/code
 ```
 
 #### 为应用层导出的[Rest API](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go)，包括：
