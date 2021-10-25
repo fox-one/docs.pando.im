@@ -19,7 +19,7 @@ Mixin Messenger의 결제 인터페이스를 호출하는 것은 매우 간단�
 
 두 가지 방법으로 얻을 수 있습니다.
 
-1. API ["/api/actions"를 따라](../href/actions)[swap action](../action-protocol#swap-crypto)을 생성합니다.
+1. API ["/api/actions"를 따라](../apis/actions)[swap action](../action-protocol#swap-crypto)을 생성합니다.
 2. API ` https://api.mixin.one/payments`를 호출하여 `code_id`가 포함된 결제 개체를 가져옵니다.
 3. 자체 백엔드에서 트랜잭션을 생성하고 code/code_url을 프론트엔드에 전달하십시오.
 
