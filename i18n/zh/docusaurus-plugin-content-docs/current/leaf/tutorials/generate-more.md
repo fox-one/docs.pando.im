@@ -16,17 +16,17 @@ date: 2021-08-13 12:33:07
 同时，您需要小心相关风险。
 
 ````mdx-code-block
-::::注意
+:::caution
 
-请确保抵押利率在一个安全范围内，抵押率低于150%[liquidated]抵押资产将完全被平仓清算。
+请确保抵押利率在一个安全范围内，抵押率低于150% 的抵押资产将完全被平仓清算。
 
 :::
 ````
 
 ````mdx-code-block
-:::信息
+:::info
 
-您可能需要[pando 种子](https://docs.pando.im/docs/leaf/key-concepts/pando-seed)来协助此操作。
+您可能需要[Pando Seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed)来协助此操作。
 
 :::
 ````

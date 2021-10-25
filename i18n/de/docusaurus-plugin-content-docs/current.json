@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Nächste",
+    "message": "Weiter",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Pando Lake": {
@@ -8,7 +8,7 @@
     "description": "The label for category Pando Lake in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorials": {
-    "message": "Tutorien",
+    "message": "Anleitungen",
     "description": "The label for category Tutorials in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Key Concepts": {
@@ -52,7 +52,7 @@
     "description": "The label for category Pando Lake & 4swap in sidebar docs"
   },
   "sidebar.docs.category.Tutorials": {
-    "message": "Tutorien",
+    "message": "Anleitungen",
     "description": "The label for category Tutorials in sidebar docs"
   },
   "sidebar.docs.category.Key Concepts": {

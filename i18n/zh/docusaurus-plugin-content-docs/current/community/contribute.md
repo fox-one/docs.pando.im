@@ -68,7 +68,7 @@ yarn run write-translations --locale $LANG_CODE
 
 **生成 Markdown 文件**
 
-将 docs 文件夹下的 Markdown文件复制到 `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current` 文件夹下，并翻译：
+将文档中的Markdown文件复制到`i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`，并翻译它们：
 
 ```bash
 mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current

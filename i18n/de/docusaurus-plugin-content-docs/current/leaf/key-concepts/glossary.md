@@ -5,7 +5,7 @@ date: 2021-08-13 12:33:07
 ---
 
 
-import { Improvement, } from "@site/src/components/admonitions";
+importiert { Verbesserung, } aus "@site/src/components/admonitions";
 
 <Improvement />
 
@@ -15,14 +15,14 @@ import { Improvement, } from "@site/src/components/admonitions";
 3. Münzprägen
 4. Schulden
 
-### Vaults related
-1. [Deposit](https://docs.pando.im/docs/leaf/tutorials/add-collateral)
-2. [Withdraw](https://docs.pando.im/docs/leaf/tutorials/withdraw)
+### Über Tresor
+1. [Einzahlung](https://docs.pando.im/docs/leaf/tutorials/add-collateral)
+2. [Auszahlung](https://docs.pando.im/docs/leaf/tutorials/withdraw)
 3. [Generate](https://docs.pando.im/docs/leaf/tutorials/generate-more)
-4. [Pay Back](https://docs.pando.im/docs/leaf/tutorials/payback)
+4. [Rückzahlung](https://docs.pando.im/docs/leaf/tutorials/payback)
 5. Collateralization Ratio
 6. [Minimum Collateralization Ratio (Liquidation Ratio)](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio)
-7. [Liquidation Price](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-price)
+7. [Liquiditätspreis](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-price)
 8. Stability Fee
 
 ### Liquidation Related

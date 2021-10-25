@@ -1,44 +1,44 @@
 ---
-title: Design
+title: 디자인
 sidebar_position: 1
 date: 2021-07-31 14:38:07
 ---
 
 
-## Pando Lake Design
+## Pando Lake 디자인
 
-> Pando Lake is a MTG implementation on Mixin Network of Uniswap V2
+> Pando Lake는 Uniswap V2의 Mixin 네트워크에 구현된 MTG 입니다.
 
-Pando Lake is an automated liquidity protocol powered by a constant product formula and implemented in [Mixin Multisig Groups](https://developers.mixin.one/document/mainnet/mtg/overview). It obviates the need for single Mixin Dapp, prioritizing decentralization, censorship resistance, and security.
+Pando Lake는 일정한 제품 공식으로 구동되는 자동화된 유동성 프로토콜이며 [Mixin Multisig Groups](https://developers.mixin.one/document/mainnet/mtg/overview)에서 구현됩니다. 단일 Mixin Dapp의 필요성을 배제하고 분산화, 검열 저항 및 보안을 우선시합니다.
 
-Anyone can become a liquidity provider (LP) for a pool by depositing an equivalent value of each underlying token in return for pool tokens. These tokens track pro-rata LP shares of the total reserves, and can be redeemed for the underlying assets at any time.
+풀 토큰에 대한 대가로 각 기본 토큰의 동등한 가치를 예치함으로써 누구나 풀의 유동성 공급자(LP) 가 될 수 있습니다. 이 토큰은 전체 적립금의 비례 배분 LP 지분을 추적하고 언제든지 기본 자산으로 상환될 수 있습니다.
 
-Pairs act as automated market makers, standing ready to accept one token for the other as long as the “constant product” formula is preserved. This formula, most simply expressed as **x * y = k**, states that trades must not change the product (k) of a pair’s reserve balances (x and y). Because k remains unchanged from the reference frame of a trade, it is often referred to as the invariant. This formula has the desirable property that larger trades (relative to reserves) execute at exponentially worse rates than smaller ones.
+페어는 상수 곱 공식이 유지되는 한 자동화된 시장 메이커 역할을 하며 한 코인을 다른 코인으로 교환해 드릴 준비가 항상 되어 있습니다. 가장 간단하게 **x * y = k**으로 표현되는 이 공식은 교환이 한 페어의 예비 균형 (x와 y) 의 곱 (k) 을 변화시켜서는 안 된다는 것을 말합니다. K는 거래의 기준 프레임에서 변하지 않기 때문에 종종 불변수로 언급되기도 합니다. 이 공식은 (예치금 대비) 큰 거래가 작은 거래보다 기하급수적으로 느린 속도로 실행되는 바람직한 속성을 가지고 있습니다.
 
-> A modified [Curve](https://curve.fi) formula used on the stablecoin pools like USDT/USDC.
+> USDT/USDC와 같은 스테이블 코인 풀에서 사용되는 수정된 [Curve](https://curve.fi) 공식.
 
-## Deposit
+## 예치
 
-Each Pando Lake liquidity pool is a trading venue for a pair of Mixin Mainnet tokens. When a pool is created by the governance, its balances of each token are 0; in order for the pool to begin facilitating trades, someone must seed it with an initial deposit of each token. This first liquidity provider is the one who sets the initial price of the pool.
+각 Pando Lake 유동성 풀은 한 페어의 Mixin 메인넷 토큰을 위한 거래 장소입니다. 거버넌스에 의해 마이닝 풀이 생성될 때 각 토큰의 잔액은 0입니다. 마이닝 풀이 거래를 촉진하기 위해서는 누군가가 각 토큰의 초기 예치금을 시드로 예치해야 합니다. 이 첫 번째 유동성 공급자는 풀의 초기 가격을 설정하는 사람입니다.
 
-The number of liquidity tokens This first liquidity provider will receive would equal `sqrt(x*y)`, where x and y represent the amount of each token provided. For the following providers, the number will be `min(x/reserve_x,y/reserve_y)*liquidity_shares`.
+이 최초 유동성 제공자가 받게 될 유동성 토큰의 수는 `sqrt(x*y)`와 같으며, 여기서 x와 y는 제공된 각 토큰의 양을 나타냅니다. 다음 제공자의 경우 숫자는 `min(x/reserve_x,y/reserve_y)*liquidity_shares`입니다.
 
-![deposit](./assets/pando_lake_deposit.png)
+![예치](./assets/pando_lake_deposit.png)
 
-## Withdraw
+## 출금
 
-To retrieve the underlying liquidity, plus any fees accrued, liquidity providers must give back their liquidity tokens, effectively exchanging them for their portion of the liquidity pool, plus the proportional fee allocation.
+기초 유동성과 누적된 수수료를 회수하기 위해, 유동성 제공자들은 그들의 유동성 토큰을 돌려주어야 효과적으로 유동성 풀에서 그들의 몫과 비례적인 수수료 할당을 받을 수 있습니다.
 
-The number of tokens retrieved will be `lp_token/liquidity_shares*reserve_x` and `lp_token/liquidity_shares*reserve_y`.
+회수할 토큰의 수는 `lp_token/liquidity_shares*reserve_x` 및 `lp_token/liquidity_shares*reserve_y`입니다.
 
-![withdraw](./assets/pando_lake_withdraw.png)
+![출금](./assets/pando_lake_withdraw.png)
 
-## Swap
+## 스왑
 
-From the constant product formula it follows that the price of that token A is simply price_token_A = reserve_token_B / reserve_token_A. The market price only moves as the reserve ratio of the tokens in the pool changes, which happens when someone trades against it.
+상수 곱 공식에서 해당 토큰 A의 가격은 단순히 price_token_A = reserve_token_B / reserve_token_A입니다. 시장 가격은 풀에 있는 토큰의 예치금 비율이 변경될 때만 움직이며, 이는 누군가가 그에 대해 거래할 때 발생합니다.
 
-The swapping rule is the constant product formula. When either token is withdrawn, a proportional amount of the other must be deposited, in order to make the constant(`k`) unchange.
+스왑 규칙은 상수 곱 공식입니다. 토큰 중 하나를 인출할 때 상수(`k`) 를 변경하지 않으려면 다른 토큰에 비례하는 금액을 입금해야 합니다.
 
-Pando Lake applies a 0.3% fee (0.04% for stablecoin pools) to trades, which is added to reserves to increases `k` actually as a payout to liquidation providers.
+Pando Lake는 거래에 0.3% 수수료(스테이블코인 풀의 경우 0.04%) 를 적용하며, 이는 청산 제공자에 대한 지불금으로 `k`를 증가시키기 위해 준비금에 추가됩니다.
 
-![swap](./assets/pando_lake_swap.png)
+![스왑](./assets/pando_lake_swap.png)

@@ -4,11 +4,11 @@
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
-    "message": "Gemeinschaft",
+    "message": "Community",
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "Weiter",
+    "message": "Mehr",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.User Manuals": {

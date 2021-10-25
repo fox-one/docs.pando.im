@@ -4,8 +4,8 @@ sidebar_position: 3
 date: 2021-08-13 14:33:07
 ---
 
-清算价格是抵押资产容易受到清算的价格。
+清算价格是抵押资产受到清算的价格。
 
-Vault owners can lower their liquidation price by adding more collateral or returning pUSD to the Vault.
+金库所有者可以通过向金库中添加更多抵押品或退还pUSD来降低清算价格。
 
 Liquidation Price = (Generated pUSD * Liquidation Ratio) / (Amount of Collateral)

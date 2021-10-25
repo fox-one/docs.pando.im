@@ -4,26 +4,26 @@ sidebar_position: 1
 date: 30-09-2021 23:18:01
 ---
 
-Pando Lake und 4swap bieten einfache, entwicklerfreundliche APIs für Drittentwickler.
+Pando Lake und 4swap bieten die einfache entwicklerfreundliche APIs für die Drittanbieter-Entwickler.
 
 ## API-Endpunkte
 
 | Name        | Endpunkt                        |
 | ----------- | ------------------------------- |
-| Primary     | https://api.4swap.org/api       |
+| Primär      | https://api.4swap.org/api       |
 | Alternative | https://mtgswap-api.fox.one/api |
 
-You can use any of them to construct your API requests in form:
+Sie können alle folgenden Formen für Ihre API-Anfragen verwenden:
 
 ```
 HTTP_METHOD ${API_BASE}/${API_PATH}
 ```
 
-## Entities
+## Geschäftsobjekte
 
-Some entities are widely used in the API responses.
+Einige Objekte werden in den API-Antworten häufig verwendet.
 
-### Pair Entity
+### Ein paar Objekte
 
 ```json
 {
@@ -53,23 +53,24 @@ Some entities are widely used in the API responses.
 }
 ```
 
-### Asset Entity
+### Vermögensträger
 
 ```json
 {
-  // asset id
+  // Asset-ID
   "id": "159648dc-eba7-3d0e-82ea-06995bee0537",
-  // displayed name, symbol and icon
+  // angezeigter Name, Symbol und Ikon
   "name": "4swap LP Token BTC-wBTC",
   "symbol": "sBTC-wBTC",
   "logo": "https://mixin-images.zeromesh.net/kVAd-goGIX7OAFruP_gcT04yXomO4BfTFEyeroKPl38Ypc6KQnQZBdeVzp8VCOiDyD-4-A8Wyh_HiFztViJxjrSZezrlRl6Up5SCWw=s128",
-  // asset id of chain asset
+  // Asset-ID des Chain-Assets
   "chain_id": "43d61dcd-e413-450d-80b8-101d5e903357",
-  // chain asset entity
+  // Entität des Ketten-Assets
   "chain": {Asset Entity},
-  // price in US Dollar
+  // Preis in US Dollar
   "price": "84447.541565189134",
-  // extra information of this assets
-  "extra": {"circulation":"109542949","name":"Ethereum","explorer":"https://etherscan.io/","intro":{"en":["Ethereum is a decentralized open-source blockchain system that features its own cryptocurrency, Ether. ETH works as a platform for numerous other cryptocurrencies, as well as for the execution of decentralized smart contracts.","Ethereum was first described in a 2013 whitepaper by Vitalik Buterin. Buterin, along with other co-founders, secured funding for the project in an online public crowd sale in the summer of 2014 and officially launched the blockchain on July 30, 2015.","Ethereum’s own purported goal is to become a global platform for decentralized applications, allowing users from all over the world to write and run software that is resistant to censorship, downtime and fraud."]},"website":"https://www.ethereum.org/","issue":"2014/7/24","total":"109542949"}
+  // zusätzliche Informationen zu diesem Asset
+  "extra": {"circulation":"109542949","name":"Ethereum","explorer":"https://etherscan.io/","intro":{"en":["Ethereum is a decentralized open-source blockchain system that features its own cryptocurrency, Ether.
+ ETH works as a platform for numerous other cryptocurrencies, as well as for the execution of decentralized smart contracts.","Ethereum was first described in a 2013 whitepaper by Vitalik Buterin. Buterin, along with other co-founders, secured funding for the project in an online public crowd sale in the summer of 2014 and officially launched the blockchain on July 30, 2015.","Ethereum’s own purported goal is to become a global platform for decentralized applications, allowing users from all over the world to write and run software that is resistant to censorship, downtime and fraud."]},"website":"https://www.ethereum.org/","issue":"2014/7/24","total":"109542949"}
 }
 ```

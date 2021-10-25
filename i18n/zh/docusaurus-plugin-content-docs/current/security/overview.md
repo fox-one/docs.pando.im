@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: 总览
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ Pando 团队是一个以安全为中心的团队，承若保护您的数据和�
 
 Pando的安全实践基于以下原则：
 
-- **信任的**: 只允许受信任的 MTG 合作者访问您的数据。
+- **信任的**：只允许受信任的 MTG 合作者访问您的数据。
 - **去中心化**：所有节点的密钥对均由MTG合作伙伴生成并单独存储。
 - **共识**：在MTG没有达成共识的情况下，任何单一MTG成员都无法修改您的数据。
 - **关注隐私**：未经您的许可，任何人都不能阅读您的信息。
@@ -15,10 +15,10 @@ Pando的安全实践基于以下原则：
 
 ## 审计
 
-安全审计由以下小组组成：
+安全审计由以下团队组完成：
 
 1. [IOActive](https://ioactive.com/)
-2. [最小权限](https://leastauthority.com/)
+2. [Least Authority](https://leastauthority.com/)
 
 下列表格介绍了Pando产品的审计流程：
 

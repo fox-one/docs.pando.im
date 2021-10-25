@@ -12,7 +12,7 @@ Pando 的价值理念来自于所有社群成员。 社区成员贡献的内容�
 
 ### 教程
 
-社区成员书写了如何使Pando产品。
+社区成员撰写了关于如何使 Pando 产品的经历。
 
 [玩转Mixin系列十二：如何使用Pando Rings借贷(需要付款)](https://prsdigg.com/articles/39cae74e-385c-4eab-9b45-cc58800e0493) - 关于如何使用Pando Rings (中文)
 

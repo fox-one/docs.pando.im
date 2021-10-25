@@ -29,7 +29,7 @@ Fennec使用Mixin Network的密钥存储文件来识别您的资产和管理您�
 第一种方式是从[Mixin开发者仪表板](https://developers.mixin.one/dashboard)创建dApp。 创建 dAppp 后，您可以生成一个密钥存储文件。
 
 ````mdx-code-block
-:::信息
+:::info
 **Mixin 开发者仪表盘** 是由 Mixin 核心团队托管的服务。 您可以使用它创建两个免费的dApp，但您需要创建更多dApp则需要支付费用。
 :::
 ````
@@ -37,9 +37,9 @@ Fennec使用Mixin Network的密钥存储文件来识别您的资产和管理您�
 第二个方法是使用[帐户服务提供商](https://github.com/fox-one/fennec-asp)生成密钥存储文件。
 
 ```mdx-code-block
-:::信息
+:::info
 
-**帐户服务提供商**也是一个开源程序，为您创建有效的密钥存储文件。
+**Account Service Provider**也是一个开源程序，为您创建有效的密钥存储文件。
  您可以自己托管实例或使用第三方主机中的实例。
 
 主机有权查看钱包的交易和资产(但无权操作钱包)。 在使用它之前，请确保您信任第三方主持人。
