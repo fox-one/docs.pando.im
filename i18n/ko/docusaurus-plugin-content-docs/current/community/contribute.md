@@ -68,7 +68,7 @@ The translation files are generated in the `i18n/$LANG_CODE/` directory.
 
 **Generate Markdown files**
 
-Copy the docs Markdown files to `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, and translate them:
+Copy Markdown files in docs to `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, and translate them:
 
 ```bash
 mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
