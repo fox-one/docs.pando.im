@@ -57,7 +57,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /transactions/:follow_id
 
-此 API 将根据 `:follow_id` 返回一次交易信息。 `follow_id` 是你在创建 [动作(Action)``](./actions) 时能够指定的一个 UUID。
+此 API 将根据 `:follow_id` 返回一次交易信息。 `follow_id` 是你在创建 [`动作(Action)`](./actions) 时能够指定的一个 UUID。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" />
 

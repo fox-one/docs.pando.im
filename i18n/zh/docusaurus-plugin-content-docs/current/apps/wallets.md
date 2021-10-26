@@ -24,7 +24,7 @@ Mixin Messenger由Mixin核心团队开发，并基于GPL-3.0许可发布。
 - [Chrome商店](https://chrome.google.com/webstore/detail/fennec/eincngenkhohbbfpkohipekcmnkfamjp)
 - [Firefox 插件](https://addons.mozilla.org/en-US/firefox/addon/fennec/)
 
-Fennec使用Mixin Network的密钥存储文件来识别您的资产和管理您的钱包 有两种方法来创建您的密钥存储文件。
+Fennec使用Mixin Network的密钥存储文件来识别您的资产和管理您的钱包。 有两种方法来创建您的密钥存储文件。
 
 第一种方式是从[Mixin开发者仪表板](https://developers.mixin.one/dashboard)创建dApp。 创建 dAppp 后，您可以生成一个密钥存储文件。
 

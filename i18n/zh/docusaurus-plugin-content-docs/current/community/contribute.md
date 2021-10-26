@@ -4,11 +4,11 @@ sidebar_position: 2
 date: 2021-09-15 22:33:07
 ---
 
-Pando 文档是开源的。 非常欢迎您将其翻译成其他语言，让它被更多人接受！
+Pando 的文档是开源的。 非常欢迎您将其翻译成其他语言，让更多的人能够使用它！
 
 ## 准备
 
-Pando 文档是基于 [Docusaurus](https://docusaurus.io/docs/en/latest/) 生成的，Docusaurus 是基于 React 构建的站点生成器。
+Pando 文档是基于 [Docusaurus](https://docusaurus.io/docs/en/latest/) 生成的，Docusaurus 是一种基于 React 的静态网站生成器。
 
 - 确保你已经安装了Yarn
 - 克隆文档的仓库
@@ -17,17 +17,17 @@ Pando 文档是基于 [Docusaurus](https://docusaurus.io/docs/en/latest/) 生成
 
 ## 文档结构
 
-Pando 文档是按照以下方式组织的：
+Pando 文档是按以下的方式组织编排的：
 
 - 所有源文件都在 `docs` 和 `developer` 文件夹下
 - `docs` 文件夹下包含以下几个子文件夹
   - `lake` 包含所有 Pando Lake & 4swap 的文档
   - `leaf` 包含所有 Pando Leaf 的文档
   - `rings` 包含所有 Pando Rings 的文档
-  - `wallets` 包含所有关于 Mixin Network 钱包的文档
-  - `3rd-party-apps` 列出一些基于 Pando 构建的第三方应用程序
-  - `security` 包含与安全有关的文档
-  - `community` 包含所有社区相关的文档
+  - `wallets` 包含所有关于 Mixin 网络钱包的文档
+  - `3rd-party-apps` 列出了一些基于 Pando 构建的第三方应用程序
+  - `security` 包含了与安全有关的文档
+  - `community` 包含了所有社区相关的文档
 - `developer` 文件夹下包含以下几个子文件夹
   - `lake` 包含 Pando Lake 和 4swap 的开发文档
   - `leaf` 包含 Pando Leaf 的开发文档
@@ -35,9 +35,9 @@ Pando 文档是按照以下方式组织的：
   - `resources` 包含一些相关资源文件
 - `docs` 的侧边栏在 `sidebar.docs.js` 代码文件中定义，`developer` 的侧边栏在 `sidebar.developer.js` 代码文件中定义
 
-## 翻译工具
+## 翻译
 
-### 用 Crowdin 翻译
+### 在 Crowdin 进行翻译
 
 如果你不熟悉 Github 和 Pando 的 i18n，我们推荐你使用 Crowdin 来帮助我们翻译文档。
 

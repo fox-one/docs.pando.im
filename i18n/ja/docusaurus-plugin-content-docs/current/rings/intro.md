@@ -1,12 +1,12 @@
 ---
-title: What's Pando Rings
+title: Pando Ringsとは？
 sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 
-Pando Rings is an algorithmic, autonomous interest rate protocol built with Mixin MTG (Mixin Trusted Group) technology. It is a place where you can lend or borrow cryptocurrencies. You can think of it as an open market for money. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.
+Pando Ringsは、Mixin MTG（Mixin Trusted Group）テクノロジーで構築されたアルゴリズムによる自律型金利プロトコルです。 それはあなたが暗号通貨を貸したり借りたりできる場所です。 あなたはそれをお金のためのオープンな市場と考えることができます。 ユーザーは暗号通貨を預けて利息を稼いだり、他の暗号資産を借りたりすることができます。
 
-The interest rates for supplying and borrowing are adjusted algorithmically based on supply and demand.
+供給と借入の金利は、供給と需要に基づいてアルゴリズムで調整されます。
 
 
 ## How does Pando Rings work?

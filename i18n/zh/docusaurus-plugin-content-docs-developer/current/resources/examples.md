@@ -14,7 +14,7 @@ date: 2021-07-31 13:03:07
 
 ## Mixin教程
 
-从零开始制作 Mixin Messenger 机器人的教程，此机器人包含在 4swap 或 Pando Lake 上交换加密货币的功能。
+从零开始制作 Mixin Messenger 机器人的教程，此机器人包含在 4swap 或 Pando Lake 上交易加密货币的功能。
 
 - 源代码: https://github.com/lyricat/mixin-tutorial
 

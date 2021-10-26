@@ -37,7 +37,7 @@ Pando Leaf 支持 [Mixin Messenger](https://docs.pando.im/docs/wallets/mixin-mes
 
 ````mdx-code-block
 :::caution
-请确保抵押利率在一个安全范围内，抵押率低于150%抵押资产将完全被平仓清算。
+请确保抵押利率在一个安全范围内，抵押率低于150%的抵押资产将被平仓清算。
 :::
 ````
 

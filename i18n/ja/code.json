@@ -196,19 +196,19 @@
     "description": "The ARIA label and placeholder for search button"
   },
   "com.api_request": {
-    "message": "Example request"
+    "message": "リクエスト例"
   },
   "com.api_payload": {
-    "message": "Payload"
+    "message": "ペイロード"
   },
   "com.api_params.required": {
-    "message": "*required"
+    "message": "※必須"
   },
   "com.api_params.parameters": {
-    "message": "Parameters"
+    "message": "パラメーター"
   },
   "com.api_metapanel": {
-    "message": "Authentication and options"
+    "message": "認証とオプション"
   },
   "com.api_metapanel.public": {
     "message": "Public Access"

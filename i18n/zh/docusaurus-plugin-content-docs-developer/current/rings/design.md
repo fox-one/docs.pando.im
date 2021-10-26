@@ -18,7 +18,7 @@ Rings 是 MTG 的一个实现，也是 Mixin Network的平行链。
 
 
 #### MTG系统数据流
-* 用户将携带业务数据（UTXO）转账到 Mixin Network。
+* 用户将携带业务数据（UTXO）的支付信息转到 Mixin Network。
 * Rings 通过解析业务数据（在 output.memo 中）同步输出（UTXO）
 * Rings 调度业务操作（包含在业务数据中）并处理每个操作（供应、借出...）
 

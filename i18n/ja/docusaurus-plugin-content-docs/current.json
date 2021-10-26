@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "次へ",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Pando Lake": {
@@ -8,15 +8,15 @@
     "description": "The label for category Pando Lake in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorials": {
-    "message": "Tutorials",
+    "message": "初めての方へ",
     "description": "The label for category Tutorials in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Key Concepts": {
-    "message": "Key Concepts",
+    "message": "重要なコンセプト",
     "description": "The label for category Key Concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Other FAQs": {
-    "message": "Other FAQs",
+    "message": "その他のよくある質問",
     "description": "The label for category Other FAQs in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Leaf": {
