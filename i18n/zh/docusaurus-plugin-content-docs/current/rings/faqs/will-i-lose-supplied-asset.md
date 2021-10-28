@@ -1,5 +1,5 @@
 ---
-title: Will there be any loss of my supplied assets?
+title: 我供应的资产会有任何损失吗？
 sidebar_position: 1
 date: 2021-09-04 12:33:07
 ---

@@ -13,4 +13,4 @@ Net APY(annual percentage yield) reflects the estimatd annual net yield based on
 Net APY = [ ∑(an asset's Supply x its Supply APY) - ∑(an asset's Borrow x its Borrow APY) ] / Total Supply
 
 For example, you have supplied two assets: BTC and ETH; and you have borrowed two assets: [pUSD](/docs/leaf/pusd) and USDC. Your Net APY of the moment will be:
-  {[(BTC Supply * BTC Supply APY) + (ETH Supply * ETH Supply APY)] - [(pUSD Borrow * pUSD Borrow APY) + (USDC Borrow * USDC Borrow APY)]}(BTC Supply + EtH Supply)
+  {[(BTC Supply * BTC Supply APY) + (ETH Supply * ETH Supply APY)] - [(pUSD Borrow * pUSD Borrow APY) + (USDC Borrow * USDC Borrow APY)]} / (BTC Supply + EtH Supply)

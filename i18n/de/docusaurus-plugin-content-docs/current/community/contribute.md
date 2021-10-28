@@ -68,7 +68,7 @@ Die Übersetzungsdateien werden in dem Verzeichnis `i18n/$LANG_CODE/` erstellt.
 
 **Markdown-Dateien erstellen**
 
-Copy Markdown files in docs to `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, and translate them:
+Kopieren Sie die Markdown-Dateien in docs nach `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, und übersetzen Sie sie:
 
 ```bash
 mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current

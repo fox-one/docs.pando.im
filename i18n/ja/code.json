@@ -120,7 +120,7 @@
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "最新のドキュメントについては、 {latestVersionLink} ({versionLabel}) を参照してください。",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
@@ -214,7 +214,7 @@
     "message": "Public Access"
   },
   "com.api_metapanel.authorization": {
-    "message": "Authorization"
+    "message": "承認"
   },
   "com.api_metapanel.limitation": {
     "message": "Limitation"
@@ -223,7 +223,7 @@
     "message": "Endpoint URL"
   },
   "This Article needs additional information.": {
-    "message": "This Article needs additional information."
+    "message": "この記事には追加情報が必要です。"
   },
   "Please help improve it by": {
     "message": "Please help improve it by"

@@ -13,7 +13,7 @@ sidebar_position: 1
 **规范**
 
 - [API 参考](/developer/lake/apis/overview): RESTful API 参考
-- [Action Protocol](/developer/lake/action-protocol): 一种基于 JSON 协议的Memo，用于交换加密、添加和移除流动性。
+- [Action Protocol](/developer/lake/action-protocol): 一种基于 JSON 协议的 Memo，用于交易、添加和移除流动性。
 - [对比Lake和4swap](/developer/lake/lake-and-4swap): 对比Lake和4swap
 
 ## Pando Leaf

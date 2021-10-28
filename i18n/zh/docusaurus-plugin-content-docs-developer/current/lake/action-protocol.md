@@ -16,7 +16,7 @@ date: 2021-07-31 11:18:01
 
 **使用 SDK**
 
-如果您正在使用 [4swap SDK](https://github.com/fox-one/4swap-sdk-go)，您可以使用 SDK 的方法来简化过程。 下面的示例展示了如何由  `mtg.SwapAction` 生成一个交换操作。
+如果您正在使用 [4swap SDK](https://github.com/fox-one/4swap-sdk-go)，您可以使用 SDK 的方法来简化过程。 下面的示例展示了如何由  `mtg.SwapAction` 生成一个 Swap 操作。
 
 ```go
 // 追踪订单

@@ -6,7 +6,7 @@ date: 2021-07-22 22:33:07
 
 目前有两种钱包与 4swap/Lake 兼容：
 
-- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): Mixin 核心团队创建的移动钱包。
+- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): Mixin 核心团队创建的移动端钱包。
 - [Fennec](/docs/apps/wallets#fennec): Fox.ONE 团队创建的浏览器扩展钱包。
 
 如果您想要提供一个支持这些钱包的应用， 您需要将您的应用与钱包整合起来，并在需要的时候调用它们来处理付款。

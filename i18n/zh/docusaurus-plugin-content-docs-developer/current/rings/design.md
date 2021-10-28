@@ -24,28 +24,28 @@ Rings 是 MTG 的一个实现，也是 Mixin Network的平行链。
 
 ![](design/workflow.jpg)
 
-在MTG系统中，主要有两个角色，一个是`Payee`，另一个是`cashier`，所有的业务逻辑都是基于这两个角色来实现的。
+在MTG系统中，主要有两个角色，一个是`Payee`，另一个是 `Cashier`，所有的业务逻辑都是基于这两个角色来实现的。
 
 * `Payee` 接收输出（交易），从`Output.Memo` 解码业务数据，调度`actions` ![](design/f_payee.jpg)
 
 * `cashier` 消费代币，将代币转给用户 ![](design/f_cashier.jpg)
 
-#### Rings操作
+#### Rings Actions
 
-* `供应`，假设用户提供底层通证`ETH`，获得权益通证`rETH` ![](design/tl_supply.jpg)
+* `供应`：例如用户提供了 `ETH`，获得权益代币 `rETH` 这一过程。 ![](design/tl_supply.jpg)
 
-* `质押`，假设用户质押权益代币`rETH`，即用户向Rings系统支付`rETH` ![](design/tl_pledge.jpg)
+* `质押`：例如用户质押权益代币 `rETH`，即用户向Rings系统支付 `rETH` 这一过程。 ![](design/tl_pledge.jpg)
 
-* `取消质押`，假设用户对权益代币`rETH`进行质押，即用户支付一定的`CNB` gas费，即可获得权益代币`rETH` 返回 ![](design/tl_unpledge.jpg)
+* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some tokens and will get the equity token `rETH` back ![](design/tl_unpledge.jpg)
 
 * `赎回`，假设用户从系统中赎回底层代币`ETH`，即用户支付权益代币`rETH`，即可获得等价的底层代币`ETH` 返回 ![](design/tl_redeem.jpg)
 
-* `借出`，假设用户需要借入底层代币`USDT`，即用户需要支付一定的`CNB` gas费，将获得预期的底层代币`USDT` ![](design/tl_borrow.jpg)
+* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some tokens and will gain the expected underlying token `USDT` ![](design/tl_borrow.jpg)
 
 * `还款`，假设用户偿还`USDT`，即用户支付`USDT`，用户的债务就会减少 ![](design/tl_repay.jpg)
 
 * `快速质押`，假设用户提供底层代币`ETH`，没有权益代币`rETH`返还给用户 ![](design/tl_quick_pledge.jpg)
-* `快速赎回`，假设用户赎回`ETH`，用户只需支付一定的`CNB` gas费，即可赎回底层代币`ETH` ![](design/tl_quick_redeem.jpg)
+* `qick_redeem`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back ![](design/tl_quick_redeem.jpg)
 * `快速借出`，假设用户可以供应`ETH`或`rETH`，可以借用`USDT` ![](design/tl_quick_borrow.jpg)
 
 

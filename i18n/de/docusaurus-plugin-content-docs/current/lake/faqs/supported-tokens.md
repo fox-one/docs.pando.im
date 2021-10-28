@@ -13,10 +13,10 @@ In theory, we can provide support for the assets supported by Mixin Network, but
 
 - The project owner is willing to provide assets as the initial liquidity market maker, and the net value reaches the standard recognized by the Fox.ONE team.
 
-### List of supported tokens
+### Liste der unterstützten Token
 
 
-| Coin/Token  |               The Explorer Address/The Contract Address               |
+| Münz/Token  |               The Explorer Address/The Contract Address               |
 |:-----------:|:---------------------------------------------------------------------:|
 |     BTC     |                  https://www.blockchain.com/explorer                  |
 |     ETH     |                         https://etherscan.io/                         |

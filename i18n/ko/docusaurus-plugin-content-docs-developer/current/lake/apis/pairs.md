@@ -4,7 +4,7 @@ sidebar_position: 4
 date: 2021-09-30 23:18:01
 ---
 
-"@site/src/components/api"에서  { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져오기
+"@site/src/components/api"에서  { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
 
 ## GET /pairs
 

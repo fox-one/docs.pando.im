@@ -32,19 +32,19 @@
     "description": "The label for category Pando Rings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Wallets": {
-    "message": "Wallets",
+    "message": "ウォレット",
     "description": "The label for category Wallets in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.3rd-party Applications": {
-    "message": "3rd-party Applications",
+    "message": "サードパーティのアプリケーション",
     "description": "The label for category 3rd-party Applications in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Security": {
-    "message": "Security",
+    "message": "セキュリティ",
     "description": "The label for category Security in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Community": {
-    "message": "Community",
+    "message": "コミュニティ",
     "description": "The label for category Community in sidebar tutorialSidebar"
   },
   "sidebar.docs.category.Pando Lake & 4swap": {
@@ -52,11 +52,11 @@
     "description": "The label for category Pando Lake & 4swap in sidebar docs"
   },
   "sidebar.docs.category.Tutorials": {
-    "message": "Tutorials",
+    "message": "初めての方へ",
     "description": "The label for category Tutorials in sidebar docs"
   },
   "sidebar.docs.category.Key Concepts": {
-    "message": "Key Concepts",
+    "message": "重要なコンセプト",
     "description": "The label for category Key Concepts in sidebar docs"
   },
   "sidebar.docs.category.FAQs": {
@@ -72,15 +72,15 @@
     "description": "The label for category Pando Rings in sidebar docs"
   },
   "sidebar.docs.category.Applications": {
-    "message": "Applications",
+    "message": "アプリケーション",
     "description": "The label for category Applications in sidebar docs"
   },
   "sidebar.docs.category.Security": {
-    "message": "Security",
+    "message": "セキュリティ",
     "description": "The label for category Security in sidebar docs"
   },
   "sidebar.docs.category.Community": {
-    "message": "Community",
+    "message": "コミュニティ",
     "description": "The label for category Community in sidebar docs"
   }
 }

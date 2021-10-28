@@ -6,17 +6,17 @@ date: 2021-10-01 23:18:01
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read All Transactions
+## 全ての取引を表示する
 
 ### GET /transactions
 
-This API will respond all transactions.
+この API はすべてのトランザクションに応答します.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read all transactions" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/transactions' />
+<APIRequest title="全ての取引を表示する" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/transactions' />
 
 ```json title="Response"
 {
@@ -53,22 +53,33 @@ This API will respond all transactions.
 }
 ```
 
-## Read Single Transaction
+## 単一の取引を表示する
 
 ### GET /transactions/:follow_id
 
-This API will respond one transaction with `:follow_id`. The `follow_id` is an uuid that you specified when you created the [`action`](./actions).
+この API は、 `:follow_id` で1つのトランザクションに応答します。 ` follow_id </ code>は、<a href="./actions"> <code> action </ code> </a>を作成したときに指定したuuidです。</p>
 
-<APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" />
+<p spaces-before="0">
 
-<APIMetaPanel scope="Authorized" />
+<APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" /></p>
 
-<APIParams p-follow_id="the follow id" p-follow_id-required="{true}" />
+<p spaces-before="0">
 
-<APIRequest title="Read one transaction" method="GET" base="https://leaf-api.pando.im/api" url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129' />
+<APIMetaPanel scope="Authorized" /></p>
 
-```json title="Response"
-{
+<p spaces-before="0"><APIParams
+  p-follow_id="the follow id"
+  p-follow_id-required="{true}"
+/></p>
+
+<p spaces-before="0"><APIRequest
+  title="単一の取引を表示する"
+  method="GET"
+  base="https://leaf-api.pando.im/api"
+  url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129'
+/></p>
+
+<pre><code class="json title="Response"">{
   "action": 0,
   "amount": "string",
   "asset_id": "string",
@@ -79,4 +90,4 @@ This API will respond one transaction with `:follow_id`. The `follow_id` is an u
   // Abort|Ok
   "status": 0
 }
-```
+`</pre>

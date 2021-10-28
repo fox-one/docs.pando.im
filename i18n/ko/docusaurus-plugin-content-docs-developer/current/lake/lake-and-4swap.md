@@ -26,7 +26,7 @@ LP 토큰은 Pando Lake와 4swap 간에 공유됩니다.
 
 ### Pando Lake와 통합
 
-Pando Lake의 브로커 아이디는 `5dbdb169-d56d-4b5b-b066-9b0780691b14`로 요청에 사용됩니다.
+Pando Lake의 broker 아이디는 `5dbdb169-d56d-4b5b-b066-9b0780691b14`로 요청에 사용됩니다.
 
 **Lake에 권한 부여**
 

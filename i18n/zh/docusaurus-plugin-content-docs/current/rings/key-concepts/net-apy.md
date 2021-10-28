@@ -12,5 +12,5 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 净年化收益率 = [ ∑(资产的供应量 x 资产的供应年化利率) - ∑(资产的贷款量 x 资产的贷款年化利率) ] / 总供应量
 
-例如，您提供了两种资产：BTC 和 ETH；您贷了两种资产：[pUSD](/docs/leaf/pusd) 和 USDC。 您当前的净年化收益率将是：
-{[(BTC供应量 * BTC供应年化利率) + (ETH供应量 * ETH供应年化利率)] - [(pUSD贷款量 * pUSD贷款年化利率) + (USDC贷款量 * USDC贷款年化利率)]}/(BTC供应量 + Eth供应量)
+例如，您提供了两种资产：BTC 和 ETH；您贷了两种资产：[pUSD](/docs/leaf/pusd) 和 USDC。 Your Net APY of the moment will be:
+  {[(BTC Supply * BTC Supply APY) + (ETH Supply * ETH Supply APY)] - [(pUSD Borrow * pUSD Borrow APY) + (USDC Borrow * USDC Borrow APY)]} / (BTC Supply + EtH Supply)

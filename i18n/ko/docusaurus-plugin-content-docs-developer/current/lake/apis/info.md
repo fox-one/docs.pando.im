@@ -1,12 +1,12 @@
 ---
-title: MTG 정보 읽기
+title: Read MTG Info
 sidebar_position: 3
 date: 2021-09-30 23:18:01
 ---
 
 "@site/src/components/api"에서 { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
 
-## GET /정보
+## GET /info
 
 이 API는 4swap과 Lake에 대한 MTG 정보를 제공할 것입니다.
 
@@ -20,7 +20,7 @@ MTG 정보가 자주 변경되지 않으므로 나중에 사용하기 위해 응
 
 <APIMetaPanel />
 
-<APIRequest title="MTG 정보 읽기" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
+<APIRequest title="Read MTG info" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
 
 
 **응답**

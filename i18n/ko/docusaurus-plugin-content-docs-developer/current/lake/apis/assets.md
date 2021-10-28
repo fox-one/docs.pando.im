@@ -8,7 +8,7 @@ date: 2021-09-30 23:18:01
 
 ## GET /assets
 
-이 API는 지원되는 모든 암호화 자산에 응답합니다.
+이 API는 지원되는 모든 암호화폐 자산에 응답합니다.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/assets" />
 

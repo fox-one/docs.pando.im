@@ -100,7 +100,7 @@ Fennec은 암호화된 키 저장소를 브라우저에 저장하는 브라우�
 
 자산을 로드하거나 프로필을 읽거나 결제를 준비하기 위해 Mixin API를 호출할 필요가 없습니다. 대신 Fennec은 이 모든 작업을 수행할 수 있는 자체 API를 제공합니다.
 
-자세한 내용은 [데모 소스 코드](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp)를 읽고 알아보세요.
+자세한 내용은 [demo's source code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp)를 읽고 알아보세요.
 
 ```javascript
 // fennec ext

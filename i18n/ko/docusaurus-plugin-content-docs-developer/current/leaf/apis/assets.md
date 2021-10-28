@@ -4,13 +4,13 @@ sidebar_position: 3
 date: 2021-09-30 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+"@site/src/components/api"에서 { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
 
 ## Read All Assets
 
 ### GET /assets
 
-This API will respond all supported crypto assets.
+이 API는 지원되는 모든 암호화폐 자산에 응답합니다.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets" />
 
@@ -50,7 +50,7 @@ This API will respond all supported crypto assets.
 
 ### GET /assets/:asset_id
 
-This API will respond one crypto asset with `:asset_id`
+이 API는 `:asset_id`로 하나의 암호화폐 자산에 응답합니다.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets/:asset_id" />
 

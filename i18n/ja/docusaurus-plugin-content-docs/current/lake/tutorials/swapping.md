@@ -32,7 +32,7 @@ Click to view [transaction fees](https://docs.pando.im/docs/lake/key-concepts/tr
 
 Please pay attention to the price effect when swapping. 
 
-When the price impact is too high, it means that the transaction is lack of liquidity or the transaction amount is too large, and continuing trading may cause greater losses.
+価格への影響が大きすぎる場合は、取引の流動性が不足しているか、取引金額が多すぎることを意味し、取引を継続すると損失が大きくなる可能性があります。
 
 :::
 ````

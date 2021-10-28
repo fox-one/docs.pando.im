@@ -18,7 +18,7 @@ date: 2021-07-31 15:44:07
 
 **Pando Lake** 是由 Pando 托管的 4swap broker。
 
-Pando Lake 过滤市场信息，以仅显示具有良好流动性并有可靠社区支持的货币对和市场。
+Pando Lake 过滤市场信息，以仅显示具有良好流动性并有可靠社区支持的交易对和市场。
 
 Pando Lake 有一个单独的 Mixin Messenger bot（id：7000103937），您也可以通过访问 https://lake.pando.im 访问其 Web 界面。
 
