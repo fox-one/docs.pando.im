@@ -40,13 +40,13 @@ In MTG system, There are two main roles, one is `Payee`, and the another is `cas
 * `Pledge`, Suppose users pledge the equity token `rETH`, meains that users should pay `rETH` to the Rings system
   ![](design/tl_pledge.jpg)
 
-* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some gas `CNB` and will get the equity token `rETH` back
+* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some tokens and will get the equity token `rETH` back
   ![](design/tl_unpledge.jpg)
 
 * `Redeem`, Suppose users redeem the underlying token `ETH` from the system, means that users should pay equity token `rETH` and whill get the quivalent underlying token `ETH` back
   ![](design/tl_redeem.jpg)
 
-* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some gas `CNB` and will gain the expected underlying token `USDT`
+* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some tokens and will gain the expected underlying token `USDT`
   ![](design/tl_borrow.jpg)
 
 * `Repay`, Suppose users repay `USDT`, means that users pay `USDT` and the users' debt will be reduced
@@ -54,7 +54,7 @@ In MTG system, There are two main roles, one is `Payee`, and the another is `cas
 
 * `quick_pledge`, Suppose users supply the underlying token `ETH` and no equity token `rETH` returns to users
   ![](design/tl_quick_pledge.jpg)
-* `qick_redeem`, Suppose users redeem `ETH`, users only pay some gas `CNB`, and will get the underlying token `ETH` back
+* `qick_redeem`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back
   ![](design/tl_quick_redeem.jpg)
 * `quick_borrow`, Suppose users can supply `ETH` or `rETH` and can borrow `USDT` directory
   ![](design/tl_quick_borrow.jpg)
