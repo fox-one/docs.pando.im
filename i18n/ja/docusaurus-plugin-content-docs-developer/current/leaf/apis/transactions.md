@@ -57,29 +57,18 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /transactions/:follow_id
 
-この API は、 `:follow_id` で1つのトランザクションに応答します。 ` follow_id </ code>は、<a href="./actions"> <code> action </ code> </a>を作成したときに指定したuuidです。</p>
+この API は、 `:follow_id` で1つのトランザクションに応答します。 `follow_id`は、[ `action` ](./actions)を作成したときに指定したuuidです。
 
-<p spaces-before="0">
+<APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" />
 
-<APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" /></p>
+<APIMetaPanel scope="Authorized" />
 
-<p spaces-before="0">
+<APIParams p-follow_id="the follow id" p-follow_id-required="{true}" />
 
-<APIMetaPanel scope="Authorized" /></p>
+<APIRequest title="単一の取引を表示する" method="GET" base="https://leaf-api.pando.im/api" url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129' />
 
-<p spaces-before="0"><APIParams
-  p-follow_id="the follow id"
-  p-follow_id-required="{true}"
-/></p>
-
-<p spaces-before="0"><APIRequest
-  title="単一の取引を表示する"
-  method="GET"
-  base="https://leaf-api.pando.im/api"
-  url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129'
-/></p>
-
-<pre><code class="json title="Response"">{
+```json title="Response"
+{
   "action": 0,
   "amount": "string",
   "asset_id": "string",
@@ -90,4 +79,4 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
   // Abort|Ok
   "status": 0
 }
-`</pre>
+```
