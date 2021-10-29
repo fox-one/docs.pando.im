@@ -9,11 +9,11 @@ date: 2021-07-31 14:38:07
 
 > Pando Lake 是在Uniswap V2 在 Mixin网络上的实现
 
-Pando Lake是一个自动化流动性协议，由一个固定的公式驱动，通过 [Mixin Mulsig Groups](https://developers.mixin.one/document/mainnet/mtg/overview) 实现。 它消除了对单一 Mixin Dapp 的需求，优先考虑去中心化、审查阻力和安全性。
+Pando Lake is an automated liquidity protocol powered by a constant product formula and implemented in [Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview). 它消除了对单一 Mixin Dapp 的需求，优先考虑去中心化、审查阻力和安全性。
 
 任何人都可以通过存入每个等值价值的基础代币来换取矿池代币，从而成为矿池的流动性提供者 (LP)。 这些代币按比例跟踪总储备中的 LP 份额，并且可以随时赎回相关资产。
 
-交易对充当自动化做市商，并在保留“恒定乘积”公式的前提下，随时准备接受一种代币兑换另一种代币。 这个公式，最简单的表示为 **x * y = k**，规定交易不得改变一对准备金余额（x 和 y）的乘积 (k)。 因为 k 相对于交易的参考系保持不变，所以它通常被称为不变量。 这个公式有一个理想的特性，即较大额的交易（相对于储备）的执行速度比较小额的交易要差得多。
+交易对充当自动化做市商，并在保留“恒定乘积”公式的前提下，随时准备接受一种代币兑换另一种代币。 这个公式，最简单的表示为 **x * y = k**，规定交易不得改变一对准备金余额（x 和 y）的他们的乘积 (k)。 因为 k 相对于交易的参考系保持不变，所以它通常被称为不变量。 这个公式有一个理想的特性，即较大额的交易（相对于储备）的执行速度比较小额的交易要差得多。
 
 > 用于稳定币池（如 USDT/USDC）的修改后的[Curve](https://curve.fi)公式。
 
@@ -33,7 +33,7 @@ Pando Lake是一个自动化流动性协议，由一个固定的公式驱动，�
 
 ![取回](./assets/pando_lake_withdraw.png)
 
-## 互换交易
+## Swap
 
 从常数乘积公式可以得出，代币 A 的价格就是 price_token_A = reserve_token_B / reserve_token_A。 市场价格只会随着池中代币比率的变化而变化，当有人与它进行交易时就会发生这种情况。
 

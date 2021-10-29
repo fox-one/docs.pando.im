@@ -39,10 +39,10 @@ Memo可能是AES加密的，一个用于复合AESkey/iv的ed25519公钥将出现
 
 ## Workers
 
-1. **同步** 通过mixin Messenger api同步未处理的utxo& 存储到钱包商店 **输出** 按更新的asc顺序。
-2. **付款人**按顺序从钱包商店拉取未处理的utxo，然后解析备忘录以获取操作，然后处理它。 转账可能会在处理过程中被创建。
-3. **分配器** 选择足够的未使用的 UTXO 并分配到未处理的转账。
-4. **出纳**按顺序从钱包商店提取未处理的转账，然后请求& 签署多方签名转账。 如果收集到足够的签名，则生成一个新的交易。
+1. **Syncer** 通过 Mixin Messenger API 同步未处理的utxo& 作为 **Outputs** 存储到 WalletStore 按更新的asc顺序。
+2. **Payee** 按顺序从钱包商店拉取未处理的utxo，然后解析备忘录以获取操作，然后处理它。 转账可能会在处理过程中被创建。
+3. **Assigner** 选择足够的未使用的 UTXO 并分配到未处理的转账。
+4. **Cashier** 按顺序从钱包商店提取未处理的转账，然后请求& 签署多方签名转账。 如果收集到足够的签名，则生成一个新的交易。
 5. **TxSender**将新的交易提交到Mixin网络。
 
 ### Syncer 工作流程
@@ -234,13 +234,13 @@ Pando 支持的所有带有cat、flip、oracle、proposal、sys和vat的操作�
 | id   | uuid    | 金库追踪ID |
 | debt | decimal | 债务变化   |
 
-### 翻转-管理者拍卖
+### 拍卖 - 管理者拍卖
 
 #### #41 Kick
 
 > pkg/maker/flip/kick.go
 
-对不安全金库中放置的抵押品进行拍卖。
+对爆仓金库中放置的抵押品进行拍卖。
 
 **参数:**
 
@@ -260,7 +260,7 @@ Pando 支持的所有带有cat、flip、oracle、proposal、sys和vat的操作�
 
 | 名称  | 类型      | 描述     |
 | --- | ------- | ------ |
-| id  | uuid    | 翻转追踪ID |
+| id  | uuid    | 拍卖追踪ID |
 | lot | decimal | 抵押数量   |
 
 #### #43 交易
@@ -273,7 +273,7 @@ Pando 支持的所有带有cat、flip、oracle、proposal、sys和vat的操作�
 
 | 名称 | 类型   | 描述     |
 | -- | ---- | ------ |
-| id | uuid | 翻转追踪ID |
+| id | uuid | 拍卖追踪ID |
 
 ### Oracle - manager price oracle
 

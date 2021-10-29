@@ -9,7 +9,7 @@ date: 2021-07-31 14:38:07
 
 > Pando Lake는 Uniswap V2의 Mixin 네트워크에 구현된 MTG 입니다.
 
-Pando Lake는 일정한 제품 공식으로 구동되는 자동화된 유동성 프로토콜이며 [Mixin Multisig Groups](https://developers.mixin.one/document/mainnet/mtg/overview)에서 구현됩니다. 단일 Mixin Dapp의 필요성을 배제하고 분산화, 검열 저항 및 보안을 우선시합니다.
+Pando Lake is an automated liquidity protocol powered by a constant product formula and implemented in [Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview). 단일 Mixin Dapp의 필요성을 배제하고 분산화, 검열 저항 및 보안을 우선시합니다.
 
 풀 토큰에 대한 대가로 각 기본 토큰의 동등한 가치를 예치함으로써 누구나 풀의 유동성 공급자(LP) 가 될 수 있습니다. 이 토큰은 전체 적립금의 비례 배분 LP 지분을 추적하고 언제든지 기본 자산으로 상환될 수 있습니다.
 
