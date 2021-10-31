@@ -71,4 +71,4 @@ rings.RequestLiquidate(ctx context.Context, followID string, supplyUserID string
 
 ```
 
-更多SDK使用细节请阅读[示例](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example)，或者参考[Pando Rings官方的全功能版本](https://github.com/fox-one/compound-app)
+更多SDK使用细节请阅读[示例](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example)，或者参考[Pando Rings 的实现](https://github.com/fox-one/compound-app)

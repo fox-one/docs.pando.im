@@ -4,13 +4,13 @@ sidebar_position: 7
 date: 2021-10-01 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+"@site/src/components/api"에서  { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
 
 ## Read All Oracles
 
 ### GET /oracles
 
-This API will respond all oracles.
+이 API는 모든 오라클에 응답합니다.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles" />
 
@@ -26,15 +26,15 @@ This API will respond all oracles.
       {
         "asset_id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
         "hop": 1800,
-        // current price
+        // 현재 가격
         "current": "47817.13",
-        // next pirce
+        // 다음 가격
         "next": "47759.41",
-        // the time of latest price
+        // 최신 가격의 시간
         "peek_at": "2021-04-27T06:00:00Z",
-        // the threshold of the consensus
+        // 합의의 문턱
         "threshold": 4,
-        // the members who have agreed to the price
+        // 가격에 동의한 회원들
         "governors": [
           "db33b0c9-2e64-4aed-98b4-4d0b1d6a2826",
           "d2d4399d-669d-4448-89f6-d65805e62fb7",
@@ -52,7 +52,7 @@ This API will respond all oracles.
 
 ### GET /oracles/:id
 
-This API will respond one oracle with asset_id `:id`
+이 API는 asset_id `:id`로 하나의 오라클에 응답합니다.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles/:id" />
 
@@ -68,15 +68,15 @@ This API will respond one oracle with asset_id `:id`
   "data": {
     "asset_id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
     "hop": 1800,
-    // current price
+    // 현재 가격
     "current": "47817.13",
-    // next pirce
+    // 다음 가격
     "next": "47759.41",
-    // the time of latest price
+    // 최신 가격의 시간
     "peek_at": "2021-04-27T06:00:00Z",
-    // the threshold of the consensus
+    // 합의의 문턱
     "threshold": 4,
-    // the members who have agreed to the price
+    // 가격에 동의한 회원들
     "governors": [
       "db33b0c9-2e64-4aed-98b4-4d0b1d6a2826",
       "d2d4399d-669d-4448-89f6-d65805e62fb7",

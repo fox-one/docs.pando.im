@@ -4,7 +4,7 @@ sidebar_position: 2
 date: 2021-09-13 00:00:01
 ---
 
-The minimum amount of crypto currency to be minted for the first time is 100 pusd.
+初めて作成される暗号通貨の最小量は100pusdです。
 
 ````mdx-code-block
 :::caution

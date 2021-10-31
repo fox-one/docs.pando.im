@@ -36,20 +36,20 @@ Rings 是 MTG 的一个实现，也是 Mixin Network的平行链。
 
 * `质押`：例如用户质押权益代币 `rETH`，即用户向Rings系统支付 `rETH` 这一过程。 ![](design/tl_pledge.jpg)
 
-* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some tokens and will get the equity token `rETH` back ![](design/tl_unpledge.jpg)
+* `取消抵押`，假设用户取消抵押股权代币`rETH`，意味着用户需要支付一定量的代币同时将相应的权益代币`rETH` 归还。 ![](design/tl_unpledge.jpg)
 
 * `赎回`，假设用户从系统中赎回底层代币`ETH`，即用户支付权益代币`rETH`，即可获得等价的底层代币`ETH` 返回 ![](design/tl_redeem.jpg)
 
-* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some tokens and will gain the expected underlying token `USDT` ![](design/tl_borrow.jpg)
+* `借款`，假设用户需要借入底层代币`USDT`，意味着用户支付一些代币后即可获得想要借入的底层代币`USDT` ![](design/tl_borrow.jpg)
 
 * `还款`，假设用户偿还`USDT`，即用户支付`USDT`，用户的债务就会减少 ![](design/tl_repay.jpg)
 
 * `快速质押`，假设用户提供底层代币`ETH`，没有权益代币`rETH`返还给用户 ![](design/tl_quick_pledge.jpg)
-* `qick_redeem`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back ![](design/tl_quick_redeem.jpg)
+* `快速赎回`，假设用户需要赎回`ETH`，用户只需要支付一些代币，即可以将底层代币`ETH`赎回 ![](design/tl_quick_redeem.jpg)
 * `快速借出`，假设用户可以供应`ETH`或`rETH`，可以借用`USDT` ![](design/tl_quick_borrow.jpg)
 
 
-* `清算`，假设用户A质押了`ETH`并借入了`USDT`，一旦用户A账户的流动性小于等于0，就可以被其他用户清算 ![](design/tl_liquidation.jpg)
+* `清算`，例如用户A质押了`ETH`并借入了`USDT`，一旦用户A账户的流动性小于等于0，就可以被其他用户清算 。 ![](design/tl_liquidation.jpg)
 
 * `提案`，所有治理工作通过提案投票产生效果，目前的提案包括：
     1. `market` 用于创建市场或更新市场
@@ -158,7 +158,7 @@ XPath: /pre[2]/code
 /price-requests // 用于价格预言机调用
 ```
 
-#### 工作人员
+#### Worker
 * [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) 处理待处理的转账。 准备将交易转移到 Mixin 网络。
 * [syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) 同步 Mixin 网络的输出（UTXO）。
 * [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) 将原始交易转移到 Mixin 网络。

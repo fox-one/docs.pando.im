@@ -4,13 +4,13 @@ sidebar_position: 1
 date: 2021-09-04 12:33:07
 ---
 
-### If you don't have any loans:
-Generally, the answer is NO. 您获得了您提供的资产的利息并且您不需要支付任何费用。
+### 如果您没有任何贷款：
+一般来说，答案是否定的。 您获得了您提供的资产的利息，并且您不需要支付任何费用。
 
-In the very extreme situation though, as assets available to borrow on the market all come from users' supply, if there are bad debts (meaning a loan that is not likely to be paid), there is a chance that you cannot get back the full amount of your supplied assets. However, **it is unlikely to happen** in Pando Rings as liquidation is monitored real-time by liquidating bots (algorithms to execute liquidation) to avoid bad debts from happening.
+但在非常极端的情况下，由于可在市场上借贷的资产都来自用户的供货。 如果存在坏账（即不可能偿还的贷款）， 有机会无法全额收回您提供的资产。 不过这种情况  **在Pando Rings中不太可能发生** ，因为清算程序是通过清算机器(执行清算的算法 )实时监测清算，以避免出现坏债务。
 
 
 ### 如果您确实有贷款：
-如果您所借的资产的价值超过了您的[借贷限额](../key-concepts/glossary.md)您将进入[清算](../key-concepts/liquidation.md)失去您的部分抵押品(担保资产). 在您提供的全部资产中，进行清算的是担保资产而未进行担保的资产将保持不变。
+如果您所借的资产的价值超过了您的[借贷限额](../key-concepts/glossary.md)您将进入[清算](../key-concepts/liquidation.md)失去您的部分抵押品(担保资产). 在您提供的全部资产中，进行清算的是担保资产；而未进行担保的资产将保持不变。
 
-It is important tht you pay close attention to the [loan risk indicator](../key-concepts/loan-risk-indicator.md) to monitor your loan risk, and keep your collateral safe from liquidation.
+重要的是您密切关注 [贷款风险指示器](../key-concepts/loan-risk-indicator.md) 以监测您的贷款风险。 并使您的抵押品不受清算的影响。

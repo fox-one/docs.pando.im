@@ -1,40 +1,40 @@
 ---
-title: Overview
+title: 개요(Overview)
 sidebar_position: 1
 date: 2021-03-20 12:38:07
 ---
 
-Pando is a decentralized financial network built with the MTG technology, and its underlying financial algorithm is inspired by [MakerDao](https://makerdao.com) and Synthetix.
+Pando는 MTG 기술로 구축된 탈중앙화 금융네트워크이며 기본 금융 알고리즘은 [MakerDao](https://makerdao.com) 및 Synthetix에서 영감을 받았습니다.
 
-Pando takes multiple over-collateralized assets and grows multiple Pando assets, which(the grown Pando assets), e.g. pUSD, can also be used as a pledge.
+Pando는 여러 개의 초과 저당 자산을 취득해 Pando 다중서명자산을 증가 시키고, 그중 (증가된 Pando 자산), 예를 들어 pUSD도 담보물로 사용할수 있습니다.
 
-## An Intro to Pando
+## Pando 소개
 
 ### pUSD
 
-pUSD is a stable coin launched on Dec 25, 2020. Since the launch, the backing ratio of pUSD has always been higher than 200%.
+pUSD는 2020년 12월 25일에 출시된 스테이블 코인입니다. 출시 이후 pUSD의 담보율은 항상 200% 이상이었습니다.
 
-### Pledge
+### 담보(Pledge)
 
-Nodes have the ability to add any asset as a pledge by voting. Once nodes vote one asset to be a pledge, anybody can borrow pUSD by providing enough specified asset.
+노드는 투표를 통해 모든 자산을 담보물로 추가할 수 있습니다. 노드가 하나의 자산을 담보물로 의결하면, 누구나 충분한 특정 자산을 제공함으로써 pUSD를 빌릴 수 있습니다.
 
-Nodes also have the ability to adjust various parameters of pledges by voting.
+노드는 또한 투표를 통해 다양한 스테이킹 매개변수를 조정할 수 있습니다.
 
-All assets supported by Mixin Network, including BTC, ETH, etc, are potential pledges for Pando.
+BTC, ETH 등을 포함하여 Mixin Network에서 지원하는 모든 자산은 Pando의 잠재적인 담보물입니다.
 
-### Vaults
+### 볼트(Vaults)
 
-All approved pledges can be deposited in the Pando multi-signature address to create a vault to generate pUSD for any Pando user.
+모든 승인된 담보물은 Pando 다중 서명 주소에 예치되어 (모든 Pando 사용자를 위한) pUSD를 생성하기 위한 볼트를 생성할 수 있습니다.
 
-As long as the price of the pledge is higher than the minimum requirement, the creators have the complete control of their vaults.
+저당잡힌 자산의 청산 가격이 최소 요건보다 높은 한, 볼트 생성자는 자신의 볼트에 대한 완전한 통제를 갖게 됩니다.
 
-### Interact with Pando
+### Pando와의 상호작용(Interact with Pando)
 
-Both users and node administrators must use multi-signature transactions to interact with Pando.
+사용자와 노드 관리자 모두 Pando와 상호 작용하려면 다중 서명 트랜잭션을 사용해야 합니다.
 
-The methods and parameters of the transactions are all written in the memo which contains extra information of each transfer.
+메모에는 트랜잭션의 방법과 매개변수가 모두 기재되어 있으며, 각 송금에 대한 추가 정보가 포함되어 있습니다.
 
-Currently, in order to protect user privacy, all information in the memo must be encrypted by the following algorithm:
+현재 사용자의 개인 정보를 보호하기 위해 메모의 모든 정보는 다음 알고리즘으로 암호화되어야 합니다.
 
 Pando will generate a pair of ed25519 public and private keys at first, and publish the public key.
 

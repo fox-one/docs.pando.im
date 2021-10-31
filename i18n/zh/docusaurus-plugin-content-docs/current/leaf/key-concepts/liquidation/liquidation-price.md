@@ -8,4 +8,4 @@ date: 2021-08-13 14:33:07
 
 金库所有者可以通过向金库中添加更多抵押品或退还pUSD来降低清算价格。
 
-Liquidation Price = (Generated pUSD * Liquidation Ratio) / (Amount of Collateral)
+清算价格=(铸造的pUSD*清算率)/(抵押品金额)

@@ -4,13 +4,13 @@ sidebar_position: 5
 date: 2021-10-01 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+"@site/src/components/api"에서  { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
 
 ## Read All Auctions
 
 ### GET /flips
 
-This API will respond all auctions.
+이 API는 모든 경매에 응답합니다.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips" />
 
@@ -24,24 +24,24 @@ This API will respond all auctions.
 {
   "flips": [
     {
-      // ActionKick: the auction begins, any bid are accepted
-      // ActionBid: the auction bidding
-      // ActionDeal: the auction is over
+      // ActionKick: 경매가 시작되면 모든 입찰가가 수락됩니다.
+      // ActionBid: 경매 입찰
+      // ActionDeal: 경매 종료
       "action": 0,
       "art": "string",
-      // the current amount of bid
+      // 현재 입찰 금액
       "bid": "string",
       "collateral_id": "string",
       "created_at": "2021-10-02",
-      // auction end time
+      // 경매 종료 시간
       "end": "2021-10-02",
       "guy": "string",
       "id": "string",
-      // the amount of auctioned collateral
+      // 경매 담보 금액
       "lot": "100",
-      // the max amount of bid accepted
+      // 낙찰 최고액
       "tab": "2",
-      // bid end time
+      // 입찰 종료 시간
       "tic": "2021-10-02",
       "vault_id": "string"
     }
@@ -57,7 +57,7 @@ This API will respond all auctions.
 
 ### GET /flips/:id
 
-This API will respond one auction by `:id`.
+이 API는 `:id`로 하나의 경매에 응답합니다.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips/:id" />
 
@@ -89,7 +89,7 @@ This API will respond one auction by `:id`.
 
 ### GET /flips/:id/events
 
-This API will respond all events of one auction by `:id`.
+이 API는 `:id`로 한 경매의 모든 이벤트에 응답합니다.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips/:id/events" />
 

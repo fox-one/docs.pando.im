@@ -9,7 +9,7 @@ date: 2021-07-31 14:38:07
 
 > Pando Lake 是在Uniswap V2 在 Mixin网络上的实现
 
-Pando Lake is an automated liquidity protocol powered by a constant product formula and implemented in [Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview). 它消除了对单一 Mixin Dapp 的需求，优先考虑去中心化、审查阻力和安全性。
+Pando Lake是由恒定产量公式驱动的自动化流动性协议，部署在[Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview)。 它消除了对单一 Mixin Dapp 的需求，优先考虑去中心化、审查阻力和安全性。
 
 任何人都可以通过存入每个等值价值的基础代币来换取矿池代币，从而成为矿池的流动性提供者 (LP)。 这些代币按比例跟踪总储备中的 LP 份额，并且可以随时赎回相关资产。
 

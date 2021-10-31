@@ -8,7 +8,7 @@ date: 2021-07-12 23:33:07
 
 ## Interact with Pando
 
-All participants of Pando complete the interaction by transferring tokens to the multisig wallet. Node worker **Syncer** syncs the payments as mixin multisig outputs; another worker **Payee** processes all outputs in order.
+Pando의 모든 참가자는 토큰을 다중 서명 지갑으로 전송하여 상호 작용을 완료합니다. 노드 작업자 **Syncer**는 지불을 mixin multisig 출력으로 동기화합니다. 다른 작업자 **Payee**는 모든 출력을 순서대로 처리합니다.
 
 ![Pando Design](design/mtg_design.png)
 
@@ -16,34 +16,34 @@ All participants of Pando complete the interaction by transferring tokens to the
 
 **Output:**
 
-| field     | description      |
-| --------- | ---------------- |
-| Sender    | user mixin id    |
-| CreatedAt | payment time     |
-| AssetID   | payment asset id |
-| Amount    | payment amount   |
-| Memo      | extra message    |
+| 필드        | 설명         |
+| --------- | ---------- |
+| Sender    | 믹스인 사용자 Id |
+| CreatedAt | 결제 시간      |
+| AssetID   | 결제 자산 Id   |
+| Amount    | 결제 금액      |
+| Memo      | 추가 메시지     |
 
 **Output Memo:**
 
-Memo contain the **TransactionAction** information, see details in [DecodeTransactionAction](https://github.com/fox-one/pando/blob/main/core/action.go).
+메모에는 **TransactionAction** 정보가 포함되어 있습니다. 자세한 내용은 [DecodeTransactionAction](https://github.com/fox-one/pando/blob/main/core/action.go)을 참조하세요.
 
-The memo is maybe AES-encrypted, an ed25519 public key used for compound AES key/iv will be in the first 32 bytes.
+메모는 AES로 암호화되어 있으며, 복합 AES 키/iv에 사용되는 ed25519 공개 키는 처음 32바이트에 있습니다.
 
 ### TransactionAction Definition
 
-| field    | description                                | type  |
-| -------- | ------------------------------------------ | ----- |
-| FollowID | user defined trace id for this transaction | uuid  |
-| Body     | action type & relevant parameters          | bytes |
+| 필드       | 설명                      | 유형    |
+| -------- | ----------------------- | ----- |
+| FollowID | 이 트랜잭션에 대한 사용자 정의 추적 Id | uuid  |
+| Body     | 액션 유형 & 관련 매개변수         | bytes |
 
 ## Workers
 
-1. **Syncer** sync unhanded utxo by mixin messenger api & store into WalletStore as **outputs** in updated asc order.
-2. **Payee** pull unhanded utxo from WalletStore in order and parse memo to get the action then handle it. Transfers may be created during handling.
-3. **Assigner** select enough unspent UTXO and assign to a pending transfer.
-4. **Cashier** pull unhandled transfers from WalletStore in order, then request & sign multisig transfer. If enough signatures collected, generate a raw transaction.
-5. **TxSender** commit raw transactions to Mixin Network.
+1. **Syncer**는 Mixin Messenger Api를 사용하여 처리되지 않은 utxo를 **outputs**으로 동기화하고 업데이트된 asc순으로 WalletStore에 저장합니다.
+2. **Payee**는 WalletStore에서 처리되지 않은 utxo를 순서대로 가져오고 메모를 분석하여 작업을 가져온 다음 처리합니다. 처리 중에 송금이 생성될 수 있습니다.
+3. **Assigner**는 사용하지 않은 UTXO를 충분히 선택하고 보류 중인 송금에 할당합니다.
+4. **Cashier**는 WalletStore에서 처리되지 않은 송금을 순서대로 가져온 다음 다중서명송금을 요청하고 서명합니다. 충분한 서명이 수집되면 새 트랜잭션이 생성됩니다.
+5. **TxSender**는 Mixin Network에 새 트랜잭션을 커밋합니다.
 
 ### Syncer Workflow
 
@@ -59,221 +59,221 @@ The memo is maybe AES-encrypted, an ed25519 public key used for compound AES key
 
 ## Actions
 
-All actions supported by Pando with groups cat,flip,oracle,proposal,sys and vat. see [core/action](https://github.com/fox-one/pando/blob/main/core/action.go) for details.
+Pando에서 지원하는 모든 작업은 cat,flip,oracle,proposal,sys 및 vat 그룹으로 구성됩니다. 자세한 내용은 [core/action](https://github.com/fox-one/pando/blob/main/core/action.go)을 참조하세요.
 
-### Sys - system operations
+### Sys - 시스템 운영
 
 #### #1 Withdraw
 
 > pkg/maker/sys/withdraw.go
 
-withdraw any assets from the multisig wallet, proposal required.
+다중서명 지갑에서 자산을 인출하려면 제안서가 필요합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name     | type | description         |
-| -------- | ---- | ------------------- |
-| asset    | uuid | withdraw asset id   |
-| amount   | uuid | withdraw amount     |
-| opponent | uuid | receiver's mixin id |
+| 이름 | 유형   | 설명            |
+| -- | ---- | ------------- |
+| 자산 | uuid | 자산 출금 Id      |
+| 수량 | uuid | 출금 금액         |
+| 상대 | uuid | 수취인의 mixin Id |
 
-### Proposal - governance system
+### 제안 - 거버넌스 시스템
 
 #### #11 Make
 
 > pkg/maker/proposal/make.go
 
-create a new proposal
+새 제안 생성
 
-**Parameters:**
+**매개 변수:**
 
-| name | type  | description                                         |
-| ---- | ----- | --------------------------------------------------- |
-| data | bytes | action type & parameters will be executed if passed |
+| 이름   | 유형    | 설명                        |
+| ---- | ----- | ------------------------- |
+| data | bytes | 액션 유형 & 매개변수가 전달되면 실행됩니다. |
 
 #### #12 Shout
 
 > pkg/maker/proposal/shout.go
 
-request node administrator to vote for this proposal
+노드 관리자에게 이 제안에 투표하도록 요청
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description       |
-| ---- | ---- | ----------------- |
-| id   | uuid | proposal trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 제안 추적 Id |
 
 #### #13 Vote
 
 > pkg/maker/proposal/vote.go
 
-vote for a proposal, nodes only. If enough votes collected, the attached action will be executed on all nodes automatically.
+노드만 제안에 투표가능합니다. 충분한 투표가 수집되면 첨부된 작업이 모든 노드에서 자동으로 실행됩니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description       |
-| ---- | ---- | ----------------- |
-| id   | uuid | proposal trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 제안 추적 Id |
 
-### Cat - manager collaterals
+### Cat - 관리자 담보
 
 #### #21 Create
 
 > pkg/maker/cat/create.go
 
-create a new collateral type, proposal required.
+새로운 담보 유형 생성, 제안이 필요합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type   | description          |
-| ---- | ------ | -------------------- |
-| gem  | uuid   | collateral asset id  |
-| dai  | uuid   | debt asset id        |
-| name | string | collateral type name |
+| 이름   | 유형     | 설명       |
+| ---- | ------ | -------- |
+| gem  | uuid   | 담보 자산 Id |
+| dai  | uuid   | 부채 자산 Id |
+| name | string | 담보 유형 이름 |
 
 #### #22 Supply
 
 > pkg/maker/cat/supply.go
 
-supply dai token to increase the total debt ceiling for this collateral type. Payment asset id must be equal to the debt asset id.
+dai 토큰을 공급하여 이 담보 유형의 총 부채 한도를 높입니다. 지불 자산 Id는 부채 자산 Id와 같아야 합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description         |
-| ---- | ---- | ------------------- |
-| id   | uuid | collateral trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 담보 추적 Id |
 
 #### #23 Edit
 
 > pkg/maker/cat/edit.go
 
-modify collateral's one or more attributes, proposal required.
+담보의 하나 혹은 이상의 속성을 수정하려면 제안이 필요합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name  | type   | description         |
-| ----- | ------ | ------------------- |
-| id    | uuid   | collateral trace id |
-| key   | string | attribute name      |
-| value | string | attributes value    |
+| 이름    | 유형     | 설명       |
+| ----- | ------ | -------- |
+| id    | uuid   | 담보 추적 Id |
+| key   | string | 속성 이름    |
+| value | string | 속성 값     |
 
 #### #24 Fold
 
 > pkg/maker/cat/fold.go
 
-modify the debt multiplier(rate), creating / destroying corresponding debt.
+부채 승수(비율) 를 수정하여 해당 부채를 생성/소멸 합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description         |
-| ---- | ---- | ------------------- |
-| id   | uuid | collateral trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 담보 추적 Id |
 
-### Vat - manager vaults
+### Vat - 관리자 볼트
 
 #### #31 Open
 
 > pkg/maker/vat/open.go
 
-open a new vault with the special collateral type
+특별 담보 유형으로 새 볼트 열기
 
-**Parameters:**
+**매개 변수:**
 
-| name | type    | description         |
-| ---- | ------- | ------------------- |
-| id   | uuid    | collateral trace id |
-| debt | decimal | initial debt        |
+| 이름   | 유형      | 설명       |
+| ---- | ------- | -------- |
+| id   | uuid    | 담보 추적 Id |
+| debt | decimal | 초기 부채    |
 
 #### #32 Deposit
 
 > pkg/maker/vat/deposit.go
 
-transfer collateral into a Vault.
+담보를 볼트로 이전합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 볼트 추적 Id |
 
 #### #33 Withdraw
 
 > pkg/maker/vat/withdraw.go
 
-withdraw collateral from a Vault, vault owner only.
+볼트에서 담보물을 인출할 수 있습니다. 볼트 소유자만 해당됩니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type    | description          |
-| ---- | ------- | -------------------- |
-| id   | uuid    | vault trace id       |
-| dink | decimal | change in collateral |
+| 이름   | 유형      | 설명       |
+| ---- | ------- | -------- |
+| id   | uuid    | 볼트 추적 Id |
+| dink | decimal | 담보물의 변경  |
 
 #### #34 Payback
 
 > pkg/maker/vat/payback.go
 
-decrease Vault debt.
+볼트 부채를 줄입니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 볼트 추적 Id |
 
 #### #35 Generate
 
 > pkg/maker/vat/generate.go
 
-increase Vault debt, vault owner only.
+볼트 부채 증가, 볼트 소유자만 해당합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type    | description    |
-| ---- | ------- | -------------- |
-| id   | uuid    | vault trace id |
-| debt | decimal | change in debt |
+| 이름   | 유형      | 설명       |
+| ---- | ------- | -------- |
+| id   | uuid    | 볼트 추적 Id |
+| debt | decimal | 부채의 변화   |
 
-### Flip - manager auctions
+### Flip - 관리자 경매
 
 #### #41 Kick
 
 > pkg/maker/flip/kick.go
 
-put collateral up for auction from an unsafe vault.
+청산 볼트에 보관된 담보물을 경매에 올립니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 볼트 추적 Id |
 
 #### #42 Bid
 
 > pkg/maker/flip/bid.go
 
-pay dai to participate in the auction.
+경매에 참여하기 위해 dai를 지불합니다.
 
-> Starting in the tend-phase, bidders compete for a fixed lot amount of Gem with increasing bid amounts of Dai. Once tab amount of Dai has been raised, the auction moves to the dent-phase. The point of the tend phase is to raise Dai to cover the system's debt. During the dent-phase bidders compete for decreasing lot amounts of Gem for the fixed tab amount of Dai. Forfeited Gem is returned to the liquidated vault for the owner to retrieve. The point of the dent phase is to return as much collateral to the Vault holder as the market will allow.
+> 입찰 단계에서 입찰자는 dai의 입찰 금액을 늘리면서 일정 수량의 gem을 놓고 경쟁합니다. dai 수가 증가하면 경매가 dent 단계로 진입합니다. 경향 단계의 요점은 시스템의 부채를 충당하기 위해 Dai를 올리는 것입니다. dent 단계에서 입찰자는 고정 수량의 dai에 입찰하는 gem 수량을 줄이기 위해 경쟁합니다. 몰수된 gem은 소유자가 회수할 수 있도록 청산된 볼트로 반환됩니다. dent 단계의 요점은 시장이 허용하는 한 많은 담보물을 볼트 소유자에게 반환하는 것입니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type    | description       |
-| ---- | ------- | ----------------- |
-| id   | uuid    | flip trace id     |
-| lot  | decimal | collateral amount |
+| 이름  | 유형      | 설명       |
+| --- | ------- | -------- |
+| id  | uuid    | 경매 추적 Id |
+| lot | decimal | 담보 금액    |
 
 #### #43 Deal
 
 > pkg/maker/flip/deal.go
 
-claim a winning bid / settles a completed auction
+낙찰 청구 / 완료된 경매 정산
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description   |
-| ---- | ---- | ------------- |
-| id   | uuid | flip trace id |
+| 이름 | 유형   | 설명       |
+| -- | ---- | -------- |
+| id | uuid | 경매 추적 Id |
 
 ### Oracle - manager price oracle
 
@@ -281,67 +281,67 @@ claim a winning bid / settles a completed auction
 
 > pkg/maker/oracle/create.go
 
-register a new oracle for the asset, proposal required.
+자산에 대한 새 오라클을 등록하십시오. 제안이 필요합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name      | type      | description                              |
-| --------- | --------- | ---------------------------------------- |
-| id        | uuid      | asset id                                 |
-| price     | decimal   | initial price                            |
-| hop       | int64     | time delay in seconds between poke calls |
-| threshold | int64     | number of governors required when poke   |
-| ts        | timestamp | request timestamp                        |
+| 이름        | 유형        | 설명                          |
+| --------- | --------- | --------------------------- |
+| id        | uuid      | 자산 Id                       |
+| price     | decimal   | 초기 가격                       |
+| hop       | int64     | poke calls사이에 몇초의 지연이 있습니다. |
+| threshold | int64     | poke할때 필요한 지배자의 수량          |
+| ts        | timestamp | 타임스탬프 요청                    |
 
 #### #52 Edit
 
 > pkg/maker/oracle/edit.go
 
-modify an oracle's next price, hop & threshold, proposal required.
+oracle의 다음 값, hop & 한계값 수정, 제안이 필요합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name  | type   | description      |
-| ----- | ------ | ---------------- |
-| id    | uuid   | asset id         |
-| key   | string | attribute name   |
-| value | string | attributes value |
+| 이름    | 유형     | 설명    |
+| ----- | ------ | ----- |
+| id    | uuid   | 자산 Id |
+| key   | string | 속성 이름 |
+| value | string | 속성 값  |
 
 #### #53 Poke
 
 > pkg/maker/oracle/poke.go
 
-updates the current feed value and queue up the next one.
+현재 피드 값을 업데이트하고 다음 피드 값을 대기열에 넣습니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name  | type      | description       |
-| ----- | --------- | ----------------- |
-| id    | uuid      | asset id          |
-| price | decimal   | new next price    |
-| ts    | timestamp | request timestamp |
+| 이름    | 유형        | 설명        |
+| ----- | --------- | --------- |
+| id    | uuid      | 자산 Id     |
+| price | decimal   | 새로운 다음 가격 |
+| ts    | timestamp | 타임스탬프 요청  |
 
 #### #54 Rely
 
 > pkg/maker/oracle/rely.go
 
-add a new price feed to the whitelist, proposal required
+화이트리스트에 새 가격 피드 추가, 제안이 필요합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type  | description   |
-| ---- | ----- | ------------- |
-| id   | uuid  | feed mixin id |
-| key  | bytes | public key    |
+| 이름  | 유형    | 설명            |
+| --- | ----- | ------------- |
+| id  | uuid  | feed mixin id |
+| key | bytes | 공개 키          |
 
 #### #55 Deny
 
 > pkg/maker/oracle/deny.go
 
-remove a price feed from the whitelist, proposal required
+화이트리스트에서 가격 피드 제거, 제안이 필요합니다.
 
-**Parameters:**
+**매개 변수:**
 
-| name | type | description   |
-| ---- | ---- | ------------- |
-| id   | uuid | feed mixin id |
+| 이름 | 유형   | 설명            |
+| -- | ---- | ------------- |
+| id | uuid | feed mixin id |

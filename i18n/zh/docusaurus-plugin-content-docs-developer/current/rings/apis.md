@@ -262,7 +262,7 @@ service Compound {
 }
 ```
 
-### • 使用情况
+### • 使用方法
 
 ```go
 rpcClient := rpc.NewCompoundProtobufClient("https://compound-test-api.fox.one", &http.Client{})

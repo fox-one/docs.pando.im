@@ -1,16 +1,16 @@
 ---
-title: Read Auctions
+title: オークションを読む
 sidebar_position: 5
 date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Read All Auctions
+## すべてのオークションを読む
 
 ### GET /flips
 
-This API will respond all auctions.
+この API はすべてのauctionsに対応します。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips" />
 
@@ -18,7 +18,7 @@ This API will respond all auctions.
 
 <APIParams p-cursor="the cursor to start from" p-limit="the limitation of items in response" />
 
-<APIRequest title="Read all auctions" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/flips' />
+<APIRequest title="すべてのauctionsを読む" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/flips' />
 
 ```json title="Response"
 {
@@ -53,17 +53,17 @@ This API will respond all auctions.
 }
 ```
 
-## Read Single Auctions
+## 単一の Auctionsを読む
 
 ### GET /flips/:id
 
-This API will respond one auction by `:id`.
+この API は asset_id `:id` で 1 つのAuctionに応答します.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips/:id" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read one auction" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/flips/4ce8a961-4b90-34e8-9780-6ce46a8205a6' />
+<APIRequest title="単一のauctionsを表示する" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/flips/4ce8a961-4b90-34e8-9780-6ce46a8205a6' />
 
 ```json title="Response"
 {
@@ -85,17 +85,17 @@ This API will respond one auction by `:id`.
 }
 ```
 
-## Read Auction Events
+## オークションイベントを読む
 
 ### GET /flips/:id/events
 
-This API will respond all events of one auction by `:id`.
+この API は、1 つのAuctionの `:id` ですべてのイベントに応答します。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips/:id/events" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read all events of one auction" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/flips/4ce8a961-4b90-34e8-9780-6ce46a8205a6/events' />
+<APIRequest title="1 つのauctionsのすべてのイベントを読む" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/flips/4ce8a961-4b90-34e8-9780-6ce46a8205a6/events' />
 
 ```json title="Response"
 {
