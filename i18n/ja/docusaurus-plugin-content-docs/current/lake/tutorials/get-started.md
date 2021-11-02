@@ -1,40 +1,41 @@
 ---
-title: Get Started
+title: はじめに
 sidebar_position: 1
 date: 2021-09-22 05:22:11
 ---
 
-Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.
+Pando lake（4swap）は、[ MixinMessenger ](https://docs.pando.im/docs/wallets/mixin-messenger) ウォレット [fennec](https://docs.pando.im/docs/apps/wallets) （Webウォレット）と次のコンテンツでは、例としてミックスインメッセンジャーウォレットを取り上げています。
 
-Visit [Pando lake(4swap)](https://lake.pando.im), or search Mixin ID **7000103537** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando lake(4swap).
+[ Pando lake（4swap）](https://lake.pando.im)にアクセスするか、MixinMessengerアプリでMixinID ** 7000103537 **を検索してください。青い数字をクリックします。 次に、ボットを追加し、小さなロボットアバターをクリックして、 Pando lake（4swap）を開きます。
 
 ![](../assets/lake-get-started-p1.png)
 
-Click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces.
+「ウォレットの接続」をクリックして開始します。 アセットに関連するデータがインターフェースに表示されないように承認してください
 
 ![](../assets/lake-get-started-p2.png)
 
 ````mdx-code-block
 :::tip
 
-Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
+
+すべてを確認して承認します。 承認では、資産を表示することはできますが、使用することはできません。 安全です。
 
 :::
 ````
 
-Let's get to know the homepage of pando lake(4swap).
+pando lake（4swap）のホームページを知りましょう。
 
 ![](../assets/lake-get-started-p3.png)
 
-Enter the "pool" page, we can see various trading pairs. We can click the right arrow ➡️ at the top right to view the data analysis.
+"pool"ページに入ると、さまざまな取引ペアが表示されます。 右上の➡️をクリックすると、データ分析が表示されます。
 
-You can also click to sort different transaction pairs based on data such as total supply and 24-hour transaction volume.
+クリックして、総供給量や24時間取引量などのデータに基づいて異なる取引ペアを並べ替えることもできます。
 
 ![](../assets/lake-get-started-p4.png)
 
-The search function can quickly locate the trading pairs related to the currency we want to trade. For example, in above picture, searching for eth can quickly display all trading pairs related to eth.
+検索機能は、取引したい通貨に関連する取引ペアをすばやく見つけることができます。 例えば、上の図では、ethを検索すると、ethに関連するすべての取引ペアをすばやく表示できます。
 
-Enter the eth/btc trading pair, you can view more detailed information, and you can quickly jump to the "[swap](https://docs.pando.im/docs/lake/tutorials/swapping)" and "[liquidity pages](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)".
+eth / btc取引ペアを入力すると、より詳細な情報を表示でき、[swap](https://docs.pando.im/docs/lake/tutorials/swapping)に素早くアクセスできます。  および [ 流動性ページ ](https://docs.pando.im/docs/lake/tutorials/pproving-liquidity)
 
 
 
