@@ -4,9 +4,16 @@
         <title>Pando Blog</title>
         <link>https://docs.pando.im/de/blog</link>
         <description>Pando Docs Blog</description>
-        <lastBuildDate>Thu, 21 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Nov 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Translation Award Announcement]]></title>
+            <link>https://docs.pando.im/de/blog/2021/11/04/translate-award</link>
+            <guid>Translation Award Announcement</guid>
+            <pubDate>Thu, 04 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[After the volunteers' efforts, the translation has been partially completed, thanks to everyone's efforts. First, let's take a look at the results of recent translations.]]></description>
+        </item>
         <item>
             <title><![CDATA[Being A Contributor Of Pando With Honors & Awards]]></title>
             <link>https://docs.pando.im/de/blog/2021/10/21/translate</link>
