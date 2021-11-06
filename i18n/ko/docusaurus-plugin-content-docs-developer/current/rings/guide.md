@@ -1,74 +1,74 @@
 ---
-title: Guide
+title: 가이드
 sidebar_position: 3
 date: 2021-08-16 18:40:00
 ---
 
-An easier and faster way to Connect to Pando Rings engine.
+Pando Rings 엔진에 연결하는 더 쉽고 빠른 방법입니다.
 
-## Installing
+## 설치하기
 
 ```sh
 go get github.com/fox-one/pando-rings-sdk-go
 ```
 
-## Usage
+## 사용법
 
-* Initialize the endpoint
+* 엔드포인트 초기화
 
 ```go
 rings.Endpoint = "xxxxx" // e.g. rings.Endpoint = "https://compound-test-api.fox.one"
 ```
 
-* Import
+* 가져오기
 
 ```go
 import "github.com/fox-one/pando-rings-sdk-go"
 ```
 
-* Request all markets
+* 모든 시장 요청
 
 ```go
 rings.RequestAllMarkets(ctx context.Context) ([]*Market, error)
 ```
 
-* Request transactions
+* 거래 요청
 ```go
 rings.RequestTransactions(ctx context.Context, limit int, offset time.Time) ([]*Transaction, error)
 ```
 
-* Request user action
+* 사용자 작업 요청
 ```go
-//request supply action url
+//공급 요청 url
 rings.RequestSupply(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
 
-//request pledge action url
+//저당 요청 url
 rings.RequestPledge(ctx context.Context, followID string, ctokenAssetID string, amount decimal.Decimal) (string, string, error)
 
-// request unpledge action url
+// 저당 취소 요청 url
 rings.RequestUnpledge(ctx context.Context, followID string, ctokenAssetID string, ctokenAmount decimal.Decimal) (string, string, error)
 
-// request quick pledge action url
+// 빠른 저당 요청 url
 rings.RequestQuickPledge(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
 
-// request redeem action url
+// (차압된 물건)상환 요청 url
 rings.RequestRedeem(ctx context.Context, followID string, ctokenAssetID string, redeemAmount decimal.Decimal) (string, string, error)
 
-// request quick redeem action url
+// (차압된 물건) 빠른 상환 요청 url
 rings.RequestQuickRedeem(ctx context.Context, followID string, ctokenAssetID string, redeemAmount decimal.Decimal) (string, string, error)
 
-// request borrow action url
+// 대출 요청 url
 rings.RequestBorrow(ctx context.Context, followID string, assetID string, borrowAmount decimal.Decimal) (string, string, error)
 
-// request quick borrow action url
+// 빠른 대출 요청 url
 rings.RequestQuickBorrow(ctx context.Context, followID string, supplyAssetID string, supplyAmount decimal.Decimal, borrowAssetID string, borrowAmount decimal.Decimal) (string, string, error)
 
-// request repay action url
+// (대출금) 상환 요청 url
 rings.RequestRepay(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
 
-// request liquidate action url
+// 청산 요청 url
 rings.RequestLiquidate(ctx context.Context, followID string, supplyUserID string, supplyCTokenAssetID string, borrowAssetID string, repayAmount decimal.Decimal) (string, string, error)
 
 ```
 
-More details of sdk using, please read the [example](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Or refer to the [official full-featured version of Pando rings for implementation](https://github.com/fox-one/compound-app)
+SDK 사용에 대한 자세한 내용은 [예시](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example)를 참조하거나 [Pando rings의 구현](https://github.com/fox-one/compound-app)을 참고하세요.

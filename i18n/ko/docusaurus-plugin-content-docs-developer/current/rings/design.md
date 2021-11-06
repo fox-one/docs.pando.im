@@ -8,57 +8,57 @@ date: 2021-03-20 12:38:07
 
 ## Architecture
 
-Rings is an implementation of MTG and a parachain of Mixin network.
+Rings는 MTG의 구현이며 Mixin 네트워크의 parachain입니다.
 
 ![](design/architecture.jpg)
 
-#### Mixin MTG struct
+#### Mixin MTG 구조
 
 ![](design/mixin_mtg_struct.jpg)
 
 
-#### MTG system data flow
-* The user transfers a payment(UTXO) that carries business data to the Mixin network.
-* Rings syncs the outputs(UTXO) by parsing the business data(in output.memo)
-* Rings dispatchs the business action(included in business data) and processes each action(supply, borrow...)
+#### MTG 시스템 데이터 흐름
+* • 사용자는 비즈니스 데이터(UTXO) 를 포함하는 결제 정보를 Mixin 네트워크로 전송합니다.
+* Rings는 비즈니스 데이터(output.memo에서)를 구문 분석하여 출력(UTXO)을 동기화합니다.
+* Rings는 비즈니스 액션(비즈니스 데이터에 포함) 을 발송하고 각 액션(공급, 차입...) 을 처리합니다.
 
 ![](design/workflow.jpg)
 
-In MTG system, There are two main roles, one is `Payee`, and the another is `cashier`, All business logic is implemented based on these two roles.
+MTG 시스템에는 두 가지 주요 역할이 있습니다. 하나는 `Payee`이고 다른 하나는 `cashier`입니다. 모든 비즈니스 논리는 이 두 역할을 기반으로 구현됩니다.
 
-* `Payee` receiving the outputs(transactions), decoding the business data from `Output.Memo`, dispatching `actions` ![](design/f_payee.jpg)
+* `Payee`는 출력(트랜잭션)을 수신하고, `Output.Memo`에서 비즈니스 데이터를 디코딩하고, `action`을 발송합니다. ![](design/f_payee.jpg)
 
-* `cashier` spending the token, transfering the token to user ![](design/f_cashier.jpg)
+* `cashier`는 토큰을 소비하고 사용자에게 토큰을 전송합니다. ![](design/f_cashier.jpg)
 
 #### Rings actions
 
-* `Supply`, Suppose users supply the underlying token `ETH` and gain the equity token `rETH` ![](design/tl_supply.jpg)
+* `Supply`, 예를 들어 사용자가 기본 토큰 `ETH`를 제공하고 지분 토큰 `rETH`를 얻는다는 것입니다. ![](design/tl_supply.jpg)
 
-* `Pledge`, Suppose users pledge the equity token `rETH`, meains that users should pay `rETH` to the Rings system ![](design/tl_pledge.jpg)
+* `Pledge`, 예를 들어 사용자가 지분 토큰 `rETH`를 저당하려면 Rings system에게 `rETH`를 지불해야 합니다. ![](design/tl_pledge.jpg)
 
-* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some tokens and will get the equity token `rETH` back ![](design/tl_unpledge.jpg)
+* `Unpledge`, 예를 들어 사용자가 지분 토큰 `rETH`을 취소하려면 일부 토큰을 지불해야 하고 지분 토큰 `rETH`를 반환해야 합니다.. ![](design/tl_unpledge.jpg)
 
-* `Redeem`, Suppose users redeem the underlying token `ETH` from the system, means that users should pay equity token `rETH` and whill get the quivalent underlying token `ETH` back ![](design/tl_redeem.jpg)
+* `Redeem`, 예를 들어 사용자가 시스템에서 기본 토큰 `ETH`을 되찾으려면 지분 토큰 `rETH`를 지불하고 이에 상응하는 기본 토큰 `ETH`을 받을 수 있습니다. ![](design/tl_redeem.jpg)
 
-* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some tokens and will gain the expected underlying token `USDT` ![](design/tl_borrow.jpg)
+* `Borrow`, 예를 들어 사용자가 기본 토큰 `USDT`를 차용하려면 일부 토큰을 지불한 후 기본 토큰 `USDT`를 차입할 수 있습니다. ![](design/tl_borrow.jpg)
 
-* `Repay`, Suppose users repay `USDT`, means that users pay `USDT` and the users' debt will be reduced ![](design/tl_repay.jpg)
+* `Repay`, 예를 들어 사용자가 `USDT`를 상환하면 `USDT`를 지불하고 사용자의 부채가 줄어듭니다. ![](design/tl_repay.jpg)
 
-* `quick_pledge`, Suppose users supply the underlying token `ETH` and no equity token `rETH` returns to users ![](design/tl_quick_pledge.jpg)
-* `qick_redeem`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back ![](design/tl_quick_redeem.jpg)
-* `quick_borrow`, Suppose users can supply `ETH` or `rETH` and can borrow `USDT` directory ![](design/tl_quick_borrow.jpg)
+* `quick_pledge`, 예를 들어 사용자가 기본 토큰 `ETH`를 제공하고 지분 토큰 `rETH`은 사용자에게 반환되지 않습니다. ![](design/tl_quick_pledge.jpg)
+* `qick_redeem`, 예를 들어 사용자가 `ETH`를 되찾으려면 일부 토큰을 지불하고 `ETH`를 돌려받을 수 있습니다. ![](design/tl_quick_redeem.jpg)
+* `quick_borrow`, 예를 들어 사용자가 `ETH` 또는 `rETH`를 제공하면 `USDT` 를 차입 할 수 있습니다. ![](design/tl_quick_borrow.jpg)
 
 
-* `Liquidation`, Suppose User A has Pledged `ETH` and Borrowed `USDT`, once The liquidity of user A's account less than or equal zero, it can be liquidated by other users ![](design/tl_liquidation.jpg)
+* `Liquidation`, 사용자 A가 `ETH`를 저당하고 `USDT`를 차용했다고 가정합니다. 사용자 A 계정의 유동성이 0보다 작거나 같으면 다른 사용자에 의해 청산될 수 있습니다. ![](design/tl_liquidation.jpg)
 
-* `Proposal actions`, all governance work produces effects through proposal voting, the current proposals include these:
-    1. `market` for creating market or updating market
-    2. `open-market` for opening market
-    3. `close-market` for closing market
-    4. `allowlist` whether to allow liquidation
-    5. `add-oracle-signer` add the price oracle signer that provides market price
-    6. `rm-oracle-signer` remove the price oracle signer
-    7. `withdraw` withdraw the reserves from the market ![](design/f_proposal.jpg)
+* `Proposal actions`, 모든 거버넌스 작업은 제안 투표를 통해 효과를 생성하며 현재 제안에는 다음이 포함됩니다.
+    1. `market` 시장을 생성하거나 시장을 업데이트하는 데 사용
+    2. `open-market` 시장을 오픈하는데 사용
+    3. `close-market` 시장을 폐쇄하는데 사용
+    4. `allowlist` 청산 허용 여부
+    5. `add-oracle-signer` 시장 가격을 제공하는 가격 오라클 서명자를 추가
+    6. `rm-oracle-signer` 가격 오라클 서명자 제거
+    7. `withdraw` 시장에서 준비금을 인출 ![](design/f_proposal.jpg)
 
 ## Code struct
 
@@ -81,21 +81,21 @@ In MTG system, There are two main roles, one is `Payee`, and the another is `cas
 
 ```
 
-* [cmd](https://github.com/fox-one/compound/tree/master/cmd) command entry, including start api server and worker and governance tools
-* [config](https://github.com/fox-one/compound/tree/master/config) default config directory
-* [docs](https://github.com/fox-one/compound/tree/master/docs) project documents
-* [core](https://github.com/fox-one/compound/tree/master/core) directory of project's models
-* [pkg](https://github.com/fox-one/compound/tree/master/pkg) project packages that can be exported
-* [service](https://github.com/fox-one/compound/tree/master/service) directory of business codes
-* [store](https://github.com/fox-one/compound/tree/master/store) data repository(data may be stored in database or redis or memory cache)
-* [worker](https://github.com/fox-one/compound/tree/master/worker) directory for jobs that processing data in background
-* [handler](https://github.com/fox-one/compound/tree/master/handler) just for exported apis
-* [Dockerfile](https://github.com/fox-one/compound/tree/master/Dockerfile) for deployment
-* [deploy](https://github.com/fox-one/compound/tree/master/deploy) store configs and tools of deployment
+* [cmd](https://github.com/fox-one/compound/tree/master/cmd)명령 입구, api server의 시작, 작업자 및 거버넌스 도구를 포함
+* [config](https://github.com/fox-one/compound/tree/master/config) 기본 구성 디렉토리
+* [docs](https://github.com/fox-one/compound/tree/master/docs) 프로젝트 문서
+* [core](https://github.com/fox-one/compound/tree/master/core) 프로젝트 모델 디렉토리
+* [pkg](https://github.com/fox-one/compound/tree/master/pkg) 내보낼 수 있는 프로젝트 패키지
+* [service](https://github.com/fox-one/compound/tree/master/service) 비즈니스 코드 디렉토리
+* [store](https://github.com/fox-one/compound/tree/master/store) 데이터 저장소(데이터는 데이터베이스 또는 redis 또는 메모리 캐시에 저장될 수 있음)
+* [worker](https://github.com/fox-one/compound/tree/master/worker) 백그라운드에서 데이터를 처리하는 작업의 디렉토리
+* [handler](https://github.com/fox-one/compound/tree/master/handler) 내보낸 api에만 해당
+* [Dockerfile](https://github.com/fox-one/compound/tree/master/Dockerfile) 배치에 사용
+* [deploy](https://github.com/fox-one/compound/tree/master/deploy) 구성 및 배치 도구 저장
 * [main.go](https://github.com/fox-one/compound/tree/master/main.go)
 * [Makefile](https://github.com/fox-one/compound/tree/master/Makefile)
 
-### [configuration template](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
+### [템플릿 구성](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
 
 ```
 # Fixed value : 1603382400 
@@ -147,49 +147,49 @@ group:
     amount: 0.00000001
 ```
 
-#### [Rest APIs](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go) exported for application layer, including:
+#### 애플리케이션 레이어용으로 내보내기 위한 [Rest APIs](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go), 다음을 포함합니다.
 
 ```
-/markets/all   //response all markets
-/transactions  //response compound transactions
-/price-requests // for price oracle calling
+/markets/all   //모든 시장에 응답
+/transactions  //복합 트랜잭션에 응답
+/price-requests // 가격 오라클 호출
 ```
 
 #### Worker
-* [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) Processes the pending transfers. prepare for transfering a transaction to Mixin network.
-* [syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) Syncs the outputs(UTXO) from Mixin network.
-* [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) Transfers raw transaction to Mixin network.
-* [spentsync](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go) syncs and updates the transfer state.
-* [priceoracle](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go) Fetches a price and put the price on the chain.
-* [payee](https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go) processes outputs and dispatches business actions.
+* [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) 보류 중인 송금을 처리합니다. mixin 네트워크로의 트랜잭션 전송을 준비합니다.
+* [syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) Mixin 네트워크의 출력(UTXO)을 동기화합니다.
+* [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) raw transaction을 Mixin 네트워크로 전송합니다.
+* [spentsync](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go) 전송 상태를 동기화하고 업데이트합니다.
+* [priceoracle](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go) 가격을 가져와 체인에 가격을 넣습니다.
+* [payee](https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go) 출력을 처리하고 비즈니스 작업을 발송합니다.
 
 #### Action processing
-* [borrow](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go) handles the borrow action event.
-* [supply](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go) handles the supply action event.
-* [pledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go) handles the pledge action event.
-* [unpledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go) handles the unpledge action event.
-* [redeem](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go) handles the redeem action event.
-* [repay](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go) handles the repay action event.
-* [liquidation](https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go) handles the liquidation action event
-* [proposal](https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go) handles and dispatches the proposal actions, include: adding market, updating market, closing or opening market, adding or removing allowlist, withdraw
-* [price](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go) handles the price protocal action event.
+* [borrow](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go) borrow action event를 처리합니다.
+* [supply](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go) supply action event를 처리합니다.
+* [pledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go) pledge action event를 처리합니다.
+* [unpledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go) unpledge action event를 처리합니다.
+* [redeem](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go) redeem action event를 처리합니다.
+* [repay](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go) repay action event를 처리합니다.
+* [liquidation](https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go) liquidation action event를 처리합니다.
+* [proposal](https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go) 제안 조치 처리 및 발송: 시장 추가, 시장 업데이트, 시장 폐쇄 또는 개방, 허용 목록 추가 또는 제거, 인출을 포함합니다.
+* [price](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go) price protocal action event를 처리합니다.
 
 
-### Market Trade-Curbing Mechanism
+### 시장 무역 억제 메커니즘
 
-> Close the market when the price of a certain market is abnormal.
+> 특정 시장의 가격이 비정상적일 때 시장을 닫습니다.
 
-* When the price of a market is maliciously attacked, managers have the right to execute the `close-market` order and apply for a closed-market vote. If the request is approved, the market will be closed.
-* Trades are prohibited in closed markets.
-* However, as long as there are closed markets, liquidation of all markets will be prohibited, because liquidation will affect the liquidity of all market accounts of users.
+* 시장 가격이 악의적으로 공격을 받으면 관리자는 `close-market` 주문을 실행하고 시장 폐쇄 투표를 신청할 권리가 있습니다. 요청이 승인되면 시장이 닫힙니다.
+* 폐쇄된 시장에서는 거래가 금지됩니다.
+* 그러나 폐쇄된 시장이 있는 한 모든 시장의 청산은 금지됩니다. 청산은 사용자의 모든 시장 계정의 유동성에 영향을 미치기 때문입니다.
 
-## The implementation of compound protocol
+## 복합 프로토콜의 구현
 
-* [Interest rate model](https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go) is The core implementation of compound protocol.
+* [Interest rate model](https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go)은 복합 프로토콜의 핵심 구현입니다.
 
-* [Borrow balance](https://github.com/fox-one/compound/tree/master/core/borrow.go) user borrow balance contains borrow principal and borrow interest. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
+* [Borrow balance](https://github.com/fox-one/compound/tree/master/core/borrow.go) 사용자 차입 잔액에는 차입 원금과 차입 이자가 포함됩니다. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
 
-* [Accrue interest](https://github.com/fox-one/compound/tree/master/service/market/market.go) Accruing interest only occurs when there is a behavior that causes changes in market transaction data, such as supply, borrow, pledge, unpledge, redeem, repay, price updating. And Only calculated once in the same block.
+* [Accrue interest](https://github.com/fox-one/compound/tree/master/service/market/market.go) 이자 발생은 공급, 차입, 담보, 담보 해제, 상환, 가격 업데이트와 같은 시장 거래 데이터에 변화를 일으키는 행위가 있을 때만 발생합니다. 그리고 같은 블록에서 한 번만 계산됩니다.
 
 ```
     blockNumberPrior := market.BlockNumber

@@ -1,5 +1,5 @@
 ---
-title: Audit Reports
+title: 監査報告書
 sidebar_position: 3
 ---
 
@@ -7,37 +7,37 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
-## Audit Reports from IOActive
+## IOActiveからの監査レポート
 
-### Download Report
+### レポートをダウンロードする
 
-[Audit report from IOActive](//docs.pando.im/reports/ioactive-report.pdf)
+[IOActiveからの監査レポート](//docs.pando.im/reports/ioactive-report.pdf)
 
-### Findings and Remediation Status
+### 調査結果と修復ステータス
 
-| ID    | Title                                                                         | Total Risk | Status |
-| ----- | ----------------------------------------------------------------------------- | ---------- | ------ |
-| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | High       | Fixed  |
-| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities                   | High       | Fixed  |
-| MP-01 | Lack of Certificate Pinning                                                   | Medium     |        |
-| MP-02 | Insufficient JailBreak Detection                                              | Medium     |        |
-| MP-03 | App Transport Security Disabled                                               | Low        |        |
-| MP-04 | RPATH Set in Binary                                                           | Low        |        |
-| MP-05 | Binary Users Insecure APIs                                                    | Low        |        |
+| ID    | タイトル                                        | 総リスク | ステータス |
+| ----- | ------------------------------------------- | ---- | ----- |
+| MP-07 | Rings - 借入返済取引は、借入残高を変更した後に行うと、失敗する可能性があります | 高    | 修正済   |
+| MP-06 | 全般 - 複数の脆弱性を持つ古いWebサーバー                     | 高    | 修正済   |
+| MP-01 | 証明書のピン留め不足                                  | 中    |       |
+| MP-02 | JailBreakの検出が不足しています                        | 中    |       |
+| MP-03 | アプリトランスポートのセキュリティが無効になっています。                | 低    |       |
+| MP-04 | バイナリに設定された RPATH                            | 低    |       |
+| MP-05 | バイナリユーザーの安全でない API                          | 低    |       |
 
-### Issue Analysis
+### 問題分析
 
-**MP-07: Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance**
+**MP-07: Rings -借入残高の変更後、借入返済取引が失敗する場合があります**
 
-This issue is caused by an incorrect logic in `Payee.handleRepayEvent()`. Please read IOActive audit report (from p3 to p8) for more details.
+この問題は、`Payee.handleRepayEvent()` ロジックが正しくないことが原因で発生します。 詳細については、IOActive監査レポート（p3からp8）をお読みください。
 
-**MP-07: General - Outdated Web Server with Multiple Vulnerabilities**
+**MP-07: 全般 - 複数の脆弱性を持つ古いWebサーバー**
 
-This issue is caused by an outdated web server that provides API endpoints. Please read IOActive audit report (from p3 to p8) for more details.
+この問題は、APIエンドポイントを提供する古いWebサーバーが原因で発生します。 詳細については、IOActive監査レポート（p3からp8）をお読みください。
 
-**MP-01: Lack of Certificate Pinning**
+**MP-01: 証明書のピン留め不足**
 
-This is an issue related to the Mixin Messenger.
+これは、Mixin Messengerに関連する問題です。
 
 At present, most Apps reply entirely to the certifications that operating system maintains and do not determine which certificate to trust or not. Attackers who break the operating system's trust storage or hack a root CA can set up a man-in-the-middle attack and capture the transmitted data between the App and the server.
 

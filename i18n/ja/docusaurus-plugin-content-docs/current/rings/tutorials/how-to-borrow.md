@@ -4,7 +4,7 @@ sidebar_position: 5
 date: 2021-09-04 12:33:07
 ---
 
-If you want to borrow an asset in Pando Rings, you can get access by clicking on "I want to borrow " on the Market page. After choosing the asset you want to borrow, you will be on the Borrow page.
+Pando Ringで資産を借りたい場合は、マーケットページの「借りたい」をクリックしてアクセスできます。 借りたい資産を選択すると、「借りる」ページが表示されます。
 
 ![](../assets/borrow1.jpg)
 
@@ -20,13 +20,13 @@ After landing on the Borrow page, if you have enough [borrow balance](../key-con
 
 ![](../assets/borrow4.jpg)
 
-Or if you don't have enough borrow balance, you can get more by clicking on "increase balance". You can then conveniently get borrow capacity by choosing from the assets that you have supplied but not pledged (remember any borrow from Pando Rings has to be collateral-backed) or if you need more borrow capacity than the unpledged assets can produce, you can click on "Add new supply" to supply and pledge **all** of your new supply.
+または、十分な借入残高がない場合は、「残高を増やす」をクリックしてさらに取得できます。 You can then conveniently get borrow capacity by choosing from the assets that you have supplied but not pledged (remember any borrow from Pando Rings has to be collateral-backed) or if you need more borrow capacity than the unpledged assets can produce, you can click on "Add new supply" to supply and pledge **all** of your new supply.
 
 ![](../assets/borrow5.jpg)
 
 ![](../assets/borrow6.jpg)
 
-Now that you have increased your borrow balance, you can borrow as you like from the borrow page. :)
+借用残高が増えたので、借用ページから好きなように借用できます。 :)
 
 The [loan risk indicator](../key-concepts/loan-risk-indicator) changes with the amount you enter and predicts whether your borrow will be within an acceptable risk level.
 

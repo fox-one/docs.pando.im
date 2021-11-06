@@ -4,7 +4,7 @@ sidebar_position: 3
 date: 2021-09-15 22:33:07
 ---
 
-Pando value thoughts from all community members. Contents contributed by community memebers are collected here!
+Pandoはすべてのコミュニティメンバーからの考えを大切にしています。 コミュニティメンバーから寄稿されたコンテンツがここに集められています！
 
 You can submit your content [here](https://github.com/fox-one/docs.pando.im/tree/master/docs/community/articles.md). Just put it into the corresponding categories below.
 
