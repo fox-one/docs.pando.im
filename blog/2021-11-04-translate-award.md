@@ -26,7 +26,7 @@ We plan to distribute rewards for participating translators at the beginning of 
 | 1059242  |        9.15        | Chinese Simplified | https://donate.cafe/zhangzhijing |
 | 40095053 |        7.98        | German             |                                  |
 | 39427696 |        4.05        | Chinese Simplified | https://donate.cafe/ixinyang     |
-| 37312732 |        3.7         | Chinese Simplified | https://donate.cafejame_yuan     |
+| 37312732 |        3.7         | Chinese Simplified | https://donate.cafe/jame_yuan     |
 | 1091685  |        0.45        | Chinese Simplified | https://donate.cafe/shenhuang    |
 | 40095341 |        0.36        | Chinese Simplified | https://donate.cafe/who3m1       |
 
