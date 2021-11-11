@@ -11,13 +11,13 @@ Pando documentation is open source. You are very welcomed to translate it into o
 Pando documentation is based on [Docusaurus](https://docusaurus.io/docs/en/latest/), a static site generator for React.js.
 
 - You need to ensure that you have Yarn installed
-- Clone the repository of the document
+- ドキュメントのリポジトリのクローンを作成します
 - Run `yarn` in the root of the repo
 - Run `yarn start` to preview the documentation
 
-## Document Structure
+## ドキュメント構造
 
-The documentation is organized in the following way:
+ドキュメントは次のように構成されています。
 
 - all source is in the `docs` directory and `developer` directory
 - the `docs` directory contains the following subdirectories:

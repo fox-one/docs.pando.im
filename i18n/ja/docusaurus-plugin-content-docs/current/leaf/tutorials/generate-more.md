@@ -4,7 +4,7 @@ sidebar_position: 4
 date: 2021-08-13 12:33:07
 ---
 
-To generate pUSD, click on "Generate" and fill in the amount you want to generate on the Generate page.
+PUSDを生成するには、[生成] をクリックし、[生成] ページで生成する金額を入力します。
 
 ![](../assets/leaf-generate-p1.png)
 

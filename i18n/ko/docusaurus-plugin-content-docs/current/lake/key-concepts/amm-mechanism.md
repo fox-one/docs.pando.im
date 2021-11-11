@@ -1,21 +1,21 @@
 ---
-title: Automated Market Maker (AMM)
+title: 자동 마켓 메이커(AMM)
 sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 
 
-### What Is an Automated Market Maker?
+### 자동화된 마켓 메이커란 무엇입니까?
 
-> An automated market maker (AMM) is a system that provides liquidity to the exchange it operates in through automated trading.
+> AMM(Automated Market Maker) 은 자동화된 거래를 통해 운영되는 거래소에 유동성을 제공하는 시스템입니다.
 
-AMM systems took off after they were first implemented by Shearson Lehman Brothers and ATD in the early 1990s — before their invention, order books were created by humans who manually initiated trades meant to enhance the liquidity of the market.
+AMM 시스템은 1990년대 초 Shearson Lehman 형제와 ATD에 의해 처음 구현된 후 시작되었습니다. 이 시스템이 발명되기 전에 주문서는 시장의 유동성을 향상시키기 위해 수동으로 거래를 시작한 인간에 의해 만들어졌습니다.
 
-This approach was the reason for some slippage and latency in price discovery on the markets. Furthermore, market makers were also accused of market manipulation. When introduced, AMMs solved all the issues caused by human market makers. Now, these types of systems are also being introduced in blockchain-based decentralized exchanges.
+시장은 이러한 접근 방식이 가격 슬리피지(slippage) 와 가격 지연의 원인임을 발견했습니다. 게다가 시장조성자들도 시장조작 혐의를 받고 있었습니다. AMM이 도입되었을 때 인간 시장 조성자가 야기한 모든 문제를 해결했습니다. 이제 이러한 유형의 시스템은 블록체인 기반의 탈중앙화 거래소에도 도입되고 있습니다.
 
-On AMM-based decentralized exchanges, the traditional order book is replaced by liquidity pools that are pre-funded on-chain for both assets of the trading pair. The liquidity is provided by other users who also earn passive income on their deposit through trading fees based on the percentage of the liquidity pool that they provide.
+AMM 기반 탈중앙화 거래소에서 기존 주문서는 거래 페어의 두 자산에 대해 사전 자금이 제공되는 유동성 풀로 대체됩니다. 유동성은 제공하는 유동성 비율에 따라 거래 수수료 예치금에서 수동 소득을 받는 다른 사용자에 의해 제공됩니다.
 
-One decentralized exchange that has implemented an AMM is Uniswap. Uniswap is an Ethereum-based decentralized exchange which allows its users to both supply liquidity to earn passive income or exchange between various assets.
+AMM을 구현한 탈중앙화 거래소 중 하나는 Uniswap입니다. Uniswap은 사용자가 수동 소득을 얻거나 다양한 자산 간의 교환을 위해 유동성을 공급할 수 있는 이더리움 기반의 탈중앙화 거래소입니다.
 
-Original link 🔗 [What Is an Automated Market Maker?](https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm)
+원본 링크 🔗 [자동 마켓 메이커란 무엇입니까?](https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm)
 

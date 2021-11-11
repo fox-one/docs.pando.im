@@ -1,56 +1,56 @@
 ---
-title: Overview
+title: 개요(Overview)
 sidebar_position: 1
 date: 2021-03-20 12:38:07
 ---
 
-An implementation of the [compound protocol](https://github.com/compound-finance/compound-protocol) based on [Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) technology.
+[Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) 기술에 기반한 [compound 프로토콜](https://github.com/compound-finance/compound-protocol)입니다.
 
 ## rToken
 
-The corresponding certificate token you obtain after you supply a number of cetain encrypted currency to the market.
+일정량의 암호화폐를 시장에 제공한 후 획득하는 해당 토큰.
 
-## Functions
+## 기능
 
 ### Supply
 
-Users supply encrypted currencies to the market to provide liquidity, and obtain the corresponding rTokens. They receive interest yields by providing liquidity.
+사용자는 암호화폐를 시장에 공급하여 유동성을 제공하고, 해당하는 rToken을 얻습니다. 유동성을 제공함으로써 이자 수익을 받습니다.
 
 ![](overview/uc_supply.jpg)
 
 ### Pledge
 
-Users have to pledge rToken to the market before any borrow.
+사용자는 차입하기 전에 rToken을 시장에 저당해야 합니다.
 
 ![](overview/uc_pledge.jpg)
 
 ### Unpledge
 
-Users take back the rToken that pledged to the market.
+사용자는 시장에 저당한 rToken을 회수합니다.
 
 ![](overview/uc_unpledge.jpg)
 
 ### Redeem
 
-Users return the rToken in exchange for corresponding encrypted currency that were supplied before, including interest yields as the reward for providing liquidity.
+사용자는 rToken의 반환을 통해 유동성을 제공한 암호화폐와 유동성 제공에 대한 보상으로 얻은 이자 수익을 돌려 받습니다.
 
 ![](overview/uc_redeem.jpg)
 
 ### Borrow
 
-Users borrow encrypted currencies from the market at a certain interest rate.
+사용자는 시장에서 일정한 금리로 암호화폐를 빌립니다.
 
 ![](overview/uc_borrow.jpg)
 
 ### Repay
 
-Users repay the borrowed encrypted currency and the interest accrued during the borrow period.
+사용자는 차입한 암호화폐와 차입 기간 동안 발생한 이자를 상환합니다.
 
 ![](overview/uc_repay.jpg)
 
 ### Liquidation
 
-Due to the fluctuation of the market price, the value of a user's loan may exceed that of his pledged assets. When that happens, the other users can use a lower price to obtain the user's pledged assets so that the user's debt that are not covered by pleged assets are repayed.
+시장 가격의 변동으로 인해 사용자의 대출 가치는 담보 자산의 가치를 초과할 수 있습니다. 그러한 경우, 다른 사용자는 사용자의 저당자산이 커버하지 못한 채무를 상환하기 위해 더 낮은 가격으로 사용자의 저당잡힌 자산을 취득할 수 있습니다.
 
 ![](overview/uc_liquidity.jpg)
 

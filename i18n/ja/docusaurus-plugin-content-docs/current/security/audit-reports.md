@@ -51,11 +51,11 @@ Mixin Team is not responsible for ensuring the safety of user's local operating 
 
 **MP-03: App Transport Security Disabled**
 
-This is an issue related to the Mixin Messenger iOS.
+これは、Mixin MessengerのiOSに関連する問題です。
 
-In the report, it mentions that ATS is disabled for requests from WebView. It's not a flaw of App because the users are allowed to use the WebView to visit HTTP webpages.
+レポートには、WebViewからの要求に対してATSが無効になっていることが記載されています。 ユーザーはWebViewを使用してHTTPWebページにアクセスできるため、これはアプリの欠陥ではありません。
 
-**MP-04: RPATH Set in Binary**
+**MP-04: バイナリで設定されたRPATH**
 
 This issue is very hard to exploit, so the Mixin Team decided to ignore this issue for now.
 
@@ -75,11 +75,11 @@ This issue is very hard to exploit, so the Mixin Team decided to ignore this iss
 | ID | Title                                                     | Status    |
 | -- | --------------------------------------------------------- | --------- |
 | A  | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
-| B  | Security Roadmap Nonexistent                              | Won't fix |
-| C  | Protocol Specifications Nonexistent                       |           |
-| D  | Secrets Are Shared and Persist in Plain Text              | Won't fix |
-| E  | Use of Unauthenticated Encryption Mode                    | Won't fix |
-| F  | Input Not Checked When Adding or Removing PKCS #7 Padding | Won't fix |
+| B  | セキュリティロードマップは存在しません                                       | 修正されません   |
+| C  | プロトコルの仕様がありません                                            |           |
+| D  | Secrets Are Shared and Persist in Plain Text              | 修正されません   |
+| E  | 認証されていない暗号化モードの使用                                         | 修正されません   |
+| F  | Input Not Checked When Adding or Removing PKCS #7 Padding | 修正されません   |
 | G  | Excess Centralization                                     |           |
 
 ### Responses to Findings
@@ -90,7 +90,7 @@ In the begining, the purpose of the shared key is to encrypt the memo. In the pr
 
 However, to better protect the user's privacy, we upgrade the Mixin Network, that adding `user_id` in the UTXO directly. Now Pando has already remove the `user_id` from the memo so there is no sensitive information in the memo.
 
-To make the protocol more campatible, we keep the support of the encrypted memo. But it's totally fine to use plain-text in memo and leave it unencrypted. In another word, the shared key is not important anymore.
+To make the protocol more campatible, we keep the support of the encrypted memo. ただし、メモにプレーンテキストを使用し、暗号化しないでおくのはまったく問題ありません。 In another word, the shared key is not important anymore.
 
 **Finding B: Security Roadmap Nonexistent**
 
@@ -98,7 +98,7 @@ Actually we have a Roadmap with security related plans. We will update the roadm
 
 **Finding C: Protocol Specifications Nonexistent**
 
-We have already provided some specifications for the protocol. Please check them out https://docs.pando.im/developer/intro.
+プロトコルのいくつかの仕様はすでに提供されています。 Please check them out https://docs.pando.im/developer/intro.
 
 In the future, we will provide more documentation here.
 
@@ -108,7 +108,7 @@ We have own way to manage the secrets and keep the deployment environment secure
 
 **Finding E: Use of Unauthenticated Encryption Mode**
 
-We are using AES-CBC in the memo encryption. It's better to switch to AES-GCM. However, because of the explanation of the **Finding A**, Pando decided to ignore this issue.
+メモの暗号化にはAES-CBCを使用しています。 AES-GCMに切り替えることをお勧めします。 However, because of the explanation of the **Finding A**, Pando decided to ignore this issue.
 
 **Finding F: Input Not Checked When Adding or Removing PKCS #7 Padding**
 

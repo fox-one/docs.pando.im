@@ -1,5 +1,5 @@
 ---
-title: Wallets
+title: ウォレット
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ sidebar_position: 1
 
 [Mixin Messenger](https://mixin.one/messenger) is an open source cryptocurrency wallet, which supports almost all popular cryptocurrencies.
 
-Mixin Messenger is developed by Mixin Core Team, who release it under the GPL-3.0 license.
+Mixin Messengerは、GPL-3.0ライセンスの下でリリースするMixin CoreTeamによって開発されました。
 
 For users, please download the app from its official website [mixin.one](https://mixin.one/messenger).
 

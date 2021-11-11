@@ -1,22 +1,22 @@
 ---
-title: Which tokens are supported?
+title: 어떤 토큰이 지원되나요?
 sidebar_position: 6
 date: 2021-08-15 22:33:07
 ---
 
 
-In theory, we can provide support for the assets supported by Mixin Network, but the current list of assets we choose to support is based on the following rules:
+이론적으로 Mixin Network에서 지원하는 모든 자산을 지원할 수 있지만 현재 지원하기로 선택한 자산 목록은 다음 규칙을 기반으로 합니다.
 
-- Strong ecosystem or high reputation in the blockchain industry.
+- 강력한 생태계 또는 블록체인 산업에서 높은 평판.
 
-- Considerable community base in the Mixin ecosystem.
+- Mixin 생태계에서 상당한 커뮤니티 기반.
 
-- The project owner is willing to provide assets as the initial liquidity market maker, and the net value reaches the standard recognized by the Fox.ONE team.
+- 프로젝트 소유자는 초기 유동성 시장 조성자로서 자산을 기꺼이 제공할 의향이 있으며 순 가치는 Fox.ONE 팀이 인정하는 기준에 도달해야 합니다.
 
-### List of supported tokens
+### 지원되는 토큰 목록
 
 
-| Coin/Token  |               The Explorer Address/The Contract Address               |
+| Coin/Token  |                            익스플로러 주소/계약 주소                             |
 |:-----------:|:---------------------------------------------------------------------:|
 |     BTC     |                  https://www.blockchain.com/explorer                  |
 |     ETH     |                         https://etherscan.io/                         |

@@ -9,7 +9,7 @@ date: 2021-09-13 00:00:01
 ````mdx-code-block
 :::caution
 
-Please ensure that the mortgage rate after minting is in a safe range. If the mortgage rate is lower than 150%, it will be forced to liquidate and cause losses.
+Please ensure that the mortgage rate after minting is in a safe range. 住宅ローンの利率が150％未満の場合、強制的に清算され、損失が発生します。
 
 :::
 ````
