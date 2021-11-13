@@ -53,4 +53,4 @@ Like other assets' icons, you need to submit the new LP token icon to Mixin Netw
 :::info
 Please create a pull request when you have finished. It usually takes about 1~2 days for Mixin Network to process your pull request.
 :::
-```
+````
