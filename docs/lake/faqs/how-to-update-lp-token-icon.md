@@ -26,17 +26,24 @@ go build
 then run it with:
 
 ```bash
-./4swap-icon-gen -config YOUR_KEYSTORE_FILE -a0 1ST_ASSET_ID -a1 2ND_ASSET_ID
+./4swap-icon-gen -config YOUR_KEYSTORE_FILE -a0 LP_ASSET_ID -a1 1ST_ASSET_ID -a2 2ND_ASSET_ID
 ```
 
 in which,
 
 - `YOUR_KEYSTORE_FILE` is the keystore file of your account.
   You can get it from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard).
+- `LP_ASSET_ID` is the asset ID of LP token.
 - `1ST_ASSET_ID` and `2ND_ASSET_ID` are the asset IDs of the assets you want to generate the icon of LP token.
   You can get it by visiting `https://mixin.one/snapshots/YOUR_ASSET_SYMBOL_NAME` in browser. The url will change from the symbol to the asset ID.
 
-This command will fetch the latest icon from Mixin Network and generate the icon of LP token at the current directory.
+This command will fetch the latest icons from Mixin Network and generate the icon of LP token in the `output` directory.
+
+for example, if you want to generate a new icon for `sRUM-XIN`, you can run:
+
+```bash
+./4swap-icon-gen -config YOUR_KEYSTORE_FILE -a0 a53872c5-b1a3-32da-bbc4-230a7ced69cb -a1 4f2ec12c-22f4-3a9e-b757-c84b6415ea8f -a2 c94ac88f-4671-3976-b60a-09064f1811e8
+```
 
 ## 3. Submit new LP token icon to Mixin Network
 
