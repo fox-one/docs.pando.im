@@ -40,6 +40,7 @@ module.exports = {
             'lake/faqs/why-transaction-fail',
             'lake/faqs/why-providing-liquidity-fail',
             'lake/faqs/where-can-I-see-liquidity-reward',
+            'lake/faqs/how-to-update-lp-token-icon',
             'lake/faqs/supported-tokens',
           ]
         }
