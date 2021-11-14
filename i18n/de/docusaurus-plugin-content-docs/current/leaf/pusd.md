@@ -1,23 +1,22 @@
 ---
 title: Pando USD
-sidebar_position: zwei
 date: 12-08-2021 22:33:07
 ---
 
-Pando USD(pUSD) wird am 25. Dezember 2020 von BigONE, Exin, FOX, Poolin und Team Mixin gestartet. Pando USD gilt als Stablecoin an den US-Dollar gekoppelt. Sie können immer 1 PUSD für US$ 1.00 in Betracht ziehen.
+Pando USD(pUSD) is launched on Dec 25, 2020 by BigONE, Exin, FOX, Poolin and Team Mixin. Pando USD is considered a stablecoin pegged to the US Dollar. You can always consider 1 pUSD for US$1.00.
 
-Das Gesamtangebot an PUSD beträgt **1.000.000.000.000**, wovon **999.975,000, 00** sind **gesperrt** in einer 5/6 [Mix vertrauenswürdige Gruppe](https://developers.mixin.one/document/mainnet/mtg/exchange), die von BigONE verwaltet werden Exin, FOX, Poolin und Team Mixin. Der verbleibende **25.000.000** ist öffentlich verfügbar unter [Pando Leaf](https://leaf.pando.im), was eine 4/6 Mixin Trusted Group ist.
+The total supply of pUSD is **1,000,000,000,000**, of which **999,975,000,000** are **locked** in a 5/6 [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange) which are managed by BigONE, Exin, FOX, Poolin and Team Mixin. The remaining **25,000,000** is releasable to the public at [Pando Leaf](https://leaf.pando.im), which is a 4/6 Mixin Trusted Group.
 
-Die aktuellen Sicherheiten belaufen sich auf etwa US$43M im Wert von Krypto, was etwa 11M PUSD unterstützt. Bitte überprüfen Sie die Echtzeit-Marktbedingungen [hier](https://leaf.pando.im/#/market). der pUSD MTG Mechanismus stellt sicher, dass das Backup-Verhältnis von pUSD immer wesentlich höher ist als **200%**.
+The current collaterals are of about US$43M worth of crypto, which backs about 11M pUSD. Please check real-time market conditions [here](https://leaf.pando.im/#/market). the pUSD MTG mechanism makes sure that the backing ratio of pUSD is always way higher than **200%**.
 
-## Shop pUSD
+## Store pUSD
 
-pUSD ist ein [Ethereum Token](https://etherscan.io/address/0xdbaef6da45984a9329c2640d19dcb9f62dc2ab66)und wurde seit [Dec 23. 2020](https://etherscan.io/tx/0xccd66572e85d66cc05d50e2a16be0eb2348e34cedd34df89113e4b515caaf210) an Mixin Network übertragen. So können Sie pUSD in jedem Mixin Netzwerk kompatiblen Wallet oder Ethereum-kompatiblen Wallet speichern.
+pUSD is an [Ethereum token](https://etherscan.io/address/0xdbaef6da45984a9329c2640d19dcb9f62dc2ab66), and has been transfered to Mixin Network since [Dec 23th 2020](https://etherscan.io/tx/0xccd66572e85d66cc05d50e2a16be0eb2348e34cedd34df89113e4b515caaf210). So you can store pUSD in any Mixin Network compatible wallet or Ethereum-compatible wallet.
 
-## Benutze Pusd
+## Use pUSD
 
-- Erstellen: [Pando Blatt](https://leaf.pando.im) ist der einzige Ort, um das Pusd zu generieren.
-- Börsen: [4swap](https://www.4swap.org/#/) und [Pando Lake](https://lake.pando.im) bieten Pusd Umtauschdienste an.
-- Andere: [PrsDigg](https://prsdigg.com/) ist ein kostenpflichtiger Artikel-Service, der die Verwendung von pUSD zum Kauf von Artikeln unterstützt.
+- Generate: [Pando Leaf](https://leaf.pando.im) is the only place to generate the pUSD.
+- Exchange: [4swap](https://www.4swap.org/#/) and [Pando Lake](https://lake.pando.im) provide pUSD exchange services.
+- Others: [PrsDigg](https://prsdigg.com/) is a paid article service that supports using pUSD to buy articles.
 
 

@@ -1,21 +1,20 @@
 ---
-title: Automatischer Market Maker (AMM)
-sidebar_position: zwei
+title: Automated Market Maker (AMM)
 date: 15-08-2021 22:33:07
 ---
 
 
-### Was ist ein Automated Market Maker?
+### What Is an Automated Market Maker?
 
-> Ein automatisierter Market Maker (AMM) ist ein System, das Liquidität für die Börse bereitstellt, in der es mittels automatisiertem Handel tätig ist.
+> An automated market maker (AMM) is a system that provides liquidity to the exchange it operates in through automated trading.
 
-AMM-Systeme starteten, nachdem sie Anfang der 90er Jahre von Shearson Lehman Brothers und ATD implementiert wurden — vor ihrer Erfindung. Orderbücher wurden von Menschen erstellt, die manuell Geschäfte initiierten, um die Liquidität des Marktes zu steigern.
+AMM systems took off after they were first implemented by Shearson Lehman Brothers and ATD in the early 1990s — before their invention, order books were created by humans who manually initiated trades meant to enhance the liquidity of the market.
 
-Dieser Ansatz war der Grund für eine gewisse Verzögerung und Latenz bei der Preisfindung auf den Märkten. Darüber hinaus wurde den Marktmachern auch die Marktmanipulation vorgeworfen. Bei der Einführung löste AMMs alle Probleme, die von den menschlichen Marktmachern verursacht wurden. Jetzt werden diese Arten von Systemen auch in blockchain-basierten dezentralen Austauschen eingeführt.
+This approach was the reason for some slippage and latency in price discovery on the markets. Furthermore, market makers were also accused of market manipulation. When introduced, AMMs solved all the issues caused by human market makers. Now, these types of systems are also being introduced in blockchain-based decentralized exchanges.
 
-Bei dezentralisierten Börsen auf AMM-Basis wird das traditionelle Orderbuch durch Liquiditätspools ersetzt, die für beide Vermögenswerte des Handelspaars vorfinanziert sind. Die Liquidität wird von anderen Nutzern zur Verfügung gestellt, die auf ihre Einlage auch passives Einkommen durch Handelsgebühren verdienen, basierend auf dem Prozentsatz des Liquiditätspools, den sie zur Verfügung stellen.
+On AMM-based decentralized exchanges, the traditional order book is replaced by liquidity pools that are pre-funded on-chain for both assets of the trading pair. The liquidity is provided by other users who also earn passive income on their deposit through trading fees based on the percentage of the liquidity pool that they provide.
 
-Ein dezentralisierter Austausch, der ein AMM implementiert hat, ist Uniswap. Uniswap ist eine dezentrale Ethereum-Börse, die es seinen Nutzern ermöglicht, sowohl Liquidität zur Verfügung zu stellen, um passives Einkommen oder Austausch zwischen verschiedenen Vermögenswerten zu erzielen.
+One decentralized exchange that has implemented an AMM is Uniswap. Uniswap is an Ethereum-based decentralized exchange which allows its users to both supply liquidity to earn passive income or exchange between various assets.
 
-Originallink 🔗 [Was ist ein Automated Market Maker?](https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm)
+Original link 🔗 [What Is an Automated Market Maker?](https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm)
 

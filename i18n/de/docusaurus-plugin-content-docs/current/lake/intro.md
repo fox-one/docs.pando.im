@@ -1,25 +1,24 @@
 ---
-title: Was ist Pando See
-sidebar_position: eins
+title: What's Pando Lake
 date: 22-07-2021 22:33:07
 ---
 
-[Pando Lake](https://lake.pando.im) ist ein dezentralisiertes Protokoll für automatisierte Liquiditätsbereitstellung, das mit der Mixin MTG (Mixin Trusted Group) Technologie erstellt wurde eine Alternative zu intelligenten Verträgen auf Mixin Network.
+[Pando Lake](https://lake.pando.im) is a decentralized protocol for automated liquidity provision built with the Mixin MTG (Mixin Trusted Group) technology, an alternative to smart contracts on Mixin Network.
 
-Es verwendet kombinierte Algorithmen - funktioniert auf einer kurvenähnlichen, maßgeschneidert niedrigen Slippage, niedriger Trading-Fee-Algorithmus speziell für den Austausch zwischen Stablecoins und auf der konstanten Produktformel `x*y=k` für die restlichen Paare.
+It uses combined algorithms - functioning on a Curve-like, bespoke low slippage, low trading fee algorithm specifically for swapping between stablecoins and on the constant product formula `x*y=k` for the rest of pairs.
 
-Jedes Paar verwaltet einen Liquiditätspool, der aus Reserven von zwei Tokens besteht. Die Preise der Paarmarken werden direkt durch die Reserveguthaben bestimmt.
+Each pair manages a liquidity pool made up of reserves of two tokens. The prices of the pair tokens are directly determined by the reserve balances.
 
-Benutzer können an einem bestimmten Krypto-Asset-Markt (Paar) tauschen und/oder Liquiditätsanbieter werden.
+Users can swap at a specific crypto assets market(pair) and/or become liquidity providers.
 
-Für die Paare `pUSD-USDT(ERC-20)`, `pUSD-USDT(TRC-20)`, `PUSD-USDC`, `PUSD-DAI`und `BTC-wBTC`, die Swappgebühr ist 0. 4%. Für die restlichen Paare beträgt die Umtauschgebühr 0,3%.
+For the pairs `pUSD-USDT(ERC-20)`, `pUSD-USDT(TRC-20)`, `pUSD-USDC`, `pUSD-DAI`, and `BTC-wBTC`, the swapping fee is 0.04%. For the rest of pairs, the swapping fee is 0.3%.
 
-Die [Trading-Gebühr](./key-concepts/trading-fee) wird an alle Liquiditätsanbieter im Verhältnis zu ihren Anteilen am Liquiditätspool gezahlt.
+The [trading fee](./key-concepts/trading-fee) is paid to all liquidity providers proportional to their shares of the liquidity pool.
 
-[4swap](https://4swap.org) stellt einen Mechanismus namens "Broker" zur Verfügung, den Benutzer mit dem Protokoll interagieren. Pando Lake hat einen eigenen Broker für die Nutzer. Weitere Informationen finden Sie unter ["Lake vs 4swap"](faqs/lake-vs-4swap).
+[4swap](https://4swap.org) provides a mechanism named "Broker" that users interact with the protocol. Pando Lake  has its own Broker to serve the users. Please refer to ["Lake vs 4swap"](faqs/lake-vs-4swap) for more information.
 
-**→** [Besuchen Sie 4swap.org](https://4swap.org)  
-**→** [Besuchen Sie den Pando See](https://lake.pando.im)  
+**→** [Visit 4swap.org](https://4swap.org)  
+**→** [Visit Pando Lake](https://lake.pando.im)  
 
 
 

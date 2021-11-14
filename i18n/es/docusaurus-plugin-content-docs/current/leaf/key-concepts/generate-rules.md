@@ -1,6 +1,5 @@
 ---
 title: Generate rules
-sidebar_position: 2
 date: 2021-09-13 00:00:01
 ---
 

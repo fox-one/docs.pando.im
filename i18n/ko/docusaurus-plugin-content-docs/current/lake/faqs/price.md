@@ -1,6 +1,5 @@
 ---
 title: 가격은 어떻게 결정되나요?
-sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 

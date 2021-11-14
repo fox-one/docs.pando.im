@@ -1,6 +1,5 @@
 ---
 title: 从 Pando Rings 提取资产。
-sidebar_position: 7
 date: 2021-09-04 12:33:07
 ---
 

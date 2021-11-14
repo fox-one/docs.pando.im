@@ -1,6 +1,5 @@
 ---
 title: SDKを利用した取引
-sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 

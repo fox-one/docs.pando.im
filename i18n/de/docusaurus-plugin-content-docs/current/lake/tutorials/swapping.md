@@ -1,38 +1,37 @@
 ---
 title: Swapping
-sidebar_position: zwei
 date: 15-08-2021 22:33:07
 ---
 
 
-Durch Tippen auf das Zahnradsymbol können Sie die [Schlupf](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
+By tapping the gear icon, you can set the [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
 
 ![](../assets/swapping-p1.png)
 
 
 
-Die Route zeigt die Schritte, in die Ihre Transaktion verarbeitet wird.
+The route shows the steps your transaction will be processed.
 
 ![](../assets/swapping-p2.png)
 
-Der Algorithmus berechnet die optimale Route, damit Sie das größtmögliche Asset erhalten können.
+Algorithm calculates the optimal route so that you can receive the most asset possible.
 
 
 
-![](../assets/swapping-p3.png) Nach Eingabe der 6-stelligen PIN, um die Zahlung abzuschließen, werden die Transaktionsdetails angezeigt. Sie können die Transaktionsdetails auch im Dialogfenster einsehen.
+![](../assets/swapping-p3.png) After entering the 6-digit PIN to complete the payment, the transaction details will pop up. You can also view the transaction details in the dialog window.
 
 
 
 ![](../assets/swap-p.png)
 
-Klicken, um [Transaktionsgebühren](https://docs.pando.im/docs/lake/key-concepts/trading-fee) anzuzeigen.
+Click to view [transaction fees](https://docs.pando.im/docs/lake/key-concepts/trading-fee).
 
 ````mdx-code-block
-:::warnung:
+:::caution
 
 Bitte achte beim Swappen auf den Preiseffekt. 
 
-Wenn der Preisausschlag zu hoch ist, bedeutet dies, dass die Transaktion an Liquidität mangelt oder der Transaktionsbetrag zu groß ist, und der fortgesetzte Handel kann zu größeren Verlusten führen.
+When the price impact is too high, it means that the transaction is lack of liquidity or the transaction amount is too large, and continuing trading may cause greater losses.
 
 :::
 ````

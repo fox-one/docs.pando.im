@@ -1,6 +1,6 @@
 ---
 title: Support
-sidebar_position: 1
+
 date: 2021-09-17 12:37:07
 ---
 

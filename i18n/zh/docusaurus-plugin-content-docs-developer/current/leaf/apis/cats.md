@@ -1,6 +1,5 @@
 ---
 title: 读取抵押物
-sidebar_position: 4
 date: 2021-10-01 23:18:01
 ---
 

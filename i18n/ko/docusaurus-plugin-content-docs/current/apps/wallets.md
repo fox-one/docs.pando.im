@@ -1,6 +1,5 @@
 ---
 title: 지갑
-sidebar_position: 1
 ---
 
 ## Mixin Messenger

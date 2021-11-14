@@ -1,42 +1,41 @@
 ---
-title: See und 4swap vergleichen
-sidebar_position: fünf
+title: Compare Lake and 4swap
 date: 31-07-2021 15:44:07
 ---
 
-**4swap** ist ein offenes Protokoll, das die Grundlage für den dezentralen Liquiditäts- und Austauschservice mit einer Mixin Trusted Group bereitstellt.
+**4swap** is an open protocol that provides the basis of the decentralized liquidity and swapping service with a Mixin Trusted Group.
 
-## 4-Swap
+## 4swap
 
-**4swap Broker** ist die Schnittstelle, die Benutzer mit dem 4swap-Protokoll interagieren.
+**4swap Broker** is the interface that users interact with 4swap protocol.
 
-Der Standardbroker ist der 4swap Mixin Messenger Bot (id: 7000103537). Wenn Sie keine Broker-ID in den Anfragen angeben, werden alle Informationen über Assets, Paare, Markt, Bestellungen von diesem Broker beantwortet.
+The default broker is the 4swap Mixin Messenger bot (id: 7000103537). If you don't specify a broker ID in the requests, all information about assets, pairs, market, orders will be responded by this broker.
 
-Du kannst auf die Webschnittstelle dieses Brokers zugreifen, indem du https://4swap.org besuchst.
+You can access this broker's web interface by visiting https://4swap.org.
 
 ## Pando Lake
 
-**Pando Lake** ist ein 4-Swap Broker, der von Pando gehostet wird.
+**Pando Lake** is a 4swap broker that is hosted by Pando.
 
-Pando Lake filtert die Marktinformationen, um nur die ausgewählten Paare und Märkte anzuzeigen, die über eine gute Liquidität verfügen und von soliden Gemeinschaften unterstützt werden.
+Pando Lake filters the market information to only display the chosen pairs and markets that have good liquidity and are backed by solid communities.
 
-Pando Lake verfügt über einen individuellen Mixin Messenger Bot (id: 7000103937), über https://lake.pando.im.
+Pando Lake has an individual Mixin Messenger bot (id: 7000103937), you can also access its web interface by visiting https://lake.pando.im.
 
-Die LP-Token werden zwischen dem Pando-See und dem 4swap geteilt.
+The LP-Tokens are shared between Pando Lake and 4swap.
 
-### Mit dem Pando-See integrieren
+### Integrate with Pando Lake
 
-Die Broker-Id des Pando Sees ist `5dbdb169-d56d-4b5b-b066-9b0780691b14`, die in Anfragen verwendet wird.
+The broker id of Pando Lake is `5dbdb169-d56d-4b5b-b066-9b0780691b14`, which is used in requests.
 
-**Zum See autorisieren**
+**Authorize to Lake**
 
-Beim Aufruf `POST /api/oauth` um die Wallet zu autorisieren, zwei Parameter `broker_id` und `label` müssen angegeben werden, in welcher `Bezeichnung` ein String "See" sein soll.
+When call `POST /api/oauth` to authorize the wallet, two parameters `broker_id` and `label` must be specified, in which `label` should be a string "lake".
 
-**Andere APIs**
+**Other APIs**
 
-Der Parameter `broker_id` sollte an die Abfrage oder Payload der folgenden API-Anfragen angehängt werden:
+The parameter `broker_id` should be appended to the query or payload of following API requests:
 
-- POST /api/actions generiert einen Transfer der zum Pando See gesendet werden kann.
-- GET /api/paare, es wird mit einem `Whitelists` Feld antworten, das Asset-Ids enthält, die vom Pando Lake unterstützt werden.
+- POST /api/actions, it generates a transfer that could be sent to Pando Lake.
+- GET /api/pairs, it will respond with a `whitelists` field which includes asset ids that are supported by Pando Lake.
 
 

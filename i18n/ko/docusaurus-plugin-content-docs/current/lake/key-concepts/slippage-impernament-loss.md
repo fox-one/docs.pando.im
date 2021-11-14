@@ -1,6 +1,5 @@
 ---
 title: 슬리피지(Slippage) 와 무상손실(Impermanent loss)
-sidebar_position: 3
 date: 2021-08-15 22:33:07
 ---
 

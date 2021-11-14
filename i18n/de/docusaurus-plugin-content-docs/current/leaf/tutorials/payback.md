@@ -1,20 +1,19 @@
 ---
-title: Rückzahlungen pUSD
-sidebar_position: 6
+title: Paying Back pUSD
 date: 13-08-2021 12:33:07
 ---
 
-Die Rückzahlung von Pusd ist nützlich, wenn ein Tresor nicht liquidiert werden soll, oder der Besitzer von Vault die Größe ihrer Position verkleinern oder die Sicherheiten freigeben möchte.
+Paying back pUSD is useful when wanting to save a Vault from being liquidated, or the Vault owner wants to decrease the size of their position or to free up the collateral.
 
-Um zurückzuzahlen, klicken Sie auf "Zurückzahlen" um auf der Rückzahlungsseite zu landen. Füllen Sie den Betrag aus, den Sie manuell zurückzahlen möchten, oder klicken Sie auf "Max festlegen", um alle Schulden zu begleichen.
+To pay back, click on "Pay back" to land on the Pay Back page. Fill in the amount you intend to pay back manually or click "Set Max" to pay off all the debts.
 
 ![](../assets/leaf-payback-p1.png)
 
-Die Verschuldung verringert sich von 13000 auf 12000 nach Rückzahlung des Push und Sie können auch die Details dieser Rückzahlung im Chatfenster sehen.
+The debt reduce from 13000 to 12000 pusd after repaying the pusd, and you can also see the details of this repayment in the chat window.
 
 ![](../assets/leaf-payback-p2.png)
 
-Bitte beachten Sie, dass wenn Sie auf "Max" klicken Sie werden etwas höher belastet als die ausstehenden Schulden, um die Schulden erfolgreich zu begleichen, weil die Zinsen berechnet und der Verschuldung in Echtzeit hinzugefügt werden. Jeder Überschuss nach der Zahlung wird an Ihre Brieftasche zurückgeschickt.
+Please be noted that when you click "Set Max", you will be charged slightly higher than the outstanding debt amount to successfully pay off the debt because the interests are calculated and added to the debt real-time. Any excess amount after the payment will be returned to your wallet.
 
 ![](../assets/payback-p2.png)
 

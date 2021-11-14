@@ -1,6 +1,5 @@
 ---
 title: 开放源代码
-sidebar_position: 1
 date: 2021-08-17 18:59:07
 ---
 

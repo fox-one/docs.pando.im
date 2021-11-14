@@ -1,6 +1,5 @@
 ---
 title: 청산 가격
-sidebar_position: 3
 date: 2021-08-13 14:33:07
 ---
 

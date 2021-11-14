@@ -1,27 +1,26 @@
 ---
 title: Welche Token werden unterstützt?
-sidebar_position: 6
 date: 15-08-2021 22:33:07
 ---
 
 
-Theoretisch können wir die von Mixin Network unterstützten Vermögenswerte unterstützen. aber die aktuelle Liste der von uns zu unterstützenden Vermögenswerte basiert auf den folgenden Regeln:
+In theory, we can provide support for the assets supported by Mixin Network, but the current list of assets we choose to support is based on the following rules:
 
-- Starkes Ökosystem oder hoher Ruf in der Blockchain-Industrie.
+- Strong ecosystem or high reputation in the blockchain industry.
 
-- Ein beträchtlicher Gemeinschaftsstandort im Mischökosystem.
+- Considerable community base in the Mixin ecosystem.
 
-- Der Projekteigentümer ist bereit, Vermögenswerte als erster Liquiditätsmarktmacher zur Verfügung zu stellen, und der Nettowert erreicht den von der Fox anerkannten Standard. NE-Team.
+- The project owner is willing to provide assets as the initial liquidity market maker, and the net value reaches the standard recognized by the Fox.ONE team.
 
 ### Liste der unterstützten Token
 
 
-| Münz/Token  |               Die Explorer-Adresse/die Vertragsadresse                |
+| Münz/Token  |               The Explorer Address/The Contract Address               |
 |:-----------:|:---------------------------------------------------------------------:|
 |     BTC     |                  https://www.blockchain.com/explorer                  |
 |     ETH     |                         https://etherscan.io/                         |
 |     EOS     |                         https://eosflare.io/                          |
-| USDT(Erc20) | https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7 |
+| USDT（Erc20） | https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7 |
 |    USDC     | https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 |
 |     BOX     | https://etherscan.io/token/0x045414e728067ab3da4bceafc0d992d59183463a |
 | Mobilecoin  |                        https://mobilecoin.com/                        |
@@ -29,10 +28,10 @@ Theoretisch können wir die von Mixin Network unterstützten Vermögenswerte unt
 |     XIN     | https://etherscan.io/token/0xa974c709cfb4566686553a20790685a47aceaa33 |
 |     RUM     | https://etherscan.io/token/0x09b43d10656724373b2184c82e0ad6439c7b419a |
 |    LUNA     | https://etherscan.io/token/0x4475ecc4ed22f55b44f942e43f04225f902c9428 |
-|    EINE     | https://etherscan.io/token/0x946551dd05c5abd7cc808927480225ce36d8c475 |
+|     ONE     | https://etherscan.io/token/0x946551dd05c5abd7cc808927480225ce36d8c475 |
 |     XMR     |                     https://localmonero.co/blocks                     |
 |     IQ      |                    https://eosflare.io/account/iq                     |
-| USDT(Trc20) |   https://tronscan.org/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t   |
+| USDT（Trc20） |   https://tronscan.org/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t   |
 |     AR      | https://etherscan.io/token/0x3C5F0E340A8015525cE4Ab7c13c83172eF720bA5 |
 |     UNI     | https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984 |
 |    DOGE     |                        https://dogechain.info/                        |

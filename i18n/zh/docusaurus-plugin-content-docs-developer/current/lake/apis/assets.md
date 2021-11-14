@@ -1,6 +1,5 @@
 ---
 title: 读取所有资产
-sidebar_position: 5
 date: 2021-09-30 23:18:01
 ---
 

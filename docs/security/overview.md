@@ -1,6 +1,6 @@
 ---
 title: Overview
-sidebar_position: 1
+
 ---
 
 Pando Team is a security-focused team that is committed to protecting your data and your privacy. We work with Mixin Team and other participants to ensure that our security practices are aligned with the best practices of the industry.

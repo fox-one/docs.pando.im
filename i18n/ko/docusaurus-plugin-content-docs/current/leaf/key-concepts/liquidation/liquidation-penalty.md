@@ -1,6 +1,5 @@
 ---
 title: 청산 패널티
-sidebar_position: 4
 date: 2021-08-13 14:33:07
 ---
 

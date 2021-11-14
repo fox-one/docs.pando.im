@@ -1,6 +1,5 @@
 ---
 title: Wie werden die Preise ermittelt?
-sidebar_position: 2
 date: 15-08-2021 22:33:07
 ---
 

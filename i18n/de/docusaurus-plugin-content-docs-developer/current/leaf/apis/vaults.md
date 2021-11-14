@@ -1,16 +1,15 @@
 ---
-title: Tresore lesen
-sidebar_position: 6
+title: Read Vaults
 date: 01-10-2021 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Alle Tresore lesen
+## Read All Vaults
 
 ### GET /vats
 
-Diese API wird alle Tresore beantworten.
+This API will respond all vaults.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vats" />
 
@@ -18,7 +17,7 @@ Diese API wird alle Tresore beantworten.
 
 <APIParams p-cursor="the cursor to start from" p-limit="the limitation of items in response" />
 
-<APIRequest title="Alle Tresore lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats' />
+<APIRequest title="Read all vaults" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats' />
 
 ```json title="Response"
 {
@@ -61,11 +60,11 @@ Diese API wird alle Tresore beantworten.
 }
 ```
 
-## Einzelne Tresore lesen
+## Read Single Vault
 
 ### GET /vat/:id
 
-Diese API antwortet auf einen Tresor mit `:id`
+This API will respond one vault with `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vats/:id" />
 
@@ -73,7 +72,7 @@ Diese API antwortet auf einen Tresor mit `:id`
 
 <APIParams p-id="the vault id" p-id-required="{true}" />
 
-<APIRequest title="Einen Tresor lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats/52010fd0-6a9d-393c-abcb-ca997d950bf5' />
+<APIRequest title="Read one vault" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vats/52010fd0-6a9d-393c-abcb-ca997d950bf5' />
 
 ```json title="Response"
 {
@@ -89,11 +88,11 @@ Diese API antwortet auf einen Tresor mit `:id`
 }
 ```
 
-## Alle Tresorereignisse lesen
+## Read All Vault Events
 
 ### GET /vat/:id/events
 
-Diese API reagiert auf alle Ereignisse eines Tresors mit `:id`
+This API will respond all events of one vault with `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vat/:id/events" />
 
@@ -101,7 +100,7 @@ Diese API reagiert auf alle Ereignisse eines Tresors mit `:id`
 
 <APIParams p-id="the vault id" p-id-required="{true}" />
 
-<APIRequest title="Alle Ereignisse eines Tresors lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vaults/52010fd0-6a9d-393c-abcb-ca997d950bf5/events' />
+<APIRequest title="Read all events of one vault" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/vaults/52010fd0-6a9d-393c-abcb-ca997d950bf5/events' />
 
 ```json title="Response"
 {
@@ -131,11 +130,11 @@ Diese API reagiert auf alle Ereignisse eines Tresors mit `:id`
 ```
 
 
-## Meine Tresore lesen
+## Read My Vaults
 
 ### GET /me/vats
 
-Diese API wird alle Tresore des aktuellen Benutzers beantworten.
+This API will respond all vaults belonging to current user.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/me/vats" />
 
@@ -143,7 +142,7 @@ Diese API wird alle Tresore des aktuellen Benutzers beantworten.
 
 <APIParams p-cursor="the cursor to start from" p-limit="the limitation of items in response" />
 
-<APIRequest title="Alle Tresore eines Benutzers lesen" method="GET" base="https://leaf-api.pando.im/api" url='/me/vats' />
+<APIRequest title="Read all vaults of a user" method="GET" base="https://leaf-api.pando.im/api" url='/me/vats' />
 
 ```json title="Response"
 {

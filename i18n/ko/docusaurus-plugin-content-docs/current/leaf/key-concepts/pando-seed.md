@@ -1,6 +1,5 @@
 ---
 title: Pando Seed
-sidebar_position: 7
 date: 2021-10-12 22:33:07
 ---
 

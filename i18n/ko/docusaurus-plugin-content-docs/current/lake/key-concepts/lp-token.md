@@ -1,6 +1,5 @@
 ---
 title: 유동성 공급자 토큰(LP 토큰)
-sidebar_position: 1
 date: 2021-08-15 22:33:07
 ---
 

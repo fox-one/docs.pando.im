@@ -1,6 +1,5 @@
 ---
 title: 권한 부여
-sidebar_position: 2
 date: 2021-07-31 11:18:01
 ---
 

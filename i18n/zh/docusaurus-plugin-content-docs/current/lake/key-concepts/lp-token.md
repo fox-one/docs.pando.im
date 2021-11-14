@@ -1,6 +1,5 @@
 ---
 title: 流动性提供者代币(LP 代币)
-sidebar_position: 1
 date: 2021-08-15 22:33:07
 ---
 

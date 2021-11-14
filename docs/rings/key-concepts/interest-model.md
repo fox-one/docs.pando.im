@@ -1,6 +1,6 @@
 ---
 title: Interest Rate Determination
-sidebar_position: 4
+
 date: 2021-10-16 12:33:07
 ---
 

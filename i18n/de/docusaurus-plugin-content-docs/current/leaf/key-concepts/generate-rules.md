@@ -1,15 +1,14 @@
 ---
-title: Regeln erstellen
-sidebar_position: zwei
+title: Generate rules
 date: 13-09-2021 00:00:01
 ---
 
-Der minimale Betrag an Krypto-Währung, der zum ersten Mal geprägt werden soll, ist 100 Pusd.
+The minimum amount of crypto currency to be minted for the first time is 100 pusd.
 
 ````mdx-code-block
 :::caution
 
-Bitte stellen Sie sicher, dass der Hypothekarzinssatz nach dem Prägen in einem sicheren Bereich liegt. Wenn der Hypothekenzins unter 150 % liegt, wird er gezwungen sein, ihn zu liquidieren und Verluste zu verursachen.
+Please ensure that the mortgage rate after minting is in a safe range. If the mortgage rate is lower than 150%, it will be forced to liquidate and cause losses.
 
 :::
 ````

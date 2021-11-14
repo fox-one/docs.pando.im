@@ -1,15 +1,14 @@
 ---
-title: Slippage und unendlicher Verlust
-sidebar_position: 3
+title: Slippage and Impermanent loss
 date: 15-08-2021 22:33:07
 ---
 
 ### Slippage
 
-Im Finanzhandel -Slippage ist ein Begriff, der sich auf die Differenz zwischen dem erwarteten Preis eines Handels und dem tatsächlichen Preis bezieht, zu dem der Handel ausgeführt wird.
+In financial trading, slippage is a term that refers to the difference between a trade’s expected price and the actual price at which the trade is executed.
 
 ### Impermanent Loss
 
-Die Bereitstellung von Liquidität ist nicht ohne Risiko, da Sie einem undauerhaften Verlust ausgesetzt sein können.
+Providing liquidity is not without risk, as you may be exposed to impermanent loss.
 
-[„Einfach ausgedrückt, unendlicher Verlust ist der Unterschied zwischen dem Halten von Token in einem AMM und dem Halten in Ihrer Brieftasche.“ - Nate Hindman](https://blog.bancor.network/beginners-guide-to-getting-rekt-by-impermanent-loss-7c9510cb2f22)
+[“Simply put, impermanent loss is the difference between holding tokens in an AMM and holding them in your wallet.” - Nate Hindman](https://blog.bancor.network/beginners-guide-to-getting-rekt-by-impermanent-loss-7c9510cb2f22)

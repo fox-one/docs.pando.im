@@ -1,6 +1,5 @@
 ---
 title: 检查资产信息
-sidebar_position: 5
 date: 2021-08-15 22:33:07
 ---
 

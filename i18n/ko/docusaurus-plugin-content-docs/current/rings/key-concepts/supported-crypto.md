@@ -1,6 +1,5 @@
 ---
 title: 지원하는 암호화폐
-sidebar_position: 7
 date: 2021-09-29 22:33:07
 ---
 

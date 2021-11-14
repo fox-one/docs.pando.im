@@ -1,6 +1,5 @@
 ---
 title: ウォレット
-sidebar_position: 1
 ---
 
 ## Mixin Messenger

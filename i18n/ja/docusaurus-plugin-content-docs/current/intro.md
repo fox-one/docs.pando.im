@@ -1,6 +1,5 @@
 ---
 title: ユーザーマニュアル
-sidebar_position: 1
 ---
 
 ## 紹介

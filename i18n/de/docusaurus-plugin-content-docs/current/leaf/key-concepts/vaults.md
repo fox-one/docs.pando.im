@@ -1,25 +1,24 @@
 ---
-title: Tresore
-sidebar_position: eins
+title: Vaults
 date: 13-08-2021 12:33:07
 ---
 
-### Was ist ein Tresor
+### What is a Vault
 
-Ein Vault ist, wo der Eigentümer Kaution Sicherheiten und erzeugen stabile Cyptocurrency Pusd.
+A Vault is where the owner deposit collateral and generate stable cyptocurrency pUSD.
 
-### Tresor Typen
-Tresore werden nach der Art der Sicherheiten kategorisiert, die zum generierten Pusd verwendet werden. Benutzer erzeugen pUSD indem sie es gegen ihre Sicherheiten generieren und Pusd bei der Rückzahlung ihres Pusd-Guthabens zerstören.
+### Vault Types
+Vaults are categorized by the type of collateral used to generated pUSD. Users create pUSD by generating it against their collateral and destroy pUSD when repaying their generated pUSD balance.
 
-### Kollateralisierung
-Vaults müssen überdeckt sein und haben eine Liquidation Ratio, die Vault-Eigentümer aufrechterhalten müssen, um die Liquidation ihrer Positionen zu vermeiden.
+### Collateralization
+Vaults are required to be overcollateralized and have a Liquidation Ratio that Vault owners need to uphold to avoid the Liquidation of their positions.
 
-### Schuldendeckel
-Der Trester-spezifische Schuldendeckel ist der maximale Pusd-Betrag, der von jedem Tresor generiert werden kann.
+### Debt Ceiling
+The Vault-specific Debt Ceiling is the maximum amount of pUSD that can be generated of each Vault type.
 
-Die globale Schuldenobergrenze begrenzt den pUSD-Betrag, der im gesamten System generiert werden kann.
+The Global Debt Ceiling limits the amount of pUSD that can be generated across the entire system.
 
-### Stabilitäts-Gebühren
-Die Stabilitätsgebühr ist eine variable Zinsgebühr, die kontinuierlich dem generierten Pusd-Guthaben eines Vault-Besitzers hinzugefügt wird. Es kann als die Zinsen verstanden werden, die Sie für das Darlehen bezahlen (generiert pUSD). 
+### Stability Fees
+The Stability Fee is a variable-rate fee continuously added to a Vault owner’s generated pUSD balance. It can be understood as the interests you pay for the loan (generated pUSD). 
 
 

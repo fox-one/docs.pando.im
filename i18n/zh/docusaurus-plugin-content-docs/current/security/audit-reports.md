@@ -1,6 +1,5 @@
 ---
 title: 审计报告
-sidebar_position: 3
 ---
 
 import { Improvement, } from "@site/src/components/admonitions";

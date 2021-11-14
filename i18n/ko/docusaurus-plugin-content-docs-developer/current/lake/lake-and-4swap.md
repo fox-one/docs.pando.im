@@ -1,6 +1,5 @@
 ---
 title: Lake와 4swap의 비교
-sidebar_position: 5
 date: 2021-07-31 15:44:07
 ---
 

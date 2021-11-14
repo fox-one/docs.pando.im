@@ -1,34 +1,33 @@
 ---
-title: Einführung
-sidebar_position: eins
+title: Introducation
 ---
 
-## Pando See / 4swap
+## Pando Lake / 4swap
 
-**Entwickler Guide**
+**Develop Guide**
 
-  - [Mit SDK zum Handel](/developer/lake/guide/using-sdk): Verwenden Sie einen golang sdk, um Krypto an 4swap/See auszutauschen.
-  - [Wallets aufrufen](/developer/lake/guide/invoke-wallets): Rufen Sie den Zahlungsdialog auf, um eine Übertragung mit Mixin Netzwerk kompatiblen Brieftaschen abzuschließen.
+  - [Using SDK to Trade](/developer/lake/guide/using-sdk): use a golang sdk to swap crypto at 4swap/Lake.
+  - [Invoke Wallets](/developer/lake/guide/invoke-wallets): call the payment dialog up to complete a transfer with Mixin Network compatible wallets.
 
-**Spezifiktationen**
+**Specifications**
 
-- [API-Referenz](/developer/lake/apis/overview): RESTful API-Referenz.
-- [Aktionsprotokoll](/developer/lake/action-protocol): ein Memo-basiertes JSON-Protokoll, um Kryptographie auszutauschen, Liquidität hinzuzufügen und zu entfernen.
-- [Vergleichen Sie Lake und 4swap](/developer/lake/lake-and-4swap): Vergleich von Lake und 4swap.
+- [API Reference](/developer/lake/apis/overview): RESTful API reference.
+- [Action Protocol](/developer/lake/action-protocol): a memo based JSON protocol to swap crypto, add and remove liquidity.
+- [Compare Lake and 4swap](/developer/lake/lake-and-4swap): comparision of Lake and 4swap.
 
-## Pando Blatt
+## Pando Leaf
 
-**Spezifiktationen**
+**Specifications**
 
-- [API-Referenz](/developer/leaf/apis/overview): RESTful API-Referenz.
+- [API Reference](/developer/leaf/apis/overview): RESTful API reference.
 
 
 ## Pando Rings
 
-- [API-Referenz](/developer/rings/apis): RESTful API-Referenz.
-- [SDK Leitfaden](/developer/rings/guide): Eine einfachere und schnellere Möglichkeit, sich mit Pando Rings zu verbinden.
+- [API Reference](/developer/rings/apis): RESTful API reference.
+- [SDK Guide](/developer/rings/guide): An easier and faster way to Connect to Pando Rings engine.
 
 
-## Quellen
+## Resources
 
-- [Beispiele](/developer/resources/examples)
+- [Examples](/developer/resources/examples)

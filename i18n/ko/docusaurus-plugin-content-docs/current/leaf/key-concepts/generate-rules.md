@@ -1,6 +1,5 @@
 ---
 title: 주화(화폐주조) 규칙
-sidebar_position: 2
 date: 2021-09-13 00:00:01
 ---
 

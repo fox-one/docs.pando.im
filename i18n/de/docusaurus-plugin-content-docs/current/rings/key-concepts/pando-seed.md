@@ -1,13 +1,12 @@
 ---
 title: Pando Seed
-sidebar_position: acht
 date: 12-10-2021 22:33:07
 ---
 
-Jedes Mal, wenn Sie die verpfändeten Vermögenswerte abrufen, müssen Sie Pando Samen bezahlen.
+Every time you retrieve the pledged assets, you need to pay pando seed.
 
-Sie können jeden Tag Pando Seed Token auf dem Pando Seed Roboter beanspruchen.
+You can claim Pando Seed Token on the Pando Seed robot every day.
 
 ![](../assets/pando-seed.png)
 
-Suche Mixin ID **7000104113** auf Mixin Messenger App und Klick auf blaue Nummer. Dann fügen Sie Bot und klicken Sie auf kleinen Roboter Avatar zu öffnen Pando Seed.
+Search Mixin ID **7000104113** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando seed.

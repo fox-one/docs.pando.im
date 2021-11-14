@@ -1,6 +1,5 @@
 ---
 title: 价格由何决定？
-sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 

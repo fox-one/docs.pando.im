@@ -1,6 +1,5 @@
 ---
 title: 贡献
-sidebar_position: 2
 date: 2021-09-15 22:33:07
 ---
 
@@ -51,7 +50,7 @@ Please note that all the code in the documentation should not be translated.
 :::
 ````
 
-### Initialize the Translation
+### 启动翻译
 
 #### 为新的语言生成新的翻译文件
 

@@ -1,6 +1,6 @@
 ---
 title: Loan Risk Indicator
-sidebar_position: 3
+
 date: 2021-09-04 12:33:07
 ---
 [Borrow](./glossary) / [Borrow Limit](./glossary) is used to indicate your loan risk. 

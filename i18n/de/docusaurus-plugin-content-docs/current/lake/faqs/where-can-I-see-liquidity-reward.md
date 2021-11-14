@@ -1,6 +1,5 @@
 ---
 title: Wo kann ich die Liquiditätsprämie sehen？
-sidebar_position: 5
 date: 13-09-2021 00:00:02
 ---
 

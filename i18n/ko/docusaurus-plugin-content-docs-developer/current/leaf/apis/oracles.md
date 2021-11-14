@@ -1,6 +1,5 @@
 ---
 title: Read Oracles
-sidebar_position: 7
 date: 2021-10-01 23:18:01
 ---
 

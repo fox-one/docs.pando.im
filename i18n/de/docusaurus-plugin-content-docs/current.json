@@ -12,11 +12,11 @@
     "description": "The label for category Tutorials in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Key Concepts": {
-    "message": "Schlüsselkonzepte",
+    "message": "Key Concepts",
     "description": "The label for category Key Concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Other FAQs": {
-    "message": "Andere FAQs",
+    "message": "Other FAQs",
     "description": "The label for category Other FAQs in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Leaf": {
@@ -40,7 +40,7 @@
     "description": "The label for category 3rd-party Applications in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Security": {
-    "message": "Sicherheit",
+    "message": "Security",
     "description": "The label for category Security in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Community": {

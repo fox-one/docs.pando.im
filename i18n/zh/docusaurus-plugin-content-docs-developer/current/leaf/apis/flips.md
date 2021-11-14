@@ -1,6 +1,5 @@
 ---
 title: 读取拍卖信息
-sidebar_position: 5
 date: 2021-10-01 23:18:01
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 개요(Overview)
-sidebar_position: 1
 date: 2021-03-20 12:38:07
 ---
 

@@ -1,11 +1,10 @@
 ---
-title: Liquiditätspreis
-sidebar_position: 3
+title: Liquidation Price
 date: 13-08-2021 14:33:07
 ---
 
-Der Liquidation Price ist der Preis, zu dem ein Vault anfällig für die Liquidation wird.
+The Liquidation Price is the price at which a Vault becomes vulnerable to liquidation.
 
-Vault-Besitzer können ihren Liquidationspreis senken, indem sie mehr Sicherheiten hinzufügen oder pUSD in das Vault zurückschicken.
+Vault owners can lower their liquidation price by adding more collateral or returning pUSD to the Vault.
 
-Liquidation Price = (Generiert pUSD * Liquidation Ratio) / (Amount of Collateral)
+Liquidation Price = (Generated pUSD * Liquidation Ratio) / (Amount of Collateral)

@@ -1,22 +1,21 @@
 ---
-title: Token des Liquiditätsanbieters (LP-Token)
-sidebar_position: eins
+title: Liquidity Provider Token (LP Token)
 date: 15-08-2021 22:33:07
 ---
 
-Liquiditätsdienstleister-Token oder LP-Token sind ERC-20-Token an Liquiditätsanbieter auf Pando Lake / 4swap. Man kann sich das als eine IOU oder eine Quittung vorstellen.
+Liquidity provider tokens or LP tokens are ERC-20 tokens issued to liquidity providers on Pando Lake / 4swap. You can think of it as an IOU or a receipt.
 
-LP-Token werden verwendet, um individuelle Beiträge zum gesamten Liquiditätspool zu verfolgen da die gehaltenen LP-Token proportional zum Liquiditätsanteil im Gesamtpool entsprechen.
+LP tokens are used to track individual contributions to the overall liquidity pool, as LP tokens held correspond proportionally to the share of liquidity in the overall pool.
 
-Auf der grundlegendsten Ebene arbeiten LP-Token an der folgenden Formel:
+At the most basic level, LP tokens work on the following formula:
 
-**Gesamtwert des Liquiditätspools / Umlaufmenge von LP Tokens = Wert 1 LP Token**
+**Total Value of Liquidity Pool / Circulating Supply of LP Tokens =  Value of 1 LP Token**
 
-Genau wie andere Assets können auch die LP-Token ausgetauscht und gehandelt werden.
+Just like other assets, the LP tokens can be transerred and traded.
 
-Wann immer ein Handel stattfindet, wird dem Transaktionsabsender eine [-Gebühr](./trading-fee) berechnet. Diese Gebühr wird nach Abschluss des Handels an alle LPs im Pool verteilt.
+Whenever a trade occurs, a [fee](./trading-fee) is charged to the transaction sender. This fee is distributed pro-rata to all LPs in the pool upon completion of the trade.
 
-Um die zugrunde liegende Liquidität und die anfallenden Gebühren abzurufen, können Liquiditätsanbieter Liquidität abschaffen, indem sie ihre Liquidität "verbrennen". Dies ermöglicht es ihnen, LP-Token gegen ihren Anteil am Liquiditätspool auszutauschen, zuzüglich der anteiligen Gebührenzuweisung. **Der Ertrag wird nicht verteilt, solange der Benutzer noch die LP-Token hält.**
+To retrieve the underlying liquidity, plus any fees accrued, liquidity providers can remove liquidity, "burning" their liquidity tokens. This will allow them to exchange LP tokens for their portion of the liquidity pool, plus the proportional fee allocation. **The yield will not be distributed while the user is still holding the LP tokens.**
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: 借用容量を取得するためのrTokenの誓約
-sidebar_position: 3
 date: 2021-09-04 12:33:07
 ---
 

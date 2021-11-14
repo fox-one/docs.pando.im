@@ -1,10 +1,9 @@
 ---
-title: Strafe für Liquidation
-sidebar_position: vier
-date: 2021-08-13 14:33:07
+title: Liquidation Penalty
+date: 13-08-2021 14:33:07
 ---
 
-Eine Liquidation Strafe ist eine Gebühr, die von Vault-Inhabern bezahlt wird, wenn der Wert ihrer Sicherheiten den Liquidation Preis des Vaults erreicht.
+A Liquidation Penalty is a fee paid by Vault owners when the value of their collateral reaches the Vault's Liquidation Price.
 
-Die Liquidation Strafe wird zusätzlich zum gesamten ausstehenden Pusd des Vaults hinzugefügt, wenn die Liquidation eintritt, was zur Folge hat, dass mehr Sicherheiten bei Auktionen verkauft werden.
+The Liquidation Penalty is added to the Vault’s total outstanding generated pUSD when liquidation occurs, which results in more collateral being sold at auction.
 

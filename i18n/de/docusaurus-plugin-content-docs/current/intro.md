@@ -1,40 +1,39 @@
 ---
-title: Gebrauchsanleitung
-sidebar_position: eins
+title: User Manuals
 ---
 
-## Einführung
+## Introduction
 
-Pando ist ein dezentralisiertes Finanznetzwerk, das mit [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg)aufgebaut wurde, inklusive einer Reihe offener Finanzprotokolle.
+Pando is a decentrialized financial network built with [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg), including a series of open financial protocols.
 
-Basierend auf dem Mechanismus des vertrauenswürdigen Netzwerkes Pando vereint die häufigsten dezentralisierten Finanzanwendungen zu einem Produkt, um den Nutzern zu dienen und entwickelt sich ständig zu umfassenderen Finanzdienstleistungen.
+Based on the mechanism of trusted network, Pando combines most common decentralized financial applications into one product to serve users and is constantly evolving to provide more comprehensive financial services.
 
-Pando integriert die folgenden Finanzprotokolle; alle können eigenständig ausgeführt werden.
+Pando integrates the following financial protocols; all of them can be run stand-alone.
 
-### Pando See & 4swap
+### Pando Lake & 4swap
 
-**[4swap](https://4swap.org)** ist eine dezentrale Protokollimplementierung für automatisierte Liquiditätsbereitstellung im Mixin Network. Es ist eine Gemeinschaftsanlage, so dass jeder Pool hinzugefügt werden kann. **Pando Lake** ist eine Alternative zu 4swap, die nur ausgewählte Becken zur Verfügung stellt.
+**[4swap](https://4swap.org)** is a decentralized protocol implement for automated liquidity provision on Mixin Network. It  is a community-driven, allowing for any pool to be added. **Pando Lake** is an alternative to 4swap, which only provide selected pools.
 
-**→** [Starten Sie mit 4swap](lake/tutorials/get-started)  
+**→** [Get Started with 4swap](lake/tutorials/get-started)  
 **→** [Swap!](lake/tutorials/swapping)  
-**→** [Liquidität bereitstellen](lake/tutorials/providing-liquidity) und [Liquidität entfernen](lake/tutorials/removing-liquidity)
+**→** [Provide Liquidity](lake/tutorials/providing-liquidity) and [Remove Liquidity](lake/tutorials/removing-liquidity)
 
-### Pando Blatt
+### Pando Leaf
 
-[**Pando Blatt**](leaf/intro) ist ein dezentralisiertes Finanzprotokoll, ein Ort, an dem Sie Sicherheiten hinterlegen können, um  [Pando USD(pUSD)](leaf/pusd) zu generieren und es bei der Rückzahlung des generierten PUSD-Guthabens zu zerstören.
+[**Pando Leaf**](leaf/intro) is a decentralized financial protocol, a place where you can deposit collateral to generate  [Pando USD(pUSD)](leaf/pusd) and destroy it when repaying the generated pUSD balance.
 
-**→** [Starten Sie mit Pando Blatt](leaf/tutorials/get-started)  
-**→** [Öffnen Sie einen Tresor](leaf/tutorials/open-vault)  
-**→** [Rückzahlung](leaf/tutorials/payback)
+**→** [Get Started with Pando Leaf](leaf/tutorials/get-started)  
+**→** [Open a Vault](leaf/tutorials/open-vault)  
+**→** [Payback](leaf/tutorials/payback)
 
 
 ### Pando Rings
 
-[**Pando Rings**](rings/intro) ist ein algorithmisches, autonomes Zinsprotokoll. Es ist ein Ort, wo Sie Kryptowährungen leihen oder ausleihen können. Benutzer können Kryptowährungen einlegen und Zinsen verdienen oder andere Kryptoanlagen gegen sie leihen.
+[**Pando Rings**](rings/intro) is an algorithmic, autonomous interest rate protocol. It is a place where you can lend or borrow cryptocurrencies. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.
 
-**→** [Versorgung](rings/tutorials/how-to-supply) und [Versprechen](rings/tutorials/how-to-pledge)   
-**→** [Ausleihe](rings/tutorials/how-to-borrow) und [Rückzahlung](rings/tutorials/how-to-repay)
+**→** [Supply](rings/tutorials/how-to-supply) and [Pledge](rings/tutorials/how-to-pledge)   
+**→** [Borrow](rings/tutorials/how-to-borrow) and [Payback](rings/tutorials/how-to-repay)
 
-## Fragen?
+## Questions?
 
-Bitten Sie um Hilfe auf unserer [Discord](https://discord.gg/CNS4QQ6w5u) oder [Twitter](https://twitter.com/pando_im).
+Ask for help on our [Discord](https://discord.gg/CNS4QQ6w5u) or [Twitter](https://twitter.com/pando_im).

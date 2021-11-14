@@ -1,6 +1,5 @@
 ---
 title: 用户手册
-sidebar_position: 1
 ---
 
 ## 介绍

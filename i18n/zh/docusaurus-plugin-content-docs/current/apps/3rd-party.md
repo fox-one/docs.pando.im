@@ -1,6 +1,5 @@
 ---
 title: 第三方应用程序
-sidebar_position: 1
 ---
 
 Pando 提供了一套对开发者友好的API和SDK，供第三方开发者建立应用程序。

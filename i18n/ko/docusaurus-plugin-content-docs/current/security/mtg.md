@@ -1,6 +1,5 @@
 ---
 title: Mixin Trusted Group
-sidebar_position: 2
 ---
 
 ## Mixin Network

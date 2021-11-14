@@ -1,6 +1,5 @@
 ---
 title: 監査報告書
-sidebar_position: 3
 ---
 
 import { Improvement, } from "@site/src/components/admonitions";

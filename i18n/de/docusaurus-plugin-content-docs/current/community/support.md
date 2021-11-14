@@ -1,6 +1,5 @@
 ---
 title: Unterstützung
-sidebar_position: 1
 date: 17-09-2021 12:37:07
 ---
 

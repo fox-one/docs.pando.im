@@ -1,6 +1,5 @@
 ---
-title: Beispiele
-sidebar_position: 6
+title: Examples
 date: 2021-07-31 13:03:07
 ---
 

@@ -1,6 +1,5 @@
 ---
-title: Technisches Design
-sidebar_position: zwei
+title: Technical Design
 date: 20-03-2021 12:38:07
 ---
 
@@ -8,59 +7,59 @@ date: 20-03-2021 12:38:07
 
 ## Architecture
 
-Ringe ist eine Implementierung von MTG und ein Fallschirm von Mixin Netzwerk.
+Rings is an implementation of MTG and a parachain of Mixin network.
 
 ![](design/architecture.jpg)
 
-#### MTG-Struct mischen
+#### Mixin MTG struct
 
 ![](design/mixin_mtg_struct.jpg)
 
 
-#### MTG System Datenfluss
-* Der Nutzer überträgt eine Zahlung (UTXO), die Geschäftsdaten an das Mixin-Netzwerk überträgt.
-* Ringe synchronisieren die Ausgabe(UTXO) durch Parsen der Geschäftsdaten (in output.memo)
-* Ringe versenden die Geschäftsaktion (enthalten in Geschäftsdaten) und verarbeiten jede Handlung (Angebot, Kredit...)
+#### MTG system data flow
+* The user transfers a payment(UTXO) that carries business data to the Mixin network.
+* Rings syncs the outputs(UTXO) by parsing the business data(in output.memo)
+* Rings dispatchs the business action(included in business data) and processes each action(supply, borrow...)
 
 ![](design/workflow.jpg)
 
-Im MTG-System gibt es zwei Hauptrollen, eine ist `Zahler`, und die andere ist `Kassierer`, Die gesamte Geschäftslogik wird basierend auf diesen beiden Rollen implementiert.
+In MTG system, There are two main roles, one is `Payee`, and the another is `cashier`, All business logic is implemented based on these two roles.
 
-* `Zahler` erhält die Ausgabe(Transaktionen) und decodiert die Geschäftsdaten von `Output.Memo`, versand `Aktionen` ![](design/f_payee.jpg)
+* `Payee` receiving the outputs(transactions), decoding the business data from `Output.Memo`, dispatching `actions` ![](design/f_payee.jpg)
 
-* `Kasse` das Token ausgeben, das Token wird an Benutzer übertragen ![](design/f_cashier.jpg)
+* `cashier` spending the token, transfering the token to user ![](design/f_cashier.jpg)
 
-#### Klingelaktionen
+#### Rings actions
 
-* `Versorgung`, Nehmen wir an, die Benutzer liefern das zugrundeliegende Token `ETH` und erhalten Sie das Equity-Token `rETH` ![](design/tl_supply.jpg)
+* `Supply`, Suppose users supply the underlying token `ETH` and gain the equity token `rETH` ![](design/tl_supply.jpg)
 
-* `Versprechen`, Nehmen wir an, die Benutzer versprechen das Equity-Token `rETH`,, dass Benutzer `Reth` an das Klingelsystem zahlen sollen ![](design/tl_pledge.jpg)
+* `Pledge`, Suppose users pledge the equity token `rETH`, meains that users should pay `rETH` to the Rings system ![](design/tl_pledge.jpg)
 
-* `Freigabe`, Nehmen wir an, dass Benutzer das Equity-Token nicht vergeben `rETH`,, dass Benutzer einige Token zahlen sollten und erhalten das Equity-Token `rETH` zurück ![](design/tl_unpledge.jpg)
+* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some tokens and will get the equity token `rETH` back ![](design/tl_unpledge.jpg)
 
-* `Einlösen`, Nehmen wir an, dass Benutzer das zugrundeliegende Token einlösen `ETH` vom System bedeutet, dass die Benutzer das Equity-Token zahlen sollten `rETH` und wenn das quivalente zugrunde liegende Token erhalten `ETH` zurück ![](design/tl_redeem.jpg)
+* `Redeem`, Suppose users redeem the underlying token `ETH` from the system, means that users should pay equity token `rETH` and whill get the quivalent underlying token `ETH` back ![](design/tl_redeem.jpg)
 
-* `Kredit`, Angenommen, Benutzer müssen das zugrunde liegende Token ausleihen `USDT`, bedeutet, dass Benutzer einige Token bezahlen sollten und den erwarteten Token erhalten `USDT` ![](design/tl_borrow.jpg)
+* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some tokens and will gain the expected underlying token `USDT` ![](design/tl_borrow.jpg)
 
-* `Rückzahlung`, Nehmen wir an, die Benutzer zahlen `USDT`, bedeutet, dass die Benutzer `USDT` bezahlen und die Schulden der Benutzer reduziert werden ![](design/tl_repay.jpg)
+* `Repay`, Suppose users repay `USDT`, means that users pay `USDT` and the users' debt will be reduced ![](design/tl_repay.jpg)
 
-* `quick_pledge`, Nehmen wir an, die Benutzer liefern das zugrundeliegende Token `ETH` und kein Equity-Token `rETH` kehrt an die Benutzer zurück ![](design/tl_quick_pledge.jpg)
-* `qick_redeem`, Nehmen wir an, dass Benutzer `ETH`einlösen Benutzer zahlen nur einige Token und erhalten das zugrunde liegende Token `ETH` zurück ![](design/tl_quick_redeem.jpg)
-* `quick_borrow`, Angenommen, Benutzer können `ETH` oder `RETH` bereitstellen und können `USDT` Verzeichnis ausleihen ![](design/tl_quick_borrow.jpg)
+* `quick_pledge`, Suppose users supply the underlying token `ETH` and no equity token `rETH` returns to users ![](design/tl_quick_pledge.jpg)
+* `qick_redeem`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back ![](design/tl_quick_redeem.jpg)
+* `quick_borrow`, Suppose users can supply `ETH` or `rETH` and can borrow `USDT` directory ![](design/tl_quick_borrow.jpg)
 
 
-* `Liquidation`, Annehmen Sie Benutzer A hat Pledged `ETH` und Geliehen `USDT`, sobald die Liquidität des Benutzerkontos weniger als oder gleich Null ist, kann es von anderen Benutzern liquidiert werden ![](design/tl_liquidation.jpg)
+* `Liquidation`, Suppose User A has Pledged `ETH` and Borrowed `USDT`, once The liquidity of user A's account less than or equal zero, it can be liquidated by other users ![](design/tl_liquidation.jpg)
 
-* `Vorschlagsaktionen`, alle Steuerungsarbeiten wirken sich durch die Abstimmung des Vorschlags aus, die aktuellen Vorschläge enthalten diese:
-    1. `Markt` für Markterstellung oder Aktualisierung des Marktes
-    2. `Offener Markt` für Marktöffnung
-    3. `Märkte für geschlossene Märkte`
-    4. `Zulassungsliste` ob die Liquidierung zulässig ist
-    5. `Add-oracle-Unterzeichner` fügen Sie den Preisorakel-Unterzeichner hinzu, der Marktpreis anbietet
-    6. `rm-oracle-signer` entferne den Preisorakel-Unterzeichner
-    7. `zieht` die Reserven vom Markt zurück ![](design/f_proposal.jpg)
+* `Proposal actions`, all governance work produces effects through proposal voting, the current proposals include these:
+    1. `market` for creating market or updating market
+    2. `open-market` for opening market
+    3. `close-market` for closing market
+    4. `allowlist` whether to allow liquidation
+    5. `add-oracle-signer` add the price oracle signer that provides market price
+    6. `rm-oracle-signer` remove the price oracle signer
+    7. `withdraw` withdraw the reserves from the market ![](design/f_proposal.jpg)
 
-## Code-Struktur
+## Code struct
 
 ```
 
@@ -88,14 +87,14 @@ Im MTG-System gibt es zwei Hauptrollen, eine ist `Zahler`, und die andere ist `K
 * [pkg](https://github.com/fox-one/compound/tree/master/pkg) project packages that can be exported
 * [service](https://github.com/fox-one/compound/tree/master/service) directory of business codes
 * [store](https://github.com/fox-one/compound/tree/master/store) data repository(data may be stored in database or redis or memory cache)
-* [Arbeiterverzeichnis](https://github.com/fox-one/compound/tree/master/worker) für Jobs, die Daten im Hintergrund verarbeiten
-* [Handler](https://github.com/fox-one/compound/tree/master/handler) nur für exportierte Apis
-* [Docs](https://github.com/fox-one/compound/tree/master/Dockerfile) project documents
-* [Deploy](https://github.com/fox-one/compound/tree/master/deploy) store configs and tools of deployment
+* [worker](https://github.com/fox-one/compound/tree/master/worker) directory for jobs that processing data in background
+* [handler](https://github.com/fox-one/compound/tree/master/handler) just for exported apis
+* [Dockerfile](https://github.com/fox-one/compound/tree/master/Dockerfile) for deployment
+* [deploy](https://github.com/fox-one/compound/tree/master/deploy) store configs and tools of deployment
 * [main.go](https://github.com/fox-one/compound/tree/master/main.go)
 * [Makefile](https://github.com/fox-one/compound/tree/master/Makefile)
 
-### [konfigurationsvorlage](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
+### [configuration template](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
 
 ```
 # Fixed value : 1603382400 
@@ -147,79 +146,79 @@ group:
     amount: 0.00000001
 ```
 
-#### [Rest-APIs](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go) für Anwendungsebene exportiert, einschließlich:
+#### [Rest APIs](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go) exported for application layer, including:
 
 ```
-/markets/all //alle Märkte antworten
-/transactions //Antworttransaktionen
-/price-requests // für Preisorakel, die aufgerufen werden
+/markets/all   //response all markets
+/transactions  //response compound transactions
+/price-requests // for price oracle calling
 ```
 
-#### Arbeiter
-* [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) Processes the pending transfers. vorbereiten für die Übertragung einer Transaktion in das Mixin-Netzwerk.
-* [Syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) synchronisiert die Ausgabe(UTXO) aus dem Mixin Netzwerk.
-* [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) überträgt die Rohtransaktion in das Mixin Netzwerk.
-* [ausgegebener Sync](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go) synchronisiert und aktualisiert den Übertragungsstatus.
-* [Priceoracle](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go) holt einen Preis und legt den Preis auf die Kette.
-* [Zahlungsempfänger](https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go) verarbeitet Ausgänge und versendet Geschäftsmaßnahmen.
+#### Worker
+* [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) Processes the pending transfers. prepare for transfering a transaction to Mixin network.
+* [syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) Syncs the outputs(UTXO) from Mixin network.
+* [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) Transfers raw transaction to Mixin network.
+* [spentsync](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go) syncs and updates the transfer state.
+* [priceoracle](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go) Fetches a price and put the price on the chain.
+* [payee](https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go) processes outputs and dispatches business actions.
 
-#### Aktionsbearbeitung
-* [borge](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go) kümmert sich um das Darlehens-Aktionsereignis.
-* [Lieferung](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go) behandelt das Ereignis der Lieferung.
-* [Versprechen](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go) behandelt das Ereignis der Versprechung.
-* [Unpledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go) behandelt das Unpledge Action-Ereignis.
-* [einlösen](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go)behandelt das Aktionsereignis einlösen.
-* [zurückzahlen](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go)behandelt das Aktionsereignis "Rückzahlung".
-* [Liquidation ](https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go)behandelt das Liquidations aktion sereignis
-* [vorschlage](https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go)bearbeitet und versendet die Vorschlagsmaßnahmen, einschließlich: Hinzufügen eines Marktes, Aktualisieren des Marktes, Schließen oder öffnen des Marktes, Hinzufügen oder Entfernen der Zulassungsliste, zurückziehen
-* [price](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go)behandelt das protokale Aktionsereignis price.
+#### Action processing
+* [borrow](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go) handles the borrow action event.
+* [supply](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go) handles the supply action event.
+* [pledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go) handles the pledge action event.
+* [unpledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go) handles the unpledge action event.
+* [redeem](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go) handles the redeem action event.
+* [repay](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go) handles the repay action event.
+* [liquidation](https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go) handles the liquidation action event
+* [proposal](https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go) handles and dispatches the proposal actions, include: adding market, updating market, closing or opening market, adding or removing allowlist, withdraw
+* [price](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go) handles the price protocal action event.
 
 
-### Marktbeschränkungsmechanismus
+### Market Trade-Curbing Mechanism
 
-> Schließen Sie den Markt, wenn der Preis für einen bestimmten Markt abnormal ist.
+> Close the market when the price of a certain market is abnormal.
 
-* Wenn der Preis eines Marktes bösartig angegriffen wird, Manager haben das Recht, den `Close-Market` Auftrag auszuführen und eine geschlossene Marktzahl zu beantragen. Wenn der Antrag angenommen wird, wird der Markt geschlossen.
-* Der Handel ist in geschlossenen Märkten verboten.
-* Solange es jedoch geschlossene Märkte gibt, wird die Liquidation aller Märkte verboten, weil die Liquidation die Liquidität aller Marktkonten der Nutzer beeinflussen wird.
+* When the price of a market is maliciously attacked, managers have the right to execute the `close-market` order and apply for a closed-market vote. If the request is approved, the market will be closed.
+* Trades are prohibited in closed markets.
+* However, as long as there are closed markets, liquidation of all markets will be prohibited, because liquidation will affect the liquidity of all market accounts of users.
 
-## Die Umsetzung des Compound-Protokolls
+## The implementation of compound protocol
 
-* [Zinsmodell](https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go) ist die Kernimplementierung des Compound Protokolls.
+* [Interest rate model](https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go) is The core implementation of compound protocol.
 
-* [Kreditsaldo](https://github.com/fox-one/compound/tree/master/core/borrow.go) des Benutzers Kreditsaldo enthält Kreditgrundsätze und Darlehenszinsen. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
+* [Borrow balance](https://github.com/fox-one/compound/tree/master/core/borrow.go) user borrow balance contains borrow principal and borrow interest. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
 
-* [Anfallzinsen](https://github.com/fox-one/compound/tree/master/service/market/market.go) Angesammelte Zinsen treten nur dann auf, wenn es ein Verhalten gibt, das Änderungen in den Markttransaktionsdaten verursacht B. Angebot, Kredite, Verpfändung, Verpfändung, Verpfändung, Einlösung, Rückzahlung, Preisaktualisierung. Und nur einmal im gleichen Block berechnet.
+* [Accrue interest](https://github.com/fox-one/compound/tree/master/service/market/market.go) Accruing interest only occurs when there is a behavior that causes changes in market transaction data, such as supply, borrow, pledge, unpledge, redeem, repay, price updating. And Only calculated once in the same block.
 
 ```
-    blockNumberVor := market.BlockNummer
+    blockNumberPrior := market.BlockNumber
 
-    blockNum, e := s.blockSrv. etBlock(ctx, time)
-    wenn e ! nil {
+    blockNum, e := s.blockSrv.GetBlock(ctx, time)
+    if e != nil {
         return e
     }
 
     blockDelta := blockNum - blockNumberPrior
     if blockDelta > 0 {
-        borrowRate, e := s. urBorrowRatePerBlockInternal(ctx, market)
-        wenn e ! nil {
+        borrowRate, e := s.curBorrowRatePerBlockInternal(ctx, market)
+        if e != nil {
             return e
         }
 
-        wenn Markt. orrowIndex.LessThanOrEqual(decimal.Zero) {
-            Markt. orrowIndex = borrowRate
+        if market.BorrowIndex.LessThanOrEqual(decimal.Zero) {
+            market.BorrowIndex = borrowRate
         }
 
-        timesBorrowRate := borrowRate. ul(decimal.NewFromInt(blockDelta))
-        interessanterweise := Markt. otalBorrows.Mul(timesBorrowRate)
-        totalBorrowsNeu := interestAccumulated.Add(market.TotalBorrows)
-        totalReservesNew := interessanterhebt. ul(market.ReserveFactor).Add(market.Reserves)
-        borrowIndexNeu := market.BorrowIndex.Add(timesBorrowRate. ul(market.BorrowIndex))
+        timesBorrowRate := borrowRate.Mul(decimal.NewFromInt(blockDelta))
+        interestAccumulated := market.TotalBorrows.Mul(timesBorrowRate)
+        totalBorrowsNew := interestAccumulated.Add(market.TotalBorrows)
+        totalReservesNew := interestAccumulated.Mul(market.ReserveFactor).Add(market.Reserves)
+        borrowIndexNew := market.BorrowIndex.Add(timesBorrowRate.Mul(market.BorrowIndex))
 
         market.BlockNumber = blockNum
-        market.TotalBorrows = totalBorrowsNew. runcate(16)
-        market.Reserves = totalReservesNew. runcate(16)
+        market.TotalBorrows = totalBorrowsNew.Truncate(16)
+        market.Reserves = totalReservesNew.Truncate(16)
         market.BorrowIndex = borrowIndexNew.Truncate(16)
-}
+    }
 
 ```

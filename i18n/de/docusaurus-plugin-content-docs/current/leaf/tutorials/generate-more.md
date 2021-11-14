@@ -1,24 +1,23 @@
 ---
-title: Generiere mehr PUSD
-sidebar_position: vier
+title: Generating More pUSD
 date: 13-08-2021 12:33:07
 ---
 
-Um PUSD zu generieren, klicken Sie auf "Generieren" und geben Sie den Betrag ein, den Sie auf der Seite Generieren generieren möchten.
+To generate pUSD, click on "Generate" and fill in the amount you want to generate on the Generate page.
 
 ![](../assets/leaf-generate-p1.png)
 
-Daten ändern sich auf die neusten und Sie können Details über diese Generierung im Chatfenster sehen.
+Data changes to the latest, and you can see details about this generating in chat window.
 
 ![](../assets/leaf-generate-p2.png)
 
 
-Auch hier müssen Sie auf das damit verbundene Risiko achten.
+Again you need to be careful of the associated risk.
 
 ````mdx-code-block
 :::caution
 
-Bitte stellen Sie sicher, dass sich der Hypothekarzinssatz in einem sicheren Bereich befindet, der weniger als 150% beträgt [liquidated] ist.
+Please ensure that the mortgage rate is within a safe range, which less than 150% will be [liquidated] totally.
 
 :::
 ````
@@ -26,7 +25,7 @@ Bitte stellen Sie sicher, dass sich der Hypothekarzinssatz in einem sicheren Ber
 ````mdx-code-block
 :::info
 
-Du brauchst [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) um diese Operation zu unterstützen.
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 
 :::
 ````

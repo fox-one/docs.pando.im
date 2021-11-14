@@ -1,22 +1,21 @@
 ---
-title: Assets lesen
-sidebar_position: 3
+title: Read Assets
 date: 30-09-2021 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } von "@site/src/components/api";
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Alle Assets lesen
+## Read All Assets
 
-### GET /Assets
+### GET /assets
 
-Diese API reagiert auf alle unterstützten Crypto-Assets.
+This API will respond all supported crypto assets.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets" />
 
 <APIMetaPanel />
 
-<APIRequest title="Unterstützte Assets lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets' />
+<APIRequest title="Read supported assets" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets' />
 
 ```json title="Response"
 {
@@ -26,19 +25,19 @@ Diese API reagiert auf alle unterstützten Crypto-Assets.
       {
         "id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
         "name": "Bitcoin",
-        "Symbol": "BTC",
-        "Logo": "https://mixin-images. eromesh. et/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
+        "symbol": "BTC",
+        "logo": "https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
         "chain_id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
         "chain": {
           "id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
           "name": "Bitcoin",
-          "Symbol": "BTC",
-          "Logo": "https://mixin-images. eromesh. et/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
+          "symbol": "BTC",
+          "logo": "https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
           "chain_id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
-          "ketten": null,
-          "Preis": "47640"
+          "chain": null,
+          "price": "47640"
         },
-        "Preis": "47640"
+        "price": "47640"
       },
       // ...
     ]
@@ -46,11 +45,11 @@ Diese API reagiert auf alle unterstützten Crypto-Assets.
 }
 ```
 
-## Einzelnes Asset lesen
+## Read Single Asset
 
-### /Asset_id einstellen
+### GET /assets/:asset_id
 
-Diese API antwortet auf eine Kryptoanlage mit `:asset_id`
+This API will respond one crypto asset with `:asset_id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets/:asset_id" />
 
@@ -58,7 +57,7 @@ Diese API antwortet auf eine Kryptoanlage mit `:asset_id`
 
 <APIParams p-asset_id="the asset id" p-asset_id-required="{true}" />
 
-<APIRequest title="Ein Asset lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
+<APIRequest title="Read one asset" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
 
 ```json title="Response"
 {
@@ -68,19 +67,19 @@ Diese API antwortet auf eine Kryptoanlage mit `:asset_id`
       {
         "id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
         "name": "Bitcoin",
-        "Symbol": "BTC",
-        "Logo": "https://mixin-images. eromesh. et/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
+        "symbol": "BTC",
+        "logo": "https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
         "chain_id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
         "chain": {
           "id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
           "name": "Bitcoin",
-          "Symbol": "BTC",
-          "Logo": "https://mixin-images. eromesh. et/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
+          "symbol": "BTC",
+          "logo": "https://mixin-images.zeromesh.net/HvYGJsV5TGeZ-X9Ek3FEQohQZ3fE9LBEBGcOcn4c4BNHovP4fW4YB97Dg5LcXoQ1hUjMEgjbl1DPlKg1TW7kK6XP=s128",
           "chain_id": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
-          "ketten": null,
-          "Preis": "47640"
+          "chain": null,
+          "price": "47640"
         },
-        "Preis": "47640"
+        "price": "47640"
       },
       // ...
     ]

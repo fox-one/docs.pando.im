@@ -1,6 +1,5 @@
 ---
 title: Was ist der Unterschied zwischen Lake und 4swap
-sidebar_position: 1
 date: 15-08-2021 22:33:07
 ---
 

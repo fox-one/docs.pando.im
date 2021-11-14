@@ -1,26 +1,25 @@
 ---
 title: Pando Seed
-sidebar_position: sieben
 date: 12-10-2021 22:33:07
 ---
 
-Pando Seed (PS) wird auf Aug 4.2021 BigONE, Exin, FOX, Poolin und Team Mixin gestartet. Das Gesamtangebot an PS beträgt  **10.000.000.000.000.000.000**.
+Pando seed(PS) is launched on Aug 4,2021 BigONE, Exin, FOX, Poolin and Team Mixin. The total supply of PS is  **10,000,000,000,000,000**.
 
-## PS beanspruchen
+## Claim PS
 
-Sie können jeden Tag 1.024 Pando Seed Token auf dem Pando Seed Roboter beanspruchen.
+You can claim 1.024 Pando Seed Token on the Pando Seed robot every day.
 
 ![](../assets/pando-seed.png)
 
-Suche Mixin ID **7000104113** auf Mixin Messenger App und Klick auf blaue Nummer. Dann fügen Sie Bot und klicken Sie auf kleinen Roboter Avatar zu öffnen Pando Seed.
+Search Mixin ID **7000104113** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando seed.
 
-## Shop PS
+## Store PS
 
-PS ist ein [Ethereum Token](https://etherscan.io/token/0x0e94772146d2e344aa02a976004101bd595c9e66)und wurde seit [Aug 4.2021](https://etherscan.io/tx/0x7e179deaf2abd8d3d53e09007791c8e4208932b364f81297c09912e9b750277a) ins Mixin Netzwerk übertragen. So können Sie PS in jedem Mixin Netzwerk kompatiblen Wallet oder Ethereum-kompatiblen Wallet speichern.
+PS is an [Ethereum token](https://etherscan.io/token/0x0e94772146d2e344aa02a976004101bd595c9e66), and has been transfered to Mixin Network since [Aug 4,2021](https://etherscan.io/tx/0x7e179deaf2abd8d3d53e09007791c8e4208932b364f81297c09912e9b750277a). So you can store PS in any Mixin Network compatible wallet or Ethereum-compatible wallet.
 
-## PS nutzung
+## Use PS
 
-In Pando, gibt es mehrere Orte, die Pando Seed verwenden müssen, nämlich [erzeugen](https://docs.pando.im/docs/leaf/tutorials/generate-more) und [abheben](https://docs.pando.im/docs/leaf/tutorials/withdraw) im Blatt, und [Ausleihen](https://docs.pando.im/docs/rings/tutorials/how-to-borrow), [Auszahlung](https://docs.pando.im/docs/rings/tutorials/how-to-withdraw) und [Unzusagen](https://docs.pando.im/docs/rings/tutorials/how-to-unpledge) in Rings.
+In pando, there are several places that need to use pando seed, namely [generate](https://docs.pando.im/docs/leaf/tutorials/generate-more) and [withdraw](https://docs.pando.im/docs/leaf/tutorials/withdraw) in leaf, and [borrow](https://docs.pando.im/docs/rings/tutorials/how-to-borrow), [withdraw](https://docs.pando.im/docs/rings/tutorials/how-to-withdraw) and [unpledge](https://docs.pando.im/docs/rings/tutorials/how-to-unpledge) in Rings.
 
-Es kostet nur 0,00000001 PS pro Betrieb.
+It only costs 0.00000001 PS per operation.
 

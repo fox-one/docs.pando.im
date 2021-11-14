@@ -1,6 +1,5 @@
 ---
 title: 钱包
-sidebar_position: 1
 ---
 
 ## Mixin Messenger

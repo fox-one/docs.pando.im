@@ -1,19 +1,18 @@
 ---
-title: Unversprechen, Sicherheiten zu reduzieren
-sidebar_position: vier
+title: Unpledging to reduce collaterals
 date: 04-09-2021 12:33:07
 ---
 
-Wenn du die verschlossenen Rtokens benutzen möchtest, solltest du die Verpfändung aufheben. Nach Freigabe können Sie die Rtokens wie alle anderen Vermögenswerte frei an jeden überweisen oder sich zurückziehen, das zugrunde liegende Asset aus Ihren Rtokens zurückholen.
+If you need to use the locked rTokens, you may want to unpledge. After unpledging, you will be able to freely transfer the rTokens to anyone as any other assets or you can go on to withdraw, getting back the underlying asset from your rTokens.
 
-Um die Verpfändung zu entziehen, klicken Sie auf "Unverpfänden" der mitgelieferten Vermögenskarte des Angebotsbereichs auf der Ich-Seite.
+To unpledge, click on "Unpledge" of the supplied asset card of the Supply section on the Me page.
 
-**Bitten** zeigt den Betrag eines bestimmten Vermögens, das Sie versandt haben. **Gesamtes Versprechen** ist der Gesamtbetrag aller versandten Vermögenswerte.
+**Pledging** shows the amount of a specific asset you have pledged. **Total Pledge** is the total amount of all the assets you have pledged.
 
 ![](../assets/unpledge1.jpg)
 
 ````mdx-code-block
 :::info
-Du brauchst [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) um diese Operation zu unterstützen.
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 :::
 ````

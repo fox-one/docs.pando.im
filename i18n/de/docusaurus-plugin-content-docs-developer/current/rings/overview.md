@@ -1,56 +1,55 @@
 ---
-title: Übersicht
-sidebar_position: eins
+title: Overview
 date: 20-03-2021 12:38:07
 ---
 
-Eine Implementierung des [Compound Protokolls](https://github.com/compound-finance/compound-protocol) basierend auf [Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) Technologie.
+An implementation of the [compound protocol](https://github.com/compound-finance/compound-protocol) based on [Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) technology.
 
 ## rToken
 
-Der zugehörige Zertifikatstoken, den Sie erhalten, nachdem Sie eine Reihe von Cetain verschlüsselter Währung an den Markt geliefert haben.
+The corresponding certificate token you obtain after you supply a number of cetain encrypted currency to the market.
 
-## Funktion
+## Functions
 
-### Belieferung
+### Supply
 
-Benutzer liefern verschlüsselte Währungen an den Markt, um Liquidität zu gewährleisten, und erhalten die entsprechenden Rtoken. Sie erhalten Zinserträge durch die Bereitstellung von Liquidität.
+Users supply encrypted currencies to the market to provide liquidity, and obtain the corresponding rTokens. They receive interest yields by providing liquidity.
 
 ![](overview/uc_supply.jpg)
 
-### Unterstützung
+### Pledge
 
-Benutzer müssen rToken dem Markt versprechen, bevor sie Kredite aufnehmen.
+Users have to pledge rToken to the market before any borrow.
 
 ![](overview/uc_pledge.jpg)
 
-### Unversprechen
+### Unpledge
 
-Die Nutzer nehmen den dem Markt zugesagten rToken zurück.
+Users take back the rToken that pledged to the market.
 
 ![](overview/uc_unpledge.jpg)
 
 ### Redeem
 
-Benutzer geben den rToken im Gegenzug für die zugehörige verschlüsselte Währung, die vorher geliefert wurde, zurück, einschließlich Zinserträge als Belohnung für die Bereitstellung von Liquidität.
+Users return the rToken in exchange for corresponding encrypted currency that were supplied before, including interest yields as the reward for providing liquidity.
 
 ![](overview/uc_redeem.jpg)
 
-### Leihen
+### Borrow
 
-Benutzer leihen verschlüsselte Währungen vom Markt zu einem bestimmten Zinssatz.
+Users borrow encrypted currencies from the market at a certain interest rate.
 
 ![](overview/uc_borrow.jpg)
 
-### Zurückzahlen
+### Repay
 
-Benutzer zahlen die geliehene verschlüsselte Währung und die Zinsen zurück, die während der Kreditperiode anfallen.
+Users repay the borrowed encrypted currency and the interest accrued during the borrow period.
 
 ![](overview/uc_repay.jpg)
 
 ### Liquidation
 
-Aufgrund der Schwankungen des Marktpreises kann der Wert des Darlehens eines Nutzers den des verpfändeten Vermögens übersteigen. Wenn das passiert, Die anderen Nutzer können mit einem niedrigeren Preis die verpfändeten Vermögenswerte des Nutzers erhalten, so dass die Schulden, die nicht durch verpfändete Vermögenswerte gedeckt sind, zurückerstattet werden.
+Due to the fluctuation of the market price, the value of a user's loan may exceed that of his pledged assets. When that happens, the other users can use a lower price to obtain the user's pledged assets so that the user's debt that are not covered by pleged assets are repayed.
 
 ![](overview/uc_liquidity.jpg)
 

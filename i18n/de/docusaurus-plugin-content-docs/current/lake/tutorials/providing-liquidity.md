@@ -1,33 +1,32 @@
 ---
-title: Bereitstellung von Liquidität
-sidebar_position: 3
+title: Providing liquidity
 date: 15-08-2021 22:33:07
 ---
 
-Es gibt drei Möglichkeiten, die Liquidität zu erhöhen.
+There are three ways to add liquidity.
 
-Eintrag 1: Pool-Seite - Klicken Sie auf die spezifische Pool-Seite "+"
+Entry 1: Pools page - click on the specific pool - Pool page "+"
 
 ![](../assets/add-liquidity-p1.png)
 
-Eintrag 2: Wenn Sie bereits auf der Swap-Seite sind, finden Sie "Liquidity" im Assets Pool-Bereich
+Entry 2: If you are already on the Swap page, find "Add Liquidity" in the Assets pool section
 
 ![](../assets/add-liquidity-p2.png)
 
-Eintrag 3: Wenn Sie zuvor Liquidität zur Verfügung gestellt haben, finden Sie den Pool auf der Me Seite. Klicken Sie auf den Pool und Sie werden "+" sehen
+Entry 3: If you have previously provided liquidity, you can find the pool on the Me page. Click on the pool and you will see "+'
 
 ![](../assets/add-liquidity-p3.png)
 
-Nach dem Hinzufügen der Liquidität erhalten Sie im Dialogfenster den entsprechenden lp tken.
+After adding liquidity, you will receive the corresponding lp tken in the dialog window.
 
 ![](../assets/add-liquidity-p4.png)
 
 ````mdx-code-block
 :::tip
 
-1. Zwei Arten von Krypto-Währungen müssen gleichzeitig hinzugefügt werden, um die Liquidität erfolgreich zu gewährleisten und LP-Token zu erhalten. Wenn Sie nur einen hinzufügen, verlassen Sie die Seite oder Sie erhalten nach dem Hinzufügen kein LP-Token keine Sorge, die Währung, die Sie bezahlt haben, wird in zehn Minuten zurückerstattet.
+1. Two type of crypto currencies must be added at the same time to provide liquidity successfully and obtain LP tokens. If you only add one then exit the page, or you don't get an LP token after the addition, don't worry, the currency you paid will be refunded in ten minutes.
 
-zwei. Es gibt keine Bearbeitungsgebühr für zusätzliche Liquidität.
+2. There is no handling fee for add liquidity.
 
 :::
 ````

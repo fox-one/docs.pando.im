@@ -1,10 +1,9 @@
 ---
-title: Verwaltung eines Tresors
-sidebar_position: 3
+title: Managing a Vault
 date: 13-08-2021 12:33:07
 ---
 
-Ihre aktiven Tresore können auf der Startseite verwaltet werden. Immer wenn du einen neuen Tresor öffnest, erscheint er im Abschnitt "Meine Gewölbe".
+Your active vaults can be managed on the "Home" page. Whenever you open a new vault, it will show up in the "My Vaults" section.
 
 ![](../assets/manage-vault.png)
 

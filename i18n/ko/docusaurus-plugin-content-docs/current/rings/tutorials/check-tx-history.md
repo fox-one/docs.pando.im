@@ -1,6 +1,5 @@
 ---
 title: 거래내역 보기
-sidebar_position: 9
 date: 2021-09-04 12:33:07
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 용어 정리
-sidebar_position: 5
 date: 2021-08-13 12:33:07
 ---
 

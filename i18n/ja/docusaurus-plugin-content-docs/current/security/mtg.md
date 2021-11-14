@@ -1,6 +1,5 @@
 ---
 title: Mixinは信頼できるグループ
-sidebar_position: 2
 ---
 
 ## Mixin Network

@@ -1,6 +1,5 @@
 ---
 title: 自动化做市商（AMM）
-sidebar_position: 2
 date: 2021-08-15 22:33:07
 ---
 

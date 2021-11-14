@@ -1,6 +1,5 @@
 ---
 title: 액션 생성
-sidebar_position: 9
 date: 2021-10-01 23:18:01
 ---
 

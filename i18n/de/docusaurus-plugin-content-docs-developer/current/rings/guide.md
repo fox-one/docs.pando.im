@@ -1,43 +1,42 @@
 ---
-title: Anleitung
-sidebar_position: 3
+title: Guide
 date: 16-08-2021 18:40:00
 ---
 
-Eine einfachere und schnellere Möglichkeit, sich mit Pando Rings zu verbinden.
+An easier and faster way to Connect to Pando Rings engine.
 
-## Installiere
+## Installing
 
 ```sh
-go bekomme github.com/fox-one/pando-rings-sdk-go
+go get github.com/fox-one/pando-rings-sdk-go
 ```
 
-## Auslastung
+## Usage
 
-* Initialisiere den Endpunkt
+* Initialize the endpoint
 
 ```go
-rings.Endpoint = "xxxxx" // z.B. rings.Endpoint = "https://compound-test-api.fox.one"
+rings.Endpoint = "xxxxx" // e.g. rings.Endpoint = "https://compound-test-api.fox.one"
 ```
 
-* Importieren
+* Import
 
 ```go
-"github.com/fox-one/pando-rings-sdk-go" importieren
+import "github.com/fox-one/pando-rings-sdk-go"
 ```
 
-* Alle Märkte anfragen
+* Request all markets
 
 ```go
-rings.RequestAllMarkets(ctx context.Context) ([]*Markt, Fehler)
+rings.RequestAllMarkets(ctx context.Context) ([]*Market, error)
 ```
 
-* Transaktionen anfordern
+* Request transactions
 ```go
-rings.RequestTransactions(ctx context.Context, limit int, offset time.time) ([]*Transaktion, Fehler)
+rings.RequestTransactions(ctx context.Context, limit int, offset time.Time) ([]*Transaction, error)
 ```
 
-* Benutzeraktion anfordern
+* Request user action
 ```go
 //request supply action url
 rings.RequestSupply(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
@@ -71,4 +70,4 @@ rings.RequestLiquidate(ctx context.Context, followID string, supplyUserID string
 
 ```
 
-Weitere Details zum Benutzen von sdk, lesen Sie bitte das Beispiel [](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Oder lesen Sie die [offizielle Vollversion der Pando Ringe für die Implementation](https://github.com/fox-one/compound-app)
+More details of sdk using, please read the [example](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Or refer to the [official full-featured version of Pando rings for implementation](https://github.com/fox-one/compound-app)

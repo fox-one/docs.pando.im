@@ -1,6 +1,6 @@
 ---
 title: Get Started
-sidebar_position: 1
+
 date: 2021-09-22 05:22:11
 ---
 

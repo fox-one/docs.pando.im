@@ -1,42 +1,41 @@
 ---
-title: Tresor öffnen
-sidebar_position: zwei
+title: Opening a Vault
 date: 13-08-2021 12:33:07
 ---
 
-Auf "Meine Seite" von Pando Blatt, Klicken Sie auf "Hinzufügen eines [Tresor](https://docs.pando.im/docs/leaf/key-concepts/vaults)" um einen Tresor zu erstellen und wählen Sie dann aus der Liste aus den verfügbaren Tresortypen nach Ihren Bedürfnissen.
+On “My page” of Pando Leaf, click on "Add a [Vault](https://docs.pando.im/docs/leaf/key-concepts/vaults)" to create a vault and then select from the list from the available vault types according to your needs.
 
 ![](../assets/leaf-open-vault-p1.png)
 
-Klicken Sie auf "+" und Sie landen auf der Seite, um einen bestimmten Tresor zu erstellen.
+Click on "+" and you will land on the page to create a specific vault.
 
 ![](../assets/add-a-vault-p2.png)
 
-Auf der entsprechenden Seite bzw. füllen Sie den Betrag des zu hinterlegenden Vermögenswerts und den Betrag des zu generierenden Vermögenswerts aus
+On the corresponding minting page, respectively fill in the amount of the asset you intend to deposit and the amount of the asset you wish to generate
 
 ````mdx-code-block
 :::tip
-Generiere zum ersten Mal einen Tresor und prägt mindestens 100 Pusd
+Generate a vault for the first time, minting at least 100 pusd
 :::
 ````
 
 ![](../assets/leaf-open-vault-p3.png)
 
 
-Klicken Sie auf den Button "Anzahlung zum Generieren" , machen Sie die Zahlungen, und erlauben Sie für einige Zeit für den Roboter zu verarbeiten.
+Click on the button "Deposit to Generate" , make the payments,and allow for some time for the robot to process.
 
-Wenn du den [Tresor](https://docs.pando.im/docs/leaf/key-concepts/vaults)erfolgreich erstellt hast, erhältst du die Benachrichtigung und Nachricht im Chatbox.
+If successfully created the [vault](https://docs.pando.im/docs/leaf/key-concepts/vaults), you will receive the notification and message in the chatbox.
 
 ![](../assets/add-a-vault-p4.png)
 
 
 ````mdx-code-block
 :::caution
-Achtet auf die Risikoanzeigeleiste.
+Do pay attention to the risk indication bar.
 :::
 ````
 
-Sie müssen Ihr Sicherungsverhältnis in einem sicheren Bereich (über 150%) halten, um [Liquidation](https://docs.pando.im/docs/leaf/key-concepts/liquidation) zu vermeiden. Wenn Ihre Besicherungsquote die[Liquidation Ratio](https://docs.pando.im/docs/leaf/key-concepts/liquidation)Ihre Sicherheiten werden in[Versteigerung](https://docs.pando.im/docs/leaf/tutorials/auction-participation).
+You have to keep your collateralization ratio in a safe range（above 150%） to avoid [liquidation](https://docs.pando.im/docs/leaf/key-concepts/liquidation). When your collateralization ratio breaches the [liquidation ratio](https://docs.pando.im/docs/leaf/key-concepts/liquidation), your collaterals will be in [auction](https://docs.pando.im/docs/leaf/tutorials/auction-participation).
 
 ![](../assets/add-a-vault-p5.png)
 

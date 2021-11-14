@@ -1,6 +1,6 @@
 ---
 title: Wallets
-sidebar_position: 1
+
 ---
 
 ## Mixin Messenger

@@ -1,6 +1,5 @@
 ---
 title: 3rd-party Applications
-sidebar_position: 1
 ---
 
 Pando provides a set of developer-friendly APIs and SDK for third-party developers to build applications.

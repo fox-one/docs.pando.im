@@ -1,82 +1,81 @@
 ---
-title: API-Referenz
-sidebar_position: vier
+title: API Reference
 date: 16-08-2021 17:40:00
 ---
 
-Dieses Dokument beschreibt die Definition und Verwendung der ruhelosen Api und RPC Schnittstelle des Pando Rings Motors.
+This document describes the definition and usage of the restful api and RPC interface of the pando rings engine.
 
-## Ausgeruhte API
+## Restful API
 
-### •Alle Märkte
+### • All markets
 
-Liefert alle Märkte, die geliefert und ausgeliehen werden können.
+Returns all the markets that can be supplied and borrowed.
 
-**Fehlermeldungen**
+**HTTP**
 ```
 GET /api/v1/markets/all
 ```
 
-**Reaktion**
+**Response**
 ```json
 {
   "data": [
     {
       "id": 1,
       "asset_id": "4d8c508b-91c5-375b-92b0-ee702ed2dac5",
-      "Symbol": "USDT",
+      "symbol": "USDT",
       "ctoken_asset_id": "f8abf8be-2ead-3638-afa4-8a0b08872998",
-      "total_cash": "334. 108376354365625",
+      "total_cash": "334.7108376354365625",
       "total_borrows": "8.7389310703276705",
-      "reserves": "0. 136021855620769",
-      "ctokens": "339. 6830046",
+      "reserves": "0.4136021855620769",
+      "ctokens": "339.76830046",
       "init_exchange_rate": "1",
-      "reserve_factor": "0. ",
-      "liquidation_incentive": "0. 5",
+      "reserve_factor": "0.1",
+      "liquidation_incentive": "0.05",
       "borrow_cap": "0",
-      "collateral_factor": "0. 5",
+      "collateral_factor": "0.75",
       "close_factor": "0.5",
-      "base_rate": "0. 25",
-      "Multiplikator": "0. ",
+      "base_rate": "0.025",
+      "multiplier": "0.3",
       "jump_multiplier": "0",
       "kink": "0",
       "block_number": 1719179,
-      "utilization_rate": "0. 254752469950221",
+      "utilization_rate": "0.0254752469950221",
       "exchange_rate": "1.0096179250853535",
-      "supply_rate_per_block": "0. 000000003559835",
+      "supply_rate_per_block": "0.0000000003559835",
       "borrow_rate_per_block": "0.0000000155263385",
-      "Preis": "1. 002",
+      "price": "1.0002",
       "price_updated_at": "2021-08-17T11:14:49+08:00",
-      "borrow_index": "0. 000000123582381",
-      "Version": 2230721,
+      "borrow_index": "0.0000000123582381",
+      "version": 2230721,
       "status": 1,
       "created_at": "2020-12-18T17:37:07+08:00",
       "updated_at": "2021-08-17T11:14:50+08:00",
-      "supply_apy": "0. 007484197104",
-      "borrow_apy": "0. 326425740624",
-      "Lieferanten": 36,
-      "Kreditnehmer": 15
+      "supply_apy": "0.0007484197104",
+      "borrow_apy": "0.0326425740624",
+      "suppliers": 36,
+      "borrowers": 15
     }
   ]
 }
 ```
 
-### Transaktionen
+### • Transactions
 
-Gibt alle Benutzertransaktionen nach Zeit zurück.
+Returns all the user transactions by time.
 
-**Fehlermeldungen**
+**HTTP**
 ```
 GET /api/v1/transactions?limit=10&offset=
 ```
 
-**Abfrageparameter**
-| schlüssel | type   | des                                                              |
-| --------- | ------ | ---------------------------------------------------------------- |
-| limit     | string | standardmäßig 500 Seiten Datenlimit                              |
-| versatz   | string | Startzeit, RFC3339Nano Format, z.B. 2020-12-12T12:12:12.9999999Z |
+**Query Params**
+| key    | type   | des                                                                            |
+| ------ | ------ | ------------------------------------------------------------------------------ |
+| limit  | string | page data limit, 500 by default                                                |
+| offset | string | Pagination start time, RFC3339Nano format, e.g. 2020-12-12T12:12:12.999999999Z |
 
-**Reaktion**
+**Response**
 ```json
 [
   {
@@ -112,11 +111,11 @@ GET /api/v1/transactions?limit=10&offset=
 ]
 ```
 
-### • Zahlungsanfrage
+### • Request Pay
 
-Gibt die Lohn-Url entsprechend der angegebenen Aktion und den Parameterdaten zurück.
+Returns the pay url according to the specified action and paramter data.
 
-**Fehlermeldungen**
+**HTTP**
 ```url
 POST /api/v1/pay-requests
 ```
@@ -128,11 +127,11 @@ POST /api/v1/pay-requests
   "asset_id": "4d8c508b-91c5-375b-92b0-ee702ed2dac5",
   "amount": "0.01",
   "trace_id": "2996c597-db43-4294-982e-6791909c0271",
-  "follow_id": "53504ca9-991a-4265-a690-ece0b7e414"
+  "follow_id": "53504ca9-991a-4265-a690-ece6e0b7e414"
 }
 ```
 
-**Reaktion**
+**Response**
 ```json
 {
   "url":"mixin://codes/6df372af-5557-4064-a074-698c4677661e"
@@ -141,7 +140,7 @@ POST /api/v1/pay-requests
 
 ## RPC
 
-Basierend auf [Twirp](https://github.com/twitchtv/twirp) Implementierungs-RPC-Schnittstellen. [Proto-Datei](https://github.com/fox-one/pando-rings-sdk-go/blob/main/rpc/service.proto)
+Based on [Twirp](https://github.com/twitchtv/twirp) implementation RPC interfaces. [proto file](https://github.com/fox-one/pando-rings-sdk-go/blob/main/rpc/service.proto)
 ```proto
 syntax = "proto3";
 
@@ -262,26 +261,26 @@ service Compound {
 }
 ```
 
-### • Nutzung
+### • Usage
 
 ```go
 rpcClient := rpc.NewCompoundProtobufClient("https://compound-test-api.fox.one", &http.Client{})
 
 //request all markets
-markets, err := rpcClient.AllMarkets(ctx, &rpc. arketReq{})
+markets, err := rpcClient.AllMarkets(ctx, &rpc.MarketReq{})
 if err != nil {
     return nil, err
 }
 return markets, nil
 
 //request transactions
-t := timestamppb.New(time.Now(). ddDate(0, -400))
-req := rpc. ransactionReq{
+t := timestamppb.New(time.Now().AddDate(0, 0, -400))
+req := rpc.TransactionReq{
     Offset: t,
-    Limit: 50,
+    Limit:  50,
 }
 
-Transaktionen, err := rpcClient.Transactions(cmd. ontext(), &req)
+transactions, err := rpcClient.Transactions(cmd.Context(), &req)
 if err != nil {
     return nil, err
 }
@@ -289,14 +288,14 @@ if err != nil {
 return transactions, nil
 
 // request pay
-req := rpc. ayReq{
-    AssetId: "4d8c508b-91c5-375b-92b0-ee702ed2dac5",
-    Amount: "0. 1",
-    TraceId: uuid. ew(),
-    FollowId: uuid.New(),
+req := rpc.PayReq{
+    AssetId:    "4d8c508b-91c5-375b-92b0-ee702ed2dac5",
+    Amount:     "0.01",
+    TraceId:    uuid.New(),
+    FollowId:   uuid.New(),
     MemoBase64: "AQIQONJAADfaSXCp+PK9A5Erkg==",
 }
-resp, err := rpcClient. ayRequest(cmd.Context(), &req)
+resp, err := rpcClient.PayRequest(cmd.Context(), &req)
 if err != nil {
     return nil, err
 }
@@ -304,73 +303,73 @@ if err != nil {
 return resp, nil
 ```
 
-## [Aktionen](https://github.com/fox-one/compound/blob/master/core/action.go)
+## [Actions](https://github.com/fox-one/compound/blob/master/core/action.go)
 
 ```go
 const (
-    // AktionTypeDefault default
-    AktionTypeDefault ActionType = iota
-    // AktionTypeSupply supply action
-    AktionTypeSupply
-    // AktionTypeBorrow borrow action
-    AktionTypeBorrow
-    // AktionTypeRedeem redeem action
-    AktionTypeRedeem
-    // AktionTypeRepay repay action
-    AktionTypeRepay
-    // AktionTypeMint mint ctoken action
-    AktionTypeMint
-    // AktionTypePledge pledge action
-    AktionTypePledge
-    // AktionTypeUnpledge unpledge action
-    AktionTypeUnpledge
-    // AktionTypeLiquidate liquidation action
-    AktionTypeLiquidate
-    // AktionTypeRedeemTransfer redeem transfer action
-    AktionTypeRedeemTransfer
-    // AktionTypeUnpledgeTransfer unpledge transfer action
-    AktionTypeUnpledgeTransfer
-    // AktionTypeBorrowTransfer borrow transfer action
-    AktionTypeBorrowTransfer
-    // AktionTypeLiquidateTransfer liquidation transfer action
-    AktionTypeLiquidateTransfer
-    // AktionTypeRefundTransfer refund action
-    AktionTypeRefundTransfer
-    // AktionTypeRepayRefundTransfer repay refund action
-    AktionTypeRepayRefundTransfer
-    // AktionTypeLiquidateRefundTransfer seize refund action
-    AktionTypeLiquidateRefundTransfer
-    // AktionTypeProposalAddMarket add market proposal action
-    AktionTypeProposalAddMarket
-    // AktionTypeProposalUpdateMarket update market proposal action
-    AktionTypeProposalUpdateMarket
-    // AktionTypeProposalWithdrawReserves withdraw reserves proposal action
-    AktionTypeProposalWithdrawReserves
-    // AktionTypeProposalProvidePrice provide price action
-    AktionTypeProposalProvidePrice
-    // AktionTypeProposalVote vote action
-    AktionTypeProposalVote
-    // AktionTypeProposalInjectCTokenForMint inject token action
-    AktionTypeProposalInjectCTokenForMint
-    // AktionTypeProposalUpdateMarketAdvance update market advance parameters action
-    AktionTypeProposalUpdateMarketAdvance
-    // AktionTypeProposalTransfer proposal transfer action
-    AktionTypeProposalTransfer
-    // AktionTypeProposalCloseMarket proposal close market action
-    AktionTypeProposalCloseMarket
-    // AktionTypeProposalOpenMarket proposal open market action
-    AktionTypeProposalOpenMarket
-    // AktionTypeProposalAddScope proposal add allowlist scope action
-    AktionTypeProposalAddScope
-    // AktionTypeProposalRemoveScope proposal remove allowlist scope action
-    AktionTypeProposalRemoveScope
-    // AktionTypeProposalAddAllowList proposal add to allowlist action
-    AktionTypeProposalAddAllowList
-    // AktionTypeProposalRemoveAllowList proposal remove from allowlist action
-    AktionTypeProposalRemoveAllowList
-    // AktionTypeUpdateMarket update market
-    AktionTypeUpdateMarket
-    // AktionTypeQuickPledge supply -> pledge
+    // ActionTypeDefault default
+    ActionTypeDefault ActionType = iota
+    // ActionTypeSupply supply action
+    ActionTypeSupply
+    // ActionTypeBorrow borrow action
+    ActionTypeBorrow
+    // ActionTypeRedeem redeem action
+    ActionTypeRedeem
+    // ActionTypeRepay repay action
+    ActionTypeRepay
+    // ActionTypeMint mint ctoken action
+    ActionTypeMint
+    // ActionTypePledge pledge action
+    ActionTypePledge
+    // ActionTypeUnpledge unpledge action
+    ActionTypeUnpledge
+    // ActionTypeLiquidate liquidation action
+    ActionTypeLiquidate
+    // ActionTypeRedeemTransfer redeem transfer action
+    ActionTypeRedeemTransfer
+    // ActionTypeUnpledgeTransfer unpledge transfer action
+    ActionTypeUnpledgeTransfer
+    // ActionTypeBorrowTransfer borrow transfer action
+    ActionTypeBorrowTransfer
+    // ActionTypeLiquidateTransfer liquidation transfer action
+    ActionTypeLiquidateTransfer
+    // ActionTypeRefundTransfer refund action
+    ActionTypeRefundTransfer
+    // ActionTypeRepayRefundTransfer repay refund action
+    ActionTypeRepayRefundTransfer
+    // ActionTypeLiquidateRefundTransfer seize refund action
+    ActionTypeLiquidateRefundTransfer
+    // ActionTypeProposalAddMarket add market proposal action
+    ActionTypeProposalAddMarket
+    // ActionTypeProposalUpdateMarket update market proposal action
+    ActionTypeProposalUpdateMarket
+    // ActionTypeProposalWithdrawReserves withdraw reserves proposal action
+    ActionTypeProposalWithdrawReserves
+    // ActionTypeProposalProvidePrice provide price action
+    ActionTypeProposalProvidePrice
+    // ActionTypeProposalVote vote action
+    ActionTypeProposalVote
+    // ActionTypeProposalInjectCTokenForMint inject token action
+    ActionTypeProposalInjectCTokenForMint
+    // ActionTypeProposalUpdateMarketAdvance update market advance parameters action
+    ActionTypeProposalUpdateMarketAdvance
+    // ActionTypeProposalTransfer proposal transfer action
+    ActionTypeProposalTransfer
+    // ActionTypeProposalCloseMarket proposal close market action
+    ActionTypeProposalCloseMarket
+    // ActionTypeProposalOpenMarket proposal open market action
+    ActionTypeProposalOpenMarket
+    // ActionTypeProposalAddScope proposal add allowlist scope action
+    ActionTypeProposalAddScope
+    // ActionTypeProposalRemoveScope proposal remove allowlist scope action
+    ActionTypeProposalRemoveScope
+    // ActionTypeProposalAddAllowList proposal add to allowlist action
+    ActionTypeProposalAddAllowList
+    // ActionTypeProposalRemoveAllowList proposal remove from allowlist action
+    ActionTypeProposalRemoveAllowList
+    // ActionTypeUpdateMarket update market
+    ActionTypeUpdateMarket
+    // ActionTypeQuickPledge supply -> pledge
     ActionTypeQuickPledge
     // ActionTypeQuickBorrow supply -> pledge -> borrow
     ActionTypeQuickBorrow

@@ -1,19 +1,18 @@
 ---
-title: Rückzahlung des Ausleihs in Pando Ringe
-sidebar_position: 6
+title: Repaying your borrow in Pando Rings
 date: 04-09-2021 12:33:07
 ---
 
-Wenn Sie Ihr geliehenes Vermögen zurückzahlen wollen, können Sie zur Rückzahlung gehen.
+If you want to pay back your borrowed asset, you can go to repay.
 
-Sie können darauf zugreifen, indem Sie auf die ausgeliehene Asset-Karte des Kredits auf der Me Seite klicken.
+You can access it by clicking on the borrowed asset card of the borrow secion on the Me page.
 
-Sie können den Fortschrittsbalken ziehen, um über den Prozentsatz zu entscheiden, den Sie zurückzahlen möchten.
+You can drag on the progress bar to decide on the percentage you want to repay.
 
 ![](../assets/repay1.jpg)
 
-Wenn Sie das Darlehen abzahlen möchten, können Sie den Fortschrittsbalken ganz nach rechts ziehen und auf "Zahlung" klicken.
+If you want to pay off the loan, you can drag the progress bar all the way to the right and click on "Payback".
 
-Bitte beachten Sie, dass aufgrund der Echtzeit-Berechnung der Kreditzinsen der tatsächliche Betrag, um Ihren Kredit abzuzahlen, könnte etwas höher sein als der Betrag, der auf dem Bildschirm angezeigt wird. Also berechnen wir Ihnen ein bisschen mehr, um sicherzustellen, dass der Kredit ausgezahlt wird. dann wird jeder überschüssige Betrag nach Ihrer Zahlung an Ihre Brieftasche zurückgeschickt.
+Please be noted that due to the real-time calculation of borrow interest, the actual amount to pay off your Borrow might be slightly higher than the amount shown on the screen. So we will charge you slightly a bit more to make sure the borrow will be paid off, then any excess amount will be returned to your wallet after your payment.
 
 ![](../assets/repay2.jpg)

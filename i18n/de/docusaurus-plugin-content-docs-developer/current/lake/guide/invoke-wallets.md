@@ -1,31 +1,30 @@
 ---
-title: Wallets aufrufen
-sidebar_position: zwei
+title: Invoke Wallets
 date: 22-07-2021 22:33:07
 ---
 
-Zur Zeit gibt es zwei Arten von Wallets, die mit 4swap/See kompatibel sind:
+At present, there are two kinds of wallets that are compatible with 4swap/Lake:
 
-- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): Eine mobile Brieftasche die vom Mixin Core Team erstellt wurde.
-- [Fennec](/docs/apps/wallets#fennec): Eine vom Fox.ONE Team erstellte Browser-Erweiterung Brieftasche.
+- [Mixin Messenger](/docs/apps/wallets#mixin-messenger): A mobile wallet that is created by Mixin core team.
+- [Fennec](/docs/apps/wallets#fennec): A browser extension wallet created by Fox.ONE team.
 
-Wenn Sie eine Webschnittstelle zur Verfügung stellen wollen, die eine dieser Wallets unterstützt, Sie müssen Ihre Web-App in die Wallets integrieren und sie aufrufen, um sie zum gewünschten Zeitpunkt zu bezahlen.
+If you are going to provide a web interface that supports any of these wallets, you need to integrate your web app with the wallets and invoke them to pay at the desired time.
 
-## Messenger aufrufen
+## Invoke Messenger
 
-Um die Zahlungsschnittstelle von Mixin Messenger aufzurufen, ist ziemlich einfach:
+To invoke the payment interface of Mixin Messenger is pretty simple:
 
-Zuerst müssen Sie den `code_url` oder `Code` erhalten, der angibt, dass eine Multisig Übertragung bestätigt werden muss.
+At first, you need to get the `code_url` or `code` which indicates a multisig transfer need to confirm.
 
-Es gibt zwei Wege, es zu erreichen:
+There are two ways to get it:
 
-1. Folge der API ["/api/actions"](../apis/actions) um eine [Swap-Aktion zu erstellen](../action-protocol#swap-crypto)
-2. Rufen Sie die API `https://api.mixin.one/payment` auf, um ein Zahlungsobjekt zu erhalten, das `code_id` enthält
-3. Generieren Sie eine Transaktion im eigenen Backend und übergeben Sie den Code/code_url an das Frontend.
+1. Follow the API ["/api/actions"](../apis/actions) to create a [swap action](../action-protocol#swap-crypto)
+2. Call the API `https://api.mixin.one/payments` to get a payment object which contains `code_id`
+3. Generate a transaction at your own backend and pass the code/code_url to the frontend.
 
-Hier zeige ich dir die ersten Wege:
+Here I will show you the first ways:
 
-### Weg 1
+### Way 1
 
 ```javascript
 const BTC_ASSET_ID = 'c6d0c728-2624-429b-8e0d-d9d19b6592fa';
@@ -59,7 +58,7 @@ async function pay() {
 }
 ```
 
-### Weg 2
+### Way 2
 
 ```javascript
 const BTC_ASSET_ID = 'c6d0c728-2624-429b-8e0d-d9d19b6592fa';
@@ -96,11 +95,11 @@ async function pay() {
 
 ## Invoke Fennec
 
-Fennec ist die Brieftasche der Browser-Erweiterung, die verschlüsselte Keyshops im Browser speichert.
+Fennec is browser extension wallet, which stores encrypted keystores in the browser.
 
-Sie müssen nicht die Mixin API aufrufen, um Assets zu laden, Profil lesen oder eine Zahlung vorbereiten. Stattdessen stellt Fennec seine eigene API bereit, um sie alle zu erledigen.
+You don't need to call Mixin API to load assets, read profile or prepare a payment. Instead, Fennec provides its own API to do them all.
 
-Für weitere Informationen lesen Sie bitte den [-Demo-Code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp) um herauszufinden.
+For more information, please read the [demo's source code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp) to figure out.
 
 ```javascript
 // fennec ext

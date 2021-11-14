@@ -1,8 +1,7 @@
 ---
-title: Preis Oracles
-sidebar_position: 3
+title: Price Oracles
 date: 13-08-2021 12:33:07
 ---
 
-Der aktuelle Preis für Pando Blatt ist kein Echtzeit-Marktpreis für die Vermögenswerte. Stattdessen verzögert sie sich 30 Minuten - deshalb sehen Sie den "Nächsten Preis". Dieses Design soll den Benutzern Zeit geben, darauf zu reagieren, um das Risiko der Liquidierung durch eine plötzliche Abnahme der Sicherungsquote infolge einer potenziellen extremen Marktvolatilität abzumildern.
+Current price in Pando Leaf is not real-time market price of the assets. Instead, it delays 30 minutes - that is why you see the "Next Price". This design is to allow time for users to respond so as to mitigate the risk of liquidation from sudden decrease in the collateralization ratio as a result of potential extreme market volatility.
 

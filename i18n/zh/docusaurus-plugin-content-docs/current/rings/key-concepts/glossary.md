@@ -1,6 +1,5 @@
 ---
 title: 术语表
-sidebar_position: 20
 date: 2021-09-04 12:33:07
 ---
 

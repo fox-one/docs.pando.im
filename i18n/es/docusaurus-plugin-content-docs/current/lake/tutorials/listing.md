@@ -1,6 +1,5 @@
 ---
 title: Listing assets and adding pools
-sidebar_position: 6
 date: 2021-08-15 22:33:07
 ---
 

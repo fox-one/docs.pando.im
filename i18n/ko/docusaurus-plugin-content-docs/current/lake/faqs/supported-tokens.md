@@ -1,6 +1,5 @@
 ---
 title: 어떤 토큰이 지원되나요?
-sidebar_position: 6
 date: 2021-08-15 22:33:07
 ---
 

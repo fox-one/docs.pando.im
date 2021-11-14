@@ -1,6 +1,5 @@
 ---
 title: SDK를 사용하여 거래하기
-sidebar_position: 1
 date: 2021-07-22 22:33:07
 ---
 

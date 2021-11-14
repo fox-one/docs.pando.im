@@ -1,17 +1,16 @@
 ---
-title: Kreditrisikoanzeige
-sidebar_position: 3
+title: Loan Risk Indicator
 date: 04-09-2021 12:33:07
 ---
 
-[Darlehen](./glossary) / [Kreditlimit](./glossary) wird verwendet, um Ihr Kreditrisiko anzuzeigen.
+[Borrow](./glossary) / [Borrow Limit](./glossary) is used to indicate your loan risk.
 
-Wenn das Kreditlimit <60% beträgt, sind Sie in geringem Risiko, dass der Kredit [liquidiert wird](./glossary);
+When Borrow / Borrow Limit is <60%, you are in low risk of the loan being [liquidated](./glossary);
 
-Wenn 60% ≤Darlehen / Kreditlimit < 80%, sind Sie in mittlerem Risiko der Liquidierung des Darlehenss;
+When 60% ≤ Borrow / Borrow Limit < 80%, you are in medium risk of the loan being liquidated;
 
-Wenn 80% ≤ Darlehen / Kreditlimit < 100%, sind Sie in hohem Risiko der Liquidierung des Darlehenss;
+When 80% ≤ Borrow / Borrow Limit < 100%, you are in high risk of the loan being liquidated;
 
-Wenn Sie ein Darlehen / Ausleihe Limit ≥ 100% haben, sind Sie in Liquidierung.
+When Borrow / Borrow Limit ≥ 100%, you are in liquidation.
 
 ![](../assets/risk.jpg)

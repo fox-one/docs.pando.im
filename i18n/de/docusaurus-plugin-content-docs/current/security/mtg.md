@@ -1,21 +1,20 @@
 ---
-title: Vertrauenswürdige Gruppe vermischen
-sidebar_position: zwei
+title: Mixin Trusted Group
 ---
 
-## Netzwerk Mixin
+## Mixin Network
 
-Mixin Network ist eine öffentliche Blockchain von TEE (Trusted Execution Environment), die auf der DAG mit aBFT basiert. Im Gegensatz zu anderen Projekten, die große Theorien haben, aber kaum eine tatsächliche Implementierung der Blockchain-Transaktionslösung Mixin Network bietet eine sicherere, private, 0 Gebühren, entwicklerfreundliche und benutzerfreundliche Transaktionslösung mit Blitzgeschwindigkeit.
+Mixin Network is a public blockchain driven by TEE (Trusted Execution Environment) based on the DAG with aBFT. Unlike other projects which have great theories but hardly any actual implementations of blockchain transaction solution, Mixin Network provides a more secure, private, 0 fees, developer-friendly and user-friendly transaction solution with lightning speed.
 
-## Vertrauenswürdige Gruppe vermischen
+## Mixin Trusted Group
 
-[Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg) ist eine Alternative zu intelligenten Kontakten auf Mixin Network.
+[Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg) is an alternative to smart contacts on Mixin Network.
 
 ![](./assets/overview-architecture.svg)
 
-Grundsätzlich ist die MTG eine Mehr-Signaturen-Custodian-Konsenslösung. Mehrere Teams werden als „Vertrauenswürdige Gruppe“ in Pando, die zu den „Knoten“ werden, ausgewählt und arrangiert. Unter den Knotenpunkten muss ein Kontingent erreicht werden, um bestimmte administrative Maßnahmen durchzuführen. So sind stabile Dienstleistungen und die Sicherheit der Vermögenswerte gewährleistet.
+Basically, MTG is a Multi-signature custodian consensus solution. Several teams will be selected and arranged as the “Trusted Group” in Pando, becoming the “Nodes”. Concensus has to be reached among the nodes to perform certain administrative actions. As a result, stable services and asset safety are guaranteed.
 
-Nehmen wir zum Beispiel an, dass es eine M/N Multisig Gruppe gibt, in der M die Anzahl der Knoten repräsentiert und die Gruppe verwaltet einige Assets in der multi-sig Adresse. Wenn einer der Knoten einige Assets aus dem System übertragen muss, muss er mindestens N-Signaturen von anderen sammeln, um die Aktion durchzuführen.
+For example, let’s say there is a M/N multi-sig group where M represents the number of nodes, and the group manages some assets in the multi-sig address. When one of the nodes needs to transfer some assets out, it needs to collect at least N signatures from others to perform the action.
 
-Die MTG ist der Rahmen. Pando ist eine Reihe von Anwendungen, die mit dem Framework auf Mixin Network entworfen wurden.
+MTG is the framework. Pando is a series of application designed using the framework on Mixin Network.
 

@@ -1,30 +1,29 @@
 ---
-title: Bereitstellung von Assets für Pando Ringe
-sidebar_position: zwei
+title: Supplying assets to Pando Rings
 date: 04-09-2021 12:33:07
 ---
 
-Die Bereitstellung ist der erste Schritt in Pando Ring. Wenn Benutzer Pando Rings ein Vermögen liefern, fangen sie sofort an, Zinsen zu verdienen. Die Zinsen erwirtschaften jede Minute und die Nutzer können ihre Hauptverzugszinsen jederzeit zurückziehen.
+Supplying is the first step in Pando Rings. When users supply an asset to Pando Rings, they begin earning interest instantly. Interest accrues every minute; users can withdraw their principal plus interest anytime.
 
-Um ein Asset zu liefern, klicken Sie auf "Ich will beliefern" auf der Marktseite. Es bringt Sie zur Liste der Versorgungsgüter, aus denen Sie wählen können. Sie sehen [Versorgungslautstärke](../key-concepts/glossary)und [Versorgungs-APY](../key-concepts/glossary) des Asset.
+To supply an asset, you can click on "I want to supply" on the Market Page. It will bring you to the list of Supply assets you can choose from. You will see [Supply Volume](../key-concepts/glossary)and [Supply APY](../key-concepts/glossary) of the asset.
 
-Nachdem Sie auf das Asset geklickt haben, landen Sie auf der Versorgungsseite.
+After clicking on the asset, you will land on the Supply page.
 
 ![](../assets/supply1.jpg)
 
-Sie können auch den zu liefernden Eintrag finden, wenn Sie bereits in die Marktübersicht eingegeben haben und sich für die Statistik eines bestimmten Marktes entschieden haben. Sie finden den Angebotseintrag auf der Asset-Statistikseite.
+You can also find the entry to supply if you already entered the Market Overview page and have chosen to view statistics of a specific market. You will find the Supply entry on the asset statistics page.
 
 ![](../assets/supply2.jpg)
 
-Wenn Sie kein Vermögen geliefert haben, finden Sie auch den Eintrag zu versorgen auf der Me Seite. Klicken Sie auf "Zur Lieferung" und Sie landen auf der Versorgungsseite.
+If you haven't supplied any asset, you can also find the entry to supply on the Me page. Clicking on "Go to supply" and you will land on the Supply page.
 
 ![](../assets/supply3.jpg)
 
-Auf der Versorgungsseite werden Sie Schlüsselmetriken im Zusammenhang mit dem Versorgungsprozess sehen, einschließlich der Versorgungs-APY des Assets, die von Ihnen angegebene Menge des bestimmten Assets ("**Bereitstellung**"), den Gesamtbetrag aller von Ihnen gelieferten Assets (**Gesamtmenge**), den Gesamtbetrag, den Sie nicht als Sicherheiten verpfändet haben (**Total Unpledged**) und den Wechselkurs zwischen dem rToken und dessen zugrunde liegenden Vermögenswert.
+On the Supply page, you will see key metrics related to the Supply process including the asset's Supply APY, amount you have supplied of the specific asset ("**Supplying**"), the total amount of all the assets you have supplied (**Total Supply**), the total amount you haven't pledged as collateral (**Total Unpledged**) and the exchange rate between the rToken and its underlying asset.
 
-Geben Sie den Betrag des Assets ein, den Sie liefern wollen, und Sie werden eine untere Tabelle sehen, in der Sie fragen, ob Sie die Versorgungslautstärke versprechen möchten. Der Prozentsatz auf dem rechten Pfeil repräsentiert [Collateral Factor](../key-concepts/glossary).
+Enter the amount of the asset you want to supply, and you will see a bottom sheet asking whether you want to pledge the supply volume. The percentage on the right arrow represents [Collateral Factor](../key-concepts/glossary).
 
-Wie Sie versprechen müssen, bevor Sie sich auf Pando Ringe leihen können, wenn Sie "**Versorgung und Versprechen**" wählen, erhalten Sie sofort die Kreditkapazität; oder wenn Sie nur durch Bereitstellung des Vermögens etwas Zinsen verdienen möchten, können Sie "Nur Versorgungsangebot" wählen.
+As you need to pledge before borrowing on Pando Rings, if you choose "**Supply and Pledge**", you will immediately get the borrow capacity; or if you only want to earn some interest by supplying the asset, you can choose "Supply Only".
 
 ![](../assets/supply4.jpg)
 

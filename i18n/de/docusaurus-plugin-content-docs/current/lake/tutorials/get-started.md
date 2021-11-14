@@ -1,40 +1,39 @@
 ---
-title: Los geht's
-sidebar_position: eins
+title: Get Started
 date: 22-09-2021 05:22:11
 ---
 
-Pando lake(4swap) unterstützt [Mixin Messenger](https://docs.pando.im/docs/wallets/mixin-messenger) Brieftasche und [fennec](https://docs.pando.im/docs/apps/wallets) (Web Wallet) und der folgende Inhalt verwendet Mixin Messenger Brieftasche als Beispiel.
+Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.
 
-Besuchen [Pando lake(4swap)](https://lake.pando.im), oder suche Mixin ID **7000103537** auf Mixin Messenger App und click blaue Nummer. Dann fügen Sie Bot und klicken Sie auf kleinen Roboter Avatar zu öffnen Pando See (4swap).
+Visit [Pando lake(4swap)](https://lake.pando.im), or search Mixin ID **7000103537** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando lake(4swap).
 
 ![](../assets/lake-get-started-p1.png)
 
-Klicken Sie " Geldbeutel verbinden" um zu starten. Stellen Sie sicher, dass Sie auf den Schnittstellen keine Daten autorisieren können, die auf Ihre Assets bezogen sind.
+Click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces.
 
 ![](../assets/lake-get-started-p2.png)
 
 ````mdx-code-block
 :::tip
 
-Prüfe alles und autorisiere es. Die Autorisierung kann nur anzeigen, aber Ihre Assets nicht verwenden. Es ist sicher.
+Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
 
 :::
 ````
 
-Lernen wir die Homepage von pando lake(4swap) kennen.
+Let's get to know the homepage of pando lake(4swap).
 
 ![](../assets/lake-get-started-p3.png)
 
-Geben Sie die "Pool" Seite, können wir verschiedene Handelspaare sehen. Wir können auf den Pfeil nach rechts klicken➡️oben rechts, um die Datenanalyse anzuzeigen.
+Enter the "pool" page, we can see various trading pairs. We can click the right arrow ➡️ at the top right to view the data analysis.
 
-Sie können auch auf die Sortierung verschiedener Transaktionspaare nach Daten wie Gesamtmenge und 24-Stunden Transaktionsvolumen klicken.
+You can also click to sort different transaction pairs based on data such as total supply and 24-hour transaction volume.
 
 ![](../assets/lake-get-started-p4.png)
 
-Die Suchfunktion kann schnell die Handelspaare im Zusammenhang mit der Währung, die wir handeln wollen, lokalisieren. Zum Beispiel, in obenstehendem Bild kann die Suche nach eth schnell alle Handelspaare im Zusammenhang mit eth.
+The search function can quickly locate the trading pairs related to the currency we want to trade. For example, in above picture, searching for eth can quickly display all trading pairs related to eth.
 
-Geben Sie das eth/btc Trading Paar ein, Sie können detailliertere Informationen anzeigen und Sie können schnell zu den "[Tausch](https://docs.pando.im/docs/lake/tutorials/swapping)" und "[Liquiditätsseiten](https://docs.pando.im/docs/lake/tutorials/providing-liquidity) " springen.
+Enter the eth/btc trading pair, you can view more detailed information, and you can quickly jump to the "[swap](https://docs.pando.im/docs/lake/tutorials/swapping)" and "[liquidity pages](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)".
 
 
 

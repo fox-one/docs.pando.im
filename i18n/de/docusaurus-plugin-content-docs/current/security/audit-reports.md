@@ -1,6 +1,5 @@
 ---
 title: Auditberichte
-sidebar_position: 3
 ---
 
 import { Improvement, } from "@site/src/components/admonitions";
@@ -11,112 +10,112 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 ### Bericht Herunterladen
 
-[Audit-Bericht von IOActive](//docs.pando.im/reports/ioactive-report.pdf)
+[Audit report from IOActive](//docs.pando.im/reports/ioactive-report.pdf)
 
-### Findungen und Remediationsstatus
+### Findings and Remediation Status
 
-| ID    | Titel                                                                                      | Gesamt-Risiko | Stand        |
-| ----- | ------------------------------------------------------------------------------------------ | ------------- | ------------ |
-| MP-07 | Ringe - Kreditrückzahlungstransaktionen können nach Änderung des Kreditguthabens scheitern | Hoch          | Festgehalten |
-| MP-06 | Allgemein - veralteter Web-Server mit mehreren Schwachstellen                              | Hoch          | Festgehalten |
-| MP-01 | Mangel an Zertifikatsfixierung                                                             | Mittel        |              |
-| MP-02 | Unzureichende JailBreak Erkennung                                                          | Mittel        |              |
-| MP-03 | Sicherheit für den App-Transport deaktiviert                                               | Niedrig       |              |
-| MP-04 | RPATH Satz in Binärdatei                                                                   | Niedrig       |              |
-| MP-05 | Binäre Benutzer unsichere APIs                                                             | Niedrig       |              |
+| ID    | Title                                                                         | Total Risk | Status |
+| ----- | ----------------------------------------------------------------------------- | ---------- | ------ |
+| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | High       | Fixed  |
+| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities                   | High       | Fixed  |
+| MP-01 | Lack of Certificate Pinning                                                   | Medium     |        |
+| MP-02 | Insufficient JailBreak Detection                                              | Medium     |        |
+| MP-03 | App Transport Security Disabled                                               | Low        |        |
+| MP-04 | RPATH Set in Binary                                                           | Low        |        |
+| MP-05 | Binary Users Insecure APIs                                                    | Low        |        |
 
-### Problemanalyse
+### Issue Analysis
 
-**MP-07: Ringe - Kreditrückzahlungstransaktionen können nach Änderung des Kreditguthabens fehlgeschlagen sein**
+**MP-07: Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance**
 
-Dieses Problem wurde durch eine falsche Logik in `Payee.handleRepayEvent()` verursacht. Bitte lesen Sie den IOActive Audit-Bericht (von p3 bis p8) für weitere Details.
+This issue is caused by an incorrect logic in `Payee.handleRepayEvent()`. Please read IOActive audit report (from p3 to p8) for more details.
 
-**MP-07: Allgemein - veralteter Webserver mit mehreren Schwachstellen**
+**MP-07: General - Outdated Web Server with Multiple Vulnerabilities**
 
-Dieses Problem wird durch einen veralteten Webserver verursacht, der API-Endpunkte zur Verfügung stellt. Bitte lesen Sie den IOActive Audit-Bericht (von p3 bis p8) für weitere Details.
+This issue is caused by an outdated web server that provides API endpoints. Please read IOActive audit report (from p3 to p8) for more details.
 
-**MP-01: Mangel an Zertifikatsfixierung**
+**MP-01: Lack of Certificate Pinning**
 
-Dies ist ein Problem, das mit dem Mixin Messenger zusammenhängt.
+This is an issue related to the Mixin Messenger.
 
-Zurzeit antworten die meisten Apps vollständig auf die Zertifizierungen des Betriebssystems und bestimmen nicht, welches Zertifikat zu vertrauen ist oder nicht. Angreifer, die den Vertrauensspeicher des Betriebssystems beschädigen oder eine Root-CA hacken, können einen Man-in-the-Middle-Angriff durchführen und die übermittelten Daten zwischen der App und dem Server erfassen.
+At present, most Apps reply entirely to the certifications that operating system maintains and do not determine which certificate to trust or not. Attackers who break the operating system's trust storage or hack a root CA can set up a man-in-the-middle attack and capture the transmitted data between the App and the server.
 
-Mixin Team und Pando Team sind nicht verantwortlich für die Sicherheit des lokalen Betriebssystems und der Root-CA. Nachdem wir uns mit dem Mixin Team unterhielten, haben wir uns entschlossen, dieses Thema vorerst zu ignorieren.
+Mixin Team and Pando Team are not responsible for ensuring the safety of user's local operating system and the root CA. After discussing with the Mixin Team, we decided to ignore this issue for now.
 
-**MP-02: Unzureichende JailBreak Erkennung**
+**MP-02: Insufficient JailBreak Detection**
 
-Dies ist ein Problem im Zusammenhang mit dem Mixin Messenger iOS.
+This is an issue related to the Mixin Messenger iOS.
 
-Das Mixin Team ist nicht verantwortlich für die Sicherheit des lokalen Betriebssystems der Benutzer, daher entschied man sich vorerst dieses Problem zu ignorieren.
+Mixin Team is not responsible for ensuring the safety of user's local operating system, so they decided to ignore this issue for now.
 
-**MP-03: App Transport-Sicherheit deaktiviert**
+**MP-03: App Transport Security Disabled**
 
-Dies ist ein Problem im Zusammenhang mit dem Mixin Messenger iOS.
+This is an issue related to the Mixin Messenger iOS.
 
-In dem Bericht wird erwähnt, dass ATS für Anfragen von WebView deaktiviert ist. Es ist kein Fehler der App, da die Benutzer die WebView benutzen dürfen, um HTTP-Webseiten zu besuchen.
+In the report, it mentions that ATS is disabled for requests from WebView. It's not a flaw of App because the users are allowed to use the WebView to visit HTTP webpages.
 
-**MP-04: RPATH Set in Binärdatei**
+**MP-04: RPATH Set in Binary**
 
-Dieses Problem ist sehr schwer auszunutzen, deshalb hat sich das Mixin Team entschieden, dieses Problem vorerst zu ignorieren.
+This issue is very hard to exploit, so the Mixin Team decided to ignore this issue for now.
 
-**MP-05: Binärbenutzer unsichere APIs**
+**MP-05: Binary Users Insecure APIs**
 
-Dieses Problem ist sehr schwer auszunutzen, deshalb hat sich das Mixin Team entschieden, dieses Problem vorerst zu ignorieren.
+This issue is very hard to exploit, so the Mixin Team decided to ignore this issue for now.
 
-## Prüfungsberichte von LeastAuthority
+## Audit Reports from LeastAuthority
 
-### Bericht Herunterladen
+### Download Report
 
-[Prüfbericht von der geringsten Autorität](//docs.pando.im/reports/least-authority-report.pdf)
+[Audit Report from Least Authority](//docs.pando.im/reports/least-authority-report.pdf)
 
 
-### Findungen und Remediation Status
+### Findings and Remediation Status
 
-| ID    | Titel                                                                           | Stand           |
-| ----- | ------------------------------------------------------------------------------- | --------------- |
-| A     | Keine Bereitstellung zum Umgang mit dem Kompromiss des geteilten MTG-Schlüssels | Nicht repariert |
-| B     | Sicherheits-Roadmap existiert nicht                                             | Nicht repariert |
-| C     | Protokollspezifikationen nicht vorhanden                                        |                 |
-| D     | Geheimnisse werden geteilt und bleiben im reinen Text erhalten                  | Nicht repariert |
-| Osten | Verwendung von nicht authentifizierten Verschlüsselungsmodus                    | Nicht repariert |
-| F     | Eingabe beim Hinzufügen oder Entfernen von PKCS #7 Padding nicht geprüft        | Nicht repariert |
-| G     | Übermäßige Zentralisierung                                                      |                 |
+| ID | Title                                                     | Status    |
+| -- | --------------------------------------------------------- | --------- |
+| A  | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
+| B  | Security Roadmap Nonexistent                              | Won't fix |
+| C  | Protocol Specifications Nonexistent                       |           |
+| D  | Secrets Are Shared and Persist in Plain Text              | Won't fix |
+| E  | Use of Unauthenticated Encryption Mode                    | Won't fix |
+| F  | Input Not Checked When Adding or Removing PKCS #7 Padding | Won't fix |
+| G  | Excess Centralization                                     |           |
 
-### Antworten auf Befunde
+### Responses to Findings
 
-**Suche A: Keine Bereitstellung für die Handhabung eines gemeinsamen MTG-Schlüssels**
+**Finding A: No Provision to Handle Compromise of Shared MTG Key**
 
-Am Anfang dient der gemeinsame Schlüssel dazu, die Memo zu verschlüsseln. In der vorherigen Version setzen Pando Leaf und Ringe `user_id` in die Memo, und der Shared Key wird verwendet, um ihn zu verschlüsseln.
+In the begining, the purpose of the shared key is to encrypt the memo. In the previous version, Pando Leaf and Rings put `user_id` in the memo, and the shared key is used to encrypt it.
 
-Um jedoch die Privatsphäre des Benutzers besser zu schützen, aktualisieren wir das Mixin Netzwerk, das `user_id` direkt in UTXO einfügt. Jetzt hat Pando die `user_id` bereits aus der Memo entfernt, so dass es keine sensiblen Informationen in der Memo gibt.
+However, to better protect the user's privacy, we upgrade the Mixin Network, that adding `user_id` in the UTXO directly. Now Pando has already remove the `user_id` from the memo so there is no sensitive information in the memo.
 
-Um das Protokoll Campatibel zu machen, behalten wir die Unterstützung der verschlüsselten Memo. Aber es ist völlig in Ordnung, Klartext in Memo zu verwenden und es unverschlüsselt zu lassen. Mit einem anderen Wort, der gemeinsame Schlüssel ist nicht mehr wichtig.
+To make the protocol more campatible, we keep the support of the encrypted memo. But it's totally fine to use plain-text in memo and leave it unencrypted. In another word, the shared key is not important anymore.
 
-**B: Sicherheits-Roadmap existiert nicht**
+**Finding B: Security Roadmap Nonexistent**
 
-Eigentlich haben wir eine Roadmap mit sicherheitsrelevanten Plänen. Wir werden den Fahrplan in Zukunft aktualisieren.
+Actually we have a Roadmap with security related plans. We will update the roadmap in the future.
 
-**Protokollspezifikationen nicht vorhanden**
+**Finding C: Protocol Specifications Nonexistent**
 
-Wir haben bereits einige Spezifikationen für das Protokoll vorgelegt. Bitte überprüfe sie https://docs.pando.im/developer/intro.
+We have already provided some specifications for the protocol. Please check them out https://docs.pando.im/developer/intro.
 
-In Zukunft werden wir hier mehr Dokumentation zur Verfügung stellen.
+In the future, we will provide more documentation here.
 
-**Suche D: Geheimnisse werden geteilt und bleiben im reinen Text erhalten**
+**Finding D: Secrets Are Shared and Persist in Plain Text**
 
-Wir haben eine eigene Art, die Geheimnisse zu verwalten und die Einsatzumgebung sicher zu halten.
+We have own way to manage the secrets and keep the deployment environment secure.
 
-**Suche E: Verwendung des nicht authentifizierten Verschlüsselungsmodus**
+**Finding E: Use of Unauthenticated Encryption Mode**
 
-Wir benutzen AES-CBC in der Memo-Verschlüsselung. Es ist besser, zu AES-GCM zu wechseln. Aufgrund der Erklärung des **Finding A**hat sich Pando jedoch entschieden, dieses Problem zu ignorieren.
+We are using AES-CBC in the memo encryption. It's better to switch to AES-GCM. However, because of the explanation of the **Finding A**, Pando decided to ignore this issue.
 
-**F: Eingabe beim Hinzufügen oder Entfernen von PKCS #7 Padding nicht geprüft**
+**Finding F: Input Not Checked When Adding or Removing PKCS #7 Padding**
 
-Wie oben.
+Same as above.
 
-**Suche G: Übermäßige Zentralisierung**
+**Finding G: Excess Centralization**
 
-Ja, im Moment ist es schwierig, neue Mitglieder zum MTG hinzuzufügen oder das Bestehende zu entfernen.
+Yes, right now, it is hard to add new members to the MTG or remove the existed.
 
-Wir arbeiten an einem neuen Governance-System, um MTG-Mitglieder hinzuzufügen und zu entfernen. Das neue Governance-System wird in Zukunft freigegeben.
+We are working on a new governance system to make it possible to add and remove MTG members. The new governance system will be released in the future.
 

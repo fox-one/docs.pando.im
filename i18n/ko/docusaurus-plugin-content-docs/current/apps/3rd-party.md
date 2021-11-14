@@ -1,6 +1,5 @@
 ---
 title: 타사 애플리케이션
-sidebar_position: 1
 ---
 
 Pando는 타사 개발자가 애플리케이션을 구축할 수 있도록 개발자 친화적인 API와 SDK 세트를 제공합니다.

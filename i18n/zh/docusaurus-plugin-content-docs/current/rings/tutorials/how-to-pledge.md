@@ -1,6 +1,5 @@
 ---
 title: 抵押rTokens以获得借款能力。
-sidebar_position: 3
 date: 2021-09-04 12:33:07
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Warum habe ich bei der Bereitstellung von Liquidität versagt?
-sidebar_position: 4
 date: 15-08-2021 22:33:07
 ---
 
@@ -13,8 +12,8 @@ Das häufige Versagen der Liquiditätszufuhr wird durch die Überschreitung des 
 
 Bei der Zuführung von Liquidität gibt es einen sehr wichtigen Grundsatz: Das Zuführungsverhalten sollte den aktuellen Preis des Handelspaares nicht verändern.
 
-Daher gibt es auch das Konzept des Schlupfes bei der Zuführung von Liquidität. Bei der Liquiditätsspritze wird der Anteil der Vermögenswerte im Liquiditätspool aufgrund des Handelsverhaltens von anderen verändert. oder im allgemeineren Sinne, der Preis für den Liquiditätspool kommt aufgrund der Transaktion. Große Veränderungen. Es gibt einen Unterschied zwischen den injizierten Vermögenswerten und der aktuellen Liquiditätspool-Quote. Übersteigt die Differenz ein bestimmtes Verhältnis, wird die Liquiditätsspritze scheitern. Das bedeutet, dass der Ausfall übertroffen wird.
+Daher gibt es auch das Konzept des Schlupfes bei der Zuführung von Liquidität. When injecting liquidity, the proportion of assets in the liquidity pool is changed due to the trading behavior of others, or in a more general sense, the price of the liquidity pool occurs due to the transaction. Big change. There is a difference between the injected assets and the current liquidity pool ratio. If the difference exceeds a certain ratio, the liquidity injection will fail. That is, slippage is exceeded.
 
-Es gibt auch eine Situation, in der die Injektion versagt, das heißt, die beiden injizierten Assets sind zu klein, um den Mindestbetrag an LP-Aktien zu erhalten. Es wird auch dazu führen, dass die Liquidität versagt wird.
+There is also a situation where the injection fails, that is, the two assets injected are too small to obtain the minimum amount of LP shares. It will also lead to failure to inject liquidity.
 
-Wenn Sie auf andere Situationen in der Transaktion stoßen, die den Fehler der Transaktion verursachen, bitte kontaktieren Sie unseren Community Manager-Chris (ID: 37160854) oder stellen Sie Fragen in der Pando Lakeofficial Community (ID: 7000103578)
+If you encounter other situations in the transaction that cause the transaction to fail, please contact our community manager-Chris (ID: 37160854) or ask questions in the Pando Lakeofficial community (ID: 7000103578)

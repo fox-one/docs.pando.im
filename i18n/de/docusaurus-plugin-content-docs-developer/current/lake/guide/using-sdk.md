@@ -1,12 +1,11 @@
 ---
-title: Verwendung von SDK zum Handel
-sidebar_position: eins
+title: Using SDK to Trade
 date: 22-07-2021 22:33:07
 ---
 
-Pando Lake verwendet 4swap als Liquiditätsanbieter. Es ist einfach, Vermögenswerte am Pando Lake durch 4swap's SDK auszutauschen.
+By default, Pando Lake uses 4swap as the liquidity provider. It's easy to exchange assets at Pando Lake by 4swap's SDK.
 
-## Importieren Sie 4swap SDK in Ihr Projekt
+## Import 4swap SDK into your project
 
 ```go
 import (
@@ -17,11 +16,11 @@ import (
 )
 ```
 
-## Erhalte die Multisig Gruppen-Informationen
+## Get the multisig group information
 
-Wenn du Operationen am Pando Lake durchführst, wie zum Beispiel das Tauschen von Kryptos, wodurch Liquidität hinzugefügt wird und Entfernen von Liquidität, müssen Sie multisig Transaktionen erstellen und mit Mixin Network interagieren.
+When you perform operations at Pando Lake, such as swapping crypto, adding liquidity, and removing liquidity, you must create multisig transactions and interact with Mixin Network.
 
-Die Teilnehmer jeder Multisig sind auch Mitglieder der MTG. Bitte lesen Sie diese zuerst und speichern Sie sie für eine spätere Nutzung.
+The participants of each multisig are also the members of MTG. So please read them first and save them for later use.
 
 ```go
 ctx := context.TODO()
@@ -39,9 +38,9 @@ if err != nil {
 ...
 ```
 
-## Alle handelbaren Paare erhalten
+## Get all tradable pairs
 
-Um alle unterstützten Asset-Paare zu erhalten ist einfach:
+To get all supported asset pairs is easy:
 
 ```go
 pairs, err := fswap.ListPairs(ctx)
@@ -51,13 +50,13 @@ if err != nil {
 ...
 ```
 
-## Berechne die beste Route zum Handel
+## Calculate the best route to trade
 
-Bevor wir Kryptos austauschen, müssen wir die Swapp-Route angeben.
+Before swapping cryptos, we need to specify the swapping route.
 
-Zur Zeit können Sie den See über die Route entscheiden lassen, aber es kann zu Leistungsproblemen führen und den Bot verlangsamen. Aus diesem Grund ist es empfehlenswert, selbst eine Umtauschroute zu berechnen.
+At present, you may let Lake decide the route, but it may cause the performance issues and slow down the bot. Because of that, it is recommended to calculate a swapping route yourself.
 
-Die Route zu berechnen ist einfach. Sortieren Sie die Paare nach Liquidität und rufen `Route` oder `ReverseRoute` Methoden an das eine `Bestellung` zurückgibt, die das Ergebnis der Berechnung enthält.
+To calculate route is easy. Sort the pairs according to the liquidity and call `Route` or `ReverseRoute` methods, which will return an `order` object that includes the result of calculation.
 
 ```go
 // sort first
@@ -84,13 +83,13 @@ log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
 
 ````mdx-code-block
 :::info
-Wenn du 4swap SDK nicht verwendest, kannst du deinen eigenen besten Routenalgorithmus implementieren ([golang Version](https://github.com/fox-one/4swap-sdk-go/blob/master/route.go), [Javascript-Version](https://github.com/fox-one/4swap-web/blob/develop/src/utils/pair/route.ts)).
+If you don't use 4swap SDK, you can implement your own best route algorithm ([golang version](https://github.com/fox-one/4swap-sdk-go/blob/master/route.go), [javascript version](https://github.com/fox-one/4swap-web/blob/develop/src/utils/pair/route.ts)).
 :::
 ````
 
-## Konstruiere eine echte Ordnung
+## Construct a real order
 
-Alle erforderlichen Informationen über eine Bestellung werden in der Transaktionsnotiz im JSON-Format gespeichert:
+All required information about an order is stored in the transaction memo, in JSON format:
 
 ```json
 {
@@ -98,15 +97,15 @@ Alle erforderlichen Informationen über eine Bestellung werden in der Transaktio
 }
 ```
 
-in dem,
+in which,
 
-  - {receiver_id} ist die ID des Benutzers, der das LP-Token erhalten wird
-  - {follow_id} ist eine UUID um die Übertragung zu verfolgen
-  - {fill_asset_id} ist die ID des Assets, die Sie zum Swapping verwenden werden
-  - {routes} ist eine Routen-Ids Sequenz, die angibt, welche Route Sie verwenden möchten.
-  - {minimum} ist der Mindestbetrag an Assets die Sie erhalten werden
+  - {receiver_id} is the id of user who will receive the LP-Token
+  - {follow_id} is a UUID to trace the transfer
+  - {fill_asset_id} is the asset's ID you are going to use for swapping
+  - {routes} is a route ids' sequence, which indicates which route you want to use.
+  - {minimum} is the minimum amount of asset you will get
 
-Wenn Sie 4swap SDK verwenden, können Sie auch die Methode `mtg.SwapAction` verwenden, um den Prozess zu vereinfachen:
+If you are using 4swap SDK, you can also use the method `mtg.SwapAction` to simplify the process:
 
 ```go
 // the ID to trace the orders
@@ -119,37 +118,36 @@ action := mtg.SwapAction(
     OutputAssetID,
     preOrder.Routes,
     // the minimum amount of asset you will get.
-    // Sie können diesen Wert auf eine Zahl ändern, die kleiner ist als preOrder.FillAmount
-    preOrder.FillAmount.Div(decimal.NewFromFloat(0. 05)),
+    // you may want to change this value to a number which less than preOrder.FillAmount
+    preOrder.FillAmount.Div(decimal.NewFromFloat(0.005)),
 )
 
-// memo generieren
+// generate the memo
 memo, err := action.Encode(group.PublicKey)
 if err != nil {
     return err
 }
-log.Println("memo", memo...
+log.Println("memo", memo)
+...
 
 ```
 
-## Bestellung programmatisch aufgeben
+## Place an order programmatically
 
-Wenn Sie möchten, dass der Bot eine Bestellung aufgibt, senden Sie eine Multisig Transaktion vom Bot.
+If you want the bot to place an order, send a multisig transaction from the bot.
 
-Dies ist eine gemeinsame Szene für Arbitrage Bot. Bitte stellen Sie sicher, dass der Bot genug Krypto in der Brieftasche des Bots hat.
+This is a common scene for arbitrage bot. Please make sure the bot has enough crypto in the bot's wallet.
 
-Wir müssen [mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) Client verwenden, um die Transaktion zu erstellen und an die Kernelknoten zu senden.
+We need to use [mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) client to create and send the transaction to the kernel nodes.
 
 ```go
 // send a transaction to a multi-sign address which specified by `OpponentMultisig`
 // the OpponentMultisig.Receivers are the MTG group members
 tx, err := client.Transaction(ctx, &mixin.TransferInput{
-    AssetID: assetID,
+    AssetID: payAssetID,
     Amount:  decimal.RequireFromString(amount),
     TraceID: mixin.RandomTraceID(),
-  // the `action` field in the response
-    Memo:    resp.Action,
-  // the MTG members from `/api/information`
+    Memo:    memo,
     OpponentMultisig: struct {
         Receivers []string `json:"receivers,omitempty"`
         Threshold uint8    `json:"threshold,omitempty"`

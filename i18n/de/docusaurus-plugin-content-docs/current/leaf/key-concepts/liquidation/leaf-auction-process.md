@@ -1,13 +1,12 @@
 ---
-title: Auktionsprozess
-sidebar_position: eins
+title: Auction Process
 date: 28-07-2021 22:33:07
 ---
 
-Wenn ein Tresor gegen das erforderliche Mindest-Sicherungsverhältnis verstößt, wird es liquidiert und die Sicherheiten werden auf Versteigerung gesetzt. Jedermann kann an der Auktion teilnehmen. Die laufende Auktion finden Sie im Abschnitt Laufende auf der Auktionsseite.
+When a vault breaches the minimum required collateralization ratio, it will be liquidated and the collateral will be on auction. Anyone can participate in the auction. The ongoing auction can be found in the Ongoing section on the Auctions page.
 
-Es gibt zwei Phasen der Versteigerung.
+There are TWO phases of the auction.
 
-**Für Phase 1**, Teilnehmer bieten in einem Zuwachs von nicht weniger als 3% des vorherigen Gebotsbetrags an, um den höchsten Betrag der ausstehenden Schulden zu decken. Wenn innerhalb der Begrenzung von 12 Stunden niemand bereit ist, die Gesamtverschuldung zu decken, Die Auktion ist vorbei und der Bieter, der bereit ist, den höchsten Betrag der Schulden zu decken, nimmt alle Sicherheiten nach Hause. Oder wenn es jemanden gibt, der anbietet, die Gesamtverschuldung zu decken, dann wird die Auktion in die zweite Phase gehen.
+**For Phase 1**, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
 
-**Für Phase 2**, Die Teilnehmer bieten mit einem Erlass von nicht weniger als 3% des vorherigen Gebotsbetrages an, den kleinsten Teil der Sicherheiten zur Zahlung der Gesamtverschuldung anzunehmen. Der Gewinner muss alle Schulden im Austausch für den kleinsten Betrag der Sicherheiten zurückzahlen, für die er (s)das Gebot überwies.
+**For Phase 2**, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt. The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.

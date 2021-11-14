@@ -1,6 +1,5 @@
 ---
 title: rToken
-sidebar_position: 1
 date: 2021-09-04 12:33:07
 ---
 

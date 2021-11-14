@@ -1,6 +1,5 @@
 ---
 title: 管理金库
-sidebar_position: 3
 date: 2021-08-13 12:33:07
 ---
 

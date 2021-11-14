@@ -1,6 +1,5 @@
 ---
 title: Technical Design
-sidebar_position: 2
 date: 2021-07-12 23:33:07
 ---
 

@@ -1,16 +1,15 @@
 ---
-title: Wird es irgendeinen Verlust meiner gelieferten Vermögenswerte geben?
-sidebar_position: eins
+title: Will there be any loss of my supplied assets?
 date: 04-09-2021 12:33:07
 ---
 
-### Wenn Sie keine Darlehen haben:
-Im Allgemeinen lautet die Antwort "Nein". Sie erhalten Zinsen für das von Ihnen gelieferte Vermögen, und es gibt keine Gebühr, die Sie zahlen müssen.
+### If you don't have any loans:
+Generally, the answer is NO. You gain interest of the assets you supplied and there is no fee you need to pay.
 
-In der sehr extremen Situation aber, da verfügbare Vermögenswerte auf dem Markt aus dem Angebot der Nutzer stammen, wenn es schlechte Schulden gibt (was einen Kredit bedeutet, der wahrscheinlich nicht bezahlt wird), es besteht die Chance, dass Sie den vollen Betrag Ihrer gelieferten Vermögenswerte nicht zurückbekommen. Aber auch **es ist unwahrscheinlich, dass** in Pando Rings passiert, da die Liquidierung in Echtzeit durch Liquidierung von Bots überwacht wird (Algorithmen zum Ausführen von Liquidierung), um zu vermeiden, dass sich schlechte Schulden wiederholen.
+In the very extreme situation though, as assets available to borrow on the market all come from users' supply, if there are bad debts (meaning a loan that is not likely to be paid), there is a chance that you cannot get back the full amount of your supplied assets. However, **it is unlikely to happen** in Pando Rings as liquidation is monitored real-time by liquidating bots (algorithms to execute liquidation) to avoid bad debts from happening.
 
 
-### Wenn Sie Darlehen haben:
-Wenn der Wert Ihrer geliehenen Vermögenswerte Ihr [-Kreditlimit überschritten hat,](../key-concepts/glossary.md), Sie geben [Liquidation](../key-concepts/liquidation.md)ein, verlieren einen Teil oder alle Ihrer Sicherheiten (z. Versprechene Vermögenswerte). Die verpfändeten Vermögenswerte unterliegen der Liquidierung Ihrer gesamten Vermögenswerte, während Ihr ungebundenes Vermögen unverändert bleibt.
+### If you do have loans:
+If the value of your borrowed assets has exceeded your [borrow limit](../key-concepts/glossary.md), you will enter [liquidation](../key-concepts/liquidation.md), losing part or all of your collateral (ie. pledged assets). Of your total supplied assets, the pledged assets are subject to liquidation while your unpledged assets will stay intact.
 
-Es ist wichtig, dass Sie den [Kreditrisiko-Indikator](../key-concepts/loan-risk-indicator.md) genau beachten, um Ihr Kreditrisiko zu überwachen, und sichern Sie Ihre Sicherheiten vor der Liquidierung.
+It is important tht you pay close attention to the [loan risk indicator](../key-concepts/loan-risk-indicator.md) to monitor your loan risk, and keep your collateral safe from liquidation.

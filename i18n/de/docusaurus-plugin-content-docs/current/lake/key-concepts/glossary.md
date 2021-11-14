@@ -1,23 +1,22 @@
 ---
-title: Glossar
-sidebar_position: 6
+title: Glossary
 date: 15-08-2021 22:33:07
 ---
 
-### Wechselnde Verwandte
+### Swapping Related
 
 1. [Swapping](https://docs.pando.im/docs/lake/tutorials/swapping)
 2. [Slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
-3. Preisauswirkung
+3. Price impact
 
-### Gleichgültigkeit im Zusammenhang
+### Liquitity Related
 
-1. [Liquidität bereitstellen](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)
-2. [Liquidität entfernen](https://docs.pando.im/docs/lake/tutorials/removing-liquidity)
-3. [Lp-Token](https://docs.pando.im/docs/lake/key-concepts/lp-token)
+1. [Providing Liquidity](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)
+2. [Remove Liquidity](https://docs.pando.im/docs/lake/tutorials/removing-liquidity)
+3. [Lp-token](https://docs.pando.im/docs/lake/key-concepts/lp-token)
 
-### Andere
+### Others
 
 1. [Impermanent Loss](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
-2. [Automatischer Market Maker (AMM)](https://docs.pando.im/docs/lake/key-concepts/amm-mechanism)
-3. [Mixin Trust Group (MTG)](https://docs.pando.im/docs/lake/key-concepts/mtg)
+2. [Automated Market Maker(AMM)](https://docs.pando.im/docs/lake/key-concepts/amm-mechanism)
+3. [Mixin Trust Group(MTG)](https://docs.pando.im/docs/lake/key-concepts/mtg)

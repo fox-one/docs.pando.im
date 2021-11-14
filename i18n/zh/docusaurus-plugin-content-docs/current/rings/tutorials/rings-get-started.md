@@ -1,6 +1,5 @@
 ---
 title: 让我们开始使用吧。
-sidebar_position: 1
 date: 2021-10-10 12:33:07
 ---
 

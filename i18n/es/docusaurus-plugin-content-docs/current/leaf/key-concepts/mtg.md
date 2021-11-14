@@ -1,6 +1,5 @@
 ---
 title: Pando Leaf MTG
-sidebar_position: 4
 date: 2021-08-15 22:33:07
 ---
 

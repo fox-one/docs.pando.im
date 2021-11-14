@@ -1,6 +1,5 @@
 ---
 title: Mitwirken
-sidebar_position: 2
 date: 15-09-2021 22:33:07
 ---
 
@@ -47,11 +46,11 @@ Wenn Sie mit Github und dem i18n von Pando nicht vertraut sind, empfehlen wir Ih
 
 ````mdx-code-block
 :::info
-Please note that all the code in the documentation should not be translated.
+Bitte beachten Sie, dass der ganze Code in der Dokumentation nicht übersetzt werden sollte.
 :::
 ````
 
-### Initialize the Translation
+### Die Übersetzung initialisieren
 
 #### Neue Übersetzungsdateien für neue Sprachen erstellen
 

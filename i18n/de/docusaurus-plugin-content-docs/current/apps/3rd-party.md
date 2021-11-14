@@ -1,6 +1,5 @@
 ---
 title: Drittanbieter-Anwendungen
-sidebar_position: 1
 ---
 
 Pando bietet eine Reihe von entwicklerfreundlichen APIs und ein SDK für Drittentwickler zur Anwendungsentwicklung.

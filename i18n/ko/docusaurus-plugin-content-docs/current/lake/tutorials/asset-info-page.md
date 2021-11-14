@@ -1,6 +1,5 @@
 ---
 title: 자산 정보 확인
-sidebar_position: 5
 date: 2021-08-15 22:33:07
 ---
 

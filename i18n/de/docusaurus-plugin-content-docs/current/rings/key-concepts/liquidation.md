@@ -1,19 +1,18 @@
 ---
 title: Liquidation
-sidebar_position: 6
 date: 04-09-2021 12:33:07
 ---
 
-In Pando Rings wird es zu einer Liquidation kommen, wenn der Wert Ihrer Kreditaufnahme über dem Niveau Ihrer Kreditkapazität steigt. Ein Liquidator kann **bis zu 50%** Ihres geliehenen Vermögens zurückzahlen und Ihre entsprechenden Sicherheiten zu einem ermäßigten Preis erhalten. Der Liquidator **kann** die Schulden auswählen, die er zurückzahlen möchte, und die Art der Sicherheiten, die er erhalten möchte.
+In Pando Rings, if the value of your borrowing rises above the level of your borrowing capacity, liquidation will happen. A liquidator is allowed to pay back **up to 50%** of your borrowed assets and get your corresponding collateral at a discounted price. The liquidator **can choose** the debt they want to pay back and the type of collateral they would like to receive.
 
-Zum Beispiel, wenn Sie BTC, ETH und LTC zugesagt haben, [pUSD](./glossary) und DOT zu erhalten. Ihre beiden PUSD und DOT Schulden sind nun in Liquidation. Ein Liquidator kann sich entscheiden, einfach ein paar PUSD-Schulden zurückzuzahlen und BTC zu erhalten, solange es innerhalb des von Ihnen angegebenen BTC-Betrags liegt.
+For example, if you pledged BTC, ETH and LTC to get [pUSD](./glossary) and DOT. Both of your pUSD and DOT debt are now in liquidation. A liquidator can choose to just pay back some pUSD debt and receive BTC, as long as it is within the limit of the BTC amount you provided.
 
-Sie können Ihr verpfändetes Vermögen nicht leihen, nicht verpfänden, nicht zurückziehen, während Sie sich in Liquidation befinden.
+You will not be able to borrow, unpledge or withdraw from your pledged assets while you are in liquidation.
 
-Nach der Liquidation wird Ihr Darlehen auf ein sicheres Niveau reduziert, während Sie Ihre entsprechenden Sicherheiten verlieren.
+After liquidation, your loan will be reduced to a safe level while you will lose your corresponding collateral.
 
-Mehrere Szenarien können zur Liquidation führen:
-- Die Zinsen für die geliehenen Fonds sind höher als die Zinsen für die verpfändeten Vermögenswerte und werden mit der Zeit angehäuft
-- Der Preis für die Sicherheiten sinkt plötzlich
-- Der Preis für die geliehene Anlage steigt plötzlich steil
+Several scenarios can lead to liquidation:
+- The interest on the borrowed funds is higher than the interest on the pledged assets, and it accumulates over time
+- The price of the collateral suddenly drops
+- The price of the borrowed asset suddenly rise sharply
  

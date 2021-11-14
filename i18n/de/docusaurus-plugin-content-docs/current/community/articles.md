@@ -1,6 +1,5 @@
 ---
 title: Artikel
-sidebar_position: 3
 date: 15-09-2021 22:33:07
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Read Auctions
-sidebar_position: 5
+
 date: 2021-10-01 23:18:01
 ---
 

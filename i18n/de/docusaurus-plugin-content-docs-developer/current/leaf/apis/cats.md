@@ -1,86 +1,85 @@
 ---
-title: Lese Collaterals
-sidebar_position: vier
+title: Read Collaterals
 date: 01-10-2021 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } von "@site/src/components/api";
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## Alle Collaterals lesen
+## Read All Collaterals
 
-### HINWEIS/Katzen
+### GET /cats
 
-Diese API wird alle unterstützten Sicherheiten beantworten.
+This API will respond all supported collaterals.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats" />
 
 <APIMetaPanel />
 
-<APIRequest title="Unterstützte Assets lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats' />
+<APIRequest title="Read supported assets" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats' />
 
 ```json title="Response"
 {
   "collaterals": [
     {
-      // normalisierte Schulden
+      // normalized debt
       "art": "number",
-      // Minimale Geboterhöhung
-      "Beginn": "Nummer",
-      // Maximaler Pusd für Liquidation 
-      "Box": "Nummer",
-      // die Liquidation Strafe
-      "chop": "Nummer",
+      // minimum bid increase
+      "beg": "number",
+      // max pUSD out for liquidation 
+      "box": "number",
+      // the liquidation penalty
+      "chop": "number",
       "created_at": "2021-10-02",
-      // Asset Id der Schulden
+      // the asset id of debt
       "dai": "string",
-      // pUSD insgesamt ausgestellt
-      "Schuld": "Nummer",
-      // Maximale Liquidationsmenge pro Auktion
-      "dunk": "Nummer",
-      // Schuldenstand pro Tresor
-      "Staub": "Nummer",
-      // Stabilitätsgebühr
-      "Pflicht": "Nummer",
-      // die Asset-Id der Sicherheiten
+      // total pUSD issued
+      "debt": "number",
+      // max liquidation Quantity per auction
+      "dunk": "number",
+      // debt floor per vault
+      "dust": "number",
+      // stability fee
+      "duty": "number",
+      // the asset id of collateral
       "gem": "string",
-      // id dieses Collateral Typs
+      // id of this collateral type
       "id": "string",
-      // gesperrte Sicherheiten
-      "ink": "Nummer",
-      // Schuldenobergrenze 
-      "Linie": "Nummer",
-      // Pusd-Guthaben für die Liquidation
-      "Wurf": "Nummer",
-      // Status dieses Collateral Typs
-      "live": true
-      // Liquidation Ratio, zB 150%
-      "mat": "Nummer",
-      // Name dieses Collateral Typs
+      // locked Collateral
+      "ink": "number",
+      // debt Ceiling 
+      "line": "number",
+      // balance of pUSD out for liquidation
+      "litter": "number",
+      // status of this collateral type
+      "live": true,
+      // liquidation ratio, eg 150%
+      "mat": "number",
+      // name of this collateral type
       "name": "string",
-      // Anzahl der Tresore gehören zu diesem Sicherheitstyp
+      // number of vaults belong to this collateral type
       "number_of_vaults": 0,
-      // aktueller Preis von gem/dai
-      "Preis": "Nummer",
-      // kumulierte Raten
-      "Preis": "Nummer",
-      // das Updatedatum von `rate`
+      // current price of gem/dai
+      "price": "number",
+      // accumulated Rates
+      "rate": "number",
+      // the update date of `rate`
       "rho": "2021-10-02",
-      // Gesamtverschuldung geliefert
-      "Angebot": "Nummer",
-      // Gesamtlänge der Auktion
+      // total debt supplied
+      "supply": "number",
+      // total auction length
       "tau": 0,
-      // Single-Gebot Lebenszeit
+      // single bid lifetime
       "ttl": 0
     }
   ]
 }
 ```
 
-## Einzelne Sicherheiten lesen
+## Read Single Collateral
 
 ### GET /cats/:id
 
-Diese API antwortet auf eine Collateral mit `:id`
+This API will respond one collateral with `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats/:id" />
 
@@ -88,7 +87,7 @@ Diese API antwortet auf eine Collateral mit `:id`
 
 <APIParams p-id="the collateral id" p-id-required="{true}" />
 
-<APIRequest title="Lese ein Collateral nach ID" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats/d0ec4cc7-edf6-5359-bf23-41fc9d26444e' />
+<APIRequest title="Read one collateral by ID" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats/d0ec4cc7-edf6-5359-bf23-41fc9d26444e' />
 
 ```json title="Response"
 {
@@ -99,26 +98,26 @@ Diese API antwortet auf eine Collateral mit `:id`
     "name": "BTC",
     "gem": "c6d0c728-2624-429b-8e0d-d9d19b6592fa",
     "dai": "31d2ea9c-95eb-3355-b65b-ba096853bc18",
-    "ink": "717. 9020133",
+    "ink": "717.09020133",
     "art": "9463539.4478672014194987",
-    "rate": "1. 192090425079456",
+    "rate": "1.0192090425079456",
     "rho": "2021-10-02T01:40:26Z",
-    "Schuld": "9530560. 8933399",
-    "line": "190000",
-    "staub": "100",
-    "price": "47815. 3",
-    "mat": "1. ",
+    "debt": "9530560.48933399",
+    "line": "19000000",
+    "dust": "100",
+    "price": "47815.83",
+    "mat": "1.5",
     "duty": "1.045",
-    "chop": "1. 3",
+    "chop": "1.13",
     "dunk": "5000",
-    "beg": "1. 3",
+    "beg": "1.03",
     "ttl": 1800,
     "tau": 43200,
-    "live": true
+    "live": true,
     "number_of_vaults": "407",
-    "Box": "500000",
-    "Wurf": "0",
-    "Lieferzeit": "190000"
+    "box": "500000",
+    "litter": "0",
+    "supply": "19000000"
   }
 }
 ```
