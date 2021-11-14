@@ -1,27 +1,27 @@
 ---
-title: What's Pando Rings
-sidebar_position: 1
-date: 2021-07-22 22:33:07
+title: Was ist Pando Ringe
+sidebar_position: eins
+date: 22-07-2021 22:33:07
 ---
 
-Pando Rings is an algorithmic, autonomous interest rate protocol built with Mixin MTG (Mixin Trusted Group) technology. It is a place where you can lend or borrow cryptocurrencies. You can think of it as an open market for money. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.
+Pando Rings ist ein algorithmisches, autonomes Zinsprotokoll mit Mixin MTG (Mixin Trusted Group) Technologie. Es ist ein Ort, wo Sie Kryptowährungen leihen oder ausleihen können. Man kann sich das als einen offenen Markt für Geld vorstellen. Benutzer können Kryptowährungen einlegen und Zinsen verdienen oder andere Kryptoanlagen gegen sie leihen.
 
-The interest rates for supplying and borrowing are adjusted algorithmically based on supply and demand.
+Die Zinssätze für Angebot und Kreditaufnahme werden auf der Grundlage von Angebot und Nachfrage algorithmisch angepasst.
 
 
-## How does Pando Rings work?
+## Wie funktioniert Pando Klingeln?
 
-Supplied assets in Pando Rings are tracked in tokens called rTokens, Pando Rings' native tokens. rTokens are ERC-20 tokens that represent claims to a portion of an asset pool in Pando Rings.
+Gelieferte Vermögenswerte in Pando Rings werden in Token namens Rtokens, Pando Rings native Token verfolgt. rTokens sind ERC-20-Token, die Ansprüche auf einen Teil eines Vermögenspools in Pando Rings repräsentieren.
 
-For example, if you deposit BTC into Pando Rings, it is converted to rBTC. If you deposit ETH, it will be converted to rETH. rTokens are available in the connected wallet for further transactional purposes.
+Wenn Sie zum Beispiel BTC in Pando Rings hinterlegen, wird es in rBTC umgewandelt. Wenn Sie ETH hinterlegen, wird es in RETH umgewandelt. rTokens sind in der angeschlossenen Wallet für weitere Transaktionszwecke verfügbar.
 
-As the money market earns interest (borrowing increases), rTokens earn interest and become convertible to more of the underlying assets. If you deposit multiple coins, they'll each earn interest based on their individual rToken interest rates. You earn interest on Pando Rings by holding the rTokens.
+Während der Geldmarkt Zinsen verdient (Kreditaufnahme steigend), verdienen Rtokens Zinsen und werden in mehr der zugrunde liegenden Vermögenswerte konvertierbar. Wenn Sie mehrere Münzen einzahlen, verdienen sie je nach ihren individuellen rToken Zinssätzen. Sie verdienen Interesse an Pando Rings, indem Sie die Rtokens halten.
 
-Lending in Pando Rings is straightforward. After selecting the asset you wish to supply liquidity for and signing the transaction through your wallet, you instantly add the asset to the pool and start earning interest in real-time. At the same time, the assets are converted to rTokens.
+Die Verleih in Pando Rings ist einfach. Nachdem Sie das Asset ausgewählt haben, das Sie Liquidität für die Transaktion über Ihre Brieftasche bereitstellen möchten, Sie fügen das Asset sofort zum Pool hinzu und verdienen Interesse an Echtzeit. Gleichzeitig werden die Vermögenswerte in Rtokens umgewandelt.
 
-Borrowing is a bit more complicated. To borrow, supplying is not enough - you have to make sure that you also have pledged, locking your rTokens into the system as collateral to earn the Borrowing Power (Borrow Balance). Every asset that is available for supply will add a different amount of borrowing power based on its collateral factor. Users can then borrow according to the Total Borrowing Power (Borrow Limit) they have.
+Die Kreditaufnahme ist ein bisschen komplizierter. Um Kredite aufzunehmen reicht nicht aus, sondern man muss sicherstellen, dass man auch zugesagt hat. die Verriegelung Ihrer Rtokens in das System als Sicherheiten zur Vergabe der Kreditaufnahmekraft (Borrowing Balance). Jedes verfügbare Vermögen wird aufgrund seines Sicherungsfaktors eine andere Menge an Kreditaufnahmen hinzufügen. Benutzer können sich dann entsprechend der Gesamtkreditleistung (Kreditlimit) leihen, die sie haben.
 
-There are shortcuts if your goal is to borrow - Quick Supply function is for you to quickly get the borrow balance as it enables you pledge when you supply the asset. Quick Borrow enables you to get the loan right away when you supply an asset.
+Es gibt Shortcuts wenn Ihr Ziel zu borgen ist - Quick Supply Funktion ist es für Sie, schnell den Kreditsaldo zu erhalten, da es Ihnen ermöglicht, bei der Bereitstellung des Assets zu versprechen. Quick Borrow ermöglicht Ihnen, den Kredit sofort zu erhalten, wenn Sie ein Asset liefern.
 
-Similar to many other DeFi projects, Pando Rings works with the concept of overcollateralization. This means that borrowers have to supply more value than they wish to borrow to avoid liquidation.
+Ähnlich wie viele andere DeFi-Projekte arbeitet Pando Rings mit dem Konzept der Überdeckung. Das bedeutet, dass die Kreditnehmer mehr Wert als sie aufnehmen wollen, um eine Liquidierung zu vermeiden.
 

@@ -1,21 +1,21 @@
 ---
-title: Read Info
-sidebar_position: 2
-date: 2021-09-30 23:18:01
+title: Info lesen
+sidebar_position: zwei
+date: 30-09-2021 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } von "@site/src/components/api";
 
 
-## Read MTG Info
+## MTG Info lesen
 
 ### GET /info
 
-This API will respond the MTG information of Pando Leaf.
+Diese API wird die MTG-Informationen von Pando Leaf beantworten.
 
 ````mdx-code-block
 :::info
-You can save the response to use it later because the MTG information wouldn't change frequently.
+Du kannst die Antwort speichern, um sie später zu verwenden, da sich die MTG-Informationen nicht oft ändern würden.
 :::
 ````
 
@@ -23,7 +23,7 @@ You can save the response to use it later because the MTG information wouldn't c
 
 <APIMetaPanel />
 
-<APIRequest title="Read MTG info" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/info' />
+<APIRequest title="MTG Info lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/info' />
 
 ```json title="Response"
 {
@@ -44,17 +44,17 @@ You can save the response to use it later because the MTG information wouldn't c
 }
 ```
 
-## Read Server Time
+## Serverzeit lesen
 
 ### GET /time
 
-This API will respond the server time of Pando Leaf.
+Diese API reagiert die Serverzeit von Pando Leaf.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/time" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read the server time" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/time' />
+<APIRequest title="Serverzeit lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/time' />
 
 ```json title="Response"
 {

@@ -8,7 +8,7 @@
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Bitte kontaktieren Sie den Eigentümer der Website, die Sie mit der ursprünglichen URL verlinkt hat, und teilen Sie ihm mit, dass ihr Link defekt ist.",
+    "message": "Bitte kontaktieren Sie den Besitzer der Seite, die Sie mit der ursprünglichen URL verlinkt hat, und teilen Sie ihm mit, dass der Link nicht mehr funktioniert.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
@@ -16,15 +16,15 @@
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog-Listenseitennavigation",
+    "message": "Navigation der Blog-Listenseite",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Neue Beiträge",
+    "message": "Neuere Einträge",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Alte Einträge",
+    "message": "Ältere Einträge",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
@@ -36,11 +36,11 @@
     "description": "The label alongside a tag list"
   },
   "theme.blog.post.readMore": {
-    "message": "Mehr lesen",
+    "message": "Weiter lesen",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog-Post-Seitennavigation",
+    "message": "Blog Post Seiten Navigation",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
@@ -52,7 +52,7 @@
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog Neueste Beiträge Navigation",
+    "message": "Aktuelle Blog-Beitragsnavigation",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.tags.tagsPageTitle": {
@@ -64,11 +64,11 @@
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} mit \"{tagName}\" getaggt",
+    "message": "{nPosts} tagged with \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Alle Schlagwörter anzeigen",
+    "message": "Alle Tags anzeigen",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
@@ -108,7 +108,7 @@
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "Seitenleiste einklappen",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
@@ -128,23 +128,23 @@
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "Diese Seite bearbeiten",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to heading",
+    "message": "Direkter Link zur Überschrift",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " am {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " von {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "Letztes Update{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
@@ -152,11 +152,11 @@
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "Zum Hauptinhalt springen",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "Auf dieser Seite",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.SearchPage.documentsFound.plurals": {
@@ -164,15 +164,15 @@
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
+    "message": "Suchergebnisse für \"{query}\"",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
+    "message": "Suche in der Dokumentation",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.inputPlaceholder": {
-    "message": "Type your search here",
+    "message": "Geben Sie hier Ihre Suche ein",
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
@@ -180,7 +180,7 @@
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "Search by Algolia",
+    "message": "Suche von Algolia",
     "description": "The ARIA label for Algolia mention"
   },
   "theme.SearchPage.noResultsText": {
@@ -188,7 +188,7 @@
     "description": "The paragraph for empty search result"
   },
   "theme.SearchPage.fetchingNewResults": {
-    "message": "Fetching new results...",
+    "message": "Neue Ergebnisse abrufen...",
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchBar.label": {
@@ -205,30 +205,30 @@
     "message": "*Pflichtfelder"
   },
   "com.api_params.parameters": {
-    "message": "Parameters"
+    "message": "Einstellungen"
   },
   "com.api_metapanel": {
-    "message": "Authentication and options"
+    "message": "Authentifizierung und Optionen"
   },
   "com.api_metapanel.public": {
-    "message": "Public Access"
+    "message": "Zugriffs-Level: Öffentlich"
   },
   "com.api_metapanel.authorization": {
-    "message": "Authorization"
+    "message": "Autorisierung"
   },
   "com.api_metapanel.limitation": {
-    "message": "Limitation"
+    "message": "Einschränkung"
   },
   "com.api_endpoint": {
-    "message": "Endpoint URL"
+    "message": "Endpunkt-URL"
   },
   "This Article needs additional information.": {
     "message": "Dieser Artikel benötigt zusätzliche Informationen."
   },
   "Please help improve it by": {
-    "message": "Please help improve it by"
+    "message": "Bitte helfen Sie mit, es zu verbessern von"
   },
   "polishing the content": {
-    "message": "polishing the content"
+    "message": "polieren des Inhalts"
   }
 }

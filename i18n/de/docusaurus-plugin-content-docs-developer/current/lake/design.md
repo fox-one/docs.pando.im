@@ -1,44 +1,44 @@
 ---
 title: Design
-sidebar_position: 1
-date: 2021-07-31 14:38:07
+sidebar_position: eins
+date: 31-07-2021 14:38:07
 ---
 
 
 ## Pando Lake Design
 
-> Pando Lake is a MTG implementation on Mixin Network of Uniswap V2
+> Pando Lake ist eine MTG-Implementierung im Mixin Netzwerk von Uniswap V2
 
-Pando Lake is an automated liquidity protocol powered by a constant product formula and implemented in [Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview). It obviates the need for single Mixin Dapp, prioritizing decentralization, censorship resistance, and security.
+Pando Lake ist ein automatisiertes Liquiditätsprotokoll mit einer konstanten Produktformel und implementiert in [Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview). Damit wird die Notwendigkeit einer einzigen Mixin Dapp vermieden, wobei Dezentralisierung, Zensurresistenz und Sicherheit Vorrang eingeräumt wird.
 
-Anyone can become a liquidity provider (LP) for a pool by depositing an equivalent value of each underlying token in return for pool tokens. These tokens track pro-rata LP shares of the total reserves, and can be redeemed for the underlying assets at any time.
+Jeder kann ein Liquiditätsanbieter (LP) für einen Pool werden, indem er einen gleichwertigen Wert von jedem zugrunde liegenden Token im Gegenzug für Pool-Token hinterlegt. Diese Token verfolgen anteilige LP-Aktien der Gesamtreserven und können jederzeit für die zugrunde liegenden Assets eingelöst werden.
 
-Pairs act as automated market makers, standing ready to accept one token for the other as long as the “constant product” formula is preserved. This formula, most simply expressed as **x * y = k**, states that trades must not change the product (k) of a pair’s reserve balances (x and y). Because k remains unchanged from the reference frame of a trade, it is often referred to as the invariant. This formula has the desirable property that larger trades (relative to reserves) execute at exponentially worse rates than smaller ones.
+Paare fungieren als automatisierte Marktmacher, stehen bereit, ein Zeichen für das andere zu akzeptieren, solange die Formel „konstante“ bleibt. Diese Formel, am einfachsten ausgedrückt als **x * y = k**, legt fest, dass der Handel das Produkt (k) der Reserveguthaben eines Paares (x und y) nicht ändern darf. Da k vom Bezugsrahmen eines Handels unverändert bleibt, wird es oft als invariant bezeichnet. Diese Formel hat die wünschenswerte Eigenschaft, die größere Handelsgeschäfte (im Vergleich zu Reserven) zu exponentiell schlechteren Zinssätzen ausführen als kleinere.
 
-> A modified [Curve](https://curve.fi) formula used on the stablecoin pools like USDT/USDC.
+> Eine modifizierte [Kurve](https://curve.fi) Formel für die Stablecoin Pools wie USDT/USDC.
 
-## Deposit
+## Einzahlung
 
-Each Pando Lake liquidity pool is a trading venue for a pair of Mixin Mainnet tokens. When a pool is created by the governance, its balances of each token are 0; in order for the pool to begin facilitating trades, someone must seed it with an initial deposit of each token. This first liquidity provider is the one who sets the initial price of the pool.
+Jeder Liquiditätspool am Pando Lake ist ein Handelsplatz für ein Paar Mixin Mainnet Tokens. Wenn ein Pool von der Governance erstellt wird, sind seine Salden von jedem Token 0; damit der Pool beginnen kann, den Handel zu erleichtern, muss jemand ihn mit einer ersten Kaution von jedem Token. Dieser erste Liquiditätsanbieter legt den ersten Preis für den Pool fest.
 
-The number of liquidity tokens This first liquidity provider will receive would equal `sqrt(x*y)`, where x and y represent the amount of each token provided. For the following providers, the number will be `min(x/reserve_x,y/reserve_y)*liquidity_shares`.
+Die Anzahl der Liquiditäts-Tokens Dieser erste Liquiditätsanbieter wird erhalten würde `sqrt(x*y)`, wobei x und y die Menge der einzelnen Token repräsentieren. Für die folgenden Anbieter lautet die Nummer `min(x/reserve_x,y/reserve_y)*liquidity_shares`.
 
-![deposit](./assets/pando_lake_deposit.png)
+![einzahlen](./assets/pando_lake_deposit.png)
 
-## Withdraw
+## Auszahlen
 
-To retrieve the underlying liquidity, plus any fees accrued, liquidity providers must give back their liquidity tokens, effectively exchanging them for their portion of the liquidity pool, plus the proportional fee allocation.
+Um die zugrunde liegende Liquidität zu erhalten, müssen die Liquiditätsanbieter zuzüglich anfallender Gebühren ihre Liquiditäts-Token zurückgeben, Sie werden effektiv gegen ihren Anteil am Liquiditätspool ausgetauscht, zuzüglich der anteiligen Gebührenzuweisung.
 
-The number of tokens retrieved will be `lp_token/liquidity_shares*reserve_x` and `lp_token/liquidity_shares*reserve_y`.
+Die Anzahl der abgerufenen Tokens beträgt `lp_token/liquidity_shares*reserve_x` und `lp_token/liquidity_shares*reserve_y`.
 
-![withdraw](./assets/pando_lake_withdraw.png)
+![auszahlen](./assets/pando_lake_withdraw.png)
 
-## Swap
+## Tauschen
 
-From the constant product formula it follows that the price of that token A is simply price_token_A = reserve_token_B / reserve_token_A. The market price only moves as the reserve ratio of the tokens in the pool changes, which happens when someone trades against it.
+Aus der konstanten Produktformel ergibt sich, dass der Preis dieses Tokens A einfach price_token_A = reserve_token_B / reserve_token_A ist. Der Marktpreis bewegt sich nur, wenn sich das Reserveverhältnis der Tokens im Pool ändert, was geschieht, wenn jemand dagegen handelt.
 
-The swapping rule is the constant product formula. When either token is withdrawn, a proportional amount of the other must be deposited, in order to make the constant(`k`) unchange.
+Die Auslagerungsregel ist die konstante Produktformel. Wenn eines der beiden Token zurückgezogen wird, muss ein proportionaler Betrag des anderen hinterlegt werden, um die Konstante (`k`) unverändert zu lassen.
 
-Pando Lake applies a 0.3% fee (0.04% for stablecoin pools) to trades, which is added to reserves to increases `k` actually as a payout to liquidation providers.
+Pando Lake erhebt eine Gebühr von 0,3% (0. 4% für Stablecoin Pools) zu Trades, die zu Reserven hinzugefügt werden, um `k` tatsächlich als Auszahlung an Liquidationsanbieter zu erhöhen.
 
-![swap](./assets/pando_lake_swap.png)
+![tauschen](./assets/pando_lake_swap.png)

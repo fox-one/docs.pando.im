@@ -45,7 +45,13 @@ If you're not familiar with Github and the i18n of Pando, we recommend you to us
 2. Browse the translation status and progress at [Pando's Page at Crwodin](https://pando.crowdin.com/)
 3. Get familiar with the Crowdin translation UI, as you will need to use it to translate JSON and Markdown files
 
-### Translate at Github
+````mdx-code-block
+:::info
+Please note that all the code in the documentation should not be translated.
+:::
+````
+
+### Initialize the Translation
 
 #### Generate new translation files for new languages
 

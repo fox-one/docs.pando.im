@@ -4,23 +4,23 @@ sidebar_position: 7
 date: 2021-10-12 22:33:07
 ---
 
-Pando seed(PS) is launched on Aug 4,2021 BigONE, Exin, FOX, Poolin and Team Mixin. The total supply of PS is  **10,000,000,000,000,000**.
+Pando Seed(PS) 는 BigONE, Exin, FOX, Poolin 및 Mixin 팀에 의해 2021년 8월 4일에 출시되었습니다. PS의 총 공급량은 **10,000,000,000,000,000**입니다.
 
-## Claim PS
+## PS 수령
 
-You can claim 1.024 Pando Seed Token on the Pando Seed robot every day.
+Pando Seed 로봇에서 매일 1.024 Pando Seed 토큰을 받을 수 있습니다.
 
 ![](../assets/pando-seed.png)
 
-Search Mixin ID **7000104113** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando seed.
+Mixin Messenger 앱에서 Mixin ID **7000104113**을 검색하고 파란색 숫자를 클릭합니다. 그런 다음 봇을 추가하고 작은 로봇 아바타를 클릭하여 Pando seed를 엽니다.
 
-## Store PS
+## PS 저장
 
-PS is an [Ethereum token](https://etherscan.io/token/0x0e94772146d2e344aa02a976004101bd595c9e66), and has been transfered to Mixin Network since [Aug 4,2021](https://etherscan.io/tx/0x7e179deaf2abd8d3d53e09007791c8e4208932b364f81297c09912e9b750277a). So you can store PS in any Mixin Network compatible wallet or Ethereum-compatible wallet.
+PS는 [이더리움기반 토큰](https://etherscan.io/token/0x0e94772146d2e344aa02a976004101bd595c9e66)이며, [2021년8월4일](https://etherscan.io/tx/0x7e179deaf2abd8d3d53e09007791c8e4208932b364f81297c09912e9b750277a)부터 Mixin Network로 이전되었습니다. 따라서 Mixin Network 호환 지갑이나 Ethereum 호환 지갑에 PS를 저장할 수 있습니다.
 
-## Use PS
+## PS 사용
 
-In pando, there are several places that need to use pando seed, namely [generate](https://docs.pando.im/docs/leaf/tutorials/generate-more) and [withdraw](https://docs.pando.im/docs/leaf/tutorials/withdraw) in leaf, and [borrow](https://docs.pando.im/docs/rings/tutorials/how-to-borrow), [withdraw](https://docs.pando.im/docs/rings/tutorials/how-to-withdraw) and [unpledge](https://docs.pando.im/docs/rings/tutorials/how-to-unpledge) in Rings.
+Pando에는 pando seed를 사용해야 하는 여러 경우가 있습니다. 즉 leaf에서[조폐](https://docs.pando.im/docs/leaf/tutorials/generate-more) 와 [철회](https://docs.pando.im/docs/leaf/tutorials/withdraw), Rings에서[대출](https://docs.pando.im/docs/rings/tutorials/how-to-borrow), [출금](https://docs.pando.im/docs/rings/tutorials/how-to-withdraw) 그리고 [(담보물)되찾기](https://docs.pando.im/docs/rings/tutorials/how-to-unpledge)에 사용됩니다.
 
-It only costs 0.00000001 PS per operation.
+작업당 비용은 0.00000001PS에 불과합니다.
 

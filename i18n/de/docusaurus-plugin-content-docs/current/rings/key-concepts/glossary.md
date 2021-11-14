@@ -1,70 +1,70 @@
 ---
 title: Glossary
 sidebar_position: 20
-date: 2021-09-04 12:33:07
+date: 04-09-2021 12:33:07
 ---
 
-### Key Processes
+### Schlüsselprozesse
 
-**Suppling** The process of putting an asset into Pando Rings. As a result, you get rTokens in return, and will earn interest as long as you are supplying the asset.
+**Ergänzung** Der Prozess, ein Asset in Pando Rings zu legen. Als Ergebnis erhalten Sie im Gegenzug Rtokens und verdienen Zinsen, solange Sie das Vermögen liefern.
 
-**Pledging** The process of locking rTokens into the system as collateral to get borrowing power.
+**Bitten** Der Prozess der Verriegelung von Rtokens als Sicherheiten in das System, um Kreditleistung zu erhalten.
 
-**Unpledging** The process of unlocking rTokens from the system and as a result, reducing the borrowing power.
+**Freistellen** Der Prozess des Entsperren von Rtokens vom System und als Folge der Reduzierung der Kreditleistung.
 
-**Withdrawing** The process of getting back an asset from Pando Rings and have it back to your wallet. You will stop earning interest after you withdraw an asset.
+**Zurückziehen** Der Prozess, um ein Asset von Pando Rings zurückzuholen und es wieder auf Ihre Brieftasche zu bringen. Sie werden keine Zinsen mehr verdienen, nachdem Sie ein Vermögen zurückgezogen haben.
 
-**Borrowing** The process of getting a loan in Pando Rings.
+**Kreditaufnahme** Der Prozess des Kredites in Pando Rings.
 
-**Repaying** The process of paying back your borrowed asset plus the accrued borrow interest.
+**Rückzahlung** Der Prozess der Rückzahlung Ihres geliehenen Vermögenswertes zuzüglich der anfallenden Kreditzinsen.
 
-**rToken** rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets.
+**rToken** rToken ist ein ERC-20-Token, das im Wesentlichen eine Tokenisierte Versorgungsposition ist und als Sicherheiten in einem anderen Liquiditätspool verwendet oder gegen andere Kryptoanlagen getauscht werden kann.
 
-**Liquidation** When a user's maximum borrow capacity rendered by the total collateral value cannot cover the total loan value, liquidation will happen. In the process, others repay some or all of the user's outstanding borrow on behalf of the borrower and in return receive a discounted amount of collateral held by the borrower.
+**Liquidation** Wenn die maximale Darlehenskapazität eines Benutzers durch den Gesamtwert der Sicherheiten den gesamten Kreditwert nicht decken kann, erfolgt die Liquidierung. In dem Prozess Andere zahlen einen oder ganzen der ausstehenden Kredite des Nutzers im Namen des Kreditnehmers zurück und erhalten im Gegenzug eine ermäßigte Menge an Sicherheiten des Kreditnehmers.
 
-### Market
+### Markt
 
-**Total Supply** It stands for the total supplied amount of all assets in the markets of the very moment.
+**Gesamtmenge** Es steht für die Gesamtmenge aller Vermögenswerte auf den Märkten des Augenblicks.
 
-**Supply Volume** It stands for the total supplied amount of a specific asset in the market of the very moment.
+**Versorgungsvolumen** Es steht für die Gesamtmenge eines bestimmten Assets im Markt des Augenblicks.
 
-**Total Borrow** It stands for the total borrowed amount of all assets in the markets of the very moment.
+**Total Borrow** Es steht für den gesamten geliehenen Betrag aller Vermögenswerte auf den Märkten des Augenblicks.
 
-**Liquidity** It stands for the net amount available to borrow of all the markets of the very moment. It equals to Total Supply minus Total Borrow.
+**Liquidität** Es steht für den Nettobetrag, der zur Verfügung steht, um sich alle Märkte des Augenblicks zu leihen. Es entspricht dem Gesamtangebot minus Gesamtdarlehen Kreditaufnahme.
 
-**Maximum Market Availability** The amount available to borrow of a specific asset. It equals to the Total Supply of an asset minus the Total Borrow of the same asset.
+**Maximale Marktverfügbarkeit** Der verfügbare Betrag, um ein bestimmtes Asset zu leihen. Es entspricht dem Gesamtangebot eines Vermögenswerts abzüglich des Gesamtdarlehens eines Vermögenswertes des gleichen Vermögenswerts.
 
-**24h Supply** It stands for the total supplied amount of all assets in the markets within the last 24 hours.
+**24h Versorgung** Es steht für die Gesamtmenge aller Vermögenswerte auf den Märkten innerhalb der letzten 24 Stunden.
 
-**24h Borrow** It stands for the total borrowed amount of all assets in the markets within the last 24 hours.
+**24h Kredit** Er steht für den gesamten geliehenen Betrag aller Vermögenswerte an den Märkten innerhalb der letzten 24 Stunden.
 
-**Supply APY** The estimated annual percentage yield for supplying an asset. The interest is compounded and is calculated every 15 seconds.
+**Versorgungs-APY** Die geschätzte jährliche Rendite für die Versorgung eines Assets mit einem Asset. Der Zinssatz wird verstärkt und alle 15 Sekunden berechnet.
 
-**Borrow APY** The estimated annual interest rate of an asset a borrower need to pay. The interest is compounded and is calculated every 15 seconds.
+**Kredit-APY** Der geschätzte jährliche Zinssatz eines Vermögenswerts, den ein Kreditnehmer zahlen muss. Der Zinssatz wird verstärkt und alle 15 Sekunden berechnet.
 
-**Collateral Factor** It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors. Borrowing allowance, or borrowing capacity is determined as (pledged asset * its collateral factor). Each borrow is thus always initially over-collateralized.
+**Collateral Factor** Es stellt den maximalen Prozentsatz dar, den Sie vom Wert Ihres versandten Vermögenswertes leihen können. Es kann für verschiedene Vermögenswerte variieren. Im Allgemeinen weisen große oder liquide Vermögenswerte hohe Sicherheitsfaktoren auf, während kleine oder illiquide Vermögenswerte geringe Sicherheitsfaktoren haben. Kreditvergabe, oder Kreditkapazität wird als (verpfändeter Vermögenswert * seine Sicherungsfaktor) festgelegt. Jeder Kredit ist daher zunächst immer überdeckt.
 
-### Key Personal Metrics
+### Persönliche Schlüsselmetriken
 
-**Net APY** Net APY(annual percentage yield) reflects the estimatd annual net yield based on the Supply APY and Borrow APY of the very moment. It indicates whether you are making money or losing money at the current APYS.
+**Netto-APY** Die Netto-APY(jährliche prozentuale Rendite) reflektiert den geschätzten Jahresrendit, basierend auf der Versorgungs-APY- und Kredit-APY-APY des Augenblicks. Es zeigt an, ob Sie im aktuellen APYS Geld verdienen oder Geld verlieren.
 
-**Borrow Limit** The maximum amount you can borrow. You can increase your borrow limit by increasing the collateral (pledging more assets).
+**Kreditlimit** Der maximale Betrag, den Sie ausleihen können. Sie können Ihr Kreditlimit erhöhen, indem Sie die Sicherheiten erhöhen (Verpfändung weiterer Vermögenswerte).
 
-**Borrow Balance** Borrow Balance = Borrow Limit - Your Borrow. It is the amount you can yet to borrow. If your Borrow Balance is 0, you cannot borrow any asset anymore.
+**Kreditsaldo** Kreditsaldo = Kreditlimit - Kreditlimit. Es ist der Betrag, den Sie noch ausleihen können. Wenn Ihr Kreditsaldo 0 ist, können Sie keine Vermögenswerte mehr leihen.
 
-**Borrow/Borrow Limit** It is the percentage of a user's Borrow against the maximum borrow capacity. Itis used to indicate your loan risk.
+**Kredit-/Kreditlimit** Es ist der Prozentsatz des Kredits eines Benutzers gegen die maximale Kreditkapazität. Itis wurde verwendet, um Ihr Kreditrisiko anzuzeigen.
 
-**My Supply** The total amount of all the assets you have supplied (principal plus the accrued interests).
+**Mein Angebot** Der Gesamtbetrag aller von Ihnen gelieferten Vermögenswerte (Hauptkapital plus die anfallenden Zinsen).
 
-**My Borrow** The total amount of all the assets you have borrowed (principal plus the accrued interests).
+**Mein Angebot** Der Gesamtbetrag aller von Ihnen gelieferten Vermögenswerte (Hauptkapital plus die anfallenden Zinsen).
 
-**Total Pledge** The total amount you have pledged as collateral.
+**Gesamtes Versprechen** Der Gesamtbetrag, den Sie als Sicherheit zugesagt haben.
 
-**Total Unpledged** The total amount you haven't pledged as collateral.
+**Gesamt nicht versandt** Der Gesamtbetrag, den Sie nicht als Sicherheiten zugesagt haben.
 
-**Available to Withdraw** The amount of a specific asset you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows
+**Verfügbar zum Auszahlen** Der Betrag eines bestimmten Assets kann ausgezahlt werden. Es ist die Summe Ihrer nicht zugesagten Vermögenssumme und der verpfändete Betrag, die keine Kredite deckt
 
-**Available to Unpledge** The amount of a specific asset you can unpledge. It is your total pledged amount of the asset minus the part covering the outstanding borrow.
+**Verfügbar zum Unversprechen** Der Betrag eines bestimmten Vermögenswerts, den Sie freigeben können. Es ist Ihr gesamter verpfändeter Betrag des Vermögenswertes abzüglich des Teils, der die ausstehenden Kredite deckt.
 
 
 

@@ -1,347 +1,347 @@
 ---
-title: Technical Design
-sidebar_position: 2
-date: 2021-07-12 23:33:07
+title: Technisches Design
+sidebar_position: zwei
+date: 12-07-2021 23:33:07
 ---
 
-# Pando Leaf Design Document
+# Pando Blatt-Design-Dokument
 
-## Interact with Pando
+## Interagiere mit Pando
 
-All participants of Pando complete the interaction by transferring tokens to the multisig wallet. Node worker **Syncer** syncs the payments as mixin multisig outputs; another worker **Payee** processes all outputs in order.
+Alle Teilnehmer von Pando vervollständigen die Interaktion durch Übertragung von Token auf die Multisig Wallet. Node Worker **Syncer** synchronisiert die Zahlungen als Mixin Multisig Ausgabe; ein weiterer Arbeiter **Payee** verarbeitet alle Ausgänge in der Reihenfolge.
 
 ![Pando Design](design/mtg_design.png)
 
 ### Mixin Multisig Output
 
-**Output:**
+**Ausgang:**
 
-| field     | description      |
-| --------- | ---------------- |
-| Sender    | user mixin id    |
-| CreatedAt | payment time     |
-| AssetID   | payment asset id |
-| Amount    | payment amount   |
-| Memo      | extra message    |
+| feld        | beschreibung          |
+| ----------- | --------------------- |
+| Absender    | user mixin id         |
+| Erstellt am | zahlungszeit          |
+| AnlageID    | zahlung Asset Id      |
+| Betrag      | zahlungsbetrag        |
+| Memo        | zusätzliche Nachricht |
 
-**Output Memo:**
+**Ausgabe Memo:**
 
-Memo contain the **TransactionAction** information, see details in [DecodeTransactionAction](https://github.com/fox-one/pando/blob/main/core/action.go).
+Memo enthält die **TransaktionAktion** Informationen, siehe Details in [DecodeTransactionAction](https://github.com/fox-one/pando/blob/main/core/action.go).
 
-The memo is maybe AES-encrypted, an ed25519 public key used for compound AES key/iv will be in the first 32 bytes.
+Die Memo ist vielleicht AES-verschlüsselt, ein ed25519 öffentlicher Schlüssel, der für zusammengesetzte AES-Schlüssel verwendet wird, wird in den ersten 32 Bytes sein.
 
-### TransactionAction Definition
+### Definition der Transaktionsaktion
 
-| field    | description                                | type  |
-| -------- | ------------------------------------------ | ----- |
-| FollowID | user defined trace id for this transaction | uuid  |
-| Body     | action type & relevant parameters          | bytes |
+| feld     | beschreibung                                      | type  |
+| -------- | ------------------------------------------------- | ----- |
+| FollowID | benutzerdefinierte Trace-Id für diese Transaktion | uUID  |
+| Körper   | aktionstyp & relevante Parameter                  | bytes |
 
-## Workers
+## Arbeiter
 
-1. **Syncer** sync unhanded utxo by mixin messenger api & store into WalletStore as **outputs** in updated asc order.
-2. **Payee** pull unhanded utxo from WalletStore in order and parse memo to get the action then handle it. Transfers may be created during handling.
-3. **Assigner** select enough unspent UTXO and assign to a pending transfer.
-4. **Cashier** pull unhandled transfers from WalletStore in order, then request & sign multisig transfer. If enough signatures collected, generate a raw transaction.
-5. **TxSender** commit raw transactions to Mixin Network.
+1. **Syncer** synchronisiert unhand-utxo durch Mixin Messenger api & Store in WalletStore als **Ausgänge** in aktualisierter asc Reihenfolge.
+2. **Zahler** ziehen Sie unhandene utxo aus dem WalletStore in der Reihenfolge und analysieren Sie Memo, um die Aktion zu erhalten und dann mit ihr umzugehen. Transfers können während der Bearbeitung erstellt werden.
+3. **Assigner** wählen Sie genug nicht verbrauchte UTXO aus und weisen Sie einer ausstehenden Übertragung zu.
+4. **Kasse** ziehen Sie unbehandelte Überweisungen vom WalletStore in der Reihenfolge, dann fordern Sie & eine Multisig Übertragung an. Wenn genug Signaturen gesammelt werden, generieren Sie eine Rohtransaktion.
+5. **TxSender** übertrage rohe Transaktionen in Mixin Network.
 
-### Syncer Workflow
+### Syncer-Workflow
 
-![Syncer Workflow](design/pando-syncer.png)
+![Syncer-Workflow](design/pando-syncer.png)
 
-### Payee Workflow
+### Zahlungsempfänger Workflow
 
-![Payee Workflow](design/pando-payee.png)
+![Zahlungsempfänger Workflow](design/pando-payee.png)
 
-### Assigner & Cashier & TxSender Workflow
+### Zuweiser & Kasse & TxSender Workflow
 
-![Assigner & Cashier Workflow](design/pando-cashier.png)
+![Zuweiser & Kassierer-Workflow](design/pando-cashier.png)
 
-## Actions
+## Aktionen
 
-All actions supported by Pando with groups cat,flip,oracle,proposal,sys and vat. see [core/action](https://github.com/fox-one/pando/blob/main/core/action.go) for details.
+Alle Aktionen von Pando unterstützt mit Gruppen Katze, Flip,Orakel,Vorschlag, Sys und Vat. siehe [Kern/Aktion](https://github.com/fox-one/pando/blob/main/core/action.go) für Details.
 
-### Sys - system operations
+### Sys - Systemoperationen
 
-#### #1 Withdraw
+#### #1 Zurückziehen
 
 > pkg/maker/sys/withdraw.go
 
-withdraw any assets from the multisig wallet, proposal required.
+abheben von Vermögenswerten aus der Multisig Wallet, Vorschlag erforderlich.
 
-**Parameters:**
+**Einstellungen:**
 
-| name     | type | description         |
-| -------- | ---- | ------------------- |
-| asset    | uuid | withdraw asset id   |
-| amount   | uuid | withdraw amount     |
-| opponent | uuid | receiver's mixin id |
+| name   | type | beschreibung            |
+| ------ | ---- | ----------------------- |
+| asset  | uuid | abheben Asset-Id        |
+| betrag | uuid | betrag abheben          |
+| gegner | uuid | mixin id des Empfängers |
 
-### Proposal - governance system
+### Vorschlag - Governance-System
 
-#### #11 Make
+#### #11 machen
 
 > pkg/maker/proposal/make.go
 
-create a new proposal
+einen neuen Vorschlag erstellen
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type  | description                                         |
-| ---- | ----- | --------------------------------------------------- |
-| data | bytes | action type & parameters will be executed if passed |
+| name | type  | beschreibung                                             |
+| ---- | ----- | -------------------------------------------------------- |
+| data | bytes | aktionstyp & Parameter werden ausgeführt, wenn übergeben |
 
-#### #12 Shout
+#### #12 Schreien
 
 > pkg/maker/proposal/shout.go
 
-request node administrator to vote for this proposal
+den Node-Administrator auffordern, für diesen Vorschlag zu stimmen
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description       |
-| ---- | ---- | ----------------- |
-| id   | uuid | proposal trace id |
+| name | type | beschreibung     |
+| ---- | ---- | ---------------- |
+| id   | uUID | vorschlagspur-Id |
 
-#### #13 Vote
+#### #13 Stimmen
 
 > pkg/maker/proposal/vote.go
 
-vote for a proposal, nodes only. If enough votes collected, the attached action will be executed on all nodes automatically.
+stimme für einen Vorschlag, nur Knoten. Wenn genug Stimmen gesammelt werden, wird die angehängte Aktion automatisch auf allen Knoten ausgeführt.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description       |
-| ---- | ---- | ----------------- |
-| id   | uuid | proposal trace id |
+| name | type | beschreibung     |
+| ---- | ---- | ---------------- |
+| id   | uUID | vorschlagspur-Id |
 
-### Cat - manager collaterals
+### Katze - Manager Sicherheiten
 
-#### #21 Create
+#### #21 Erstellen
 
 > pkg/maker/cat/create.go
 
-create a new collateral type, proposal required.
+erstellen Sie einen neuen Collateral Typ, Vorschlag erforderlich.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type   | description          |
-| ---- | ------ | -------------------- |
-| gem  | uuid   | collateral asset id  |
-| dai  | uuid   | debt asset id        |
-| name | string | collateral type name |
+| name  | type   | beschreibung         |
+| ----- | ------ | -------------------- |
+| juwel | uUID   | collateral Asset Id  |
+| dai   | uUID   | schulden-Asset-Id    |
+| name  | string | collateral type name |
 
-#### #22 Supply
+#### #22 Versorgung
 
 > pkg/maker/cat/supply.go
 
-supply dai token to increase the total debt ceiling for this collateral type. Payment asset id must be equal to the debt asset id.
+lieferung dai token zur Erhöhung der Gesamtschuldgrenze für diese Sicherheiten zu erhöhen. Die Id der Zahlungsverpflichtung muss der Verschuldungsanforderung entsprechen.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description         |
+| name | type | beschreibung        |
 | ---- | ---- | ------------------- |
-| id   | uuid | collateral trace id |
+| id   | uUID | collaterale Spur-Id |
 
-#### #23 Edit
+#### #23 bearbeiten
 
 > pkg/maker/cat/edit.go
 
-modify collateral's one or more attributes, proposal required.
+ein oder mehrere Attribute der Collateral modifizieren, Vorschlag erforderlich.
 
-**Parameters:**
+**Einstellungen:**
 
-| name  | type   | description         |
-| ----- | ------ | ------------------- |
-| id    | uuid   | collateral trace id |
-| key   | string | attribute name      |
-| value | string | attributes value    |
+| name      | type   | beschreibung        |
+| --------- | ------ | ------------------- |
+| id        | uUID   | collaterale Spur-Id |
+| schlüssel | string | attributbezeichnung |
+| wert      | string | attributwert        |
 
-#### #24 Fold
+#### #24 Falten
 
 > pkg/maker/cat/fold.go
 
-modify the debt multiplier(rate), creating / destroying corresponding debt.
+modifizieren Sie die Schulden multiplikator(Kurse), erstellen / zerstören entsprechende Schulden.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description         |
+| name | type | beschreibung        |
 | ---- | ---- | ------------------- |
-| id   | uuid | collateral trace id |
+| id   | uuid | collaterale Spur-Id |
 
-### Vat - manager vaults
+### Vat - Manager Tresore
 
-#### #31 Open
+#### #31 Öffnen
 
 > pkg/maker/vat/open.go
 
-open a new vault with the special collateral type
+öffne einen neuen Tresor mit dem speziellen Sicherheitstyp
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type    | description         |
-| ---- | ------- | ------------------- |
-| id   | uuid    | collateral trace id |
-| debt | decimal | initial debt        |
+| name   | type        | beschreibung        |
+| ------ | ----------- | ------------------- |
+| id     | uuid        | collaterale Spur-Id |
+| schuld | dezimalzahl | erste Schulden      |
 
-#### #32 Deposit
+#### #32 Einzahlung
 
 > pkg/maker/vat/deposit.go
 
-transfer collateral into a Vault.
+übertragen von Sicherheiten in einen Vault.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| name | type | beschreibung    |
+| ---- | ---- | --------------- |
+| id   | uuid | trester-Spur Id |
 
-#### #33 Withdraw
+#### #33 Zurückziehen
 
 > pkg/maker/vat/withdraw.go
 
-withdraw collateral from a Vault, vault owner only.
+rücktritt von Sicherheiten nur von einem Tresorbesitzer, Tresor.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type    | description          |
-| ---- | ------- | -------------------- |
-| id   | uuid    | vault trace id       |
-| dink | decimal | change in collateral |
+| name | type        | beschreibung              |
+| ---- | ----------- | ------------------------- |
+| id   | uuid        | trester-Spur Id           |
+| dink | dezimalzahl | änderung der Sicherheiten |
 
-#### #34 Payback
+#### #34 Rückzahlung
 
 > pkg/maker/vat/payback.go
 
-decrease Vault debt.
+verringerte Tresorschuld.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| name | type | beschreibung    |
+| ---- | ---- | --------------- |
+| id   | uUID | trester-Spur Id |
 
-#### #35 Generate
+#### #35 Generieren
 
 > pkg/maker/vat/generate.go
 
-increase Vault debt, vault owner only.
+erhöhung der Tresorschuld, Tresorbesitzer nur.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type    | description    |
-| ---- | ------- | -------------- |
-| id   | uuid    | vault trace id |
-| debt | decimal | change in debt |
+| name   | type        | beschreibung          |
+| ------ | ----------- | --------------------- |
+| id     | uUID        | trester-Spur Id       |
+| schuld | dezimalzahl | änderung der Schulden |
 
-### Flip - manager auctions
+### Flip - Manager Auktionen
 
 #### #41 Kick
 
 > pkg/maker/flip/kick.go
 
-put collateral up for auction from an unsafe vault.
+die Sicherheiten für die Auktion aus einem unsicheren Gewölbe aufstellen.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description    |
-| ---- | ---- | -------------- |
-| id   | uuid | vault trace id |
+| name | type | beschreibung    |
+| ---- | ---- | --------------- |
+| id   | uUID | trester-Spur Id |
 
 #### #42 Bid
 
 > pkg/maker/flip/bid.go
 
-pay dai to participate in the auction.
+bezahlen dai an der Auktion teilzunehmen.
 
-> Starting in the tend-phase, bidders compete for a fixed lot amount of Gem with increasing bid amounts of Dai. Once tab amount of Dai has been raised, the auction moves to the dent-phase. The point of the tend phase is to raise Dai to cover the system's debt. During the dent-phase bidders compete for decreasing lot amounts of Gem for the fixed tab amount of Dai. Forfeited Gem is returned to the liquidated vault for the owner to retrieve. The point of the dent phase is to return as much collateral to the Vault holder as the market will allow.
+> Ab der Zehntphase konkurrieren Bieter um eine feste Menge Gem mit steigenden Geboten von Dai. Sobald der Tabellenbetrag von Dai erhöht wurde, bewegt sich die Auktion in die Dentphase. Der Sinn der Phase besteht darin, Dai anzuheben, um die Schulden des Systems abzudecken. Während der Dentphasen-Bieter um die Verringerung der Menge von Gem für den festen Tab-Betrag von Dai. Verlassene Gem wird in den liquidierten Tresor zurückgegeben, damit der Eigentümer abholen kann. Der Sinn der Dungsphase besteht darin, dem Vault-Inhaber so viele Sicherheiten wie es der Markt zulassen wird.
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type    | description       |
-| ---- | ------- | ----------------- |
-| id   | uuid    | flip trace id     |
-| lot  | decimal | collateral amount |
+| name   | type        | beschreibung       |
+| ------ | ----------- | ------------------ |
+| id     | uuid        | flip-Trace-Id      |
+| partie | dezimalzahl | besicherter Betrag |
 
 #### #43 Deal
 
 > pkg/maker/flip/deal.go
 
-claim a winning bid / settles a completed auction
+ein Gewinnangebot einholen / eine abgeschlossene Auktion abschließen
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description   |
+| name | type | beschreibung  |
 | ---- | ---- | ------------- |
-| id   | uuid | flip trace id |
+| id   | uuid | flip-Trace-Id |
 
-### Oracle - manager price oracle
+### Oracle - Manager Preis Orakel
 
-#### #51 Create
+#### #51 Erstellen
 
 > pkg/maker/oracle/create.go
 
-register a new oracle for the asset, proposal required.
+ein neues Orakel für das Vermögen registrieren, Vorschlag erforderlich.
 
-**Parameters:**
+**Einstellungen:**
 
-| name      | type      | description                              |
-| --------- | --------- | ---------------------------------------- |
-| id        | uuid      | asset id                                 |
-| price     | decimal   | initial price                            |
-| hop       | int64     | time delay in seconds between poke calls |
-| threshold | int64     | number of governors required when poke   |
-| ts        | timestamp | request timestamp                        |
+| name      | type        | beschreibung                                       |
+| --------- | ----------- | -------------------------------------------------- |
+| id        | uuid        | asset Id                                           |
+| preis     | dezimalzahl | erstpreis                                          |
+| hüpfen    | int64       | zeitverzögerung in Sekunden zwischen Poke-Aufrufen |
+| grenzwert | int64       | anzahl der benötigten Governors bei poke           |
+| ts        | zeitstempel | zeitstempel anfordern                              |
 
-#### #52 Edit
+#### #52 bearbeiten
 
 > pkg/maker/oracle/edit.go
 
-modify an oracle's next price, hop & threshold, proposal required.
+ändern Sie den nächsten Preis eines Orakels, Hopf & Schwellenwert, Vorschlag erforderlich.
 
-**Parameters:**
+**Einstellungen:**
 
-| name  | type   | description      |
-| ----- | ------ | ---------------- |
-| id    | uuid   | asset id         |
-| key   | string | attribute name   |
-| value | string | attributes value |
+| name      | type   | beschreibung        |
+| --------- | ------ | ------------------- |
+| id        | uuid   | asset id            |
+| schlüssel | string | attributbezeichnung |
+| wert      | string | attributwert        |
 
 #### #53 Poke
 
 > pkg/maker/oracle/poke.go
 
-updates the current feed value and queue up the next one.
+aktualisiert den aktuellen Feed-Wert und die Warteschlange nach oben.
 
-**Parameters:**
+**Einstellungen:**
 
-| name  | type      | description       |
-| ----- | --------- | ----------------- |
-| id    | uuid      | asset id          |
-| price | decimal   | new next price    |
-| ts    | timestamp | request timestamp |
+| name  | type        | beschreibung          |
+| ----- | ----------- | --------------------- |
+| id    | uuid        | asset id              |
+| preis | dezimalzahl | neuer nächster Preis  |
+| ts    | zeitstempel | zeitstempel anfordern |
 
 #### #54 Rely
 
 > pkg/maker/oracle/rely.go
 
-add a new price feed to the whitelist, proposal required
+einen neuen Preisfeed zur Whitelist hinzufügen, Vorschlag erforderlich
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type  | description   |
-| ---- | ----- | ------------- |
-| id   | uuid  | feed mixin id |
-| key  | bytes | public key    |
+| name      | type  | beschreibung           |
+| --------- | ----- | ---------------------- |
+| id        | uUID  | user mixin id          |
+| schlüssel | bytes | öffentlicher Schlüssel |
 
-#### #55 Deny
+#### #55 Leugnen
 
 > pkg/maker/oracle/deny.go
 
-remove a price feed from the whitelist, proposal required
+einen Preisfeed von der Whitelist entfernen, Vorschlag erforderlich
 
-**Parameters:**
+**Einstellungen:**
 
-| name | type | description   |
+| name | type | beschreibung  |
 | ---- | ---- | ------------- |
-| id   | uuid | feed mixin id |
+| id   | uuid | user mixin id |

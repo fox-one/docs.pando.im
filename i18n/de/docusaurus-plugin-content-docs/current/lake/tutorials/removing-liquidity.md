@@ -1,25 +1,25 @@
 ---
-title: Removing liquidity
-sidebar_position: 4
-date: 2021-08-15 22:33:07
+title: Liquidität löschen
+sidebar_position: vier
+date: 15-08-2021 22:33:07
 ---
 
-Entry 1: Pools page - click on the specific pool - Pool page "-"
+Eintrag 1: Pool-Seite - Klicken Sie auf die spezifische Pool-Seite "-"
 
 ![](../assets/remove-liquidity-p1.png)
 
-Entry 2: If you are already on the Swap page, find "remove Liquidity" in the Assets pool section
+Eintrag 2: Wenn Sie bereits auf der Swap-Seite sind, finden Sie "Liquidity" im Assets Pool-Bereich
 
 ![](../assets/remove-liquidity-p2.png)
 
-Entry 3: If you have previously provided liquidity, you can find the pool on the Me page. Click on the pool and you will see "-"
+Eintrag 3: Wenn Sie zuvor Liquidität zur Verfügung gestellt haben, finden Sie den Pool auf der Me Seite. Klicken Sie auf den Pool und Sie "-"sehen werden
 
 ![](../assets/remove-liquidity-p3.png)
 
 ````mdx-code-block
 :::tip
 
-There is no handling fee for remove liquidity.
+Es gibt keine Bearbeitungsgebühr für Liquidität zu entfernen.
 
 :::
 ````

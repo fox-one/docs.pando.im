@@ -1,97 +1,97 @@
 ---
-title: Interest Rate Determination
-sidebar_position: 4
-date: 2021-10-16 12:33:07
+title: Zinsfestlegung
+sidebar_position: vier
+date: 16-10-2021 12:33:07
 ---
 
-All interest rates in Pando Rings are determined as a function of **utilization rate**. **With the changes in the utilization rate, interest rates continuously fluctuate.**
+Alle Zinssätze in Pando Rings werden in Abhängigkeit von **Auslastungsrate** ermittelt. **Mit den Änderungen der Auslastungsrate schwanken die Zinssätze.**
 
 
-### The Utilization Rate
+### Die Nutzungsrate
 
-The utilization rate for a money market is defined as:
+Die Verwendungsrate für einen Geldmarkt ist definiert als:
 
 
 ``````
 Utilization_rate = market.total_borrows/(market.total_cash + market.borrows - market.reserves)
 ``````
 
-Where
-- market.total_borrows refers to the amount of total borrow of a certain money market
-- market.total_cash refers to the amount left in the system of a certain money market
-- market.reserves refers to the amount that is kept as profit of a certain money market
+Wo
+- market.total_borrows bezieht sich auf den Betrag der gesamten Kreditaufnahme eines bestimmten Geldmarktes
+- market.total_cash bezieht sich auf den im System verbleibenden Betrag eines bestimmten Geldmarktes
+- market.Reserven bezieht sich auf den Betrag, der als Gewinn eines bestimmten Geldmarktes gehalten wird
 
-The formula can be interpreted roughly as the percentage of money borrowed out of the total money supplied.
+Die Formel kann in etwa als Prozentsatz des Geldes interpretiert werden, das aus dem gesamten zur Verfügung gestellten Geld aufgenommen wurde.
 
-A high utilization rate signifies that demand is high and a lot of borrowing is taking place, so interest rates go up as an incentive to get more people to inject cash into the system. A low utilization rate signifies that demand for borrowing is low, so interest rates go down to encourage more people to borrow cash from the system.
+Eine hohe Auslastungsrate bedeutet, dass die Nachfrage hoch ist und eine Menge Kreditaufnahme stattfindet. also steigen die Zinssätze als Anreiz, mehr Menschen dazu zu bringen, Bargeld in das System zu pumpen. Eine niedrige Auslastungsrate bedeutet, dass die Nachfrage nach Krediten gering ist, also sinken die Zinssätze, um mehr Menschen zu ermutigen, Geld aus dem System zu leihen.
 
 
-### Borrow rate
+### Ausleihrate
 
-Currently, the borrow rate model of all money markets on Rings follow the Jump Rate model.
+Momentan folgt das Kreditkursmodell aller Geldmärkte auf den Rings dem Modell des Sprungkurses.
 
-In this model, there is a key parameter defined as **Kink**, which is a value of the utilization rate and creates a sharp turning point where the interest rates spike.
+In diesem Modell ist ein Schlüsselparameter als **Kink**definiert, was ein Wert der Verwertungsrate ist und einen steilen Wendepunkt schafft, an dem die Zinssätze steigen.
 
-The borrow rate of the jump rate model is defined as:
+Die Kreditrate des Sprungkursmodells ist definiert als:
 
-**When the utilization rate ≤ Kink:**
-
-```
-Borrow_interest_rate = multiplier * market.utilization_rate + base_rate
-```
-
-**When the utilization rate > Kink:**
+**Wenn die Nutzungsrate <unk> Kink:**
 
 ```
-Borrow_interest_rate = multiplier * Kink + jump_multiplier * (market.utilization_rate - Kink) + base_rate
+Darlehenszinssatz = Multiplikator * market.utilization_rate + Basiszinssatz
 ```
 
-Where
-- base_rate per year is the minimum borrowing rate
-- multiplier per year is the rate of increase in interest rate with respect to utilization
-- Kink is the point in the model in which the model follows the jump multiplier
-- jump_multiplier per year is the rate of increase in interest rate with respect to utilization after the Kink
-
-### Supply rate
-
-The supply rate is calculated as follows:
+**Wenn die Nutzungsrate > Kink:**
 
 ```
-Supply_interest_rate = Borrow_interest_rate * market.utilization_rate * (1 - market.reserve_factor)
+Borrow_interest_rate = Multiplikator * Kink + jump_multiplier * (market.utilization_rate - Kink) + base_rate
 ```
 
-Where
-- market.utilization_rate is the utilization rate of a certain market
-- market.reserve_factor controls what percentage of the interest borrowers pay for a certain market is kept within the system to protect lenders against borrow default and liquidation malfunction
-- Borrow_interest_rate is the interest rate that borrowers pay for a certian market
+Wo
+- base_rate pro Jahr ist die minimale Kreditrate
+- multiplikator pro Jahr ist der Zinssatz für die Erhöhung des Zinssatzes im Hinblick auf die Nutzung
+- Kink ist der Punkt in dem Modell, in dem das Modell dem Sprungmultiplikator folgt
+- sprung_multiplier pro Jahr ist der Zinssatz für die Erhöhung der Zinsen im Hinblick auf die Nutzung nach dem Kink
+
+### Vorratsrate
+
+Die Lieferrate wird wie folgt berechnet:
+
+```
+Supply_interest_rate = Borrow_interest_rate * markt.utilization_rate * (1 - market.reserve_factor)
+```
+
+Wo
+- market.utilization_rate ist die Auslastungsrate eines bestimmten Marktes
+- markt. eserve_factor kontrolliert, welcher Prozentsatz der Kreditnehmer für einen bestimmten Markt bezahlt, um Kreditgeber vor Zahlungsausfall und Liquidationsstörungen zu schützen
+- Darlehenszinssatz ist der Zinssatz, den Kreditnehmer für einen zertifizierten Markt zahlen
 
 
-### Parameters of all Pando Rings' money markets
-(last updated on Oct 18, 2021)
+### Parameter aller Geldmärkte von Pando Ring
+(zuletzt aktualisiert am 18. Okt 2021)
 
-Currently, all money markets has a Kink of 80%, meaning, when utilization ratio reaches 80%, both the supply and borrow interest rates will have a sudden jump.
+Zurzeit haben alle Geldmärkte einen Kink von 80%, was bedeutet, dass die Auslastungsquote 80 % erreicht sowohl die Angebots- als auch die Kreditzinsen werden einen plötzlichen Sprung haben.
 
-| Symbol | Name       | base_rate | reserve_factor | multiplier | jump_multiplier | kink |
-| ------ | ---------- | --------- | -------------- | ---------- | --------------- | ---- |
-| pUSD   | Pando USD  | 0%        | 15%            | 5.8%       | 1.476           | 80%  |
-| USDT   | Tether USD | 0%        | 15%            | 5.8%       | 1.476           | 80%  |
-| BTC    | Bitcoin    | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| ETH    | Ethereum   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| LTC    | Litecoin   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| EOS    | EOS        | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| DOT    | Polkadot   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| XIN    | Mixin      | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| MOB    | MoblieCoin | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| BOX    | BoxToken   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| DOGE   | DogeCoin   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-
-
-For pUSD and USDT: ![](../assets/stablecoin-model.png)
-
-For BTC, ETH, LTC, EOS. DOT, XIN, MOB, BOX and DOGE: ![](../assets/othercoins-model.png)
+| Symbol | Name                         | basisrate | reserve_Faktor | multiplikator | springe Multiplikator | kinken     |
+| ------ | ---------------------------- | --------- | -------------- | ------------- | --------------------- | ---------- |
+| pUSD   | Pando USD                    | 0 %       | 15%            | 5.8%          | 1.476                 | 80 Prozent |
+| USDT   | Tether USD                   | 0 %       | 15%            | 5.8%          | 1.476                 | 80 Prozent |
+| BTC    | Bitcoin                      | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| ETH    | Ethereum                     | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| LTC    | Litecoin                     | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| EOS    | EOS                          | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| DOT    | Die Architektur von Polkadot | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| XIN    | Mixin                        | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| MOB    | MoblieCoin                   | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| BOX    | BoxToken                     | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
+| DOGE   | DogeCoin                     | 0 %       | 20%            | 29.13%        | 3.6255                | 80 Prozent |
 
 
-It is important to understand the interest rate model of your selected money markets and monitor the changes in the interest rates for the profitability and safety of your assets. 
+Für PUSD und USDT: ![](../assets/stablecoin-model.png)
+
+Für BTC, ETH, LTC, EOS. DOT, XIN, MOB, BOX und DOGE: ![](../assets/othercoins-model.png)
+
+
+Es ist wichtig, das Zinsmodell Ihrer ausgewählten Geldmärkte zu verstehen und die Zinsänderungen für die Rentabilität und Sicherheit Ihrer Vermögenswerte zu überwachen. 
 
 
 

@@ -12,10 +12,10 @@ Use the format: \[Put the title of your content here\](put the link of your cont
 
 ### Tutorials
 
-Community members write on how to use Pando products.
+コミュニティのメンバーは、Pando製品の使用方法について書いています。
 
 [玩转Mixin系列十二：如何使用Pando Rings借贷(Payment Required)](https://prsdigg.com/articles/39cae74e-385c-4eab-9b45-cc58800e0493) - on how to use Pando Rings (Chinese)
 
-### Blog Posts
+### ブログ投稿
 
-Community members' thoughts, observations, and analysis of Pando.
+Pandoのコミュニティメンバーの考え、観察、および分析。

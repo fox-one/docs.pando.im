@@ -1,15 +1,15 @@
 ---
-title: Add Collateral
-sidebar_position: 5
+title: Sicherheiten hinzufügen
+sidebar_position: fünf
 date: 2021-08-13 12:33:07
 ---
 
-Adding Collateral is useful in two scenarios. The first is when a Vault is coming close to being **liquidated** (link to liquidation), adding collateral can save the Vault. The second is when a Vault owner wants to increase their capacity for generating pUSD, adding collateral will increase the maximum amount of pUSD that can be generated.
+Das Hinzufügen von Collateral ist in zwei Szenarien Drehbücher. Die erste ist, wenn ein Tresor dem Sein nahe kommt** liquidiert**(Link zur Liquidation), kann das Hinzufügen von Sicherheiten den Tresor retten. Der zweite Punkt ist, wenn ein Vault-Besitzer seine Kapazität zur Generierung von Pusd, erhöhen will Das Hinzufügen von Sicherheiten erhöht den maximalen Pusd der generiert werden kann.
 
-To add collateral, click on "Deposit" and fill in the intended amount on the Deposit page. And then enter the quantity of collateral you want to add and click Deposit in picture on the right
+Um Sicherheiten hinzuzufügen, klicken Sie auf "Einzahlung" und geben Sie den gewünschten Betrag auf der Anzahlungsseite ein. Und dann geben Sie die Anzahl der Sicherheiten ein, die Sie hinzufügen möchten und klicken Sie auf Ablage im Bild rechts
 
 ![](../assets/leaf-add-collateral-p1.png)
 
-Pay 4 MOB token and see Details, the collateral Increase from 96.8865 to 100.8865. You can see details about this adding in chat window.
+Zahlen Sie 4 MOB-Token und sehen Sie Details, den Kollateralzuwachs von 96.8865 auf 100.8865. Details zu diesem Hinzufügen im Chatfenster können Sie sehen.
 
 ![](../assets/leaf-add-collateral-p2.png)

@@ -24,9 +24,9 @@ You can install Fennec from Chrome web store or Firefox Add-ons:
 - [Chrome Store](https://chrome.google.com/webstore/detail/fennec/eincngenkhohbbfpkohipekcmnkfamjp)
 - [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/fennec/)
 
-Fennec uses Mixin Network's keystore files to identify your assets and manage your wallet. There are two ways to create your keystore files.
+Fennecは、Mixin Networkのキーストアファイルを使用して、資産を識別し、ウォレットを管理します。 キーストアファイルを作成する方法は2つあります。
 
-The first option is to create a  dApp from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard). After creating the dApp, you can generate a keystore file.
+The first option is to create a  dApp from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard). Dappを作成した後、キーストアファイルを生成できます。
 
 ````mdx-code-block
 :::info

@@ -1,20 +1,20 @@
 ---
-title: Read Pairs
-sidebar_position: 4
-date: 2021-09-30 23:18:01
+title: Paare lesen
+sidebar_position: vier
+date: 30-09-2021 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
 ## GET /pairs
 
-This API will respond all supported pairs.
+Diese API wird alle unterstützten Paare beantworten.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/pairs" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read supported pairs" method="GET" isPublic base="https://api.4swap.org/api" url='/pairs' />
+<APIRequest title="Unterstützte Paare lesen" method="GET" isPublic base="https://api.4swap.org/api" url='/pairs' />
 
 ```json title="Response"
 {
@@ -34,15 +34,15 @@ This API will respond all supported pairs.
 }
 ```
 
-### Coinmarketcap Compatible API for /pairs
+### Coinmarketcap Kompatible API für /paare
 
-The API will respond all supported pairs. It's compatible with Coinmarketcap's requirements.
+Die API wird alle unterstützten Paare beantworten. Es ist kompatibel mit den Anforderungen von Coinmarketcap.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/cmc/pairs" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read support pairs" method="GET" isPublic base="https://api.4swap.org/api" url='/cmc/pairs' />
+<APIRequest title="Support-Paare lesen" method="GET" isPublic base="https://api.4swap.org/api" url='/cmc/pairs' />
 
 ```json title="Response"
 {

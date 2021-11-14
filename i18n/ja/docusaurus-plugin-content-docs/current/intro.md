@@ -1,40 +1,40 @@
 ---
-title: User Manuals
+title: ユーザーマニュアル
 sidebar_position: 1
 ---
 
 ## 紹介
 
-Pando is a decentrialized financial network built with [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg), including a series of open financial protocols.
+Pandoは、一連のオープンな金融プロトコルを含む、 [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg)で構築された分散型金融ネットワークです。
 
-Based on the mechanism of trusted network, Pando combines most common decentralized financial applications into one product to serve users and is constantly evolving to provide more comprehensive financial services.
+信頼できるネットワークのメカニズムに基づいて、Pandoは最も一般的な分散型金融アプリケーションを1つの製品に組み合わせてユーザーにサービスを提供し、より包括的な金融サービスを提供するために常に進化しています。
 
-Pando integrates the following financial protocols; all of them can be run stand-alone.
+Pandoは、次の金融プロトコルを統合します。それらはすべてスタンドアロンで実行できます。
 
 ### Pando Lake & 4swap
 
-**[4swap](https://4swap.org)** is a decentralized protocol implement for automated liquidity provision on Mixin Network. It  is a community-driven, allowing for any pool to be added. **Pando Lake** is an alternative to 4swap, which only provide selected pools.
+**[4swap](https://4swap.org)** は、Mixin Networkでの自動流動性供給のための分散型プロトコル実装です。 これはコミュニティ主導であり、任意のプールを追加できます。 **Pando Lake** は、選択されたプールのみを提供する4swapの代替手段です。
 
-**→** [Get Started with 4swap](lake/tutorials/get-started)  
+**→** [4swapを使い始める](lake/tutorials/get-started)  
 **→** [Swap!](lake/tutorials/swapping)  
-**→** [Provide Liquidity](lake/tutorials/providing-liquidity) and [Remove Liquidity](lake/tutorials/removing-liquidity)
+**→** [流動性を提供する](lake/tutorials/providing-liquidity) and [流動性を取り除く](lake/tutorials/removing-liquidity)
 
 ### Pando Leaf
 
-[**Pando Leaf**](leaf/intro) is a decentralized financial protocol, a place where you can deposit collateral to generate  [Pando USD(pUSD)](leaf/pusd) and destroy it when repaying the generated pUSD balance.
+[**Pando Leaf**](leaf/intro) は分散型の金融プロトコルであり、担保を預けて生成できる場所です。  [Pando USD(pUSD)](leaf/pusd) 生成されたpUSD残高を返済するときにそれを破棄します。
 
-**→** [Get Started with Pando Leaf](leaf/tutorials/get-started)  
-**→** [Open a Vault](leaf/tutorials/open-vault)  
+**→** [Pando Leafを始めよう](leaf/tutorials/get-started)  
+**→** [Vaultを開く](leaf/tutorials/open-vault)  
 **→** [Payback](leaf/tutorials/payback)
 
 
 ### Pando Rings
 
-[**Pando Rings**](rings/intro) is an algorithmic, autonomous interest rate protocol. It is a place where you can lend or borrow cryptocurrencies. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.
+[**Pando Rings**](rings/intro) は、アルゴリズム的で自律的な金利プロトコルです。 それはあなたが暗号通貨を貸したり借りたりできる場所です。 これにより、ユーザーは暗号通貨を預けて利息を稼いだり、他の暗号資産を借りたりすることができます。
 
-**→** [Supply](rings/tutorials/how-to-supply) and [Pledge](rings/tutorials/how-to-pledge)   
-**→** [Borrow](rings/tutorials/how-to-borrow) and [Payback](rings/tutorials/how-to-repay)
+**→** [供給](rings/tutorials/how-to-supply) and [保証](rings/tutorials/how-to-pledge)   
+**→** [借りる](rings/tutorials/how-to-borrow) and [Payback](rings/tutorials/how-to-repay)
 
-## Questions?
+## 質問がありますか？
 
-Ask for help on our [Discord](https://discord.gg/CNS4QQ6w5u) or [Twitter](https://twitter.com/pando_im).
+[Discord](https://discord.gg/CNS4QQ6w5u) または [Twitter](https://twitter.com/pando_im) のヘルプを求めてください。

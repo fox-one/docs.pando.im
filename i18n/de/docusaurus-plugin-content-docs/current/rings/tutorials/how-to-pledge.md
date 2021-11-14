@@ -1,27 +1,27 @@
 ---
-title: Pledging rTokens to get borrow capacity
+title: Versprechende Rtokens um Kreditkapazität zu erhalten
 sidebar_position: 3
-date: 2021-09-04 12:33:07
+date: 04-09-2021 12:33:07
 ---
 
-If you want to borrow, you will need to pledge as borrowing in Pando Rings function on the collateral-backed mechanism.
+Wenn Sie Kredite aufnehmen wollen, müssen Sie als Darlehensgeber in der Pando Rings Funktion auf dem besicherten Mechanismus verpfänden.
 
-After pledging, the rTokens you get from supplying will be locked into the system. You will not be able to transfer your pledged rTokens to others, but you can still gain supply interest of those you pledge.
+Nach der Verpfändung werden die Rtoken, die Sie aus der Lieferung erhalten, in das System eingeschlossen. Sie werden nicht in der Lage sein, Ihre verpfändeten Rtokens auf andere zu übertragen, aber Sie können trotzdem die von Ihnen zugesagten Zinsen gewinnen.
 
 ````mdx-code-block
 :::info
-**The difference between manually "Pledge" and one-stop "Supply and Pledge"**
+**Der Unterschied zwischen manuell "Pledge" und "Versorgung und Pledge"**
 
-If you manually pledge, you can decide on the percentage of the supplied asset you want to pledge. In comparison, if you choose  to use the one-stop Supply and Pledge function (accessible from both Supply page and Borrow page), the system will pledge 100% of the rTokens while you supply.
+Wenn Sie manuell versprechen, Sie können über den Prozentsatz des zu verpfändenden Vermögens entscheiden. Im Vergleich, wenn Sie die Funktion Versorgung und Pledge aus einer Hand verwenden (sowohl von der Versorgungsseite als auch von der Kreditseite erreichbar), das System wird 100% der Rtokens versprechen, während Sie liefern.
 
-If unfortunately, the value of your pledged assets cannot cover your borrow anymore, **ALL** of your pledged assets will be subjected to [liquidation](../key-concepts/liquidation) while your unpledged assets will stay intact.
+Falls leider der Wert Ihres versandten Vermögens nicht mehr Ihren Kredit decken kann, werden **ALLE** Ihres versandten Vermögens [liquidation](. /key-concepts/liquidation) während Ihr ungebundenes Vermögen intakt bleibt.
 
-It's up to you make the tradeoff between getting more borrowing power by pledging more and pledging only partially for isolation of risk.
+Es liegt an Ihnen, den Ausgleich zu schaffen zwischen mehr Kreditaufnahme durch mehr Zusagen und nur teilweise Versprechungen zur Risikoisolierung.
 :::
 ````
 
-To pledge, you can click on the supplied asset card of the Supply section on the Me page.
+Um Zusagen zu machen, können Sie auf der Ich-Seite auf die mitgelieferte Asset-Karte des Angebots klicken.
 
-Drag on the progress bar to choose the percentage you want to pledge. As the amount change, the status of the risk loan indicator also change. It's advised that you pay close attention to the indicator to monitor the predicted risk of the loan after you pledge.
+Ziehen Sie die Statusleiste, um den Prozentsatz auszuwählen, den Sie zusichern möchten. Wenn sich der Betrag ändert, ändert sich auch der Status des Risikokreditindikators. Es wird darauf hingewiesen, dass Sie genau auf den Indikator achten, um das prognostizierte Kreditrisiko nach der Zusage zu überwachen.
 
 ![](../assets/pledge1.jpg)

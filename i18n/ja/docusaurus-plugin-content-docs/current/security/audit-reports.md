@@ -65,14 +65,14 @@ This issue is very hard to exploit, so the Mixin Team decided to ignore this iss
 
 ## Audit Reports from LeastAuthority
 
-### Download Report
+### レポートをダウンロードする
 
-[Audit Report from Least Authority](//docs.pando.im/reports/least-authority-report.pdf)
+[最低権限からの監査レポート](//docs.pando.im/reports/least-authority-report.pdf)
 
 
-### Findings and Remediation Status
+### 調査結果と修復ステータス
 
-| ID | Title                                                     | Status    |
+| ID | タイトル                                                      | ステータス     |
 | -- | --------------------------------------------------------- | --------- |
 | A  | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
 | B  | セキュリティロードマップは存在しません                                       | 修正されません   |
@@ -90,21 +90,21 @@ In the begining, the purpose of the shared key is to encrypt the memo. In the pr
 
 However, to better protect the user's privacy, we upgrade the Mixin Network, that adding `user_id` in the UTXO directly. Now Pando has already remove the `user_id` from the memo so there is no sensitive information in the memo.
 
-To make the protocol more campatible, we keep the support of the encrypted memo. ただし、メモにプレーンテキストを使用し、暗号化しないでおくのはまったく問題ありません。 In another word, the shared key is not important anymore.
+プロトコルをより寛容にするために、私たちは暗号化されたメモのサポートを維持します。 ただし、メモにプレーンテキストを使用し、暗号化しないでおくのはまったく問題ありません。 言い換えれば、共有キーはもはや重要ではありません。
 
-**Finding B: Security Roadmap Nonexistent**
+**調査結果B：セキュリティロードマップが存在しません**
 
-Actually we have a Roadmap with security related plans. We will update the roadmap in the future.
+実際には、セキュリティ関連の計画を含むロードマップがあります。 将来的にロードマップを更新します。
 
-**Finding C: Protocol Specifications Nonexistent**
+**調査結果C：プロトコル仕様が存在しません**
 
-プロトコルのいくつかの仕様はすでに提供されています。 Please check them out https://docs.pando.im/developer/intro.
+プロトコルのいくつかの仕様はすでに提供されています。 https://docs.pando.im/developer/intro を確認してください。
 
-In the future, we will provide more documentation here.
+将来的には、ここでより多くのドキュメントを提供する予定です。
 
-**Finding D: Secrets Are Shared and Persist in Plain Text**
+**調査結果D：秘密は共有され、プレーンテキストで存続します。**
 
-We have own way to manage the secrets and keep the deployment environment secure.
+シークレットを管理し、展開環境を安全に保つ独自の方法があります。
 
 **Finding E: Use of Unauthenticated Encryption Mode**
 
@@ -116,7 +116,7 @@ Same as above.
 
 **Finding G: Excess Centralization**
 
-Yes, right now, it is hard to add new members to the MTG or remove the existed.
+はい、現時点では、MTGに新しいメンバーを追加したり、既存のメンバーを削除したりすることは困難です。
 
-We are working on a new governance system to make it possible to add and remove MTG members. The new governance system will be released in the future.
+MTGメンバーの追加と削除を可能にする新しいガバナンスシステムに取り組んでいます。 新しいガバナンス体制は今後も公開される予定です。
 

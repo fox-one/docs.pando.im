@@ -4,7 +4,7 @@ sidebar_position: 5
 date: 2021-10-01 23:18:01
 ---
 
-"@site/src/components/api"에서  { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
 ## Read All Auctions
 

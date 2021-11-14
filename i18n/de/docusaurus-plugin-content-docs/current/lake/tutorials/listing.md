@@ -1,63 +1,63 @@
 ---
-title: Listing assets and adding pools
+title: Assets auflisten und Pools hinzufügen
 sidebar_position: 6
-date: 2021-08-15 22:33:07
+date: 15-08-2021 22:33:07
 ---
 
-import { Improvement, } from "@site/src/components/admonitions";
+importiert { Verbesserung, } aus "@site/src/components/admonitions";
 
 <Improvement />
 
-**[Pando Lake](https://lake.pando.im)** only allows for selected pools that have proven credentials. It doesn't accept new pool from the public.
+**[Pando Lake](https://lake.pando.im)** erlaubt nur ausgewählte Pools mit nachgewiesenen Anmeldeinformationen. Es akzeptiert keinen neuen Pool von der Öffentlichkeit.
 
-**[4swap](https://4swap.org)** is a community-driven project that is currently allowing for any pool to be added.
+**[4swap](https://4swap.org)** ist ein Community-gesteuertes Projekt, das es derzeit erlaubt, jeden Pool hinzuzufügen.
 
-## Add asset information to Mixin Network
+## Asset-Informationen zum Mixin Netzwerk hinzufügen
 
-Visit Mixin's [asset-profile](https://github.com/MixinNetwork/asset-profile) page, follow the instructions at `README.md` to Mixin Network.
+Besuchen Sie Mixins [Asset-Profil](https://github.com/MixinNetwork/asset-profile) Seite, folgen Sie den Anweisungen unter `README.md` zu Mixin Network.
 
-For example, if you have an ERC-20 token named "RUM", you can add it to Mixin Network:
+Wenn Sie zum Beispiel ein ERC-20-Token namens "RUM" haben, können Sie es dem Mixin-Netzwerk hinzufügen:
 
-1. an icon file named "icon.png", it should be 520px * 520px.
-2. a json file named "index.json", which should be a valid json file and contain the following information:
+1. eine Icon-Datei namens "icon.png", sollte es 520px * 520px sein.
+2. eine json-Datei namens "index.json", die eine gültige json-Datei sein sollte und die folgenden Informationen enthält:
 
 ```json
 {
-  // the asset id of RUM in Mixin Network
+  // die Asset ID von RUM im Mixin Network
   "asset_id": "4f2ec12c-22f4-3a9e-b757-c84b6415ea8f",
-  // RUM is a ERC-20 token, the chain id is ETH's asset id
+  // RUM ist ein ERC-20-Token, die Kettennummer ist ETH's Asset Id
   "chain_id": "43d61dcd-e413-450d-80b8-101d5e903357",
-  // RUM is not listed on CoinMarketCap, so we use the empty string
+  // RUM wird in CoinMarketCap, also verwenden wir den leeren String
   "cmc_id": ""
 }
 ```
 
-The commit of the above example is [here](https://github.com/MixinNetwork/asset-profile/commit/437d378f899c5837598bdb8c4e9c18ae8f21ad27).
+Die Übertragung des obigen Beispiels ist [hier](https://github.com/MixinNetwork/asset-profile/commit/437d378f899c5837598bdb8c4e9c18ae8f21ad27).
 
 ````mdx-code-block
 :::info
-Please create a pull request when you have finished. It usually takes about 1~2 days for Mixin Network to process your pull request.
+Bitte erstellen Sie eine Pull-Request-Anfrage, wenn Sie fertig sind. Normalerweise dauert es etwa 1~2 Tage, bis Mixin Network Ihre Pull-Anfrage bearbeitet.
 :::
 ````
 
-## Create a pool at 4swap
+## Erstelle einen Pool bei 4swap
 
-You need to head to [Mixin Messenger](../../apps/wallets#mixin-messenger) or [Fennec](../../apps/wallets#fennec) to create a pool.
+Sie müssen zu [Mixin Messenger](../../apps/wallets#mixin-messenger) oder [Fennec](../../apps/wallets#fennec) wechseln, um einen Pool zu erstellen.
 
-1. Make sure the wallet balance of the 2 assets is above the minimum amount of 0.00000001. If not, please deposit some to your wallet.
-2. Make sure you have above the minimum amount of 0.02 ETH in your wallet. If not, please deposit some into your wallet or swap for it at [4swap](https://app.4swap.org).
-3. Visit [this page](https://app.4swap.org/#/me), tap "connect" to connect with your wallet.
+1. Stellen Sie sicher, dass das Guthaben der 2 Assets über dem Mindestbetrag von 0.00000001 liegt. Wenn nicht, hinterlegen Sie bitte einige auf Ihre Brieftasche ein.
+2. Stellen Sie sicher, dass Sie den Mindestbetrag von 0,02 ETH in Ihrer Brieftasche haben. Falls nicht, hinterlegen Sie bitte ein paar in Ihre Brieftasche oder tauschen Sie sie mit [4swap](https://app.4swap.org) aus.
+3. Besuchen Sie [diese Seite](https://app.4swap.org/#/me), tippen Sie auf "Verbinden", um sich mit Ihrer Wallet zu verbinden.
 
 ![](../assets/lake-get-started-p2.png)
 
-4. Visit [this page](https://app.4swap.org/#/liquidity/create), choose two assets you want to add to the pool and tap `Pay` to create a pool.
+4. Besuchen Sie [diese Seite](https://app.4swap.org/#/liquidity/create), wählen Sie zwei Assets aus, die Sie zum Pool hinzufügen möchten und klicken Sie auf `Bezahlen`, um einen Pool zu erstellen.
 
-We will comprehensively consider whether to list the currency based on coinmarketcap ranking, transaction volume, and exchange support.
+Wir werden umfassend prüfen, ob die Währung auf der Grundlage von coinmarketcap Ranking, Transaktionsvolumen und Wechselkursunterstützung aufgelistet werden soll.
 
-You can also contact 37160854 at mixin messenger to inquire about the listing of leaf/rings.
+Sie können auch 37160854 bei Mixin Messenger kontaktieren, um nach der Auflistung von Blatt/Ringen zu fragen.
 
 ````mdx-code-block
 :::info
-It usually takes 1~3 days to wait for the pool to be created and approved by [MTG nodes](../key-concepts/mtg). If the request is not processed in 3 days, you will receive a refund.
+Es dauert normalerweise 1~3 Tage, bis der Pool von [MTG nodes](../key-concepts/mtg) erstellt und genehmigt wird. Wenn die Anfrage nicht innerhalb von 3 Tagen bearbeitet wird, erhalten Sie eine Rückerstattung.
 :::
 ````

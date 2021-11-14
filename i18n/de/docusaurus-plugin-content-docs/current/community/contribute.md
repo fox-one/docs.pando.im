@@ -17,7 +17,7 @@ Pando Dokumentation basiert auf [Docusaurus](https://docusaurus.io/docs/en/lates
 
 ## Aufbau der Dokumentation
 
-Die Dokumentation ist folgendermaßen aufgebaut:
+Die Dokumentation ist folgendermaßen gegliedert:
 
 - alle Quellen befinden sich im `docs` Verzeichnis und `developer` Verzeichnis
 - das Verzeichnis `docs` enthält die folgenden Unterverzeichnisse:
@@ -45,7 +45,13 @@ Wenn Sie mit Github und dem i18n von Pando nicht vertraut sind, empfehlen wir Ih
 2. Den Stand und Fortschritt der Übersetzung finden Sie auf [Pandos Seite bei Crwodin](https://pando.crowdin.com/)
 3. Lernen Sie die Crowdin-Übersetzungsoberfläche kennen, da Sie sie für die Übersetzung von JSON- und Markdown-Dateien benötigen
 
-### Übersetzen in Github
+````mdx-code-block
+:::info
+Please note that all the code in the documentation should not be translated.
+:::
+````
+
+### Initialize the Translation
 
 #### Neue Übersetzungsdateien für neue Sprachen erstellen
 

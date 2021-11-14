@@ -17,7 +17,7 @@ Klicken Sie " Geldbeutel verbinden" um zu starten. Vergewissern Sie sich, dass S
 
 ````mdx-code-block
 :::tip
-Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
+Prüfe alles und autorisiere es. Die Autorisierung kann nur anzeigen, aber Ihre Assets nicht verwenden. Es ist sicher.
 :::
 ````
 
@@ -25,22 +25,22 @@ Lernen Sie die Webseite von Pando Leaf kennen.
 
 ![](../assets/leaf-get-start-p3.png)
 
-Bei dem ersten Einloggen müssen Sie [einen Tresor ](https://docs.pando.im/docs/leaf/tutorials/open-vault) hinzufügen.  Let's focus on the screenshot on the right.
+Bei dem ersten Einloggen müssen Sie [einen Tresor ](https://docs.pando.im/docs/leaf/tutorials/open-vault) hinzufügen.  Konzentrieren wir uns auf den Screenshot auf der rechten Seite.
 
-BTC locked is your collateral in the vault. We can see 1 btc in the inmage means we pledged 1 btc in pando leaf.
+BTC gesperrt ist Ihre Sicherheiten im Tresor. Wir sehen 1 btc in der Inszenierung bedeutet, dass wir versprochen 1 btc in Pando Blatt.
 
 Worauf man sich fokussieren sollte, ist der Besicherungsgrad, [Liquiditätspreis,](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio), [aktueller Preis und nachfolgender Preis](https://docs.pando.im/docs/leaf/key-concepts/price-oracles).
 
-Take the above picture as an example, the current mortgage rate is 4414.4%, and the liquidation price is 1500 pusd, which means that when the price of BTC drops to 1500 pusd, it will be forced to enter the liquidation process.
+Nehmen Sie das obige Bild als Beispiel, der aktuelle Hypothekarzinssatz ist 4414. % und der Liquidationspreis beträgt 1500 Pusd, was bedeutet, dass, wenn der Preis für BTC auf 1500 Pusd, Er wird gezwungen sein, in den Liquidierungsprozess einzutreten.
 
-Combined with the current price and the next price, it can be considered safe.
+Kombiniert mit dem aktuellen Preis und dem nächsten Preis, kann er als sicher angesehen werden.
 
 ````mdx-code-block
 :::caution
-Please ensure that the collateral Ratio is within a safe range, which less than 150% will be liquidated totally.
+Bitte stellen Sie sicher, dass sich das Sicherheitsverhältnis innerhalb eines sicheren Bereichs befindet, der weniger als 150% vollständig liquidiert wird.
 :::
 ````
 
-Go and try it.
+Probieren Sie das aus.
 
 

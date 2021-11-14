@@ -1,18 +1,18 @@
 ---
-title: Read MTG Info
+title: MTG Info lesen
 sidebar_position: 3
-date: 2021-09-30 23:18:01
+date: 30-09-2021 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } von "@site/src/components/api";
 
 ## GET /info
 
-This API will MTG information about 4swap and Lake.
+Diese API wird MTG Informationen über 4swap und See.
 
 ````mdx-code-block
 :::info
-You can save the response to use it later because the MTG information wouldn't change frequently.
+Du kannst die Antwort speichern, um sie später zu verwenden, da sich die MTG-Informationen nicht oft ändern würden.
 :::
 ````
 
@@ -20,16 +20,16 @@ You can save the response to use it later because the MTG information wouldn't c
 
 <APIMetaPanel />
 
-<APIRequest title="Read MTG info" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
+<APIRequest title="MTG Info lesen" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
 
 
-**Response**
+**Reaktion**
 
 ```json
 {
   "ts": 1627697766645,
   "data": {
-    // user id of MTG members
+    // Benutzer-ID von MTG-Mitgliedern
     "members": [
       "a753e0eb-3010-4c4a-a7b2-a7bda4063f62",
       "099627f8-4031-42e3-a846-006ee598c56e",
@@ -38,8 +38,8 @@ You can save the response to use it later because the MTG information wouldn't c
       "e4bc0740-f8fe-418c-ae1b-32d9926f5863"
     ],
     "public_key": "dt351xp3KjNlVCMqBYUeUSF45upCEiReSZAqcjcP/Lc=",
-    // multisig threshold
-    "threshold": 3
+    // Multisig Schwellwert
+    "Schwell": 3
   }
 }
 ```

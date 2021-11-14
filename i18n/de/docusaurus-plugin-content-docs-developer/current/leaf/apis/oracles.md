@@ -1,22 +1,22 @@
 ---
-title: Read Oracles
-sidebar_position: 7
-date: 2021-10-01 23:18:01
+title: Oracles lesen
+sidebar_position: sieben
+date: 01-10-2021 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } von "@site/src/components/api";
 
-## Read All Oracles
+## Alle Oracles lesen
 
 ### GET /oracles
 
-This API will respond all oracles.
+Diese API wird alle Orakel beantworten.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read all oracles" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles' />
+<APIRequest title="Alle Orakel lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles' />
 
 ```json title="Response"
 {
@@ -48,11 +48,11 @@ This API will respond all oracles.
 }
 ```
 
-## Read Single Oracle
+## Einzelnes Oracle lesen
 
 ### GET /oracles/:id
 
-This API will respond one oracle with asset_id `:id`
+Diese API antwortet ein Orakel mit der asset_id `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles/:id" />
 
@@ -60,7 +60,7 @@ This API will respond one oracle with asset_id `:id`
 
 <APIParams p-id="the asset id" p-id-required="{true}" />
 
-<APIRequest title="Read one oracle" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
+<APIRequest title="Ein Orakel lesen" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
 
 ```json title="Response"
 {

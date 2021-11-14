@@ -1,20 +1,20 @@
 ---
-title: Examples
+title: Beispiele
 sidebar_position: 6
-date: 2021-07-31 13:03:07
+date: 31-07-2021 13:03:07
 ---
 
 ## 4swap Web
 
-The frontend project of 4swap and Lake, a full-feature web based client.
+Das Frontend Projekt von 4swap und Lake, ein vollwertiger Web-basierter Client.
 
-- Source code: https://github.com/fox-one/4swap-web
+- Quellcode: https://github.com/fox-one/4swap-web
 - Url: https://app.4swap.org
 
 
 ## Mixin Tutorial
 
-A tutorial of making a Mixin Messenger bot from scratch, a bot which includes a function to swap crypto at 4swap or Pando Lake.
+Ein Tutorial zum Erstellen eines Mixin Messenger Bots von Grund auf - ein Bot, der eine Funktion zum Austauschen von Krypto an 4swap- oder Pando Lake beinhaltet.
 
-- Source code: https://github.com/lyricat/mixin-tutorial
+- Quellcode: https://github.com/lyricat/mixin-tutorial
 

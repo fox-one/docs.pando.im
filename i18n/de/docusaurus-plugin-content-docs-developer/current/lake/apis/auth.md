@@ -1,24 +1,24 @@
 ---
-title: Authorization
-sidebar_position: 2
-date: 2021-07-31 11:18:01
+title: Autorisierung
+sidebar_position: zwei
+date: 31-07-2021 11:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-Most APIs are public access, but some are only available to authenticated users.
+Die meisten APIs sind öffentlichen Zugang, aber einige sind nur für authentifizierte Benutzer verfügbar.
 
-Pando Lake and 4swap use standard OAuth protocol to authorize users.
+Pando Lake und 4swap verwenden das Standard OAuth Protokoll, um Benutzer zu autorisieren.
 
 ## POST /oauth
 
-Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) to exchange the access token with code.
+Rufen Sie diese API anstelle von [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) auf, um das Zugriffstoken mit Code auszutauschen.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/oauth" />
 
 <APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code":       "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", // leave "broker_id" and "label" to empty if you don't want to use other brokers. "broker_id":  "", "label":      "" } `}</APIPayload>
 
-<APIRequest title="Exchange an access token" method="POST" isPublic base="https://api.4swap.org/api" url='/oauth --data PAYLOAD' />
+<APIRequest title="Zugangs-Token austauschen" method="POST" isPublic base="https://api.4swap.org/api" url='/oauth --data PAYLOAD' />
 
 ```json title="Response"
 {
@@ -31,5 +31,5 @@ Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.
 }
 ```
 
-The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
+Das Token ist kompatibel mit [Mixin API](https://developers.mixin.one/docs/api/guide). Es ist in Ordnung, Informationen von Mixin API zu erhalten.
 

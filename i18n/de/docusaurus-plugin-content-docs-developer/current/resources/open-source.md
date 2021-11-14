@@ -1,15 +1,15 @@
 ---
-title: Open Source
-sidebar_position: 1
-date: 2021-08-17 18:59:07
+title: Quelle öffnen
+sidebar_position: eins
+date: 17-08-2021 18:59:07
 ---
 
-- **Pando Lake & 4swap**
-  - Node's source code is not ready yet.
-  - [WebApp](https://github.com/fox-one/4swap-web)
-- **Pando Leaf**
-  - [Node](https://github.com/fox-one/pando)
-  - [WebApp](https://github.com/fox-one/pando-leaf-web)
+- **Pando See & 4swap**
+  - Nodes Quellcode ist noch nicht bereit.
+  - [Webapp](https://github.com/fox-one/4swap-web)
+- **Pando Blatt**
+  - [Knoten](https://github.com/fox-one/pando)
+  - [Webapp](https://github.com/fox-one/pando-leaf-web)
 - **Pando Rings**
-  - [Node](https://github.com/fox-one/compound)
-  - [WebApp](https://github.com/fox-one/pando-rings-web)
+  - [Knoten](https://github.com/fox-one/compound)
+  - [Webapp](https://github.com/fox-one/pando-rings-web)

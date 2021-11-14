@@ -4,7 +4,7 @@ sidebar_position: 3
 date: 2021-08-15 22:33:07
 ---
 
-"@site/src/components/admonitions"에서{ Improvement, } 를 가져옵니다.
+import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 

@@ -1,40 +1,40 @@
 ---
-title: Borrowing assets from Pando Rings
-sidebar_position: 5
-date: 2021-09-04 12:33:07
+title: Ausleihung von Vermögenswerten von Pando Ringe
+sidebar_position: fünf
+date: 04-09-2021 12:33:07
 ---
 
-If you want to borrow an asset in Pando Rings, you can get access by clicking on "I want to borrow " on the Market page. After choosing the asset you want to borrow, you will be on the Borrow page.
+Wenn Sie ein Asset in Pando Rings ausleihen möchten, Sie können den Zugang erhalten, indem Sie auf "Ich möchte ausleihen" auf der Marktseite klicken. Nach der Auswahl der Anlagewerte, die Sie leihen möchten, befinden Sie sich auf der Kreditseite.
 
 ![](../assets/borrow1.jpg)
 
-If you have already entered the Market Overview page and have chosen to view statistics of a specific market, you can also go to borrow from the asset statistics page.
+Wenn Sie bereits in die Marktübersicht eingetreten sind und sich entschieden haben, Statistiken eines bestimmten Marktes anzuzeigen Sie können auch auf der Seite "Asset-Statistik" zu leihen.
 
 ![](../assets/borrow2.jpg)
 
-If you haven't had any borrow yet, you will also find access to borrow on the Me page. However, if you have outstanding borrow already, you will only be able to see cards of your borrow assets here.
+Wenn Sie noch keine Ausleihe gehabt haben, finden Sie auch Zugang zum Ausleihen auf der Me Seite. Wenn Sie jedoch bereits ausstehende Kredite haben, können Sie hier nur Karten Ihrer Kreditvermögen sehen.
 
 ![](../assets/borrow3.jpg)
 
-After landing on the Borrow page, if you have enough [borrow balance](../key-concepts/glossary), you can finish borrow within no time.
+Nachdem Sie auf der Kreditseite gelandet sind, können Sie die Ausleihe innerhalb kürzester Zeit beenden, wenn Sie genug [Kreditsaldo](../key-concepts/glossary)haben.
 
 ![](../assets/borrow4.jpg)
 
-Or if you don't have enough borrow balance, you can get more by clicking on "increase balance". You can then conveniently get borrow capacity by choosing from the assets that you have supplied but not pledged (remember any borrow from Pando Rings has to be collateral-backed) or if you need more borrow capacity than the unpledged assets can produce, you can click on "Add new supply" to supply and pledge **all** of your new supply.
+Oder wenn Sie nicht genug Guthaben haben, können Sie mehr bekommen, indem Sie auf "Guthaben erhöhen". Sie können dann bequem Darlehenskapazität erhalten, indem Sie aus den Vermögenswerten wählen, die Sie geliefert haben, aber nicht versprochen haben (denken Sie daran, dass jeder Kredit von Pando Rings Sicherheiten haben muss) oder wenn Sie mehr Kreditkapazität benötigen, als die ungebundenen Vermögenswerte produzieren können. Sie können auf "Neues Angebot hinzufügen" klicken, um **alle** Ihrer neuen Lieferung zu liefern.
 
 ![](../assets/borrow5.jpg)
 
 ![](../assets/borrow6.jpg)
 
-Now that you have increased your borrow balance, you can borrow as you like from the borrow page. :)
+Jetzt, da Sie Ihr Kreditguthaben erhöht haben, können Sie von der Kreditseite aus, wie Sie wollen, ausleihen. :)
 
-The [loan risk indicator](../key-concepts/loan-risk-indicator) changes with the amount you enter and predicts whether your borrow will be within an acceptable risk level.
+Der [Kreditrisiko-Indikator](../key-concepts/loan-risk-indicator) ändert sich mit dem von Ihnen eingegebenen Betrag und prognostiziert, ob Ihre Kreditaufnahme innerhalb eines akzeptablen Risiko-Niveaus liegt.
 
-**Current (Asset name) Borrow** indicates your current borrow amount of a specific asset. **Total Borrow** indicates the total amount of all the assets you have borrowed. **Maximum Market Availability** shows the amount available to borrow of a specific asset. If the amount you intend to borrow is more than the Maximum Market Availability, your order won't come through - you can borrow at most at the Maximum Market Availability.
+**Aktueller (Asset-Name) Kredit** zeigt Ihren aktuellen Kreditbetrag eines bestimmten Assets an. **Gesamtdarlehen** zeigt den Gesamtbetrag aller von Ihnen geliehenen Assets an. **Maximale Marktverfügbarkeit** zeigt den verfügbaren Betrag für die Ausleihe eines bestimmten Assets an. Wenn der Betrag, den Sie ausleihen wollen, mehr ist als die maximale Marktverfügbarkeit, Ihre Bestellung wird nicht durchlaufen - Sie können höchstens die maximale Marktverfügbarkeit ausleihen.
 
 ````mdx-code-block
 :::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+Du brauchst [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) um diese Operation zu unterstützen.
 :::
 ````
 

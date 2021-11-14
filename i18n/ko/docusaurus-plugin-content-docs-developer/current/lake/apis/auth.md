@@ -4,7 +4,7 @@ sidebar_position: 2
 date: 2021-07-31 11:18:01
 ---
 
-"@site/src/components/api"에서  { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } 를 가져옵니다.
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
 대부분의 API는 공용 액세스이지만 일부는 인증된 사용자만 사용할 수 있습니다.
 

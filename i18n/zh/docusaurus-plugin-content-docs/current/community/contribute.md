@@ -45,7 +45,13 @@ Pando 文档是按以下的方式组织编排的：
 2. 在[Crwodin的Pando页面](https://pando.crowdin.com/) 查看翻译状态和进度
 3. 熟悉 Crowdin 翻译界面，因为你将会需要使用它来翻译 JSON 和 Markdown 格式的文件
 
-### 用 Github 翻译
+````mdx-code-block
+:::info
+Please note that all the code in the documentation should not be translated.
+:::
+````
+
+### Initialize the Translation
 
 #### 为新的语言生成新的翻译文件
 

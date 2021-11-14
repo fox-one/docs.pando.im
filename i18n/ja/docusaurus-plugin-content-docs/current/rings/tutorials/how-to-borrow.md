@@ -1,5 +1,5 @@
 ---
-title: Borrowing assets from Pando Rings
+title: Pando Rings から資産を借りる
 sidebar_position: 5
 date: 2021-09-04 12:33:07
 ---
@@ -8,11 +8,11 @@ Pando Ringで資産を借りたい場合は、マーケットページの「借�
 
 ![](../assets/borrow1.jpg)
 
-If you have already entered the Market Overview page and have chosen to view statistics of a specific market, you can also go to borrow from the asset statistics page.
+すでに[市場の概要]ページに入り、特定の市場の統計を表示することを選択した場合は、資産統計ページから借りることもできます。
 
 ![](../assets/borrow2.jpg)
 
-If you haven't had any borrow yet, you will also find access to borrow on the Me page. However, if you have outstanding borrow already, you will only be able to see cards of your borrow assets here.
+まだ借りていない場合は、Meページで借りることもできます。 ただし、すでに未払いの借入金がある場合は、ここで借入資産のカードのみを表示できます。
 
 ![](../assets/borrow3.jpg)
 

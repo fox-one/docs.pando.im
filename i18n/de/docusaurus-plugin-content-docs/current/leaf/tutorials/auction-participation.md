@@ -1,31 +1,31 @@
 ---
-title: Participating in the Auction
-sidebar_position: 8
-date: 2021-08-13 12:33:07
+title: Teilnahme an der Auktion
+sidebar_position: acht
+date: 13-08-2021 12:33:07
 ---
 
 
-You can go to "Auction" page to participate in auctions and check on the information of the past auctions.
+Sie können auf die "Auktion" Seite gehen, um an Auktionen teilzunehmen und die Informationen der letzten Auktionen zu überprüfen.
 
-Ongoing auctions are in the "Ongoing"(at Auction) tab.
+Laufende Auktionen befinden sich in der Registerkarte "Ongoing" (bei Auktion).
 
 ![](../assets/auction-p1.png)
 
-If there are no auctions in progress, you will see pic of blank state.
+Wenn keine Auktionen im Gange sind, werden Sie ein leeres Bild sehen.
 
 ![](../assets/auction-p2.png)
 
-For an active auction, there are two phases.
+Für eine aktive Auktion gibt es zwei Phasen.
 
-For Phase 1, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt.
+Für Phase 1 Teilnehmer bieten in einem Zuwachs von nicht weniger als 3% des vorherigen Gebotsbetrags an, um den höchsten Betrag der ausstehenden Schulden zu decken.
 
-If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+Wenn innerhalb der Begrenzung von 12 Stunden niemand bereit ist, die Gesamtverschuldung zu decken, Die Auktion ist vorbei und der Bieter, der bereit ist, den höchsten Betrag der Schulden zu decken, nimmt alle Sicherheiten nach Hause. Oder wenn es jemanden gibt, der anbietet, die Gesamtverschuldung zu decken, dann wird die Auktion in die zweite Phase gehen.
 
 ![](../assets/auction-p3.png)
 
-For Phase 2, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt.
+Für Phase 2, Die Teilnehmer bieten mit einem Erlass von nicht weniger als 3% des vorherigen Gebotsbetrages an, den kleinsten Teil der Sicherheiten für die Zahlung der Gesamtverschuldung anzunehmen.
 
-The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.
+Der Gewinner muss alle Schulden im Austausch für den kleinsten Betrag der Sicherheiten zurückzahlen, für die er (s)das Gebot überwies.
 
 
 ![](../assets/auction-p4.png)

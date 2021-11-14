@@ -1,25 +1,25 @@
 ---
-title: Vaults
+title: 볼트(Vaults)
 sidebar_position: 1
 date: 2021-08-13 12:33:07
 ---
 
-### What is a Vault
+### 볼트 란 무엇입니까?
 
-A Vault is where the owner deposit collateral and generate stable cyptocurrency pUSD.
+볼트는 소유자가 담보를 예치하고 스테이블 코인 pUSD를 생성하는 곳입니다.
 
-### Vault Types
-Vaults are categorized by the type of collateral used to generated pUSD. Users create pUSD by generating it against their collateral and destroy pUSD when repaying their generated pUSD balance.
+### 볼트 유형
+볼트는 pUSD 생성에 사용된 담보 유형에 따라 분류됩니다. 사용자는 담보물을 저당하여 pUSD를 생성하고 생성된 pUSD를 상환하면 pUSD는 소각됩니다.
 
-### Collateralization
-Vaults are required to be overcollateralized and have a Liquidation Ratio that Vault owners need to uphold to avoid the Liquidation of their positions.
+### 담보
+볼트는 과잉 담보가 필요하며 볼트 소유자는 포지션 청산을 피하기 위해 청산 비율을 유지해야 합니다.
 
-### Debt Ceiling
-The Vault-specific Debt Ceiling is the maximum amount of pUSD that can be generated of each Vault type.
+### 부채 한도
+볼트별 부채 한도는 각 볼트 유형에서 생성할 수 있는 최대 pUSD의 양입니다.
 
-The Global Debt Ceiling limits the amount of pUSD that can be generated across the entire system.
+총 부채 한도는 전체 시스템에서 생성될 수 있는 pUSD의 양을 제한합니다.
 
-### Stability Fees
-The Stability Fee is a variable-rate fee continuously added to a Vault owner’s generated pUSD balance. It can be understood as the interests you pay for the loan (generated pUSD). 
+### 안정 수수료
+안정 수수료는 볼트 소유자가 생성한 pUSD 잔액에 지속적으로 추가되는 변동 요금입니다. 대출(생성된 pUSD) 에 대해 지불하는 이자로 이해할 수 있습니다. 
 
 

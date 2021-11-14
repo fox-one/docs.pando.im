@@ -45,7 +45,13 @@ Github 및 Pando의 i18n에 익숙하지 않은 경우 Crowdin을 사용하여 �
 2. [Crwodin의 Pando 페이지](https://pando.crowdin.com/)에서 번역 상태 및 진행 상황을 찾아보세요.
 3. JSON 및 Markdown 파일을 번역하는 데 사용해야 하므로 Crowdin 번역 UI에 익숙해지세요.
 
-### Github에서 번역하기
+````mdx-code-block
+:::info
+Please note that all the code in the documentation should not be translated.
+:::
+````
+
+### Initialize the Translation
 
 #### 새 언어에 대한 새 번역 파일 생성
 

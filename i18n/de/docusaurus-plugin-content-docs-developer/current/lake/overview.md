@@ -1,51 +1,51 @@
 ---
-title: Overview
-sidebar_position: 1
-date: 2021-09-30 14:38:07
+title: Übersicht
+sidebar_position: eins
+date: 30-09-2021 14:38:07
 ---
 
-Pando Lake is an [Uniswap](https://uniswap.org) v2 implementation built with the MTG technology on Mixin Network. Benefit by Mixin's amazing TPS, Pando Lake has outstanding performance on tradings, most transactions can be confirmed in seconds.
+Pando Lake ist eine [Uniswap](https://uniswap.org) v2 Implementation mit der MTG Technologie auf Mixin Network. Profitieren Sie von Mixins fantastischem TPS, Pando Lake hat hervorragende Performance im Handel, die meisten Transaktionen können in Sekunden bestätigt werden.
 
-## An Intro to Pando Lake
+## Eine Einführung in den Pando-See
 
 ### Governance
 
-Pando lake is maintained by five trusted nodes. Proposals such as create new pools must be approved by at least three nodes.
+Der Pando See wird von fünf vertrauenswürdigen Knoten gepflegt. Vorschläge wie die Erstellung neuer Pools müssen von mindestens drei Knoten genehmigt werden.
 
-### Pool
+### Swimming Pool
 
-Each Pool holds two tokens, which together represent a trading pair for those assets. Liquidity providers deposit tokens into pool to let traders trade；In return, the trade fees are all given to the liquidity provider according to the liquidity contribution ratio.
+Jeder Pool verfügt über zwei Token, die zusammen ein Handelspaar für diese Vermögenswerte darstellen. Liquiditätsanbieter hinterlegen Tokens in den Pool, um Händler handeln zu lassen; n Rendite werden alle Handelsgebühren dem Liquiditätsanbieter entsprechend dem Liquiditätsbeitragsverhältnis überwiesen.
 
-### LP Token
+### LP-Token
 
-Each pool has a unique token (LP Token) to represent circulating liquidity. Holding LP Token is a proof of liquidity providing, and the withdrawal of liquidity also requires payment of LP Token.
+Jedes Schwimmbad verfügt über ein einzigartiges Token (LP Token) um eine zirkulierende Liquidität zu repräsentieren. Holding LP Token ist ein Nachweis für die Liquidität und für den Entzug der Liquidität ist auch die Zahlung von LP Token erforderlich.
 
-The total market value of LP Token is equal to the sum of the market value of the two tokens in the Pool.
+Der gesamte Marktwert von LP Token entspricht der Summe des Marktwertes der beiden Marken im Pool.
 
-## Actions
+## Aktionen
 
-### Deposit
+### Einzahlung
 
-Increase the reserves of a Pool to become liquidity provider.
+Erhöhen Sie die Reserven eines Pools, um Liquiditätsanbieter zu werden.
 
-![deposit action](assets/pando_lake_deposit_action.png)
+![einzahlungsaktion](assets/pando_lake_deposit_action.png)
 
-### Withdraw
+### Auszahlung
 
-Pay LP Token back to the Pool to withdraw tokens inside. The reserves of the Pool will be decreased.
+Bezahle LP Token zurück an den Pool, um Tokens im Inneren abzuheben. Die Reserven des Pools werden reduziert.
 
-![withdraw action](assets/pando_lake_withdraw_action.png)
+![aktion zurückziehen](assets/pando_lake_withdraw_action.png)
 
-### Trade
+### Handel
 
-Pools are always take the initiative to deal with traders automatically. Users can trade through the pools at any side, Pando Lake supports up to 4 pools for one transaction.
+Pools ergreifen immer die Initiative, um mit Händlern automatisch umzugehen. Benutzer können durch die Pools an jeder Seite handeln, Pando Lake unterstützt bis zu 4 Pools für eine Transaktion.
 
-![trade action](assets/pando_lake_trade_action.png)
+![handelsaktion](assets/pando_lake_trade_action.png)
 
-## Summary
+## Zusammenfassung
 
-Pando Lake has achieved the goal that decentralized the consensus among trusted nodes, bringing the dex service with multiple AMM formula to all users of the Mixin Network.
+Pando Lake hat das Ziel erreicht, dass der Konsens zwischen vertrauenswürdigen Knoten dezentralisiert wird den dex Service mit mehreren AMM-Formeln an alle Benutzer des Mixin Networks zu bringen.
 
-Pando Lake has performed well but is far from enough. We are working some new pools to make the liquidity more flexible and efficient. The management of trusted nodes needs to be more open to attract more participants too.
+Der Pando See hat gut funktioniert, aber ist alles andere als genug. Wir arbeiten mit neuen Pools zusammen, um die Liquidität flexibler und effizienter zu gestalten. Die Verwaltung vertrauenswürdiger Knoten muss offener sein, um auch mehr Teilnehmer anzuziehen.
 
 

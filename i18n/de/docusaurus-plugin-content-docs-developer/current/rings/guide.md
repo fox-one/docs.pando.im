@@ -1,43 +1,43 @@
 ---
-title: Guide
+title: Anleitung
 sidebar_position: 3
-date: 2021-08-16 18:40:00
+date: 16-08-2021 18:40:00
 ---
 
-An easier and faster way to Connect to Pando Rings engine.
+Eine einfachere und schnellere Möglichkeit, sich mit Pando Rings zu verbinden.
 
-## Installing
+## Installiere
 
 ```sh
-go get github.com/fox-one/pando-rings-sdk-go
+go bekomme github.com/fox-one/pando-rings-sdk-go
 ```
 
-## Usage
+## Auslastung
 
-* Initialize the endpoint
+* Initialisiere den Endpunkt
 
 ```go
-rings.Endpoint = "xxxxx" // e.g. rings.Endpoint = "https://compound-test-api.fox.one"
+rings.Endpoint = "xxxxx" // z.B. rings.Endpoint = "https://compound-test-api.fox.one"
 ```
 
-* Import
+* Importieren
 
 ```go
-import "github.com/fox-one/pando-rings-sdk-go"
+"github.com/fox-one/pando-rings-sdk-go" importieren
 ```
 
-* Request all markets
+* Alle Märkte anfragen
 
 ```go
-rings.RequestAllMarkets(ctx context.Context) ([]*Market, error)
+rings.RequestAllMarkets(ctx context.Context) ([]*Markt, Fehler)
 ```
 
-* Request transactions
+* Transaktionen anfordern
 ```go
-rings.RequestTransactions(ctx context.Context, limit int, offset time.Time) ([]*Transaction, error)
+rings.RequestTransactions(ctx context.Context, limit int, offset time.time) ([]*Transaktion, Fehler)
 ```
 
-* Request user action
+* Benutzeraktion anfordern
 ```go
 //request supply action url
 rings.RequestSupply(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
@@ -71,4 +71,4 @@ rings.RequestLiquidate(ctx context.Context, followID string, supplyUserID string
 
 ```
 
-More details of sdk using, please read the [example](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Or refer to the [official full-featured version of Pando rings for implementation](https://github.com/fox-one/compound-app)
+Weitere Details zum Benutzen von sdk, lesen Sie bitte das Beispiel [](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Oder lesen Sie die [offizielle Vollversion der Pando Ringe für die Implementation](https://github.com/fox-one/compound-app)

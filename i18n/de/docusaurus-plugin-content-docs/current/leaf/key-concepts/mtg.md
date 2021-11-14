@@ -1,14 +1,14 @@
 ---
-title: Pando Leaf MTG
-sidebar_position: 4
-date: 2021-08-15 22:33:07
+title: Pando Blatt MTG
+sidebar_position: vier
+date: 15-08-2021 22:33:07
 ---
 
-Pando Leaf is built with [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg). Right now, there are 6 genesis nodes that verify the transactions with Mixin Network and performs administrative actions, they are:
+Pando Blatt wurde mit [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg) gebaut. Zur Zeit gibt es 6 Genesisknoten, die die Transaktionen mit Mixin Network überprüfen und administrative Aktionen durchführen, sie sind:
 
-- [Mixin Team](https://mixin.one/): The core develop team of Mixin Network
-- [Fox.ONE](https://fox.one/): The main development team of Pando Leaf
-- [Poolin](https://poolin.com/): The industry-leading mining service provider
-- [Big.ONE](https://big.one/): A global trading platform that provides users with secure and convenient trusteeship services
-- [Exin](https://www.exin.one/): A trading platform for digital assets
-- Cedirc Fung: The main sponsor of Pando Leaf.
+- [Mixin Team](https://mixin.one/): Das Kernentwicklungsteam des Mixin Networks
+- [Fox.ONE](https://fox.one/): Das Hauptentwicklungsteam von Pando Blatt
+- [Poolin](https://poolin.com/): Der branchenführende Bergbaudienstleister
+- [Big.ONE](https://big.one/): Eine globale Handelsplattform, die Benutzern sichere und bequeme Treuhänderdienste bietet
+- [Exin](https://www.exin.one/): Eine Handelsplattform für digitale Assets
+- Cedirc Fung: Hauptsponsor von Pando Blatt.

@@ -1,16 +1,16 @@
 ---
-title: Read Market
+title: Markt lesen
 sidebar_position: 3
-date: 2021-09-30 23:18:01
+date: 30-09-2021 23:18:01
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from"@site/src/components/api";
 
-## Read Global Statistics
+## Globale Statistiken lesen
 
 ### GET /states/markets
 
-This API will respond historical market statistics
+Diese API reagiert auf historische Marktstatistiken
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/?dur=:dur" />
 
@@ -18,7 +18,7 @@ This API will respond historical market statistics
 
 <APIParams p-dur="The duration. for example, 4320h means latest 180 days"/>
 
-<APIRequest title="Read market statistics" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
+<APIRequest title="Markt-Statistiken lesen" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
 
 ```json title="Response"
 {
@@ -37,11 +37,11 @@ This API will respond historical market statistics
 }
 ```
 
-## Read Pair Statistics
+## Paarstatistik lesen
 
 ### GET /states/markets/:base/:quote
 
-This API will respond historical market statistics specified by base and quote asset.
+Diese API reagiert auf historische Marktstatistiken, die durch Basis- und Quote-Asset angegeben wurden.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/?dur=:dur" />
 
@@ -49,7 +49,7 @@ This API will respond historical market statistics specified by base and quote a
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
+<APIRequest title="Markt-Statistiken von ETH-BTC lesen" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
 
 ```json title="Response"
 {
@@ -68,11 +68,11 @@ This API will respond historical market statistics specified by base and quote a
 }
 ```
 
-## Read Candlestick Data
+## Candlestick Daten lesen
 
 ### GET /states/markets/:base/:quote/kline/v2?dur=:dur
 
-This API will respond the candlestick data specified by base and quote asset.
+Diese API antwortet auf die Candlestick-Daten, die durch Basis- und Quote-Asset angegeben wurden.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/kline/v2?dur=:dur" />
 
@@ -80,7 +80,7 @@ This API will respond the candlestick data specified by base and quote asset.
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
+<APIRequest title="Markt-Statistiken von ETH-BTC lesen" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
 
 ```json title="Response"
 {

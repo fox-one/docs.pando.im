@@ -1,11 +1,11 @@
 ---
-title: Liquidation Ratio
-sidebar_position: 2
+title: Liquidationsquote
+sidebar_position: zwei
 date: 2021-08-13 14:33:07
 ---
 
-The Liquidation Ratio is the minimum required collateralization level for each Vault type before it is considered undercollateralized and subject to liquidation.
+Das Liquidation Ratio ist das Mindestmaß an Sicherheiten für jeden Vault-Typ, bevor es als unterbesichert und liquidierend betrachtet wird.
 
-Each Vault type’s Liquidation Ratio is determined by a combination of the collateral’s risk profile and the Stability Fee. There may be multiple Vault types for each collateral, with varying Liquidation Ratios and Stability Fees.
+Die Liquidation Ratio jedes Vault Typs wird durch eine Kombination des Risikoprofils und der Stabilitätsgebühr bestimmt. Es kann für jede Sicherheiten mehrere Vault-Typen geben, mit variierenden Liquidierungsquoten und Stabilitätsgebühren.
 
-Liquidation Ratio = (Collateral Amount x Collateral Price) ÷ Generated pUSD × 100
+Liquidation Ratio = (Collateraler Betrag x Collateral Price) ÷ Generierte pUSD × 100

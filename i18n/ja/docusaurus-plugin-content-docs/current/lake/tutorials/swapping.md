@@ -28,9 +28,9 @@ Algorithm calculates the optimal route so that you can receive the most asset po
 Click to view [transaction fees](https://docs.pando.im/docs/lake/key-concepts/trading-fee).
 
 ````mdx-code-block
-:::caution
+:::注意
 
-Please pay attention to the price effect when swapping. 
+交換時の価格の影響にご注意してください。 
 
 価格への影響が大きすぎる場合は、取引の流動性が不足しているか、取引金額が多すぎることを意味し、取引を継続すると損失が大きくなる可能性があります。
 

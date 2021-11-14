@@ -1,29 +1,29 @@
 ---
-title: What's Pando Leaf
-sidebar_position: 1
-date: 2021-07-22 22:33:07
+title: Was ist Pando Blatt
+sidebar_position: eins
+date: 22-07-2021 22:33:07
 ---
 
-[Pando Leaf](https://leaf.pando.im) is a decentralized financial network built with the Mixin MTG ([Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange)) technology, a place where you can deposit collateral to generate and destory [Pando USD(pUSD)](./pusd) and destroy it when repaying the generated pUSD balance.
+[Pando Leaf](https://leaf.pando.im) ist ein dezentralisiertes Finanznetzwerk, das mit der Mixin MTG ([Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange)) Technologie gebaut wurde ein Ort, an dem Sie Sicherheiten einlegen können, um zu generieren und zu schicken, [Pando USD(pUSD)](./pusd) und es bei der Rückzahlung des generierten PUSD-Guthabens zu zerstören.
 
-## How does Pando Leaf work?
+## Wie funktioniert Pando Blatt?
 
-Depositing collaterals and repaying the generated pUSD balance both happen in a **vault**.
+Die Einzahlung von Sicherheiten und die Rückzahlung des generierten Pusd-Guthabens erfolgt sowohl in einem **Tresor**.
 
-- Vaults are not free. Generating the stablecoin requires the payment of stability fee. To reclaim collateral, users must repay the previously generated stablecoin and the accumulated stability fee.
-- Vaults are required to be overcollateralized. Vault owners should uphold the liquidation price/liquidation ratio (which is the minimum collateralization ratio) to avoid the **liquidation** of their positions.
+- Tresore sind nicht kostenlos. Die Generierung der Stablecoin erfordert die Zahlung der Stabilitätsgebühr. Um Sicherheiten zurückzugewinnen, müssen die Nutzer die zuvor erzeugte Stablecoin und die angehäufte Stabilitätsgebühr zurückzahlen.
+- Gewölbe sind zu überlagern. Die Besitzer von Vault sollten das Verflüssigungspreis/-liquidierungsverhältnis (das das minimale Sicherungsverhältnis ist) aufrechterhalten, um die **Liquidation** ihrer Positionen zu vermeiden.
 
-When a vault is liquidated, a liquidation penalty is applied and collateral is sold to repay the vault’s outstanding stablecoin balance.
+Wird ein Tresor liquidiert, wird eine Liquidationsstrafe erhoben und zur Rückzahlung des ausstehenden Stablecoin-Guthabens der Tresor werden Sicherheiten verkauft.
 
-For more techincal details, please refer to the [Pando Leaf Technical Design](/developer/leaf/design)
+Weitere technische Details finden Sie im [Pando Blatt Technisches Design](/developer/leaf/design)
 
-## Auction
+## Auktion
 
-Anyone can participate in the auction if a vault breaches the minimum required collateralization ratio and becomes liquidated.
+Jeder kann an der Auktion teilnehmen, wenn ein Tresor gegen das erforderliche Mindest-Sicherungsverhältnis verstößt und liquidiert wird.
 
-There are two phases of the auction - For the first phase, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+Es gibt zwei Phasen der Auktion - Für die erste Phase, Teilnehmer bieten in einem Zuwachs von nicht weniger als 3% des vorherigen Gebotsbetrags an, um den höchsten Betrag der ausstehenden Schulden zu decken. Wenn innerhalb der Begrenzung von 12 Stunden niemand bereit ist, die Gesamtverschuldung zu decken, Die Auktion ist vorbei und der Bieter, der bereit ist, den höchsten Betrag der Schulden zu decken, nimmt alle Sicherheiten nach Hause. Oder wenn es jemanden gibt, der anbietet, die Gesamtverschuldung zu decken, dann wird die Auktion in die zweite Phase gehen.
 
-For the second phase, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt.
+Für die zweite Phase, Die Teilnehmer bieten mit einem Erlass von nicht weniger als 3% des vorherigen Gebotsbetrages an, den kleinsten Teil der Sicherheiten zur Zahlung der Gesamtverschuldung anzunehmen.
 
 
 

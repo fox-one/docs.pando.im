@@ -1,27 +1,27 @@
 ---
-title: Withdrawing Collateral
-sidebar_position: 7
-date: 2021-08-13 12:33:07
+title: Rücknahme von Collateral
+sidebar_position: sieben
+date: 13-08-2021 12:33:07
 ---
 
-To withdraw collateral from a Vault and return it to the wallet, click "Withdraw" to proceed.
+Um Sicherheiten von einem Tresor zurückzuziehen und an die Brieftasche zurückzugeben, klicken Sie auf "Abhebung", um fortzufahren.
 
 ![](../assets/leaf-withdraw-p1.png)
 
-Enter the amount you want to withdraw, click withdarw, and Enter PIN, the ETH collateral reduce from 4.7947 to 1.7947. You can also see details about this withdraw in chat window.
+Geben Sie den Betrag ein, den Sie zurückziehen möchten, klicken Sie auf withdarw, und PIN eingeben, die ETH Sicherheiten reduzieren von 4.7947 auf 1.7947. Details zu diesem Hinzufügen im Chatfenster können Sie sehen.
 
 ![](../assets/leaf-withdraw-p2.png)
 
 
 ````mdx-code-block
 :::caution
-Please be noted that withdrawing collateral without first paying back your generated pUSD will result in a lower collateralization ratio and putting the Vault at higher risk for liquidation.
+Bitte beachten Sie, dass das Zurückziehen von Sicherheiten ohne vorherige Rückzahlung Ihres generierten pUSD zu einer niedrigeren Sicherungsquote führt und den Vault auf ein höheres Risiko für die Liquidation bringt.
 :::
 ````
 
 ````mdx-code-block
 :::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+Du brauchst [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) um diese Operation zu unterstützen.
 :::
 ````
 

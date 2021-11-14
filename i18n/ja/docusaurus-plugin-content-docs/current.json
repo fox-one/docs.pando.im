@@ -24,7 +24,7 @@
     "description": "The label for category Pando Leaf in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Liquidation": {
-    "message": "Liquidation",
+    "message": "清算",
     "description": "The label for category Liquidation in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Rings": {
@@ -60,7 +60,7 @@
     "description": "The label for category Key Concepts in sidebar docs"
   },
   "sidebar.docs.category.FAQs": {
-    "message": "FAQs",
+    "message": "よくあるご質問",
     "description": "The label for category FAQs in sidebar docs"
   },
   "sidebar.docs.category.Pando Leaf": {
