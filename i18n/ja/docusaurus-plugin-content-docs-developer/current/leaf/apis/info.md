@@ -1,19 +1,20 @@
 ---
-title: 情報を読む
+title: Read Info
 date: 2021-09-30 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
 
-## MTG情報を読み取る
+## Read MTG Info
 
 ### GET /info
 
-このAPIは、Pando LeafのMTG情報に応答します。
+This API will respond the MTG information of Pando Leaf.
 
 ````mdx-code-block
-MTG情報は頻繁に変更されないため、応答を保存して後で使用することができます。
+:::info
+You can save the response to use it later because the MTG information wouldn't change frequently.
 :::
 ````
 
@@ -21,7 +22,7 @@ MTG情報は頻繁に変更されないため、応答を保存して後で使�
 
 <APIMetaPanel />
 
-<APIRequest title="MTG情報を読み取る" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/info' />
+<APIRequest title="Read MTG info" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/info' />
 
 ```json title="Response"
 {
@@ -42,17 +43,17 @@ MTG情報は頻繁に変更されないため、応答を保存して後で使�
 }
 ```
 
-## サーバー時間を読み取る
+## Read Server Time
 
 ### GET /time
 
-このAPIは、PandoLeafのサーバー時間に応答します。
+This API will respond the server time of Pando Leaf.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/time" />
 
 <APIMetaPanel />
 
-<APIRequest title="サーバー時間を読み取る" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/time' />
+<APIRequest title="Read the server time" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/time' />
 
 ```json title="Response"
 {

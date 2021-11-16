@@ -19,11 +19,11 @@ rTokens are used in the process of [supplying](./glossary), [pledging](./glossar
 
 You can withdraw the underlying asset from rToken at any time, granted that Pando Rings has enough market [liquidity](./glossary) of the asset.
 
-#### ここでRTokensをトレースします：
+#### Trace rTokens here:
 
-[rUSD（pUSDに対するrToken）](https://etherscan.io/address/0x3e09ebcb505f085f7b802419cfc92370fd840276)
+[rUSD (rToken against pUSD)](https://etherscan.io/address/0x3e09ebcb505f085f7b802419cfc92370fd840276)
 
-[rETH（ETHに対するrToken）](https://etherscan.io/address/0x7bb6a8ed5a15396adedea940714a1ebc7d8e9f6a)
+[rETH (rToken against ETH)](https://etherscan.io/address/0x7bb6a8ed5a15396adedea940714a1ebc7d8e9f6a)
 
 [rUSDT (rToken against USDT)](https://etherscan.io/address/0x2fe5203c59f84ceb90ea078821bf419b4c0bb6da)
 

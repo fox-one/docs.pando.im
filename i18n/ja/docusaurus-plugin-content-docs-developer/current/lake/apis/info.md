@@ -1,5 +1,5 @@
 ---
-title: MTG情報を読み取る
+title: Read MTG Info
 date: 2021-09-30 23:18:01
 ---
 
@@ -7,11 +7,11 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ## GET /info
 
-この API は 4swap と Lake に関する MTG 情報を提供します。
+This API will MTG information about 4swap and Lake.
 
 ````mdx-code-block
 :::info
-MTG情報が頻繁に変更されないので、後で使うためにリスポンスを保存しても構わない。
+You can save the response to use it later because the MTG information wouldn't change frequently.
 :::
 ````
 
@@ -19,16 +19,16 @@ MTG情報が頻繁に変更されないので、後で使うためにリスポ�
 
 <APIMetaPanel />
 
-<APIRequest title="MTG情報を読み取る" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
+<APIRequest title="Read MTG info" method="GET" isPublic base="https://api.4swap.org/api" url='/info' />
 
 
-**レスポンス**
+**Response**
 
 ```json
 {
   "ts": 1627697766645,
   "data": {
-    // MTGメンバーズのユーザーID
+    // user id of MTG members
     "members": [
       "a753e0eb-3010-4c4a-a7b2-a7bda4063f62",
       "099627f8-4031-42e3-a846-006ee598c56e",
@@ -37,7 +37,7 @@ MTG情報が頻繁に変更されないので、後で使うためにリスポ�
       "e4bc0740-f8fe-418c-ae1b-32d9926f5863"
     ],
     "public_key": "dt351xp3KjNlVCMqBYUeUSF45upCEiReSZAqcjcP/Lc=",
-    // マルチシグ閾値
+    // multisig threshold
     "threshold": 3
   }
 }

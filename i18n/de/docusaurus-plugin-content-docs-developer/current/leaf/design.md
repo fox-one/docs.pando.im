@@ -1,6 +1,6 @@
 ---
 title: Technical Design
-date: 12-07-2021 23:33:07
+date: 2021-07-12 23:33:07
 ---
 
 # Pando Leaf Design Document

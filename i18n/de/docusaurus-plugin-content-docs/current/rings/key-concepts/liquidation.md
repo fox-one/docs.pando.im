@@ -1,6 +1,6 @@
 ---
 title: Liquidation
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 In Pando Rings, if the value of your borrowing rises above the level of your borrowing capacity, liquidation will happen. A liquidator is allowed to pay back **up to 50%** of your borrowed assets and get your corresponding collateral at a discounted price. The liquidator **can choose** the debt they want to pay back and the type of collateral they would like to receive.

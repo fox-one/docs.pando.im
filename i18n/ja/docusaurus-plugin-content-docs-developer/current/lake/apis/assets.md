@@ -1,5 +1,5 @@
 ---
-title: 資産を読み取る
+title: Read Assets
 date: 2021-09-30 23:18:01
 ---
 
@@ -7,13 +7,13 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ## GET /assets
 
-この API はサポートされているすべての暗号資産に対応します。
+This API will respond all supported crypto assets.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/assets" />
 
 <APIMetaPanel />
 
-<APIRequest title="サポートされている資産を読み取る" method="GET" isPublic base="https://api.4swap.org/api" url='/assets' />
+<APIRequest title="Read supported assets" method="GET" isPublic base="https://api.4swap.org/api" url='/assets' />
 
 ```json title="Response"
 {

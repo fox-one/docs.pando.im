@@ -5,17 +5,17 @@ date: 2021-10-01 23:18:01
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## 全ての取引を表示する
+## Read All Transactions
 
 ### GET /transactions
 
-この API はすべてのトランザクションに応答します.
+This API will respond all transactions.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions" />
 
 <APIMetaPanel />
 
-<APIRequest title="全ての取引を表示する" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/transactions' />
+<APIRequest title="Read all transactions" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/transactions' />
 
 ```json title="Response"
 {
@@ -52,11 +52,11 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 }
 ```
 
-## 単一の取引を表示する
+## Read Single Transaction
 
 ### GET /transactions/:follow_id
 
-この API は、 `:follow_id` で1つのトランザクションに応答します。 `follow_id`は、[ `action` ](./actions)を作成したときに指定したuuidです。
+This API will respond one transaction with `:follow_id`. The `follow_id` is an uuid that you specified when you created the [`action`](./actions).
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" />
 
@@ -64,7 +64,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 <APIParams p-follow_id="the follow id" p-follow_id-required="{true}" />
 
-<APIRequest title="単一の取引を表示する" method="GET" base="https://leaf-api.pando.im/api" url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129' />
+<APIRequest title="Read one transaction" method="GET" base="https://leaf-api.pando.im/api" url='/transactions/c8c92c8f-65b3-49b7-bfae-d5ae43265129' />
 
 ```json title="Response"
 {

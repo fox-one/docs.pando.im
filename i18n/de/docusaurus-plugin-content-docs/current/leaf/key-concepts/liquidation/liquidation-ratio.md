@@ -1,6 +1,6 @@
 ---
 title: Liquidation Ratio
-date: 13-08-2021 14:33:07
+date: 2021-08-13 14:33:07
 ---
 
 The Liquidation Ratio is the minimum required collateralization level for each Vault type before it is considered undercollateralized and subject to liquidation.

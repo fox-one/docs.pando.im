@@ -1,6 +1,6 @@
 ---
 title: Overview
-date: 20-03-2021 12:38:07
+date: 2021-03-20 12:38:07
 ---
 
 Pando is a decentralized financial network built with the MTG technology, and its underlying financial algorithm is inspired by [MakerDao](https://makerdao.com) and Synthetix.

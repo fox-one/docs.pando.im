@@ -3,11 +3,11 @@ title: Technical Design
 date: 2021-03-20 12:38:07
 ---
 
-# デザイン
+# Design
 
-## アーキテクチャ
+## Architecture
 
-Ringsは、MTGとMixinネットワークのパラチェーンの実装です。
+Rings is an implementation of MTG and a parachain of Mixin network.
 
 ![](design/architecture.jpg)
 

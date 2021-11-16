@@ -1,6 +1,6 @@
 ---
 title: Overview
-date: 20-03-2021 12:38:07
+date: 2021-03-20 12:38:07
 ---
 
 An implementation of the [compound protocol](https://github.com/compound-finance/compound-protocol) based on [Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) technology.

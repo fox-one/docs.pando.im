@@ -1,6 +1,6 @@
 ---
 title: Checking market statistics
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 You can find [Total Supply](../key-concepts/glossary), [Total Borrow](../key-concepts/glossary), [24h Supply](../key-concepts/glossary) and [24h Borrow](../key-concepts/glossary) on the Market page. They give you an overall understanding of the volume and activenss of all the markets in Pando Rings.

@@ -1,6 +1,6 @@
 ---
 title: Overview
-date: 30-09-2021 14:38:07
+date: 2021-09-30 14:38:07
 ---
 
 Pando Lake is an [Uniswap](https://uniswap.org) v2 implementation built with the MTG technology on Mixin Network. Benefit by Mixin's amazing TPS, Pando Lake has outstanding performance on tradings, most transactions can be confirmed in seconds.

@@ -1,6 +1,6 @@
 ---
 title: Repaying your borrow in Pando Rings
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 If you want to pay back your borrowed asset, you can go to repay.

@@ -1,5 +1,5 @@
 ---
-title: Pando Leafとは？
+title: What's Pando Leaf
 date: 2021-07-22 22:33:07
 ---
 

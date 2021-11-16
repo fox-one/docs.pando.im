@@ -1,6 +1,6 @@
 ---
 title: Supplying assets to Pando Rings
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 Supplying is the first step in Pando Rings. When users supply an asset to Pando Rings, they begin earning interest instantly. Interest accrues every minute; users can withdraw their principal plus interest anytime.

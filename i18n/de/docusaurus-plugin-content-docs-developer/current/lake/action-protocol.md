@@ -1,6 +1,6 @@
 ---
 title: Action Protocol
-date: 31-07-2021 11:18:01
+date: 2021-07-31 11:18:01
 ---
 
 4swap and Lake are MTG applications, which read [multisig transactions](https://developers.mixin.one/document/wallet/api/multisigs/tutorial) from Mixin Network.

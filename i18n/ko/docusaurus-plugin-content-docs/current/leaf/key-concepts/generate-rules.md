@@ -1,14 +1,14 @@
 ---
-title: 주화(화폐주조) 규칙
+title: Generate rules
 date: 2021-09-13 00:00:01
 ---
 
-최초 주조되는 암호화폐의 최소 금액은 100 pusd입니다.
+The minimum amount of crypto currency to be minted for the first time is 100 pusd.
 
 ````mdx-code-block
 :::caution
 
-주폐 후 모기지 이자율이 안전한 범위에 있는지 확인하십시오. 모기지 이자율이 150% 미만인 경우 강제 청산되어 손실이 발생합니다.
+Please ensure that the mortgage rate after minting is in a safe range. If the mortgage rate is lower than 150%, it will be forced to liquidate and cause losses.
 
 :::
 ````

@@ -1,6 +1,6 @@
 ---
 title: Authorization
-date: 31-07-2021 11:18:01
+date: 2021-07-31 11:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";

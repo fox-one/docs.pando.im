@@ -1,26 +1,26 @@
 ---
-title: 借用容量を取得するためのrTokenの誓約
+title: Pledging rTokens to get borrow capacity
 date: 2021-09-04 12:33:07
 ---
 
-借りたい場合は、担保型メカニズムでPando Rings機能を借りるように誓約する必要があります。
+If you want to borrow, you will need to pledge as borrowing in Pando Rings function on the collateral-backed mechanism.
 
-誓約後、提供から取得したrTokenはシステムにロックされます。 誓約したrTokenを他の人に譲渡することはできませんが、誓約した人の供給への関心を得ることができます。
+After pledging, the rTokens you get from supplying will be locked into the system. You will not be able to transfer your pledged rTokens to others, but you can still gain supply interest of those you pledge.
 
 ````mdx-code-block
-:::情報
-**手動の「誓約」とワンストップの「供給と誓約」の違い**
+:::info
+**The difference between manually "Pledge" and one-stop "Supply and Pledge"**
 
-手動で誓約する場合は、誓約する提供資産の割合を決定できます。 対照的に、ワンストップの供給と誓約機能（供給ページと借入ページの両方からアクセス可能）を使用することを選択した場合、システムは供給中にrTokenの100％を誓約します。
+If you manually pledge, you can decide on the percentage of the supplied asset you want to pledge. In comparison, if you choose  to use the one-stop Supply and Pledge function (accessible from both Supply page and Borrow page), the system will pledge 100% of the rTokens while you supply.
 
-残念ながら、誓約された資産の価値が借り入れをカバーできなくなった場合、誓約された資産のすべては清算の対象となりますが、 [liquidation](../key-concepts/liquidation) 誓約されていない資産はそのまま残ります。
+If unfortunately, the value of your pledged assets cannot cover your borrow anymore, **ALL** of your pledged assets will be subjected to [liquidation](../key-concepts/liquidation) while your unpledged assets will stay intact.
 
-より多くの誓約によってより多くの借入力を獲得することと、リスクを分離するために部分的にのみ誓約することとの間のトレードオフを行うのはあなた次第です。
+It's up to you make the tradeoff between getting more borrowing power by pledging more and pledging only partially for isolation of risk.
 :::
 ````
 
-誓約するには、MeページのSupplyセクションの提供されたアセットカードをクリックします。
+To pledge, you can click on the supplied asset card of the Supply section on the Me page.
 
-進行状況バーをドラッグして、表示するパーセンテージを選択します。 金額が変わると、リスクローン指標のステータスも変わります。 誓約後のローンの予測リスクを監視するために、指標に細心の注意を払うことをお勧めします。
+Drag on the progress bar to choose the percentage you want to pledge. As the amount change, the status of the risk loan indicator also change. It's advised that you pay close attention to the indicator to monitor the predicted risk of the loan after you pledge.
 
 ![](../assets/pledge1.jpg)

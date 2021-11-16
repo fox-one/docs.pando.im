@@ -1,14 +1,14 @@
 ---
-title: Auditberichte
+title: Audit Reports
 ---
 
 import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
-## Auditberichte von IOActive
+## Audit Reports from IOActive
 
-### Bericht Herunterladen
+### Download Report
 
 [Audit report from IOActive](//docs.pando.im/reports/ioactive-report.pdf)
 

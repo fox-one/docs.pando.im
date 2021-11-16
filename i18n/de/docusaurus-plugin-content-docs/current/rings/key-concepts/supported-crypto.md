@@ -1,6 +1,6 @@
 ---
 title: Supported Crypto
-date: 29-09-2021 22:33:07
+date: 2021-09-29 22:33:07
 ---
 
 Pando Rings supports the following cryptocurrencies:

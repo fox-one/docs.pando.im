@@ -1,6 +1,6 @@
 ---
 title: Read Pairs
-date: 30-09-2021 23:18:01
+date: 2021-09-30 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";

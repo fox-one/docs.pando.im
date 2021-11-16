@@ -29,7 +29,7 @@ then run it with:
 ./4swap-icon-gen -config YOUR_KEYSTORE_FILE -a0 LP_ASSET_ID -a1 1ST_ASSET_ID -a2 2ND_ASSET_ID
 ```
 
-その中身には、
+in which,
 
 - `YOUR_KEYSTORE_FILE` is the keystore file of your account. You can get it from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard).
 - `LP_ASSET_ID` is the asset ID of LP token.

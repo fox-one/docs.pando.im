@@ -1,5 +1,5 @@
 ---
-title: はじめに
+title: Get Started
 date: 2021-08-13 12:33:07
 ---
 
@@ -16,15 +16,15 @@ Click on "Connect Wallet" to start. Be sure to authorize otherwise data related 
 
 ````mdx-code-block
 :::tip
-Check all and authorize. Authorization can only view but cannot use your assets. 安全です。
+Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
 :::
 ````
 
-Pando leafのホームページを知ろう。
+Let's get to know the homepage of pando leaf.
 
 ![](../assets/leaf-get-start-p3.png)
 
-You are required to [add a vault](https://docs.pando.im/docs/leaf/tutorials/open-vault) when first enter.  右側のスクリーンショットに注目しましょう。
+You are required to [add a vault](https://docs.pando.im/docs/leaf/tutorials/open-vault) when first enter.  Let's focus on the screenshot on the right.
 
 BTC locked is your collateral in the vault. We can see 1 btc in the inmage means we pledged 1 btc in pando leaf.
 

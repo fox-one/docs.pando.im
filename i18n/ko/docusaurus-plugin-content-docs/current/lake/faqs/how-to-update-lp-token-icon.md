@@ -29,7 +29,7 @@ then run it with:
 ./4swap-icon-gen -config YOUR_KEYSTORE_FILE -a0 LP_ASSET_ID -a1 1ST_ASSET_ID -a2 2ND_ASSET_ID
 ```
 
-그 중,
+in which,
 
 - `YOUR_KEYSTORE_FILE` is the keystore file of your account. You can get it from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard).
 - `LP_ASSET_ID` is the asset ID of LP token.
@@ -49,6 +49,6 @@ Like other assets' icons, you need to submit the new LP token icon to Mixin Netw
 
 ````mdx-code-block
 :::info
-완료되면 풀 리퀘스트를 생성하십시오. Mixin Network에서 pull request를 처리하는 데는 보통 1~2일 정도 소요됩니다.
+Please create a pull request when you have finished. It usually takes about 1~2 days for Mixin Network to process your pull request.
 :::
 ````

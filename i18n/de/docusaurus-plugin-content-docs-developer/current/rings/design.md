@@ -1,6 +1,6 @@
 ---
 title: Technical Design
-date: 20-03-2021 12:38:07
+date: 2021-03-20 12:38:07
 ---
 
 # Design

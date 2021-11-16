@@ -1,6 +1,6 @@
 ---
 title: Artikel
-date: 15-09-2021 22:33:07
+date: 2021-09-15 22:33:07
 ---
 
 Pando schätzt die Gedanken aller Community-Mitglieder. Inhalte, die von Community-Mitgliedern beigetragen werden, werden hier gesammelt!

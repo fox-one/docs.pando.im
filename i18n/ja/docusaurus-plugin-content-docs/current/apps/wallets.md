@@ -1,12 +1,12 @@
 ---
-title: ウォレット
+title: Wallets
 ---
 
 ## Mixin Messenger
 
 [Mixin Messenger](https://mixin.one/messenger) is an open source cryptocurrency wallet, which supports almost all popular cryptocurrencies.
 
-Mixin Messengerは、GPL-3.0ライセンスの下でリリースするMixin CoreTeamによって開発されました。
+Mixin Messenger is developed by Mixin Core Team, who release it under the GPL-3.0 license.
 
 For users, please download the app from its official website [mixin.one](https://mixin.one/messenger).
 
@@ -23,9 +23,9 @@ You can install Fennec from Chrome web store or Firefox Add-ons:
 - [Chrome Store](https://chrome.google.com/webstore/detail/fennec/eincngenkhohbbfpkohipekcmnkfamjp)
 - [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/fennec/)
 
-Fennecは、Mixin Networkのキーストアファイルを使用して、資産を識別し、ウォレットを管理します。 キーストアファイルを作成する方法は2つあります。
+Fennec uses Mixin Network's keystore files to identify your assets and manage your wallet. There are two ways to create your keystore files.
 
-The first option is to create a  dApp from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard). Dappを作成した後、キーストアファイルを生成できます。
+The first option is to create a  dApp from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard). After creating the dApp, you can generate a keystore file.
 
 ````mdx-code-block
 :::info

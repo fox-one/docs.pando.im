@@ -9,7 +9,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /transactions
 
-이 API는 모든 트랜잭션에 응답합니다.
+This API will respond all transactions.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions" />
 
@@ -56,7 +56,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /transactions/:follow_id
 
-이 API는 `:follow_id`로 하나의 트랜잭션에 응답합니다. `follow_id`는 [`action`](./actions)을 생성할 때 지정한 uuid입니다.
+This API will respond one transaction with `:follow_id`. The `follow_id` is an uuid that you specified when you created the [`action`](./actions).
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/transactions/:follow_id" />
 

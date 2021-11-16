@@ -9,7 +9,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /assets
 
-이 API는 지원되는 모든 암호화폐 자산에 응답합니다.
+This API will respond all supported crypto assets.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets" />
 
@@ -49,7 +49,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /assets/:asset_id
 
-이 API는 `:asset_id`로 하나의 암호화폐 자산에 응답합니다.
+This API will respond one crypto asset with `:asset_id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets/:asset_id" />
 

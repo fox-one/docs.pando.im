@@ -1,18 +1,18 @@
 ---
-title: Wie werden die Preise ermittelt?
-date: 15-08-2021 22:33:07
+title: How are prices determined?
+date: 2021-08-15 22:33:07
 ---
 
-Jede Transaktion auf pando lake/4swap hat einen Einfluss auf den Preis.
+Every transaction on pando lake/4swap will have an impact on the price.
 
-Ist der Gesamtbetrag des Liquiditätspools groß, so ist der Transaktionsbetrag im Verhältnis zur Tiefe des Liquiditätspools vernachlässigbar, und diese Transaktion hat eine sehr geringe Preisauswirkung, was [Schlupf](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss/) genannt wird.
+If the total amount of the liquidity pool is large, the transaction amount is negligible relative to the depth of the liquidity pool, and this transaction will have a very low price impact, which called [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss/).
 
-Wenn die Auswirkung ein bestimmtes Niveau erreicht, unterscheidet sich der Preis auf 4swap von den Preisen auf anderen Börsen, wodurch ein Arbitrageraum entsteht. Es gibt viele automatische Arbitrage-Roboter, die ständig hart arbeiten, um konsistente Preise zu gewährleisten.
+When the impact reaches a certain level, the price on 4swap is different from the prices on other exchanges, which will form an arbitrage space. There are many automatic arbitrage robots working hard all the time to ensure consistent prices.
 
 ````mdx-code-block
 :::caution
 
-Es ist wichtig, auf die Höhe des Transaktionsbetrages im Verhältnis zur Gesamtliquidität zu achten. Wenn der Transaktionsbetrag im Verhältnis zum Gesamtbetrag des Liquiditätspools zu hoch ist, weicht der Transaktionspreis erheblich vom Marktpreis ab, was zu größeren Verlusten führt.
+It is important to pay attention to the size of the transaction amount relative to the total amount of liquidity. If the transaction amount is too high relative to the total amount of the liquidity pool, the transaction price will seriously deviate from the market price, resulting in greater losses.
 
 :::
 ````

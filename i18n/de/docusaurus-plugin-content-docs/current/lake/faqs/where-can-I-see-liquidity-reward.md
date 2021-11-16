@@ -1,11 +1,11 @@
 ---
-title: Wo kann ich die Liquiditätsprämie sehen？
-date: 13-09-2021 00:00:02
+title: Where can I see liquidity reward？
+date: 2021-09-13 00:00:02
 ---
 
 
-Die Transaktionsgebühren fließen in den Liquiditätspool, und Sie können einen Teil davon erhalten, wenn Sie Liquidität abheben.
+Transaction fees will enter the liquidity pool, and you can get a portion of it when you withdraw liquidity.
 
 ![](../assets/profit.png)
 
-Die Einnahmendetails können auf der Seite "Mein" eingesehen werden.
+The revenue details can be viewed on the "Me" page.

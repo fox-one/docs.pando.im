@@ -28,6 +28,6 @@ title: Introducation
 - [SDK Guide](/developer/rings/guide): An easier and faster way to Connect to Pando Rings engine.
 
 
-## リソース
+## Resources
 
 - [Examples](/developer/resources/examples)

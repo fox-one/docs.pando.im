@@ -1,6 +1,6 @@
 ---
 title: Pando USD
-date: 12-08-2021 22:33:07
+date: 2021-08-12 22:33:07
 ---
 
 Pando USD(pUSD) is launched on Dec 25, 2020 by BigONE, Exin, FOX, Poolin and Team Mixin. Pando USD is considered a stablecoin pegged to the US Dollar. You can always consider 1 pUSD for US$1.00.

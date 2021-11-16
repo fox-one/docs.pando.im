@@ -1,6 +1,6 @@
 ---
 title: Auction Process
-date: 28-07-2021 22:33:07
+date: 2021-07-28 22:33:07
 ---
 
 When a vault breaches the minimum required collateralization ratio, it will be liquidated and the collateral will be on auction. Anyone can participate in the auction. The ongoing auction can be found in the Ongoing section on the Auctions page.

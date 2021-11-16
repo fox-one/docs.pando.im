@@ -3,20 +3,20 @@ title: API Reference
 date: 2021-08-16 17:40:00
 ---
 
-이 문서는 pando rings 엔진의 restful api 및 RPC 인터페이스의 정의와 사용법을 설명합니다.
+This document describes the definition and usage of the restful api and RPC interface of the pando rings engine.
 
 ## Restful API
 
-### 모든 시장
+### • All markets
 
-공급 및 차입할 수 있는 모든 시장을 반환합니다.
+Returns all the markets that can be supplied and borrowed.
 
 **HTTP**
 ```
 GET /api/v1/markets/all
 ```
 
-**응답**
+**Response**
 ```json
 {
   "data": [
@@ -60,9 +60,9 @@ GET /api/v1/markets/all
 }
 ```
 
-### • 거래
+### • Transactions
 
-모든 사용자 트랜잭션을 시간별로 반환합니다.
+Returns all the user transactions by time.
 
 **HTTP**
 ```
@@ -70,12 +70,12 @@ GET /api/v1/transactions?limit=10&offset=
 ```
 
 **Query Params**
-| key    | type   | des                                                             |
-| ------ | ------ | --------------------------------------------------------------- |
-| limit  | string | 페이지 데이터 제한, 기본적으로 500개                                          |
-| offset | string | 페이지 매김 시작 시간, RFC3339Nano 형식, 예: 2020-12-12T12:12:12.999999999Z |
+| key    | type   | des                                                                            |
+| ------ | ------ | ------------------------------------------------------------------------------ |
+| limit  | string | page data limit, 500 by default                                                |
+| offset | string | Pagination start time, RFC3339Nano format, e.g. 2020-12-12T12:12:12.999999999Z |
 
-**응답**
+**Response**
 ```json
 [
   {
@@ -111,16 +111,16 @@ GET /api/v1/transactions?limit=10&offset=
 ]
 ```
 
-### • 지불 요청
+### • Request Pay
 
-지정된 작업 및 매개변수 데이터에 따라 지불 URL을 반환합니다.
+Returns the pay url according to the specified action and paramter data.
 
 **HTTP**
 ```url
 POST /api/v1/pay-requests
 ```
 
-**페이로드**
+**Payload**
 ```json
 {
   "memo_base64": "AQIQU1BMqZkaQmWmkOzm4LfkFA==",
@@ -131,7 +131,7 @@ POST /api/v1/pay-requests
 }
 ```
 
-**응답**
+**Response**
 ```json
 {
   "url":"mixin://codes/6df372af-5557-4064-a074-698c4677661e"
@@ -140,7 +140,7 @@ POST /api/v1/pay-requests
 
 ## RPC
 
-[Twirp](https://github.com/twitchtv/twirp) 기반 RPC 인터페이스를 구현합니다. [proto 파일](https://github.com/fox-one/pando-rings-sdk-go/blob/main/rpc/service.proto)
+Based on [Twirp](https://github.com/twitchtv/twirp) implementation RPC interfaces. [proto file](https://github.com/fox-one/pando-rings-sdk-go/blob/main/rpc/service.proto)
 ```proto
 syntax = "proto3";
 
@@ -261,19 +261,19 @@ service Compound {
 }
 ```
 
-### • 사용법
+### • Usage
 
 ```go
 rpcClient := rpc.NewCompoundProtobufClient("https://compound-test-api.fox.one", &http.Client{})
 
-//모든 시장 요청
+//request all markets
 markets, err := rpcClient.AllMarkets(ctx, &rpc.MarketReq{})
 if err != nil {
     return nil, err
 }
 return markets, nil
 
-//트랜잭션 요청
+//request transactions
 t := timestamppb.New(time.Now().AddDate(0, 0, -400))
 req := rpc.TransactionReq{
     Offset: t,
@@ -287,7 +287,7 @@ if err != nil {
 
 return transactions, nil
 
-// 지불 요청
+// request pay
 req := rpc.PayReq{
     AssetId:    "4d8c508b-91c5-375b-92b0-ee702ed2dac5",
     Amount:     "0.01",

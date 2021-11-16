@@ -3,11 +3,11 @@ title: Action Protocol
 date: 2021-07-31 11:18:01
 ---
 
-4swap 및 Lake는 MTG 애플리케이션으로 Mixin Network에서 [multisig transactions](https://developers.mixin.one/document/wallet/api/multisigs/tutorial)을 읽습니다.
+4swap and Lake are MTG applications, which read [multisig transactions](https://developers.mixin.one/document/wallet/api/multisigs/tutorial) from Mixin Network.
 
 4swap 또는 Lake로 송금을 보내려면 개발자가 다중 서명 송금을 생성해야 합니다.
 
-4swap과 Lake는 각 트랜잭션의 동작을 설명하기 위해 **Action Protocol**을 디자인합니다. 액션 프로토콜은 암호화된 메모를 사용하여 명령과 매개변수를 저장하는 JSON 기반 프로토콜입니다.
+4swap and Lake design the **Action Protocol** to illustrate behaviors of each transaction. 액션 프로토콜은 암호화된 메모를 사용하여 명령과 매개변수를 저장하는 JSON 기반 프로토콜입니다.
 
 ## 액션 생성
 

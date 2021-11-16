@@ -3,7 +3,7 @@ title: Articles
 date: 2021-09-15 22:33:07
 ---
 
-Pandoはすべてのコミュニティメンバーからの考えを大切にしています。 コミュニティメンバーから寄稿されたコンテンツがここに集められています！
+Pando value thoughts from all community members. Contents contributed by community memebers are collected here!
 
 You can submit your content [here](https://github.com/fox-one/docs.pando.im/tree/master/docs/community/articles.md). Just put it into the corresponding categories below.
 
@@ -11,10 +11,10 @@ Use the format: \[Put the title of your content here\](put the link of your cont
 
 ### Tutorials
 
-コミュニティのメンバーは、Pando製品の使用方法について書いています。
+Community members write on how to use Pando products.
 
 [玩转Mixin系列十二：如何使用Pando Rings借贷(Payment Required)](https://prsdigg.com/articles/39cae74e-385c-4eab-9b45-cc58800e0493) - on how to use Pando Rings (Chinese)
 
-### ブログ投稿
+### Blog Posts
 
-Pandoのコミュニティメンバーの考え、観察、および分析。
+Community members' thoughts, observations, and analysis of Pando.

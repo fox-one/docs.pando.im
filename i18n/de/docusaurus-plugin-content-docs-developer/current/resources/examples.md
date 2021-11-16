@@ -1,6 +1,6 @@
 ---
 title: Examples
-date: 31-07-2021 13:03:07
+date: 2021-07-31 13:03:07
 ---
 
 ## 4swap Web

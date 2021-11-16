@@ -1,6 +1,6 @@
 ---
 title: API Reference
-date: 16-08-2021 17:40:00
+date: 2021-08-16 17:40:00
 ---
 
 This document describes the definition and usage of the restful api and RPC interface of the pando rings engine.

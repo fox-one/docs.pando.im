@@ -1,6 +1,6 @@
 ---
 title: Swapping
-date: 15-08-2021 22:33:07
+date: 2021-08-15 22:33:07
 ---
 
 
@@ -29,7 +29,7 @@ Click to view [transaction fees](https://docs.pando.im/docs/lake/key-concepts/tr
 ````mdx-code-block
 :::caution
 
-Bitte achte beim Swappen auf den Preiseffekt. 
+Please pay attention to the price effect when swapping. 
 
 When the price impact is too high, it means that the transaction is lack of liquidity or the transaction amount is too large, and continuing trading may cause greater losses.
 

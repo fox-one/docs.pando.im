@@ -1,6 +1,6 @@
 ---
 title: Mitwirken
-date: 15-09-2021 22:33:07
+date: 2021-09-15 22:33:07
 ---
 
 Die Pando-Dokumentation ist als Open Source verfügbar. Sie sind herzlich eingeladen, sie in andere Sprachen zu übersetzen, um sie einer breiteren Öffentlichkeit zugänglich zu machen!
@@ -50,47 +50,47 @@ Bitte beachten Sie, dass der ganze Code in der Dokumentation nicht übersetzt we
 :::
 ````
 
-### Die Übersetzung initialisieren
+### Initialize the Translation
 
-#### Neue Übersetzungsdateien für neue Sprachen erstellen
+#### Generate new translation files for new languages
 
-Wenn Sie der Betreuer dieses Projekts sind, folgen Sie bitte den Anweisungen im [i18n-Tutorial](https://docusaurus.io/docs/i18n/tutorial), um eine neue Sprache hinzuzufügen.
+If you're the maintainer of this project, please follow the instructions in the [i18n tutorial](https://docusaurus.io/docs/i18n/tutorial) to add a new language.
 
 
-**Übersetzung der Indexseite**
+**Translate the index page**
 
-Bitte folgen Sie den Anweisungen [hier](https://docusaurus.io/docs/i18n/tutorial#use-the-translation-apis), um Ihre Index-Seite und die React-Komponenten zu übersetzen.
+Please follow the instructions [here](https://docusaurus.io/docs/i18n/tutorial#use-the-translation-apis) to translate your index page and react components.
 
-**Json-Dateien erstellen/aktualisieren**
+**Generate/Update json files**
 
 ```bash
 yarn run write-translations --locale $LANG_CODE
 ```
 
-Der `$LANG_CODE` ist der Sprachencode der zu generierenden Sprache. Wenn Sie zum Beispiel die Übersetzungsdateien für die französische Sprache erstellen wollen, sollten Sie `fr` verwenden.
+The `$LANG_CODE` is the language code of the language you want to generate. For example, if you want to generate the translation files for the French language, you should use `fr`.
 
-Die Übersetzungsdateien werden in dem Verzeichnis `i18n/$LANG_CODE/` erstellt.
+The translation files are generated in the `i18n/$LANG_CODE/` directory.
 
-**Markdown-Dateien erstellen**
+**Generate Markdown files**
 
-Kopieren Sie die Markdown-Dateien in docs nach `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, und übersetzen Sie sie:
+Copy Markdown files in docs to `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, and translate them:
 
 ```bash
 mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
 cp -r docs/** i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
 ```
 
-#### Die Dokumente übersetzen
+#### Translate the documents
 
-Alle Dokumente werden nach Sprachen geordnet im `i18n/$LANG_CODE/` abgelegt.
+All the documents are placed in the `i18n/$LANG_CODE/` according to the languages.
 
-- `i18n/$LANG_CODE/code.json`: die Übersetzung der Indexseite und des von docusaurus verwendeten Textes.
-- `i18n/$LANG_CODE/docusaurus-theme-classic/footer.json`: die Übersetzung der Fußzeile.
-- `i18n/$LANG_CODE/docusaurus-theme-classic/navbar.json`: die Übersetzung der Navigationleiste.
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current.json`: das Label der Kategorie in der Seitenleiste.
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current/**`: die Markdown-Dateien der Dokumente.
+- `i18n/$LANG_CODE/code.json`: the translation of the index page and the text used by docusaurus.
+- `i18n/$LANG_CODE/docusaurus-theme-classic/footer.json`: the translation of footer.
+- `i18n/$LANG_CODE/docusaurus-theme-classic/navbar.json`: the translation of navbar.
+- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current.json`: the label of category on sidebar.
+- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current/**`: the markdown files of documents.
 
-**Vorschau der Übersetzungen anzeigen**
+**Preview the translation**
 
 ```bash
 yarn run start --locale $LANG_CODE

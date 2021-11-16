@@ -1,6 +1,6 @@
 ---
 title: Guide
-date: 16-08-2021 18:40:00
+date: 2021-08-16 18:40:00
 ---
 
 An easier and faster way to Connect to Pando Rings engine.

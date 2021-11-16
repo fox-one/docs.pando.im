@@ -1,21 +1,21 @@
 ---
-title: Oraclesを読む
+title: Read Oracles
 date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## 全てのOraclesを読み込む
+## Read All Oracles
 
 ### GET /oracles
 
-この API はすべてのオラクルに対応します。
+This API will respond all oracles.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles" />
 
 <APIMetaPanel />
 
-<APIRequest title="全てのOraclesを読み込む" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles' />
+<APIRequest title="Read all oracles" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles' />
 
 ```json title="Response"
 {
@@ -47,11 +47,11 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 }
 ```
 
-## 単一のOracleを読み込む
+## Read Single Oracle
 
 ### GET /oracles/:id
 
-この API は asset_id `:id` で 1 つの oracle に応答します
+This API will respond one oracle with asset_id `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/oracles/:id" />
 
@@ -59,7 +59,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 <APIParams p-id="the asset id" p-id-required="{true}" />
 
-<APIRequest title="単一のOracleを読み込む" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
+<APIRequest title="Read one oracle" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/oracles/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
 
 ```json title="Response"
 {

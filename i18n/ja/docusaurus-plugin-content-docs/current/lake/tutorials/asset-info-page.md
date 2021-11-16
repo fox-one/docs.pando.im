@@ -7,6 +7,6 @@ Search the asset you are interested - click on the asset icon on the pool page, 
 
 ![](../assets/asset-info.png)
 
-🔄をクリックして価格表示を切り替え、➡️をクリックして詳細情報を表示できます。
+You can click 🔄 to switch the price display, and click the ➡️ to view more information.
 
-画面を下にスワイプすると、取引ペアの関連チャートと少量の過去の取引記録が表示されます。
+Swipe down on the screen, and I can see the relevant chart of the trading pair and a small amount of historical transaction records.

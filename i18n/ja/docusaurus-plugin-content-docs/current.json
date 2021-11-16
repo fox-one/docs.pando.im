@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "次へ",
+    "message": "Next",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Pando Lake": {
@@ -8,15 +8,15 @@
     "description": "The label for category Pando Lake in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorials": {
-    "message": "初めての方へ",
+    "message": "Tutorials",
     "description": "The label for category Tutorials in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Key Concepts": {
-    "message": "重要なコンセプト",
+    "message": "Key Concepts",
     "description": "The label for category Key Concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Other FAQs": {
-    "message": "その他のよくある質問",
+    "message": "Other FAQs",
     "description": "The label for category Other FAQs in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Leaf": {
@@ -24,7 +24,7 @@
     "description": "The label for category Pando Leaf in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Liquidation": {
-    "message": "清算",
+    "message": "Liquidation",
     "description": "The label for category Liquidation in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Rings": {
@@ -32,19 +32,19 @@
     "description": "The label for category Pando Rings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Wallets": {
-    "message": "ウォレット",
+    "message": "Wallets",
     "description": "The label for category Wallets in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.3rd-party Applications": {
-    "message": "サードパーティのアプリケーション",
+    "message": "3rd-party Applications",
     "description": "The label for category 3rd-party Applications in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Security": {
-    "message": "セキュリティ",
+    "message": "Security",
     "description": "The label for category Security in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Community": {
-    "message": "コミュニティ",
+    "message": "Community",
     "description": "The label for category Community in sidebar tutorialSidebar"
   },
   "sidebar.docs.category.Pando Lake & 4swap": {
@@ -52,15 +52,15 @@
     "description": "The label for category Pando Lake & 4swap in sidebar docs"
   },
   "sidebar.docs.category.Tutorials": {
-    "message": "初めての方へ",
+    "message": "Tutorials",
     "description": "The label for category Tutorials in sidebar docs"
   },
   "sidebar.docs.category.Key Concepts": {
-    "message": "重要なコンセプト",
+    "message": "Key Concepts",
     "description": "The label for category Key Concepts in sidebar docs"
   },
   "sidebar.docs.category.FAQs": {
-    "message": "よくあるご質問",
+    "message": "FAQs",
     "description": "The label for category FAQs in sidebar docs"
   },
   "sidebar.docs.category.Pando Leaf": {
@@ -72,15 +72,15 @@
     "description": "The label for category Pando Rings in sidebar docs"
   },
   "sidebar.docs.category.Applications": {
-    "message": "アプリケーション",
+    "message": "Applications",
     "description": "The label for category Applications in sidebar docs"
   },
   "sidebar.docs.category.Security": {
-    "message": "セキュリティ",
+    "message": "Security",
     "description": "The label for category Security in sidebar docs"
   },
   "sidebar.docs.category.Community": {
-    "message": "コミュニティ",
+    "message": "Community",
     "description": "The label for category Community in sidebar docs"
   }
 }

@@ -1,18 +1,18 @@
 ---
-title: Pando Rings で借りたものを返金する
+title: Repaying your borrow in Pando Rings
 date: 2021-09-04 12:33:07
 ---
 
-借りた資産を返済したい場合は、返済することができます。
+If you want to pay back your borrowed asset, you can go to repay.
 
-Meページの借用セクションの借用資産カードをクリックするとアクセスできます。
+You can access it by clicking on the borrowed asset card of the borrow secion on the Me page.
 
-進捗状況バーをドラッグして、返済する割合を決定できます。
+You can drag on the progress bar to decide on the percentage you want to repay.
 
 ![](../assets/repay1.jpg)
 
-ローンを返済したい場合は、プログレスバーを右端までドラッグして[返済] をクリックします。
+If you want to pay off the loan, you can drag the progress bar all the way to the right and click on "Payback".
 
-借入利息はリアルタイムで計算されるため、実際に借入金を返済する金額は、画面に表示されている金額よりも若干高くなる場合がありますのでご注意ください。 そのため、借り入れが確実に支払われるように、もう少し料金を請求します。超過分は、支払い後にウォレットに返金されます。
+Please be noted that due to the real-time calculation of borrow interest, the actual amount to pay off your Borrow might be slightly higher than the amount shown on the screen. So we will charge you slightly a bit more to make sure the borrow will be paid off, then any excess amount will be returned to your wallet after your payment.
 
 ![](../assets/repay2.jpg)

@@ -9,7 +9,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /states/markets
 
-このAPIは過去の市場統計を返します。
+This API will respond historical market statistics
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/?dur=:dur" />
 
@@ -26,9 +26,9 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
     {
       "ts": 1617408000,
       "date": "2021-04-03T00:00:00Z",
-      // 米ドルでの流動性
+      // liquidity in US dollar
       "value": "88919122.02992768",
-      // 米ドルでの流動性
+      // liquidity in US dollar
       "volume": "10727320.64681277"
     },
     ...
@@ -40,7 +40,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /states/markets/:base/:quote
 
-このAPIは、指定したベースの資産と引用する資産の過去の市場統計を返します。
+This API will respond historical market statistics specified by base and quote asset.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/?dur=:dur" />
 
@@ -57,9 +57,9 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
     {
       "ts": 1617408000,
       "date": "2021-04-03T00:00:00Z",
-      // 米ドルでの流動性
+      // liquidity in US dollar
       "value": "88919122.02992768",
-      // 米ドルでの流動性
+      // liquidity in US dollar
       "volume": "10727320.64681277"
     },
     ...
@@ -71,7 +71,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /states/markets/:base/:quote/kline/v2?dur=:dur
 
-このAPIは、指定したベースの資産と引用する資産のローソク足のデータを返します。
+This API will respond the candlestick data specified by base and quote asset.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/kline/v2?dur=:dur" />
 
@@ -86,7 +86,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
   "ts": 1627697766503,
   "data": [
     [
-      // タイムスタンプ
+      // timestamp
       1612148400,
       // price of base / quote
       "0.039304863681",

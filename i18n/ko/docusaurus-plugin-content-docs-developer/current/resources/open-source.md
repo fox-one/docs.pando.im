@@ -4,7 +4,7 @@ date: 2021-08-17 18:59:07
 ---
 
 - **Pando Lake & 4swap**
-  - 노드의 소스 코드가 아직 준비되지 않았습니다.
+  - Node's source code is not ready yet.
   - [WebApp](https://github.com/fox-one/4swap-web)
 - **Pando Leaf**
   - [Node](https://github.com/fox-one/pando)

@@ -1,6 +1,6 @@
 ---
 title: Get Started
-date: 22-09-2021 05:22:11
+date: 2021-09-22 05:22:11
 ---
 
 Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.

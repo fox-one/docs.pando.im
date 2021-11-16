@@ -1,5 +1,5 @@
 ---
-title: 내 거래가 실패한 이유는 무엇입니까?
+title: Why did my transaction fail?
 date: 2021-08-15 22:33:07
 ---
 
@@ -8,10 +8,10 @@ import { Improvement, } from "@site/src/components/admonitions";
 <Improvement />
 
 
-일반적인 트랜잭션 실패는 슬리피지를 초과하는 트랜잭션으로 인해 발생합니다. 최신 거래 페어 데이터를 얻으려면 페이지를 새로고침하세요.
+Common transaction failures are caused by the transaction exceeding slippage. Please refresh the page to obtain the latest transaction pair data.
 
-Pando Lake가 웹페이지에 표시하는 정보는 수량을 입력하는 시점의 예상 정보입니다. 실제로 지불할 때 타인의 거래 행위로 인해 지불할 때 얻게 되는 실제 자산 금액이 예상 금액과 다른 경우가 발생할 수 있습니다. Pando Lake는 예상과 실제 결과의 수량 차이가 큰 이러한 거래를 적극 거부하여 추정값과 실제값의 차이로 인한 손실을 줄이기 위해 노력합니다.
+The information displayed by Pando Lakeon the web page is the estimated information at the moment you enter the quantity. When you actually pay, it may happen that due to the transaction behavior of others, the actual amount of assets you will get when you pay is different from the estimated amount. There is a large difference in quantity, Pando Lakewill actively reject this kind of transaction with a large difference between the expected and actual results to reduce the loss caused by the difference between the estimated and the actual value.
 
-거래 버튼 우측 톱니바퀴 ⚙ 아이콘 버튼에서 슬리피지(slippage) 라는 매개변수를 설정할 수 있습니다. 슬리피지는 Pando Lake 거래 중 추정된 정보와 실제 거래 결과의 차이입니다.
+We provide a parameter name slippage, which can be set on the gear ⚙ icon button on the right side of the transaction button. The slippage is the difference between the estimated information and the actual transaction result during Pando Laketransactions.
 
-슬리피지(slippage) 가 클수록 트랜잭션의 예상 차이에 대한 허용 오차가 높아지고 트랜잭션의 성공률이 높아지지만 손실도 커질 수 있습니다. 슬리피지가 작을수록, 즉 트랜잭션의 예상 차이에 대한 허용 오차가 낮을수록 트랜잭션 성공률이 낮아지지만 각 주문은 웹 페이지에서 볼 수 있는 예상 상황과 더 일치합니다. 슬리피지의 기본값은 1%입니다. 즉, 실제 거래가 웹페이지에서 보는 예상 거래 금액과 1% 이상 차이가 나는 경우 Pando Lake 엔진은 거래를 거부합니다.
+The greater the slippage, the higher the tolerance for the expected difference in the transaction, and the success rate of the transaction will increase, but it may also result in greater losses. The smaller the slippage, the lower the tolerance for the expected difference of the transaction, the lower the transaction success rate, but each order will be more in line with the estimated situation you see on the web page. The default value of slippage is 1%, that is, when the actual transaction differs from the estimated transaction amount you see on the webpage by more than 1%, the Pando Lake engine will reject the transaction.

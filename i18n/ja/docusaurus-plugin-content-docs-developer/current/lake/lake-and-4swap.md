@@ -21,9 +21,9 @@ Pando Lake filters the market information to only display the chosen pairs and m
 
 Pando Lake has an individual Mixin Messenger bot (id: 7000103937), you can also access its web interface by visiting https://lake.pando.im.
 
-LPトークンは、Pando Lakeと4swapの間で共有されます。
+The LP-Tokens are shared between Pando Lake and 4swap.
 
-### Pando Lakeと統合
+### Integrate with Pando Lake
 
 The broker id of Pando Lake is `5dbdb169-d56d-4b5b-b066-9b0780691b14`, which is used in requests.
 

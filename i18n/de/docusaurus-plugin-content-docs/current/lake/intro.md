@@ -1,6 +1,6 @@
 ---
 title: What's Pando Lake
-date: 22-07-2021 22:33:07
+date: 2021-07-22 22:33:07
 ---
 
 [Pando Lake](https://lake.pando.im) is a decentralized protocol for automated liquidity provision built with the Mixin MTG (Mixin Trusted Group) technology, an alternative to smart contracts on Mixin Network.

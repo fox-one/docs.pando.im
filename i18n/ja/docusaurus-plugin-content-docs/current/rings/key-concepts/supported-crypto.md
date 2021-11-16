@@ -3,7 +3,7 @@ title: Supported Crypto
 date: 2021-09-29 22:33:07
 ---
 
-Pando Ringsは、次の暗号通貨をサポートしています。
+Pando Rings supports the following cryptocurrencies:
 
 | Symbol | Name       | Collateral Factor |
 | ------ | ---------- | ----------------- |
@@ -17,11 +17,11 @@ Pando Ringsは、次の暗号通貨をサポートしています。
 | XIN    | Mixin      | 0%                |
 | MOB    | MoblieCoin | 0%                |
 
-## Pando Ringsは他の暗号通貨をサポートしますか?
+## Will Pando Rings support other cryptocurrencies?
 
-はい
+Yes.
 
-Pando RingsのMTGメンバーは暗号市場を監視し、Ringsにそれらをリストする新しい暗号を探しています。
+The MTG members of Pando Rings will watch the crypto markets and will be looking for new crypto to list them in Rings.
 
-追加された暗号の担保係数は、リスクを軽減するために適切な値に設定されます。 Pando Ringsは、暗号が世界市場で良い流動性を持っている場合にのみ、暗号を担保することを可能にします。 If not, the crypto's collateral factor will be set to zero, which means that the crypto will not be collateralized.
+The collateral factor of added crypto will be set to a proper value to reduce the risk. Pando Rings only allow the crypto to be collateralized if the crypto has good liquidity in global markets. If not, the crypto's collateral factor will be set to zero, which means that the crypto will not be collateralized.
 

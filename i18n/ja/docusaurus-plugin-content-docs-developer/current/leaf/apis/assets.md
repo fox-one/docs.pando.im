@@ -1,21 +1,21 @@
 ---
-title: アセットを読む
+title: Read Assets
 date: 2021-09-30 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## すべてのアセットを読む
+## Read All Assets
 
 ### GET /assets
 
-この API はサポートされているすべての暗号資産に対応します。
+This API will respond all supported crypto assets.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets" />
 
 <APIMetaPanel />
 
-<APIRequest title="サポートされているアセットを読む" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets' />
+<APIRequest title="Read supported assets" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets' />
 
 ```json title="Response"
 {
@@ -45,11 +45,11 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 }
 ```
 
-## 単一のアセットを読む
+## Read Single Asset
 
 ### GET /assets/:asset_id
 
-このAPIは、1つの暗号資産を`:asset_id `で応答します
+This API will respond one crypto asset with `:asset_id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/assets/:asset_id" />
 
@@ -57,7 +57,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 <APIParams p-asset_id="the asset id" p-asset_id-required="{true}" />
 
-<APIRequest title="単一のアセットを読む" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
+<APIRequest title="Read one asset" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/assets/c6d0c728-2624-429b-8e0d-d9d19b6592fa' />
 
 ```json title="Response"
 {

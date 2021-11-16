@@ -5,7 +5,7 @@ date: 2021-07-31 13:03:07
 
 ## 4swap Web
 
-완전한 기능을 갖춘 웹 기반 클라이언트인 Lake와 4swap의 프론트엔드 프로젝트.
+The frontend project of 4swap and Lake, a full-feature web based client.
 
 - Source code: https://github.com/fox-one/4swap-web
 - Url: https://app.4swap.org
@@ -13,7 +13,7 @@ date: 2021-07-31 13:03:07
 
 ## Mixin Tutorial
 
-4swap 또는 Pando Lake에서 암호화폐를 교환하는 기능이 포함된 Mixin Messenger 봇을 처음부터 만드는 튜토리얼입니다.
+A tutorial of making a Mixin Messenger bot from scratch, a bot which includes a function to swap crypto at 4swap or Pando Lake.
 
 - Source code: https://github.com/lyricat/mixin-tutorial
 

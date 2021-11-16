@@ -1,21 +1,21 @@
 ---
-title: Collateralsを読む
+title: Read Collaterals
 date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-## すべてのCollateralsを読む
+## Read All Collaterals
 
 ### GET /cats
 
-この API は、サポートされているすべての担保に対応します。
+This API will respond all supported collaterals.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats" />
 
 <APIMetaPanel />
 
-<APIRequest title="サポートされている資産を読み取る" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats' />
+<APIRequest title="Read supported assets" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats' />
 
 ```json title="Response"
 {
@@ -75,11 +75,11 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 }
 ```
 
-## 単一のCollateralsを読む
+## Read Single Collateral
 
 ### GET /cats/:id
 
-この API は asset_id `:id` で 1 つの oracle に応答します
+This API will respond one collateral with `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats/:id" />
 
@@ -87,9 +87,10 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 <APIParams p-id="the collateral id" p-id-required="{true}" />
 
-<APIRequest title="IDで1つの担保を読む" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats/d0ec4cc7-edf6-5359-bf23-41fc9d26444e' />
+<APIRequest title="Read one collateral by ID" method="GET" isPublic base="https://leaf-api.pando.im/api" url='/cats/d0ec4cc7-edf6-5359-bf23-41fc9d26444e' />
 
 ```json title="Response"
+{
   "ts": 1633138872979,
   "data": {
     "id": "d0ec4cc7-edf6-5359-bf23-41fc9d26444e",

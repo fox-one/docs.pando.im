@@ -15,7 +15,7 @@ Before you can generate the icon of LP token, you need to make sure new asset ic
 
 To check the status of new asset icon, please visit `https://mixin.one/snapshots/YOUR_ASSET_SYMBOL_NAME` in browser. The webpage will display the asset's information, include the asset's icon.
 
-## zwei. Generate the icon of LP token
+## 2. Generate the icon of LP token
 
 Download the latest version of  [`4swap-icon-gen`](https://github.com/fox-one/4swap-icon-gen) and build it with:
 
@@ -29,7 +29,7 @@ then run it with:
 ./4swap-icon-gen -config YOUR_KEYSTORE_FILE -a0 LP_ASSET_ID -a1 1ST_ASSET_ID -a2 2ND_ASSET_ID
 ```
 
-in dem,
+in which,
 
 - `YOUR_KEYSTORE_FILE` is the keystore file of your account. You can get it from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard).
 - `LP_ASSET_ID` is the asset ID of LP token.
@@ -49,6 +49,6 @@ Like other assets' icons, you need to submit the new LP token icon to Mixin Netw
 
 ````mdx-code-block
 :::info
-Bitte erstellen Sie eine Pull-Request-Anfrage, wenn Sie fertig sind. Normalerweise dauert es etwa 1~2 Tage, bis Mixin Network Ihre Pull-Anfrage bearbeitet.
+Please create a pull request when you have finished. It usually takes about 1~2 days for Mixin Network to process your pull request.
 :::
 ````

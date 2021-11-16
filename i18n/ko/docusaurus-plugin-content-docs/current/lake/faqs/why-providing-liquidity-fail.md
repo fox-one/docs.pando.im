@@ -1,5 +1,5 @@
 ---
-title: 유동성 공급에 실패한 이유는 무엇입니까?
+title: Why did I fail in providing liquidity?
 date: 2021-08-15 22:33:07
 ---
 
@@ -8,12 +8,12 @@ import { Improvement, } from "@site/src/components/admonitions";
 <Improvement />
 
 
-유동성 주입의 일반적인 실패는 초과 슬리피지(exceeding slippage) 에 의해 발생합니다. 최신 거래 페어 데이터를 얻으려면 페이지를 새로고침하세요.
+The common failure of liquidity injection is caused by exceeding slippage. Please refresh the page to get the latest trading pair data.
 
-유동성을 주입할 때 매우 중요한 원칙이 있습니다. 주입 행동이 현재 거래 페어의 가격을 변경해서는 안 된다는 것입니다.
+When injecting liquidity, there is a very important principle: the injection behavior should not change the current trading pair price.
 
-따라서 유동성을 주입할 때도 슬리피지(slippage) 라는 개념이 작동합니다. 유동성을 주입할 때 다른 사람의 거래 행위에 따라 유동성 풀에 있는 자산의 비율이 변경됩니다. 혹은 더 일반적인 의미에서 말하자면 거래로 인해 유동성 풀의 가격 변경이 발생한다는 것입니다. 그것도 아주 크게 말입니다. 주입된 자산과 현재 유동성 풀 비율 사이에는 차이가 있습니다. 차이가 일정 비율을 초과하면 유동성 주입이 실패합니다. 즉, 슬리피지(slippage) 초과입니다.
+Therefore, there is also the concept of slippage when injecting liquidity. When injecting liquidity, the proportion of assets in the liquidity pool is changed due to the trading behavior of others, or in a more general sense, the price of the liquidity pool occurs due to the transaction. Big change. There is a difference between the injected assets and the current liquidity pool ratio. If the difference exceeds a certain ratio, the liquidity injection will fail. That is, slippage is exceeded.
 
-유동성 주입에 실패하는 또 다른 상황은 투입된 두 자산이 너무 작아서 최소 LP 주식을 얻을 수 없다는 것입니다. 이 또한 유동성 주입 실패로 이어질 것입니다.
+There is also a situation where the injection fails, that is, the two assets injected are too small to obtain the minimum amount of LP shares. It will also lead to failure to inject liquidity.
 
-거래가 실패하는 다른 상황이 발생하면 커뮤니티 관리자-Chris(ID: 37160854) 에게 연락하거나 Pando Lake official 커뮤니티(ID: 7000103578) 에 질문하십시오.
+If you encounter other situations in the transaction that cause the transaction to fail, please contact our community manager-Chris (ID: 37160854) or ask questions in the Pando Lakeofficial community (ID: 7000103578)

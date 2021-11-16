@@ -1,6 +1,6 @@
 ---
 title: Interest Rate Determination
-date: 16-10-2021 12:33:07
+date: 2021-10-16 12:33:07
 ---
 
 All interest rates in Pando Rings are determined as a function of **utilization rate**. **With the changes in the utilization rate, interest rates continuously fluctuate.**

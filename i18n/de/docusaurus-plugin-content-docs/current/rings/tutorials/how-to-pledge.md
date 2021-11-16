@@ -1,6 +1,6 @@
 ---
 title: Pledging rTokens to get borrow capacity
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 If you want to borrow, you will need to pledge as borrowing in Pando Rings function on the collateral-backed mechanism.

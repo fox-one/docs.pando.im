@@ -1,6 +1,6 @@
 ---
 title: Compare Lake and 4swap
-date: 31-07-2021 15:44:07
+date: 2021-07-31 15:44:07
 ---
 
 **4swap** is an open protocol that provides the basis of the decentralized liquidity and swapping service with a Mixin Trusted Group.

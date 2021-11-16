@@ -1,6 +1,6 @@
 ---
 title: Will there be any loss of my supplied assets?
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 ### If you don't have any loans:

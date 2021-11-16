@@ -9,7 +9,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /flips
 
-이 API는 모든 경매에 응답합니다.
+This API will respond all auctions.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips" />
 
@@ -23,24 +23,24 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 {
   "flips": [
     {
-      // ActionKick: 경매가 시작되면 모든 입찰가가 수락됩니다.
-      // ActionBid: 경매 입찰
-      // ActionDeal: 경매 종료
+      // ActionKick: the auction begins, any bid are accepted
+      // ActionBid: the auction bidding
+      // ActionDeal: the auction is over
       "action": 0,
       "art": "string",
-      // 현재 입찰 금액
+      // the current amount of bid
       "bid": "string",
       "collateral_id": "string",
       "created_at": "2021-10-02",
-      // 경매 종료 시간
+      // auction end time
       "end": "2021-10-02",
       "guy": "string",
       "id": "string",
-      // 경매 담보 금액
+      // the amount of auctioned collateral
       "lot": "100",
-      // 낙찰 최고액
+      // the max amount of bid accepted
       "tab": "2",
-      // 입찰 종료 시간
+      // bid end time
       "tic": "2021-10-02",
       "vault_id": "string"
     }
@@ -56,7 +56,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /flips/:id
 
-이 API는 `:id`로 하나의 경매에 응답합니다.
+This API will respond one auction by `:id`.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips/:id" />
 
@@ -88,7 +88,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /flips/:id/events
 
-이 API는 `:id`로 한 경매의 모든 이벤트에 응답합니다.
+This API will respond all events of one auction by `:id`.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/flips/:id/events" />
 

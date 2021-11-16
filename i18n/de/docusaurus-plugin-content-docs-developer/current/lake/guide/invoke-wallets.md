@@ -1,6 +1,6 @@
 ---
 title: Invoke Wallets
-date: 22-07-2021 22:33:07
+date: 2021-07-22 22:33:07
 ---
 
 At present, there are two kinds of wallets that are compatible with 4swap/Lake:

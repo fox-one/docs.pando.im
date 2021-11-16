@@ -1,6 +1,6 @@
 ---
 title: Read Oracles
-date: 01-10-2021 23:18:01
+date: 2021-10-01 23:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";

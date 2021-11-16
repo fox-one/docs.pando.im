@@ -1,6 +1,6 @@
 ---
 title: Get Started
-date: 13-08-2021 12:33:07
+date: 2021-08-13 12:33:07
 ---
 
 Pando leaf supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.

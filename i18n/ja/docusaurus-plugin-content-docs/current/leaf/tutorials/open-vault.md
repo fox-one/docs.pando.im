@@ -7,11 +7,11 @@ On “My page” of Pando Leaf, click on "Add a [Vault](https://docs.pando.im/do
 
 ![](../assets/leaf-open-vault-p1.png)
 
-「+」をクリックすると、特定の保管庫を作成するためのページが表示されます。
+Click on "+" and you will land on the page to create a specific vault.
 
 ![](../assets/add-a-vault-p2.png)
 
-対応する分割ページで、預金する予定の資産の金額と生成する資産の金額をそれぞれ入力します
+On the corresponding minting page, respectively fill in the amount of the asset you intend to deposit and the amount of the asset you wish to generate
 
 ````mdx-code-block
 :::tip
@@ -22,7 +22,7 @@ Generate a vault for the first time, minting at least 100 pusd
 ![](../assets/leaf-open-vault-p3.png)
 
 
-「Depositを生成する」ボタンをクリックして支払いを行い、ロボットが処理するまでしばらく待ちます。
+Click on the button "Deposit to Generate" , make the payments,and allow for some time for the robot to process.
 
 If successfully created the [vault](https://docs.pando.im/docs/leaf/key-concepts/vaults), you will receive the notification and message in the chatbox.
 
@@ -30,8 +30,8 @@ If successfully created the [vault](https://docs.pando.im/docs/leaf/key-concepts
 
 
 ````mdx-code-block
-:::注意
-リスク表示バーに注意してください。
+:::caution
+Do pay attention to the risk indication bar.
 :::
 ````
 

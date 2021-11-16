@@ -1,6 +1,6 @@
 ---
 title: Paying Back pUSD
-date: 13-08-2021 12:33:07
+date: 2021-08-13 12:33:07
 ---
 
 Paying back pUSD is useful when wanting to save a Vault from being liquidated, or the Vault owner wants to decrease the size of their position or to free up the collateral.

@@ -1,6 +1,6 @@
 ---
 title: Get Started
-date: 10-10-2021 12:33:07
+date: 2021-10-10 12:33:07
 ---
 
 Pando rings supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.

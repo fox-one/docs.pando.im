@@ -1,6 +1,6 @@
 ---
 title: Generate rules
-date: 13-09-2021 00:00:01
+date: 2021-09-13 00:00:01
 ---
 
 The minimum amount of crypto currency to be minted for the first time is 100 pusd.

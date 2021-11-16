@@ -9,7 +9,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /cats
 
-이 API는 지원되는 모든 담보에 응답합니다.
+This API will respond all supported collaterals.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats" />
 
@@ -21,54 +21,54 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 {
   "collaterals": [
     {
-      // 정상화된 부채
+      // normalized debt
       "art": "number",
-      // 최소 입찰가 인상
+      // minimum bid increase
       "beg": "number",
-      // 청산을 위해 지출된 최대 pUSD
+      // max pUSD out for liquidation 
       "box": "number",
-      // 청산 패널티
+      // the liquidation penalty
       "chop": "number",
       "created_at": "2021-10-02",
-      // 부채의 자산 ID
+      // the asset id of debt
       "dai": "string",
-      // 발행된 총 pUSD
+      // total pUSD issued
       "debt": "number",
-      // 경매당 최대 청산 수량
+      // max liquidation Quantity per auction
       "dunk": "number",
-      // 볼트당 부채 한도
+      // debt floor per vault
       "dust": "number",
-      // 고정 수수료
+      // stability fee
       "duty": "number",
-      // 담보의 자산 ID
+      // the asset id of collateral
       "gem": "string",
-      // 이 담보 유형의 ID
+      // id of this collateral type
       "id": "string",
-      // 잠긴 담보
+      // locked Collateral
       "ink": "number",
-      // 부채 한도
+      // debt Ceiling 
       "line": "number",
-      // 청산을 위해 지출된 pUSD의 잔액
+      // balance of pUSD out for liquidation
       "litter": "number",
-      // 이 담보 유형의 상태
+      // status of this collateral type
       "live": true,
-      // 청산 비율, 예: 150%
+      // liquidation ratio, eg 150%
       "mat": "number",
-      // 이 담보 유형의 이름
+      // name of this collateral type
       "name": "string",
-      // 이 담보 유형에 속하는 볼트의 수량
+      // number of vaults belong to this collateral type
       "number_of_vaults": 0,
-      // gem/dai의 현재 가격
+      // current price of gem/dai
       "price": "number",
-      // 누적 요금
+      // accumulated Rates
       "rate": "number",
-      // '요율' 업데이트 날짜
+      // the update date of `rate`
       "rho": "2021-10-02",
-      // 총 부채 공급액
+      // total debt supplied
       "supply": "number",
-      // 총 경매 기간
+      // total auction length
       "tau": 0,
-      // 단일 입찰 수명
+      // single bid lifetime
       "ttl": 0
     }
   ]
@@ -79,7 +79,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /cats/:id
 
-이 API는 `:id`로 단일 담보에 응답합니다.
+This API will respond one collateral with `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/cats/:id" />
 

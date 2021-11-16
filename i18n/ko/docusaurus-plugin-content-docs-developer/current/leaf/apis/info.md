@@ -10,11 +10,11 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /info
 
-이 API는 Pando Leaf의 MTG 정보에 응답합니다.
+This API will respond the MTG information of Pando Leaf.
 
 ````mdx-code-block
 :::info
-MTG 정보가 자주 변경되지 않으므로 나중에 사용하기 위해 응답을 저장할 수 있습니다.
+You can save the response to use it later because the MTG information wouldn't change frequently.
 :::
 ````
 
@@ -47,7 +47,7 @@ MTG 정보가 자주 변경되지 않으므로 나중에 사용하기 위해 응
 
 ### GET /time
 
-이 API는 Pando Leaf의 서버 시간에 응답합니다.
+This API will respond the server time of Pando Leaf.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/time" />
 

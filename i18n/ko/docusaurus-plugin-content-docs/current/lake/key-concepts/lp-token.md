@@ -1,21 +1,21 @@
 ---
-title: 유동성 공급자 토큰(LP 토큰)
+title: Liquidity Provider Token (LP Token)
 date: 2021-08-15 22:33:07
 ---
 
-유동성 공급자 토큰 또는 LP 토큰은 Pando Lake/4swap에서 유동성 공급자에게 발행되는 ERC-20 토큰입니다. IOU 또는 영수증으로 생각할 수 있습니다.
+Liquidity provider tokens or LP tokens are ERC-20 tokens issued to liquidity providers on Pando Lake / 4swap. You can think of it as an IOU or a receipt.
 
-LP 토큰은 전체 유동성 풀에 대한 개별 기여를 추적하는 데 사용됩니다. 보유한 LP 토큰은 전체 풀의 유동성 몫에 비례하기 때문입니다.
+LP tokens are used to track individual contributions to the overall liquidity pool, as LP tokens held correspond proportionally to the share of liquidity in the overall pool.
 
-가장 기본적인 수준에서 LP 토큰은 다음 공식으로 작동합니다.
+At the most basic level, LP tokens work on the following formula:
 
-**유동성 풀의 총 가치 / LP 토큰의 유통 공급량= 1 LP 토큰의 가치**
+**Total Value of Liquidity Pool / Circulating Supply of LP Tokens =  Value of 1 LP Token**
 
-다른 자산과 마찬가지로 LP 토큰은 양도 및 거래가 가능합니다.
+Just like other assets, the LP tokens can be transerred and traded.
 
-거래가 발생할 때마다 거래 발기인에게 [수수료](./trading-fee)가 청구됩니다. 이 수수료는 거래 완료 시 풀에 있는 모든 LP에 비례 배분됩니다.
+Whenever a trade occurs, a [fee](./trading-fee) is charged to the transaction sender. This fee is distributed pro-rata to all LPs in the pool upon completion of the trade.
 
-기본 유동성과 발생한 수수료를 회수하기 위해 유동성 공급자는 유동성 토큰을 "소각"하여 유동성을 제거할 수 있습니다. 즉 LP 토큰으로 유동성 풀의 지분과 그에 비례해 분배된 수수료를 돌려받을수 있다는 것을 의미합니다. **사용자가 LP 토큰을 보유하고 있는 동안에는 수익이 분배되지 않습니다.**
+To retrieve the underlying liquidity, plus any fees accrued, liquidity providers can remove liquidity, "burning" their liquidity tokens. This will allow them to exchange LP tokens for their portion of the liquidity pool, plus the proportional fee allocation. **The yield will not be distributed while the user is still holding the LP tokens.**
 
 
 

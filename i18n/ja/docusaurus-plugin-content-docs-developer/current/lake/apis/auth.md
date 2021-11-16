@@ -1,23 +1,23 @@
 ---
-title: 承認
+title: Authorization
 date: 2021-07-31 11:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-ほとんどのAPIは公開アクセスですが、認証されたユーザーのみが利用できるものもあります。
+Most APIs are public access, but some are only available to authenticated users.
 
-Pando Lake と 4swap は、標準 OAuth プロトコルを使用してユーザーを認証します。
+Pando Lake and 4swap use standard OAuth protocol to authorize users.
 
 ## POST /oauth
 
-[Mixin MessengerのOAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) の代わりにこのAPIをコールしてアクセストークンをコードと交換します。
+Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) to exchange the access token with code.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/oauth" />
 
-<APIMetaPanel /><APIPayload>{`{ // Mixin Messenger's OAuthからのコード "code":       "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", // leave "broker_id" and "label" to empty if you don't want to use other brokers. "broker_id":  "", "label":      "" } `}</APIPayload>
+<APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code":       "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", // leave "broker_id" and "label" to empty if you don't want to use other brokers. "broker_id":  "", "label":      "" } `}</APIPayload>
 
-<APIRequest title="アクセストークンを交換" method="POST" isPublic base="https://api.4swap.org/api" url='/oauth --data PAYLOAD' />
+<APIRequest title="Exchange an access token" method="POST" isPublic base="https://api.4swap.org/api" url='/oauth --data PAYLOAD' />
 
 ```json title="Response"
 {
@@ -30,5 +30,5 @@ Pando Lake と 4swap は、標準 OAuth プロトコルを使用してユーザ�
 }
 ```
 
-トークンは [Mixin API](https://developers.mixin.one/docs/api/guide) と互換性があります。 Mixin API から情報を取得するために使用しても構いません。
+The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
 

@@ -8,7 +8,7 @@ import { Improvement, } from "@site/src/components/admonitions";
 <Improvement />
 
 
-The common failure of liquidity injection is caused by exceeding slippage. 最新の取引ペアデータを取得するには、ページを更新してください。
+The common failure of liquidity injection is caused by exceeding slippage. Please refresh the page to get the latest trading pair data.
 
 When injecting liquidity, there is a very important principle: the injection behavior should not change the current trading pair price.
 

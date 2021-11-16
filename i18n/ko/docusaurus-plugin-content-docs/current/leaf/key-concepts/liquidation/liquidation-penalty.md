@@ -1,9 +1,9 @@
 ---
-title: 청산 패널티
+title: Liquidation Penalty
 date: 2021-08-13 14:33:07
 ---
 
-청산 패널티는 담보 가치가 볼트의 청산 가격에 도달할 때 볼트 소유자가 지불하는 수수료입니다.
+A Liquidation Penalty is a fee paid by Vault owners when the value of their collateral reaches the Vault's Liquidation Price.
 
-청산이 발생하면 청산 페널티가 볼트의 총 미결제 pUSD에 추가되어 경매에서 더 많은 담보가 판매됩니다.
+The Liquidation Penalty is added to the Vault’s total outstanding generated pUSD when liquidation occurs, which results in more collateral being sold at auction.
 

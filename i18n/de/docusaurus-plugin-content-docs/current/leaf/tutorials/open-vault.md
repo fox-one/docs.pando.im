@@ -1,6 +1,6 @@
 ---
 title: Opening a Vault
-date: 13-08-2021 12:33:07
+date: 2021-08-13 12:33:07
 ---
 
 On “My page” of Pando Leaf, click on "Add a [Vault](https://docs.pando.im/docs/leaf/key-concepts/vaults)" to create a vault and then select from the list from the available vault types according to your needs.

@@ -1,6 +1,6 @@
 ---
 title: Liquidation Price
-date: 13-08-2021 14:33:07
+date: 2021-08-13 14:33:07
 ---
 
 The Liquidation Price is the price at which a Vault becomes vulnerable to liquidation.

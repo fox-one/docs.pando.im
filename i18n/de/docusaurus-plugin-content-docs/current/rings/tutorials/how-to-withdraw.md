@@ -1,6 +1,6 @@
 ---
 title: Withdrawing assets from Pando Rings
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 When you want to get back the asset you supplied to the market, you will need to withdraw. After withdrawing, you will stop earning supply interest.

@@ -1,6 +1,6 @@
 ---
 title: Unpledging to reduce collaterals
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 If you need to use the locked rTokens, you may want to unpledge. After unpledging, you will be able to freely transfer the rTokens to anyone as any other assets or you can go on to withdraw, getting back the underlying asset from your rTokens.

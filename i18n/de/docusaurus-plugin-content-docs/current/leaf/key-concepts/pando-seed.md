@@ -1,6 +1,6 @@
 ---
 title: Pando Seed
-date: 12-10-2021 22:33:07
+date: 2021-10-12 22:33:07
 ---
 
 Pando seed(PS) is launched on Aug 4,2021 BigONE, Exin, FOX, Poolin and Team Mixin. The total supply of PS is  **10,000,000,000,000,000**.

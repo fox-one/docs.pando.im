@@ -1,6 +1,6 @@
 ---
 title: Generating More pUSD
-date: 13-08-2021 12:33:07
+date: 2021-08-13 12:33:07
 ---
 
 To generate pUSD, click on "Generate" and fill in the amount you want to generate on the Generate page.

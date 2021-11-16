@@ -31,7 +31,7 @@ Pando Leaf의 "내 페이지"에서 "[볼트](https://docs.pando.im/docs/leaf/ke
 
 ````mdx-code-block
 :::caution
-유의 사항에 주의를 기울이세요.
+Do pay attention to the risk indication bar.
 :::
 ````
 

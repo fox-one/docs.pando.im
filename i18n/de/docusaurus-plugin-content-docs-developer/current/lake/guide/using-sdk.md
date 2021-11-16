@@ -1,6 +1,6 @@
 ---
 title: Using SDK to Trade
-date: 22-07-2021 22:33:07
+date: 2021-07-22 22:33:07
 ---
 
 By default, Pando Lake uses 4swap as the liquidity provider. It's easy to exchange assets at Pando Lake by 4swap's SDK.

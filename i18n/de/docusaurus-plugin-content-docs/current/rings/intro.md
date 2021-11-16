@@ -1,6 +1,6 @@
 ---
 title: What's Pando Rings
-date: 22-07-2021 22:33:07
+date: 2021-07-22 22:33:07
 ---
 
 Pando Rings is an algorithmic, autonomous interest rate protocol built with Mixin MTG (Mixin Trusted Group) technology. It is a place where you can lend or borrow cryptocurrencies. You can think of it as an open market for money. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.

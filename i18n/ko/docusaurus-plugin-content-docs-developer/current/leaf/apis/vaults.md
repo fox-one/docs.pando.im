@@ -9,7 +9,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /vats
 
-이 API는 모든 볼트에 응답합니다.
+This API will respond all vaults.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vats" />
 
@@ -28,9 +28,9 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
         "id": "52010fd0-6a9d-393c-abcb-ca997d950bf5",
         "created_at": "2021-04-27T10:51:16Z",
         "collateral_id": "d0ec4cc7-edf6-5359-bf23-41fc9d26444e",
-        // 잠긴 담보
+        // locked Collateral
         "ink": "2",
-        // 정상화 부채 (normalized debt)
+        // normalized debt
         "art": "30530.6925452775230346",
         "identity_id": "1"
       },
@@ -64,7 +64,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /vat/:id
 
-이 API는 `:id`로 하나의 볼트에 응답합니다.
+This API will respond one vault with `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vats/:id" />
 
@@ -92,7 +92,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /vat/:id/events
 
-이 API는 `:id`로 한 볼트의 모든 이벤트에 응답합니다.
+This API will respond all events of one vault with `:id`
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/vat/:id/events" />
 
@@ -134,7 +134,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### GET /me/vats
 
-이 API는 현재 사용자에게 속한 모든 볼트에 응답합니다.
+This API will respond all vaults belonging to current user.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/me/vats" />
 

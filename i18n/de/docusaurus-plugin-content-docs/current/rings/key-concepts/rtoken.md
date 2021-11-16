@@ -1,6 +1,6 @@
 ---
 title: rToken
-date: 04-09-2021 12:33:07
+date: 2021-09-04 12:33:07
 ---
 
 When someone supplies an asset to Pando Rings, they are given rTokens in exchange.

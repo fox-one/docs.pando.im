@@ -1,6 +1,6 @@
 ---
 title: Liquidation Penalty
-date: 13-08-2021 14:33:07
+date: 2021-08-13 14:33:07
 ---
 
 A Liquidation Penalty is a fee paid by Vault owners when the value of their collateral reaches the Vault's Liquidation Price.

@@ -1,6 +1,6 @@
 ---
-title: Welche Token werden unterstützt?
-date: 15-08-2021 22:33:07
+title: Which tokens are supported?
+date: 2021-08-15 22:33:07
 ---
 
 
@@ -12,10 +12,10 @@ In theory, we can provide support for the assets supported by Mixin Network, but
 
 - The project owner is willing to provide assets as the initial liquidity market maker, and the net value reaches the standard recognized by the Fox.ONE team.
 
-### Liste der unterstützten Token
+### List of supported tokens
 
 
-| Münz/Token  |               The Explorer Address/The Contract Address               |
+| Coin/Token  |               The Explorer Address/The Contract Address               |
 |:-----------:|:---------------------------------------------------------------------:|
 |     BTC     |                  https://www.blockchain.com/explorer                  |
 |     ETH     |                         https://etherscan.io/                         |
