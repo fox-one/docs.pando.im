@@ -15,7 +15,7 @@ For the pairs `pUSD-USDT(ERC-20)`, `pUSD-USDT(TRC-20)`, `pUSD-USDC`, `pUSD-DAI`,
 
 The [trading fee](./key-concepts/trading-fee) is paid to all liquidity providers proportional to their shares of the liquidity pool.
 
-[4swap](https://4swap.org) provides a mechanism named "Broker" that users interact with the protocol. Pando Lake  has its own Broker to serve the users. Please refer to ["Lake vs 4swap"](faqs/lake-vs-4swap) for more information.
+[4swap](https://4swap.org) provides a mechanism named "Broker" that users interact with the protocol. Pando Lake  has its own Broker to serve the users. Please refer to ["Lake vs 4swap"](https://docs.pando.im/docs/lake/faqs/lake-vs-4swap) for more information.
 
 **→** [Visit 4swap.org](https://4swap.org)  
 **→** [Visit Pando Lake](https://lake.pando.im)  

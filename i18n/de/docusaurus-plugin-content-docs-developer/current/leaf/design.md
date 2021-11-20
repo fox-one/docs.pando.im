@@ -1,5 +1,5 @@
 ---
-title: Technical Design
+title: Technisches Design
 date: 2021-07-12 23:33:07
 ---
 
@@ -15,13 +15,13 @@ All participants of Pando complete the interaction by transferring tokens to the
 
 **Output:**
 
-| field     | description      |
-| --------- | ---------------- |
-| Sender    | user mixin id    |
-| CreatedAt | payment time     |
-| AssetID   | payment asset id |
-| Amount    | payment amount   |
-| Memo      | extra message    |
+| field       | description      |
+| ----------- | ---------------- |
+| Absender    | user mixin id    |
+| Erstellt am | payment time     |
+| AssetID     | payment asset id |
+| Betrag      | payment amount   |
+| Memo        | extra message    |
 
 **Output Memo:**
 

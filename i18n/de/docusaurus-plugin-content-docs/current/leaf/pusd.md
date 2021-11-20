@@ -5,7 +5,7 @@ date: 2021-08-12 22:33:07
 
 Pando USD(pUSD) is launched on Dec 25, 2020 by BigONE, Exin, FOX, Poolin and Team Mixin. Pando USD is considered a stablecoin pegged to the US Dollar. You can always consider 1 pUSD for US$1.00.
 
-The total supply of pUSD is **1,000,000,000,000**, of which **999,975,000,000** are **locked** in a 5/6 [Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange) which are managed by BigONE, Exin, FOX, Poolin and Team Mixin. The remaining **25,000,000** is releasable to the public at [Pando Leaf](https://leaf.pando.im), which is a 4/6 Mixin Trusted Group.
+The total supply of pUSD is **1,000,000,000,000**, of which **999,975,000,000** are **locked** in a 5/6 [Mixin Trusted Group](https://docs.pando.im/docs/security/mtg) which are managed by BigONE, Exin, FOX, Poolin and Team Mixin. The remaining **25,000,000** is releasable to the public at [Pando Leaf](https://leaf.pando.im), which is a 4/6 Mixin Trusted Group.
 
 The current collaterals are of about US$43M worth of crypto, which backs about 11M pUSD. Please check real-time market conditions [here](https://leaf.pando.im/#/market). the pUSD MTG mechanism makes sure that the backing ratio of pUSD is always way higher than **200%**.
 
