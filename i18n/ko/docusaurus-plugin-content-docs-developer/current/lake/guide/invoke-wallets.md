@@ -18,7 +18,7 @@ Mixin Messenger의 결제 인터페이스를 호출하는 것은 매우 간단�
 
 두 가지 방법으로 얻을 수 있습니다.
 
-1. Follow the API ["/api/actions"](../apis/actions) to create a [swap action](../action-protocol#swap-crypto)
+1. API ["/api/actions"](../apis/actions)를 따라[swap action](../action-protocol#swap-crypto)을 생성합니다.
 2. API ` https://api.mixin.one/payments`를 호출하여 `code_id`가 포함된 결제 개체를 가져옵니다.
 3. 자체 백엔드에서 트랜잭션을 생성하고 code/code_url을 프론트엔드에 전달하십시오.
 
@@ -99,7 +99,7 @@ Fennec은 암호화된 키 저장소를 브라우저에 저장하는 브라우�
 
 자산을 로드하거나 프로필을 읽거나 결제를 준비하기 위해 Mixin API를 호출할 필요가 없습니다. 대신 Fennec은 이 모든 작업을 수행할 수 있는 자체 API를 제공합니다.
 
-For more information, please read the [demo's source code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp) to figure out.
+자세한 내용은 [demo's source code](https://github.com/fox-one/fennec#4-interact-with-your-mixin-dapp)를 읽고 알아보세요.
 
 ```javascript
 // fennec ext

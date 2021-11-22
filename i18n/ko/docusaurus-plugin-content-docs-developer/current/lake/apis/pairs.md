@@ -35,7 +35,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ### /pairs용 Coinmarketcap 호환 API
 
-API는 지원되는 모든 페어에 응답합니다. 이것은 코인마켓캡의 요구사항과 호환됩니다.
+이 API는 지원되는 모든 페어에 응답합니다. 이것은 코인마켓캡의 요구사항과 호환됩니다.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/cmc/pairs" />
 

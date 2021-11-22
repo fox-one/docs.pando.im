@@ -1,5 +1,5 @@
 ---
-title: Create Actions
+title: 액션 생성
 date: 2021-09-30 23:18:01
 ---
 

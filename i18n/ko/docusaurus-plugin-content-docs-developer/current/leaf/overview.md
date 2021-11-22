@@ -1,71 +1,71 @@
 ---
-title: Overview
+title: 개요
 date: 2021-03-20 12:38:07
 ---
 
-Pando is a decentralized financial network built with the MTG technology, and its underlying financial algorithm is inspired by [MakerDao](https://makerdao.com) and Synthetix.
+Pando는 MTG 기술로 구축된 탈중앙화 금융네트워크이며 기본 금융 알고리즘은 [MakerDao](https://makerdao.com) 및 Synthetix에서 영감을 받았습니다.
 
-Pando takes multiple over-collateralized assets and grows multiple Pando assets, which(the grown Pando assets), e.g. pUSD, can also be used as a pledge.
+Pando는 여러 개의 초과 저당 자산을 취득해 Pando 다중서명자산을 증가 시키고, 그중 (증가된 Pando 자산), 예를 들어 pUSD도 담보물로 사용할수 있습니다.
 
-## An Intro to Pando
+## Pando 소개
 
 ### pUSD
 
-pUSD is a stable coin launched on Dec 25, 2020. Since the launch, the backing ratio of pUSD has always been higher than 200%.
+pUSD는 2020년 12월 25일에 출시된 스테이블 코인입니다. 출시 이후 pUSD의 담보율은 항상 200% 이상이었습니다.
 
-### Pledge
+### 담보
 
-Nodes have the ability to add any asset as a pledge by voting. Once nodes vote one asset to be a pledge, anybody can borrow pUSD by providing enough specified asset.
+노드는 투표를 통해 모든 자산을 담보물로 추가할 수 있습니다. 노드가 하나의 자산을 담보물로 의결하면, 누구나 충분한 특정 자산을 제공함으로써 pUSD를 빌릴 수 있습니다.
 
-Nodes also have the ability to adjust various parameters of pledges by voting.
+노드는 또한 투표를 통해 다양한 스테이킹 매개변수를 조정할 수 있습니다.
 
-All assets supported by Mixin Network, including BTC, ETH, etc, are potential pledges for Pando.
+BTC, ETH 등을 포함하여 Mixin Network에서 지원하는 모든 자산은 Pando의 잠재적인 담보물입니다.
 
-### Vaults
+### 볼트
 
-All approved pledges can be deposited in the Pando multi-signature address to create a vault to generate pUSD for any Pando user.
+모든 승인된 담보물은 Pando 다중 서명 주소에 예치되어 (모든 Pando 사용자를 위한) pUSD를 생성하기 위한 볼트를 생성할 수 있습니다.
 
-As long as the price of the pledge is higher than the minimum requirement, the creators have the complete control of their vaults.
+저당잡힌 자산의 청산 가격이 최소 요건보다 높은 한, 볼트 생성자는 자신의 볼트에 대한 완전한 통제를 갖게 됩니다.
 
-### Interact with Pando
+### Pando와의 상호작용
 
-Both users and node administrators must use multi-signature transactions to interact with Pando.
+사용자와 노드 관리자 모두 Pando와 상호 작용하려면 다중 서명 트랜잭션을 사용해야 합니다.
 
-The methods and parameters of the transactions are all written in the memo which contains extra information of each transfer.
+메모에는 트랜잭션의 방법과 매개변수가 모두 기재되어 있으며, 각 송금에 대한 추가 정보가 포함되어 있습니다.
 
-Currently, in order to protect user privacy, all information in the memo must be encrypted by the following algorithm:
+현재 사용자의 개인 정보를 보호하기 위해 메모의 모든 정보는 다음 알고리즘으로 암호화되어야 합니다.
 
-Pando will generate a pair of ed25519 public and private keys at first, and publish the public key.
+Pando는 처음에 한 페어의 ed25519 공개 키와 개인 키를 생성하고 공개 키를 게시합니다.
 
-For each transaction, the user generates a pair of temporary ed25519 public and private keys, and generates a string of 32-bit bytes.
+각 트랜잭션에 대해 사용자는 한 페어의 임시 ed25519 공개 키와 개인 키를 생성하고 32비트 바이트 문자열을 생성합니다.
 
-The first 16 bits of these bytes will be the key for AES encryption, and the last 16 bits will be the `iv` of AES encryption.
+이 바이트의 처음 16비트는 AES 암호화의 키가 되고 마지막 16비트는 AES 암호화의 `iv`가 됩니다.
 
-These bytes must encrypt the original memo and generate a result we call it encrypted bytes. The client should put encrypted bytes and the user’s public key ​​together and encode in base64 as the final memo for the transfer.
+이 바이트는 원본 메모를 암호화하고 암호화된 바이트라고 하는 결과를 생성해야 합니다. 클라이언트는 암호화된 바이트와 사용자의 공개 키를 함께 넣고 송금을 위한 최종 메모로 base64로 인코딩해야 합니다.
 
-The nodes of Pando synchronize all transfers from the Mixin Network. When a node recognizes a valid transfer, it performs a reverse operation to restore the key and iv encrypted by AES, and then decrypts the parameters of the action.
+Pando의 노드는 Mixin Network의 모든 송금을 동기화합니다. 노드가 유효한 송금을 인식하면 AES로 암호화된 키와 iv를 복원하는 역동작을 수행한 다음 해당 작업의 매개변수를 해독합니다.
 
-The nodes need to ensure that they process the user interaction in the same order to ensure that the data stored in the database is completely consistent with other nodes; It should follow the same order when transferring money to ensure that all nodes choose when completing the transfer in the same utxo.
+노드는 데이터베이스에 저장된 데이터가 다른 노드와 완전히 일치하도록 동일한 순서로 사용자 상호작용을 처리하는지 확인해야 합니다. 모든 노드가 동일한 utxo에서 전송을 완료할 수 있도록 하려면 돈을 전송할 때 동일한 순서를 따라야 합니다.
 
-### Liquidate high-risk vaults
+### 고위험 볼트 청산
 
-In order to ensure that there is always enough pledge in Pando to endorse the loaned pUSD, all vaults will require an excess mortgage such as 150%.
+Pando에 대출된 pUSD를 보증할 충분한 저당이 있는지 확인하기 위해 모든 볼트에는 150%와 같은 초과 모기지가 필요합니다.
 
-When the value of the mortgaged assets is insufficient due to market price fluctuations, the vault will enter a high-risk state and be open for liquidation to redeem the pUSD.The liquidation is carried out as auction:
+시장 가격 변동으로 인해 저당 자산의 가치가 충분하지 않은 경우 금고는 고위험 상태로 전환되고 pUSD를 상환하기 위해 청산 절차에 들어갑니다. 청산은 경매로 수행됩니다.
 
-- If the pUSD got by the auction is enough to pay off the debt in the vault and the liquidation penalty, the auction will sell just the enough amount of pledge to cover the debt and the remaining pledge will be returned to the original owner.
-- If the pUSD got from the auction of the pledge is not enough to pay off the debt and the liquidation penalty, the loss will become Pando’s liability and be shared by all nodes.
+- 경매를 통해 얻은 pUSD가 금고채무와 청산 패널티를 갚기에 충분하면 경매는 채무를 충당할 만큼의 금액만 팔고 나머지 담보물은 원래 소유자에게 반환됩니다.
+- 경매에서 얻은 pUSD가 채무와 청산 패널티를 갚기에 충분하지 않은 경우 손실은 Pando의 책임이 되며 모든 노드가 분담하게 됩니다.
 
-### Price Oracle
+### 가격 오라클
 
-Pando needs to synchronize the prices of the pledged assets to update the collateral rate of the vaults and liquidate the high-risk vaults.
+Pando는 담보물 자산의 가격을 동기화하여 볼트의 담보율을 업데이트하고 고위험 볼트를 청산할 필요가 있습니다.
 
-The price data of Pando relies on an external decentralized price service. Pando will not use the price data directly.
+Pando의 가격 데이터는 외부의 탈중앙화 가격 서비스에 의존합니다. Pando는 가격 데이터를 직접 사용하지 않을 것입니다.
 
-Pando adds an one-hour delay to all price data. During this period, if someone attacks a price service, the nodes can vote to change the state of the pledge to be frozen urgently. Nodes can also vote for new prices.
+Pando는 모든 가격 데이터에 1시간 지연을 추가합니다. 이 기간 동안 누군가가 가격 서비스를 공격하면 노드가 투표하여 저당상태를 긴급 동결하도록 변경할 수 있습니다. 노드는 새로운 가격에 투표할 수도 있습니다.
 
-### Summary and future works
+### 요약 및 향후 작업
 
-Pando has achieved the goal that decentralized the consensus among trusted nodes, bringing the stable coin minting service to all users of the Mixin Network.
+Pando는 신뢰할 수 있는 노드 간의 합의를 탈중앙화하여 Mixin Network의 모든 사용자에게 안정적인 스테이블 코인 발행 서비스를 제공한다는 목표를 달성했습니다.
 
-Pando also reserves the ability to extend the lending to non-stable assets. For example, it can issue a 1:1 token pTesla against Tesla stock on the Mixin network, and then plege the Bitcoin on Pando to generate pTesla, which will build connections between the assets in the Mixin Network and the external assets of outside world.
+Pando는 또한 비안정 자산에 대한 대출을 확대할 수 있는 능력을 보유하고 있습니다. 예를 들어, Mixin network에서 Tesla 주식에 대해 1:1 토큰 pTesla를 발행한 다음 Pando에서 Bitcoin을 저당하여 pTesla를 생성하도록 약속할 수 있습니다. 이것은 Mixin network의 자산과 외부 세계의 자산 간의 연결을 의미합니다.

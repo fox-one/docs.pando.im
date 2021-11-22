@@ -1,5 +1,5 @@
 ---
-title: Read Order Detail
+title: 주문 세부 정보 읽기
 date: 2021-11-15 14:18:01
 ---
 
@@ -7,7 +7,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ## GET /orders/:follow_id
 
-This API will respond the order detail related to the follow id.
+이 API는 팔로우 ID와 관련된 주문 세부 정보에 응답합니다.
 
 <APIEndpoint base="https://api.4swap.org/api" url="/orders/:follow_id" />
 
@@ -15,7 +15,7 @@ This API will respond the order detail related to the follow id.
 
 <APIMetaPanel />
 
-<APIRequest title="Read order detail" method="GET" isPublic base="https://api.4swap.org/api" url='/orders/:follow_id' />
+<APIRequest title="주문 세부 정보 읽기" method="GET" isPublic base="https://api.4swap.org/api" url='/orders/:follow_id' />
 
 ```json title="Response"
 {
