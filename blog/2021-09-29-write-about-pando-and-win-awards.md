@@ -35,15 +35,10 @@ Pando was a newborn baby, which needs everyone's care. We sincerely invite you t
 
 In the early stages of growth, the pando team will provide some rewards to thank everyone who helped pando grow. The rules are as follows:
 
-- Write articles about pando and meet the above requirements, you will be rewarded with 5-50 USDT
-- We will comprehensively evaluate the reward amount based on the Google search ranking and the number of search results（See the table below)
+- Write about Pando, meet the above requirements, at least $20 bonus
+- The specific reward amount will be evaluated according to Google search rankings and the number of search results.
 
-| Article ranking/Search results | 10,000~ 50,000 | 50,000~100,000 | 100,000~200,000 | 200,000~500,000 | Above 500,000 |
-| ------------------------------ | :------------- | :------------- | --------------- | --------------- | ------------- |
-| top 10                           | 10             | 20             | 30              | 40              | 100           |
-| the rest                       | 5              | 5              | 5               | 5               | 5             |
-
-- In particular, if the article ranked high on the homepage after searching for 1 or 2 keywords and add effective exposure to pando greatly, we will give an additional reward (up to 100 usdt).
+- In particular, if the article ranked high on the homepage after searching for 1 or 2 keywords and add effective exposure to pando greatly, we will give an additional reward (up to 200 usdt).
 
 In order to avoid cheating, the rules need to be supplemented:
 
@@ -60,6 +55,6 @@ We use [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) to 
 
 ![](./assets/how-to-get-reward.png)
 
-Click [download Mixin messenger](https://mixin.one/messenger) , search 37160854 on the homepage and send me your article url, google search keywords, and the ranking, we will issue article rewards within 5 working days if your article meets the requirements.
+Click [download Mixin messenger](https://mixin.one/messenger) , search 37160854 on the homepage and send me your article url, google search keywords, and the ranking, we will issue article rewards within 5 working days if your article meets the requirements. If your article does not meet the requirements, the staff will suggest changes to meet the requirements.
 
 Thanks for your support to pando, we have always believed , that tomorrow will be better.
