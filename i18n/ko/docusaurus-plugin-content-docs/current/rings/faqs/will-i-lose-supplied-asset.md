@@ -1,15 +1,15 @@
 ---
-title: Will there be any loss of my supplied assets?
+title: 내가 제공한 자산이 손실됩니까?
 date: 2021-09-04 12:33:07
 ---
 
-### If you don't have any loans:
-Generally, the answer is NO. You gain interest of the assets you supplied and there is no fee you need to pay.
+### 대출이 없는 경우:
+일반적으로 대답은 '아니오'입니다. 당신은 당신이 제공한 자산에 대한 이자를 얻고 지불해야 할 수수료는 없습니다.
 
-In the very extreme situation though, as assets available to borrow on the market all come from users' supply, if there are bad debts (meaning a loan that is not likely to be paid), there is a chance that you cannot get back the full amount of your supplied assets. However, **it is unlikely to happen** in Pando Rings as liquidation is monitored real-time by liquidating bots (algorithms to execute liquidation) to avoid bad debts from happening.
+그러나 매우 극단적인 상황에서, 시중에서 빌릴 수 있는 자산은 모두 사용자의 공급에서 나오기 때문에, 만약 부실 부채(갚을 가능성이 없는 대출을 의미) 가 있다면, 당신이 공급한 자산의 전액을 돌려받을 수 없을 가능성이 있습니다. 그러나 Pando Rings에서는 **발생할 가능성이 낮습니다**. 청산 봇(청산을 실행하는 알고리즘) 을 통해 실시간으로 청산이 모니터링되어 불량 부채가 발생하지 않도록 방지합니다.
 
 
-### If you do have loans:
-If the value of your borrowed assets has exceeded your [borrow limit](../key-concepts/glossary.md), you will enter [liquidation](../key-concepts/liquidation.md), losing part or all of your collateral (ie. pledged assets). Of your total supplied assets, the pledged assets are subject to liquidation while your unpledged assets will stay intact.
+### 대출이 있는 경우:
+차용한 자산의 가치가 [차용 한도](../key-concepts/glossary.md)를 초과한 경우 [청산](../key-concepts/liquidation.md)으로 인해 담보물(예: 담보 자산)의 일부 또는 전부를 잃게 됩니다. 총 공급 자산 중 담보 자산은 청산 대상이며 미담보 자산은 그대로 유지됩니다.
 
-It is important tht you pay close attention to the [loan risk indicator](../key-concepts/loan-risk-indicator.md) to monitor your loan risk, and keep your collateral safe from liquidation.
+[대출 위험 지표](../key-concepts/loan-risk-indicator.md)에 세심한 주의를 기울여 대출 위험을 모니터링하고 담보가 청산의 영향을 받지 않도록 하는 것이 중요합니다.

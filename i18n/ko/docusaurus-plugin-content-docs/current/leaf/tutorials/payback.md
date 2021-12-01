@@ -1,19 +1,19 @@
 ---
-title: Paying Back pUSD
+title: pUSD 상환
 date: 2021-08-13 12:33:07
 ---
 
-Paying back pUSD is useful when wanting to save a Vault from being liquidated, or the Vault owner wants to decrease the size of their position or to free up the collateral.
+pUSD를 상환하는 것은 볼트가 청산되는 것을 방지하고 싶거나 볼트 소유자가 모기지 비율을 낮추어 담보를 해제하기를 원할 때 유용합니다.
 
-To pay back, click on "Pay back" to land on the Pay Back page. Fill in the amount you intend to pay back manually or click "Set Max" to pay off all the debts.
+부채를 상환하려면 "상환"을 클릭하여 상환 페이지로 이동합니다. 수동으로 상환하려는 금액을 입력하거나 "최대값 설정"을 클릭하여 모든 부채를 상환합니다.
 
 ![](../assets/leaf-payback-p1.png)
 
-The debt reduce from 13000 to 12000 pusd after repaying the pusd, and you can also see the details of this repayment in the chat window.
+부채 상환 후 부채는 13000에서 12000 pusd로 감소하며, 이 상환 내역은 채팅창에서도 확인할 수 있습니다.
 
 ![](../assets/leaf-payback-p2.png)
 
-Please be noted that when you click "Set Max", you will be charged slightly higher than the outstanding debt amount to successfully pay off the debt because the interests are calculated and added to the debt real-time. Any excess amount after the payment will be returned to your wallet.
+"최대값 설정"을 클릭하면 실시간으로 이자가 계산되어 부채에 추가되기 때문에 부채를 성공적으로 상환하기 위해 미지급 부채 금액보다 약간 더 많은 이자가 부과된다는 점에 유의하시기 바랍니다. 결제 후 초과된 금액은 지갑으로 반환됩니다.
 
 ![](../assets/payback-p2.png)
 

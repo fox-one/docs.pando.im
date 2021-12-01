@@ -1,32 +1,32 @@
 ---
-title: Providing liquidity
+title: 유동성 제공
 date: 2021-08-15 22:33:07
 ---
 
-There are three ways to add liquidity.
+유동성을 추가하는 세 가지 방법이 있습니다.
 
-Entry 1: Pools page - click on the specific pool - Pool page "+"
+방법 1: 풀 페이지--특정 풀 클릭-- "+"클릭
 
 ![](../assets/add-liquidity-p1.png)
 
-Entry 2: If you are already on the Swap page, find "Add Liquidity" in the Assets pool section
+방법 2: 이미 스왑 페이지에 있는 경우 자산 풀 섹션에서 "유동성 추가"를 찾으십시오.
 
 ![](../assets/add-liquidity-p2.png)
 
-Entry 3: If you have previously provided liquidity, you can find the pool on the Me page. Click on the pool and you will see "+'
+방법 3: 이전에 유동성을 제공한 경우 Me 페이지에서 풀을 찾을 수 있습니다. 풀을 클릭하면 "+'를 볼 수 있습니다.
 
 ![](../assets/add-liquidity-p3.png)
 
-After adding liquidity, you will receive the corresponding lp tken in the dialog window.
+유동성을 추가하면 대화창에서 해당 lp 토큰을 받게 됩니다.
 
 ![](../assets/add-liquidity-p4.png)
 
 ````mdx-code-block
 :::tip
 
-1. Two type of crypto currencies must be added at the same time to provide liquidity successfully and obtain LP tokens. If you only add one then exit the page, or you don't get an LP token after the addition, don't worry, the currency you paid will be refunded in ten minutes.
+1. 유동성을 성공적으로 제공하고 LP 토큰을 얻으려면 두 가지 유형의 암호 화폐를 동시에 추가해야 합니다. 하나만 추가한 후 페이지를 종료하거나 추가 후에도 LP 토큰을 받지 못하더라도 걱정하지 마십시오. 지불한 화폐는 10분 이내에 환불됩니다.
 
-2. There is no handling fee for add liquidity.
+2. 유동성 추가에 대한 수수료는 없습니다.
 
 :::
 ````

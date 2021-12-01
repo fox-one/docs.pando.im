@@ -1,18 +1,18 @@
 ---
-title: Repaying your borrow in Pando Rings
+title: Pando Rings에서 대출 상환
 date: 2021-09-04 12:33:07
 ---
 
-If you want to pay back your borrowed asset, you can go to repay.
+빌린 자산을 갚고 싶다면 상환하러 가시면 됩니다.
 
-You can access it by clicking on the borrowed asset card of the borrow secion on the Me page.
+Me 페이지의 대출 섹션에서 대출 자산 카드를 클릭하여 액세스할 수 있습니다.
 
-You can drag on the progress bar to decide on the percentage you want to repay.
+진행률 표시줄을 끌어 상환하려는 비율을 결정할 수 있습니다.
 
 ![](../assets/repay1.jpg)
 
-If you want to pay off the loan, you can drag the progress bar all the way to the right and click on "Payback".
+대출금을 모두 상환하려면 진행률 표시줄을 오른쪽 끝까지 끌어 "상환"을 클릭하시면 됩니다.
 
-Please be noted that due to the real-time calculation of borrow interest, the actual amount to pay off your Borrow might be slightly higher than the amount shown on the screen. So we will charge you slightly a bit more to make sure the borrow will be paid off, then any excess amount will be returned to your wallet after your payment.
+실시간 대출이자 계산으로 인해 실제 대출 상환 금액은 화면에 표시된 금액보다 약간 높을 수 있습니다. 그래서 우리는 차입금이 갚을 수 있도록 약간 더 많은 비용을 청구할 것이며, 초과 금액은 지불 후 지갑으로 반환될 것입니다.
 
 ![](../assets/repay2.jpg)

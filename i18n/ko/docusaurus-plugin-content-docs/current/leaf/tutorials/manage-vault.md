@@ -1,9 +1,9 @@
 ---
-title: Managing a Vault
+title: 볼트 관리
 date: 2021-08-13 12:33:07
 ---
 
-Your active vaults can be managed on the "Home" page. Whenever you open a new vault, it will show up in the "My Vaults" section.
+활성 볼트는 "홈" 페이지에서 관리할 수 있습니다. 새 볼트를 생성할 때마다 "내 볼트" 섹션에 표시됩니다.
 
 ![](../assets/manage-vault.png)
 

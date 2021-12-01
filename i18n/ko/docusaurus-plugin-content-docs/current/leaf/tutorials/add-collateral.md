@@ -1,14 +1,14 @@
 ---
-title: Add Collateral
+title: 담보물 추가
 date: 2021-08-13 12:33:07
 ---
 
-Adding Collateral is useful in two scenarios. The first is when a Vault is coming close to being **liquidated** (link to liquidation), adding collateral can save the Vault. The second is when a Vault owner wants to increase their capacity for generating pUSD, adding collateral will increase the maximum amount of pUSD that can be generated.
+담보 추가는 두 가지 시나리오에서 유용합니다. 첫 번째는 볼트가 **청산**(청산 링크) 에 가까워지면 담보물 추가를 통해 이전에 저당된 자산을 지킬 수 있습니다. 두 번째는 볼트 소유자가 pUSD 생성 용량을 늘리고자 할 때 담보를 추가하면 생성할 수 있는 최대 pUSD 양이 증가한다는 것입니다.
 
-To add collateral, click on "Deposit" and fill in the intended amount on the Deposit page. And then enter the quantity of collateral you want to add and click Deposit in picture on the right
+담보를 추가하려면 "예금"을 클릭하고 예금 페이지에서 원하는 금액을 입력하십시오. 추가할 담보의 수량을 입력하고 오른쪽 그림에 표시된 "예금" 을 클릭합니다.
 
 ![](../assets/leaf-add-collateral-p1.png)
 
-Pay 4 MOB token and see Details, the collateral Increase from 96.8865 to 100.8865. You can see details about this adding in chat window.
+4 MOB 토큰을 지불하고 세부 정보를 참조하십시오. 모기지 자산이 96.8865에서 100.8865로 늘어난 것을 볼 수 있습니다. 채팅창에서 입금된 자산의 내역을 확인할 수 있습니다.
 
 ![](../assets/leaf-add-collateral-p2.png)

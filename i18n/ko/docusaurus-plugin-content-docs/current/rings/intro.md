@@ -1,26 +1,26 @@
 ---
-title: What's Pando Rings
+title: Pando Rings는 무엇입니까?
 date: 2021-07-22 22:33:07
 ---
 
-Pando Rings is an algorithmic, autonomous interest rate protocol built with Mixin MTG (Mixin Trusted Group) technology. It is a place where you can lend or borrow cryptocurrencies. You can think of it as an open market for money. It lets users deposit cryptocurrencies and earn interest, or borrow other cryptoassets against them.
+Pando Rings는 Mixin MTG(Mixin Trusted Group) 기술을 사용하여 구축된 알고리즘적 자율 금리 계약입니다. 여기에서 암호화폐를 빌려주거나 빌릴 수 있습니다. 개방형 자본시장이라고 생각하시면 됩니다. 이를 통해 사용자는 암호 화폐를 예치하고 이자를 얻거나 다른 암호 자산을 빌려 헤지할 수 있습니다.
 
-The interest rates for supplying and borrowing are adjusted algorithmically based on supply and demand.
+공급 및 차입 비율은 수요와 공급 알고리즘에 따라 조정됩니다.
 
 
-## How does Pando Rings work?
+## Pando Rings는 어떻게 작동합니까?
 
-Supplied assets in Pando Rings are tracked in tokens called rTokens, Pando Rings' native tokens. rTokens are ERC-20 tokens that represent claims to a portion of an asset pool in Pando Rings.
+Pando Rings는 rTokens라는 토큰을 사용하여 Pando Rings의 기본 토큰인 자산 공급을 추적합니다. rToken은 ERC-20 토큰으로 Pando Rings의 자산 풀 소유권의 일부를 나타냅니다.
 
-For example, if you deposit BTC into Pando Rings, it is converted to rBTC. If you deposit ETH, it will be converted to rETH. rTokens are available in the connected wallet for further transactional purposes.
+예를 들어 Pando Rings에 BTC를 입금하면 rBTC로 변환됩니다. ETH를 입금하면 rETH로 변환됩니다. rToken은 연결된 지갑에서 추가로 거래할 수 있습니다.
 
-As the money market earns interest (borrowing increases), rTokens earn interest and become convertible to more of the underlying assets. If you deposit multiple coins, they'll each earn interest based on their individual rToken interest rates. You earn interest on Pando Rings by holding the rTokens.
+자금 시장이 차입 증가로 인해 이자를 획득함에 따라 rTokens는 이자를 벌어들여 더 많은 예치 자산으로 교환할 수 있습니다. 여러 토큰을 예치하면 각각의 rToken 이자율에 따라 이자가 발생합니다. rTokens을 보유하면 Pando Rings에 대한 이자를 얻을 수 있습니다.
 
-Lending in Pando Rings is straightforward. After selecting the asset you wish to supply liquidity for and signing the transaction through your wallet, you instantly add the asset to the pool and start earning interest in real-time. At the same time, the assets are converted to rTokens.
+Pando Rings에서 대출하는 방법은 간단합니다. 유동성을 제공할 자산을 선택하고 지갑을 통해 거래를 체결하면 자산이 즉시 스테이킹 풀에 추가되고 실시간으로 이자를 받기 시작합니다. 동시에 자산은 rToken으로 변환됩니다.
 
-Borrowing is a bit more complicated. To borrow, supplying is not enough - you have to make sure that you also have pledged, locking your rTokens into the system as collateral to earn the Borrowing Power (Borrow Balance). Every asset that is available for supply will add a different amount of borrowing power based on its collateral factor. Users can then borrow according to the Total Borrowing Power (Borrow Limit) they have.
+대출은 조금 더 복잡합니다. 대출을 하려면 자산을 예치하는 것만으로는 충분하지 않습니다. 모기지를 완료했는지 확인해야 하며 rToken은 대출 권리(대출 한도) 를 얻기 위한 담보로 시스템에 잠겨 있어야 합니다. 공급에 사용할 수 있는 각 자산은 대출 요소로 인해 대출 한도가 추가 될 수 있습니다. 사용자는 총 대출 능력(대출 한도) 에 따라 대출을 할 수 있습니다.
 
-There are shortcuts if your goal is to borrow - Quick Supply function is for you to quickly get the borrow balance as it enables you pledge when you supply the asset. Quick Borrow enables you to get the loan right away when you supply an asset.
+대출이 목적이라면 지름길이 있습니다. 빠른 공급 기능을 사용하면 자산을 공급하는 동시에 담보가 가능하기 때문에 대출금을 빠르게 얻을 수 있습니다. 빠른 차입을 사용하시면 자산을 공급하는 즉시 대출을 받을 수 있습니다.
 
-Similar to many other DeFi projects, Pando Rings works with the concept of overcollateralization. This means that borrowers have to supply more value than they wish to borrow to avoid liquidation.
+다른 많은 DeFi 프로젝트와 마찬가지로 Pando Rings는 과잉 담보 개념을 사용합니다. 이는 대출자가 청산을 피하기 위해 대출하려는 가치보다 더 많은 가치를 제공해야 함을 의미합니다.
 

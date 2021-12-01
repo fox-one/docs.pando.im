@@ -1,29 +1,29 @@
 ---
-title: Supplying assets to Pando Rings
+title: Pando Rings에 자산 공급
 date: 2021-09-04 12:33:07
 ---
 
-Supplying is the first step in Pando Rings. When users supply an asset to Pando Rings, they begin earning interest instantly. Interest accrues every minute; users can withdraw their principal plus interest anytime.
+Pando Rings를 사용하는 첫 번째 단계는 공급입니다. 사용자가 Pando Rings에 자산을 공급하면 즉시 이자를 받기 시작합니다. 이자는 1분마다 발생합니다. 사용자는 언제든지 원금과 이자를 인출할 수 있습니다.
 
-To supply an asset, you can click on "I want to supply" on the Market Page. It will bring you to the list of Supply assets you can choose from. You will see [Supply Volume](../key-concepts/glossary)and [Supply APY](../key-concepts/glossary) of the asset.
+자산을 공급하려면 시장 페이지에서 "공급하고 싶습니다"를 클릭하세요. 선택할 수 있는 공급 자산 목록이 표시됩니다. 자산의 [공급량](../key-concepts/glossary)과 [공급 APY](../key-concepts/glossary)를 볼 수 있습니다.
 
-After clicking on the asset, you will land on the Supply page.
+자산을 클릭하면 공급 페이지로 이동합니다.
 
 ![](../assets/supply1.jpg)
 
-You can also find the entry to supply if you already entered the Market Overview page and have chosen to view statistics of a specific market. You will find the Supply entry on the asset statistics page.
+이미 시장 개요 페이지에 들어가 특정 시장의 통계를 보기로 선택한 경우 공급할 항목을 찾을 수도 있습니다. 자산 통계 페이지에서 공급 항목을 찾을 수 있습니다.
 
 ![](../assets/supply2.jpg)
 
-If you haven't supplied any asset, you can also find the entry to supply on the Me page. Clicking on "Go to supply" and you will land on the Supply page.
+아직 자산을 제공하지 않은 경우 Me 페이지에서 제공할 항목을 찾을 수도 있습니다. "공급으로 이동"을 클릭하면 공급 페이지로 이동합니다.
 
 ![](../assets/supply3.jpg)
 
-On the Supply page, you will see key metrics related to the Supply process including the asset's Supply APY, amount you have supplied of the specific asset ("**Supplying**"), the total amount of all the assets you have supplied (**Total Supply**), the total amount you haven't pledged as collateral (**Total Unpledged**) and the exchange rate between the rToken and its underlying asset.
+공급 페이지에는 공급 프로세스와 관련된 주요 지표가 표시됩니다. 그들은 자산의 공급 APY, 특정 자산에 대해 제공한 금액("**공급**"), 귀하가 제공한 모든 자산의 총 금액(**총 공급**), 담보로 저당하지 않은 총 금액(**총 미저당**) 및 rToken과 기본 자산 간의 환율 등 입니다.
 
-Enter the amount of the asset you want to supply, and you will see a bottom sheet asking whether you want to pledge the supply volume. The percentage on the right arrow represents [Collateral Factor](../key-concepts/glossary).
+공급할 자산의 양을 입력하면 공급량을 저당할 것인지 묻는 하단 시트가 표시됩니다. 오른쪽 화살표의 백분율은 [담보 요소](../key-concepts/glossary)를 나타냅니다.
 
-As you need to pledge before borrowing on Pando Rings, if you choose "**Supply and Pledge**", you will immediately get the borrow capacity; or if you only want to earn some interest by supplying the asset, you can choose "Supply Only".
+Pando Rings에서는 대출을 하기 전에 저당 해야 하므로 "**공급 및 저당**"을 선택하면 즉시 대출 가능합니다. 또는 자산을 공급하여 일부 이자를 얻고자 하는 경우 "공급 전용"을 선택할 수 있습니다.
 
 ![](../assets/supply4.jpg)
 

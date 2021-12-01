@@ -1,16 +1,16 @@
 ---
-title: Loan Risk Indicator
+title: 대출 위험 지표
 date: 2021-09-04 12:33:07
 ---
 
-[Borrow](./glossary) / [Borrow Limit](./glossary) is used to indicate your loan risk.
+[차입](./glossary) / [차입 한도](./glossary)는 대출 위험을 나타내는 데 사용됩니다.
 
-When Borrow / Borrow Limit is <60%, you are in low risk of the loan being [liquidated](./glossary);
+차입 / 차입 한도가 <60%이면 대출이 [청산](./glossary)될 위험이 낮습니다.
 
-When 60% ≤ Borrow / Borrow Limit < 80%, you are in medium risk of the loan being liquidated;
+60% ≤ 차입/차입 한도 < 80%, 대출이 청산될 위험이 중간 정도입니다.
 
-When 80% ≤ Borrow / Borrow Limit < 100%, you are in high risk of the loan being liquidated;
+80% ≤ 차입/차입 한도 < 100%, 대출이 청산될 위험이 높습니다.
 
-When Borrow / Borrow Limit ≥ 100%, you are in liquidation.
+차입 / 차입 한도 ≥ 100%인 경우 청산됩니다.
 
 ![](../assets/risk.jpg)

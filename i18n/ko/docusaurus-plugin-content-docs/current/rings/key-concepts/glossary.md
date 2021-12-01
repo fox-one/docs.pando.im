@@ -1,69 +1,69 @@
 ---
-title: Glossary
+title: 용어 정리
 date: 2021-09-04 12:33:07
 ---
 
-### Key Processes
+### 주요 프로세스
 
-**Suppling** The process of putting an asset into Pando Rings. As a result, you get rTokens in return, and will earn interest as long as you are supplying the asset.
+**공급** Pando Rings에 자산을 넣는 과정입니다. 결과적으로, 귀하는 그 대가로 rTokens를 받게 되고, 귀하께서 자산을 공급하는 한 이자를 받게 될 것입니다.
 
-**Pledging** The process of locking rTokens into the system as collateral to get borrowing power.
+**담보** 차용력을 얻기 위해 rToken을 시스템에 담보로 잠그는 프로세스입니다.
 
-**Unpledging** The process of unlocking rTokens from the system and as a result, reducing the borrowing power.
+**담보 해제** 시스템에서 rToken을 잠금 해제하고 결과적으로 차용 능력을 줄이는 프로세스입니다.
 
-**Withdrawing** The process of getting back an asset from Pando Rings and have it back to your wallet. You will stop earning interest after you withdraw an asset.
+**철회** Pando Rings에서 자산을 회수하고 지갑으로 되돌리는 프로세스입니다. 자산을 인출한 후에는 이자를 더 이상 받지 않게 됩니다.
 
-**Borrowing** The process of getting a loan in Pando Rings.
+**대출** Pando Rings에서 대출을 받는 과정입니다.
 
-**Repaying** The process of paying back your borrowed asset plus the accrued borrow interest.
+**상환** 빌린 자산과 발생한 차입금을 갚는 과정입니다.
 
-**rToken** rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets.
+**rToken** rToken은 본질적으로 토큰화된 공급 포지션이며 다른 유동성 풀에서 담보로 사용되거나 다른 암호화 자산과 교환될 수 있는 ERC-20 토큰입니다.
 
-**Liquidation** When a user's maximum borrow capacity rendered by the total collateral value cannot cover the total loan value, liquidation will happen. In the process, others repay some or all of the user's outstanding borrow on behalf of the borrower and in return receive a discounted amount of collateral held by the borrower.
+**청산** 총 담보 가치에 의해 제공되는 사용자의 최대 차입 능력이 총 융자 가치를 커버할 수 없는 경우, 청산이 발생합니다. 이 과정에서 다른 사람들은 차용인을 대신하여 미지불 차입금의 일부 또는 전부를 상환하고 차용인이 보유한 담보물을 할인된 금액으로 가져갈 수 있습니다.
 
-### Market
+### 시장
 
-**Total Supply** It stands for the total supplied amount of all assets in the markets of the very moment.
+**총 공급** 그것은 현재 시장에 있는 모든 자산의 총 공급량을 나타냅니다.
 
-**Supply Volume** It stands for the total supplied amount of a specific asset in the market of the very moment.
+**공급량** 그것은 현재 시장에서 특정 자산의 총 공급량을 나타냅니다.
 
-**Total Borrow** It stands for the total borrowed amount of all assets in the markets of the very moment.
+**총 차입금** 그것은 현재 시장에 있는 모든 자산의 총 차입 금액을 나타냅니다.
 
-**Liquidity** It stands for the net amount available to borrow of all the markets of the very moment. It equals to Total Supply minus Total Borrow.
+**유동성** 그것은 현재 모든 시장에서 빌릴 수 있는 순 금액을 나타냅니다. 총 공급에서 총 차입을 뺀 것과 같습니다.
 
-**Maximum Market Availability** The amount available to borrow of a specific asset. It equals to the Total Supply of an asset minus the Total Borrow of the same asset.
+**최대 시장 가용성** 특정 자산을 빌릴 수 있는 금액입니다. 자산의 총 공급에서 동일한 자산의 총 차입을 뺀 것과 같습니다.
 
-**24h Supply** It stands for the total supplied amount of all assets in the markets within the last 24 hours.
+**24시간 공급량** 지난 24시간 동안 시장에 있는 모든 자산의 총 공급량을 나타냅니다.
 
-**24h Borrow** It stands for the total borrowed amount of all assets in the markets within the last 24 hours.
+**24시간 대출량** 지난 24시간 동안 시장에 있는 모든 자산의 총 차입 금액을 나타냅니다.
 
-**Supply APY** The estimated annual percentage yield for supplying an asset. The interest is compounded and is calculated every 15 seconds.
+**공급 APY** 자산을 공급하기 위한 추정 연간 수익률입니다. 이자는 복리로 계산되며 15초마다 계산됩니다.
 
-**Borrow APY** The estimated annual interest rate of an asset a borrower need to pay. The interest is compounded and is calculated every 15 seconds.
+**차입 APY** 차입자가 지불해야 할 자산의 연간 예상 이자율입니다. 이자는 복리로 계산되며 15초마다 계산됩니다.
 
-**Collateral Factor** It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors. Borrowing allowance, or borrowing capacity is determined as (pledged asset * its collateral factor). Each borrow is thus always initially over-collateralized.
+**모기지 계수** 담보 자산 가치 중 빌릴 수 있는 최대 백분율을 나타냅니다. 자산마다 다를 수 있습니다. 일반적으로 크거나 유동적인 자산은 높은 모기지 계수를 갖고, 작거나 비유동적인 자산은 낮은 모기지 계수를 갖습니다. 대출 한도 또는 대출 자격은 (담보 자산 * 모기지 계수) 에 의해 결정됩니다. 따라서 각 차입은 항상 처음에 과잉 담보 됩니다.
 
-### Key Personal Metrics
+### 주요 개인 지표
 
-**Net APY** Net APY(annual percentage yield) reflects the estimatd annual net yield based on the Supply APY and Borrow APY of the very moment. It indicates whether you are making money or losing money at the current APYS.
+**Net APY** Net APY(순예금 연간 수익률) 는 현재 공급 APY 및 차입 APY를 기반으로 한 추정 연간 순 수익률을 반영합니다. 현재 연간 수익률로 수익을 창출하고 있는지 아니면 손실을 보고 있는지를 반영합니다.
 
-**Borrow Limit** The maximum amount you can borrow. You can increase your borrow limit by increasing the collateral (pledging more assets).
+**대출 한도** 빌릴 수 있는 최대 금액입니다. 담보를 늘리면(더 많은 자산을 담보) 차입 한도를 늘릴 수 있습니다.
 
-**Borrow Balance** Borrow Balance = Borrow Limit - Your Borrow. It is the amount you can yet to borrow. If your Borrow Balance is 0, you cannot borrow any asset anymore.
+**대출 잔액** 대출 잔액 = 대출 한도 - 귀하의 대출. 아직 빌릴 수 있는 금액입니다. 대출 잔액이 0이면 더 이상 자산을 빌릴 수 없습니다.
 
-**Borrow/Borrow Limit** It is the percentage of a user's Borrow against the maximum borrow capacity. Itis used to indicate your loan risk.
+**대출/대출 한도** 최대 대출 용량에 대한 사용자의 대출 비율입니다. 대출 위험을 나타내는 데 사용됩니다.
 
-**My Supply** The total amount of all the assets you have supplied (principal plus the accrued interests).
+**나의 공급량** 귀하가 제공한 모든 자산의 총액(원금에 발생한 이자를 더한 금액) 입니다.
 
-**My Borrow** The total amount of all the assets you have borrowed (principal plus the accrued interests).
+**나의 대출량** 귀하께서 빌린 모든 자산의 총액(원금 + 미지급 이자) 입니다.
 
-**Total Pledge** The total amount you have pledged as collateral.
+**담보 총액** 귀하께서 담보로 제공한 총 금액입니다.
 
-**Total Unpledged** The total amount you haven't pledged as collateral.
+**무담보 총액** 귀하께서 담보로 약속하지 않은 총 금액입니다.
 
-**Available to Withdraw** The amount of a specific asset you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows
+**인출 가능** 귀하께서 인출할 수 있는 특정 자산의 금액입니다. 귀하의 미담보 자산 금액과 차입금을 충당하지 않는 담보 금액의 합계입니다.
 
-**Available to Unpledge** The amount of a specific asset you can unpledge. It is your total pledged amount of the asset minus the part covering the outstanding borrow.
+**취소 가능한 담보** 취소할 수 있는 특정 자산의 금액입니다. 자산의 총 담보 금액에서 미결제 차입금을 차지하는 부분을 뺀 값입니다.
 
 
 

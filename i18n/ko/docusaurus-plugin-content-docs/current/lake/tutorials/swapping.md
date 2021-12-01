@@ -1,5 +1,5 @@
 ---
-title: Swapping
+title: 스와핑(Swapping)
 date: 2021-08-15 22:33:07
 ---
 

@@ -1,28 +1,28 @@
 ---
-title: What's Pando Leaf
+title: Pando Leaf는 무엇입니까?
 date: 2021-07-22 22:33:07
 ---
 
-[Pando Leaf](https://leaf.pando.im) is a decentralized financial network built with the Mixin MTG ([Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange)) technology, a place where you can deposit collateral to generate and destory [Pando USD(pUSD)](./pusd) and destroy it when repaying the generated pUSD balance.
+[Pando Leaf](https://leaf.pando.im)는 Mixin MTG([Mixin Trusted Group](https://developers.mixin.one/document/ mainnet/mtg/exchange)) 기술을 기반으로 하는 탈중앙화 금융 네트워크로, 담보를 예치하여 [Pando USD(pUSD)](./pusd)를 생성하고 pUSD 잔액을 상환할 때 이를 파기할 수 있습니다.
 
-## How does Pando Leaf work?
+## Pando Leaf는 어떻게 작동합니까?
 
-Depositing collaterals and repaying the generated pUSD balance both happen in a **vault**.
+담보를 예치하고 생성된 pUSD 잔액을 상환하는 것은 모두 **볼트**에서 이루어집니다.
 
-- Vaults are not free. Generating the stablecoin requires the payment of stability fee. To reclaim collateral, users must repay the previously generated stablecoin and the accumulated stability fee.
-- Vaults are required to be overcollateralized. Vault owners should uphold the liquidation price/liquidation ratio (which is the minimum collateralization ratio) to avoid the **liquidation** of their positions.
+- 볼트는 무료가 아닙니다. 스테이블코인을 생성하기 위해서는 안정화 수수료를 지불해야 합니다. 담보물을 회수하기 위해 사용자는 이전에 생성된 스테이블 코인과 누적된 안정성 수수료를 상환해야 합니다.
+- 볼트는 과잉 담보가 필요합니다. 볼트 소유자는 포지션의 **청산**을 피하기 위해 청산 가격/청산 비율(최소 담보 비율) 을 유지해야 합니다.
 
-When a vault is liquidated, a liquidation penalty is applied and collateral is sold to repay the vault’s outstanding stablecoin balance.
+볼트가 청산되면 청산 패널티가 적용되고 볼트의 스테이블 코인 잔액을 상환하기 위해 담보가 판매됩니다.
 
-For more techincal details, please refer to the [Pando Leaf Technical Design](/developer/leaf/design)
+더 자세한 기술 정보는 [Pando Leaf 기술 디자인](/developer/leaf/design)를 참조하세요.
 
-## Auction
+## 경매
 
-Anyone can participate in the auction if a vault breaches the minimum required collateralization ratio and becomes liquidated.
+볼트가 최소 요구 담보 비율을 위반하여 청산되는 경우 누구나 경매에 참여할 수 있습니다.
 
-There are two phases of the auction - For the first phase, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+경매에는 두 단계가 있습니다. 1단계의 경우 입찰자는 이전 입찰 금액의 3% 이상의 증액으로 입찰하여 미결 부채 중 가장 높은 금액을 부담합니다. 만약 12시간 이내에 아무도 총 부채를 메우려 하지 않는다면 경매는 종료되고 부채의 가장 높은 금액을 기꺼이 메우려는 입찰자가 모든 담보물을 가져가게 될 것입니다. 총 부채를 메우려는 사람이 있다면 경매는 2단계로 넘어갈 것입니다.
 
-For the second phase, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt.
+2단계의 경우 입찰자는 이전 입찰 수량의 3% 이상의 감소율로 입찰하고 최소 담보 물량을 받아 모든 부채를 지불합니다.
 
 
 

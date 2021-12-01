@@ -22,7 +22,7 @@ Pando Leaf의 "내 페이지"에서 "[볼트](https://docs.pando.im/docs/leaf/ke
 ![](../assets/leaf-open-vault-p3.png)
 
 
-"예금 주조" 버튼을 클릭하고 지불한 후 로봇이 처리할 때 까지 잠시 기다리십시오.
+"자산 예금 및 주조" 버튼을 클릭하고 지불한 후 로봇이 처리할 때 까지 잠시 기다리십시오.
 
 [볼트](https://docs.pando.im/docs/leaf/key-concepts/vaults)가 성공적으로 생성되면 채팅창에서 알림과 메시지를 받게 됩니다.
 
@@ -31,7 +31,7 @@ Pando Leaf의 "내 페이지"에서 "[볼트](https://docs.pando.im/docs/leaf/ke
 
 ````mdx-code-block
 :::caution
-Do pay attention to the risk indication bar.
+유의 사항에 주의하세요.
 :::
 ````
 

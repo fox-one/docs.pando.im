@@ -1,12 +1,12 @@
 ---
-title: Auction Process
+title: 경매 절차
 date: 2021-07-28 22:33:07
 ---
 
-When a vault breaches the minimum required collateralization ratio, it will be liquidated and the collateral will be on auction. Anyone can participate in the auction. The ongoing auction can be found in the Ongoing section on the Auctions page.
+볼트(vault) 가 최소 요구 담보 비율을 위반하면 청산되고 담보가 경매됩니다. 누구나 경매에 참여할 수 있습니다. 진행중인 경매는 경매 페이지의 진행중인 섹션에서 찾을 수 있습니다.
 
-There are TWO phases of the auction.
+경매에는 두 단계가 있습니다.
 
-**For Phase 1**, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+**1단계**의 경우 입찰자는 이전 입찰 금액의 3% 이상의 증액으로 입찰하여 미결 부채 중 가장 높은 금액을 부담합니다. 만약 12시간 이내에 아무도 총 부채를 메우려 하지 않는다면 경매는 종료되고 부채의 가장 높은 금액을 기꺼이 메우려는 입찰자가 모든 담보물을 가져가게 될 것입니다. 총 부채를 메우려는 사람이 있다면 경매는 2단계로 넘어갈 것입니다.
 
-**For Phase 2**, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt. The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.
+**2단계**의 경우 입찰자는 이전 입찰 수량의 3% 이상의 감소율로 입찰하고 최소 담보 물량을 받아 모든 부채를 지불합니다. 낙찰자는 자신이 입찰에 응한 최소한의 담보를 받는 대가로 모든 부채를 갚아야 할 것입니다.

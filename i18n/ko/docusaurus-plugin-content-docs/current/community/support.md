@@ -1,14 +1,14 @@
 ---
-title: Support
+title: 고객지원
 date: 2021-09-17 12:37:07
 ---
 
-## Discussion channels
+## 토론 채널
 
-- [Reddit Commnunity](https://www.reddit.com/r/pando/)
-- [Discord Channel](https://discord.gg/ek45g3Cymd)
-- Mixin Group: search 7000104110 in [Mixin Messenger](https://mixin.one/messenger) to join the group.
+- [레딧 커뮤니티](https://www.reddit.com/r/pando/)
+- [디스코드 채널](https://discord.gg/ek45g3Cymd)
+- Mixin 그룹: [Mixin Messenger](https://mixin.one/messenger)에서 7000104110을 검색하여 그룹에 가입하세요.
 
-## News
+## 뉴스
 
-For the latest news about Pando, please follow @[Pando_IM](https://twitter.com/pando_im) and @[4swapORG](https://twitter.com/4swapOrg)
+Ando에 대한 최신 뉴스를 보려면 @[Pando_IM](https://twitter.com/pando_im) 및 @[4swapORG](https://twitter.com/4swapOrg)를 팔로우하세요.

@@ -1,35 +1,35 @@
 ---
-title: Withdrawing assets from Pando Rings
+title: Pando Rings에서 자산 인출
 date: 2021-09-04 12:33:07
 ---
 
-When you want to get back the asset you supplied to the market, you will need to withdraw. After withdrawing, you will stop earning supply interest.
+시장에 제공한 자산을 회수하려면 인출 작업을 수행해야 합니다. 철회 후에는 더 이상 공급 이자를 받지 않게 됩니다.
 
-Click on the supplied asset card on the Me page, then click on "Withdraw", you will then land on the Withdraw page.
+"Me" 페이지에서 제공되는 자산 카드를 클릭한 후 "출금"을 클릭하면 "출금" 페이지에 로그인됩니다.
 
-**Available to withdraw** shows the amount you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows.
+**인출 가능 금액**은 인출할 수 있는 금액을 나타냅니다. 귀하의 미담보 자산 금액과 차입금을 충당하지 않는 담보 금액의 합계입니다.
 
-**Unpledged** shows your supplied but unpledged amount of a specific rToken. And **Supplying** shows your supply amount of the asset.
+**미저당**은 자산을 공급 했지만 저당잡히지 않은 특정 rToken을 보여줍니다. 그리고 **공급**은 자산의 공급량을 보여줍니다.
 
 ![](../assets/withdraw1.jpg)
 
-The system prioritizes withdrawing from the unpledged amount.
+시스템은 미저당 자산에서 인출하는 것을 우선시합니다.
 
-If the amount you intend to withdraw is not more than your unpledged amount, the system will withdraw directly from the unpledged amount.
+출금하려는 금액이 미저당 금액을 초과하지 않는 경우 시스템은 미저당 금액에서 직접 출금합니다.
 
-If you do have unpledged amount and the amount you intend to withdraw is more than the unpledged, you will need to first unpledge certain amount then withdraw all the the unpledged amount to receive it in your wallet.
+미저당 금액이 있고 출금하려는 금액이 미저당 금액을 초과하는 경우 먼저 일정 금액의 모기지를 취소한 다음 미저당 금액을 모두 인출하여 지갑으로 수령해야 합니다.
 
 ![](../assets/withdraw2.jpg)
 
 ````mdx-code-block
 :::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+이 작업을 지원하려면 [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed)가 필요할 수 있습니다.
 :::
 ````
 
-If you don't have any unpledged amount left and your pledged amount is not fully covering borrows, the system will directly withdraw for you from your pledged amount, finishing withdrawing in just one step.
+미저당 잔액이 없고 모기지 금액이 대출에 완전히 사용되지 않은 경우 시스템이 모기지 금액에서 직접 인출하며 한 번에 인출을 완료할 수 있습니다.
 
-If you have outstanding borrow, it is possible that you cannot withdraw the same amount you have supplied. In this case, please return part or total amount of your borrow first.
+미결제 대출이 있는 경우 제공한 금액과 동일한 금액을 인출하지 못할 수 있습니다. 이 경우 대출금의 일부 또는 전부를 먼저 상환해 주십시오.
 
-Please be noted that, if you have outstanding borrow, withdrawing from your pledged amount, or in other words, unpledging rTokens, will reduce your borrow capacity (borrow limit), affecting your loan risk level. The reasoning behind is, because your borrow stays the same, when your borrow limit decreases, your borrow will take a bigger percentage of your borrow limit. Please be cautious with your withdrawing and avoid [liquidation](../key-concepts/liquidation) of your pledged assets. 
+미결제 차입금이 있거나 모기지 금액에서 자산을 인출하거나 모기지 rToken을 취소하면 차입 능력(차입 한도) 이 줄어들고 대출 위험 수준에 영향을 미친다는 점에 유의하시기 바랍니다. 그 이유는 대출 한도가 떨어지면 대출이 대출 한도의 더 큰 부분을 차지하게 됩니다. 담보 자산의 [청산](../key-concepts/liquidation)을 피하기 위해 신중하게 철회하십시오. 
 

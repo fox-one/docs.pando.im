@@ -1,121 +1,121 @@
 ---
-title: Audit Reports
+title: 감사 보고서
 ---
 
 import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
-## Audit Reports from IOActive
+## IOActive의 감사 보고서
 
-### Download Report
+### 보고서 다운받기
 
-[Audit report from IOActive](//docs.pando.im/reports/ioactive-report.pdf)
+[IOActive의 감사 보고서](//docs.pando.im/reports/ioactive-report.pdf)
 
-### Findings and Remediation Status
+### 발견 사항 및 수정 상태
 
-| ID    | Title                                                                         | Total Risk | Status |
-| ----- | ----------------------------------------------------------------------------- | ---------- | ------ |
-| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | High       | Fixed  |
-| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities                   | High       | Fixed  |
-| MP-01 | Lack of Certificate Pinning                                                   | Medium     |        |
-| MP-02 | Insufficient JailBreak Detection                                              | Medium     |        |
-| MP-03 | App Transport Security Disabled                                               | Low        |        |
-| MP-04 | RPATH Set in Binary                                                           | Low        |        |
-| MP-05 | Binary Users Insecure APIs                                                    | Low        |        |
+| ID    | 제목                                                                            | 총 리스크 | 상태  |
+| ----- | ----------------------------------------------------------------------------- | ----- | --- |
+| MP-07 | Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance | 높음    | 수정됨 |
+| MP-06 | General - Outdated Web Server with Multiple Vulnerabilities                   | 높음    | 수정됨 |
+| MP-01 | Lack of Certificate Pinning                                                   | 중간    |     |
+| MP-02 | Insufficient JailBreak Detection                                              | 중간    |     |
+| MP-03 | App Transport Security Disabled                                               | 낮음    |     |
+| MP-04 | RPATH Set in Binary                                                           | 낮음    |     |
+| MP-05 | Binary Users Insecure APIs                                                    | 낮음    |     |
 
-### Issue Analysis
+### 문제 분석
 
 **MP-07: Rings - Borrow Repayment Transactions May Fail After Modifying Borrow Balance**
 
-This issue is caused by an incorrect logic in `Payee.handleRepayEvent()`. Please read IOActive audit report (from p3 to p8) for more details.
+이 문제는 `Payee.handleRepayEvent()`의 잘못된 논리로 인해 발생합니다. 자세한 내용은 IOActive 감사 보고서(3~8페이지) 를 참조하십시오.
 
 **MP-07: General - Outdated Web Server with Multiple Vulnerabilities**
 
-This issue is caused by an outdated web server that provides API endpoints. Please read IOActive audit report (from p3 to p8) for more details.
+이 문제는 API 엔드포인트를 제공하는 오래된 웹 서버로 인해 발생합니다. 자세한 내용은 IOActive 감사 보고서(3~8페이지) 를 참조하십시오.
 
 **MP-01: Lack of Certificate Pinning**
 
-This is an issue related to the Mixin Messenger.
+이것은 Mixin Messenger 관련 문제입니다.
 
-At present, most Apps reply entirely to the certifications that operating system maintains and do not determine which certificate to trust or not. Attackers who break the operating system's trust storage or hack a root CA can set up a man-in-the-middle attack and capture the transmitted data between the App and the server.
+현재 대부분의 앱은 스스로 신뢰할 수 있는 인증서를 결정하는 대신 운영 체제의 모든 유효한 인증서를 완전히 신뢰하게 되 있습니다.. 운영 체제의 신뢰 저장소를 파괴하거나 루트 인증서를 해독하는 공격자는 메시지 가로채기(man-in-the-middle) 공격을 설정하고 애플리케이션과 서버 간에 전송되는 데이터를 캡처할 수 있습니다.
 
-Mixin Team and Pando Team are not responsible for ensuring the safety of user's local operating system and the root CA. After discussing with the Mixin Team, we decided to ignore this issue for now.
+Mixin 팀과 Pando 팀은 사용자의 로컬 운영 체제 및 CA 시스템의 보안을 보장할 책임이 없습니다. Mixin Team과 논의 끝에 지금은 이 문제를 무시하기로 결정했습니다.
 
 **MP-02: Insufficient JailBreak Detection**
 
-This is an issue related to the Mixin Messenger iOS.
+이것은 Mixin Messenger iOS 관련 문제입니다.
 
-Mixin Team is not responsible for ensuring the safety of user's local operating system, so they decided to ignore this issue for now.
+Mixin Team은 사용자의 로컬 운영 체제의 보안을 보장할 책임이 없으므로 이제 이 문제를 무시하기로 결정했습니다.
 
 **MP-03: App Transport Security Disabled**
 
-This is an issue related to the Mixin Messenger iOS.
+이것은 Mixin Messenger iOS 관련 문제입니다.
 
-In the report, it mentions that ATS is disabled for requests from WebView. It's not a flaw of App because the users are allowed to use the WebView to visit HTTP webpages.
+보고서는 WebView의 요청에 대해 ATS 옵션이 비활성화되어 있다고 언급했습니다. 사용자가 WebView를 사용하여 HTTP 웹 페이지에 액세스할 수 있기 때문에 이것은 애플리케이션의 결함이 아닙니다.
 
 **MP-04: RPATH Set in Binary**
 
-This issue is very hard to exploit, so the Mixin Team decided to ignore this issue for now.
+이 문제는 활용하기 어렵기 때문에 Mixin Team은 이제 이 문제를 무시하기로 결정했습니다.
 
 **MP-05: Binary Users Insecure APIs**
 
-This issue is very hard to exploit, so the Mixin Team decided to ignore this issue for now.
+이 문제는 활용하기 어렵기 때문에 Mixin Team은 이제 이 문제를 무시하기로 결정했습니다.
 
-## Audit Reports from LeastAuthority
+## LeastAuthority의 감사 보고서
 
-### Download Report
+### 보고서 다운받기
 
-[Audit Report from Least Authority](//docs.pando.im/reports/least-authority-report.pdf)
+[LeastAuthority의 감사 보고서](//docs.pando.im/reports/least-authority-report.pdf)
 
 
-### Findings and Remediation Status
+### 발견 사항 및 수정 상태
 
-| ID | Title                                                     | Status    |
-| -- | --------------------------------------------------------- | --------- |
-| A  | No Provision to Handle Compromise of Shared MTG Key       | Won't fix |
-| B  | Security Roadmap Nonexistent                              | Won't fix |
-| C  | Protocol Specifications Nonexistent                       |           |
-| D  | Secrets Are Shared and Persist in Plain Text              | Won't fix |
-| E  | Use of Unauthenticated Encryption Mode                    | Won't fix |
-| F  | Input Not Checked When Adding or Removing PKCS #7 Padding | Won't fix |
-| G  | Excess Centralization                                     |           |
+| ID | 제목                                                        | 상태       |
+| -- | --------------------------------------------------------- | -------- |
+| A  | No Provision to Handle Compromise of Shared MTG Key       | 수정 계획 없음 |
+| B  | Security Roadmap Nonexistent                              | 수정 계획 없음 |
+| C  | Protocol Specifications Nonexistent                       |          |
+| D  | Secrets Are Shared and Persist in Plain Text              | 수정 계획 없음 |
+| E  | Use of Unauthenticated Encryption Mode                    | 수정 계획 없음 |
+| F  | Input Not Checked When Adding or Removing PKCS #7 Padding | 수정 계획 없음 |
+| G  | Excess Centralization                                     |          |
 
-### Responses to Findings
+### 설문조사 결과에 대한 응답
 
 **Finding A: No Provision to Handle Compromise of Shared MTG Key**
 
-In the begining, the purpose of the shared key is to encrypt the memo. In the previous version, Pando Leaf and Rings put `user_id` in the memo, and the shared key is used to encrypt it.
+초기에 공유 키의 목적은 메모를 암호화하는 것이었습니다. 이전 버전에서는 Pando Leaf와 Rings가 메모에`user_id`를 배치하고 공유 키를 사용하여 암호화했습니다.
 
-However, to better protect the user's privacy, we upgrade the Mixin Network, that adding `user_id` in the UTXO directly. Now Pando has already remove the `user_id` from the memo so there is no sensitive information in the memo.
+하지만 사용자의 개인정보를 보다 잘 보호하기 위해 Mixin Network를 업그레이드하고 UTXO에 `user_id`를 직접 추가했습니다. 이제 Pando는 메모에서 `user_id`를 삭제하여 메모에 민감한 정보가 없습니다.
 
-To make the protocol more campatible, we keep the support of the encrypted memo. But it's totally fine to use plain-text in memo and leave it unencrypted. In another word, the shared key is not important anymore.
+프로토콜 호환성을 유지하기 위해 암호화된 메모에 대한 지원을 계속 유지합니다. 그러나 메모에 암호화되지 않은 텍스트를 사용하면 문제가 없습니다. 즉, 공유 키는 더 이상 중요하지 않습니다.
 
 **Finding B: Security Roadmap Nonexistent**
 
-Actually we have a Roadmap with security related plans. We will update the roadmap in the future.
+실제로 우리는 안전 관련 계획이 포함된 로드맵을 가지고 있습니다. 향후 로드맵을 업데이트할 예정입니다.
 
 **Finding C: Protocol Specifications Nonexistent**
 
-We have already provided some specifications for the protocol. Please check them out https://docs.pando.im/developer/intro.
+프로토콜에 대한 몇 가지 사양을 제공했습니다. https://docs.pando.im/developer/intro를 확인하세요.
 
-In the future, we will provide more documentation here.
+앞으로 여기에서 더 많은 문서를 제공할 것입니다.
 
 **Finding D: Secrets Are Shared and Persist in Plain Text**
 
-We have own way to manage the secrets and keep the deployment environment secure.
+키를 관리하고 배포 환경을 안전하게 유지하는 자체 방법이 있습니다.
 
 **Finding E: Use of Unauthenticated Encryption Mode**
 
-We are using AES-CBC in the memo encryption. It's better to switch to AES-GCM. However, because of the explanation of the **Finding A**, Pando decided to ignore this issue.
+우리는 메모 암호화에 AES-CBC를 사용합니다. 이론적으로 AES-GCM으로 전환하는 것이 좋습니다. 하지만 Pando는 **Finding A**의 해명으로 이 문제를 무시하기로 했습니다.
 
 **Finding F: Input Not Checked When Adding or Removing PKCS #7 Padding**
 
-Same as above.
+위와 같습니다
 
 **Finding G: Excess Centralization**
 
-Yes, right now, it is hard to add new members to the MTG or remove the existed.
+예, MTG에 새 회원을 추가하거나 기존 회원을 제거하는 것은 어렵습니다.
 
-We are working on a new governance system to make it possible to add and remove MTG members. The new governance system will be released in the future.
+MTG 구성원을 추가 및 삭제할 수 있는 새로운 관리 시스템을 구축하기 위해 열심히 노력하고 있습니다. 앞으로 새로운 거버넌스 시스템이 도입될 것입니다.
 

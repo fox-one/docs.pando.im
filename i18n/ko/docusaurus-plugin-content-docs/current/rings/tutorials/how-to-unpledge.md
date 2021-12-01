@@ -1,18 +1,18 @@
 ---
-title: Unpledging to reduce collaterals
+title: 담보 해제를 통해 담보물 줄이기
 date: 2021-09-04 12:33:07
 ---
 
-If you need to use the locked rTokens, you may want to unpledge. After unpledging, you will be able to freely transfer the rTokens to anyone as any other assets or you can go on to withdraw, getting back the underlying asset from your rTokens.
+잠긴 rToken을 사용해야 하는 경우 저당을 취소할 수 있습니다. 저당을 취소한 후에는 rToken을 다른 자산으로 누구에게나 자유롭게 이전하거나 출금을 진행하여 rToken에서 기본 자산으로 되돌릴 수 있습니다.
 
-To unpledge, click on "Unpledge" of the supplied asset card of the Supply section on the Me page.
+저당을 취소하려면 Me 페이지의 공급 섹션에서 제공된 자산 카드의 "담보 해제"를 클릭하십시오.
 
-**Pledging** shows the amount of a specific asset you have pledged. **Total Pledge** is the total amount of all the assets you have pledged.
+**저당**은 귀하가 저당한 특정 자산의 금액을 보여줍니다. **총 저당**은 귀하가 저당한 모든 자산의 총액입니다.
 
 ![](../assets/unpledge1.jpg)
 
 ````mdx-code-block
 :::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
+이 작업을 지원하려면 [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed)가 필요할 수 있습니다.
 :::
 ````

@@ -1,30 +1,30 @@
 ---
-title: Participating in the Auction
+title: 경매 참여
 date: 2021-08-13 12:33:07
 ---
 
 
-You can go to "Auction" page to participate in auctions and check on the information of the past auctions.
+"경매" 페이지로 이동하여 경매에 참여하고 과거 경매 정보를 확인할 수 있습니다.
 
-Ongoing auctions are in the "Ongoing"(at Auction) tab.
+진행 중인 경매는 "진행 중인"(경매 페이지) 탭에 있습니다.
 
 ![](../assets/auction-p1.png)
 
-If there are no auctions in progress, you will see pic of blank state.
+진행 중인 경매가 없으면 빈 페이지가 표시됩니다.
 
 ![](../assets/auction-p2.png)
 
-For an active auction, there are two phases.
+현재 진행 중인 경매에는 두 가지 단계가 있습니다.
 
-For Phase 1, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt.
+1단계의 경우 입찰자는 이전 입찰 금액의 3% 이상의 증액으로 입찰하여 미결 부채 중 가장 높은 금액을 부담합니다.
 
-If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+만약 12시간 이내에 아무도 총 부채를 메우려 하지 않는다면 경매는 종료되고 부채의 가장 높은 금액을 기꺼이 메우려는 입찰자가 모든 담보물을 가져가게 될 것입니다. 총 부채를 메우려는 사람이 있다면 경매는 2단계로 넘어갈 것입니다.
 
 ![](../assets/auction-p3.png)
 
-For Phase 2, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt.
+2단계의 경우 입찰자는 이전 입찰 수량의 3% 이상의 감소율로 입찰하고 최소 담보 물량을 받아 모든 부채를 지불합니다.
 
-The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.
+낙찰자는 자신이 입찰에 응한 최소한의 담보를 받는 대가로 모든 부채를 갚아야 할 것입니다.
 
 
 ![](../assets/auction-p4.png)

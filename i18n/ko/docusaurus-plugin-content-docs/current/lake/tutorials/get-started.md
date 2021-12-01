@@ -1,39 +1,39 @@
 ---
-title: Get Started
+title: 시작하기
 date: 2021-09-22 05:22:11
 ---
 
-Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://docs.pando.im/docs/apps/wallets) (web wallet) and the following content takes mixin messenger wallet as an example.
+Pando Lake(4swap)는 [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) 지갑 및 [fennec](https://docs.pando.im/docs/apps/wallets) (웹 지갑)을 지원합니다. 다음 콘텐츠는 mixin messenger 지갑을 예로 들어 설명합니다.
 
-Visit [Pando lake(4swap)](https://lake.pando.im), or search Mixin ID **7000103537** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando lake(4swap).
+[Pando Lake(4swap)](https://lake.pando.im)를 방문하거나 Mixin Messenger 앱에서 Mixin ID **7000103537**을 검색하고 파란색 숫자를 클릭합니다. 그런 다음 봇을 추가하고 작은 로봇 아바타를 클릭하여 Pando Lake(4swap) 를 엽니다.
 
 ![](../assets/lake-get-started-p1.png)
 
-Click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces.
+"지갑 연결"을 클릭하여 시작해야 합니다. 그렇지 않으면 자산과 관련된 데이터가 인터페이스에 표시될 수 없으므로 꼭 승인을 해줘야 합니다.
 
 ![](../assets/lake-get-started-p2.png)
 
 ````mdx-code-block
 :::tip
 
-Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
+모두 확인하고 승인합니다. 승인은 당신의 자산을 볼 수만 있고 사용할 수 없습니다. 안전하니 걱정 안 하셔도 됩니다.
 
 :::
 ````
 
-Let's get to know the homepage of pando lake(4swap).
+Pando lake(4swap) 의 홈페이지를 알아봅시다.
 
 ![](../assets/lake-get-started-p3.png)
 
-Enter the "pool" page, we can see various trading pairs. We can click the right arrow ➡️ at the top right to view the data analysis.
+"풀" 페이지에 들어가면 다양한 거래 페어를 볼 수 있습니다. 오른쪽 상단의 오른쪽 화살표 ➡️를 클릭하면 데이터 분석을 볼 수 있습니다.
 
-You can also click to sort different transaction pairs based on data such as total supply and 24-hour transaction volume.
+또한 클릭하여 총 공급 및 24시간 거래량과 같은 데이터를 기반으로 다양한 거래 페어를 정렬할 수 있습니다.
 
 ![](../assets/lake-get-started-p4.png)
 
-The search function can quickly locate the trading pairs related to the currency we want to trade. For example, in above picture, searching for eth can quickly display all trading pairs related to eth.
+검색 기능은 우리가 거래하려는 통화와 관련된 거래 페어를 빠르게 찾을 수 있습니다. 예를 들어, 위 그림에서 eth를 검색하면 eth와 관련된 모든 거래 페어를 빠르게 표시할 수 있습니다.
 
-Enter the eth/btc trading pair, you can view more detailed information, and you can quickly jump to the "[swap](https://docs.pando.im/docs/lake/tutorials/swapping)" and "[liquidity pages](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)".
+eth/btc 거래 페어를 클릭하면 더 자세한 정보를 볼 수 있으며 "[스왑](https://docs.pando.im/docs/lake/tutorials/swapping)" 및 "[유동성 페이지](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)"로 빠르게 이동할 수 있습니다.
 
 
 

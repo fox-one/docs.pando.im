@@ -1,12 +1,12 @@
 ---
-title: Checking asset information
+title: 자산 정보 확인
 date: 2021-08-15 22:33:07
 ---
 
-Search the asset you are interested - click on the asset icon on the pool page, then you will land on the asset information page.
+관심 자산을 검색하기 - 풀 페이지에서 자산 아이콘을 클릭하면 자산 정보 페이지로 이동합니다.
 
 ![](../assets/asset-info.png)
 
-You can click 🔄 to switch the price display, and click the ➡️ to view more information.
+🔄을 클릭하면 가격 표시를 전환할 수 있으며, ➡️를 클릭하면 자세한 정보를 볼 수 있습니다.
 
-Swipe down on the screen, and I can see the relevant chart of the trading pair and a small amount of historical transaction records.
+화면을 아래로 스와이프하면 거래페어의 관련 차트와 소량의 과거 거래 기록을 볼 수 있습니다.

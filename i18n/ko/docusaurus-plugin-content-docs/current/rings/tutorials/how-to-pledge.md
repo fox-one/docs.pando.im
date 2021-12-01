@@ -1,26 +1,26 @@
 ---
-title: Pledging rTokens to get borrow capacity
+title: 대출 능력을 얻기 위해 rToken을 저당합니다.
 date: 2021-09-04 12:33:07
 ---
 
-If you want to borrow, you will need to pledge as borrowing in Pando Rings function on the collateral-backed mechanism.
+대출을 하려면 모기지 지원 메커니즘을 기반으로 Pando Rings에서 대출을 받아야 합니다.
 
-After pledging, the rTokens you get from supplying will be locked into the system. You will not be able to transfer your pledged rTokens to others, but you can still gain supply interest of those you pledge.
+자산을 저당 한 이후에 공급에서 얻은 rToken은 시스템에 잠겨 있습니다. 저당한 rToken을 다른 사람에게 양도할 수는 없지만 저당한 해당 토큰에서 공급에 대한 이익은 계속 얻을 수 있습니다.
 
 ````mdx-code-block
 :::info
-**The difference between manually "Pledge" and one-stop "Supply and Pledge"**
+**수동 "저당"과 원스톱 "공급 및 저당"의 차이점**
 
-If you manually pledge, you can decide on the percentage of the supplied asset you want to pledge. In comparison, if you choose  to use the one-stop Supply and Pledge function (accessible from both Supply page and Borrow page), the system will pledge 100% of the rTokens while you supply.
+수동으로 저당할 경우 공급된 자산의 저당 비율을 결정할 수 있습니다. 이에 비해 원스톱 공급 및 저당 기능(공급 페이지와 차용 페이지 모두에서 액세스 가능) 을 사용하도록 선택하면 시스템은 공급하는 동시에 100%의 rTokens를 저당 합니다.
 
-If unfortunately, the value of your pledged assets cannot cover your borrow anymore, **ALL** of your pledged assets will be subjected to [liquidation](../key-concepts/liquidation) while your unpledged assets will stay intact.
+안타깝게도 담보 자산의 가치가 더 이상 차입금을 커버할 수 없는 경우 **모든**담보 자산은 청산[liquidation](../key-concepts/liquidation) 대상이 되지만 담보되지 않은 자산은 그대로 유지됩니다.
 
-It's up to you make the tradeoff between getting more borrowing power by pledging more and pledging only partially for isolation of risk.
+더 많은 자산을 저당하여 더 많은 차입 능력을 얻는 것과 리스크를 고려하여 부분적으로만 저당하는 것 사이에서 절충점을 만드는 것은 귀하에게 달려 있습니다.
 :::
 ````
 
-To pledge, you can click on the supplied asset card of the Supply section on the Me page.
+저당하려면 Me 페이지의 공급 섹션에서 제공된 자산 카드를 클릭할 수 있습니다.
 
-Drag on the progress bar to choose the percentage you want to pledge. As the amount change, the status of the risk loan indicator also change. It's advised that you pay close attention to the indicator to monitor the predicted risk of the loan after you pledge.
+진행률 표시줄을 끌어 저당할 비율을 선택합니다. 금액이 변경되면 대출 위험 지표의 상태도 변경됩니다. 담보 대출 후 예상되는 대출 위험을 모니터링하기 위해 지표에 세심한 주의를 기울이는 것이 좋습니다.
 
 ![](../assets/pledge1.jpg)

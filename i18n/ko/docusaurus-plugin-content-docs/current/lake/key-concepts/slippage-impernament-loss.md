@@ -1,14 +1,14 @@
 ---
-title: Slippage and Impermanent loss
+title: 슬리피지(Slippage) 와 비영구적 손실(Impermanent loss)
 date: 2021-08-15 22:33:07
 ---
 
-### Slippage
+### 슬리피지(Slippage)
 
-In financial trading, slippage is a term that refers to the difference between a trade’s expected price and the actual price at which the trade is executed.
+금융 거래에서 슬리피지는 거래의 예상 가격과 거래가 실행되는 실제 가격의 차이를 나타내는 용어입니다.
 
-### Impermanent Loss
+### 비영구적 손실(Impermanent Loss)
 
-Providing liquidity is not without risk, as you may be exposed to impermanent loss.
+유동성을 제공하는 것은 비영구적 손실에 노출될 수 있으므로 위험이 없는 것은 아닙니다.
 
-[“Simply put, impermanent loss is the difference between holding tokens in an AMM and holding them in your wallet.” - Nate Hindman](https://blog.bancor.network/beginners-guide-to-getting-rekt-by-impermanent-loss-7c9510cb2f22)
+["간단히 말해서 비영구적 손실은 AMM에 토큰을 보유하는 것과 지갑에 보유하는 것의 차이입니다." - Nate Hindman](https://blog.bancor.network/beginners-guide-to-getting-rekt-by-impermanent-loss-7c9510cb2f22)

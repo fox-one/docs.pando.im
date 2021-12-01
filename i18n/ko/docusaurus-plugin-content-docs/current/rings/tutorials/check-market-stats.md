@@ -1,17 +1,17 @@
 ---
-title: Checking market statistics
+title: 시장 통계 확인
 date: 2021-09-04 12:33:07
 ---
 
-You can find [Total Supply](../key-concepts/glossary), [Total Borrow](../key-concepts/glossary), [24h Supply](../key-concepts/glossary) and [24h Borrow](../key-concepts/glossary) on the Market page. They give you an overall understanding of the volume and activenss of all the markets in Pando Rings.
+시장 페이지 에서 [총 공급량](../key-concepts/glossary), [총 대출금](../key-concepts/glossary), [24시간 공급량](../key-concepts/glossary), [24시간 대출금](../key-concepts/glossary)을 볼 수 있습니다. Pando Rings의 모든 시장의 규모와 활동에 대한 전반적인 이해를 제공합니다.
 
 ![](../assets/market1.jpg)
 
-If you want to see more details statistics, you can click on the up-rightwards arrow. On the Market Overview page, you will see the graphs showing the market change. You can switch among the categories: total volume, 24h volume or [liquidity](../key-concepts/glossary).
+더 자세한 통계를 보려면 오른쪽 위 화살표를 클릭하십시오. 시장 개요 페이지에서 시장 변화를 보여주는 그래프를 볼 수 있습니다. 총 볼륨, 24시간 볼륨 또는 [유동성](../key-concepts/glossary)과 같은 범주 간에 전환할 수 있습니다.
 
-You can also see visualization of the top supply/borrow markets by their percentage.
+또한 상위 공급/차입 시장을 백분율로 시각화한 것을 볼 수 있습니다.
 
-Further more, you can select from the asset list to check detailed statistics of a specific asset market.
+자산 목록에서 선택하여 특정 자산 시장의 세부 통계도 확인할 수 있습니다.
 
 ![](../assets/market2.jpg)
 
