@@ -51,7 +51,7 @@ With the development of pando, other forms of feedback may also be provided to c
 
 ### How to get rewards
 
-We use [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) to send event rewards.
+We use [mixin messenger](https://docs.pando.im/docs/apps/wallets) to send event rewards.
 
 ![](./assets/how-to-get-reward.png)
 
