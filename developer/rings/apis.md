@@ -6,6 +6,12 @@ date: 2021-08-16 17:40:00
 
 This document describes the definition and usage of the restful api and RPC interface of the pando rings engine.
 
+## Authentication Token
+
+Sign authentication token for ```GET https://api.mixin.one/me``` with scope "FULL" by keystores.
+
+visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+
 ## Restful API
 
 ### • All markets
@@ -71,10 +77,10 @@ GET /api/v1/transactions?limit=10&offset=
 ```
 
 **Query Params**
-|key|type|des|
-|---|---|---|
-|limit|string|page data limit, 500 by default|
-|offset|string|Pagination start time, RFC3339Nano format, e.g. 2020-12-12T12:12:12.999999999Z|
+| key    | type   | des                                                                            |
+| ------ | ------ | ------------------------------------------------------------------------------ |
+| limit  | string | page data limit, 500 by default                                                |
+| offset | string | Pagination start time, RFC3339Nano format, e.g. 2020-12-12T12:12:12.999999999Z |
 
 **Response**
 ```json
