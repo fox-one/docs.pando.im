@@ -53,4 +53,4 @@ Pando Community: 7000104110
 
 If you have problems using Pando, you can check [Pando documentation](pando.im) or ask questions in the community. The administrator will be happy to help you.
 
-🍀 Good luck to everyone！
+Good luck to everyone！
