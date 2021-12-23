@@ -4,9 +4,16 @@
         <title>Pando Blog</title>
         <link>https://docs.pando.im/zh/blog</link>
         <description>Pando Docs Blog</description>
-        <lastBuildDate>Fri, 03 Dec 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Dec 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[How to get event awards]]></title>
+            <link>https://docs.pando.im/zh/blog/2021/12/23/how-to-get-event-award</link>
+            <guid>How to get event awards</guid>
+            <pubDate>Thu, 23 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pando is an open source DeFi project based on Mixin Network that uses MTG to keep funds safe. The accumulated assets under management have reached 327M $ and the DEX—— 4swap is ranked around 30 in the world.]]></description>
+        </item>
         <item>
             <title><![CDATA[Translation Award Announcement II]]></title>
             <link>https://docs.pando.im/zh/blog/2021/12/03/translate-award-2</link>
