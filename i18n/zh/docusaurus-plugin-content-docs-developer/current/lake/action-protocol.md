@@ -22,7 +22,7 @@ date: 2021-07-31 11:18:01
 followID, _ := uuid.NewV4()
 
 // 构建交换动作，指定参数
-action := mtg。 wapAction(
+action := mtg.SwapAction(
     receiverID,
     followID.String(),
     OutputAssetID,

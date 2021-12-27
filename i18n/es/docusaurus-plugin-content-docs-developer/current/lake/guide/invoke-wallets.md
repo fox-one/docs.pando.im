@@ -6,7 +6,7 @@ date: 2021-07-22 22:33:07
 At present, there are two kinds of wallets that are compatible with 4swap/Lake:
 
 - [Mixin Messenger](/docs/apps/wallets#mixin-messenger): A mobile wallet that is created by Mixin core team.
-- [Fennec](/docs/apps/wallets#fennec): A browser extension wallet created by Fox.ONE team.
+- [Fennec](https://pando.im/fennec/): A browser extension wallet created by Fox.ONE team.
 
 If you are going to provide a web interface that supports any of these wallets, you need to integrate your web app with the wallets and invoke them to pay at the desired time.
 

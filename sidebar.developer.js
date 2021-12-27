@@ -43,6 +43,7 @@ module.exports = {
           items: [
             "leaf/apis/overview",
             "leaf/apis/info",
+            "leaf/apis/auth",
             "leaf/apis/assets",
             "leaf/apis/cats",
             "leaf/apis/flips",
