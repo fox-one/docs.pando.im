@@ -41,7 +41,7 @@ import { Improvement, } from "@site/src/components/admonitions";
 
 ## 在4swap创建一个流动池
 
-您需要前往 [Mixin Messenger](../../apps/wallets#mixin-messenger) 或 [Fennec](https://pando.im/fennec/) 创建一个流动池。
+You need to head to [Mixin Messenger](https://mixin.one/messenger) or [Fennec](https://pando.im/fennec/) to create a pool.
 
 1. 确保2项资产的钱包余额高于0.00000001的最低金额。 如果不足，请存入一些到您的钱包。
 2. 确保您的钱包中至少有 0.02 ETH。 如果不足，请存入一些到您的钱包或者在[4swap](https://app.4swap.org)中换一些。

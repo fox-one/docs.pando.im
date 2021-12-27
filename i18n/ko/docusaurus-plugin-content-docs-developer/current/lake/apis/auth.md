@@ -32,3 +32,9 @@ Pando Lake 및 4swap은 표준 OAuth 프로토콜을 사용하여 사용자를 �
 
 토큰은 [Mixin API](https://developers.mixin.one/docs/api/guide)와 호환됩니다. Mixin API에서 정보를 얻는 데 사용해도 괜찮습니다.
 
+## Sign /me with keystores
+
+Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
+
+visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+

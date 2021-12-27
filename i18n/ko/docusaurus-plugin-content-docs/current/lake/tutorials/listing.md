@@ -41,7 +41,7 @@ Mixin의 [asset-profile](https://github.com/MixinNetwork/asset-profile) 페이�
 
 ## 4swap에서 풀 생성
 
-유동성 풀을 생성하려면[Mixin Messenger](../../apps/wallets#mixin-messenger) 또는[Fennec](../../apps/wallets#fennec) 로 이동해야 합니다.
+You need to head to [Mixin Messenger](https://mixin.one/messenger) or [Fennec](https://pando.im/fennec/) to create a pool.
 
 1. 두 자산의 지갑 잔액이 최소 금액인 0.00000001 이상인지 확인하십시오. 그렇지 않은 경우 지갑에 일부를 입금하십시오.
 2. 지갑에 최소 0.02 ETH 이상이 있는지 확인하십시오. 그렇지 않은 경우 지갑에 입금하거나 [4swap](https://app.4swap.org)에서 교환하세요.

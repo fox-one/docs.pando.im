@@ -32,3 +32,9 @@ Pando Lake 和 4swap使用标准的 OAuth 协议给用户授权。
 
 Token 与 [Mixin API](https://developers.mixin.one/docs/api/guide) 兼容。 可以用它从 Mixin API 获取信息。
 
+## Sign /me with keystores
+
+Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
+
+visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+

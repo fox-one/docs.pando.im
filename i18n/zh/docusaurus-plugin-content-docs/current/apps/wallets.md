@@ -16,7 +16,7 @@ Mixin Messenger由Mixin核心团队开发，并基于GPL-3.0许可发布。
 ## Fennec
 
 
-[Fennec](https://pando.im/fennec/)是一个开源浏览器扩展，允许您轻松管理自己的Mixin Network加密资产钱包。
+[Fennec](https://pando.im/fennec/) is an open source browser extension that allows you to easily manage your own crypto assets wallet of Mixin Network.
 
 您可以从Chrome网页商店或Firefox插件入口进行Fennec的安装：
 

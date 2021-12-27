@@ -9,15 +9,15 @@ Most APIs are public access, but some are only available to authenticated users.
 
 Pando Lake and 4swap use standard OAuth protocol to authorize users.
 
-## POST /oauth
+## POST /login
 
 Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) to exchange the access token with code.
 
-<APIEndpoint base="https://api.4swap.org/api" url="/oauth" />
+<APIEndpoint base="https://leaf-api.pando.im/api" url="/login" />
 
-<APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code":       "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", // leave "broker_id" and "label" to empty if you don't want to use other brokers. "broker_id":  "", "label":      "" } `}</APIPayload>
+<APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code": "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", } `}</APIPayload>
 
-<APIRequest title="Exchange an access token" method="POST" isPublic base="https://api.4swap.org/api" url='/oauth --data PAYLOAD' />
+<APIRequest title="Exchange an access token" method="POST" isPublic base="https://leaf-api.pando.im/api" url='/oauth --data PAYLOAD' />
 
 ```json title="Response"
 {

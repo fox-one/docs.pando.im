@@ -16,7 +16,7 @@ Entwickler können den Quellcode unter folgender Adresse einsehen: [Android-App]
 ## Fennec
 
 
-[Fennec](https://github.com/fox-one/fennec) ist eine Open-Source-Browser-Erweiterung, mit der Sie Ihre eigene Brieftasche für Krypto-Assets von Mixin Network einfach verwalten können.
+[Fennec](https://pando.im/fennec/) is an open source browser extension that allows you to easily manage your own crypto assets wallet of Mixin Network.
 
 Sie können Fennec über den Chrome Web Store oder Firefox Add-ons installieren:
 

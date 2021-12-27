@@ -32,3 +32,9 @@ Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.
 
 The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
 
+## Sign /me with keystores
+
+Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
+
+visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+
