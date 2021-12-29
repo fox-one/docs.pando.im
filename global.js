@@ -2,8 +2,7 @@ function triggerGtag() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'G-2MWG0DMS9R');
-  console.log('ok');
+  gtag('config', 'UA-112996081-17');
 }
 
 if (typeof window !== "undefined") {
@@ -14,7 +13,7 @@ if (typeof window !== "undefined") {
   script.onload = function() {
     triggerGtag();
   }
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2MWG0DMS9R';
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-112996081-17';
   head.appendChild(script);
 
   // fonts
@@ -29,7 +28,7 @@ if (typeof window !== "undefined") {
       link.rel = 'stylesheet';
     }
     links.onload = function() {
-      console.log('load')
+      console.log('fonts loaded')
     }
     head.appendChild(link);
   }

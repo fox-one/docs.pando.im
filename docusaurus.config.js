@@ -123,7 +123,7 @@ module.exports = {
     },
     // not working, so i write script in global.js
     gtag: {
-      trackingID: 'G-2MWG0DMS9R',
+      trackingID: 'UA-112996081-17',
     },
     colorMode: {
       defaultMode: 'light',
