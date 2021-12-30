@@ -54,7 +54,7 @@ In MTG system, There are two main roles, one is `Payee`, and the another is `cas
 
 * `quick_pledge`, Suppose users supply the underlying token `ETH` and no equity token `rETH` returns to users
   ![](design/tl_quick_pledge.jpg)
-* `qick_redeem`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back
+* `quick_pledge`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back
   ![](design/tl_quick_redeem.jpg)
 * `quick_borrow`, Suppose users can supply `ETH` or `rETH` and can borrow `USDT` directory
   ![](design/tl_quick_borrow.jpg)
