@@ -24,6 +24,7 @@ module.exports = {
             "lake/apis/assets",
             "lake/apis/actions",
             "lake/apis/orders",
+            "lake/apis/transactions",
           ],
         },
         "lake/action-protocol",
