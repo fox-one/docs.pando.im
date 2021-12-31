@@ -118,7 +118,7 @@ This API will respond a list of transactions of the specified pair releated to m
 
 <APIEndpoint base="https://api.4swap.org/api" url="/transactions/{base_asset_id}/{quote_asset_id}/mine" />
 
-<APIMetaPanel />
+<APIMetaPanel scope="Authorized" />
 
 <APIRequest
   title="Read transactions of the specified pair"
