@@ -123,7 +123,6 @@ This API will respond a list of transactions of the specified pair releated to m
 <APIRequest
   title="Read transactions of the specified pair"
   method="GET"
-  isPublic=false
   base="https://api.4swap.org/api"
   url='/transactions/{base_asset_id}/{quote_asset_id}?cursor={next_cursor}&limit={limit}'
 />
