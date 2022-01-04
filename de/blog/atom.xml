@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.pando.im/de/blog</id>
     <title>Pando Blog</title>
-    <updated>2021-12-23T00:00:00.000Z</updated>
+    <updated>2022-01-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.pando.im/de/blog"/>
     <subtitle>Pando Docs Blog</subtitle>
     <icon>https://docs.pando.im/de/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Translation Award Announcement III]]></title>
+        <id>Translation Award Announcement III</id>
+        <link href="https://docs.pando.im/de/blog/2022/01/04/translate-award-3"/>
+        <updated>2022-01-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Through the efforts of the volunteers, most of the translation work of Pando Docs was done. Today was another happy day to share the results.]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How to get event awards]]></title>
         <id>How to get event awards</id>
