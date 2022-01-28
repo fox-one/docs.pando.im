@@ -27,6 +27,7 @@ module.exports = {
             "lake/apis/transactions",
           ],
         },
+        "lake/design",
         "lake/action-protocol",
         "lake/lake-and-4swap",
       ],
