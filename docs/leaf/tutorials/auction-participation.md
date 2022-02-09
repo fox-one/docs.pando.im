@@ -19,7 +19,7 @@ For an active auction, there are two phases.
 
 For Phase 1, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt.
 
-If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+If within the limit of 12 hours, no one is willing to cover the total debt, or within half an hour after one bid, no one else bid, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
 
 ![](../assets/auction-p3.png)
 
