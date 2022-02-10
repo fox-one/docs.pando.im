@@ -12,9 +12,9 @@ Stepped into 2022, we thank everyone for support of Pando and here are the trans
 | :------: | :----------------: | ------------------ | -------------------------------- |
 | 39749821 |       1121.41       | Japanese     | https://donate.cafe/Yancyan55888 |
 | 39416773 |       76.34       | Chinese Simplified | https://donate.cafe/0xWCH |
-| 40105966 |       47.16       | German | https://donate.cafe/nemofi |
+| 40105966 |       47.16       | German | https://donate.cafe/CIsan |
 | 39537856 |       8.05       | Korean | https://donate.cafe/miK-aerok |
-| 39416773 |   4.08   | Japanese | https://donate.cafe/nemofi |
+| 39758019 |   4.08   | Japanese | https://donate.cafe/nemofi |
 
 To ensure that your rewards are paid out in a timely manner, be sure to contact us. Feel free to contact me via Mixin Messenger, id 37160854.
 
