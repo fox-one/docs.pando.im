@@ -1,9 +1,9 @@
 ---
-title: Managing a Vault
-date: 2021-08-13 12:33:07
+title: 保管庫の管理
+date: 2021年08月13日　12時33分07秒
 ---
 
-Your active vaults can be managed on the "Home" page. Whenever you open a new vault, it will show up in the "My Vaults" section.
+アクティブな保管庫は「ホーム」ページで管理できます。 新しい保管庫を開くたびに、「My Vaults」セクションに表示されます。
 
 ![](../assets/manage-vault.png)
 

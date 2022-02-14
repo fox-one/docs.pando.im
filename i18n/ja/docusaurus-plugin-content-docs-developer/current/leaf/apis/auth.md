@@ -1,40 +1,40 @@
 ---
-title: Authorization
-date: 2021-07-31 11:18:01
+title: 承認
+date: 2021年7月31日11時18分01秒
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+輸入 { APIMetaPanel、 APIRequest、 APIEndpoint、 APIParams、 APIPayload、 } from "@ site / src / components / api";
 
-Most APIs are public access, but some are only available to authenticated users.
+ほとんどのAPIは公開アクセスですが、認証されたユーザーのみが利用できるものもあります。
 
-Pando Lake and 4swap use standard OAuth protocol to authorize users.
+Pando Lake と 4swap は、標準 OAuth プロトコルを使用してユーザーを認証します。
 
-## POST /login
+## POST /ログイン
 
-Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) to exchange the access token with code.
+[Mixin MessengerのOAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) の代わりにこのAPIをコールしてアクセストークンをコードと交換します。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/login" />
 
-<APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code": "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", } `}</APIPayload>
+<APIMetaPanel /><APIPayload>{`{ // MixinMessengerのOAuthからのコード "コード"： "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54"、 } `}</APIPayload>
 
-<APIRequest title="Exchange an access token" method="POST" isPublic base="https://leaf-api.pando.im/api" url='/oauth --data PAYLOAD' />
+<APIRequest title="アクセストークンを交換" method="POST" isPublic base="https://leaf-api.pando.im/api" url='/oauth --data PAYLOAD' />
 
 ```json title="Response"
-{
-  "ts": 1627697766645,
-  "data": {
-    "scope": "PROFILE:READ ASSETS:READ",
-    // the OAuth token
-    "token": "..."
+{{
+   "ts"：1627697766645、
+   "データ"： {
+     "scope"： "PROFILE：READ ASSETS：READ"、
+     // OAuthトークン
+    "トークン": "..."
   }
 }
 ```
 
-The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
+トークンは [Mixin API](https://developers.mixin.one/docs/api/guide) と互換性があります。 Mixin API から情報を取得するために使用しても構いません。
 
-## Sign /me with keystores
+## キーストアで/ meに署名する
 
-Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
+スコープが「FULL」の GET https://api.mixin.one/me </ code>のMixin認証トークンがサポートされています。</p>
 
-visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+<p spaces-before="0">詳細については、<ahref = "https://developers.mixin.one/docs/api/guide#signing">ミックスイン開発者向けドキュメント</a>にアクセスしてください。</p>
 

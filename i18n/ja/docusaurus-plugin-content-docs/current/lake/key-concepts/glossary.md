@@ -1,22 +1,22 @@
 ---
-title: Glossary
-date: 2021-08-15 22:33:07
+title: 用語集
+date: 2021年08月15日　22時33分07秒
 ---
 
-### Swapping Related
+### スワッピング関連
 
-1. [Swapping](https://docs.pando.im/docs/lake/tutorials/swapping)
-2. [Slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
-3. Price impact
+1. [スワッピング](https://docs.pando.im/docs/lake/tutorials/swapping)
+2. [スリッページ](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
+3. 価格への影響
 
-### Liquitity Related
+### 流動性関連
 
-1. [Providing Liquidity](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)
-2. [Remove Liquidity](https://docs.pando.im/docs/lake/tutorials/removing-liquidity)
-3. [Lp-token](https://docs.pando.im/docs/lake/key-concepts/lp-token)
+1. [流動性の提供](https://docs.pando.im/docs/lake/tutorials/providing-liquidity)
+2. [流動性を取り除く](https://docs.pando.im/docs/lake/tutorials/removing-liquidity)
+3. [Lpトークン](https://docs.pando.im/docs/lake/key-concepts/lp-token)
 
-### Others
+### その他
 
-1. [Impermanent Loss](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
-2. [Automated Market Maker(AMM)](https://docs.pando.im/docs/lake/key-concepts/amm-mechanism)
-3. [Mixin Trust Group(MTG)](https://docs.pando.im/docs/lake/key-concepts/mtg)
+1. [永久的な損失](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
+2. [自動マーケットメーカー(AMM)](https://docs.pando.im/docs/lake/key-concepts/amm-mechanism)
+3. [Mixin トラストグループ(MTG)](https://docs.pando.im/docs/lake/key-concepts/mtg)

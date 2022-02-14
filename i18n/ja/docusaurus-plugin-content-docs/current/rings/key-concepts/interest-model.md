@@ -1,96 +1,96 @@
 ---
-title: Interest Rate Determination
-date: 2021-10-16 12:33:07
+title: 金利決定
+date: 2021年10月16日　12時33分07秒
 ---
 
-All interest rates in Pando Rings are determined as a function of **utilization rate**. **With the changes in the utilization rate, interest rates continuously fluctuate.**
+Pando Rings のすべての金利は、 **稼働率** の関数として決定されます。 **稼働率の変化に伴い、金利は継続的に変動します。**
 
 
-### The Utilization Rate
+### 稼働率
 
-The utilization rate for a money market is defined as:
+マネーマーケットの稼働率は次のように定義されます。
 
 
 ``````
 Utilization_rate = market.total_borrows/(market.total_cash + market.borrows - market.reserves)
 ``````
 
-Where
-- market.total_borrows refers to the amount of total borrow of a certain money market
-- market.total_cash refers to the amount left in the system of a certain money market
-- market.reserves refers to the amount that is kept as profit of a certain money market
+どこ
+- market.total_borrowsは、特定のマネーマーケットの総借入額を指します
+- market.total_cashは、特定のマネーマーケットのシステムに残っている金額を指します
+- market.reservesは、特定のマネーマーケットの利益として保持される金額を指します
 
-The formula can be interpreted roughly as the percentage of money borrowed out of the total money supplied.
+この公式は、供給された合計金額のうち、借りた金額の割合として大まかに解釈できます。
 
-A high utilization rate signifies that demand is high and a lot of borrowing is taking place, so interest rates go up as an incentive to get more people to inject cash into the system. A low utilization rate signifies that demand for borrowing is low, so interest rates go down to encourage more people to borrow cash from the system.
+稼働率が高いということは、需要が高く、借り入れが多いことを意味するため、より多くの人に現金を注入してもらうためのインセンティブとして金利が上昇します。 稼働率が低いということは、借り入れの需要が少ないことを意味するため、金利が下がり、より多くの人がシステムから現金を借りるようになります。
 
 
-### Borrow rate
+### 借入率
 
-Currently, the borrow rate model of all money markets on Rings follow the Jump Rate model.
+現在、Ringsのすべてのマネーマーケットの借入レートモデルは、ジャンプレートモデルに従っています。
 
-In this model, there is a key parameter defined as **Kink**, which is a value of the utilization rate and creates a sharp turning point where the interest rates spike.
+このモデルには、**Kink**として定義された重要なパラメーターがあります。これは、稼働率の値であり、金利が急上昇する鋭いターニングポイントを作成します。
 
-The borrow rate of the jump rate model is defined as:
+ジャンプ速度モデルの借入率は次のように定義されます。
 
-**When the utilization rate ≤ Kink:**
+**稼働率 ≤ Kinkの場合：**
 
 ```
 Borrow_interest_rate = multiplier * market.utilization_rate + base_rate
 ```
 
-**When the utilization rate > Kink:**
+**稼働率 > Kink:**
 
 ```
 Borrow_interest_rate = multiplier * Kink + jump_multiplier * (market.utilization_rate - Kink) + base_rate
 ```
 
-Where
-- base_rate per year is the minimum borrowing rate
-- multiplier per year is the rate of increase in interest rate with respect to utilization
-- Kink is the point in the model in which the model follows the jump multiplier
-- jump_multiplier per year is the rate of increase in interest rate with respect to utilization after the Kink
+どこ
+- base_rate per yearは、最低借入金利です。
+- 年間乗数は、使用率に対する金利の上昇率です。
+- Kinkは、モデルがジャンプ乗数に従うモデル内のポイントです。
+- 年間のjump_multiplierは、Kink後の使用率に対する利率の増加率です。
 
-### Supply rate
+### 供給率
 
-The supply rate is calculated as follows:
+供給率は次のように計算されます。
 
 ```
 Supply_interest_rate = Borrow_interest_rate * market.utilization_rate * (1 - market.reserve_factor)
 ```
 
-Where
-- market.utilization_rate is the utilization rate of a certain market
-- market.reserve_factor controls what percentage of the interest borrowers pay for a certain market is kept within the system to protect lenders against borrow default and liquidation malfunction
-- Borrow_interest_rate is the interest rate that borrowers pay for a certian market
+どこ
+- market.utilization_rateは、特定の市場の使用率です。
+- market.reserve_factorは、借り手のデフォルトや清算の誤動作から貸し手を保護するために、借り手が特定の市場に支払う利息の何パーセントをシステム内に保持するかを制御します。
+- Borrow_interest_rateは、借り手が特定の市場に支払う金利です。
 
 
-### Parameters of all Pando Rings' money markets
-(last updated on Oct 18, 2021)
+### すべてのパンドリングのマネーマーケットのパラメータ
+(最終更新日: 2021年10月18日)
 
-Currently, all money markets has a Kink of 80%, meaning, when utilization ratio reaches 80%, both the supply and borrow interest rates will have a sudden jump.
+現在、すべての短期金融市場のKinkは80％です。つまり、利用率が80％に達すると、供給金利と借入金利の両方が急激に上昇します。
 
-| Symbol | Name       | base_rate | reserve_factor | multiplier | jump_multiplier | kink |
-| ------ | ---------- | --------- | -------------- | ---------- | --------------- | ---- |
-| pUSD   | Pando USD  | 0%        | 15%            | 5.8%       | 1.476           | 80%  |
-| USDT   | Tether USD | 0%        | 15%            | 5.8%       | 1.476           | 80%  |
-| BTC    | Bitcoin    | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| ETH    | Ethereum   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| LTC    | Litecoin   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| EOS    | EOS        | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| DOT    | Polkadot   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| XIN    | Mixin      | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| MOB    | MoblieCoin | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| BOX    | BoxToken   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-| DOGE   | DogeCoin   | 0%        | 20%            | 29.13%     | 3.6255          | 80%  |
-
-
-For pUSD and USDT: ![](../assets/stablecoin-model.png)
-
-For BTC, ETH, LTC, EOS. DOT, XIN, MOB, BOX and DOGE: ![](../assets/othercoins-model.png)
+| シンボル | 名前         | 基準率 | リザーブファクター | 乗数     | ジャンプ乗数 | よじれ |
+| ---- | ---------- | --- | --------- | ------ | ------ | --- |
+| pUSD | Pando USD  | 0%  | 15%       | 5.8%   | 1.476  | 80% |
+| USDT | テザーUSD     | 0%  | 15%       | 5.8%   | 1.476  | 80% |
+| BTC  | ビットコイン     | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| ETH  | イーサリアム     | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| LTC  | ライトコイン     | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| EOS  | EOS        | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| DOT  | ポルカドット     | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| XIN  | Mixin      | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| MOB  | MoblieCoin | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| BOX  | BoxToken   | 0%  | 20%       | 29.13% | 3.6255 | 80% |
+| DOGE | ドージコイン     | 0%  | 20%       | 29.13% | 3.6255 | 80% |
 
 
-It is important to understand the interest rate model of your selected money markets and monitor the changes in the interest rates for the profitability and safety of your assets. 
+PUSDおよびUSDTの場合 ![](../assets/stablecoin-model.png)
+
+BTC、ETH、LTC、EOSの場合。 DOT、XIN、MOB、BOX、DOGE: ![](../assets/othercoins-model.png)
+
+
+選択したマネーマーケットの金利モデルを理解し、資産の収益性と安全性のために金利の変化を監視することが重要です。 
 
 
 

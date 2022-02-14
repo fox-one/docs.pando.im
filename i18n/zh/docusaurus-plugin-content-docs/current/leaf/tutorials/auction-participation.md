@@ -18,7 +18,7 @@ date: 2021-08-13 12:33:07
 
 阶段 1，参与者以不低于前一次竞拍金额 3% 的增量出价，以支付未偿债务的最高金额。
 
-如果在 12 小时内没有人愿意承担全部债务，则拍卖结束，愿意承担最高债务的竞拍人将竞得所有抵押品。 如果有人出价支付总债务，则拍卖将进入第二阶段。
+If within the limit of 12 hours, no one is willing to cover the total debt, or within half an hour after one bid, no one else bid, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. 如果有人出价支付总债务，则拍卖将进入第二阶段。
 
 ![](../assets/auction-p3.png)
 

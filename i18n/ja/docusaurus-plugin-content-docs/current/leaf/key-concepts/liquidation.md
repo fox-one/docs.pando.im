@@ -1,41 +1,41 @@
 ---
-title: Liquidation
-date: 2021-07-28 22:33:07
+title: 清算
+date: 2021年07月28日　22時33分07秒
 ---
 
-## Auction Process
+## 競売処理
 
-When a vault breaches the minimum required collateralization ratio, it will be liquidated and the collateral will be on auction. Anyone can participate in the auction. The ongoing auction can be found in the Ongoing section on the Auctions page.
+保管庫が必要最小担保比を侵害すると、それは清算され、担保はオークションになります。 誰でもオークションに参加できます。 進行中のオークションは、オークションページの進行中のセクションにあります。
 
-There are TWO phases of the auction.
+オークションには2つのフェーズがあります。
 
-**For Phase 1**, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+<strongx-id = "1">フェーズ1 </ strong>の場合、参加者は、未払いの債務の最高額をカバーするために、前回の入札額の3％以上の増分で入札します。  12時間以内に全債務をカバーする意思がない場合、オークションは終了し、債務の最高額をカバーする意思のある入札者がすべての担保を持ち帰ります。 または、負債総額をカバーするために入札する人がいる場合、オークションは第2フェーズに移行します。
 
-**For Phase 2**, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt. The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.
+**フェーズ2**の場合、参加者は、全債務の支払いのために担保のごく一部を受け入れる際に、前回の入札額の3％以上の減額で入札します。 勝者は、(入札を提出した)担保の最小額と引き換えに、すべての債務を返済する必要があります。
 
-## Liquidation Ratio
+## 清算比率
 
-The Liquidation Ratio is the minimum required collateralization level for each Vault type before it is considered undercollateralized and subject to liquidation.
+清算比率は、担保が不足していると見なされて清算される前に、各Vaultタイプに最低限必要な担保レベルです。
 
-Each Vault type’s Liquidation Ratio is determined by a combination of the collateral’s risk profile and the Stability Fee. There may be multiple Vault types for each collateral, with varying Liquidation Ratios and Stability Fees.
-
-```
-Liquidation Ratio = (Collateral Amount x Collateral Price) ÷ Generated pUSD × 100
-```
-
-## Liquidation Price
-
-The Liquidation Price is the price at which a Vault becomes vulnerable to liquidation.
-
-Vault owners can lower their liquidation price by adding more collateral or returning pUSD to the Vault.
+各Vaultタイプの清算比率は、担保のリスクプロファイルと安定性手数料の組み合わせによって決定されます。 担保ごとに複数のVaultタイプがあり、清算比率と安定性手数料が異なります。
 
 ```
-Liquidation Price = (Generated pUSD * Liquidation Ratio) / (Amount of Collateral)
+清算比率=(担保金額x担保価格)÷生成されたpUSD×100
 ```
 
-## Liquidation Penalty
+## 清算価格
 
-A Liquidation Penalty is a fee paid by Vault owners when the value of their collateral reaches the Vault's Liquidation Price.
+清算価格は、Vaultが清算に対して脆弱になる価格です。
 
-The Liquidation Penalty is added to the Vault’s total outstanding generated pUSD when liquidation occurs, which results in more collateral being sold at auction.
+Vaultの所有者は、担保を追加するか、pUSDをVaultに戻すことで、清算価格を下げることができます。
+
+```
+清算価格=(生成されたpUSD *清算比率)/(担保金額)
+```
+
+## 清算ペナルティ
+
+清算ペナルティは、担保の価値がVaultの清算価格に達したときにVaultの所有者が支払う料金です。
+
+清算ペナルティは、清算が発生したときにVaultの未払いの生成されたpUSDの合計に追加されます。これにより、オークションでより多くの担保が販売されます。
 

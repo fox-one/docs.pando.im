@@ -1,21 +1,21 @@
 ---
-title: Liquidity Provider Token (LP Token)
-date: 2021-08-15 22:33:07
+title: 流動性プロバイダトークン (LP トークン)
+date: 2021年08月15日　22時33分07秒
 ---
 
-Liquidity provider tokens or LP tokens are ERC-20 tokens issued to liquidity providers on Pando Lake / 4swap. You can think of it as an IOU or a receipt.
+流動性プロバイダートークンまたはLPトークンは、Pando Lake / 4swapの流動性プロバイダーに発行されるERC-20トークンです。 あなたはそれをIOUまたは領収書と考えることができます。
 
-LP tokens are used to track individual contributions to the overall liquidity pool, as LP tokens held correspond proportionally to the share of liquidity in the overall pool.
+保持されているLPトークンはプール全体の流動性のシェアに比例するため、LPトークンは流動性プール全体への個々の貢献を追跡するために使用されます。
 
-At the most basic level, LP tokens work on the following formula:
+最も基本的なレベルでは、LPトークンは次の式で動作します。
 
-**Total Value of Liquidity Pool / Circulating Supply of LP Tokens =  Value of 1 LP Token**
+**流動性プールの合計値/ LPトークンの循環供給= 1LPトークンの値**
 
-Just like other assets, the LP tokens can be transerred and traded.
+他の資産と同様に、LPトークンは転送および取引できます。
 
-Whenever a trade occurs, a [fee](./trading-fee) is charged to the transaction sender. This fee is distributed pro-rata to all LPs in the pool upon completion of the trade.
+取引が発生するたびに、<ahref = "./ trading-fee">手数料</a>が取引の送信者に請求されます。  この料金は、取引の完了時にプール内のすべてのLPに比例配分されます。
 
-To retrieve the underlying liquidity, plus any fees accrued, liquidity providers can remove liquidity, "burning" their liquidity tokens. This will allow them to exchange LP tokens for their portion of the liquidity pool, plus the proportional fee allocation. **The yield will not be distributed while the user is still holding the LP tokens.**
+基礎となる流動性に加えて発生した手数料を取得するために、流動性プロバイダーは流動性を削除し、流動性トークンを「燃やす」ことができます。 これにより、LPトークンを流動性プールの一部と交換し、それに比例して手数料を割り当てることができます。 **ユーザーがLPトークンを保持している間は、利回りは分配されません。**
 
 
 

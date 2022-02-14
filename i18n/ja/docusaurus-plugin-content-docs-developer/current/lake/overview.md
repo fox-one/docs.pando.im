@@ -1,50 +1,50 @@
 ---
-title: Overview
-date: 2021-09-30 14:38:07
+title: 概要
+date: 2021年9月30日14時38分7秒
 ---
 
-Pando Lake is an [Uniswap](https://uniswap.org) v2 implementation built with the MTG technology on Mixin Network. Benefit by Mixin's amazing TPS, Pando Lake has outstanding performance on tradings, most transactions can be confirmed in seconds.
+Pando Lakeは、MixinNetwork上のMTGテクノロジーで構築された<ahref = "https://uniswap.org"> Uniswap </a> v2実装です。  Mixinの驚くべきTPSの恩恵を受けて、Pando Lakeは取引で卓越したパフォーマンスを発揮し、ほとんどの取引は数秒で確認できます。
 
-## An Intro to Pando Lake
+## Pando Lakeの紹介
 
-### Governance
+### 管理機構
 
-Pando lake is maintained by five trusted nodes. Proposals such as create new pools must be approved by at least three nodes.
+Pando lakeは5つの信頼できるノードによって維持されています。  新しいプールの作成などの提案は、少なくとも3つのノードによって承認される必要があります。
 
-### Pool
+### 保持
 
-Each Pool holds two tokens, which together represent a trading pair for those assets. Liquidity providers deposit tokens into pool to let traders trade；In return, the trade fees are all given to the liquidity provider according to the liquidity contribution ratio.
+各プールには2つのトークンがあり、これらは一緒になってそれらの資産の取引ペアを表します。 流動性プロバイダーは、トレーダーが取引できるようにトークンをプールに預けます；その見返りとして、取引手数料はすべて、流動性貢献率に従って流動性プロバイダーに与えられます。
 
-### LP Token
+### LPトークン
 
-Each pool has a unique token (LP Token) to represent circulating liquidity. Holding LP Token is a proof of liquidity providing, and the withdrawal of liquidity also requires payment of LP Token.
+各プールには、循環流動性を表す固有のトークン(LPトークン) があります。 LPトークンの保有は流動性提供の証拠であり、流動性の引き出しにはLPトークンの支払いも必要です。
 
-The total market value of LP Token is equal to the sum of the market value of the two tokens in the Pool.
+LPトークンの合計市場価値は、プール内の2つのトークンの市場価値の合計に等しくなります。
 
-## Actions
+## 動作
 
-### Deposit
+### 保証金
 
-Increase the reserves of a Pool to become liquidity provider.
+プールの準備金を増やして流動性プロバイダーになります。
 
-![deposit action](assets/pando_lake_deposit_action.png)
+![保証金入金操作](assets/pando_lake_deposit_action.png)
 
-### Withdraw
+### 引き出し
 
-Pay LP Token back to the Pool to withdraw tokens inside. The reserves of the Pool will be decreased.
+LPトークンをプールに返済して、内部のトークンを引き出します。 プールの予備は減少します。
 
-![withdraw action](assets/pando_lake_withdraw_action.png)
+![アクションを撤回する](assets/pando_lake_withdraw_action.png)
 
-### Trade
+### 取引
 
-Pools are always take the initiative to deal with traders automatically. Users can trade through the pools at any side, Pando Lake supports up to 4 pools for one transaction.
+プールは常にトレーダーに自動的に対処するための主導権を握っています。 ユーザーはどちらの側でもプールを介して取引できます。PandoLakeは1回のトランザクションで最大4つのプールをサポートします。
 
-![trade action](assets/pando_lake_trade_action.png)
+![取引行動 ](assets/pando_lake_trade_action.png)
 
-## Summary
+## 概要
 
-Pando Lake has achieved the goal that decentralized the consensus among trusted nodes, bringing the dex service with multiple AMM formula to all users of the Mixin Network.
+Pando Lakeは、信頼できるノード間でコンセンサスを分散させるという目標を達成し、Mixinネットワークのすべてのユーザーに複数のAMM式を備えたdexサービスを提供します。
 
-Pando Lake has performed well but is far from enough. We are working some new pools to make the liquidity more flexible and efficient. The management of trusted nodes needs to be more open to attract more participants too.
+Pando Lakeは順調に推移していますが、まだまだ十分とは言えません。 流動性をより柔軟かつ効率的にするために、いくつかの新しいプールに取り組んでいます。 信頼できるノードの管理は、より多くの参加者を引き付けるために、よりオープンである必要があります。
 
 

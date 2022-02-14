@@ -44,7 +44,7 @@ MTG 시스템에는 두 가지 주요 역할이 있습니다. 하나는 `Payee`�
 * `Repay`, 예를 들어 사용자가 `USDT`를 상환하면 `USDT`를 지불하고 사용자의 부채가 줄어듭니다. ![](design/tl_repay.jpg)
 
 * `quick_pledge`, 예를 들어 사용자가 기본 토큰 `ETH`를 제공하고 지분 토큰 `rETH`은 사용자에게 반환되지 않습니다. ![](design/tl_quick_pledge.jpg)
-* `qick_redeem`, 예를 들어 사용자가 `ETH`를 되찾으려면 일부 토큰을 지불하고 `ETH`를 돌려받을 수 있습니다. ![](design/tl_quick_redeem.jpg)
+* `quick_pledge`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back ![](design/tl_quick_redeem.jpg)
 * `quick_borrow`, 예를 들어 사용자가 `ETH` 또는 `rETH`를 제공하면 `USDT` 를 차입 할 수 있습니다. ![](design/tl_quick_borrow.jpg)
 
 

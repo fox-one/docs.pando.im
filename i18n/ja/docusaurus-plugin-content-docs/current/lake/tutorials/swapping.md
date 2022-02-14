@@ -1,37 +1,37 @@
 ---
-title: Swapping
-date: 2021-08-15 22:33:07
+title: 交換する
+date: 2021年08月15日　22時33分07秒
 ---
 
 
-By tapping the gear icon, you can set the [slippage](https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss)
+歯車のアイコンをタップすると、<ahref = "https://docs.pando.im/docs/lake/key-concepts/slippage-impernament-loss">スリッページ</a>を設定できます。
 
 ![](../assets/swapping-p1.png)
 
 
 
-The route shows the steps your transaction will be processed.
+ルートは、トランザクションが処理されるステップを示しています。
 
 ![](../assets/swapping-p2.png)
 
-Algorithm calculates the optimal route so that you can receive the most asset possible.
+アルゴリズムは、可能な限り多くの資産を受け取ることができるように、最適なルートを計算します。
 
 
 
-![](../assets/swapping-p3.png) After entering the 6-digit PIN to complete the payment, the transaction details will pop up. You can also view the transaction details in the dialog window.
+![](../assets/swapping-p3.png) 6桁のPINを入力して支払いを完了すると、取引の詳細がポップアップ表示されます。 ダイアログウィンドウで取引の詳細を表示することもできます。
 
 
 
 ![](../assets/swap-p.png)
 
-Click to view [transaction fees](https://docs.pando.im/docs/lake/key-concepts/trading-fee).
+クリックして<ahref = "https://docs.pando.im/docs/lake/key-concepts/trading-fee">取引手数料</a>を表示します。
 
 ````mdx-code-block
-:::caution
+:::注意
 
-Please pay attention to the price effect when swapping. 
+交換時の価格の影響にご注意してください。 
 
-When the price impact is too high, it means that the transaction is lack of liquidity or the transaction amount is too large, and continuing trading may cause greater losses.
+価格への影響が大きすぎる場合は、取引の流動性が不足しているか、取引金額が多すぎることを意味し、取引を継続すると損失が大きくなる可能性があります。
 
 :::
 ````

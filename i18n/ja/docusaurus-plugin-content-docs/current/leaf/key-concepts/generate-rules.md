@@ -1,14 +1,14 @@
 ---
-title: Generate rules
-date: 2021-09-13 00:00:01
+title: ルールを生成する
+date: 2021年9月13日00時00分01秒
 ---
 
-The minimum amount of crypto currency to be minted for the first time is 100 pusd.
+初めて作成される暗号通貨の最小量は100pusdです。
 
 ````mdx-code-block
-:::caution
+：：：注意
 
-Please ensure that the mortgage rate after minting is in a safe range. If the mortgage rate is lower than 150%, it will be forced to liquidate and cause losses.
+造幣後の住宅ローンの利率が安全な範囲内にあることを確認してください。  住宅ローンの利率が150％未満の場合、強制的に清算され、損失が発生します。
 
 :::
 ````

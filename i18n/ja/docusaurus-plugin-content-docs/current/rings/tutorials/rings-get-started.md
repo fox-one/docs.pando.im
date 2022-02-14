@@ -1,33 +1,33 @@
 ---
-title: Get Started
-date: 2021-10-10 12:33:07
+title: はじめに
+date: 2021年10月10日　12時33分07秒
 ---
 
-Pando rings supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://pando.im/fennec/) (web wallet) and the following content takes mixin messenger wallet as an example.
+パンドリングは、<ahref = "https://docs.pando.im/docs/wallets/mixin-messenger">ミックスインメッセンジャー</a>ウォレットと<ahref = "https://pando.im/fennec/をサポートしています "> fennec </a>（ウェブウォレット）と次のコンテンツは、例としてミックスインメッセンジャーウォレットを取り上げています。
 
-Visit [Pando rings](https://rings.pando.im), or search Mixin ID **7000104159** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando rings.
+<ahref = "https://rings.pando.im">パンドリング</a>にアクセスするか、MixinMessengerアプリでMixinID ** 7000104159 </ strong>を検索してクリックします 青い数字。  次に、ボットを追加し、小さなロボットアバターをクリックして、Pando ringsを開きます。</p>
 
 ![](../assets/rings-get-started-p1.png)
 
-Click on "I Want To Supply" and choose a crypto currency（like USDT). Then click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces.
+「供給したい」をクリックして、暗号通貨(USDTなど) を選択します。 「ウォレットの接続」をクリックして開始します。 アセットに関連するデータがインターフェースに表示されないことを承認してください。
 
 ![](../assets/rings-get-started-p2.png)
 
 ````mdx-code-block
-:::tip
-Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
+:::ヒント
+すべてをチェックして承認します。 承認では、資産を表示することはできますが、使用することはできません。 安全です。
 :::
 ````
 
-The following links can quickly jump to the description of related operations.
+以下のリンクから、関連する操作の説明にすばやくジャンプできます。
 
-- [Supplying assets to Pando Rings](https://docs.pando.im/docs/rings/tutorials/how-to-supply)
-- [Pledging rTokens to get borrow capacity](https://docs.pando.im/docs/rings/tutorials/how-to-pledge)
-- [Unpledging to reduce collaterals](https://docs.pando.im/docs/rings/tutorials/how-to-unpledge)
-- [Borrowing assets from Pando Rings](https://docs.pando.im/docs/rings/tutorials/how-to-borrow)
-- [Repaying your borrow in Pando Rings](https://docs.pando.im/docs/rings/tutorials/how-to-repay)
-- [Withdrawing assets from Pando Rings](https://docs.pando.im/docs/rings/tutorials/how-to-withdraw)
-- [Checking market statistics](https://docs.pando.im/docs/rings/tutorials/check-market-stats)
-- [Checking your transaction history](https://docs.pando.im/docs/rings/tutorials/check-tx-history)
+- [パンドリングへの資産の供給](https://docs.pando.im/docs/rings/tutorials/how-to-supply)
+- [借用容量を取得するためのrTokenの誓約](https://docs.pando.im/docs/rings/tutorials/how-to-pledge)
+- [担保を減らすために差し入れを解除する](https://docs.pando.im/docs/rings/tutorials/how-to-unpledge)
+- [パンドリングから資産を借りる](https://docs.pando.im/docs/rings/tutorials/how-to-borrow)
+- [パンドリングで借りたものを返済する](https://docs.pando.im/docs/rings/tutorials/how-to-repay)
+- [パンドリングからの資産の引き出し](https://docs.pando.im/docs/rings/tutorials/how-to-withdraw)
+- [市場統計の確認](https://docs.pando.im/docs/rings/tutorials/check-market-stats)
+- [取引履歴の確認](https://docs.pando.im/docs/rings/tutorials/check-tx-history)
 
 

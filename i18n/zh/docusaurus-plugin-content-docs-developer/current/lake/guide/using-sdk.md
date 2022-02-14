@@ -112,7 +112,7 @@ log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
 followID, _ := uuid.NewV4()
 
 // 构建交换动作，指定参数
-action := mtg.SwapAction(
+action := mtg。 wapAction(
     receiverID,
     followID.String(),
     OutputAssetID,

@@ -1,55 +1,55 @@
 ---
-title: Overview
-date: 2021-03-20 12:38:07
+title: 概要
+date: 2021年7月20日12時38分03秒
 ---
 
-An implementation of the [compound protocol](https://github.com/compound-finance/compound-protocol) based on [Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) technology.
+<ahref = "https://github.com/MixinNetwork/mixinに基づく<ahref =" https://github.com/compound-finance/compound-protocol ">複合プロトコル</a>の実装 "> Mixin </a> [ MTG ](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md)テクノロジー。
 
-## rToken
+## rトークン
 
-The corresponding certificate token you obtain after you supply a number of cetain encrypted currency to the market.
+いくつかの暗号化された通貨を市場に提供した後に取得する対応する証明書トークン。
 
-## Functions
+## 機能
 
-### Supply
+### 供給
 
-Users supply encrypted currencies to the market to provide liquidity, and obtain the corresponding rTokens. They receive interest yields by providing liquidity.
+ユーザーは暗号化された通貨を市場に供給して流動性を提供し、 対応するrTokenを取得します。 彼らは流動性を提供することによって利回りを受け取ります。
 
 ![](overview/uc_supply.jpg)
 
-### Pledge
+### 誓約
 
-Users have to pledge rToken to the market before any borrow.
+ユーザーは借りる前にrTokenを市場に誓約する必要があります。
 
 ![](overview/uc_pledge.jpg)
 
-### Unpledge
+### 誓約を解除する
 
-Users take back the rToken that pledged to the market.
+ユーザーは、市場に約束したrTokenを取り戻します。
 
 ![](overview/uc_unpledge.jpg)
 
-### Redeem
+### 償還
 
-Users return the rToken in exchange for corresponding encrypted currency that were supplied before, including interest yields as the reward for providing liquidity.
+ユーザーは、流動性を提供するための報酬としての利回りを含め、以前に提供された対応する暗号化された通貨と引き換えにrTokenを返します。
 
 ![](overview/uc_redeem.jpg)
 
-### Borrow
+### 借りる
 
-Users borrow encrypted currencies from the market at a certain interest rate.
+ユーザーは、暗号化された通貨を特定の金利で市場から借ります。
 
 ![](overview/uc_borrow.jpg)
 
-### Repay
+### 返済
 
-Users repay the borrowed encrypted currency and the interest accrued during the borrow period.
+ユーザーは、借用した暗号化された通貨と、借用期間中に発生した利息を返済します。
 
 ![](overview/uc_repay.jpg)
 
-### Liquidation
+### 清算
 
-Due to the fluctuation of the market price, the value of a user's loan may exceed that of his pledged assets. When that happens, the other users can use a lower price to obtain the user's pledged assets so that the user's debt that are not covered by pleged assets are repayed.
+市場価格の変動により、利用者のローンの価値が担保資産の価値を超える場合があります。  その場合、他のユーザーはより低い価格を使用してユーザーの担保資産を取得し、担保資産でカバーされていないユーザーの債務を返済することができます。
 
 ![](overview/uc_liquidity.jpg)
 

@@ -1,14 +1,14 @@
 ---
-title: Add Collateral
-date: 2021-08-13 12:33:07
+title: 担保を追加
+date: 2021年08月13日　12時33分07秒
 ---
 
-Adding Collateral is useful in two scenarios. The first is when a Vault is coming close to being **liquidated** (link to liquidation), adding collateral can save the Vault. The second is when a Vault owner wants to increase their capacity for generating pUSD, adding collateral will increase the maximum amount of pUSD that can be generated.
+担保の追加は、2つのシナリオで役立ちます。 1つ目は、Vaultが<strongx-id = "1">清算</ strong>（清算へのリンク）に近づいているときです。担保を追加すると、Vaultを節約できます。  2つ目は、Vaultの所有者がpUSDを生成するための容量を増やしたい場合です。担保を追加すると、生成できるpUSDの最大量が増えます。
 
-To add collateral, click on "Deposit" and fill in the intended amount on the Deposit page. And then enter the quantity of collateral you want to add and click Deposit in picture on the right
+担保を追加するには、「デポジット」をクリックして、デポジットページに目的の金額を入力します。 次に、追加する担保の数量を入力して、右側の画像の[デポジット] をクリックします。
 
 ![](../assets/leaf-add-collateral-p1.png)
 
-Pay 4 MOB token and see Details, the collateral Increase from 96.8865 to 100.8865. You can see details about this adding in chat window.
+4 MOBトークンを支払い、詳細を参照してください。 担保の増加96.8865から100.8865。  あなたはこのチャットウィンドウへの追加について詳細を見ることができます
 
 ![](../assets/leaf-add-collateral-p2.png)

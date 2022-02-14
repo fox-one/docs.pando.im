@@ -1,18 +1,18 @@
 ---
-title: Liquidation
-date: 2021-09-04 12:33:07
+title: 清算
+date: 2021年9月04日12時33分07秒
 ---
 
-In Pando Rings, if the value of your borrowing rises above the level of your borrowing capacity, liquidation will happen. A liquidator is allowed to pay back **up to 50%** of your borrowed assets and get your corresponding collateral at a discounted price. The liquidator **can choose** the debt they want to pay back and the type of collateral they would like to receive.
+Pando Ringsでは、借入金額が借入能力のレベルを超えると、清算が行われます。 清算は、借りた資産の **最大50%** を返済し、対応する担保を割引価格で取得することができます。 清算者は、返済したい債務と受け取りたい担保の種類を**選択**できます。
 
-For example, if you pledged BTC, ETH and LTC to get [pUSD](./glossary) and DOT. Both of your pUSD and DOT debt are now in liquidation. A liquidator can choose to just pay back some pUSD debt and receive BTC, as long as it is within the limit of the BTC amount you provided.
+たとえば、BTC、ETH、LTCに[pUSD](./glossary)とDOTを取得することを約束したとします。 あなたのpUSDとDOTの両方の債務は現在清算中です。 清算者は、提供したBTC金額の制限内である限り、pUSDの債務を返済してBTCを受け取ることを選択できます。
 
-You will not be able to borrow, unpledge or withdraw from your pledged assets while you are in liquidation.
+清算中は、質権設定された資産を借りたり、質権を解除したり、引き出したりすることはできません。
 
-After liquidation, your loan will be reduced to a safe level while you will lose your corresponding collateral.
+清算後、対応する担保を失う間、あなたのローンは安全なレベルに減らされます。
 
-Several scenarios can lead to liquidation:
-- The interest on the borrowed funds is higher than the interest on the pledged assets, and it accumulates over time
-- The price of the collateral suddenly drops
-- The price of the borrowed asset suddenly rise sharply
+いくつかのシナリオが清算につながる可能性があります。
+- 借入資金に対する利息は、約束された資産に対する利息よりも高く、時間の経過とともに蓄積されます。
+- 担保の価格が急落
+- 借入資産の価格が急騰
  

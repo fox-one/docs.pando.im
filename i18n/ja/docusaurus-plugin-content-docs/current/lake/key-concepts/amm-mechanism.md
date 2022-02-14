@@ -1,20 +1,20 @@
 ---
-title: Automated Market Maker (AMM)
-date: 2021-08-15 22:33:07
+title: 自動マーケットメーカー（AMM）
+date: 2021年08月15日　22時33分07秒
 ---
 
 
-### What Is an Automated Market Maker?
+### 自動マーケットメーカーとは何ですか？
 
-> An automated market maker (AMM) is a system that provides liquidity to the exchange it operates in through automated trading.
+> 自動マーケットメーカー（AMM）は、自動取引を通じて取引所に流動性を提供するシステムです。
 
-AMM systems took off after they were first implemented by Shearson Lehman Brothers and ATD in the early 1990s — before their invention, order books were created by humans who manually initiated trades meant to enhance the liquidity of the market.
+AMMシステムは、1990年代初頭にShearson Lehman BrothersとATDによって最初に実装された後、導入されました。発明される前は、市場の流動性を高めることを目的とした取引を手動で開始した人間によって注文書が作成されていました。
 
-This approach was the reason for some slippage and latency in price discovery on the markets. Furthermore, market makers were also accused of market manipulation. When introduced, AMMs solved all the issues caused by human market makers. Now, these types of systems are also being introduced in blockchain-based decentralized exchanges.
+このアプローチは、市場での価格発見におけるいくらかのずれと待ち時間の理由でした。  さらに、マーケットメーカーも相場操縦で非難されました。 導入されたとき、AMMは人間のマーケットメーカーによって引き起こされたすべての問題を解決しました。  現在、これらのタイプのシステムは、ブロックチェーンベースの分散型取引所にも導入されています。
 
-On AMM-based decentralized exchanges, the traditional order book is replaced by liquidity pools that are pre-funded on-chain for both assets of the trading pair. The liquidity is provided by other users who also earn passive income on their deposit through trading fees based on the percentage of the liquidity pool that they provide.
+AMMベースの分散型取引所では、従来の注文書は、トレーディングペアの両方の資産に対してチェーン上で事前に資金が供給される流動性プールに置き換えられます。  流動性は、提供する流動性プールの割合に基づいた取引手数料を通じて預金から受動的収入を得る他のユーザーによって提供されます。
 
-One decentralized exchange that has implemented an AMM is Uniswap. Uniswap is an Ethereum-based decentralized exchange which allows its users to both supply liquidity to earn passive income or exchange between various assets.
+AMMを実装した分散型取引所の1つは、ユニスワップです。  ユニスワップはイーサリアムベースの分散型取引所であり、ユーザーは流動性を供給して受動的な収入を得るか、さまざまな資産間の交換を行うことができます。
 
-Original link 🔗 [What Is an Automated Market Maker?](https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm)
+元のリンク🔗<ahref = "https://coinmarketcap.com/alexandria/glossary/automated-market-maker-amm">自動マーケットメーカーとは何ですか？</a>
 

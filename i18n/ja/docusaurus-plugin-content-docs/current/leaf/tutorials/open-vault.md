@@ -1,41 +1,41 @@
 ---
-title: Opening a Vault
-date: 2021-08-13 12:33:07
+title: 金庫のように守られたフォルダを開く
+date: 2021年08月13日　12時33分07秒
 ---
 
-On “My page” of Pando Leaf, click on "Add a [Vault](https://docs.pando.im/docs/leaf/key-concepts/vaults)" to create a vault and then select from the list from the available vault types according to your needs.
+Pando Leafの[マイページ]で、[<ahref = "https://docs.pando.im/docs/leaf/key-concepts/vaults">ボールト</a>を追加]をクリックして金庫を作成します 次に、必要に応じて、使用可能な金庫タイプからリストから選択します。
 
 ![](../assets/leaf-open-vault-p1.png)
 
-Click on "+" and you will land on the page to create a specific vault.
+「+」をクリックすると、特定の保管庫を作成するためのページが表示されます。
 
 ![](../assets/add-a-vault-p2.png)
 
-On the corresponding minting page, respectively fill in the amount of the asset you intend to deposit and the amount of the asset you wish to generate
+対応する分割ページで、預金する予定の資産の金額と生成する資産の金額をそれぞれ入力します
 
 ````mdx-code-block
-:::tip
-Generate a vault for the first time, minting at least 100 pusd
-:::
+：：：ヒント
+初めてボールトを生成し、少なくとも100pusdをミントします
+：：： 
 ````
 
 ![](../assets/leaf-open-vault-p3.png)
 
 
-Click on the button "Deposit to Generate" , make the payments,and allow for some time for the robot to process.
+[デポジットして生成]ボタンをクリックして支払いを行い、ロボットが処理するまでしばらく待ちます。
 
-If successfully created the [vault](https://docs.pando.im/docs/leaf/key-concepts/vaults), you will receive the notification and message in the chatbox.
+[ vault ](https://docs.pando.im/docs/leaf/key-concepts/vaults)が正常に作成されると、チャットボックスに通知とメッセージが表示されます。
 
 ![](../assets/add-a-vault-p4.png)
 
 
 ````mdx-code-block
-:::caution
-Do pay attention to the risk indication bar.
+:::注意
+リスク表示バーに注意してください。
 :::
 ````
 
-You have to keep your collateralization ratio in a safe range（above 150%） to avoid [liquidation](https://docs.pando.im/docs/leaf/key-concepts/liquidation). When your collateralization ratio breaches the [liquidation ratio](https://docs.pando.im/docs/leaf/key-concepts/liquidation), your collaterals will be in [auction](https://docs.pando.im/docs/leaf/tutorials/auction-participation).
+[清算](https://docs.pando.im/docs/leaf/key-concepts/liquidation)を回避するには、担保比率を安全な範囲（150％以上）に保つ必要があります。  担保比率が<ahref = "https://docs.pando.im/docs/leaf/key-concepts/liquidation">清算比率</a>に違反した場合、担保は[オークション](https ：//docs.pando.im/docs/leaf/tutorials/auction-participation)。
 
 ![](../assets/add-a-vault-p5.png)
 

@@ -1,40 +1,40 @@
 ---
-title: Authorization
+title: 授权
 date: 2021-07-31 11:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-Most APIs are public access, but some are only available to authenticated users.
+大多数API是公开访问的，但有些仅供认证用户使用。
 
-Pando Lake and 4swap use standard OAuth protocol to authorize users.
+Pando Lake 和 4swap使用标准的 OAuth 协议给用户授权。
 
-## POST /login
+## 发布/登录
 
-Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) to exchange the access token with code.
+调用此API而不是[Mixin Messenger的OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token)，来用代码交换访问令牌。
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/login" />
 
-<APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code": "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", } `}</APIPayload>
+<APIMetaPanel /><APIPayload>{`{ // 来自 Mixin Messenger 的 OAuth 的代码 “代码”：“28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54”， } `}</APIPayload>
 
-<APIRequest title="Exchange an access token" method="POST" isPublic base="https://leaf-api.pando.im/api" url='/oauth --data PAYLOAD' />
+<APIRequest title="交换访问令牌" method="POST" isPublic base="https://leaf-api.pando.im/api" url='/oauth --data PAYLOAD' />
 
 ```json title="Response"
 {
   "ts": 1627697766645,
   "data": {
     "scope": "PROFILE:READ ASSETS:READ",
-    // the OAuth token
+    // OAuth 的 token
     "token": "..."
   }
 }
 ```
 
-The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
+Token 与 [Mixin API](https://developers.mixin.one/docs/api/guide) 兼容。 可以用它从 Mixin API 获取信息。
 
-## Sign /me with keystores
+## 使用密钥库签署 /我
 
-Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
+支持范围为“FULL”的 `GET https://api.mixin.one/me` 的 Mixin 身份验证令牌。
 
-visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+访问 [mixin 开发人员文档](https://developers.mixin.one/docs/api/guide#signing)了解更多详情。
 

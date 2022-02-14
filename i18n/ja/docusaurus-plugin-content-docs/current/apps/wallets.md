@@ -1,47 +1,48 @@
 ---
-title: Wallets
+title: ウォレット
 ---
 
-## Mixin Messenger
+## ミーシンメッセンジャー
 
-[Mixin Messenger](https://mixin.one/messenger) is an open source cryptocurrency wallet, which supports almost all popular cryptocurrencies.
+[ Mixin Messenger ](https://mixin.one/messenger)は、ほとんどすべての一般的な暗号通貨をサポートするオープンソースの暗号通貨ウォレットです。
 
-Mixin Messenger is developed by Mixin Core Team, who release it under the GPL-3.0 license.
+Mixin Messengerは、GPL-3.0ライセンスの下でリリースするMixin CoreTeamによって開発されました。
 
-For users, please download the app from its official website [mixin.one](https://mixin.one/messenger).
+ユーザーの場合は、公式Webサイト[ mixin.one ](https://mixin.one/messenger)からアプリをダウンロードしてください。
 
-For developers, please check out its source code here at: [Android App](https://github.com/MixinNetwork/android-app), [iOS App](https://github.com/MixinNetwork/ios-app) and [Desktop App](https://github.com/MixinNetwork/desktop-app).
-
-
-## Fennec
+開発者は、次のソースコードを確認してください。 [ Androidアプリ](https://github.com/MixinNetwork/android-app)、[ iOSアプリ< / a>および<ahref = "https://github.com/MixinNetwork/desktop-app">デスクトップアプリ](https://github.com/MixinNetwork/ios-app)。
 
 
-[Fennec](https://pando.im/fennec/) is an open source browser extension that allows you to easily manage your own crypto assets wallet of Mixin Network.
+## フェネック
 
-You can install Fennec from Chrome web store or Firefox Add-ons:
 
-- [Chrome Store](https://chrome.google.com/webstore/detail/fennec/eincngenkhohbbfpkohipekcmnkfamjp)
-- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/fennec/)
+[ Fennec ](https://pando.im/fennec/)は、MixinNetworkの独自の暗号資産ウォレットを簡単に管理できるオープンソースのブラウザ拡張機能です。
 
-Fennec uses Mixin Network's keystore files to identify your assets and manage your wallet. There are two ways to create your keystore files.
+Fennecは、ChromeウェブストアまたはFirefoxアドオンからインストールできます。
 
-The first option is to create a  dApp from [Mixin Developer Dashboard](https://developers.mixin.one/dashboard). After creating the dApp, you can generate a keystore file.
+- [Chromeストア](https://chrome.google.com/webstore/detail/fennec/eincngenkhohbbfpkohipekcmnkfamjp)
+- [Firefoxアドオン](https://addons.mozilla.org/en-US/firefox/addon/fennec/)
+
+Fennecは、Mixin Networkのキーストアファイルを使用して、資産を識別し、ウォレットを管理します。 キーストアファイルを作成する方法は2つあります。
+
+最初のオプションは、[ Mixin開発者ダッシュボード](https://developers.mixin.one/dashboard)からdAppを作成することです。  Dappを作成した後、キーストアファイルを生成できます。
 
 ````mdx-code-block
-:::info
-**Mixin Developer Dashboard** is a service hosted by Mixin Core Team. You can use it to create two free dApps, but you will need to pay a fee for more dApps.
+:::情報
+** Mixin Developer Dashboard **は、Mixin CoreTeamがホストするサービスです。 これを使用して2つの無料のdAppを作成できますが、それ以上のdAppには料金を支払う必要があります。
 :::
 ````
 
-The second option is to use the [Account Service providers](https://github.com/fox-one/fennec-asp) to generate a keystore file.
+2番目のオプションは、<ahref = "https://github.com/fox-one/fennec-asp">アカウントサービスプロバイダー</a>を使用してキーストアファイルを生成することです。
 
 ```mdx-code-block
-:::info
-**Account Service Provider** is also an open source program that creating valid keystore files for you.
- You can host an instance yourself or use one from the 3rd party hoster.
 
-The hoster has the permission to view the transactions and assets of your wallet (but no permission to operate your wallet). Please make sure you trust the 3rd party hoster before using it.
+:::情報
+**アカウントサービスプロバイダー**は、有効なキーストアファイルを作成するオープンソースプログラムでもあります。 
+ インスタンスを自分でホストすることも、サードパーティのホスティング業者からインスタンスを使用することもできます。
+
+ホスティング業者には、ウォレットのトランザクションとアセットを表示する権限があります(ただし、ウォレットを操作する権限はありません)。 使用する前に、サードパーティのホスティング業者を信頼していることを確認してください。
 :::
 ```
 
-For more information, please refer to [Fennec repo](https://github.com/fox-one/fennec) and [Fennec-asp repo](https://github.com/fox-one/fennec-asp).
+詳細については、[ Fennec repo ](https://github.com/fox-one/fennec)および<ahref = "https://github.com/fox-oneを参照してください。 / fennec-asp "> Fennec-aspリポジトリ</a>。

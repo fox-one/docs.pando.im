@@ -1,41 +1,42 @@
 ---
-title: Compare Lake and 4swap
-date: 2021-07-31 15:44:07
+title: Lakeと4swapを比較する
+date: 2021年7月31日15時44分07秒
 ---
 
-**4swap** is an open protocol that provides the basis of the decentralized liquidity and swapping service with a Mixin Trusted Group.
+**4swap** は、Mixin TrustedGroupによる分散型流動性およびスワッピングサービスの基盤を提供するオープンプロトコルです。
 
 ## 4swap
 
-**4swap Broker** is the interface that users interact with 4swap protocol.
+**4swap Broker** は、ユーザが 4swap プロトコルと対話するためのインターフェイスです。
 
-The default broker is the 4swap Mixin Messenger bot (id: 7000103537). If you don't specify a broker ID in the requests, all information about assets, pairs, market, orders will be responded by this broker.
+デフォルトのブローカーは、4swap Mixin Messengerボット(id: 7000103537) です。 リクエストにブローカーIDを指定しない場合、資産、ペア、市場に関するすべての情報、注文はこのブローカーによって応答されます。
 
-You can access this broker's web interface by visiting https://4swap.org.
+https://4swap.orgにアクセスすると、このブローカーのWebインターフェースにアクセスできます。
 
 ## Pando Lake
 
-**Pando Lake** is a 4swap broker that is hosted by Pando.
+**Pando Lake** は、Pando が主催する 4swap ブローカーです。
 
-Pando Lake filters the market information to only display the chosen pairs and markets that have good liquidity and are backed by solid communities.
+Pando Lakeは市場情報をフィルタリングして、流動性が高く、堅実なコミュニティに支えられている選択されたペアと市場のみを表示します。
 
-Pando Lake has an individual Mixin Messenger bot (id: 7000103937), you can also access its web interface by visiting https://lake.pando.im.
+PandoLakeには個別のMixinMessengerボット（id：7000103937）があり、https：//lake.pando.imにアクセスして、Webインターフェイスにアクセスすることもできます。
 
-The LP-Tokens are shared between Pando Lake and 4swap.
+LPトークンは、Pando Lakeと4swapの間で共有されます。
 
-### Integrate with Pando Lake
+### Pando Lakeと統合
 
-The broker id of Pando Lake is `5dbdb169-d56d-4b5b-b066-9b0780691b14`, which is used in requests.
+Pando Lake のブローカーID は `5db169-d56d-4b5b066-9b0780691b14`で、リクエストで使用されます。
 
-**Authorize to Lake**
+**Lakeに認証する**
 
-When call `POST /api/oauth` to authorize the wallet, two parameters `broker_id` and `label` must be specified, in which `label` should be a string "lake".
+`POST /api/oauth`を呼び出してウォレットを承認するときは、2つのパラメーター`broker_id` と `label` を指定する必要があります。`label` は文字列「lake」である必要があります。
 
-**Other APIs**
+**その他のAPI**
 
-The parameter `broker_id` should be appended to the query or payload of following API requests:
+パラメータ `broker_id` は、次のAPIリクエストのクエリまたはペイロードに追加する必要があります。
 
-- POST /api/actions, it generates a transfer that could be sent to Pando Lake.
-- GET /api/pairs, it will respond with a `whitelists` field which includes asset ids that are supported by Pando Lake.
+- POST / api / actionsは、PandoLakeに送信できる転送を生成します。
+- / api / pairを取得すると、PandoLakeでサポートされているアセットIDを含む whitelists </ code>フィールドで応答します。 </li>
+</ul>
 
 

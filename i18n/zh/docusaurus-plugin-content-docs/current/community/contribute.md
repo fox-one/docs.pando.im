@@ -46,7 +46,7 @@ Pando 文档是按以下的方式组织编排的：
 
 ````mdx-code-block
 :::info
-Please note that all the code in the documentation should not be translated.
+请注意，文档中的所有代码不要翻译。
 :::
 ````
 

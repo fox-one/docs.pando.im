@@ -1,22 +1,22 @@
 ---
 title: Pando USD
-date: 2021-08-12 22:33:07
+date: 2021年08月12日　22時33分07秒
 ---
 
-Pando USD(pUSD) is launched on Dec 25, 2020 by BigONE, Exin, FOX, Poolin and Team Mixin. Pando USD is considered a stablecoin pegged to the US Dollar. You can always consider 1 pUSD for US$1.00.
+Pando USD(pUSD) は、2020年12月25日に、BigONE、Exin、FOX、Poolin、およびTeamMixinによって発売されました。 Pando USDは、米ドルに固定されたステーブルコインと見なされます。 1pUSDをUS $ 1.00でいつでも検討できます。
 
-The total supply of pUSD is **1,000,000,000,000**, of which **999,975,000,000** are **locked** in a 5/6 [Mixin Trusted Group](https://docs.pando.im/docs/security/mtg) which are managed by BigONE, Exin, FOX, Poolin and Team Mixin. The remaining **25,000,000** is releasable to the public at [Pando Leaf](https://leaf.pando.im), which is a 4/6 Mixin Trusted Group.
+pUSDの総供給量は<strongx-id = "1"> 1,000,000,000,000 </ strong>で、そのうち** 999,975,000,000 </ strong>は<strongx-id = "1">です。 BigONE、Exin、FOX、Poolinによって管理されている5/6 [ Mixin Trusted Group ](https://docs.pando.im/docs/security/mtg)にロックされています</ strong> とチームミーシン。 残りの<strongx-id = "1"> 25,000,000 </ strong>は、<ahref = "https://leaf.pando.im">パンドリーフ</a>で一般公開されます。これは4です。 / 6Mixinトラステッドグループ。 </p>
 
-The current collaterals are of about US$43M worth of crypto, which backs about 11M pUSD. Please check real-time market conditions [here](https://leaf.pando.im/#/market). the pUSD MTG mechanism makes sure that the backing ratio of pUSD is always way higher than **200%**.
+現在の担保は約4300万米ドル相当の暗号通貨であり、これは約1100万pUSDを裏付けています。 <ahref = "https://leaf.pando.im/#/market">こちら</a>でリアルタイムの市況を確認してください。  pUSD MTGメカニズムは、pUSDのバッキング比率が常に **200%**よりもはるかに高いことを確認します。
 
-## Store pUSD
+## pUSDを保存する
 
-pUSD is an [Ethereum token](https://etherscan.io/address/0xdbaef6da45984a9329c2640d19dcb9f62dc2ab66), and has been transfered to Mixin Network since [Dec 23th 2020](https://etherscan.io/tx/0xccd66572e85d66cc05d50e2a16be0eb2348e34cedd34df89113e4b515caaf210). So you can store pUSD in any Mixin Network compatible wallet or Ethereum-compatible wallet.
+pUSDは<ahref = "https://etherscan.io/address/0xdbaef6da45984a9329c2640d19dcb9f62dc2ab66"> Ethereumトークン</a>であり、<ahref = "https://etherscan.io/tx以降MixinNetworkに転送されています。 / 0xccd66572e85d66cc05d50e2a16be0eb2348e34cedd34df89113e4b515caaf210 "> 2020年12月23日</a>。  したがって、pUSDはMixinNetwork互換のウォレットまたはEthereum互換のウォレットに保存できます。
 
-## Use pUSD
+## pUSDを使用する
 
-- Generate: [Pando Leaf](https://leaf.pando.im) is the only place to generate the pUSD.
-- Exchange: [4swap](https://www.4swap.org/#/) and [Pando Lake](https://lake.pando.im) provide pUSD exchange services.
-- Others: [PrsDigg](https://prsdigg.com/) is a paid article service that supports using pUSD to buy articles.
+- 生成：<ahref = "https://leaf.pando.im">パンドリーフ</a>はpUSDを生成する唯一の場所です。
+- 交換：[ 4swap ](https://www.4swap.org/#/)と<ahref = "https://lake.pando.im"> Pando Lake </a>が提供します pUSD交換サービス。
+- その他：[ PrsDigg ](https://prsdigg.com/)は、pUSDを使用した記事の購入をサポートする有料記事サービスです。
 
 

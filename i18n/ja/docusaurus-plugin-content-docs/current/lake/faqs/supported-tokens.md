@@ -1,21 +1,21 @@
 ---
-title: Which tokens are supported?
-date: 2021-08-15 22:33:07
+title: どのトークンがサポートされていますか？
+date: 2021年08月15日　22時33分07秒
 ---
 
 
-In theory, we can provide support for the assets supported by Mixin Network, but the current list of assets we choose to support is based on the following rules:
+理論的には、Mixin Networkでサポートされているアセットのサポートを提供できますが、サポートすることを選択した現在のアセットのリストは、次のルールに基づいています。
 
-- Strong ecosystem or high reputation in the blockchain industry.
+- ブロックチェーン業界での強力なエコシステムまたは高い評判。
 
-- Considerable community base in the Mixin ecosystem.
+- Mixinエコシステムのかなりのコミュニティベース。
 
-- The project owner is willing to provide assets as the initial liquidity market maker, and the net value reaches the standard recognized by the Fox.ONE team.
+- プロジェクトオーナーは、最初の流動性マーケットメーカーとして資産を提供する用意があり、純資産はFox.ONEチームによって認識された基準に達します。
 
-### List of supported tokens
+### サポートされているトークンのリスト
 
 
-| Coin/Token  |               The Explorer Address/The Contract Address               |
+|  コイン/トークン   |                          エクスプローラーアドレス/契約アドレス                          |
 |:-----------:|:---------------------------------------------------------------------:|
 |     BTC     |                  https://www.blockchain.com/explorer                  |
 |     ETH     |                         https://etherscan.io/                         |
@@ -39,7 +39,7 @@ In theory, we can provide support for the assets supported by Mixin Network, but
 |     AKT     |                        https://akash.aneka.io/                        |
 |     SOL     |                     https://explorer.solana.com/                      |
 |     ZEN     |                      https://www.horizen.io/zh/                       |
-|     SIM     | https://etherscan.io/token/0x4646e00a938115931d716898154e5259ba203b62 |
+|    SIM      | https://etherscan.io/token/0x4646e00a938115931d716898154e5259ba203b62 |
 |     SC      |                           https://sia.tech/                           |
 |    AAVE     | https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9 |
 |    SHIB     | https://etherscan.io/token/0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE |

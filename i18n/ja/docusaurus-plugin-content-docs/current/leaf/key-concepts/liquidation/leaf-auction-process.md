@@ -1,12 +1,12 @@
 ---
-title: Auction Process
-date: 2021-07-28 22:33:07
+title: オークションプロセス
+date: 2021年07月28日　22時33分07秒
 ---
 
-When a vault breaches the minimum required collateralization ratio, it will be liquidated and the collateral will be on auction. Anyone can participate in the auction. The ongoing auction can be found in the Ongoing section on the Auctions page.
+保管庫が最低限必要な担保比率に違反した場合、保管庫は清算され、担保はオークションにかけられます。 誰でもオークションに参加できます。 進行中のオークションは、オークションページの進行中のセクションにあります。
 
-There are TWO phases of the auction.
+オークションには2つのフェーズがあります。
 
-**For Phase 1**, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
+<strongx-id = "1">フェーズ1 </ strong>の場合、参加者は、未払いの債務の最高額をカバーするために、前回の入札額の3％以上の増分で入札します。  12時間以内に全債務をカバーする意思がない場合、オークションは終了し、債務の最高額をカバーする意思のある入札者がすべての担保を持ち帰ります。 または、負債総額をカバーするために入札する人がいる場合、オークションは第2フェーズに移行します。
 
-**For Phase 2**, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt. The winner will need to pay off all the debt in exchange for the smallest amount of the collateral that (s)he subtmits the bid for.
+**フェーズ2**の場合、参加者は、総債務の支払いのために担保のごく一部を受け入れる際に、前回の入札額の3％以上の減額で入札します。 勝者は、(入札を提出した)担保の最小額と引き換えに、すべての債務を返済する必要があります。

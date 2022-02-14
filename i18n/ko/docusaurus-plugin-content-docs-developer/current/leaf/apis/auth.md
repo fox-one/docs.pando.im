@@ -1,21 +1,21 @@
 ---
-title: Authorization
+title: 권한 부여
 date: 2021-07-31 11:18:01
 ---
 
 import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
 
-Most APIs are public access, but some are only available to authenticated users.
+대부분의 API는 공용 액세스이지만 일부는 인증된 사용자만 사용할 수 있습니다.
 
-Pando Lake and 4swap use standard OAuth protocol to authorize users.
+Pando Lake 및 4swap은 표준 OAuth 프로토콜을 사용하여 사용자를 인증합니다.
 
-## POST /login
+## POST/로그인
 
-Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) to exchange the access token with code.
+액세스 토큰을 코드와 교환하려면 [Mixin Messenger의 OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) 대신 이 API를 호출하세요.
 
 <APIEndpoint base="https://leaf-api.pando.im/api" url="/login" />
 
-<APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code": "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", } `}</APIPayload>
+<APIMetaPanel /><APIPayload>{`{ // Mixin Messenger의 OAuth 코드 "code": "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", } `}</APIPayload>
 
 <APIRequest title="Exchange an access token" method="POST" isPublic base="https://leaf-api.pando.im/api" url='/oauth --data PAYLOAD' />
 
@@ -24,17 +24,17 @@ Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.
   "ts": 1627697766645,
   "data": {
     "scope": "PROFILE:READ ASSETS:READ",
-    // the OAuth token
+    // OAuth 토큰
     "token": "..."
   }
 }
 ```
 
-The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
+토큰은 [Mixin API](https://developers.mixin.one/docs/api/guide)와 호환됩니다. Mixin API에서 정보를 얻는 데 사용해도 괜찮습니다.
 
-## Sign /me with keystores
+## 키 저장소로 /me 서명
 
-Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
+범위가 "FULL"인 `GET https://api.mixin.one/me`용 Mixin 인증 토큰이 지원됩니다.
 
-visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+자세한 내용은 [mixin 개발자 문서](https://developers.mixin.one/docs/api/guide#signing)를 참조하세요.
 

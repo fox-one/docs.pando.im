@@ -15,7 +15,7 @@ date: 2021-07-22 22:33:07
 
 [交易费](./key-concepts/trading-fee)按照资金流动性提供者在流动性池中提供的资金份额比例，支付给了所有的资金流动性提供者。
 
-[4swap](https://4swap.org)提供了名为“代理”的机制，用户可以通过该机制与协议进行交互。 Pando Lake有自己的代理来为用户提供服务。 Please refer to ["Lake vs 4swap"](https://docs.pando.im/docs/lake/faqs/lake-vs-4swap) for more information.
+[4swap](https://4swap.org)提供了名为“代理”的机制，用户可以通过该机制与协议进行交互。 Pando Lake有自己的代理来为用户提供服务。 了解更多信息请参考["Lake vs 4swap"](https://docs.pando.im/docs/lake/faqs/lake-vs-4swap)。
 
 **→** [访问 4swap.org](https://4swap.org)  
 **→** [访问 Pando Lake](https://lake.pando.im)  

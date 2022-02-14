@@ -1,73 +1,74 @@
 ---
-title: Guide
-date: 2021-08-16 18:40:00
+title: 手引き
+date: 2021年8月16日18時40分0秒
 ---
 
-An easier and faster way to Connect to Pando Rings engine.
+Pando Rings エンジンに接続するためのより簡単で高速な方法。
 
-## Installing
+## インストール
 
 ```sh
-go get github.com/fox-one/pando-rings-sdk-go
+github.com/fox-one/pando-rings-sdk-goを取得します
 ```
 
-## Usage
+## 使用方法
 
-* Initialize the endpoint
+* エンドポイントを初期化します
 
 ```go
-rings.Endpoint = "xxxxx" // e.g. rings.Endpoint = "https://compound-test-api.fox.one"
+ring.Endpoint = "xxxxx" //例： ring.Endpoint = "https://compound-test-api.fox.one"
 ```
 
-* Import
+* インポート
 
 ```go
-import "github.com/fox-one/pando-rings-sdk-go"
+github.com/fox-one/pando-rings-sdk-goを取得します"
 ```
 
-* Request all markets
+* すべての市場をリクエスト
 
 ```go
-rings.RequestAllMarkets(ctx context.Context) ([]*Market, error)
+
+ring.RequestAlの販売（ctx context.Context）（[] * Market、error） 
 ```
 
-* Request transactions
+* トランザクションをリクエストする
 ```go
-rings.RequestTransactions(ctx context.Context, limit int, offset time.Time) ([]*Transaction, error)
+rings.トランザクションのリクエスト(ctx 環境 .環境 , 制限整数、オフセット時間。時間 ) ([]*トランザクション、エラー)
 ```
 
-* Request user action
+* ユーザーアクションを要求する
 ```go
-//request supply action url
-rings.RequestSupply(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
+//サプライアクションのURLをリクエストします
+ring.RequestSupply（ctx context.Context、followID string、assetID string、amount decimal.Decimal）（string、string、error）
 
-//request pledge action url
-rings.RequestPledge(ctx context.Context, followID string, ctokenAssetID string, amount decimal.Decimal) (string, string, error)
+//誓約アクションのURLをリクエストします
+ring.RequestPledge（ctx context.Context、followID string、ctokenAssetID string、amount decimal.Decimal）（string、string、error）
 
-// request unpledge action url
-rings.RequestUnpledge(ctx context.Context, followID string, ctokenAssetID string, ctokenAmount decimal.Decimal) (string, string, error)
+//誓約解除アクションのURLをリクエストします
+ring.RequestUnpledge（ctx context.Context、followID string、ctokenAssetID string、ctokenAmount decimal.Decimal）（string、string、error）
 
-// request quick pledge action url
-rings.RequestQuickPledge(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
+//クイックプレッジアクションURLをリクエストします
+ring.RequestQuickPledge（ctx context.Context、followID string、assetID string、amount decimal.Decimal）（string、string、error）
 
-// request redeem action url
-rings.RequestRedeem(ctx context.Context, followID string, ctokenAssetID string, redeemAmount decimal.Decimal) (string, string, error)
+//償還アクションURLをリクエストします
+ring.RequestRedeem（ctx context.Context、followID string、ctokenAssetID string、redeemAmount decimal.Decimal）（string、string、error）
 
-// request quick redeem action url
-rings.RequestQuickRedeem(ctx context.Context, followID string, ctokenAssetID string, redeemAmount decimal.Decimal) (string, string, error)
+//クイック引き換えアクションURLをリクエストします
+ring.RequestQuickRedeem（ctx context.Context、followID string、ctokenAssetID string、redeemAmount decimal.Decimal）（string、string、error）
 
-// request borrow action url
-rings.RequestBorrow(ctx context.Context, followID string, assetID string, borrowAmount decimal.Decimal) (string, string, error)
+//借用アクションのURLをリクエストします
+ring.RequestBorrow（ctx context.Context、followID string、assetID string、borrowAmount decimal.Decimal）（string、string、error）
 
-// request quick borrow action url
-rings.RequestQuickBorrow(ctx context.Context, followID string, supplyAssetID string, supplyAmount decimal.Decimal, borrowAssetID string, borrowAmount decimal.Decimal) (string, string, error)
+//クイックボローアクションURLをリクエストします
+ring.RequestQuickBorrow（ctx context.Context、followID string、supplyAssetID string、supplyAmount decimal.Decimal、borrowAssetID string、borrowAmount decimal.Decimal）（string、string、error）
 
-// request repay action url
-rings.RequestRepay(ctx context.Context, followID string, assetID string, amount decimal.Decimal) (string, string, error)
+//返済アクションのURLをリクエストします
+ring.RequestRepay（ctx context.Context、followID string、assetID string、amount decimal.Decimal）（string、string、error）
 
-// request liquidate action url
-rings.RequestLiquidate(ctx context.Context, followID string, supplyUserID string, supplyCTokenAssetID string, borrowAssetID string, repayAmount decimal.Decimal) (string, string, error)
+//清算アクションURLをリクエストします
+ring.RequestLiquidate（ctx context.Context、followID string、supplyUserID string、supplyCTokenAssetID string、borrowAssetID string、repayAmount decimal.Decimal）（string、string、error） 
 
 ```
 
-More details of sdk using, please read the [example](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example), Or refer to the [official full-featured version of Pando rings for implementation](https://github.com/fox-one/compound-app)
+使用するSDKの詳細については、[例](https://github.com/fox-one/pando-rings-sdk-go/tree/main/example)を読むか、を参照してください。 the <ahref = "https://github.com/fox-one/compound-app">実装用のPandoリングの公式フル機能バージョン</a>

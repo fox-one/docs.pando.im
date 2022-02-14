@@ -1,14 +1,14 @@
 ---
-title: Support
-date: 2021-09-17 12:37:07
+title: サポート
+date: 2021年9月17日12時37分07秒
 ---
 
-## Discussion channels
+## ディスカッションチャンネル
 
-- [Reddit Commnunity](https://www.reddit.com/r/pando/)
-- [Discord Channel](https://discord.gg/ek45g3Cymd)
-- Mixin Group: search 7000104110 in [Mixin Messenger](https://mixin.one/messenger) to join the group.
+- [Reddit コミュニティ](https://www.reddit.com/r/pando/)
+- [Discord チャンネル](https://discord.gg/ek45g3Cymd)
+- Mixinグループ：[ Mixin Messenger ](https://mixin.one/messenger)で7000104110を検索して、グループに参加します。
 
-## News
+## 最新情報
 
-For the latest news about Pando, please follow @[Pando_IM](https://twitter.com/pando_im) and @[4swapORG](https://twitter.com/4swapOrg)
+パンドに関する最新ニュースについては、@ [ Pando_IM ](https://twitter.com/pando_im)および@ <ahref = "https://twitter.com/4swapOrg"> 4swapORGをフォローしてください。 </a>

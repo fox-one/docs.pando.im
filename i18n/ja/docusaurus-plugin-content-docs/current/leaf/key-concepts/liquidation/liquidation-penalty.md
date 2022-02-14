@@ -1,9 +1,9 @@
 ---
-title: Liquidation Penalty
-date: 2021-08-13 14:33:07
+title: 清算ペナルティ
+date: 2021年08月13日　14時33分07秒
 ---
 
-A Liquidation Penalty is a fee paid by Vault owners when the value of their collateral reaches the Vault's Liquidation Price.
+清算ペナルティは、担保の価値がVaultの清算価格に達したときにVaultの所有者が支払う料金です。
 
-The Liquidation Penalty is added to the Vault’s total outstanding generated pUSD when liquidation occurs, which results in more collateral being sold at auction.
+清算ペナルティは、清算が発生したときにVaultの未払いの生成されたpUSDの合計に追加されます。これにより、オークションでより多くの担保が販売されます。
 

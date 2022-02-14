@@ -44,7 +44,7 @@ Rings 是 MTG 的一个实现，也是 Mixin Network的平行链。
 * `还款`，假设用户偿还`USDT`，即用户支付`USDT`，用户的债务就会减少 ![](design/tl_repay.jpg)
 
 * `快速质押`，假设用户提供底层代币`ETH`，没有权益代币`rETH`返还给用户 ![](design/tl_quick_pledge.jpg)
-* `快速赎回`，假设用户需要赎回`ETH`，用户只需要支付一些代币，即可以将底层代币`ETH`赎回 ![](design/tl_quick_redeem.jpg)
+* `quick_pledge`，假设用户赎回`ETH`，用户只需支付部分代币，即可取回底层代币`ETH` ![](design/tl_quick_redeem.jpg)
 * `快速借出`，假设用户可以供应`ETH`或`rETH`，可以借用`USDT` ![](design/tl_quick_borrow.jpg)
 
 

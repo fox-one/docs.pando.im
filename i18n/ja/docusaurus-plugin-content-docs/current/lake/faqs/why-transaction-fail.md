@@ -1,17 +1,17 @@
 ---
-title: Why did my transaction fail?
-date: 2021-08-15 22:33:07
+title: なぜ取引に失敗したのですか？
+date: 2021年08月15日　22時33分07秒
 ---
 
-import { Improvement, } from "@site/src/components/admonitions";
+輸入 { 改善、 } from "@ site / src / components / admonitions";
 
 <Improvement />
 
 
-Common transaction failures are caused by the transaction exceeding slippage. Please refresh the page to obtain the latest transaction pair data.
+一般的なトランザクションの失敗は、トランザクションがスリッページを超えることが原因で発生します。 最新の取引ペアデータを取得するには、ページを更新してください。
 
-The information displayed by Pando Lake on the web page is the estimated information at the moment you enter the quantity. When you actually pay, it may happen that due to the transaction behavior of others, the actual amount of assets you will get when you pay is different from the estimated amount. There is a large difference in quantity, Pando Lake will actively reject this kind of transaction with a large difference between the expected and actual results to reduce the loss caused by the difference between the estimated and the actual value.
+パンドレークがWebページに表示する情報は、数量を入力した時点での推定情報です。 実際にお支払いいただく場合、他人の取引行為により、お支払い時に実際に受け取る資産額が見積額と異なる場合があります。 数量には大きな違いがありますが、Pando Lakeは、予想値と実際の結果の差が大きいこの種の取引を積極的に拒否し、推定値と実際の値の差による損失を減らします。
 
-We provide a parameter name slippage, which can be set on the gear ⚙ icon button on the right side of the transaction button. The slippage is the difference between the estimated information and the actual transaction result during Pando Lake transactions.
+取引ボタンの右側にある歯車⚙アイコンボタンで設定できるパラメータ名のずれを提供します。 スリップページは、パンドレーク取引中の推定情報と実際の取引結果の差です。
 
-The greater the slippage, the higher the tolerance for the expected difference in the transaction, and the success rate of the transaction will increase, but it may also result in greater losses. The smaller the slippage, the lower the tolerance for the expected difference of the transaction, the lower the transaction success rate, but each order will be more in line with the estimated situation you see on the web page. The default value of slippage is 1%, that is, when the actual transaction differs from the estimated transaction amount you see on the webpage by more than 1%, the Pando Lake engine will reject the transaction.
+スリップページが大きいほど、トランザクションの予想される差異に対する許容度が高くなり、トランザクションの成功率が高くなりますが、損失が大きくなる可能性もあります。 スリップページが小さいほど、トランザクションの予想される差異に対する許容度は低くなりますが、トランザクションの成功率は低くなりますが、各注文は、Webページに表示される推定状況により一致します。 スリップページのデフォルト値は1％です。つまり、実際のトランザクションがWebページに表示される推定トランザクション量と1％以上異なる場合、PandoLakeエンジンはトランザクションを拒否します。

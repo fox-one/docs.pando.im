@@ -1,10 +1,10 @@
 ---
-title: Liquidation Price
-date: 2021-08-13 14:33:07
+title: 清算価格
+date: 2021年08月13日　14時33分07秒
 ---
 
-The Liquidation Price is the price at which a Vault becomes vulnerable to liquidation.
+清算価格は、Vaultが清算に対して脆弱になる価格です。
 
-Vault owners can lower their liquidation price by adding more collateral or returning pUSD to the Vault.
+Vaultの所有者は、担保を追加するか、pUSDをVaultに戻すことで、清算価格を下げることができます。
 
-Liquidation Price = (Generated pUSD * Liquidation Ratio) / (Amount of Collateral)
+清算価格=（生成されたpUSD *清算比率）/（担保額）

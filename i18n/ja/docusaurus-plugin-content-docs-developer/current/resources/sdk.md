@@ -1,14 +1,14 @@
 ---
 title: SDK
-date: 2021-08-15 16:39:07
+date: 2021年08月15日　16時39分07秒
 ---
 
 ## Golang
 
-- [Lake & 4swap](https://github.com/fox-one/4swap-sdk-go): A Golang SDK for the 4swap and Pando Lake API.
-- [Rings](https://github.com/fox-one/compound-sdk-go): A Golang SDK for the Pando Rings API.
+- <ahref = "https://github.com/fox-one/4swap-sdk-go">湖と 4swap </a>：4swapおよびPando LakeAPI用のGolangSDK。
+- <ahref = "https://github.com/fox-one/compound-sdk-go">リング</a>：Pando RingsAPI用のGolangSDK。
 
-## Javascript
+## Java脚本
 
-- [Lake & 4swap](https://github.com/an-lee/pando-sdk-js): A Javascript SDK for the 4swap and Pando Lake API.
+- <ahref = "https://github.com/an-lee/pando-sdk-js">湖と 4swap </a>：4swapおよびPando LakeAPI用のJavascriptSDK。
 

@@ -5,24 +5,26 @@ date: 2021-08-16 17:40:00
 
 本文档描述了 Pando Rings引擎的 RESTful API 和 RPC 接口的定义和使用。
 
-## Authentication Token
+## 认证令牌
 
-Sign authentication token for `GET https://api.mixin.one/me` with scope "FULL" by keystores.
+为 `GET https://api.mixin.one/me` 签名身份验证令牌，密钥库的范围为“FULL”。
 
-visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+访问 [mixin 开发人员文档](https://developers.mixin.one/docs/api/guide#signing)了解更多详情。
 
-## Restful API
+## RESTful API
 
 ### • 所有市场
 
-Returns all the markets that can be supplied and borrowed.
+返回所有可以供应和借贷的市场。
 
 **HTTP**
+
 ```
 GET /api/v1/markets/all
 ```
 
-**Response**
+**响应**
+
 ```json
 {
   "data": [
@@ -68,20 +70,23 @@ GET /api/v1/markets/all
 
 ### 交易
 
-Returns all the user transactions by time.
+按时间返回所有用户交易。
 
 **HTTP**
+
 ```
 GET /api/v1/transactions?limit=10&offset=
 ```
 
-**Query Params**
-| key    | type   | des                                                                            |
-| ------ | ------ | ------------------------------------------------------------------------------ |
-| limit  | string | page data limit, 500 by default                                                |
-| offset | string | Pagination start time, RFC3339Nano format, e.g. 2020-12-12T12:12:12.999999999Z |
+**查询参数**
 
-**Response**
+| key    | 类型     | des                                                     |
+| ------ | ------ | ------------------------------------------------------- |
+| limit  | string | 页面数据上限，默认500个                                           |
+| offset | string | 分页开始时间，RFC3339Nano 格式，例如：2020-12T12:12:12.99999999999 Z |
+
+**响应**
+
 ```json
 [
   {
@@ -119,14 +124,16 @@ GET /api/v1/transactions?limit=10&offset=
 
 ### • 请求支付
 
-Returns the pay url according to the specified action and paramter data.
+根据指定的动作和参数数据返回支付URL。
 
 **HTTP**
+
 ```url
 POST /api/v1/pay-requests
 ```
 
 **Payload**
+
 ```json
 {
   "memo_base64": "AQIQU1BMqZkaQmWmkOzm4LfkFA==",
@@ -137,7 +144,8 @@ POST /api/v1/pay-requests
 }
 ```
 
-**Response**
+**响应**
+
 ```json
 {
   "url":"mixin://codes/6df372af-5557-4064-a074-698c4677661e"
@@ -146,7 +154,8 @@ POST /api/v1/pay-requests
 
 ## RPC
 
-Based on [Twirp](https://github.com/twitchtv/twirp) implementation RPC interfaces. [proto file](https://github.com/fox-one/pando-rings-sdk-go/blob/main/rpc/service.proto)
+基于 [Twirp](https://github.com/twitchtv/twirp) 实现RPC 接口。 [proto 文件](https://github.com/fox-one/pando-rings-sdk-go/blob/main/rpc/service.proto)
+
 ```proto
 syntax = "proto3";
 
@@ -309,7 +318,7 @@ if err != nil {
 return resp, nil
 ```
 
-## [Actions](https://github.com/fox-one/compound/blob/master/core/action.go)
+## [操作](https://github.com/fox-one/compound/blob/master/core/action.go)
 
 ```go
 const (

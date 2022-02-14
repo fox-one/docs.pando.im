@@ -1,11 +1,11 @@
 ---
-title: Where can I see liquidity reward？
-date: 2021-09-13 00:00:02
+title: 流動性の報酬はどこで確認できますか?
+date: 2021年9月13日00時00分02秒
 ---
 
 
-Transaction fees will enter the liquidity pool, and you can get a portion of it when you withdraw liquidity.
+取引手数料は流動性プールに入り、流動性を引き出すとその一部を受け取ることができます。
 
 ![](../assets/profit.png)
 
-The revenue details can be viewed on the "Me" page.
+収益の詳細は「Me」ページで確認できます。

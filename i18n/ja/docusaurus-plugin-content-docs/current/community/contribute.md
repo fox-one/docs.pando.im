@@ -1,100 +1,113 @@
 ---
-title: Contribute
-date: 2021-09-15 22:33:07
+title: 助ける
+date: 2021年9月15日22時33分07秒
 ---
 
-Pando documentation is open source. You are very welcomed to translate it into other languages to make it accessible to greater population!
+Pando のドキュメントはオープンソースです。 より多くの人々が利用できるように、他の言語に翻訳することを歓迎します。
 
-## Preparation
+## 準備
 
-Pando documentation is based on [Docusaurus](https://docusaurus.io/docs/en/latest/), a static site generator for React.js.
+Pandoのドキュメントは、React.jsの静的サイトジェネレーターである[ Docusaurus ](https://docusaurus.io/docs/en/latest/)に基づいています。
 
-- You need to ensure that you have Yarn installed
-- Clone the repository of the document
-- Run `yarn` in the root of the repo
-- Run `yarn start` to preview the documentation
+- Yarnがインストールされていることを確認する必要があります
+- ドキュメントのリポジトリのクローンを作成します
+- リポジトリのルートで` yarn </ code>を実行します </li>
+<li><code> yarn start </ code>を実行して、ドキュメントをプレビューします </li>
+</ul>
 
-## Document Structure
+<h2 spaces-before="0">ドキュメント構造</h2>
 
-The documentation is organized in the following way:
+<p spaces-before="0">ドキュメントは次のように構成されています。</p>
 
-- all source is in the `docs` directory and `developer` directory
-- the `docs` directory contains the following subdirectories:
-  - `lake` contains all the Pando Lake & 4swap documentation
-  - `leaf` contains all the Pando Leaf documentation
-  - `rings` contains all the Pando Rings documentation
-  - `wallets` contains all documentation about wallets on Mixin Network
-  - `3rd-party-apps` lists applications built on top of Pando
-  - `security` contains documentation concerning security issues
-  - `community` contains all the community documentation
-- the `developer` directory contains the following subdirectories:
-  - `lake` contains the dev documentation of Pando Lake and 4swap
-  - `leaf` contains the dev documentation of Pando Leaf
-  - `rings` contains the dev documentation of Pando Rings
-  - `resources` contains the resources
-- the sidebar of `docs` is defined in `sidebar.docs.js`, the sidebar of `developer` is defined in `sidebar.developer.js`
+<ul>
+<li>すべてのソースは<code> docs </ code>ディレクトリと<code> developer </ code>ディレクトリにあります </li>
+<li><code> docs </ code>ディレクトリには、次のサブディレクトリが含まれています。 
 
-## Translation
+<ul>
+<li><code> lake </ code>には、すべてのPando Lake＆amp;が含まれています。 4スワップドキュメント </li>
+<li><code> leaf </ code>には、すべてのPandoLeafドキュメントが含まれています </li>
+<li><code> ring </ code>には、すべてのPandoRingsのドキュメントが含まれています </li>
+<li><code> wallets </ code>には、MixinNetworkのウォレットに関するすべてのドキュメントが含まれています </li>
+<li>
+<code> third-party-apps </ code>は、Pando上に構築されたアプリケーションを一覧表示します </li>
+<li>
+<code> security </ code>には、セキュリティの問題に関するドキュメントが含まれています </li>
+<li><code> community </ code>には、すべてのコミュニティドキュメントが含まれています </li>
+</ul></li>
+<li><code> developer </ code>ディレクトリには次のサブディレクトリが含まれています。 
 
-### Translate at Crowdin
+<ul>
+<li><code> lake </ code>には、PandoLakeと4swapの開発ドキュメントが含まれています </li>
+<li><code> leaf </ code>には、PandoLeafの開発ドキュメントが含まれています </li>
+<li>
+<code> ring </ code>には、PandoRingsの開発ドキュメントが含まれています </li>
+<li><code> resources </ code>にはリソースが含まれています </li>
+</ul></li>
+<li><code> docs </ code>のサイドバーは<code> sidebar.docs.js </ code>で定義され、<code> developer </ code>のサイドバーは<code> sidebar.developer.js <で定義されます。 / code> </li>
+</ul>
 
-If you're not familiar with Github and the i18n of Pando, we recommend you to use Crowdin to help us translate the docs.
+<h2 spaces-before="0">翻訳</h2>
 
-1. [Tap here](https://pando.crowdin.com/u/signup) to sign-up an account of Crowdin
-2. Browse the translation status and progress at [Pando's Page at Crwodin](https://pando.crowdin.com/)
-3. Get familiar with the Crowdin translation UI, as you will need to use it to translate JSON and Markdown files
+<h3 spaces-before="0">Crowdinで翻訳</h3>
 
-````mdx-code-block
-:::info
-Please note that all the code in the documentation should not be translated.
+<p spaces-before="0">GithubとPandoのi18nに慣れていない場合は、Crowdinを使用してドキュメントの翻訳を支援することをお勧めします。</p>
+
+<ol start="1">
+<li><ahref = "https://pando.crowdin.com/u/signup">ここをタップ</a>して、Crowdinのアカウントにサインアップします </li>
+<li><a href="https://pando.crowdin.com/"> CrwodinのPandoのページ</a>で翻訳のステータスと進捗状況を確認します </li>
+<li>JSONおよびMarkdownファイルを翻訳するためにCrowdinを使用する必要があるため、Crowdin翻訳UIをよく理解してください。</li>
+</ol>
+
+<pre><code class="mdx-code-block">:::情報
+ドキュメント内のすべてのコードを翻訳する必要はないことに注意してください。
 :::
-````
+`</pre>
 
-### Initialize the Translation
+### 翻訳を初期化する
 
-#### Generate new translation files for new languages
+#### 新しい言語の新しい翻訳ファイルを生成する
 
-If you're the maintainer of this project, please follow the instructions in the [i18n tutorial](https://docusaurus.io/docs/i18n/tutorial) to add a new language.
+このプロジェクトの保守者である場合は、[ i18nチュートリアル](https://docusaurus.io/docs/i18n/tutorial)の指示に従って新しい言語を追加してください。
 
 
-**Translate the index page**
+**このページを翻訳します**
 
-Please follow the instructions [here](https://docusaurus.io/docs/i18n/tutorial#use-the-translation-apis) to translate your index page and react components.
+<ahref = "https://docusaurus.io/docs/i18n/tutorial#use-the-translation-apis">こちら</a>の手順に従って、インデックスページを翻訳し、コンポーネントを反応させてください。
 
-**Generate/Update json files**
+**jsonファイルの生成/更新 **
 
 ```bash
-yarn run write-translations --locale $LANG_CODE
+ヤーンラン 書く-翻訳 --locale $LANG_CODE
 ```
 
-The `$LANG_CODE` is the language code of the language you want to generate. For example, if you want to generate the translation files for the French language, you should use `fr`.
+` $ LANG_CODE </ code>は、生成する言語の言語コードです。  たとえば、フランス語の翻訳ファイルを生成する場合は、 <code>fr`を使用する必要があります。
 
-The translation files are generated in the `i18n/$LANG_CODE/` directory.
+翻訳ファイルは、` i18n / $ LANG_CODE / </ code>ディレクトリに生成されます。 </p>
 
-**Generate Markdown files**
+<p spaces-before="0"><strong x-id="1">Markdown ファイルを生成する</strong></p>
 
-Copy Markdown files in docs to `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current`, and translate them:
+<p spaces-before="0">ドキュメント内のマークダウンファイルを<code> i18n / $ LANG_CODE / docusaurus-plugin-content-docs / current </ code>にコピーし、翻訳します。 </p>
 
-```bash
-mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
+<pre><code class="bash">mkdir -p i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
 cp -r docs/** i18n/$LANG_CODE/docusaurus-plugin-content-docs/current
-```
+`</pre>
 
-#### Translate the documents
+#### ドキュメントを翻訳する
 
-All the documents are placed in the `i18n/$LANG_CODE/` according to the languages.
+すべてのドキュメントは、言語に応じて` i18n / $ LANG_CODE / </ code>に配置されます。 </p>
 
-- `i18n/$LANG_CODE/code.json`: the translation of the index page and the text used by docusaurus.
-- `i18n/$LANG_CODE/docusaurus-theme-classic/footer.json`: the translation of footer.
-- `i18n/$LANG_CODE/docusaurus-theme-classic/navbar.json`: the translation of navbar.
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current.json`: the label of category on sidebar.
-- `i18n/$LANG_CODE/docusaurus-plugin-content-docs/current/**`: the markdown files of documents.
+<ul>
+<li><code> i18n / $ LANG_CODE / code.json </ code>：インデックスページの翻訳とdocusaurusで使用されるテキスト。 </li>
+<li><code> i18n / $ LANG_CODE / docusaurus-theme-classic / footer.json </ code>：フッターの翻訳。 </li>
+<li><code> i18n / $ LANG_CODE / docusaurus-theme-classic / navbar.json </ code>：navbarの翻訳。 </li>
+<li><code> i18n / $ LANG_CODE / docusaurus-plugin-content-docs / current.json </ code>：サイドバーのカテゴリのラベル。 </li>
+<li><code> i18n / $ LANG_CODE / docusaurus-plugin-content-docs / current / ** </ code>：ドキュメントのマークダウンファイル。 </li>
+</ul>
 
-**Preview the translation**
+<p spaces-before="0"><strong x-id="1">翻訳をプレビューする</strong></p>
 
-```bash
-yarn run start --locale $LANG_CODE
-```
+<pre><code class="bash">ヤーンランスタート--locale $ LANG_CODE 
+`</pre>
 
 
 

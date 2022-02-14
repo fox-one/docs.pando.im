@@ -1,10 +1,10 @@
 ---
-title: What's the difference between Lake and 4swap
-date: 2021-08-15 22:33:07
+title: Lakeと4swapの違いは何ですか
+date: 2021年08月15日　22時33分07秒
 ---
 
-4swap provide a the foundational protocols for both Pando Lake and 4swap, which has a mechanism named "Broker" that users interact with the protocol.
+4swapは、Pando Lakeと4swapの両方の基本的なプロトコルを提供します。これには、ユーザーがプロトコルと対話する「ブローカー」という名前のメカニズムがあります。
 
-- **Pando Lake** - Pando Lake has own broker to deal with the transactions sent to it to serve its users because it only allow for selected pools that have strong community base and proven credentials. In the future, Pando Lake has a plan to provide advanced financial products based on 4swap and other Pando series products.
-- **4swap** - 4swap is totally driven by the community, anyone can join the community and send request to [list new pools](../tutorials/listing).
+- ** Pando Lake </ strong> -Pando Lakeは、強力なコミュニティベースと実績のある資格を持つ選択されたプールのみを許可するため、ユーザーにサービスを提供するために送信されたトランザクションを処理する独自のブローカーを持っています。 今後、パンドレイクでは、4swapなどのパンドシリーズ商品をベースにした先進的な金融商品を提供する予定です。</li>
+- ** 4swap </ strong> -4swapは完全にコミュニティによって推進されており、誰でもコミュニティに参加して、<ahref = "../ tutorials / listing">新しいプールを一覧表示する<ahref = "../ tutorials / listing">リクエストを送信できます。 / a>。</li> </ul>
 

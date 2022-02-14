@@ -1,15 +1,15 @@
 ---
-title: Read Market
-date: 2021-09-30 23:18:01
+title: 市場を読む
+date: 2021年9月30日23時18分01秒
 ---
 
-import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@site/src/components/api";
+輸入 { APIMetaPanel、 APIRequest、 APIEndpoint、 APIParams、 APIPayload、 } from "@ site / src / components / api";
 
-## Read Global Statistics
+## グローバル統計を読む
 
-### GET /states/markets
+### 取得 /states/市場
 
-This API will respond historical market statistics
+このAPIは過去の市場統計に対応します
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/?dur=:dur" />
 
@@ -17,30 +17,30 @@ This API will respond historical market statistics
 
 <APIParams p-dur="The duration. for example, 4320h means latest 180 days"/>
 
-<APIRequest title="Read market statistics" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
+<APIRequest title="市場統計を読む " method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/?dur=4320h' />
 
 ```json title="Response"
-{
-  "ts": 1627697766503,
-  "data": [
-    {
-      "ts": 1617408000,
-      "date": "2021-04-03T00:00:00Z",
-      // liquidity in US dollar
-      "value": "88919122.02992768",
-      // liquidity in US dollar
-      "volume": "10727320.64681277"
-    },
+{{
+   "ts"：1627697766503、
+   "データ"： [
+     {{
+       "ts"：1617408000、
+       "日付"： "2021-04-03T00：00：00Z"、
+       //米ドルでの流動性
+       "値"： "88919122.02992768"、
+       //米ドルでの流動性
+       「ボリューム」：「10727320.64681277」
+     }、
     ...
   ]
 }
 ```
 
-## Read Pair Statistics
+## ペア統計を読む
 
-### GET /states/markets/:base/:quote
+### 取得 /states/市場/:基/:見積もり
 
-This API will respond historical market statistics specified by base and quote asset.
+このAPIは、ベースおよび見積もり資産によって指定された過去の市場統計に応答します。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/?dur=:dur" />
 
@@ -48,30 +48,30 @@ This API will respond historical market statistics specified by base and quote a
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
+<APIRequest title=" ETH-BTCの市場統計を読む " method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa?dur=4320h' />
 
 ```json title="Response"
-{
-  "ts": 1627697766503,
-  "data": [
-    {
-      "ts": 1617408000,
-      "date": "2021-04-03T00:00:00Z",
-      // liquidity in US dollar
-      "value": "88919122.02992768",
-      // liquidity in US dollar
-      "volume": "10727320.64681277"
-    },
+{{
+   "ts"：1627697766503、
+   "データ"： [
+     {{
+       "ts"：1617408000、
+       "日付"： "2021-04-03T00：00：00Z"、
+       //米ドルでの流動性
+       "値"： "88919122.02992768"、
+       //米ドルでの流動性
+       「ボリューム」：「10727320.64681277」
+     }、
     ...
   ]
 }
 ```
 
-## Read Candlestick Data
+## ローソク足データを読む
 
-### GET /states/markets/:base/:quote/kline/v2?dur=:dur
+### 取得 /states/市場/:基/:見積もり/クライン/v2?dur=:dur
 
-This API will respond the candlestick data specified by base and quote asset.
+このAPIは、ベースアセットとクォートアセットで指定されたローソク足データに応答します。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/stats/markets/:base/:quote/kline/v2?dur=:dur" />
 
@@ -79,20 +79,19 @@ This API will respond the candlestick data specified by base and quote asset.
 
 <APIParams p-base="The base asset id" p-base-required="{true}" p-quote="The quote asset id" p-quote-required="{true}" p-dur="The duration. for example, 4320h means latest 180 days" />
 
-<APIRequest title="Read market statistics of ETH-BTC" method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
+<APIRequest title="ETH-BTCの市場統計を読む " method="GET" isPublic base="https://api.4swap.org/api" url='/stats/markets/43d61dcd-e413-450d-80b8-101d5e903357/c6d0c728-2624-429b-8e0d-d9d19b6592fa/kline/v2?dur=4320h' />
 
 ```json title="Response"
-{
-  "ts": 1627697766503,
-  "data": [
-    [
-      // timestamp
-      1612148400,
-      // price of base / quote
-      "0.039304863681",
-      // price of quote / base
-      "25.442131511901"
-    ]
+"ts"：1627697766503、
+   "データ"： [
+     [
+       //タイムスタンプ
+       1612148400、
+       //ベースの価格/見積もり
+       「0.039304863681」、
+       //見積もり/ベースの価格
+       「25.442131511901」
+     ]
     ...
   ]
 }

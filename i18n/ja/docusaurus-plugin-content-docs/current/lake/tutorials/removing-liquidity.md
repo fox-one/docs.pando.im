@@ -1,24 +1,24 @@
 ---
-title: Removing liquidity
-date: 2021-08-15 22:33:07
+title: 流動性を削除する
+date: 2021年08月15日　22時33分07秒
 ---
 
-Entry 1: Pools page - click on the specific pool - Pool page "-"
+エントリ1：プールページ-特定のプールをクリックします-プールページ「-」
 
 ![](../assets/remove-liquidity-p1.png)
 
-Entry 2: If you are already on the Swap page, find "remove Liquidity" in the Assets pool section
+エントリ2：すでに[スワップ] ページを表示している場合は、[資産プール] セクションで[流動性の削除] を見つけます。
 
 ![](../assets/remove-liquidity-p2.png)
 
-Entry 3: If you have previously provided liquidity, you can find the pool on the Me page. Click on the pool and you will see "-"
+エントリー3：以前に流動性を提供したことがある場合は、Meページでプールを見つけることができます。 プールをクリックすると「-」が表示されます。
 
 ![](../assets/remove-liquidity-p3.png)
 
 ````mdx-code-block
-:::tip
+:::ヒント
 
-There is no handling fee for remove liquidity.
+流動性の除去には手数料はかかりません。
 
 :::
 ````

@@ -1,62 +1,65 @@
 ---
-title: Listing assets and adding pools
-date: 2021-08-15 22:33:07
+title: 資産一覧表示と保管先の追加
+date: 2021年08月15日　22時33分07秒
 ---
 
-import { Improvement, } from "@site/src/components/admonitions";
+輸入 { 改善、 } from "@ site / src / components / admonitions";
 
 <Improvement />
 
-**[Pando Lake](https://lake.pando.im)** only allows for selected pools that have proven credentials. It doesn't accept new pool from the public.
+** <ahref = "https://lake.pando.im">パンドレイク</a> </ strong>では、証明された資格情報を持つ選択されたプールのみが許可されます。  パブリックからの新しいプールは受け入れません。 </p>
 
-**[4swap](https://4swap.org)** is a community-driven project that is currently allowing for any pool to be added.
+** [ 4swap ](https://4swap.org) </ strong>はコミュニティ主導のプロジェクトであり、現在、任意のプールを追加できます。 </p>
 
-## Add asset information to Mixin Network
+## Mixinネットワークに資産情報を追加する
 
-Visit Mixin's [asset-profile](https://github.com/MixinNetwork/asset-profile) page, follow the instructions at `README.md` to Mixin Network.
+Mixinの<ahref = "https://github.com/MixinNetwork/asset-profile"> Asset-profile </a>ページにアクセスし、` README.md </ code>の指示に従ってMixinNetworkにアクセスします。 </p>
 
-For example, if you have an ERC-20 token named "RUM", you can add it to Mixin Network:
+<p spaces-before="0">たとえば、「RUM」という名前のERC-20トークンがある場合は、それをMixinNetworkに追加できます。 </p>
 
-1. an icon file named "icon.png", it should be 520px * 520px.
-2. a json file named "index.json", which should be a valid json file and contain the following information:
+<ol start="1">
+<li>「icon.png」という名前のアイコンファイル。520px* 520pxである必要があります。 </li>
+<li>「index.json」という名前のjsonファイル。これは有効なjsonファイルであり、次の情報が含まれている必要があります。 </li>
+</ol>
 
-```json
-{
-  // the asset id of RUM in Mixin Network
-  "asset_id": "4f2ec12c-22f4-3a9e-b757-c84b6415ea8f",
-  // RUM is a ERC-20 token, the chain id is ETH's asset id
-  "chain_id": "43d61dcd-e413-450d-80b8-101d5e903357",
-  // RUM is not listed on CoinMarketCap, so we use the empty string
-  "cmc_id": ""
-}
-```
+<pre><code class="json">{{
+   // MixinNetworkのRUMのアセットID
+   "asset_id"： "4f2ec12c-22f4-3a9e-b757-c84b6415ea8f"、
+   // RUMはERC-20トークンであり、チェーンIDはETHのアセットIDです
+   "chain_id"： "43d61dcd-e413-450d-80b8-101d5e903357"、
+   // RUMはCoinMarketCapにリストされていないため、空の文字列を使用します
+   "cmc_id"： ""
+} 
+`</pre>
 
-The commit of the above example is [here](https://github.com/MixinNetwork/asset-profile/commit/437d378f899c5837598bdb8c4e9c18ae8f21ad27).
+上記の例のコミットは、<ahref = "https://github.com/MixinNetwork/asset-profile/commit/437d378f899c5837598bdb8c4e9c18ae8f21ad27">ここ</a>です。
 
 ````mdx-code-block
-:::info
-Please create a pull request when you have finished. It usually takes about 1~2 days for Mixin Network to process your pull request.
+：：：情報
+終了したら、プルリクエストを作成してください。  Mixin Networkがプルリクエストを処理するのに通常約1〜2日かかります。 
 :::
 ````
 
-## Create a pool at 4swap
+## 4swapでプールを作成します
 
-You need to head to [Mixin Messenger](https://mixin.one/messenger) or [Fennec](https://pando.im/fennec/) to create a pool.
+プールを作成するには、
 
-1. Make sure the wallet balance of the 2 assets is above the minimum amount of 0.00000001. If not, please deposit some to your wallet.
-2. Make sure you have above the minimum amount of 0.02 ETH in your wallet. If not, please deposit some into your wallet or swap for it at [4swap](https://app.4swap.org).
-3. Visit [this page](https://app.4swap.org/#/me), tap "connect" to connect with your wallet.
+ Mixin Messenger </ 0>または Fennec </ 1>に向かう必要があります。</p> 
+
+1. 2つの資産のウォレット残高が最小額の0.00000001を超えていることを確認してください。 そうでない場合は、ウォレットに入金してください。
+2. ウォレットの最低限の0.02 ETHを超えていることを確認してください そうでない場合は、ウォレットに入金するか、 [4swap](https://app.4swap.org) で交換してください。
+3. <ahref = "https://app.4swap.org/#/me">このページ</a>にアクセスし、[接続]をタップしてウォレットに接続します。 
 
 ![](../assets/lake-get-started-p2.png)
 
-4. Visit [this page](https://app.4swap.org/#/liquidity/create), choose two assets you want to add to the pool and tap `Pay` to create a pool.
+4. <ahref = "https://app.4swap.org/#/liquidity/create">このページ</a>にアクセスし、プールに追加するアセットを2つ選択して、[` Pay </ code>]をタップします プールを作成します。 </li>
+</ol>
 
-We will comprehensively consider whether to list the currency based on coinmarketcap ranking, transaction volume, and exchange support.
+<p spaces-before="0">コインマーケットキャップのランキングや取引量、取引所のサポート状況などから、上場するかどうかを総合的に検討します。</p>
 
-You can also contact 37160854 at mixin messenger to inquire about the listing of leaf/rings.
+<p spaces-before="0">リーフ/リングのリストについては、mixinメッセンジャーの37160854に問い合わせることもできます。 </p>
 
-````mdx-code-block
-:::info
-It usually takes 1~3 days to wait for the pool to be created and approved by [MTG nodes](../key-concepts/mtg). If the request is not processed in 3 days, you will receive a refund.
+<pre><code class="mdx-code-block">:::情報
+プールが作成され、[MTGノード]（../ key-concepts / mtg）によって承認されるまで、通常1〜3日かかります。 リクエストが3日以内に処理されない場合は、払い戻しが行われます。
 :::
-````
+`</pre>
