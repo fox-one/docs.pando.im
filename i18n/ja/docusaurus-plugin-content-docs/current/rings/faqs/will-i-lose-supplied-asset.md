@@ -1,15 +1,15 @@
 ---
-title: 供給された資産の損失はありますか?
-date: 2021年9月04日12時33分07秒
+title: Will there be any loss of my supplied assets?
+date: 2021-09-04 12:33:07
 ---
 
-### ローンがない場合:
-一般的に、答えはノーです。 あなたは、あなたが提供した資産の利子を獲得し、あなたが支払う必要のある手数料はありません。
+### If you don't have any loans:
+Generally, the answer is NO. You gain interest of the assets you supplied and there is no fee you need to pay.
 
-ただし、非常に極端な状況では、市場で借りることができる資産はすべてユーザーの供給によるものであるため、不良債権(つまり、返済される可能性が低いローン) があると、返済できない可能性があります。 提供された資産の全額。 ただし、パンドリングでは、貸倒れの発生を防ぐためにボット（清算を実行するアルゴリズム）を清算することで清算がリアルタイムで監視されるため、<strongx-id = "1">発生する可能性は低いです</ strong>。
+In the very extreme situation though, as assets available to borrow on the market all come from users' supply, if there are bad debts (meaning a loan that is not likely to be paid), there is a chance that you cannot get back the full amount of your supplied assets. However, **it is unlikely to happen** in Pando Rings as liquidation is monitored real-time by liquidating bots (algorithms to execute liquidation) to avoid bad debts from happening.
 
 
-### ローンをお持ちの場合:
-借りた資産の価値が<ahref = "../ key-concepts / glossary.md">借り入れ制限</a>を超えた場合は、<ahref = "../ key-concepts / liquidationと入力します。 .md ">清算</a>、担保（つまり、担保資産）の一部または全部を失う。  供給された総資産のうち、約束のある資産は清算の対象となりますが、約束のない資産はそのまま残ります。
+### If you do have loans:
+If the value of your borrowed assets has exceeded your [borrow limit](../key-concepts/glossary.md), you will enter [liquidation](../key-concepts/liquidation.md), losing part or all of your collateral (ie. pledged assets). Of your total supplied assets, the pledged assets are subject to liquidation while your unpledged assets will stay intact.
 
-<ahref = "../ key-concepts / loan-risk-indicator.md">ローンリスクインジケーター</a>に細心の注意を払い、ローンリスクを監視し、担保を安全に保つことが重要です。 清算。
+It is important tht you pay close attention to the [loan risk indicator](../key-concepts/loan-risk-indicator.md) to monitor your loan risk, and keep your collateral safe from liquidation.

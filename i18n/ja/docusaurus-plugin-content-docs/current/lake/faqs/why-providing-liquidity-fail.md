@@ -1,19 +1,19 @@
 ---
-title: なぜ流動性の提供に失敗したのですか？
-date: 2021年08月15日　22時33分07秒
+title: Why did I fail in providing liquidity?
+date: 2021-08-15 22:33:07
 ---
 
-輸入 { 改善、 } from "@ site / src / components / admonitions";
+import { Improvement, } from "@site/src/components/admonitions";
 
 <Improvement />
 
 
-流動性注入の一般的な失敗は、滑りを超えることによって引き起こされます。 最新の取引ペアデータを取得するには、ページを更新してください。
+The common failure of liquidity injection is caused by exceeding slippage. Please refresh the page to get the latest trading pair data.
 
-流動性を注入する場合、非常に重要な原則があります。注入動作によって現在のトレーディングペアの価格が変更されてはなりません。
+When injecting liquidity, there is a very important principle: the injection behavior should not change the current trading pair price.
 
-したがって、流動性を注入する際のスリップの概念もあります。 流動性を注入する場合、流動性プール内の資産の割合は、他者の取引行動によって変化します。より一般的な意味では、流動性プールの価格は取引によって発生します。 大きな変化です。 注入された資産と現在の流動性プール比率には違いがあります。 差異が一定の比率を超えると、流動性注入は失敗します。 つまり、スリップページを超えています。
+Therefore, there is also the concept of slippage when injecting liquidity. When injecting liquidity, the proportion of assets in the liquidity pool is changed due to the trading behavior of others, or in a more general sense, the price of the liquidity pool occurs due to the transaction. Big change. There is a difference between the injected assets and the current liquidity pool ratio. If the difference exceeds a certain ratio, the liquidity injection will fail. That is, slippage is exceeded.
 
-注入が失敗する状況もあります。つまり、注入された2つの資産が小さすぎて、最小量のLPシェアを取得できません。 また、流動性の注入に失敗することになります。
+There is also a situation where the injection fails, that is, the two assets injected are too small to obtain the minimum amount of LP shares. It will also lead to failure to inject liquidity.
 
-トランザクションで他の状況が発生した場合、トランザクションが失敗する原因となります。 私たちのコミュニティ マネージャー-Chris (ID: 37160854) またはPando Lakeofficial コミュニティ (ID: 7000103578) で質問をしてください。
+If you encounter other situations in the transaction that cause the transaction to fail, please contact our community manager-Chris (ID: 37160854) or ask questions in the Pando Lakeofficial community (ID: 7000103578)

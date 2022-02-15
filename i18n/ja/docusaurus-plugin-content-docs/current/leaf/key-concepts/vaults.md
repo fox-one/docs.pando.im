@@ -1,24 +1,24 @@
 ---
-title: 保管庫
-date: 2021年08月13日　12時33分07秒
+title: Vaults
+date: 2021-08-13 12:33:07
 ---
 
-### 金庫とは
+### What is a Vault
 
-保管庫は、所有者が担保を預け入れ、安定した暗号通貨pUSDを生成する場所です。
+A Vault is where the owner deposit collateral and generate stable cyptocurrency pUSD.
 
-### 保管庫の種類
-保管庫は、pUSDの生成に使用される担保の種類によって分類されます。 ユーザーは、担保に対してpUSDを生成することによってpUSDを作成し、生成されたpUSD残高を返済するときにpUSDを破棄します。
+### Vault Types
+Vaults are categorized by the type of collateral used to generated pUSD. Users create pUSD by generating it against their collateral and destroy pUSD when repaying their generated pUSD balance.
 
-### 担保化
-ヴォールトは、過剰担保が必要であり、ポジションの清算を回避するためにヴォールトの所有者が維持する必要のある清算比率を持っている必要があります。
+### Collateralization
+Vaults are required to be overcollateralized and have a Liquidation Ratio that Vault owners need to uphold to avoid the Liquidation of their positions.
 
-### 債務上限
-Vault固有の債務上限は、各Vaultタイプで生成できるpUSDの最大量です。
+### Debt Ceiling
+The Vault-specific Debt Ceiling is the maximum amount of pUSD that can be generated of each Vault type.
 
-Global Debt Ceilingは、システム全体で生成できるpUSDの量を制限します。
+The Global Debt Ceiling limits the amount of pUSD that can be generated across the entire system.
 
-### 安定料金
-安定料金は、Vault所有者が生成したpUSD残高に継続的に追加される変動金利です。 これは、ローンに対して支払う利息（生成されたpUSD）として理解できます。 
+### Stability Fees
+The Stability Fee is a variable-rate fee continuously added to a Vault owner’s generated pUSD balance. It can be understood as the interests you pay for the loan (generated pUSD). 
 
 

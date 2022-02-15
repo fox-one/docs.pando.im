@@ -1,32 +1,32 @@
 ---
-title: 流動性の提供
-date: 2021年08月15日　22時33分07秒
+title: Providing liquidity
+date: 2021-08-15 22:33:07
 ---
 
-流動性を追加する方法は3つあります。
+There are three ways to add liquidity.
 
-エントリ1：プールページ-特定のプールをクリックします-プールページ「+」
+Entry 1: Pools page - click on the specific pool - Pool page "+"
 
 ![](../assets/add-liquidity-p1.png)
 
-エントリ2：すでに[スワップ]ページを表示している場合は、[資産プール]セクションで[流動性の追加]を見つけます。
+Entry 2: If you are already on the Swap page, find "Add Liquidity" in the Assets pool section
 
 ![](../assets/add-liquidity-p2.png)
 
-エントリー3：以前に流動性を提供したことがある場合は、Meページでプールを見つけることができます。  プールをクリックすると「+」が表示されます
+Entry 3: If you have previously provided liquidity, you can find the pool on the Me page. Click on the pool and you will see "+'
 
 ![](../assets/add-liquidity-p3.png)
 
-流動性を追加すると、ダイアログウィンドウに対応するlpトークンが表示されます。
+After adding liquidity, you will receive the corresponding lp tken in the dialog window.
 
 ![](../assets/add-liquidity-p4.png)
 
 ````mdx-code-block
-:::ヒント
+:::tip
 
-1. 流動性を正常に提供し、LPトークンを取得するには、2種類の暗号通貨を同時に追加する必要があります。 1つだけ追加してページを終了する場合、または追加後にLPトークンを取得しない場合でも、心配しないでください。支払った通貨は10分以内に返金されます。
+1. Two type of crypto currencies must be added at the same time to provide liquidity successfully and obtain LP tokens. If you only add one then exit the page, or you don't get an LP token after the addition, don't worry, the currency you paid will be refunded in ten minutes.
 
-2. 流動性を追加するための手数料はありません。
+2. There is no handling fee for add liquidity.
 
 :::
 ````

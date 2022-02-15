@@ -1,20 +1,20 @@
 ---
-title: Mixinは信頼できるグループ
+title: Mixin Trusted Group
 ---
 
-## Mixinネットワーク
+## Mixin Network
 
-Mixin Networkは、aBFTを備えたDAGに基づくTEE（Trusted Execution Environment）によって駆動されるパブリックブロックチェーンです。 優れた理論を持っているが、ブロックチェーントランザクションソリューションの実際の実装がほとんどない他のプロジェクトとは異なり、Mixin Networkは、より安全でプライベートな0の料金で、開発者やユーザーに優しいトランザクションソリューションを超高速で提供します。
+Mixin Network is a public blockchain driven by TEE (Trusted Execution Environment) based on the DAG with aBFT. Unlike other projects which have great theories but hardly any actual implementations of blockchain transaction solution, Mixin Network provides a more secure, private, 0 fees, developer-friendly and user-friendly transaction solution with lightning speed.
 
-## Mixinは信頼できるグループ
+## Mixin Trusted Group
 
-[Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg) MixinNetworkのスマートコンタクトの代替手段です。
+[Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg) is an alternative to smart contacts on Mixin Network.
 
 ![](./assets/overview-architecture.svg)
 
-基本的に、MTGはマルチシグネチャ・カストディアン・コンセンサスのソリューションです。 パンドの「信頼できるグループ」としていくつかのチームが選ばれ、配置され、「ノード」になります。 特定の管理アクションを実行するには、ノード間でコンセンサスに達する必要があります。 その結果、安定したサービスと資産の安全性が保証されます。
+Basically, MTG is a Multi-signature custodian consensus solution. Several teams will be selected and arranged as the “Trusted Group” in Pando, becoming the “Nodes”. Concensus has to be reached among the nodes to perform certain administrative actions. As a result, stable services and asset safety are guaranteed.
 
-たとえば、Mがノードの数を表すM / Nマルチシググループがあり、グループがマルチシグアドレス内のいくつかの資産を管理しているとします。 ノードの1つが一部のアセットを転送する必要がある場合、アクションを実行するために、ノードは他のノードから少なくともN個の署名を収集する必要があります。
+For example, let’s say there is a M/N multi-sig group where M represents the number of nodes, and the group manages some assets in the multi-sig address. When one of the nodes needs to transfer some assets out, it needs to collect at least N signatures from others to perform the action.
 
-MTGはフレームワークです。 パンドは、MixinNetworkのフレームワークを使用して設計された一連のアプリケーションです。
+MTG is the framework. Pando is a series of application designed using the framework on Mixin Network.
 

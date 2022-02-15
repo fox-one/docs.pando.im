@@ -1,33 +1,33 @@
 ---
-title: はじめに
+title: Introducation
 ---
 
 ## Pando Lake / 4swap
 
-**開発ガイド**
+**Develop Guide**
 
-  - [ SDKを使用した取引](/developer/lake/guide/using-sdk)：golang sdkを使用して、4swap / Lakeで暗号を交換します。
-  - <ahref = "/ developer / lake / guide / invoke-wallets">ウォレットを呼び出す</a>：支払いダイアログを呼び出して、MixinNetwork互換のウォレットで転送を完了します。
+  - [Using SDK to Trade](/developer/lake/guide/using-sdk): use a golang sdk to swap crypto at 4swap/Lake.
+  - [Invoke Wallets](/developer/lake/guide/invoke-wallets): call the payment dialog up to complete a transfer with Mixin Network compatible wallets.
 
-**仕様**
+**Specifications**
 
-- [ APIリファレンス](/developer/lake/apis/overview)：RESTfulAPIリファレンス。
-- [アクションプロトコル](/developer/lake/action-protocol)：暗号を交換し、流動性を追加および削除するためのメモベースのJSONプロトコル。
-- [ Lakeと4swapの比較](/developer/lake/lake-and-4swap)：Lakeと4swapの比較。
+- [API Reference](/developer/lake/apis/overview): RESTful API reference.
+- [Action Protocol](/developer/lake/action-protocol): a memo based JSON protocol to swap crypto, add and remove liquidity.
+- [Compare Lake and 4swap](/developer/lake/lake-and-4swap): comparision of Lake and 4swap.
 
-## パンドリーフ
+## Pando Leaf
 
-**仕様**
+**Specifications**
 
-- [ APIリファレンス](/developer/leaf/apis/overview)：RESTfulAPIリファレンス。
-
-
-## パンドリング
-
-- [ APIリファレンス](/developer/rings/apis)：RESTfulAPIリファレンス。
-- [ SDKガイド](/developer/rings/guide)：PandoRingsエンジンに接続するためのより簡単で高速な方法。
+- [API Reference](/developer/leaf/apis/overview): RESTful API reference.
 
 
-## リソース
+## Pando Rings
 
-- [例](/developer/resources/examples)
+- [API Reference](/developer/rings/apis): RESTful API reference.
+- [SDK Guide](/developer/rings/guide): An easier and faster way to Connect to Pando Rings engine.
+
+
+## Resources
+
+- [Examples](/developer/resources/examples)

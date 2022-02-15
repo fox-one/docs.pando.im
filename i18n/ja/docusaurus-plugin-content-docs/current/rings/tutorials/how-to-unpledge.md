@@ -1,18 +1,18 @@
 ---
-title: 担保を減らすために差し入れを解除する
-date: 2021年9月04日12時33分07秒
+title: Unpledging to reduce collaterals
+date: 2021-09-04 12:33:07
 ---
 
-ロックされたrTokenを使用する必要がある場合は、誓約を解除することをお勧めします。 保留を解除すると、rTokenを他の資産と同じように誰にでも自由に転送できるようになります。または、rTokenから原資産を取り戻し、撤回することもできます。
+If you need to use the locked rTokens, you may want to unpledge. After unpledging, you will be able to freely transfer the rTokens to anyone as any other assets or you can go on to withdraw, getting back the underlying asset from your rTokens.
 
-誓約を解除するには、[Me] ページの[Supply] セクションにある提供されたアセットカードの[Unpledge] をクリックします。
+To unpledge, click on "Unpledge" of the supplied asset card of the Supply section on the Me page.
 
-**Pledging** は、誓約した特定の資産の金額を示します。 **Total Pledge** 誓約したすべての資産の合計額です。
+**Pledging** shows the amount of a specific asset you have pledged. **Total Pledge** is the total amount of all the assets you have pledged.
 
 ![](../assets/unpledge1.jpg)
 
 ````mdx-code-block
-:::情報
-この操作を支援するには、[パンドシード]（https://docs.pando.im/docs/leaf/key-concepts/pando-seed）が必要になる場合があります。
+:::info
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 :::
 ````

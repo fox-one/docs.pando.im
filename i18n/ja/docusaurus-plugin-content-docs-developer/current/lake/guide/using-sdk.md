@@ -1,6 +1,6 @@
 ---
 title: SDKを利用した取引
-date: 2021年7月22日22時33分7秒
+date: 2021-07-22 22:33:07
 ---
 
 デフォルトで、Pando Lake は 4swap を流動性プロバイダーとして使用しています。 そのためPando Lakeでは4swapのSDKを利用して資産を交換するのが簡単です。
@@ -8,12 +8,12 @@ date: 2021年7月22日22時33分7秒
 ## 4swap SDK をプロジェクトにインポートする
 
 ```go
-輸入 （
-     fswap "github.com/fox-one/4swap-sdk-go"
-     mtg "github.com/fox-one/4swap-sdk-go/mtg"
-     「github.com/fox-one/mixin-sdk-go」
-     "github.com/shopspring/decimal"
-）。
+import (
+    fswap "github.com/fox-one/4swap-sdk-go"
+    mtg "github.com/fox-one/4swap-sdk-go/mtg"
+    "github.com/fox-one/mixin-sdk-go"
+    "github.com/shopspring/decimal"
+)
 ```
 
 ## マルチシググループ情報を取得する
@@ -23,17 +23,19 @@ Pando Lakeで暗号資産の交換や流動性の追加、削除などの操作�
 各マルチシグの参加者はMTGのメンバーでもあります。 なので最初に一度目を通し、後の利用に備え保存しておいてください。
 
 ```go
-// 4swapのMTGAPIエンドポイントを使用します
-fswap.UseEndpoint（fswap.MtgEndpoint）
+ctx := context.TODO()
 
-// mtgグループを読み取ります
-//グループ情報は頻繁に変更されます
-//後で使用するために保存することをお勧めします
-グループ、エラー：= fswap.ReadGroup（ctx）
-err！= nil {の場合
-     エラーを返す
+// use the 4swap's MTG api endpoint
+fswap.UseEndpoint(fswap.MtgEndpoint)
+
+// read the mtg group
+// the group information would change frequently
+// it's recommended to save it for later use
+group, err := fswap.ReadGroup(ctx)
+if err != nil {
+    return err
 }
-..。 
+...
 ```
 
 ## 取引可能なペアをすべて取得する
@@ -41,11 +43,11 @@ err！= nil {の場合
 サポートされている全アセットペアの取得は簡単に行えます:
 
 ```go
-ペア、エラー：= fswap.ListPairs（ctx）
-err！= nil {の場合
-     エラーを返す
+pairs, err := fswap.ListPairs(ctx)
+if err != nil {
+    return err
 }
-..。 
+...
 ```
 
 ## 取引に最適なルートを計算する
@@ -57,31 +59,31 @@ err！= nil {の場合
 ルートの計算は簡単です。 流動生に基づきペアのソートを行い、`Route`か`ReverseRoute`メソッドを呼び出すと、計算結果を含んだ`order`オブジェクトが返されます。
 
 ```go
-//最初に並べ替え
-sort.Slice（pairs、func（i、j int）bool {
-     aLiquidity：= pair [i] .BaseValue.Add（pairs [i] .QuoteValue）
-     bLiquidity：= pair [j] .BaseValue.Add（pairs [j] .QuoteValue）
-     aLiquidity.GreaterThan（bLiquidity）を返します
-}）
+// sort first
+sort.Slice(pairs, func(i, j int) bool {
+    aLiquidity := pairs[i].BaseValue.Add(pairs[i].QuoteValue)
+    bLiquidity := pairs[j].BaseValue.Add(pairs[j].QuoteValue)
+    return aLiquidity.GreaterThan(bLiquidity)
+})
 
-//ルートを計算します
-// InputAssetID-支払いたいアセットのID
-// OutputAssetID-取引するアセットのID
-// InputAmount-ルートを計算する量（例：1000）
-preOrder、err：= fswap.Route（pairs、InputAssetID、OutputAssetID、InputAmount）
-err！= nil {の場合
-     エラーを返す
+// calculate the route
+// InputAssetID - the id of the asset you want to paid
+// OutputAssetID - the id of the asset you trade for
+// InputAmount - the amount to calucate the route, for example, 1000
+preOrder, err := fswap.Route(pairs, InputAssetID, OutputAssetID, InputAmount)
+if err != nil {
+    return err
 }
 
-// asset_idの配列であるOrder.RouteAssetsから最適なルートを読み取ることができます
-log.Printf（ "ルート：％v"、preOrder.RouteAssets）
-log.Printf（ "価格：％v"、preOrder.FillAmount.Div（InputAmount））
-..。 
+// you can read the best route from Order.RouteAssets, which is an array of asset_id
+log.Printf("Route: %v", preOrder.RouteAssets)
+log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
+...
 ```
 
 ````mdx-code-block
-：：：情報
-4swap SDKを使用しない場合は、独自の最適ルートアルゴリズムを実装できます（[golangバージョン]（https://github.com/fox-one/4swap-sdk-go/blob/master/route.go）、 [javascriptバージョン]（https://github.com/fox-one/4swap-web/blob/develop/src/utils/pair/route.ts））。 
+:::info
+If you don't use 4swap SDK, you can implement your own best route algorithm ([golang version](https://github.com/fox-one/4swap-sdk-go/blob/master/route.go), [javascript version](https://github.com/fox-one/4swap-web/blob/develop/src/utils/pair/route.ts)).
 :::
 ````
 
@@ -106,27 +108,27 @@ log.Printf（ "価格：％v"、preOrder.FillAmount.Div（InputAmount））
 4swap SDK を使用している場合は、メソッド `mtg.SwapAction` を使用してプロセスを簡素化することもできます。
 
 ```go
-//注文を追跡するID
-followID、_：= uuid.NewV4（）
+// the ID to trace the orders
+followID, _ := uuid.NewV4()
 
-//スワップアクションを作成し、パラメータを指定します
-アクション：= mtg.SwapAction（
-     レシーバーID、
-     followID.String（）、
-     OutputAssetID、
-     preOrder.Routes、
-     //取得するアセットの最小量。 
-    //この値をpreOrder.FillAmount未満の数値に変更したい場合があります
-     preOrder.FillAmount.Div（decimal.NewFromFloat（0.005））、
-）。
+// build a swap action, specified the parameters
+action := mtg.SwapAction(
+    receiverID,
+    followID.String(),
+    OutputAssetID,
+    preOrder.Routes,
+    // the minimum amount of asset you will get.
+    // you may want to change this value to a number which less than preOrder.FillAmount
+    preOrder.FillAmount.Div(decimal.NewFromFloat(0.005)),
+)
 
-//メモを生成します
-メモ、エラー：= action.Encode（group.PublicKey）
-err！= nil {の場合
-     エラーを返す
+// generate the memo
+memo, err := action.Encode(group.PublicKey)
+if err != nil {
+    return err
 }
-log.Println（ "メモ"、メモ）
-..。 
+log.Println("memo", memo)
+...
 
 ```
 
@@ -139,19 +141,19 @@ log.Println（ "メモ"、メモ）
 トランザクションを作成し、それをカーネルノードに送信するために、[mixin-sdk-go](https://github.com/fox-one/mixin-sdk-go) クライアントを使用する必要があります。
 
 ```go
-// `OpponentMultisig`で指定されたマルチサインアドレスにトランザクションを送信します
-//OpponentMultisig.ReceiversはMTGグループのメンバーです
-tx、err：= client.Transaction（ctx、＆amp; mixin.TransferInput {
-     AssetID：payAssetID、
-     金額：decimal.RequireFromString（amount）、
-     TraceID：mixin.RandomTraceID（）、
-     メモ：メモ、
-     OpponentMultisig：struct {
-         レシーバー[]文字列 `json："レシーバー、omitempty "`
-         しきい値uint8`json： "threshold、omitempty" `
-     } {
-         受信者：group.Members、
-         しきい値：uint8（group.Threshold）、
-     }、
-}、* pin） 
+// send a transaction to a multi-sign address which specified by `OpponentMultisig`
+// the OpponentMultisig.Receivers are the MTG group members
+tx, err := client.Transaction(ctx, &mixin.TransferInput{
+    AssetID: payAssetID,
+    Amount:  decimal.RequireFromString(amount),
+    TraceID: mixin.RandomTraceID(),
+    Memo:    memo,
+    OpponentMultisig: struct {
+        Receivers []string `json:"receivers,omitempty"`
+        Threshold uint8    `json:"threshold,omitempty"`
+    }{
+        Receivers: group.Members,
+        Threshold: uint8(group.Threshold),
+    },
+}, *pin)
 ```

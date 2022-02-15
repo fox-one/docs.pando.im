@@ -1,346 +1,346 @@
 ---
-title: 技術設計
-date: 2021年7月12日23時33分7秒
+title: Technical Design
+date: 2021-07-12 23:33:07
 ---
 
-# パンドリーフデザインドキュメント
+# Pando Leaf Design Document
 
-## パンドと対話する
+## Interact with Pando
 
-パンドのすべての参加者は、トークンをマルチシグウォレットに転送することでインタラクションを完了します。 ノードワーカー<strongx-id = "1"> Syncer </ strong>は、支払いをミックスインマルチシグ出力として同期します。 別のワーカー<strongx-id = "1">受取人</ strong>がすべての出力を順番に処理します。
+All participants of Pando complete the interaction by transferring tokens to the multisig wallet. Node worker **Syncer** syncs the payments as mixin multisig outputs; another worker **Payee** processes all outputs in order.
 
-![パンドデザイン ](design/mtg_design.png)
+![Pando Design](design/mtg_design.png)
 
-### Mixinマルチシグ出力
+### Mixin Multisig Output
 
-**出力： **
+**Output:**
 
-| 領域     | 説明           |
-| ------ | ------------ |
-| 差出人    | ユーザーミックスインID |
-| 作成したAt | 支払い時間        |
-| 資産 ID  | 支払い資産ID      |
-| 金額     | 支払額          |
-| メモ:    | 追加メッセージ      |
+| field     | description      |
+| --------- | ---------------- |
+| Sender    | user mixin id    |
+| CreatedAt | payment time     |
+| AssetID   | payment asset id |
+| Amount    | payment amount   |
+| Memo      | extra message    |
 
-**出力メモ： **
+**Output Memo:**
 
-メモには<strongx-id = "1"> TransactionAction </ strong>情報が含まれています。詳細については<ahref = "https://github.com/fox-one/pando/blob/main/core/actionをご覧ください。 go "> DecodeTransactionAction </a>。
+Memo contain the **TransactionAction** information, see details in [DecodeTransactionAction](https://github.com/fox-one/pando/blob/main/core/action.go).
 
-メモはおそらくAESで暗号化されており、複合AESキー/ ivに使用されるed25519公開キーは最初の32バイトにあります。
+The memo is maybe AES-encrypted, an ed25519 public key used for compound AES key/iv will be in the first 32 bytes.
 
-### 取引アクション定義
+### TransactionAction Definition
 
-| 分野   | 説明                       | 種類               |
-| ---- | ------------------------ | ---------------- |
-| 従うID | このトランザクションのユーザー定義のトレースID | 誰でも自由に作れるユニークなID |
-| 体    | アクションタイプ＆amp; 関連するパラメータ  | バイト              |
+| field    | description                                | type  |
+| -------- | ------------------------------------------ | ----- |
+| FollowID | user defined trace id for this transaction | uuid  |
+| Body     | action type & relevant parameters          | bytes |
 
-## 労働者
+## Workers
 
-1. ** Syncer </ strong>は、mixin messenger api＆amp;によって手つかずのutxoを同期します。 更新された昇順で<strongx-id = "1">出力</ strong>としてWalletStoreに保存します。 </li>
-2 ** Payee </ strong>は、WalletStoreから手つかずのutxoを順番にプルし、メモを解析してアクションを取得してから処理します。  転送は、処理中に作成される場合があります。</li>
-3 <strongx-id = "1">割り当て者</ strong>は、十分な未使用のUTXOを選択し、保留中の転送に割り当てます。
-4 <strongx-id = "1">キャッシャー</ strong>は、WalletStoreから未処理の転送を順番にプルしてから、＆amp;をリクエストします。 マルチシグ転送に署名します。  十分な数の署名が収集された場合は、生のトランザクションを生成します。
-5 ** TxSender </ strong>は生のトランザクションをMixinネットワークにコミットします。 </li> </ol>
+1. **Syncer** sync unhanded utxo by mixin messenger api & store into WalletStore as **outputs** in updated asc order.
+2. **Payee** pull unhanded utxo from WalletStore in order and parse memo to get the action then handle it. Transfers may be created during handling.
+3. **Assigner** select enough unspent UTXO and assign to a pending transfer.
+4. **Cashier** pull unhandled transfers from WalletStore in order, then request & sign multisig transfer. If enough signatures collected, generate a raw transaction.
+5. **TxSender** commit raw transactions to Mixin Network.
 
-### シンカーワークフロー
+### Syncer Workflow
 
-![シンカーワークフロー ](design/pando-syncer.png)
+![Syncer Workflow](design/pando-syncer.png)
 
-### 受取人のワークフロー
+### Payee Workflow
 
-![受取人のワークフロー](design/pando-payee.png)
+![Payee Workflow](design/pando-payee.png)
 
-### アサイナ＆amp; キャッシャー＆amp; TxSenderワークフロー
+### Assigner & Cashier & TxSender Workflow
 
-![アサイナ＆amp; キャッシャーワークフロー ](design/pando-cashier.png)
+![Assigner & Cashier Workflow](design/pando-cashier.png)
 
-## 動作
+## Actions
 
-グループcat、flip、oracle、proposal、sys、vatでPandoがサポートするすべてのアクション。  詳細については、<ahref = "https://github.com/fox-one/pando/blob/main/core/action.go">コア/アクション</a>を参照してください。
+All actions supported by Pando with groups cat,flip,oracle,proposal,sys and vat. see [core/action](https://github.com/fox-one/pando/blob/main/core/action.go) for details.
 
-### システム-システム操作
+### Sys - system operations
 
-#### ＃1撤回
+#### #1 Withdraw
 
 > pkg/maker/sys/withdraw.go
 
-マルチシグウォレットから資産を撤回します。提案が必要です。
+withdraw any assets from the multisig wallet, proposal required.
 
-**パラメーター:**
+**Parameters:**
 
-| 名前 | 種類   | 説明           |
-| -- | ---- | ------------ |
-| 資産 | uuid | 資産IDを引き出す    |
-| 額  | uuid | 金額を撤回        |
-| 相手 | uuid | 受信者のミックスインID |
+| name     | type | description         |
+| -------- | ---- | ------------------- |
+| asset    | uuid | withdraw asset id   |
+| amount   | uuid | withdraw amount     |
+| opponent | uuid | receiver's mixin id |
 
-### 提案-ガバナンスシステム
+### Proposal - governance system
 
-#### ＃11作る
+#### #11 Make
 
 > pkg/maker/proposal/make.go
 
-新しい提案を作成する
+create a new proposal
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類  | 説明                                |
-| --- | --- | --------------------------------- |
-| データ | バイト | アクションタイプ＆amp; 渡された場合、パラメータが実行されます |
+| name | type  | description                                         |
+| ---- | ----- | --------------------------------------------------- |
+| data | bytes | action type & parameters will be executed if passed |
 
-#### #12 叫ぶ
+#### #12 Shout
 
-> pkg/作り手/提案 /叫ぶ .go
+> pkg/maker/proposal/shout.go
 
-ノード管理者にこの提案に投票するように要求します
+request node administrator to vote for this proposal
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明       |
-| --- | ---------------- | -------- |
-| 身分証 | 誰でも自由に作れるユニークなID | 提案トレースID |
+| name | type | description       |
+| ---- | ---- | ----------------- |
+| id   | uuid | proposal trace id |
 
-#### #13 投票
+#### #13 Vote
 
 > pkg/maker/proposal/vote.go
 
-提案に投票する、ノードのみ。 十分な票が集められると、添付のアクションがすべてのノードで自動的に実行されます。
+vote for a proposal, nodes only. If enough votes collected, the attached action will be executed on all nodes automatically.
 
-**パラメーター:**
+**Parameters:**
 
-| 名前  | 種類   | 説明       |
-| --- | ---- | -------- |
-| 身分証 | uuid | 提案トレースID |
+| name | type | description       |
+| ---- | ---- | ----------------- |
+| id   | uuid | proposal trace id |
 
-### 猫- 管理者担保
+### Cat - manager collaterals
 
-#### #21 作成
+#### #21 Create
 
 > pkg/maker/cat/create.go
 
-新しい担保タイプを作成します。提案が必要です。
+create a new collateral type, proposal required.
 
-**パラメーター:**
+**Parameters:**
 
-| 名前          | 種類               | 説明       |
-| ----------- | ---------------- | -------- |
-| 宝石          | 誰でも自由に作れるユニークなID | 担保トレースID |
-| ダイナミックARP検査 | 誰でも自由に作れるユニークなID | 債務資産ID   |
-| 名前          | 列                | 担保タイプ名   |
+| name | type   | description          |
+| ---- | ------ | -------------------- |
+| gem  | uuid   | collateral asset id  |
+| dai  | uuid   | debt asset id        |
+| name | string | collateral type name |
 
-#### #22 供給
+#### #22 Supply
 
 > pkg/maker/cat/supply.go
 
-この担保タイプの総債務上限を引き上げるために、daiトークンを提供します。 支払い資産IDは、債務資産IDと同じである必要があります。
+supply dai token to increase the total debt ceiling for this collateral type. Payment asset id must be equal to the debt asset id.
 
-**パラメーター:**
+**Parameters:**
 
-| 名前  | 種類   | 説明       |
-| --- | ---- | -------- |
-| 身分証 | uuid | 担保トレースID |
+| name | type | description         |
+| ---- | ---- | ------------------- |
+| id   | uuid | collateral trace id |
 
-#### #23 編集
+#### #23 Edit
 
 > pkg/maker/cat/edit.go
 
-担保の1つ以上の属性を変更します。提案が必要です。
+modify collateral's one or more attributes, proposal required.
 
-**パラメーター:**
+**Parameters:**
 
-| 名前  | 種類   | 説明       |
-| --- | ---- | -------- |
-| 身分証 | uuid | 担保トレースID |
-| 鍵   | 列    | 属性名      |
-| 価値  | 列    | 属性値      |
+| name  | type   | description         |
+| ----- | ------ | ------------------- |
+| id    | uuid   | collateral trace id |
+| key   | string | attribute name      |
+| value | string | attributes value    |
 
-#### #24折り畳み
+#### #24 Fold
 
-> pkg/作り手/猫/畳む.go
+> pkg/maker/cat/fold.go
 
-負債乗数(率) を変更し、対応する負債を作成/破棄します。
+modify the debt multiplier(rate), creating / destroying corresponding debt.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明       |
-| --- | ---------------- | -------- |
-| 身分証 | 誰でも自由に作れるユニークなID | 担保トレースID |
+| name | type | description         |
+| ---- | ---- | ------------------- |
+| id   | uuid | collateral trace id |
 
-### バット-マネージャーボールト
+### Vat - manager vaults
 
-#### #31 開く
+#### #31 Open
 
-> pkg/作り手/vat/開く.go
+> pkg/maker/vat/open.go
 
-特別担保タイプで新しい金庫を開く
+open a new vault with the special collateral type
 
-**パラメーター：**
+**Parameters:**
 
-| 名前                       | 種類               | 説明       |
-| ------------------------ | ---------------- | -------- |
-| 身分証                      | 誰でも自由に作れるユニークなID | 担保トレースID |
-| 債務, 負債, 借金, 債, 借入金, 借り入れ | 10進数             | 初期債務     |
+| name | type    | description         |
+| ---- | ------- | ------------------- |
+| id   | uuid    | collateral trace id |
+| debt | decimal | initial debt        |
 
-#### #32保証金
+#### #32 Deposit
 
-> pkg/作り手/大桶/保証金 .go
+> pkg/maker/vat/deposit.go
 
-担保を金庫に転送します。
+transfer collateral into a Vault.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明        |
-| --- | ---------------- | --------- |
-| 身分証 | 誰でも自由に作れるユニークなID | 保管庫トレースID |
+| name | type | description    |
+| ---- | ---- | -------------- |
+| id   | uuid | vault trace id |
 
-#### #33 引き出し
+#### #33 Withdraw
 
 > pkg/maker/vat/withdraw.go
 
-ボールトから担保を引き出します。ボールトの所有者のみです。
+withdraw collateral from a Vault, vault owner only.
 
-**パラメーター:**
+**Parameters:**
 
-| 名前   | 種類   | 説明        |
-| ---- | ---- | --------- |
-| id   | uuid | 保管庫トレースID |
-| dink | 10進数 | 担保の変更     |
+| name | type    | description          |
+| ---- | ------- | -------------------- |
+| id   | uuid    | vault trace id       |
+| dink | decimal | change in collateral |
 
-#### #34 回収
+#### #34 Payback
 
-> pkg/作り手/桶/回収.go
+> pkg/maker/vat/payback.go
 
-金庫の債務を減らします。
+decrease Vault debt.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明        |
-| --- | ---------------- | --------- |
-| 身分証 | 誰でも自由に作れるユニークなID | 保管庫トレースID |
+| name | type | description    |
+| ---- | ---- | -------------- |
+| id   | uuid | vault trace id |
 
-#### #生成
+#### #35 Generate
 
-> pkg/作り手/桶/生成.go
+> pkg/maker/vat/generate.go
 
-金庫の債務を増やし、金庫の所有者のみ増やす。
+increase Vault debt, vault owner only.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明        |
-| --- | ---------------- | --------- |
-| 身分証 | 誰でも自由に作れるユニークなID | 保管庫トレースID |
-| 債務  | 10進数             | 債務の変化     |
+| name | type    | description    |
+| ---- | ------- | -------------- |
+| id   | uuid    | vault trace id |
+| debt | decimal | change in debt |
 
-### フリップ-マネージャーオークション
+### Flip - manager auctions
 
-#### #41一蹴
+#### #41 Kick
 
-> pkg/作りて/弾く/一蹴.go
+> pkg/maker/flip/kick.go
 
-安全でない保管庫からのオークションのために担保を提示します。
+put collateral up for auction from an unsafe vault.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明        |
-| --- | ---------------- | --------- |
-| 身分証 | 誰でも自由に作れるユニークなID | 保管庫トレースID |
+| name | type | description    |
+| ---- | ---- | -------------- |
+| id   | uuid | vault trace id |
 
-#### #42入札
+#### #42 Bid
 
-> pkg/作り手/弾く/一蹴.go
+> pkg/maker/flip/bid.go
 
-オークションに参加するために大金を払ってください。
+pay dai to participate in the auction.
 
-> 入札フェーズから、入札者は固定ロットのジェムとダイの入札額を競います。 ダイのタブ量が上がると、オークションはへこみ段階に移行します。 傾向フェーズのポイントは、システムの負債をカバーするためにダイを上げることです。 デントフェーズの間、入札者は、ダイの固定タブ量に対してジェムのロット量を減らすために競争します。 没収されたGemは、所有者が回収できるように清算された金庫に戻されます。 デントフェーズのポイントは、市場が許す限り多くの担保をVaultホルダーに返却することです。
+> Starting in the tend-phase, bidders compete for a fixed lot amount of Gem with increasing bid amounts of Dai. Once tab amount of Dai has been raised, the auction moves to the dent-phase. The point of the tend phase is to raise Dai to cover the system's debt. During the dent-phase bidders compete for decreasing lot amounts of Gem for the fixed tab amount of Dai. Forfeited Gem is returned to the liquidated vault for the owner to retrieve. The point of the dent phase is to return as much collateral to the Vault holder as the market will allow.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明         |
-| --- | ---------------- | ---------- |
-| 身分証 | 誰でも自由に作れるユニークなID | フリップトレースID |
-| 多く  | 10進数             | 担保額        |
+| name | type    | description       |
+| ---- | ------- | ----------------- |
+| id   | uuid    | flip trace id     |
+| lot  | decimal | collateral amount |
 
-#### #43 対処
+#### #43 Deal
 
-> pkg/作り手/弾く/一蹴.go
+> pkg/maker/flip/deal.go
 
-落札を請求する/完了したオークションを決済する
+claim a winning bid / settles a completed auction
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明         |
-| --- | ---------------- | ---------- |
-| 身分証 | 誰でも自由に作れるユニークなID | フリップトレースID |
+| name | type | description   |
+| ---- | ---- | ------------- |
+| id   | uuid | flip trace id |
 
-### 託宣 - 管理者 託宣価格
+### Oracle - manager price oracle
 
-#### #51 作成
+#### #51 Create
 
-> pkg/作り手/託宣/突く.go
+> pkg/maker/oracle/create.go
 
-資産の新しいオラクルを登録します。提案が必要です。
+register a new oracle for the asset, proposal required.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前           | 種類               | 説明               |
-| ------------ | ---------------- | ---------------- |
-| 身分証          | 誰でも自由に作れるユニークなID | 資産ID             |
-| 価格           | 10進数             | 初期価格             |
-| 跳ねる          | int64            | 突く呼び出し間の秒単位の時間遅延 |
-| しきい値         | int64            | 突くときに必要な知事の数     |
-| トランスポートストリーム | タイムスタンプ          | タイムスタンプの要求       |
+| name      | type      | description                              |
+| --------- | --------- | ---------------------------------------- |
+| id        | uuid      | asset id                                 |
+| price     | decimal   | initial price                            |
+| hop       | int64     | time delay in seconds between poke calls |
+| threshold | int64     | number of governors required when poke   |
+| ts        | timestamp | request timestamp                        |
 
-#### #52 編集
+#### #52 Edit
 
-> pkg/作り手/託宣/突く.go
+> pkg/maker/oracle/edit.go
 
-オラクルの次の価格を変更し、ホップ & しきい値、提案が必要です。
+modify an oracle's next price, hop & threshold, proposal required.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明   |
-| --- | ---------------- | ---- |
-| 身分証 | 誰でも自由に作れるユニークなID | 資産ID |
-| カギ  | 列                | 属性名  |
-| 価値  | 列                | 属性値  |
+| name  | type   | description      |
+| ----- | ------ | ---------------- |
+| id    | uuid   | asset id         |
+| key   | string | attribute name   |
+| value | string | attributes value |
 
-#### #53 突く
+#### #53 Poke
 
-> pkg/作り手/託宣/突く.go
+> pkg/maker/oracle/poke.go
 
-現在のフィード値を更新し、次のフィード値をキューに入れます。
+updates the current feed value and queue up the next one.
 
-**パラメーター：**
+**Parameters:**
 
-| 名前           | 種類               | 説明         |
-| ------------ | ---------------- | ---------- |
-| 身分証          | 誰でも自由に作れるユニークなID | 資産ID       |
-| 価格           | 10進数             | 新しい次の価格    |
-| トランスポートストリーム | タイムスタンプ          | タイムスタンプの要求 |
+| name  | type      | description       |
+| ----- | --------- | ----------------- |
+| id    | uuid      | asset id          |
+| price | decimal   | new next price    |
+| ts    | timestamp | request timestamp |
 
-#### #54 頼む
+#### #54 Rely
 
-> pkg/作り手/託宣/突く.go
+> pkg/maker/oracle/rely.go
 
-ホワイトリストに新しい価格フィードを追加します。提案が必要です
+add a new price feed to the whitelist, proposal required
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | 種類               | 説明              |
-| --- | ---------------- | --------------- |
-| 身分証 | 誰でも自由に作れるユニークなID | mixinのIDをフィードする |
-| カギ  | バイト              | 公開鍵             |
+| name | type  | description   |
+| ---- | ----- | ------------- |
+| id   | uuid  | feed mixin id |
+| key  | bytes | public key    |
 
-#### #55 拒否
+#### #55 Deny
 
-> pkg/作り手/託宣/突く.go
+> pkg/maker/oracle/deny.go
 
-ホワイトリストから価格フィードを削除します。提案が必要です
+remove a price feed from the whitelist, proposal required
 
-**パラメーター：**
+**Parameters:**
 
-| 名前  | タイプ              | 説明              |
-| --- | ---------------- | --------------- |
-| 身分証 | 誰でも自由に作れるユニークなID | ミックスインIDをフィードする |
+| name | type | description   |
+| ---- | ---- | ------------- |
+| id   | uuid | feed mixin id |

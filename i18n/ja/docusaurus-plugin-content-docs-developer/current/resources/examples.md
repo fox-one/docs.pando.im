@@ -1,19 +1,19 @@
 ---
-title: 例
-date: 2021年7月31日13時03分07秒
+title: Examples
+date: 2021-07-31 13:03:07
 ---
 
 ## 4swap Web
 
-フル機能のWebベースのクライアントである4swapとLakeのフロントエンドプロジェクト。
+The frontend project of 4swap and Lake, a full-feature web based client.
 
-- ソースコード: https://github.com/fox-one/4swap-web
+- Source code: https://github.com/fox-one/4swap-web
 - Url: https://app.4swap.org
 
 
-## Mixinチュートリアル
+## Mixin Tutorial
 
-Mixin Messengerのボットを一から作るチュートリアル。4swapやPando Lakeで暗号を交換する機能を備えたボットです。
+A tutorial of making a Mixin Messenger bot from scratch, a bot which includes a function to swap crypto at 4swap or Pando Lake.
 
-- ソースコード: https://github.com/lyricat/mixin-tutorial
+- Source code: https://github.com/lyricat/mixin-tutorial
 

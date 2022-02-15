@@ -1,19 +1,19 @@
 ---
-title: 設計
-date: 2021年7月31日14時38分07秒
+title: Design
+date: 2021-07-31 14:38:07
 ---
 
 ## 4swap Design Document
 
-> Pando Lakeは、Uniswap V2のMixin Network上でのMTG実装です。
+> Pando Lake is a MTG implementation on Mixin Network of Uniswap V2
 
-Pando Lakeは、一定の製品フォーミュラを利用した自動流動性プロトコルであり、 [Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview)に実装されています。 分散型、検閲への抵抗、セキュリティを優先して、単一のMixinDappの必要性を排除します。
+Pando Lake is an automated liquidity protocol powered by a constant product formula and implemented in [Mixin Trusted Group](https://developers.mixin.one/docs/mainnet/mtg/overview). It obviates the need for single Mixin Dapp, prioritizing decentralization, censorship resistance, and security.
 
-プールトークンと引き換えに、基礎となる各トークンの同等の価値を預けることにより、誰でもプールの流動性プロバイダー（LP）になることができます。 これらのトークンは、総準備金の比例LPシェアを追跡し、いつでも原資産と引き換えることができます。
+Anyone can become a liquidity provider (LP) for a pool by depositing an equivalent value of each underlying token in return for pool tokens. These tokens track pro-rata LP shares of the total reserves, and can be redeemed for the underlying assets at any time.
 
-ペアは自動化されたマーケットメーカーとして機能し、「一定の製品」の公式が維持されている限り、一方のトークンをもう一方のトークンとして受け入れる準備ができています。 この式は、最も簡単に** x * y = k </ strong>として表され、取引はペアの準備金残高（xとy）の積（k）を変更してはならないことを示しています。  Kは取引の参照フレームから変更されないままであるため、不変量と呼ばれることがよくあります。 この公式には、(準備金と比較して) 大規模な取引が小規模な取引よりも指数関数的に悪いレートで実行されるという望ましい特性があります。</p>
+Pairs act as automated market makers, standing ready to accept one token for the other as long as the “constant product” formula is preserved. This formula, most simply expressed as **x * y = k**, states that trades must not change the product (k) of a pair’s reserve balances (x and y). Because k remains unchanged from the reference frame of a trade, it is often referred to as the invariant. This formula has the desirable property that larger trades (relative to reserves) execute at exponentially worse rates than smaller ones.
 
-> USDT / USDCなどのステーブルコインプールで使用される修正された<ahref = "https://curve.fi">曲線</a>式。
+> A modified [Curve](https://curve.fi) formula used on the stablecoin pools like USDT/USDC.
 
 ## Interact with 4swap
 

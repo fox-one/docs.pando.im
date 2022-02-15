@@ -1,55 +1,55 @@
 ---
-title: 概要
-date: 2021年7月20日12時38分03秒
+title: Overview
+date: 2021-03-20 12:38:07
 ---
 
-<ahref = "https://github.com/MixinNetwork/mixinに基づく<ahref =" https://github.com/compound-finance/compound-protocol ">複合プロトコル</a>の実装 "> Mixin </a> [ MTG ](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md)テクノロジー。
+An implementation of the [compound protocol](https://github.com/compound-finance/compound-protocol) based on [Mixin](https://github.com/MixinNetwork/mixin) [MTG](https://github.com/MixinNetwork/developers.mixin.one/blob/main/developers/src/i18n/en/document/mainnet/mtg.md) technology.
 
-## rトークン
+## rToken
 
-いくつかの暗号化された通貨を市場に提供した後に取得する対応する証明書トークン。
+The corresponding certificate token you obtain after you supply a number of cetain encrypted currency to the market.
 
-## 機能
+## Functions
 
-### 供給
+### Supply
 
-ユーザーは暗号化された通貨を市場に供給して流動性を提供し、 対応するrTokenを取得します。 彼らは流動性を提供することによって利回りを受け取ります。
+Users supply encrypted currencies to the market to provide liquidity, and obtain the corresponding rTokens. They receive interest yields by providing liquidity.
 
 ![](overview/uc_supply.jpg)
 
-### 誓約
+### Pledge
 
-ユーザーは借りる前にrTokenを市場に誓約する必要があります。
+Users have to pledge rToken to the market before any borrow.
 
 ![](overview/uc_pledge.jpg)
 
-### 誓約を解除する
+### Unpledge
 
-ユーザーは、市場に約束したrTokenを取り戻します。
+Users take back the rToken that pledged to the market.
 
 ![](overview/uc_unpledge.jpg)
 
-### 償還
+### Redeem
 
-ユーザーは、流動性を提供するための報酬としての利回りを含め、以前に提供された対応する暗号化された通貨と引き換えにrTokenを返します。
+Users return the rToken in exchange for corresponding encrypted currency that were supplied before, including interest yields as the reward for providing liquidity.
 
 ![](overview/uc_redeem.jpg)
 
-### 借りる
+### Borrow
 
-ユーザーは、暗号化された通貨を特定の金利で市場から借ります。
+Users borrow encrypted currencies from the market at a certain interest rate.
 
 ![](overview/uc_borrow.jpg)
 
-### 返済
+### Repay
 
-ユーザーは、借用した暗号化された通貨と、借用期間中に発生した利息を返済します。
+Users repay the borrowed encrypted currency and the interest accrued during the borrow period.
 
 ![](overview/uc_repay.jpg)
 
-### 清算
+### Liquidation
 
-市場価格の変動により、利用者のローンの価値が担保資産の価値を超える場合があります。  その場合、他のユーザーはより低い価格を使用してユーザーの担保資産を取得し、担保資産でカバーされていないユーザーの債務を返済することができます。
+Due to the fluctuation of the market price, the value of a user's loan may exceed that of his pledged assets. When that happens, the other users can use a lower price to obtain the user's pledged assets so that the user's debt that are not covered by pleged assets are repayed.
 
 ![](overview/uc_liquidity.jpg)
 

@@ -1,24 +1,24 @@
 ---
-title: パンドリーフとは？
-date: 2021年07月22日　22時33分07秒
+title: What's Pando Lake
+date: 2021-07-22 22:33:07
 ---
 
-[ Pando Lake ](https://lake.pando.im)は、Mixin MTG（Mixin Trusted Group）テクノロジーで構築された自動流動性提供のための分散型プロトコルであり、MixinNetworkのスマートコントラクトの代替手段です。
+[Pando Lake](https://lake.pando.im) is a decentralized protocol for automated liquidity provision built with the Mixin MTG (Mixin Trusted Group) technology, an alternative to smart contracts on Mixin Network.
 
-それは組み合わされたアルゴリズムを使用します-特にステーブルコイン間で交換するためのカーブのような、特注の低スリッページ、低取引手数料アルゴリズムで機能し、残りのペアでは一定の積式 x * y = k </ code>で機能します。 </p>
+It uses combined algorithms - functioning on a Curve-like, bespoke low slippage, low trading fee algorithm specifically for swapping between stablecoins and on the constant product formula `x*y=k` for the rest of pairs.
 
-<p spaces-before="0">各ペアは、2つのトークンの準備金で構成される流動性プールを管理します。 ペアトークンの価格は、準備金の残高によって直接決定されます。</p>
+Each pair manages a liquidity pool made up of reserves of two tokens. The prices of the pair tokens are directly determined by the reserve balances.
 
-<p spaces-before="0">ユーザーは特定の暗号資産市場(ペア) で交換したり、流動性プロバイダーになることができます。</p>
+Users can swap at a specific crypto assets market(pair) and/or become liquidity providers.
 
-<p spaces-before="0">ペアの場合、<code> pUSD-USDT（ERC-20）</ code>、<code> pUSD-USDT（TRC-20）</ code>、<code> pUSD-USDC </ code>、<code> pUSD -DAI </ code>、および<code> BTC-wBTC </ code>の場合、交換料金は0.04％です。  残りのペアについては、交換手数料は0.3%です。</p>
+For the pairs `pUSD-USDT(ERC-20)`, `pUSD-USDT(TRC-20)`, `pUSD-USDC`, `pUSD-DAI`, and `BTC-wBTC`, the swapping fee is 0.04%. For the rest of pairs, the swapping fee is 0.3%.
 
-<p spaces-before="0"><a href="./key-concepts/trading-fee">取引手数料</a>は、流動性プールのシェアに比例してすべての流動性プロバイダーに支払われます。 </p>
+The [trading fee](./key-concepts/trading-fee) is paid to all liquidity providers proportional to their shares of the liquidity pool.
 
-<p spaces-before="0"><a href="https://4swap.org"> 4swap </a>は、ユーザーがプロトコルと対話する「ブローカー」という名前のメカニズムを提供します。  Pando Lakeには、ユーザーにサービスを提供する独自のブローカーがあります。 詳細については、<ahref = "https://docs.pando.im/docs/lake/faqs/lake-vs-4swap">「Lakevs4swap」</a>を参照してください。 </p>
+[4swap](https://4swap.org) provides a mechanism named "Broker" that users interact with the protocol. Pando Lake  has its own Broker to serve the users. Please refer to ["Lake vs 4swap"](https://docs.pando.im/docs/lake/faqs/lake-vs-4swap) for more information.
 
-<p spaces-before="0"><strong x-id = "1">→</ strong> <a href="https://4swap.org"> 4swap.orgにアクセス</a> <br x-id = "2" />
-<strongx-id = "1">→</ strong> <ahref = "https://lake.pando.im">パンド湖を訪れる</a>   </p>  
+**→** [Visit 4swap.org](https://4swap.org)  
+**→** [Visit Pando Lake](https://lake.pando.im)  
 
 
 

@@ -1,29 +1,29 @@
 ---
-title: パンドリングへの資産の供給
-date: 2021年9月04日12時33分07秒
+title: Supplying assets to Pando Rings
+date: 2021-09-04 12:33:07
 ---
 
-供給はパンドリングの最初のステップです。 ユーザーがパンドリングに資産を提供すると、すぐに関心を集め始めます。 利息は毎分発生します。 ユーザーはいつでも元本と利息を引き出すことができます。
+Supplying is the first step in Pando Rings. When users supply an asset to Pando Rings, they begin earning interest instantly. Interest accrues every minute; users can withdraw their principal plus interest anytime.
 
-資産を供給するには、[Market Page] をクリックします。 それはあなたが選択できる供給資産のリストにあなたをもたらします。 資産の [供給量](../key-concepts/glossary)と [供給量APY](../key-concepts/glossary) が表示されます。
+To supply an asset, you can click on "I want to supply" on the Market Page. It will bring you to the list of Supply assets you can choose from. You will see [Supply Volume](../key-concepts/glossary)and [Supply APY](../key-concepts/glossary) of the asset.
 
-資産をクリックすると、[供給]ページが表示されます。
+After clicking on the asset, you will land on the Supply page.
 
 ![](../assets/supply1.jpg)
 
-すでに[市場の概要]ページに入り、特定の市場の統計を表示することを選択した場合は、提供するエントリを見つけることもできます。 資産統計ページに供給エントリがあります。
+You can also find the entry to supply if you already entered the Market Overview page and have chosen to view statistics of a specific market. You will find the Supply entry on the asset statistics page.
 
 ![](../assets/supply2.jpg)
 
-資産を提供していない場合は、[Me] ページで提供するエントリを見つけることもできます。 「供給に行く」をクリックすると、供給ページが表示されます。
+If you haven't supplied any asset, you can also find the entry to supply on the Me page. Clicking on "Go to supply" and you will land on the Supply page.
 
 ![](../assets/supply3.jpg)
 
-[供給]ページには、資産の供給APY、特定の資産の供給量（ "**供給</ strong>"）、 提供したすべての資産の合計金額（<strongx-id = "1">合計供給</ strong>）、担保として差し入れていない合計金額（<strongx-id = "1">合計 Unpledged </ strong>）およびrTokenとその基礎となる資産間の為替レート。  </p>
+On the Supply page, you will see key metrics related to the Supply process including the asset's Supply APY, amount you have supplied of the specific asset ("**Supplying**"), the total amount of all the assets you have supplied (**Total Supply**), the total amount you haven't pledged as collateral (**Total Unpledged**) and the exchange rate between the rToken and its underlying asset.
 
-供給したい資産の金額を入力すると、供給量を約束するかどうかを尋ねる下部シートが表示されます。 右矢印のパーセンテージは、<ahref = "../ key-concepts / glossary">付随的要因</a>を表しています。
+Enter the amount of the asset you want to supply, and you will see a bottom sheet asking whether you want to pledge the supply volume. The percentage on the right arrow represents [Collateral Factor](../key-concepts/glossary).
 
-Pando Ringsを借りる前に誓約する必要があるため "**供給と誓約**"を選択すると、すぐに借り入れ能力が得られます。 または、資産を提供することによってある程度の利息を稼ぎたいだけの場合は、「供給のみ」を選択できます。
+As you need to pledge before borrowing on Pando Rings, if you choose "**Supply and Pledge**", you will immediately get the borrow capacity; or if you only want to earn some interest by supplying the asset, you can choose "Supply Only".
 
 ![](../assets/supply4.jpg)
 

@@ -1,28 +1,28 @@
 ---
-title: パンドリーフとは？
-date: 2021年07月22日　22時33分07秒
+title: What's Pando Leaf
+date: 2021-07-22 22:33:07
 ---
 
-[ Pando Leaf ](https://leaf.pando.im)は、Mixin MTG（[ Mixin Trusted Group ](https://developers.mixin.one/document/）で構築された分散型金融ネットワークです。 mainnet / mtg / exchange)）テクノロジー、担保を預けて[ Pando USD（pUSD）](./pusd)を生成および破棄し、破棄できる場所 生成されたpUSD残高を返済するとき。
+[Pando Leaf](https://leaf.pando.im) is a decentralized financial network built with the Mixin MTG ([Mixin Trusted Group](https://developers.mixin.one/document/mainnet/mtg/exchange)) technology, a place where you can deposit collateral to generate and destory [Pando USD(pUSD)](./pusd) and destroy it when repaying the generated pUSD balance.
 
-## パンドリーフはどのように機能しますか？
+## How does Pando Leaf work?
 
-担保の預け入れと生成されたpUSD残高の返済は、どちらも<strongx-id = "1">ボールト</ strong>で行われます。
+Depositing collaterals and repaying the generated pUSD balance both happen in a **vault**.
 
-- 保管庫は無料ではありません。  ステーブルコインを生成するには、安定した手数料の支払いが必要です。 担保を取り戻すには、ユーザーは以前に生成されたステーブルコインと累積されたステーブルコインを返済する必要があります。
-- 保管庫は過剰担保が必要です。  保管庫の所有者は、ポジションの**清算</ strong>を回避するために、清算価格/清算比率（最小担保比率）を維持する必要があります。 </li> </ul>
+- Vaults are not free. Generating the stablecoin requires the payment of stability fee. To reclaim collateral, users must repay the previously generated stablecoin and the accumulated stability fee.
+- Vaults are required to be overcollateralized. Vault owners should uphold the liquidation price/liquidation ratio (which is the minimum collateralization ratio) to avoid the **liquidation** of their positions.
 
-保管庫が清算されると、清算ペナルティが適用され、ボールトの未払いのステーブルコイン残高を返済するために担保が売却されます。
+When a vault is liquidated, a liquidation penalty is applied and collateral is sold to repay the vault’s outstanding stablecoin balance.
 
-技術的な詳細については、<ahref = "/ developer / leaf / design">パンドリーフの技術設計</a>を参照してください。
+For more techincal details, please refer to the [Pando Leaf Technical Design](/developer/leaf/design)
 
-## 競売
+## Auction
 
-保管庫が最低限必要な担保比率に違反し、清算された場合、誰でもオークションに参加できます。
+Anyone can participate in the auction if a vault breaches the minimum required collateralization ratio and becomes liquidated.
 
-オークションには2つのフェーズがあります。最初のフェーズでは、参加者は、未払いの債務の最高額をカバーするために、前回の入札額の3％以上の増分で入札します。  12時間以内に全債務をカバーする意思がない場合、オークションは終了し、債務の最高額をカバーする意思のある入札者がすべての担保を持ち帰ります。  または、負債総額をカバーするために入札する人がいる場合、オークションは第2フェーズに移行します。
+There are two phases of the auction - For the first phase, participants bid at an increment of not less than 3% of the previous bidding amount to cover the highest amount of the outstanding debt. If within the limit of 12 hours, no one is willing to cover the total debt, the auction is over and the bidder who is willing to cover the highest amount of the debt will take all of the collateral home. Or if there is someone who bids to cover the total debt, then the auction will move to the second phase.
 
-第2段階では、参加者は、債務総額の支払いのために担保のごく一部を受け入れる際に、前回の入札額の3％以上の減額で入札します。
+For the second phase, participants bid at a decrement of no less than 3% of the previous bidding amount on accepting the smallest part of the collateral for the payment of the total debt.
 
 
 

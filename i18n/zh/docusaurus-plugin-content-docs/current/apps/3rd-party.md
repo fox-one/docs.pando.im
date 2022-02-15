@@ -10,4 +10,4 @@ Pando 提供了一套对开发者友好的API和SDK，供第三方开发者建�
 - [PRSDigg](https://prsdigg.com): 一个作者和读者双赢的内容发布平台。
   - [Bunshow](https://bunshow.jp/): PRSDigg的日语版。
 - IFTB：为交易者提供类似IFTTT的服务，以建立自己的交易战略。 在Mixin Messenger上搜索 `7000103075`  来访问机器人。
-- **你的项目在这里！** 请[为此列表做出贡献](https://github.com/fox-one/docs.pando.im/blob/master/docs/apps/3rd-party.md)。
+- **你的项目在这里！** Please [contribute to this list](https://github.com/fox-one/docs.pando.im/blob/master/docs/apps/3rd-party.md).

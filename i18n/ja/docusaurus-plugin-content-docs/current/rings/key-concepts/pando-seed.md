@@ -1,12 +1,12 @@
 ---
-title: パンドシード
-date: 2021年10月12日　22時33分07秒
+title: Pando Seed
+date: 2021-10-12 22:33:07
 ---
 
-担保に入れた資産を回収するたびに、パンドシードを支払う必要があります。
+Every time you retrieve the pledged assets, you need to pay pando seed.
 
-パンドシードロボットでPando Seed Tokenを毎日請求できます。
+You can claim Pando Seed Token on the Pando Seed robot every day.
 
 ![](../assets/pando-seed.png)
 
-Mixin Messenger アプリで Mixin ID **7000104113** を検索し、青色の数字をクリックします。 次に、ボットを追加し、小さなロボットアバターをクリックして、Pando Seedを開きます。
+Search Mixin ID **7000104113** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando seed.

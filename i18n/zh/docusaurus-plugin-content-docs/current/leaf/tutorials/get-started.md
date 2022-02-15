@@ -3,7 +3,7 @@ title: 开始使用
 date: 2021-08-13 12:33:07
 ---
 
-Pando Leaf 支持 [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) 钱包和 [fennec](https://pando.im/fennec/)（网络钱包），以下内容以mixin Messenger钱包为例。
+Pando leaf supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://pando.im/fennec/) (web wallet) and the following content takes mixin messenger wallet as an example.
 
 访问 [Pando leaf](https://leaf.pando.im)，或者在Mixin Messenger App中搜索 Mixin ID **7000103924** 并点击蓝色数字。 然后添加机器人并点击小机器人头像打开Pando leaf。
 

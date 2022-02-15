@@ -9,7 +9,7 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 Pando Lake 및 4swap은 표준 OAuth 프로토콜을 사용하여 사용자를 인증합니다.
 
-## POST/로그인
+## POST /login
 
 액세스 토큰을 코드와 교환하려면 [Mixin Messenger의 OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) 대신 이 API를 호출하세요.
 
@@ -32,9 +32,9 @@ Pando Lake 및 4swap은 표준 OAuth 프로토콜을 사용하여 사용자를 �
 
 토큰은 [Mixin API](https://developers.mixin.one/docs/api/guide)와 호환됩니다. Mixin API에서 정보를 얻는 데 사용해도 괜찮습니다.
 
-## 키 저장소로 /me 서명
+## Sign /me with keystores
 
-범위가 "FULL"인 `GET https://api.mixin.one/me`용 Mixin 인증 토큰이 지원됩니다.
+Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
 
-자세한 내용은 [mixin 개발자 문서](https://developers.mixin.one/docs/api/guide#signing)를 참조하세요.
+visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
 

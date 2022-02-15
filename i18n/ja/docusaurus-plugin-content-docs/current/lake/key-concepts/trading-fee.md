@@ -1,8 +1,8 @@
 ---
-title: 取引手数料
-date: 2021年9月29日22時33分07秒
+title: Trading Fees
+date: 2021-09-29 22:33:07
 ---
 
-pUSD-USDT（ERC-20）、pUSD-USDT（TRC-20）、pUSD-USDC、pUSD-DAI、およびBTC-wBTCのペアの場合、交換手数料は0.04％です。  残りのペアについては、交換手数料は0.3%です。
+For the pairs pUSD-USDT(ERC-20), pUSD-USDT(TRC-20), pUSD-USDC, pUSD-DAI, and BTC-wBTC, the swapping fee is 0.04%. For the rest of pairs, the swapping fee is 0.3%.
 
-取引手数料は、流動性プールのシェアに比例してすべての流動性プロバイダーに支払われます。
+The trading fee is paid to all liquidity providers proportional to their shares of the liquidity pool.

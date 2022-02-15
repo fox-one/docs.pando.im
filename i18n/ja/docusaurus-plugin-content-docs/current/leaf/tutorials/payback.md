@@ -1,19 +1,19 @@
 ---
-title: pUSDの返済
-date: 2021年08月13日　12時33分07秒
+title: Paying Back pUSD
+date: 2021-08-13 12:33:07
 ---
 
-pUSDの返済は、保管庫が清算されないようにしたい場合、または保管庫の所有者がポジションのサイズを縮小したり、担保を解放したりする場合に役立ちます。
+Paying back pUSD is useful when wanting to save a Vault from being liquidated, or the Vault owner wants to decrease the size of their position or to free up the collateral.
 
-返済するには、[返済]をクリックして[返済]ページに移動します。  手動で返済する金額を入力するか、[最大設定]をクリックしてすべての債務を返済します。
+To pay back, click on "Pay back" to land on the Pay Back page. Fill in the amount you intend to pay back manually or click "Set Max" to pay off all the debts.
 
 ![](../assets/leaf-payback-p1.png)
 
-pusdを返済した後、負債は13000から12000 pusdに減少します。また、この返済の詳細はチャットウィンドウで確認できます。
+The debt reduce from 13000 to 12000 pusd after repaying the pusd, and you can also see the details of this repayment in the chat window.
 
 ![](../assets/leaf-payback-p2.png)
 
-「最大設定」をクリックすると、利息がリアルタイムで計算されて債務に追加されるため、債務の返済を成功させるために、債務残高よりもわずかに高い金額が請求されることに注意してください。  支払い後の超過額はウォレットに返金されます。
+Please be noted that when you click "Set Max", you will be charged slightly higher than the outstanding debt amount to successfully pay off the debt because the interests are calculated and added to the debt real-time. Any excess amount after the payment will be returned to your wallet.
 
 ![](../assets/payback-p2.png)
 

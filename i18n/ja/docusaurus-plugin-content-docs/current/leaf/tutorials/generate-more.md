@@ -1,31 +1,31 @@
 ---
-title: より多くのpUSDを生成する
-date: 2021年08月13日　12時33分07秒
+title: Generating More pUSD
+date: 2021-08-13 12:33:07
 ---
 
-pUSDを生成するには、[生成]をクリックし、[生成]ページで生成する金額を入力します。
+To generate pUSD, click on "Generate" and fill in the amount you want to generate on the Generate page.
 
 ![](../assets/leaf-generate-p1.png)
 
-データは最新のものに変更され、チャットウィンドウでこの生成の詳細を確認できます。
+Data changes to the latest, and you can see details about this generating in chat window.
 
 ![](../assets/leaf-generate-p2.png)
 
 
-ここでも、関連するリスクに注意する必要があります。
+Again you need to be careful of the associated risk.
 
 ````mdx-code-block
-:::注意
+:::caution
 
-住宅ローンの利率が安全な範囲内にあることを確認してください。安全な範囲は、150％未満が完全に[清算]されます。
+Please ensure that the mortgage rate is within a safe range, which less than 150% will be [liquidated] totally.
 
 :::
 ````
 
 ````mdx-code-block
-:::情報
+:::info
 
-この操作を支援するには、[パンドシード]（https://docs.pando.im/docs/leaf/key-concepts/pando-seed）が必要になる場合があります。
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 
 :::
 ````

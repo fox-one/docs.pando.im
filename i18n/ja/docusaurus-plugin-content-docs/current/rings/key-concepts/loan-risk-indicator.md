@@ -1,16 +1,16 @@
 ---
-title: ローンリスク指標
-date: 2021年9月04日12時33分07秒
+title: Loan Risk Indicator
+date: 2021-09-04 12:33:07
 ---
 
-[借入](./glossary) / [借入制限](./glossary) は、ローンのリスクを示すために使用されます。
+[Borrow](./glossary) / [Borrow Limit](./glossary) is used to indicate your loan risk.
 
-借入/借入限度額が < 60％の場合、ローンが[清算される](./glossary)リスクは低くなります。
+When Borrow / Borrow Limit is <60%, you are in low risk of the loan being [liquidated](./glossary);
 
-60％≤借入/借入制限の場合< 80％、ローンが清算されるリスクは中程度です。
+When 60% ≤ Borrow / Borrow Limit < 80%, you are in medium risk of the loan being liquidated;
 
-80％≤借入/借入制限の場合 < 100％、ローンが清算されるリスクが高くなります。
+When 80% ≤ Borrow / Borrow Limit < 100%, you are in high risk of the loan being liquidated;
 
-借入/借入制限が100％以上の場合、清算中です。
+When Borrow / Borrow Limit ≥ 100%, you are in liquidation.
 
 ![](../assets/risk.jpg)

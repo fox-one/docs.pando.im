@@ -1,26 +1,26 @@
 ---
-title: 担保の引き出し
-date: 2021年08月13日　12時33分07秒
+title: Withdrawing Collateral
+date: 2021-08-13 12:33:07
 ---
 
-保管庫から担保を引き出してウォレットに戻すには、「引き出し」をクリックして続行します。
+To withdraw collateral from a Vault and return it to the wallet, click "Withdraw" to proceed.
 
 ![](../assets/leaf-withdraw-p1.png)
 
-必要な金額を入力してください 撤回し、withdarwをクリックして、 PINを入力すると、ETH担保が4.7947から1.7947に減少します。  この撤回の詳細はチャットウィンドウでも確認できます。
+Enter the amount you want to withdraw, click withdarw, and Enter PIN, the ETH collateral reduce from 4.7947 to 1.7947. You can also see details about this withdraw in chat window.
 
 ![](../assets/leaf-withdraw-p2.png)
 
 
 ````mdx-code-block
-::注意
-生成されたpUSDを最初に返済せずに担保を引き出すと、担保比率が低くなり、保管庫が清算されるリスクが高くなることに注意してください。
+:::caution
+Please be noted that withdrawing collateral without first paying back your generated pUSD will result in a lower collateralization ratio and putting the Vault at higher risk for liquidation.
 :::
 ````
 
 ````mdx-code-block
-:::情報
-この操作を支援するには、[パンドシード]（https://docs.pando.im/docs/leaf/key-concepts/pando-seed）が必要になる場合があります。
+:::info
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 :::
 ````
 

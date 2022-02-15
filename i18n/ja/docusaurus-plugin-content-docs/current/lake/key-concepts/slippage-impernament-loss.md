@@ -1,14 +1,14 @@
 ---
-title: 設定した指値の価格と実際の約定価格の差と永久損失
-date: 2021年08月15日　22時33分07秒
+title: Slippage and Impermanent loss
+date: 2021-08-15 22:33:07
 ---
 
-### 発注・決済を行った際の価格と、実際に約定 (注文が確定)した際の価格がズレてしまうこと
+### Slippage
 
-金融取引では、スリッページは、取引の予想価格と取引が実行される実際の価格との差を指す用語です。
+In financial trading, slippage is a term that refers to the difference between a trade’s expected price and the actual price at which the trade is executed.
 
-### 永久的な損失
+### Impermanent Loss
 
-永久的な損失にさらされる可能性があるため、流動性を提供することにはリスクが伴います。
+Providing liquidity is not without risk, as you may be exposed to impermanent loss.
 
-[「簡単に言えば、永続的な損失とは、トークンをAMMに保持することと、トークンをウォレットに保持することの違いです。」 Bancor Networkの広報責任者](https://blog.bancor.network/beginners-guide-to-getting-rekt-by-impermanent-loss-7c9510cb2f22)
+[“Simply put, impermanent loss is the difference between holding tokens in an AMM and holding them in your wallet.” - Nate Hindman](https://blog.bancor.network/beginners-guide-to-getting-rekt-by-impermanent-loss-7c9510cb2f22)

@@ -3,7 +3,7 @@ title: 开始
 date: 2021-09-22 05:22:11
 ---
 
-Pando Lake(4swap) 支持[mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger)钱包和[fennec](https://pando.im /fennec/)（网络钱包），以下内容以mixin Messenger钱包为例。
+Pando lake(4swap) supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://pando.im/fennec/) (web wallet) and the following content takes mixin messenger wallet as an example.
 
 访问 [Pando lake(4swap)](https://lake.pando.im)，或者在Mixin Messenger App中搜索 Mixin ID **7000103537** 并点击蓝色数字。 然后添加机器人并点击小机器人头像打开Pando Lake（4swap）。
 

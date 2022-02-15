@@ -1,20 +1,20 @@
 ---
-title: 記事
-date: 2021年9月15日22時33分07秒
+title: Articles
+date: 2021-09-15 22:33:07
 ---
 
-Pandoはすべてのコミュニティメンバーからの考えを大切にしています。 コミュニティメンバーから寄稿されたコンテンツがここに集められています！
+Pando value thoughts from all community members. Contents contributed by community memebers are collected here!
 
-コンテンツは<ahref = "https://github.com/fox-one/docs.pando.im/tree/master/docs/community/articles.md">こちら</a>から送信できます。  以下の対応するカテゴリに入れてください。
+You can submit your content [here](https://github.com/fox-one/docs.pando.im/tree/master/docs/community/articles.md). Just put it into the corresponding categories below.
 
-次の形式を使用します。 [ここにコンテンツのタイトルを入れてください]（ここにあなたのコンテンツのリンクを入れてください）
+Use the format: \[Put the title of your content here\](put the link of your content here)
 
-### 初めての方へ
+### Tutorials
 
-コミュニティのメンバーは、Pando製品の使用方法について書いています。
+Community members write on how to use Pando products.
 
-<ahref = "https://prsdigg.com/articles/39cae74e-385c-4eab-9b45-cc58800e0493"> Mixinシリーズ12で遊ぶ：パンドリングローンの使用方法（支払いが必要）</a>-方法についてパンドリングを使用する（中国語）
+[玩转Mixin系列十二：如何使用Pando Rings借贷(Payment Required)](https://prsdigg.com/articles/39cae74e-385c-4eab-9b45-cc58800e0493) - on how to use Pando Rings (Chinese)
 
-### ブログ投稿
+### Blog Posts
 
-Pandoのコミュニティメンバーの考え、観察、および分析。
+Community members' thoughts, observations, and analysis of Pando.

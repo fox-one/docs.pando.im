@@ -1,35 +1,35 @@
 ---
-title: Pando Rings から資産を引き出します
-date: 2021年9月04日12時33分07秒
+title: Withdrawing assets from Pando Rings
+date: 2021-09-04 12:33:07
 ---
 
-市場に供給された資産を取り戻したい場合は、撤回する必要があります 撤退後、供給利息の獲得を停止します。
+When you want to get back the asset you supplied to the market, you will need to withdraw. After withdrawing, you will stop earning supply interest.
 
-「Me」ページで指定されたアセットカードをクリックし、「引き出し」をクリックすると、引き出しページに移動します。
+Click on the supplied asset card on the Me page, then click on "Withdraw", you will then land on the Withdraw page.
 
-**引き出し可能** は引き出せる金額を示しています。 これは、未担保資産額と借入金をカバーしていない担保額の合計です。
+**Available to withdraw** shows the amount you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows.
 
-**公約なし ** 特定のrTokenの提供されたが誓約されていない量を示します。 また、 **供給** は資産の供給量を示します。
+**Unpledged** shows your supplied but unpledged amount of a specific rToken. And **Supplying** shows your supply amount of the asset.
 
 ![](../assets/withdraw1.jpg)
 
-システムは、未確定金額からの引き出しを優先します。
+The system prioritizes withdrawing from the unpledged amount.
 
-あなたが引き出すつもりの金額があなたの約束されていない金額以下である場合、システムは約束されていない金額から直接引き出します。
+If the amount you intend to withdraw is not more than your unpledged amount, the system will withdraw directly from the unpledged amount.
 
-未担保の金額がある場合で、引き出したい金額が未担保の金額よりも多い場合は、一旦、一定の金額を未担保にしてから、未担保の金額をすべて引き出して、ウォレットに入れていただくことになります。
+If you do have unpledged amount and the amount you intend to withdraw is more than the unpledged, you will need to first unpledge certain amount then withdraw all the the unpledged amount to receive it in your wallet.
 
 ![](../assets/withdraw2.jpg)
 
 ````mdx-code-block
-:::情報
-この操作を支援するには、[パンドシード]（https://docs.pando.im/docs/leaf/key-concepts/pando-seed）が必要になる場合があります。
+:::info
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 :::
 ````
 
-借り入れ金が残っていない場合や、借り入れ金が不足している場合は、システムが直接借り入れ金を引き出してくれるので、ワンステップで引き出しが完了します。
+If you don't have any unpledged amount left and your pledged amount is not fully covering borrows, the system will directly withdraw for you from your pledged amount, finishing withdrawing in just one step.
 
-未払いの借入金がある場合、提供した金額と同じ金額を引き出すことができない可能性があります。 この場合、最初に借入金の一部または全額を返還してください。
+If you have outstanding borrow, it is possible that you cannot withdraw the same amount you have supplied. In this case, please return part or total amount of your borrow first.
 
-なお、借入残高がある場合、担保に入れている金額を引き出す、つまりrTokensの結合を解除すると、借入可能額（借入限度額）が減少し、ローンのリスクレベルに影響を与えますのでご注意ください。 理由は、借入額が変わらないため、借入限度額が減ると、借入額が借入限度額に占める割合が大きくなるからです。 引き出しには慎重を期し、担保資産の [流動化](../key-concepts/liquidation) を避けるようにしてください。 
+Please be noted that, if you have outstanding borrow, withdrawing from your pledged amount, or in other words, unpledging rTokens, will reduce your borrow capacity (borrow limit), affecting your loan risk level. The reasoning behind is, because your borrow stays the same, when your borrow limit decreases, your borrow will take a bigger percentage of your borrow limit. Please be cautious with your withdrawing and avoid [liquidation](../key-concepts/liquidation) of your pledged assets. 
 

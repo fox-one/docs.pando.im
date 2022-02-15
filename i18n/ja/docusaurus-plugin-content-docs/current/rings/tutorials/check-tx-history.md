@@ -1,8 +1,8 @@
 ---
-title: 取引履歴の確認
-date: 2021年9月04日12時33分07秒
+title: Checking your transaction history
+date: 2021-09-04 12:33:07
 ---
 
-取引履歴はMeページにあります。
+Your transaction history can be found on the Me page.
 
 ![](../assets/history.jpg)

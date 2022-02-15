@@ -1,40 +1,39 @@
 ---
-title: Pando Rings から資産を借りる
-date: 2021年9月04日12時33分07秒
+title: Borrowing assets from Pando Rings
+date: 2021-09-04 12:33:07
 ---
 
-Pando Ringで資産を借りたい場合は、マーケットページの「借りたい」をクリックしてアクセスできます。 借りたい資産を選択すると、「借りる」ページが表示されます。
+If you want to borrow an asset in Pando Rings, you can get access by clicking on "I want to borrow " on the Market page. After choosing the asset you want to borrow, you will be on the Borrow page.
 
 ![](../assets/borrow1.jpg)
 
-すでに[市場の概要]ページに入り、特定の市場の統計を表示することを選択した場合は、資産統計ページから借りることもできます。
+If you have already entered the Market Overview page and have chosen to view statistics of a specific market, you can also go to borrow from the asset statistics page.
 
 ![](../assets/borrow2.jpg)
 
-まだ借りていない場合は、Meページで借りることもできます。 ただし、すでに未払いの借入金がある場合は、ここで借入資産のカードのみを表示できます。
+If you haven't had any borrow yet, you will also find access to borrow on the Me page. However, if you have outstanding borrow already, you will only be able to see cards of your borrow assets here.
 
 ![](../assets/borrow3.jpg)
 
-借用ページにアクセスした後、十分な[借用残高](../key-concepts/glossary)があれば、すぐに借用を完了することができます。
+After landing on the Borrow page, if you have enough [borrow balance](../key-concepts/glossary), you can finish borrow within no time.
 
 ![](../assets/borrow4.jpg)
 
-または、十分な借入残高がない場合は、「残高を増やす」をクリックしてさらに取得できます。 次に、提供したが誓約されていない資産から選択することで、借り入れ能力を簡単に取得できます（Pando Ringsからの借り入れは担保付きである必要があることを忘れないでください）。または、誓約されていない資産が生み出すことができるよりも多くの借り入れ能力が必要な場合は、 「新しい供給を追加」で、新しい供給の<strongx-id = "1">すべて</ strong>を供給して誓約します。
+Or if you don't have enough borrow balance, you can get more by clicking on "increase balance". You can then conveniently get borrow capacity by choosing from the assets that you have supplied but not pledged (remember any borrow from Pando Rings has to be collateral-backed) or if you need more borrow capacity than the unpledged assets can produce, you can click on "Add new supply" to supply and pledge **all** of your new supply.
 
 ![](../assets/borrow5.jpg)
 
 ![](../assets/borrow6.jpg)
 
-借り入れ残高が増えたので、借り入れページから好きなように借りることができます。 :)
+Now that you have increased your borrow balance, you can borrow as you like from the borrow page. :)
 
-<ahref = "../ key-concepts / loan-risk-indicator">ローンリスクインジケーター</a>は、入力した金額に応じて変化し、借入が許容可能なリスクレベル内にあるかどうかを予測します。
+The [loan risk indicator](../key-concepts/loan-risk-indicator) changes with the amount you enter and predicts whether your borrow will be within an acceptable risk level.
 
-**現在の（資産名）借入</ strong>は、特定の資産の現在の借入額を示します。  <strongx-id = "1">総借入額</ strong>は、借入したすべての資産の合計額を示します。  <strongx-id = "1">最大市場可用性</ strong>は、特定の資産の借り入れに利用できる金額を示します。  借りる予定の金額が最大市場可用性を超える場合、注文は完了しません。最大で最大市場可用性で借りることができます。</p>
+**Current (Asset name) Borrow** indicates your current borrow amount of a specific asset. **Total Borrow** indicates the total amount of all the assets you have borrowed. **Maximum Market Availability** shows the amount available to borrow of a specific asset. If the amount you intend to borrow is more than the Maximum Market Availability, your order won't come through - you can borrow at most at the Maximum Market Availability.
 
 ````mdx-code-block
 :::info
-この操作を支援するには、[pando seed]
-(https://docs.pando.im/docs/leaf/key-concepts/pando-seed)が必要になる場合があります。
+You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
 :::
 ````
 

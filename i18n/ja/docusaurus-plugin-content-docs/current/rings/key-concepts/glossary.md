@@ -1,69 +1,69 @@
 ---
-title: 用語集
-date: 2021年9月04日12時33分07秒
+title: Glossary
+date: 2021-09-04 12:33:07
 ---
 
-### 主要なプロセス
+### Key Processes
 
-**供給** 資産をPando Ringsに入れるプロセス。 その結果、あなたは見返りにrTokenを取得し、資産を提供している限り利息を獲得します。
+**Suppling** The process of putting an asset into Pando Rings. As a result, you get rTokens in return, and will earn interest as long as you are supplying the asset.
 
-**誓約** 借用権を取得するための担保としてrTokenをシステムにロックするプロセス。
+**Pledging** The process of locking rTokens into the system as collateral to get borrowing power.
 
-**Unpledging** システムからrTokenのロックを解除し、その結果、借用能力を削減するプロセス。
+**Unpledging** The process of unlocking rTokens from the system and as a result, reducing the borrowing power.
 
-**Withdrawing** Pando Ringsから資産を取り戻し、ウォレットに戻すプロセス。 資産を引き出しすると、利益の獲得は停止します。
+**Withdrawing** The process of getting back an asset from Pando Rings and have it back to your wallet. You will stop earning interest after you withdraw an asset.
 
-**借用** Pando Ringsでローンを取得するプロセス。
+**Borrowing** The process of getting a loan in Pando Rings.
 
-**返済** 借入資産と未収借入利息を返済するプロセス。
+**Repaying** The process of paying back your borrowed asset plus the accrued borrow interest.
 
-**rToken** rTokenはERC-20トークンであり、本質的にトークン化された供給ポジションであり、他の流動性プールの担保として使用したり、他の暗号資産と交換したりできます。
+**rToken** rToken is an ERC-20 token that is essentially a tokenized supply position and can be used as collateral in other liquidity pool or exchanged for other crypto assets.
 
-**清算** 担保総額によって提供されるユーザーの最大借入能力がローン総額をカバーできない場合、清算が発生します。 その過程で、他の人は借り手に代わってユーザーの未払いの借り入れの一部またはすべてを返済し、その見返りに借り手が保有する担保の割引額を受け取ります。
+**Liquidation** When a user's maximum borrow capacity rendered by the total collateral value cannot cover the total loan value, liquidation will happen. In the process, others repay some or all of the user's outstanding borrow on behalf of the borrower and in return receive a discounted amount of collateral held by the borrower.
 
-### マーケット
+### Market
 
-**総供給量** これは、その瞬間の市場におけるすべての資産の総供給量を表します。
+**Total Supply** It stands for the total supplied amount of all assets in the markets of the very moment.
 
-**供給量** これは、その瞬間の市場における特定の資産の総供給量を表します。
+**Supply Volume** It stands for the total supplied amount of a specific asset in the market of the very moment.
 
-**総借入額** これは、その瞬間の市場におけるすべての資産の総借入額を表します。
+**Total Borrow** It stands for the total borrowed amount of all assets in the markets of the very moment.
 
-**流動性** これは、その瞬間のすべての市場で借りることができる純金額を表します。 これは、総供給から総借入を差し引いたものに等しくなります。
+**Liquidity** It stands for the net amount available to borrow of all the markets of the very moment. It equals to Total Supply minus Total Borrow.
 
-**最大の市場可用性** 特定の資産の借り入れに利用できる金額。 これは、資産の総供給から同じ資産の総借入額を差し引いたものに等しくなります。
+**Maximum Market Availability** The amount available to borrow of a specific asset. It equals to the Total Supply of an asset minus the Total Borrow of the same asset.
 
-**24時間供給** これは、過去24時間以内の市場のすべての資産の総供給量を表します。
+**24h Supply** It stands for the total supplied amount of all assets in the markets within the last 24 hours.
 
-**24時間借りる** これは、過去24時間以内の市場のすべての資産の総借入額を表します。
+**24h Borrow** It stands for the total borrowed amount of all assets in the markets within the last 24 hours.
 
-**APYを提供** 資産を供給するための推定年利。 利息は複合され、15秒ごとに計算されます。
+**Supply APY** The estimated annual percentage yield for supplying an asset. The interest is compounded and is calculated every 15 seconds.
 
-**APYを借りる** 借り手が支払う必要のある資産の推定年利。 利息は15秒ごとに計算されます。
+**Borrow APY** The estimated annual interest rate of an asset a borrower need to pay. The interest is compounded and is calculated every 15 seconds.
 
-**担保要因** それはあなたがあなたの誓約された資産の価値のあなたが借りることができる最大のパーセンテージを表します。 資産によって異なる場合があります。 一般に、大規模または流動性の高い資産は担保要素が高く、小規模または流動性の低い資産は担保要素が低くなります。 借入手当または借入能力は、（担保資産*その担保要素）として決定されます。 したがって、各借入は常に最初は過剰担保になっています。
+**Collateral Factor** It represents the maximum percentage you can borrow of the value of your pledged asset. It may vary for different assets. Generally, large or liquid assets have high collateral factors, while small or illiquid assets have low collateral factors. Borrowing allowance, or borrowing capacity is determined as (pledged asset * its collateral factor). Each borrow is thus always initially over-collateralized.
 
-### 主要なパーソナル指標
+### Key Personal Metrics
 
-**Net APY** 純APY(年利) は、その瞬間の供給APYと借入APYに基づいた推定年間純利回りを反映しています。 それはあなたが現在のAPYSでお金を稼いでいるか失っているのかを示します。
+**Net APY** Net APY(annual percentage yield) reflects the estimatd annual net yield based on the Supply APY and Borrow APY of the very moment. It indicates whether you are making money or losing money at the current APYS.
 
-**借入制限** 借りることができる最大額。 担保を増やす（より多くの資産を差し入れる）ことで、借入限度額を増やすことができます。
+**Borrow Limit** The maximum amount you can borrow. You can increase your borrow limit by increasing the collateral (pledging more assets).
 
-**借入残高** 借入残高=借入限度額-あなたの借入。 まだ借りられない金額です。 借入残高が0の場合、資産を借りることはできなくなります。
+**Borrow Balance** Borrow Balance = Borrow Limit - Your Borrow. It is the amount you can yet to borrow. If your Borrow Balance is 0, you cannot borrow any asset anymore.
 
-**借入/借入制限** これは、最大借入容量に対するユーザーの借入のパーセンテージです。 それはあなたのローンのリスクを示すために使用されます。
+**Borrow/Borrow Limit** It is the percentage of a user's Borrow against the maximum borrow capacity. Itis used to indicate your loan risk.
 
-**My Supply** 提供したすべての資産の合計額(元本と未収利息)
+**My Supply** The total amount of all the assets you have supplied (principal plus the accrued interests).
 
-**My Borrow** 借りたすべての資産の合計額(元本と未収利息)
+**My Borrow** The total amount of all the assets you have borrowed (principal plus the accrued interests).
 
-**Total Pledge** 担保として差し入れた合計金額。
+**Total Pledge** The total amount you have pledged as collateral.
 
-**Total Unpledged** 担保として差し入れていない合計金額。
+**Total Unpledged** The total amount you haven't pledged as collateral.
 
-**出金可能** 引き出すことができる特定の資産の金額。 それはあなたの未誓約資産額と借入金をカバーしていない誓約額の合計です
+**Available to Withdraw** The amount of a specific asset you can withdraw. It is the sum of your unpledged asset amount and the pledged amount that is not covering borrows
 
-**誓約解除可能** 誓約できない特定の資産の金額。 これは、資産の誓約額の合計から、借入残高をカバーする部分を差し引いたものです。
+**Available to Unpledge** The amount of a specific asset you can unpledge. It is your total pledged amount of the asset minus the part covering the outstanding borrow.
 
 
 

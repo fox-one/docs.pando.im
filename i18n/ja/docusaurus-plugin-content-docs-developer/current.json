@@ -1,14 +1,14 @@
 {
   "version.label": {
-    "message": "次へ",
+    "message": "Next",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Pando Lake": {
-    "message": "パンドレーク",
+    "message": "Pando Lake",
     "description": "The label for category Pando Lake in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guide": {
-    "message": "手引き",
+    "message": "Guide",
     "description": "The label for category Guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Leaf": {
@@ -16,11 +16,11 @@
     "description": "The label for category Pando Leaf in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pando Rings": {
-    "message": "パンドリング ",
+    "message": "Pando Rings",
     "description": "The label for category Pando Rings in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Resources": {
-    "message": "資力",
+    "message": "Resources",
     "description": "The label for category Resources in sidebar tutorialSidebar"
   },
   "sidebar.docs.category.Pando Lake & 4swap": {
@@ -28,23 +28,23 @@
     "description": "The label for category Pando Lake & 4swap in sidebar docs"
   },
   "sidebar.docs.category.Guide": {
-    "message": "手引き",
+    "message": "Guide",
     "description": "The label for category Guide in sidebar docs"
   },
   "sidebar.docs.category.API Reference": {
-    "message": "API リファレンス",
+    "message": "API Reference",
     "description": "The label for category API Reference in sidebar docs"
   },
   "sidebar.docs.category.Pando Leaf": {
-    "message": "パンドリーフ ",
+    "message": "Pando Leaf",
     "description": "The label for category Pando Leaf in sidebar docs"
   },
   "sidebar.docs.category.Pando Rings": {
-    "message": "パンドリング ",
+    "message": "Pando Rings",
     "description": "The label for category Pando Rings in sidebar docs"
   },
   "sidebar.docs.category.Resources": {
-    "message": "資力",
+    "message": "Resources",
     "description": "The label for category Resources in sidebar docs"
   }
 }

@@ -1,239 +1,224 @@
 ---
-title: 技術設計
-date: 2021年03月20日　12時38分07秒
+title: Technical Design
+date: 2021-03-20 12:38:07
 ---
 
-# デザイン
+# Design
 
-## 建築
+## Architecture
 
-Ringsは、MTGの実装であり、Mixinネットワークのパラチェーンです。
+Rings is an implementation of MTG and a parachain of Mixin network.
 
 ![](design/architecture.jpg)
 
-#### Mixin MTG構造体
+#### Mixin MTG struct
 
 ![](design/mixin_mtg_struct.jpg)
 
 
-#### MTGシステムのデータフロー
-* ユーザーは、ビジネス データを Mixin ネットワークに転送する支払い(UTXO) を行います。
-* Ringsは、ビジネスデータ(output.memo内)を解析することにより、出力(UTXO)を同期します
-* Ringsは、ビジネスアクション（ビジネスデータに含まれる）をディスパッチし、各アクション（供給、借用...）を処理します。
+#### MTG system data flow
+* The user transfers a payment(UTXO) that carries business data to the Mixin network.
+* Rings syncs the outputs(UTXO) by parsing the business data(in output.memo)
+* Rings dispatchs the business action(included in business data) and processes each action(supply, borrow...)
 
 ![](design/workflow.jpg)
 
-MTGシステムには、2つの主要な役割があります。1つは` Payee </ code>で、もう1つは<code> cashier </ code>です。すべてのビジネスロジックは、これら2つの役割に基づいて実装されます。 </p>
+In MTG system, There are two main roles, one is `Payee`, and the another is `cashier`, All business logic is implemented based on these two roles.
 
-<ul>
-<li><p spaces-before="0"><code> Payee </ code>は出力（トランザクション）を受信し、<code> Output.Memo </ code>からビジネスデータをデコードし、<code>アクション</ code>をディスパッチします 
-<img src="design/f_payee.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code> cashier </ code>がトークンを使い、トークンをユーザーに転送する 
-<img src="design/f_cashier.jpg" alt="" /></p></li>
-</ul>
+* `Payee` receiving the outputs(transactions), decoding the business data from `Output.Memo`, dispatching `actions` ![](design/f_payee.jpg)
 
-<h4 spaces-before="0">アラート設定</h4>
+* `cashier` spending the token, transfering the token to user ![](design/f_cashier.jpg)
 
-<ul>
-<li><p spaces-before="0"><code> Supply </ code>、ユーザーが基になるトークン<code> ETH </ code>を提供し、エクイティトークン<code> rETH </ code>を取得するとします。 
-<img src="design/tl_supply.jpg" alt="" /></p></li>
-<li><p spaces-before="0">
-<code> Pledge </ code>、ユーザーがエクイティトークン<code> rETH </ code>を誓約するとします。これは、ユーザーがRingsシステムに<code> rETH </ code>を支払う必要があることを意味します 
-<img src="design/tl_pledge.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code> Unpledge </ code>、ユーザーがエクイティトークン<code> rETH </ code>の誓約を解除するとします。これは、ユーザーがいくつかのトークンを支払う必要があり、エクイティトークン<code> rETH </ code>を取り戻すことを意味します 
-<img src="design/tl_unpledge.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code> Redeem </ code>、ユーザーがシステムから基礎となるトークン<code> ETH </ code>を償還するとします。つまり、ユーザーはエクイティトークン<code> rETH </ code>を支払い、同等の基礎となるトークンを取得する必要があります< code> ETH </ code>戻る 
-<img src="design/tl_redeem.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code>借りる</ code>、ユーザーが基になるトークン<code> USDT </ code>を借りる必要があると仮定します。つまり、ユーザーはいくつかのトークンを支払う必要があり、予想される基になるトークン<code> USDT </ code>を取得します。 
-<img src="design/tl_borrow.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code> Repay </ code>、ユーザーが<code> USDT </ code>を返済するとします。これは、ユーザーが<code> USDT </ code>を支払うことを意味し、ユーザーの債務が削減されます。 
-<img src="design/tl_repay.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code> quick_pledge </ code>、ユーザーが基になるトークン<code> ETH </ code>を提供し、エクイティトークン<code> rETH </ code>がユーザーに返されないとします。 
-<img src="design/tl_quick_pledge.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code> quick_pledge </ code>、ユーザーが<code> ETH </ code>を利用し、ユーザーは一部のトークンのみを支払い、基になるトークン<code> ETH </ code>を取り戻すとします。
-<img src="design/tl_quick_redeem.jpg" alt="" /></p></li>
-<li><p spaces-before="0">
-<code> quick_borrow </ code>、ユーザーが<code> ETH </ code>または<code> rETH </ code>を提供し、<code> USDT </ code>ディレクトリを借りることができるとします。 
-<img src="design/tl_quick_borrow.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code>清算</ code>、ユーザーAが<code> ETH </ code>を誓約して<code> USDT </ code>を借りたとすると、ユーザーAのアカウントの流動性がゼロ以下になると 他のユーザーにより清算できます 
-<img src="design/tl_liquidation.jpg" alt="" /></p></li>
-<li><p spaces-before="0"><code>提案アクション</ code>、すべてのガバナンス作業は提案投票を通じて効果を生み出します。現在の提案には次のものが含まれます。 </p>
+#### Rings actions
 
-<ol start="1">
-<li>マーケットを作成または更新するための<code> market </ code> </li>
-<li>市場を開くための<code> open-market </ code> </li>
-<li>市場を閉じるための<code> close-market </ code> </li>
-<li><code> allowlist </ code>清算を許可するかどうか </li>
-<li><code> add-oracle-signer </ code>市場価格を提供する価格オラクル署名者を追加します </li>
-<li><code> rm-oracle-signer </ code>価格のオラクル署名者を削除します </li>
-<li>
-<code> withdraw </ code>は市場から準備金を引き出します 
-<img src="design/f_proposal.jpg" alt="" /></li>
-</ol></li>
-</ul>
+* `Supply`, Suppose users supply the underlying token `ETH` and gain the equity token `rETH` ![](design/tl_supply.jpg)
 
-<h2 spaces-before="0">
-コード構造体 </h2>
+* `Pledge`, Suppose users pledge the equity token `rETH`, meains that users should pay `rETH` to the Rings system ![](design/tl_pledge.jpg)
 
-<pre><code>
-| -cmd
-| -config
-|-デプロイ
-| -docs
-|-コア
-| -pkg
-|-サービス
-|-ストア
-|-労働者
-|-ハンドラー
-| -Dockerfile
-| -Makefile
-| -main.go  
+* `Unpledge`, Suppose users unpledge the equity token `rETH`, meains that users should pay some tokens and will get the equity token `rETH` back ![](design/tl_unpledge.jpg)
 
-`</pre>
+* `Redeem`, Suppose users redeem the underlying token `ETH` from the system, means that users should pay equity token `rETH` and whill get the quivalent underlying token `ETH` back ![](design/tl_redeem.jpg)
 
-* [ cmd ](https://github.com/fox-one/compound/tree/master/cmd)コマンドエントリ（APIサーバーとワーカーおよびガバナンスツールの開始を含む）
-* [ config ](https://github.com/fox-one/compound/tree/master/config)のデフォルトの設定ディレクトリ
-* <ahref = "https://github.com/fox-one/compound/tree/master/docs">ドキュメント</a>プロジェクトドキュメント
-* プロジェクトのモデルの<ahref = "https://github.com/fox-one/compound/tree/master/core">コア</a>ディレクトリ
-* エクスポート可能な<ahref = "https://github.com/fox-one/compound/tree/master/pkg"> pkg </a>プロジェクトパッケージ
-* ビジネスコードの<ahref = "https://github.com/fox-one/compound/tree/master/service">サービス</a>ディレクトリ
-* <ahref = "https://github.com/fox-one/compound/tree/master/store">ストア</a>データリポジトリ（データはデータベース、Redis、またはメモリキャッシュに保存される場合があります）
-* バックグラウンドでデータを処理するジョブの<ahref = "https://github.com/fox-one/compound/tree/master/worker"> worker </a>ディレクトリ
-* エクスポートされたAPI専用の<ahref = "https://github.com/fox-one/compound/tree/master/handler">ハンドラー</a>
-* デプロイ用の<ahref = "https://github.com/fox-one/compound/tree/master/Dockerfile"> Dockerfile </a>
-* <ahref = "https://github.com/fox-one/compound/tree/master/deploy">デプロイ</a>ストアの設定とデプロイのツール
+* `Borrow`, Suppose users need to borrow the underlying token `USDT`, means that users should pay some tokens and will gain the expected underlying token `USDT` ![](design/tl_borrow.jpg)
+
+* `Repay`, Suppose users repay `USDT`, means that users pay `USDT` and the users' debt will be reduced ![](design/tl_repay.jpg)
+
+* `quick_pledge`, Suppose users supply the underlying token `ETH` and no equity token `rETH` returns to users ![](design/tl_quick_pledge.jpg)
+* `quick_pledge`, Suppose users redeem `ETH`, users only pay some tokens, and will get the underlying token `ETH` back ![](design/tl_quick_redeem.jpg)
+* `quick_borrow`, Suppose users can supply `ETH` or `rETH` and can borrow `USDT` directory ![](design/tl_quick_borrow.jpg)
+
+
+* `Liquidation`, Suppose User A has Pledged `ETH` and Borrowed `USDT`, once The liquidity of user A's account less than or equal zero, it can be liquidated by other users ![](design/tl_liquidation.jpg)
+
+* `Proposal actions`, all governance work produces effects through proposal voting, the current proposals include these:
+    1. `market` for creating market or updating market
+    2. `open-market` for opening market
+    3. `close-market` for closing market
+    4. `allowlist` whether to allow liquidation
+    5. `add-oracle-signer` add the price oracle signer that provides market price
+    6. `rm-oracle-signer` remove the price oracle signer
+    7. `withdraw` withdraw the reserves from the market ![](design/f_proposal.jpg)
+
+## Code struct
+
+```
+
+---
+|-cmd      
+|-config  
+|-deploy  
+|-docs    
+|-core 
+|-pkg     
+|-service 
+|-store   
+|-worker  
+|-handler    
+|-Dockerfile 
+|-Makefile
+|-main.go 
+
+```
+
+* [cmd](https://github.com/fox-one/compound/tree/master/cmd) command entry, including start api server and worker and governance tools
+* [config](https://github.com/fox-one/compound/tree/master/config) default config directory
+* [docs](https://github.com/fox-one/compound/tree/master/docs) project documents
+* [core](https://github.com/fox-one/compound/tree/master/core) directory of project's models
+* [pkg](https://github.com/fox-one/compound/tree/master/pkg) project packages that can be exported
+* [service](https://github.com/fox-one/compound/tree/master/service) directory of business codes
+* [store](https://github.com/fox-one/compound/tree/master/store) data repository(data may be stored in database or redis or memory cache)
+* [worker](https://github.com/fox-one/compound/tree/master/worker) directory for jobs that processing data in background
+* [handler](https://github.com/fox-one/compound/tree/master/handler) just for exported apis
+* [Dockerfile](https://github.com/fox-one/compound/tree/master/Dockerfile) for deployment
+* [deploy](https://github.com/fox-one/compound/tree/master/deploy) store configs and tools of deployment
 * [main.go](https://github.com/fox-one/compound/tree/master/main.go)
-* [ファイルを 作る](https://github.com/fox-one/compound/tree/master/Makefile)
+* [Makefile](https://github.com/fox-one/compound/tree/master/Makefile)
 
-### [構成テンプレート ](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
-
-```
-＃固定値：1603382400
-創世記：1603382400
-＃時間のローカリゼーション
-場所：アジア/上海
-
-＃データベース構成
-db：
-   方言：mysql
-   ホスト：〜
-   read_host：〜
-   ポート：3306
-   ユーザー：〜
-   パスワード：〜
-   データベース：〜
-   場所：Asia％2FShanghai
-   デバッグ：true
-
-＃mixin dapp config
-dapp：
-   番号：7000103159
-   client_id：〜
-   session_id：〜
-   client_secret：〜
-   pin_token：〜
-   ピン： ""
-   private_key：〜
-
-＃ノードグループ構成
-グループ：
-＃コマンドによって生成された、すべてのノードで共有される秘密鍵：./ compound keys --cipher ed25519
-   private_key：〜
-   ＃現在のノードがユーザーデータの署名に使用する秘密鍵
-   sign_key：〜
-   ＃このノードの管理者
-   管理者：
-     -〜
-     -〜
-     -〜
-   ＃ノードメンバー
-   メンバー：
-     --client_id：〜
-     ＃現在のノードが署名を検証するために使用する公開鍵
-       verify_key：〜
-   しきい値：2
-   投票：
-     アセット：965e5c6e-434c-3fa9-b780-c50f43cd955c
-     金額：0.00000001 
-```
-
-#### <ahref = "https://github.com/fox-one/compound/tree/master/handler/rest/rest.go">残りのAPI </a>は、次のようなアプリケーション層にエクスポートされます。
+### [configuration template](https://github.com/fox-one/compound/tree/master/deploy/config.node.yaml.tpl)
 
 ```
+# Fixed value : 1603382400 
+genesis: 1603382400
+# time localtion
+location: Asia/Shanghai
 
-/ market / all //すべての市場に対応
-/ transactions //応答複合トランザクション
-/ price-requests //価格オラクルの呼び出し 
+# data base config
+db:
+  dialect: mysql
+  host: ~
+  read_host: ~
+  port: 3306
+  user: ~
+  password: ~
+  database: ~
+  location: Asia%2FShanghai
+  Debug: true
+
+# mixin dapp config
+dapp:
+  num: 7000103159
+  client_id: ~
+  session_id: ~
+  client_secret: ~
+  pin_token: ~
+  pin: ""
+  private_key: ~
+
+# nodes group config
+group:
+# private key shared by all nodes, that generated by the command: ./compound keys --cipher ed25519
+  private_key: ~
+  # The private key used by the current node for user data signing
+  sign_key: ~
+  # administratories of this node
+  admins:
+    - ~
+    - ~
+    - ~ 
+  # Node member
+  members:
+    - client_id: ~
+    # The public key used by the current node to verify the signature
+      verify_key: ~
+  threshold: 2
+  vote:
+    asset: 965e5c6e-434c-3fa9-b780-c50f43cd955c
+    amount: 0.00000001
 ```
 
-#### 働き手
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go">キャッシャー</a>保留中の転送を処理します。  トランザクションをMixinネットワークに転送する準備をします。
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go"> syncer </a> Mixinネットワークからの出力（UTXO）を同期します。
-* [ txsender ](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go)生のトランザクションをMixinネットワークに転送します。
-* [ spentsync ](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go)は、転送状態を同期して更新します。
-* [ priceoracle ](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go)価格を取得し、チェーンに価格を設定します。
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go">受取人</a>は出力を処理し、ビジネスアクションをディスパッチします。
-
-#### アクション処理
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go">借入</a>は借入アクションイベントを処理します。
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go">供給</a>は供給アクションイベントを処理します。
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go">誓約</a>は誓約アクションイベントを処理します。
-* [ unpledge ](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go)は、unpledgeアクションイベントを処理します。
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go">引き換え</a>は引き換えアクションイベントを処理します。
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go">返済</a>は返済アクションイベントを処理します。
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go">清算</a>は清算アクションイベントを処理します
-* <ahref = "https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go">プロポーザル</a>は、プロポーザルアクションを処理およびディスパッチします。これには、市場の追加、更新が含まれます。 市場、市場の閉鎖または開放、許可リストの追加または削除、撤回
-* [ price ](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go)は、価格プロトコルアクションイベントを処理します。
-
-
-### 市場貿易-抑制メカニズム
-
-> 特定の市場の価格が異常な場合は、市場を閉じます。
-
-* 市場の価格が悪意を持って攻撃された場合、マネージャーは` close-market </ code>注文を実行し、クローズドマーケット投票を申請する権利があります。  リクエストが承認されると、市場は閉鎖されます。</li>
-<li>閉鎖された市場での取引は禁止されています。</li>
-<li>ただし、閉鎖された市場がある限り、清算はユーザーのすべての市場口座の流動性に影響を与えるため、すべての市場の清算は禁止されます。</li>
-</ul>
-
-<h2 spaces-before="0">複合プロトコルの実装</h2>
-
-<ul>
-<li><p spaces-before="0">
-<ahref = "https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go">金利モデル</a>は、複利プロトコルのコア実装です。 </p></li>
-<li><p spaces-before="0"><ahref = "https://github.com/fox-one/compound/tree/master/core/borrow.go">借入残高</a>のユーザー借入残高には、借入元本と借入利息が含まれます。  <code>balance = 借り入れ.principal * market.借り入れ_index / 借り入れ.interest_index`</p>
-
-* <ahref = "https://github.com/fox-one/compound/tree/master/service/market/market.go">利息の発生</a>利息の発生は、変化を引き起こす行動がある場合にのみ発生します 供給、借入、誓約、誓約解除、償還、返済、価格更新などの市場取引データ。  そして、同じブロックで一度だけ計算されます。
+#### [Rest APIs](https://github.com/fox-one/compound/tree/master/handler/rest/rest.go) exported for application layer, including:
 
 ```
-    blockNumberPrior：= market.BlockNumber
+/markets/all   //response all markets
+/transactions  //response compound transactions
+/price-requests // for price oracle calling
+```
 
-    blockNum、e：= s.blockSrv.GetBlock（ctx、time）
-    if e！= nil {
-        eを返す
+#### Worker
+* [cashier](https://github.com/fox-one/compound/tree/master/worker/cashier/cashier.go) Processes the pending transfers. prepare for transfering a transaction to Mixin network.
+* [syncer](https://github.com/fox-one/compound/tree/master/worker/syncer/syncer.go) Syncs the outputs(UTXO) from Mixin network.
+* [txsender](https://github.com/fox-one/compound/tree/master/worker/txsender/sender.go) Transfers raw transaction to Mixin network.
+* [spentsync](https://github.com/fox-one/compound/tree/master/worker/spentsync/spentsync.go) syncs and updates the transfer state.
+* [priceoracle](https://github.com/fox-one/compound/tree/master/worker/priceoracle/priceoracle.go) Fetches a price and put the price on the chain.
+* [payee](https://github.com/fox-one/compound/tree/master/worker/snapshot/payee.go) processes outputs and dispatches business actions.
+
+#### Action processing
+* [borrow](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow.go) handles the borrow action event.
+* [supply](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply.go) handles the supply action event.
+* [pledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_pledge.go) handles the pledge action event.
+* [unpledge](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_unpledge.go) handles the unpledge action event.
+* [redeem](https://github.com/fox-one/compound/tree/master/worker/snapshot/supply_redeem.go) handles the redeem action event.
+* [repay](https://github.com/fox-one/compound/tree/master/worker/snapshot/borrow_repay.go) handles the repay action event.
+* [liquidation](https://github.com/fox-one/compound/tree/master/worker/snapshot/liquidation.go) handles the liquidation action event
+* [proposal](https://github.com/fox-one/compound/tree/master/worker/snapshot/proposal.go) handles and dispatches the proposal actions, include: adding market, updating market, closing or opening market, adding or removing allowlist, withdraw
+* [price](https://github.com/fox-one/compound/tree/master/worker/snapshot/price.go) handles the price protocal action event.
+
+
+### Market Trade-Curbing Mechanism
+
+> Close the market when the price of a certain market is abnormal.
+
+* When the price of a market is maliciously attacked, managers have the right to execute the `close-market` order and apply for a closed-market vote. If the request is approved, the market will be closed.
+* Trades are prohibited in closed markets.
+* However, as long as there are closed markets, liquidation of all markets will be prohibited, because liquidation will affect the liquidity of all market accounts of users.
+
+## The implementation of compound protocol
+
+* [Interest rate model](https://github.com/fox-one/compound/tree/master/internal/compound/interest_rate_model.go) is The core implementation of compound protocol.
+
+* [Borrow balance](https://github.com/fox-one/compound/tree/master/core/borrow.go) user borrow balance contains borrow principal and borrow interest. `balance = borrow.principal * market.borrow_index / borrow.interest_index`
+
+* [Accrue interest](https://github.com/fox-one/compound/tree/master/service/market/market.go) Accruing interest only occurs when there is a behavior that causes changes in market transaction data, such as supply, borrow, pledge, unpledge, redeem, repay, price updating. And Only calculated once in the same block.
+
+```
+    blockNumberPrior := market.BlockNumber
+
+    blockNum, e := s.blockSrv.GetBlock(ctx, time)
+    if e != nil {
+        return e
     }
 
-    blockDelta：= blockNum-blockNumberPrior
-    blockDelta＆gt;の場合0 {
-        BorrowRate、e：= s.curBorrowRatePerBlockInternal（ctx、market）
-        if e！= nil {
-            eを返す
+    blockDelta := blockNum - blockNumberPrior
+    if blockDelta > 0 {
+        borrowRate, e := s.curBorrowRatePerBlockInternal(ctx, market)
+        if e != nil {
+            return e
         }
 
-        if market.BorrowIndex.LessThanOrEqual（decimal.Zero）{
-            market.BorrowIndex = BorrowRate
+        if market.BorrowIndex.LessThanOrEqual(decimal.Zero) {
+            market.BorrowIndex = borrowRate
         }
 
-        timesBorrowRate：= BorrowRate.Mul（decimal.NewFromInt（blockDelta））
-        InterestAccumulated：= market.TotalBorrows.Mul（timesBorrowRate）
-        totalBorrowsNew：= InterestAccumulated.Add（market.TotalBorrows）
-        totalReservesNew：= InterestAccumulated.Mul（market.ReserveFactor）.Add（market.Reserves）
-        BorrowIndexNew：= market.BorrowIndex.Add（timesBorrowRate.Mul（market.BorrowIndex））
+        timesBorrowRate := borrowRate.Mul(decimal.NewFromInt(blockDelta))
+        interestAccumulated := market.TotalBorrows.Mul(timesBorrowRate)
+        totalBorrowsNew := interestAccumulated.Add(market.TotalBorrows)
+        totalReservesNew := interestAccumulated.Mul(market.ReserveFactor).Add(market.Reserves)
+        borrowIndexNew := market.BorrowIndex.Add(timesBorrowRate.Mul(market.BorrowIndex))
 
         market.BlockNumber = blockNum
-        market.TotalBorrows = totalBorrowsNew.Truncate（16）
-        market.Reserves = totalReservesNew.Truncate（16）
-        market.BorrowIndex = BorrowIndexNew.Truncate（16）
-    } 
+        market.TotalBorrows = totalBorrowsNew.Truncate(16)
+        market.Reserves = totalReservesNew.Truncate(16)
+        market.BorrowIndex = borrowIndexNew.Truncate(16)
+    }
 
 ```

@@ -1,45 +1,45 @@
 ---
-title: はじめに
-date: 2021年08月13日　12時33分07秒
+title: Get Started
+date: 2021-08-13 12:33:07
 ---
 
-パンドリーフは、<ahref = "https://docs.pando.im/docs/wallets/mixin-messenger">ミックスインメッセンジャー</a>ウォレットと<ahref = "https://pando.im/fennec/をサポートしています "> fennec </a>（ウェブウォレット）と次のコンテンツは、例としてミックスインメッセンジャーウォレットを取り上げています。
+Pando leaf supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://pando.im/fennec/) (web wallet) and the following content takes mixin messenger wallet as an example.
 
-[ Pando Leaf ](https://leaf.pando.im)にアクセスするか、MixinMessengerアプリでMixinID ** 7000103924 </ strong>を検索して青い数字をクリックします 。  次に、ボットを追加し、小さなロボットアバターをクリックして、Pando Seedを開きます。</p>
+Visit [Pando Leaf](https://leaf.pando.im), or search Mixin ID **7000103924** on Mixin Messenger App and click blue number. Then add bot and click little robot avatar to open Pando leaf.
 
 ![](../assets/leaf-get-started-p1.png)
 
 
-「ウォレットの接続」をクリックして開始します。 そうしないと、アセットに関連するデータがインターフェースに表示されないことを承認してください。
+Click on "Connect Wallet" to start. Be sure to authorize otherwise data related to your assets won't be able to show on the interfaces
 
 ![](../assets/leaf-get-started-p2.png)
 
 ````mdx-code-block
-:::ヒント
-すべてをチェックして承認します。 承認では、資産を表示することはできますが、使用することはできません。 安全です。
+:::tip
+Check all and authorize. Authorization can only view but cannot use your assets. It is safe.
 :::
 ````
 
-Pando leafのホームページを知ろう。
+Let's get to know the homepage of pando leaf.
 
 ![](../assets/leaf-get-start-p3.png)
 
-最初に入力するときに、<ahref = "https://docs.pando.im/docs/leaf/tutorials/open-vault">金庫を追加</a>する必要があります。   右側のスクリーンショットに注目しましょう。
+You are required to [add a vault](https://docs.pando.im/docs/leaf/tutorials/open-vault) when first enter.  Let's focus on the screenshot on the right.
 
-ロックされたBTCは保管庫の担保です。  inmageに1btcが表示されているのは、パンドリーフに1btcを誓約したことを意味します。
+BTC locked is your collateral in the vault. We can see 1 btc in the inmage means we pledged 1 btc in pando leaf.
 
-注目する必要があるのは、担保比率、[清算価格](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio)、[現在の価格と次の価格](https://docs.pando.im/docs/leaf/key-concepts/price-oracles)。
+What needs to be focused on is collateral Ratio, [Liquadation Price](https://docs.pando.im/docs/leaf/key-concepts/liquidation/liquidation-ratio), [current price and Next price](https://docs.pando.im/docs/leaf/key-concepts/price-oracles).
 
-上の写真を例にとると、現在の住宅ローン率は4414.4％で、清算価格は1500 pusdです。つまり、BTCの価格が1500 pusdに下がると、強制的に清算プロセスに入ります。
+Take the above picture as an example, the current mortgage rate is 4414.4%, and the liquidation price is 1500 pusd, which means that when the price of BTC drops to 1500 pusd, it will be forced to enter the liquidation process.
 
-現在の価格と次の価格を組み合わせると、安全であると見なすことができます。
+Combined with the current price and the next price, it can be considered safe.
 
 ````mdx-code-block
-:::注意
-住宅ローンの利率が安全な範囲内にあることを確認してください。安全な範囲は、150％未満が完全に[清算]されます。
+:::caution
+Please ensure that the collateral Ratio is within a safe range, which less than 150% will be liquidated totally.
 :::
 ````
 
-確認して実行してみてください。
+Go and try it.
 
 
