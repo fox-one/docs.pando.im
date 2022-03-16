@@ -5,11 +5,11 @@ date: 2021-08-16 17:40:00
 
 本文档描述了 Pando Rings引擎的 RESTful API 和 RPC 接口的定义和使用。
 
-## Authentication Token
+## 身份验证令牌
 
-Sign authentication token for `GET https://api.mixin.one/me` with scope "FULL" by keystores.
+为`GET https://api.mixin.one/me`签署认证令牌，范围为 "FULL "的密钥库。
 
-visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
+请访问[mixin 开发者文档](https://developers.mixin.one/docs/api/guide#signing)以了解更多细节。
 
 ## RESTful API
 
@@ -132,7 +132,7 @@ GET /api/v1/transactions?limit=10&offset=
 POST /api/v1/pay-requests
 ```
 
-**Payload**
+**负载**
 
 ```json
 {

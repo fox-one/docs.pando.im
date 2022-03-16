@@ -1,5 +1,5 @@
 ---
-title: List Transactions
+title: 列表交易
 date: 2021-12-30 23:18:01
 ---
 
@@ -7,13 +7,13 @@ import { APIMetaPanel, APIRequest, APIEndpoint, APIParams, APIPayload, } from "@
 
 ## GET /transactions
 
-This API will respond a list of transactions.
+该API将响应一个交易列表。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/transactions" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read transactions" method="GET" isPublic base="https://api.4swap.org/api" url='/transactions?cursor={next_cursor}&limit={limit}' />
+<APIRequest title="阅读交易" method="GET" isPublic base="https://api.4swap.org/api" url='/transactions?cursor={next_cursor}&limit={limit}' />
 
 ```json title="Response"
 {
@@ -49,15 +49,15 @@ This API will respond a list of transactions.
 
 ```
 
-## GET /transactions/{base_asset_id}/{quote_asset_id}
+## GET /交易/{base_asset_id}/{quote_asset_id}
 
-This API will respond a list of transactions of the specified pair.
+该API将响应指定交易对的交易列表。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/transactions/{base_asset_id}/{quote_asset_id}" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read transactions of the specified pair" method="GET" isPublic base="https://api.4swap.org/api" url='/transactions/{base_asset_id}/{quote_asset_id}?cursor={next_cursor}&limit={limit}' />
+<APIRequest title="读取指定的交易对的交易" method="GET" isPublic base="https://api.4swap.org/api" url='/transactions/{base_asset_id}/{quote_asset_id}?cursor={next_cursor}&limit={limit}' />
 
 ```json title="Response"
 {
@@ -93,15 +93,15 @@ This API will respond a list of transactions of the specified pair.
 
 ```
 
-## GET /transactions/{base_asset_id}/{quote_asset_id}/mine
+## GET /交易/{base_asset_id}/{quote_asset_id}/我的
 
-This API will respond a list of transactions of the specified pair releated to me.
+该API将响应一个与我有关的指定交易对的交易列表。
 
 <APIEndpoint base="https://api.4swap.org/api" url="/transactions/{base_asset_id}/{quote_asset_id}/mine" />
 
 <APIMetaPanel />
 
-<APIRequest title="Read transactions of the specified pair" method="GET" base="https://api.4swap.org/api" url='/transactions/{base_asset_id}/{quote_asset_id}?cursor={next_cursor}&limit={limit}' />
+<APIRequest title="读取指定的交易对的交易" method="GET" base="https://api.4swap.org/api" url='/transactions/{base_asset_id}/{quote_asset_id}?cursor={next_cursor}&limit={limit}' />
 
 ```json title="Response"
 {

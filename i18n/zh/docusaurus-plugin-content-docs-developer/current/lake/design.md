@@ -3,7 +3,7 @@ title: 设计
 date: 2021-07-31 14:38:07
 ---
 
-## 4swap Design Document
+## 4swap 设计文档
 
 > Pando Lake 是在Uniswap V2 在 Mixin网络上的实现
 
@@ -15,92 +15,92 @@ Pando Lake是由恒定产量公式驱动的自动化流动性协议，部署在[
 
 > 用于稳定币池（如 USDT/USDC）的修改后的[Curve](https://curve.fi)公式。
 
-## Interact with 4swap
+## 与 4swap 交互
 
-All participants of 4swap complete the interaction by transferring tokens to the multisig wallet. Node worker **Syncer** syncs the payments as mixin multisig outputs; another worker **Payee** processes all outputs in order.
+4swap的所有参与者通过将代币转移到多签钱包来完成交互。 节点 Worker 中的 **Syncer** 将所有付款同步为 mixin 多签输出；另有一个 Woker **Payee** 按顺序处理所有输出。
 
-![MTG Design](assets/mtg_design.png)
+![MTG 设计](assets/mtg_design.png)
 
-### Mixin Multisig Output
+### Mixin 多签输出
 
-**Output:**
+**输出:**
 
-| field     | description      |
-| --------- | ---------------- |
-| CreatedAt | payment time     |
-| AssetID   | payment asset id |
-| Amount    | payment amount   |
-| Memo      | extra message    |
+| 字段      | 描述     |
+| ------- | ------ |
+| 创建      | 付款时间   |
+| AssetID | 付款资产ID |
+| Amount  | 付款金额   |
+| Memo    | 附加消息   |
 
-**Output Memo:**
+**输出Memo：**
 
-**Memo** contain the **TransactionAction** information.
+**备忘录**包含 **交易操作**信息。
 
-The memo is AES-encrypted, an ed25519 public key used for compound AES key/iv will be in the first 32 bytes.
+备忘录是AES加密的，一个用于复合AES 密钥/iv的ed25519公钥将出现在前32个字节。
 
-### TransactionAction Definition
+### TransactionAction 定义
 
-| field      | description                                | type   |
-| ---------- | ------------------------------------------ | ------ |
-| Action     | swap, deposit or withdraw                  | number |
-| UserID     | mixin id used for receipt                  | uuid   |
-| FollowID   | user defined trace id for this transaction | uuid   |
-| Parameters | relevant parameters                        | bytes  |
+| 字段       | 描述                            | 类型    |
+| -------- | ----------------------------- | ----- |
+| 操作       | 交换、 存款或取款                     | 数量    |
+| 用户ID     | 用于接收的 mixin id                | uuid  |
+| FollowID | 用户为此 transaction 定义的 trace id | uuid  |
+| 参数       | 相关参数                          | bytes |
 
 ## Workers
 
-1. **Syncer** sync unhanded utxo by mixin messenger api & store into WalletStore as **outputs** in created asc order.
-2. **Payee** pull unhanded utxo from WalletStore in order and parse memo to get the action then handle it. Transfers may be created during handling.
-3. **Assigner** select enough unspent UTXO and assign to a pending transfer.
-4. **Cashier** pull unhandled transfers from WalletStore in order, then request & sign multisig transfer. If enough signatures collected, generate a raw transaction.
-5. **TxSender** commit raw transactions to Mixin Network.
+1. **Syncer**通过mixin messenger api & 同步未处理的 utxo；作为**输出**按照创建的asc顺序存储到WalletStore。
+2. **Payee** 按顺序从钱包商店拉取未处理的utxo，然后解析备忘录以获取操作，然后处理它。 转账可能会在处理过程中被创建。
+3. **Assigner** 选择足够的未使用的 UTXO 并分配到未处理的转账。
+4. **Cashier** 按顺序从钱包商店提取未处理的转账，然后请求& 签署多方签名转账。 如果收集到足够的签名，则生成一个新的交易。
+5. **TxSender**将新的交易提交到Mixin网络。
 
-### Syncer Workflow
+### Syncer 工作流程
 
-![Syncer Workflow](assets/pando-syncer.png)
+![Syncer 工作流程](assets/pando-syncer.png)
 
-### Payee Workflow
+### Payee 工作流程
 
-![Payee Workflow](assets/pando-payee.png)
+![Payee 工作流程](assets/pando-payee.png)
 
-### Assigner & Cashier & TxSender Workflow
+### Assigner & Cashier & TxSender 工作流程
 
-![Assigner & Cashier Workflow](assets/pando-cashier.png)
+![Assigner & Cashier 工作流程](assets/pando-cashier.png)
 
-## Actions
+## 操作
 
-### Deposit
+### 存入
 
-Each Pando Lake liquidity pool is a trading venue for a pair of Mixin Mainnet tokens. When a pool is created by the governance, its balances of each token are 0; in order for the pool to begin facilitating trades, someone must seed it with an initial deposit of each token. This first liquidity provider is the one who sets the initial price of the pool.
+每个 Pando Lake 流动性池都是一对 Mixin Mainnet 代币的交易场所。 治理者创建矿池时，其每个代币的余额为0； 为了让矿池开始促进交易，必须有人存入每个代币的初始存款作为种子。 第一个流动性提供者是设定流动池初始价格的人。
 
-The number of liquidity tokens This first liquidity provider will receive would equal `sqrt(x*y)`, where x and y represent the amount of each token provided. For the following providers, the number will be `min(x/reserve_x,y/reserve_y)*liquidity_shares`.
+第一个流动性提供者将收到的流动性代币数量将等于 `sqrt(x*y)`，其中 x 和 y 代表提供的每个代币的数量。 对于之后的提供者，数字将为 `min(x/reserve_x,y/reserve_y)*liquidity_shares`。
 
-**Parameters:**
+**参数:**
 
-| name     | type    | description                |
-| -------- | ------- | -------------------------- |
-| AssetID  | uuid    | opposite asset id          |
-| Slippage | decimal | max slippage allowed       |
-| Expire   | int64   | deposit timeout in seconds |
+| 名称      | 类型      | 描述         |
+| ------- | ------- | ---------- |
+| AssetID | uuid    | 对方的资产ID    |
+| 滑点      | decimal | 允许的最大滑点    |
+| 过期      | int64   | 存款超时，以秒为单位 |
 
 ### Swap
 
-From the constant product formula it follows that the price of that token A is simply price_token_A = reserve_token_B / reserve_token_A. The market price only moves as the reserve ratio of the tokens in the pool changes, which happens when someone trades against it.
+从常数乘积公式可以得出，代币 A 的价格就是 price_token_A = reserve_token_B / reserve_token_A。 市场价格只会随着池中代币比率的变化而变化，当有人与它进行交易时就会发生这种情况。
 
-The swapping rule is the constant product formula. When either token is withdrawn, a proportional amount of the other must be deposited, in order to make the constant(`k`) unchange.
+交换规则是常数乘积公式。 当任一代币被提取时，必须按比例存入另一个代币，以使常数 (`k`) 保持不变。
 
-Pando Lake applies a 0.3% fee (0.04% for stablecoin pools) to trades, which is added to reserves to increases `k` actually as a payout to liquidation providers.
+Pando Lake 对交易收取 0.3% 的费用（稳定币池为 0.04%），将其添加到准备金中以增加 `k` ，实际上作为对流动性提供者的支付。
 
-**Parameters:**
+**参数:**
 
-| name    | type    | description                                 |
-| ------- | ------- | ------------------------------------------- |
-| AssetID | uuid    | target asset id                             |
-| Route   | string  | swap routes                                 |
-| minimum | decimal | minimum amount acceptable, refund otherwise |
+| 名称      | 类型      | 描述            |
+| ------- | ------- | ------------- |
+| AssetID | uuid    | 目标资产ID        |
+| 路径      | string  | 交换路径          |
+| 最小      | decimal | 可接受的最低金额，否则退款 |
 
-### Withdraw
+### 取回
 
-To retrieve the underlying liquidity, plus any fees accrued, liquidity providers must give back their liquidity tokens, effectively exchanging them for their portion of the liquidity pool, plus the proportional fee allocation.
+为了恢复基础流动性，加上所有应计费用，流动性提供者必须返还他们的流动性代币，才能有效地将它们交换为他们在流动性池中的部分，包括按比例分配的手续费费用。
 
-The number of tokens retrieved will be `lp_token/liquidity_shares*reserve_x` and `lp_token/liquidity_shares*reserve_y`.
+返回的代币数量将会是 `lp_token/liquidity_shares*reserve_x` 和 `lp_token/liquidity_shares*reserve_y`。

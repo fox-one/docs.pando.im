@@ -3,7 +3,7 @@ title: 让我们开始使用吧。
 date: 2021-10-10 12:33:07
 ---
 
-Pando rings supports [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://pando.im/fennec/) (web wallet) and the following content takes mixin messenger wallet as an example.
+Pando rings 支持 [mixin messenger](https://docs.pando.im/docs/wallets/mixin-messenger) wallet and [fennec](https://pando.im/fennec/) (网络钱包) ，以下内容以 mixin messenger 钱包为例。
 
 访问[Pando rings](https://rings.pando.im)，或在Mixin Messenger应用程序上搜索Mixin ID **7000104159**，然后单击蓝色数字。 接下来添加机器人并单击小机器人头像就可以打开Pando rings。
 
