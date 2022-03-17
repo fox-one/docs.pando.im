@@ -188,9 +188,3 @@ In order to avoid the rapid decline in currency prices in a short period of time
 - FTX: `MOB-USD`
 - Exinswap: `MOB-PUSD`
 - 4swap: `MOB-PUSD`
-
-
-
-
-
-
