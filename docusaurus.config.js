@@ -24,7 +24,7 @@ module.exports = {
     algolia: {
       appId: '0XB9T9DWRQ',
       // apiKey: '014dd487f7da82a9af6d3d7adb74c9e5',
-      apiKey: '6957e24ea18d313524b45b1e2afbc0b5',
+      apiKey: 'af8efe9519e5a1456dab4d50dc314666',
       indexName: 'pando',
 
       // Optional: see doc section below
