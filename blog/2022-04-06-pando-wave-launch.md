@@ -15,13 +15,13 @@ We are excited to announce the launch of Pando Wave, a new member of the Pando p
 
 **Current plans available are:**
 
-- Deposit JPYC to earn interest at around 3.72% annual rate of return
+- Deposit USDC to earn interest at around 3.72% annual rate of return
 - Deposit USDT to earn interest at around 3.72% annual rate of return 
 
 
 **Current crypto supported:** 
 
-USDT, JPYC (Of course there will be more to come!)
+USDT, USDC (Of course there will be more to come!)
 
 
 **How to access Pando Wave?**
