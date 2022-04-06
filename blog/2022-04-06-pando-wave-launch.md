@@ -35,7 +35,7 @@ If you have already downloaded Mixin Messenger, search ID "**7000104413**" in it
 Deposit your cryptos and enjoy earning interest right away! 
 
 
-If you have any questions or feedback, you can find us at: [Twitter](https://twitter.com/pando_im) | [Discord](https://discord.com/channels/868370529327910913/868370529327910916) ｜ [Telegram]( [http://t.me/pandoim])
+If you have any questions or feedback, you can find us at: [Twitter](https://twitter.com/pando_im) | [Discord](https://discord.com/channels/868370529327910913/868370529327910916) ｜ [Telegram](https://t.me/pandoim)
 
 
 
