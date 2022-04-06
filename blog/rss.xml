@@ -4,9 +4,16 @@
         <title>Pando Blog</title>
         <link>https://docs.pando.im/blog</link>
         <description>Pando Docs Blog</description>
-        <lastBuildDate>Wed, 09 Feb 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Apr 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[New Product Launch - Pando Wave]]></title>
+            <link>https://docs.pando.im/blog/2022/04/06/pando-wave-launch</link>
+            <guid>New Product Launch - Pando Wave</guid>
+            <pubDate>Wed, 06 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[We are excited to announce the launch of Pando Wave, a new member of the Pando product family! It is a place for you to earn interest on crypto assets within easy and intuitive steps.]]></description>
+        </item>
         <item>
             <title><![CDATA[Translation Award Announcement Ⅳ]]></title>
             <link>https://docs.pando.im/blog/2022/02/09/translate-award-4</link>
