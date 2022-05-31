@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.pando.im/de/blog</id>
     <title>Pando Blog</title>
-    <updated>2022-04-06T00:00:00.000Z</updated>
+    <updated>2022-05-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.pando.im/de/blog"/>
     <subtitle>Pando Docs Blog</subtitle>
     <icon>https://docs.pando.im/de/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Pando Leaf Stability Fee Changes]]></title>
+        <id>Pando Leaf Stability Fee Changes</id>
+        <link href="https://docs.pando.im/de/blog/2022/05/31/pando-leaf-stability-fee-decrease"/>
+        <updated>2022-05-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pando Leaf has lowered the stability fees across collaterals.]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Product Launch - Pando Wave]]></title>
         <id>New Product Launch - Pando Wave</id>
