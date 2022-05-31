@@ -24,4 +24,5 @@ Specifically, the changes are:
 - Decrease the MOB Stability Fee from 5.5% to 1.5%.
 
 #### What does this mean to you?
+
 With these changes, minting pUSD against the above mentioned collateral assets is cheaper for you. If combining with other Pando products, you can even have a potential of earning sizable yields. For example, currently you can now supply pUSD in [Pando Rings](https://rings.pando.im/#/) and enjoy the APY for supplying pUSD at around 15.6% while borrowing pUSD from Pando Leaf at only 1% - 1.5%. As you can see, the loan grows at a lower rate than the principal.
