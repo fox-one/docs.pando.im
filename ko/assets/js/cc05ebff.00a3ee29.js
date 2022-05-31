@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[2692],{6124:function(s){s.exports=JSON.parse('{"allTagsPath":"/ko/blog/tags","slug":"product-updates","name":"product updates","count":2,"permalink":"/ko/blog/tags/product-updates"}')}}]);
