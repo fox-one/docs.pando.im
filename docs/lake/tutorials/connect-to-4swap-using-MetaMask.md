@@ -1,4 +1,8 @@
-# How to connect to 4swap using the MetaMask wallet for trading
+---
+title: How to connect to 4swap using the MetaMask wallet for trading
+
+date: 2022-08-24 22:33:07
+---
 
 Now that you already have the Metamask wallet installed and are familiar with its basic functionalities.
 
