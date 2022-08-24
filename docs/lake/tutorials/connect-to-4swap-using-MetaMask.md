@@ -100,8 +100,8 @@ Reddit: https://www.reddit.com/r/pando/
 
 If you have already downloaded [Mixin Messenger](https://mixin.one/messenger), feel free to join our Mixin community.
 
-4swap Community: 7000103925
+4swap Community: 7000103925 
 
-Pando Community: 7000104110
+Pando Community: 7000104110 
 
 If you have problems using Pando, you can check [Pando documentation](https://docs.pando.im/) or ask questions in the community. The administrator will be happy to help you.
