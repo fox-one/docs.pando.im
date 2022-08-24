@@ -2,24 +2,18 @@
 
 title: How to connect to 4swap using the MetaMask wallet for trading
 
-
-
 date: 2022-08-24 22:33:07
 
 ---
 
 
-
 Now that you already have the Metamask wallet installed and are familiar with its basic functionalities.
-
 
 
 Visit [MetaMask Support](https://metamask.zendesk.com/hc/en-us) to view instructions.
 
 
-
 To ensure asset protection, follow the security instructions carefully and guard your private key and password.
-
 
 
 ## I. Integrating a MetaMask wallet with an MVM network
