@@ -16,25 +16,25 @@ To ensure asset protection, follow the security instructions carefully and guard
 
 1. Go to MetaMask and keep your session active.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/1-1.png?raw=true)
+   ![](../assets/1-1.png)
 
 2. Locate using the [MVM Blockchain Viewer](https://scan.mvm.dev/). Place MVM at the base.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/2-2.png?raw=true)
+   ![](../assets/2-2.png)
 
 3. Confirm it when the confirmation window appears 
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/3-3.png?raw=true)
+   ![](../assets/3-3.png)
 
 ### Approach Two
 
 1. Locate the network addition portal.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/4-4.png?raw=true)
+   ![](../assets/4-4.png)
 
 2. Complete the following information and validate the addition.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/5-5.png?raw=true)
+   ![](../assets/5-5.png)
    
    - Network name: Mixin Virtual Machine
    - Network URL: https://geth.mvm.dev
@@ -44,7 +44,7 @@ To ensure asset protection, follow the security instructions carefully and guard
 
 After that, the MetaMask plug-in window's top allows you to view and switch networks.
 
-![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/6-6.png?raw=true)
+![](../assets/6-6.png)
 
 ## II. Using other networks to send token/coin to the MVM network
 
@@ -52,21 +52,21 @@ It is crucial to make clear that in the following two steps, cross-link bridge i
 
 1. Launch the [Assets Bridge](https://mvg.finance/) and link the MetaMask wallet. 
 
-  ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/7-7.png?raw=true)
+  ![](../assets/7-7.png)
 
 2. Decide to top up to the MVM network from another MetaMask network.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/8-8.png?raw=true)
+   ![](../assets/8-8.png)
 
 3. Select Top-up to acquire a wallet address to which you can send money directly using MetaMask by clicking on it.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/9-9.png?raw=true)
+   ![](../assets/9-9.png)
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/10-10.png?raw=true)
+   ![](../assets/10-10.png)
 
 4. After the top-up, wait and verify the reception of the funds.(it is recommended to try small amounts for the first time)
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/11-11.png?raw=true)
+   ![](../assets/11-11.png)
 
 ## III. Using 4swap.org to connect MetaMask wallet for trading
 
@@ -74,17 +74,17 @@ The aforementioned two procedures have stored the digital assets on the MVM chai
 
 1. Use 4swap.org to connect to the MetaMask wallet.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/12-12.png?raw=true)
+   ![](../assets/12-12.png)
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/13-13.png?raw=true)
+   ![](../assets/13-13.png)
 
 2. Click “Swap” after choosing the currency and entering the quantity.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/14-14.png?raw=true)
+   ![](../assets/14-14.png)
 
 3. After the transaction, wait for a while before checking your balance.
 
-   ![](https://github.com/fox-one/docs.pando.im/blob/master/docs/lake/assets/15-15.png?raw=true)
+   ![](../assets/15-15.png)
 
 ## Join the Pando Community
 
