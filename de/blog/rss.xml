@@ -8,18 +8,18 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Recent updates on Pando]]></title>
-            <link>https://docs.pando.im/de/blog/2022/05/31/recent development</link>
-            <guid>Recent updates on Pando</guid>
-            <pubDate>Tue, 31 May 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[At the end of May, we would like to synchronize some of the recent updates with you.]]></description>
-        </item>
-        <item>
             <title><![CDATA[Pando Leaf Stability Fee Changes]]></title>
             <link>https://docs.pando.im/de/blog/2022/05/31/pando-leaf-stability-fee-decrease</link>
             <guid>Pando Leaf Stability Fee Changes</guid>
             <pubDate>Tue, 31 May 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Pando Leaf has lowered the stability fees across collaterals.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Recent updates on Pando]]></title>
+            <link>https://docs.pando.im/de/blog/2022/05/31/recent development</link>
+            <guid>Recent updates on Pando</guid>
+            <pubDate>Tue, 31 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[At the end of May, we would like to synchronize some of the recent updates with you.]]></description>
         </item>
         <item>
             <title><![CDATA[New Product Launch - Pando Wave]]></title>
