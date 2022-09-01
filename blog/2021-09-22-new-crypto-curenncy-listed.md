@@ -7,6 +7,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [listing]
 ---
 
+[source](https://pando.im/news/2021/2021-09-22-new-cryptocurrencies-listed-on-rings/)
+
+
 USDT(erc20), BOX, MOB and XIN are listed on [Pando Rings](https://rings.pando.im/#/). 
 
 You can [supply](https://docs.pando.im/docs/rings/tutorials/how-to-supply) or [borrow](https://docs.pando.im/docs/rings/tutorials/how-to-borrow) these cryptocurrencies according to your needs.

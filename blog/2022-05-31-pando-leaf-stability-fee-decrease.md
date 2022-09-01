@@ -6,6 +6,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [product updates]
 ---
 
+[source](https://pando.im/news/2022/2022-05-31-pando-leaf-stability-fee-decrease/)
+
+
 Pando Leaf has lowered the [stability fees](https://docs.pando.im/docs/leaf/key-concepts/vaults) across collaterals.
 
 Specifically, the changes are:

@@ -7,6 +7,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [avtivity]
 ---
 
+[source](https://pando.im/news/2021/2021-09-29-write-about-pando-and-win-awards/)
+
+
 [Pando](https://pando.im/) is an open-source project. In order to let more people know about pando, we will launch an essay call. Articles that meet the following conditions can participate in this activities.
 
 <!--truncate-->

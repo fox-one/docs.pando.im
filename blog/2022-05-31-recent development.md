@@ -6,6 +6,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [product updates]
 ---
 
+[source](https://pando.im/news/2022/2022-05-31-recent-development/)
+
+
 At the end of May, we would like to synchronize some of the recent updates with you.
 
 ### 4swap displayed on [CoinGecko](https://www.coingecko.com/zh/exchanges/four_swap)

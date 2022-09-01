@@ -6,6 +6,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [translate award]
 ---
 
+[source](https://pando.im/news/2021/2021-12-03-translate-award-2/)
+
+
 There are currently four projects in translation, of which no one has translated in Spanish yet. If you are good at Spanish, then come on, welcome to your participation! 
 
 Here are the rewards awarded in this period:

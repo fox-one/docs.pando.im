@@ -6,6 +6,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [event award]
 ---
 
+[source](https://pando.im/news/2021/2021-12-23-how-to-get-event-award/)
+
+
 [Pando](https://pando.im/) is an open source DeFi project based on [Mixin Network](https://mixin.one/snapshots) that uses [MTG](https://docs.pando.im/docs/security/mtg) to keep funds safe. The accumulated assets under management have reached 327M $ and the DEX—— [4swap](https://4swap.org) is ranked around 30 in the world.
 
 To thank all our users for support and to let more people know about us, there will be some events that everyone can participat in and will have a chance to get rewards.

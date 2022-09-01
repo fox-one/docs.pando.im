@@ -6,6 +6,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [translate award]
 ---
 
+[source](https://pando.im/news/2021/2021-11-04-translate-award/)
+
+
 After the volunteers' efforts, the translation has been partially completed, thanks to everyone's efforts. First, let's take a look at the results of recent translations. 
 
 ![](./assets/translate-award.png)

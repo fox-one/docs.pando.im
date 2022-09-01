@@ -6,6 +6,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [translate award]
 ---
 
+[source](https://pando.im/news/2022/2022-01-04-translate-award-3/)
+
+
 Through the efforts of the volunteers, most of the translation work of Pando Docs was done. Today was another happy day to share the results.
 
 Here are the rewards awarded in this period:

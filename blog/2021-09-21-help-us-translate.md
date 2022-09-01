@@ -8,6 +8,9 @@ draft: true
 tags: [translate]
 ---
 
+[source](https://pando.im/news/2021/2021-09-21-help-us-translate/)
+
+
 Pando is an open source project, and we are always looking for translators. If you are interested in translating the docs of Pando, please follow [the instructions here to get started](//docs.pando.im/docs/community/contribute#translation).
 
 <!--truncate-->

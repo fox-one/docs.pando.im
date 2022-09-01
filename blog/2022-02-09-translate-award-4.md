@@ -6,6 +6,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [translate award]
 ---
 
+[source](https://pando.im/news/2022/2022-02-09-translate-award-4/)
+
+
 Stepped into 2022, we thank everyone for support of Pando and here are the translation awards for last month.
 
 | Mixin ID | Award Amount(USDT) | Major in           | Donate cafe                      |
