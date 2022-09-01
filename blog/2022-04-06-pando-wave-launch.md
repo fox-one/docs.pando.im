@@ -8,6 +8,8 @@ tags: [product launch]
 
 ![](./assets/wave-logo.png)
 
+[source](https://pando.im/news/2022/2022-04-06-pando-wave-launch/)
+
 We are excited to announce the launch of Pando Wave, a new member of the Pando product family! It is a place for you to earn interest on crypto assets within easy and intuitive steps. 
 
 ![](./assets/wave1.png)

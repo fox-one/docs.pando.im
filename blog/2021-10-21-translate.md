@@ -6,6 +6,8 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [translate]
 ---
 
+[source](https://pando.im/news/2021/2021-10-21-become-pando-contributor-to-win-awards/)
+
 
 [Pando](https://pando.im/) is an open-source project. Thank you to everyone who has contributed to the growth of Pando.
 

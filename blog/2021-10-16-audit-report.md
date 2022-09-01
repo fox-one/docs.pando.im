@@ -7,6 +7,9 @@ author_image_url: https://docs.pando.im/img/logo.png
 tags: [audit report]
 ---
 
+[source](https://pando.im/news/2021/2021-10-16-audit-report/)
+
+
 Pando has been audited by IOActive & LeastAuthority. Click the link below to view the results.
 
 [https://docs.pando.im/docs/security/audit-reports/](https://docs.pando.im/docs/security/audit-reports/)
