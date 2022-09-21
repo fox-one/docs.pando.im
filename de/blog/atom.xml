@@ -8,16 +8,16 @@
     <subtitle>Pando Docs Blog</subtitle>
     <icon>https://docs.pando.im/de/img/favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[Pando Leaf Stability Fee Changes]]></title>
-        <id>Pando Leaf Stability Fee Changes</id>
-        <link href="https://docs.pando.im/de/blog/2022/05/31/pando-leaf-stability-fee-decrease"/>
+        <title type="html"><![CDATA[Recent updates on Pando]]></title>
+        <id>Recent updates on Pando</id>
+        <link href="https://docs.pando.im/de/blog/2022/05/31/recent development"/>
         <updated>2022-05-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[source]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Recent updates on Pando]]></title>
-        <id>Recent updates on Pando</id>
-        <link href="https://docs.pando.im/de/blog/2022/05/31/recent development"/>
+        <title type="html"><![CDATA[Pando Leaf Stability Fee Changes]]></title>
+        <id>Pando Leaf Stability Fee Changes</id>
+        <link href="https://docs.pando.im/de/blog/2022/05/31/pando-leaf-stability-fee-decrease"/>
         <updated>2022-05-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[source]]></summary>
     </entry>
