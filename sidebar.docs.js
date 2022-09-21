@@ -129,6 +129,7 @@ module.exports = {
           label: "FAQs",
           items: [
             'rings/faqs/will-i-lose-supplied-asset',
+            'rings/faqs/how-to-deal-with-mixin-server-encounters-errors-problem',
           ]
         },
       ]
