@@ -58,7 +58,7 @@ module.exports = {
           position: 'left',
           activeBaseRegex: `/developer/`,
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/fox-one/docs.pando.im',
           label: 'GitHub',
@@ -183,16 +183,16 @@ module.exports = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
-        blog: {
-          feedOptions: {
-            type: 'all',
-            title: "Pando Blog"
-          }
+        // blog: {
+        //   feedOptions: {
+        //     type: 'all',
+        //     title: "Pando Blog"
+        //   }
           // showReadingTime: true,
           // Please change this to your repo.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+        // },
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/theme.scss'), ],
         },
