@@ -133,16 +133,16 @@ module.exports = {
       items: [
         {
           type: "category",
-          label: "general",
-           items: [
-          'FAQs/general/how-to-deal-with-mixin-server-encounters-errors-problem',
+          label: "General",
+          items: [
+              'FAQs/general/how-to-deal-with-mixin-server-encounters-errors-problem',
           ]
-          },
+        },
 
-          {
-            type: "category",
-            label: "lake",
-             items: [
+        {
+          type: "category",
+          label: "Pando Lake & 4swap",
+          items: [
             'FAQs/lake/how-to-update-lp-token-icon',
             'FAQs/lake/lake-vs-4swap',
             'FAQs/lake/price',
@@ -150,29 +150,24 @@ module.exports = {
             'FAQs/lake/why-transaction-fail',
             'FAQs/lake/why-providing-liquidity-fail',
             'FAQs/lake/where-can-I-see-liquidity-reward',
-    
-            ]
-            },
+          ]
+        },
 
-          {
-              type: "category",
-              label: "leaf",
-               items: [
+        {
+          type: "category",
+          label: "Pando Leaf",
+          items: [
 
-              ]
-              },  
+          ]
+        },  
 
-          {
-                type: "category",
-                label: "rings",
-                 items: [
-              
-                'FAQs/rings/will-i-lose-supplied-asset',
-                
-                ]
-          },
-        
-        
+        {
+          type: "category",
+          label: "Pando Rings",
+          items: [
+            'FAQs/rings/will-i-lose-supplied-asset',
+          ]
+        },
       ]
     },
     
