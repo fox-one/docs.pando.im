@@ -13,6 +13,8 @@ Pando Lake 및 4swap은 표준 OAuth 프로토콜을 사용하여 사용자를 �
 
 액세스 토큰을 코드와 교환하려면 [Mixin Messenger의 OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) 대신 이 API를 호출하세요.
 
+The code must be issued by 4swap.
+
 <APIEndpoint base="https://api.4swap.org/api" url="/oauth" />
 
 <APIMetaPanel /><APIPayload>{`{ // Mixin Messenger의 OAuth 코드 "code":       "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", // 다른 brokers를 사용하지 않으려면 "broker_id"와 "label"을 비워 두십시오. "broker_id":  "", "label":      "" } `}</APIPayload>
@@ -30,7 +32,7 @@ Pando Lake 및 4swap은 표준 OAuth 프로토콜을 사용하여 사용자를 �
 }
 ```
 
-토큰은 [Mixin API](https://developers.mixin.one/docs/api/guide)와 호환됩니다. Mixin API에서 정보를 얻는 데 사용해도 괜찮습니다.
+The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
 
 ## Sign /me with keystores
 

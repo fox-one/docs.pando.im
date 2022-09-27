@@ -13,11 +13,13 @@ Pando Lake 和 4swap使用标准的 OAuth 协议给用户授权。
 
 调用此 API 而不是 [Mixin Messenger OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) 来交换access token和code。
 
+The code must be issued by 4swap.
+
 <APIEndpoint base="https://api.4swap.org/api" url="/oauth" />
 
 <APIMetaPanel /><APIPayload>{`{ // 来自 Mixin Messenger's OAuth 的 code "code":       "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", // leave "broker_id" and "label" to empty if you don't want to use other brokers. "broker_id":  "", "label":      "" } `}</APIPayload>
 
-<APIRequest title="交换访问令牌" method="POST" isPublic base="https://api.4swap.org/api" url='/oauth --data PAYLOAD' />
+<APIRequest title="Exchange an access token" method="POST" isPublic base="https://api.4swap.org/api" url='/oauth --data PAYLOAD' />
 
 ```json title="Response"
 {
@@ -30,11 +32,11 @@ Pando Lake 和 4swap使用标准的 OAuth 协议给用户授权。
 }
 ```
 
-Token 与 [Mixin API](https://developers.mixin.one/docs/api/guide) 兼容。 可以用它从 Mixin API 获取信息。
+The token is compatible with [Mixin API](https://developers.mixin.one/docs/api/guide). It's fine to use it to get information from Mixin API.
 
 ## 用密钥库签署/我
 
-支持范围为 "FULL "的`GET https://api.mixin.one/me`的Mixin认证令牌。
+Mixin authentication token for `GET https://api.mixin.one/me` with scope "FULL" is supported.
 
-请访问[mixin 开发者文档](https://developers.mixin.one/docs/api/guide#signing)以了解更多细节。
+visit [mixin developers doc](https://developers.mixin.one/docs/api/guide#signing) for more details.
 

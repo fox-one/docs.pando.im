@@ -82,5 +82,9 @@
   "sidebar.docs.category.Community": {
     "message": "Community",
     "description": "The label for category Community in sidebar docs"
+  },
+  "sidebar.docs.category.General": {
+    "message": "General",
+    "description": "The label for category General in sidebar docs"
   }
 }

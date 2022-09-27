@@ -100,8 +100,8 @@ All required information about an order is stored in the transaction memo, in JS
 in which,
 
   - {receiver_id} is the id of user who will receive the LP-Token
-  - {follow_id} is a UUID to trace the transfer
-  - {fill_asset_id} is the asset's ID you are going to use for swapping
+  - {follow_id} is a UUID to trace the transfer, use it to query [this API](../apis/orders.md).
+  - {fill_asset_id} is the asset's ID for which you are swapping.
   - {routes} is a route ids' sequence, which indicates which route you want to use.
   - {minimum} is the minimum amount of asset you will get
 

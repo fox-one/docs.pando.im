@@ -100,8 +100,8 @@ log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
 其中：
 
   - {receiver_id} 是 LP-Token 接受者的user id
-  - {follow_id} 是用来跟踪转账记录的UUID
-  - {fill_asset_id} 是您准备用于交换的资产的 ID
+  - {follow_id} is a UUID to trace the transfer, use it to query [this API](../apis/orders.md).
+  - {fill_asset_id} is the asset's ID for which you are swapping.
   - {routes} 是路由ID的序列，它表明您想使用哪个路由
   - {minimum} 是您期望得到的资产的最小数量
 

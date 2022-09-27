@@ -13,6 +13,8 @@ Pando Lake and 4swap use standard OAuth protocol to authorize users.
 
 Call this API instead of [Mixin Messenger's OAuth API](https://developers.mixin.one/docs/api/oauth/oauth#get-access-token) to exchange the access token with code.
 
+The code must be issued by 4swap.
+
 <APIEndpoint base="https://api.4swap.org/api" url="/oauth" />
 
 <APIMetaPanel /><APIPayload>{`{ // the code from Mixin Messenger's OAuth "code":       "28fefbf1284d90ceb10bddd517fab2a716f4713ebe3f3299a9fd4d881b4c8b54", // leave "broker_id" and "label" to empty if you don't want to use other brokers. "broker_id":  "", "label":      "" } `}</APIPayload>

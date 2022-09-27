@@ -100,8 +100,8 @@ log.Printf("Price: %v", preOrder.FillAmount.Div(InputAmount))
 그 중,
 
   - {receiver_id} 는 LP-Token을 받을 사용자의 ID입니다.
-  - {follow_id} 는 전송을 추적하는 UUID입니다.
-  - {fill_asset_id} 는 교환에 사용할 자산의 ID입니다.
+  - {follow_id} is a UUID to trace the transfer, use it to query [this API](../apis/orders.md).
+  - {fill_asset_id} is the asset's ID for which you are swapping.
   - {routes} 는 사용하려는 경로를 나타내는 경로 Id의 시퀀스입니다.
   - {minimum} 는 당신이 얻을 수 있는 최소 금액 입니다.
 

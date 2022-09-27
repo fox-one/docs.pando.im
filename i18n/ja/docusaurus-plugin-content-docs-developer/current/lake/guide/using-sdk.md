@@ -100,8 +100,8 @@ If you don't use 4swap SDK, you can implement your own best route algorithm ([go
 その中身には、
 
   - {receiver_id} はLPトークンを受け取るユーザーのIDです
-  - {follow_id} は送金を追跡するためのUUIDです
-  - {fill_asset_id} は、交換に使用する暗号資産のIDです
+  - {follow_id} is a UUID to trace the transfer, use it to query [this API](../apis/orders.md).
+  - {fill_asset_id} is the asset's ID for which you are swapping.
   - {routes} はルートIDのシーケンスで、どのルートを使用するかを示します。
   - {minimum} は、受け取る暗号資産の最小額を示します
 
