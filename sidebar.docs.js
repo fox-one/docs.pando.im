@@ -32,19 +32,7 @@ module.exports = {
             'lake/key-concepts/glossary',
           ]
         },
-        {
-          type: "category",
-          label: "FAQs",
-          items: [
-            'lake/faqs/lake-vs-4swap',
-            'lake/faqs/price',
-            'lake/faqs/why-transaction-fail',
-            'lake/faqs/why-providing-liquidity-fail',
-            'lake/faqs/where-can-I-see-liquidity-reward',
-            'lake/faqs/how-to-update-lp-token-icon',
-            'lake/faqs/supported-tokens',
-          ]
-        }
+        
       ],
     },
     {
@@ -81,13 +69,7 @@ module.exports = {
             'leaf/key-concepts/glossary',
           ]
         },
-        {
-          type: "category",
-          label: "FAQs",
-          items: [
-          
-          ]
-        },
+        
       ]
     },
     {
@@ -124,14 +106,7 @@ module.exports = {
             'rings/key-concepts/glossary',
           ]
         },
-        {
-          type: "category",
-          label: "FAQs",
-          items: [
-            'rings/faqs/will-i-lose-supplied-asset',
-            'rings/faqs/how-to-deal-with-mixin-server-encounters-errors-problem',
-          ]
-        },
+        
       ]
     },
     {
@@ -151,6 +126,56 @@ module.exports = {
         'security/audit-reports',
       ]
     },
+
+    {
+      type: "category",
+      label: "FAQs",
+      items: [
+        {
+          type: "category",
+          label: "general",
+           items: [
+          'FAQs/general/how-to-deal-with-mixin-server-encounters-errors-problem',
+          ]
+          },
+
+          {
+            type: "category",
+            label: "lake",
+             items: [
+            'FAQs/lake/how-to-update-lp-token-icon',
+            'FAQs/lake/lake-vs-4swap',
+            'FAQs/lake/price',
+            'FAQs/lake/supported-tokens',
+            'FAQs/lake/why-transaction-fail',
+            'FAQs/lake/why-providing-liquidity-fail',
+            'FAQs/lake/where-can-I-see-liquidity-reward',
+    
+            ]
+            },
+
+          {
+              type: "category",
+              label: "leaf",
+               items: [
+
+              ]
+              },  
+
+          {
+                type: "category",
+                label: "rings",
+                 items: [
+              
+                'FAQs/rings/will-i-lose-supplied-asset',
+                
+                ]
+          },
+        
+        
+      ]
+    },
+    
     {
       type: "category",
       label: "Community",
@@ -162,3 +187,4 @@ module.exports = {
     },
   ]
 };
+    
