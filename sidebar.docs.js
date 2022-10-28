@@ -91,6 +91,7 @@ module.exports = {
             'rings/tutorials/how-to-withdraw',
             'rings/tutorials/check-market-stats',
             'rings/tutorials/check-tx-history',
+            'rings/tutorials/how-to-connect-by-metamask',
           ]
         },
         {
