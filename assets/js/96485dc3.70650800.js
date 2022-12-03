@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[3255],{9032:a=>{a.exports=JSON.parse('{"label":"avtivity","permalink":"/blog/tags/avtivity","allTagsPath":"/blog/tags","count":1}')}}]);

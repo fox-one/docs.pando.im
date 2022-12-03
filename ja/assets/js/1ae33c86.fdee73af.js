@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[9819],{5215:function(e){e.exports=JSON.parse('{"permalink":"/ja/blog","page":1,"postsPerPage":10,"totalPages":2,"totalCount":13,"previousPage":null,"nextPage":"/ja/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
