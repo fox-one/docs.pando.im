@@ -9,13 +9,13 @@ It can be embedded in any web based applications. People can connect their walle
 
 The host can distribute rewards to the commenters according to the some specific rules.
 
-## How to use
+## Usage and Pricing
 
-WIP
+Please contact contact@pando.im, and tell us your website address.
 
 ## Web Demo
 
-WIP
+Please visit [this page](https://fox-one.github.io/talkee-vue/?path=/story/talkee--basic-usage) to see the demo.
 
 ## Who's using Talkee
 
