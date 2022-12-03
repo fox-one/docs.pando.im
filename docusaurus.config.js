@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Pando Docs',
-  tagline: 'Pando is cool',
+  tagline: 'Pando offers comprehensive easy-to-use Decentralized finance(DeFi) services, built with blockchain-based MTG technology.',
   url: 'https://docs.pando.im',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -16,33 +16,17 @@ module.exports = {
     require.resolve('./global.js')
   ],
   themeConfig: {
-    metadatas: [
-      { "http-equiv": 'cache-control', content: 'no-cache' },
-      { "http-equiv": 'expires', content: '0' },
-      { "http-equiv": 'pragma', content: 'no-cache' },
-    ],
     algolia: {
       appId: '0XB9T9DWRQ',
-      // apiKey: '014dd487f7da82a9af6d3d7adb74c9e5',
       apiKey: 'af8efe9519e5a1456dab4d50dc314666',
       indexName: 'pando',
-
-      // Optional: see doc section below
       contextualSearch: true,
-
-      // Optional: see doc section below
-      // appId: 'YOUR_APP_ID',
-
-      // Optional: Algolia search parameters
-      // searchParameters: {},
-
-      //... other Algolia params
     },
     navbar: {
       title: 'Pando Docs',
-      hideOnScroll: true,
+      hideOnScroll: false,
       logo: {
-        alt: 'Pando Site Logo',
+        alt: 'Pando Docs',
         src: 'img/logo.png',
       },
       items: [
@@ -50,7 +34,7 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'User Manuals',
+          label: 'Manuals',
         },
         {
           to: '/developer/intro',
@@ -61,11 +45,6 @@ module.exports = {
         {
           href: 'https://pando.im',
           label: 'Website',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/fox-one/docs.pando.im',
-          label: 'GitHub',
           position: 'right',
         },
         {
@@ -126,13 +105,10 @@ module.exports = {
       darkTheme: darkCodeTheme,
     },
     // not working, so i write script in global.js
-    gtag: {
-      trackingID: 'UA-112996081-17',
-    },
     colorMode: {
       defaultMode: 'light',
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
   },
   plugins: [
@@ -183,19 +159,7 @@ module.exports = {
           path: 'docs',
           routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebar.docs.js'),
-          // Please change this to your repo.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          feedOptions: {
-            type: 'all',
-            title: "Pando Blog"
-          }
-          // showReadingTime: true,
-          // Please change this to your repo.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          breadcrumbs: true,
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/theme.scss'), ],
@@ -203,6 +167,9 @@ module.exports = {
         sitemap: {
           changefreq: 'daily',
           priority: 0.5,
+        },
+        gtag: {
+          trackingID: 'UA-112996081-17',
         },
       },
     ],

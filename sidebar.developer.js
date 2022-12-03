@@ -4,7 +4,6 @@ module.exports = {
     {
       type: "category",
       label: "Pando Lake & 4swap",
-      collapsed: false,
       items: [
         "lake/overview",
         {
@@ -35,7 +34,6 @@ module.exports = {
     {
       type: "category",
       label: "Pando Leaf",
-      collapsed: false,
       items: [
         "leaf/overview",
         "leaf/design",
@@ -60,13 +58,21 @@ module.exports = {
     {
       type: "category",
       label: "Pando Rings",
-      collapsed: false,
       items: ["rings/overview", "rings/design", "rings/guide", "rings/apis"],
     },
     {
       type: "category",
+      label: "Pando Lots",
+      items: ["lots/overview", "lots/apply"],
+    },
+    {
+      type: "category",
+      label: "Talkee",
+      items: ["talkee/overview"],
+    },
+    {
+      type: "category",
       label: "Resources",
-      collapsed: false,
       items: ["resources/open-source", "resources/examples", "resources/sdk"],
     },
   ],

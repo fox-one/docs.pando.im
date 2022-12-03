@@ -4,7 +4,6 @@ module.exports = {
     {
       type: "category",
       label: "Pando Lake & 4swap",
-      collapsed: false,
       items: [
         'lake/intro',
         {
@@ -38,7 +37,6 @@ module.exports = {
     {
       type: "category",
       label: "Pando Leaf",
-      collapsed: false,
       items: [
         'leaf/intro',
         'leaf/pusd',
@@ -75,7 +73,6 @@ module.exports = {
     {
       type: "category",
       label: "Pando Rings",
-      collapsed: false,
       items: [
         'rings/intro',
         {
@@ -153,14 +150,6 @@ module.exports = {
             'FAQs/lake/where-can-I-see-liquidity-reward',
           ]
         },
-
-        {
-          type: "category",
-          label: "Pando Leaf",
-          items: [
-
-          ]
-        },  
 
         {
           type: "category",
