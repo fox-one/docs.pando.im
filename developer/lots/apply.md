@@ -20,10 +20,10 @@ Pando Lots is free for eligible public communities. For private communities, we 
 Import
 
 ```js
-    import PandoLots from '@foxone/pando-lots-vue';
-    import "@foxone/pando-lots-vue/lib/index.css";
+import PandoLots from '@foxone/pando-lots-vue';
+import "@foxone/pando-lots-vue/lib/index.css";
 
-    Vue.use(PandoLots);
+Vue.use(PandoLots);
 ```
 
 In any **.vue file
