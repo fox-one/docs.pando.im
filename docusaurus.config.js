@@ -93,12 +93,12 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/fox-one/pando',
+              href: 'https://github.com/fox-one/docs.pando.im/',
             },
           ],
         },
       ],
-      copyright: `Copyright © 2020 - ${new Date().getFullYear()} Pando`,
+      copyright: `Copyright © 2020 - Present, Pando`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -169,7 +169,7 @@ module.exports = {
           priority: 0.5,
         },
         gtag: {
-          trackingID: 'UA-112996081-17',
+          trackingID: 'G-YR2JHZK1KK',
         },
       },
     ],

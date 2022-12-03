@@ -2,7 +2,7 @@ function triggerGtag() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'UA-112996081-17');
+  gtag('config', 'G-YR2JHZK1KK');
 }
 
 if (typeof window !== "undefined") {
@@ -13,7 +13,7 @@ if (typeof window !== "undefined") {
   script.onload = function() {
     triggerGtag();
   }
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-112996081-17';
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-YR2JHZK1KK';
   head.appendChild(script);
 
   // fonts
