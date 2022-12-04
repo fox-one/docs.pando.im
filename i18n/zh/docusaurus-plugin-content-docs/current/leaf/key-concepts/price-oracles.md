@@ -3,56 +3,56 @@ title: 价格预言机
 date: 2021-08-13 12:33:07
 ---
 
-The `Oracle Price` for each trading pair is used for the following:
+每个交易对的 `Oracle Price` 被用于以下方面。
 
-- Ensuring that each account is well-collateralized after each trade
-- Determining when an account should be liquidated
+- 确保每个账户在每次交易后都有充足的抵押
+- 确定何时账户会被清算
 
-### Calculation
+### 计算
 
-Oracle prices will not take effect until it is confirmed by more than 4 of the 6 nodes.
+预言价格在得到6个节点中4个以上的确认后才会生效。
 
-> At present, it is a 4/6 multi-signature. 
+> 目前，这是一个4/6的多重签名。 
 > 
-> If there is any adjustment, the document will be updated.
+> 如果有任何调整，文件会被更新。
 
-### Node Providers
+### 节点提供方
 
-| Node name  | First choice | Second choice | Third choice |
-| ---------- | ------------ | ------------- | ------------ |
-| Pando      | coinbase     | 4swap         |              |
-| Pando Girl | binance      | ftx           | exinswap     |
-| Mixin      | bitstamp     | bitfinex      | 4swap        |
-| BigONE     | bittrex      | ftx           | exinswap     |
-| Poolin     | okex         | 4swap         |              |
-| Exin       | huobi        | ftx           |              |
+| 节点名称       | 第一选择     | 第二选择     | 第三选择     |
+| ---------- | -------- | -------- | -------- |
+| Pando      | coinbase | 4swap    |          |
+| Pando Girl | binance  | ftx      | exinswap |
+| Mixin      | bitstamp | bitfinex | 4swap    |
+| BigONE     | bittrex  | ftx      | exinswap |
+| Poolin     | okex     | 4swap    |          |
+| Exin       | huobi    | ftx      |          |
 
-> Specially,
+> 特别的是，
 > 
-> - FTX, 4swap, Exinswap is an alternative exchange for taking prices, and prices will be taken from the above three exchanges only if the other six exchanges do not read oracle prices.
-> - The price taken on 4swap will not take effect until the price impact of transaction 1000 Pusd is less than 2%.
-> - The price taken on Exinswap will not take effect until the price impact of the transaction 100 Pusd is less than 2%.
+> - FTX、4swap、Exinswap是取价的替代性交易所，只有在其他六个交易所不读取预言价格的情况下，才会从上述三个交易所取价。
+> - 在4swap上取的价不会生效，直到交易1000 Pusd时的价格影响低于2%。
+> - 在Exinswap上取的价不会生效，直到交易100 Pusd时的价格影响低于2%。
 
-## Index Prices
+## 指数价格
 
-The `Index Price` for each trading pair is used for the following:
+每个交易对的 `指数价格` 用于以下方面:
 
-- Calculating the funding rate
-- Trigger "liquidation" and enter the auction
+- 计算筹资率
+- 触发 "清算"，并进入拍卖环节
 
-### Calculation
+### 计算
 
-Index prices are equal to the median of several exchanges' spot prices.
+指数价格等于几个交易所现货价格中位数。
 
-Each exchange's spot price is calculated as the median of the best-ask, best-bid, and last-traded prices of its spot pair.
+每个交易所的现货价格是以其现货交易对的最佳卖价、最佳买价和最后交易价格的中位数计算。
 
-We will adjust the price index to Pusd through 4swap.
+我们会通过4swap将价格指数调整为Pusd计价。
 
-### Price Delay Mechanism
+### 价格延迟机制
 
-In order to avoid the rapid decline in currency prices in a short period of time, which will lead to insufficient settlement of collateral, the currency prices confirmed by multi-signature nodes will not be immediately applied to Panduoye, there is a 30-minute delay.
+为了避免币价在短时间内迅速下跌，导致抵押物不足，多签节点确认的币价不会立即应用于Panduoye，有30分钟的延迟。
 
-### Exchange Sources
+### 交易所来源
 
 #### BTC-PUSD
 
@@ -162,7 +162,7 @@ In order to avoid the rapid decline in currency prices in a short period of time
 - Bitfinex: `DOT-USD`
 - Bittrex: `DOT-USD`
 - CoinbasePro: `DOT-USD`
-- Huobi: `DOT-USDC`
+- CoinbasePro: `DOT-USD`
 - FTX: `DOT-USD`
 - OKEx: `DOT-USDC`
 - Exinswap: `DOT-PUSD`

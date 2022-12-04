@@ -1,15 +1,15 @@
 ---
-title: Will there be any loss of my supplied assets?
+title: 我供应的资产会有任何损失吗？
 date: 2021-09-04 12:33:07
 ---
 
-### If you don't have any loans:
-Generally, the answer is NO. You gain interest of the assets you supplied and there is no fee you need to pay.
+### 如果您没有任何贷款：
+一般来说，答案是否定的。 您获得了您提供的资产的利息，并且您不需要支付任何费用。
 
-In the very extreme situation though, as assets available to borrow on the market all come from users' supply, if there are bad debts (meaning a loan that is not likely to be paid), there is a chance that you cannot get back the full amount of your supplied assets. However, **it is unlikely to happen** in Pando Rings as liquidation is monitored real-time by liquidating bots (algorithms to execute liquidation) to avoid bad debts from happening.
+但在非常极端的情况下，由于可在市场上借贷的资产都来自用户的供货。 如果存在坏账（即不可能偿还的贷款）， 有机会无法全额收回您提供的资产。 不过这种情况  **在Pando Rings中不太可能发生** ，因为清算程序是通过清算机器(执行清算的算法 )实时监测清算，以避免出现坏债务。
 
 
-### If you do have loans:
-If the value of your borrowed assets has exceeded your [borrow limit](https://docs.pando.im/docs/rings/key-concepts/glossary), you will enter [liquidation](https://docs.pando.im/docs/rings/key-concepts/liquidation), losing part or all of your collateral (ie. pledged assets). Of your total supplied assets, the pledged assets are subject to liquidation while your unpledged assets will stay intact.
+### 如果您确实有贷款：
+如果你的借款资产价值已经超过你的[借款限额](https://docs.pando.im/docs/rings/key-concepts/glossary)，你将进入[清算](https://docs.pando.im/docs/rings/key-concepts/liquidation)，失去部分或全部的抵押品(即抵押资产）。 在您提供的全部资产中，进行清算的是担保资产；而未进行担保的资产将保持不变。
 
-It is important tht you pay close attention to the [loan risk indicator](https://docs.pando.im/docs/rings/key-concepts/loan-risk-indicator) to monitor your loan risk, and keep your collateral safe from liquidation.
+重要的是，你要密切关注[贷款风险指标](https://docs.pando.im/docs/rings/key-concepts/loan-risk-indicator)，以监测你的贷款风险，并保持你的抵押品不被清算。

@@ -1,67 +1,67 @@
 ---
-title: How to connect to 4swap using MetaMask
+title: 如何使用MetaMask连接4swap
 date: 2022-08-24 22:33:07
 ---
 
-Before learning about how to connect to 4swap using MetaMask, you would need to have the MetaMask wallet installed and have got familiar with its basic functionalities. If you are not yet familiar, you can visit [MetaMask Support](https://metamask.zendesk.com/hc/en-us) for instructions.
+在学习如何使用MetaMask连接4swap之前，你需要安装MetaMask钱包并熟悉其基本功能。 如果你还不熟悉，你可以访问[MetaMask支持](https://metamask.zendesk.com/hc/en-us)以获得指导。
 
 
-To ensure the safety of your assets, please follow the security instructions closely. Be sure to keep your private key and password in secure and private places.
+为确保你的资产安全，请严格遵守安全指示。 请确保将您的私人密钥和密码保存在安全和私密的地方。
 
-Now, we are ready to talk about how to connect to 4swap using MetaMask.
-
-
-## Step One: Add MVM network to your MetaMask wallet
+现在，我们已经准备好讨论如何用MetaMask连接4swap。
 
 
-### Option 1
+## 第一步：添加MVM网络到你的MetaMask钱包中
 
 
-1. Go to MetaMask and keep your session active.
+### 选项 1
+
+
+1. 转到MetaMask，保持你的会话处于活动状态。
 
       ![](../assets/1-1.png)
 
 
 
-2. Go to [MVM Blockchain Viewer](https://scan.mvm.dev/). You can see "Add MVM to MetaMask" at the bottom of the page.
+2. 转到[MVM区块链浏览器](https://scan.mvm.dev/)。 你可以在页面底部看到 "Add MVM to MetaMask"。
 
      ![](../assets/2-2.png)
 
 
 
-3. Click on the item and you will see a confirmation window pop up. click on the "Approve" button.
+3. 点击该项目，你会看到一个确认窗口弹出。点击 "允许"按钮。
 
      ![](../assets/3-3.png)
 
 
 
-### Option 2
+### 选项 2
 
 
 
-1. Open your MetaMask plug-in (on the top right of your screen) and click on the button showing your current selected network. In the Networks drop-down menu, you will see "Add Network" at the bottom. Click on it.
+1. 打开你的MetaMask插件（ 在屏幕的右上方），点击显示你当前选定网络的按钮。 在网络下拉菜单中，你会看到底部的 "添加网络"。 点击它。
 
    ![](../assets/4-4.png)
 
 
 
-2. You will be directed to a new window asking you to fill in the information of the new network. Copy the below information and fill them in the corresponding boxes on the page. Then click on "Save".
+2. 你将被引导到一个新窗口，要求你填写新网络的信息。 复制以下信息，并将它们填入页面上的相应方框。 然后点击"保存"。
 
    ![](../assets/5-5.png)
 
-   Network name: Mixin Virtual Machine
+   网络名称：Mixin Virtual Machine
 
-   Network URL: https://geth.mvm.dev
+   网络网址：https://geth.mvm.dev
 
-   Chain ID: 73927
+   链条ID： 73927
 
-   Currency symbol: ETH
+   货币符号: ETH
 
-   Block Browser: https://scan.mvm.dev/
+   区块浏览器： https://scan.mvm.dev/
 
 
 
-After that, you successfully add "Mixin Virtual Machine" to your MetaMask and it's selected as your current network. You can click on the drop-down menu to switch to other networks.
+之后，你成功地将 "Mixin虚拟机 "添加到你的MetaMask中，它被选为你的当前网络。 你可以点击下拉菜单，切换到其他网络。
 
 
 
@@ -69,24 +69,24 @@ After that, you successfully add "Mixin Virtual Machine" to your MetaMask and it
 
 
 
-## Step Two: Send assets to MVM network using other networks through cross-chain bridges
+## 第二步：通过跨链桥，利用其他网络将资产发送至MVM网络
 
 
-Next, you need to transfer some assets to the MVM address. It's done using the official cross-chain bridge offered by Mixin Network.
+接下来，你需要将一些资产转移到MVM地址。 这是用Mixin Network提供的官方跨链桥完成的。
 
-1. Launch the [Assets Bridge](https://mvg.finance/) and link the MetaMask wallet.
+1. 启动[资产桥](https://mvg.finance/)并链接MetaMask钱包。
 
    ![](../assets/7-7.png)
 
 
 
-2. Choose the network from which you will use to top up the MVM network. "Ethereum Mainnet" is selected here as an example.
+2. 选择你要用于MVM网络充值的网络。 这里选择 "Ethereum Mainnet "作为例子。
 
    ![](../assets/8-8.png)
 
 
 
-3. Click on "Deposit" and then confirm deposit from the current wallet. You will see an address in the pop-up window. You can send money directly to this address as an alternative way to top-up your MVM wallet.
+3. 点击 "存款"，然后确认从当前钱包存款。 你会在弹出的窗口中看到一个地址。 你可以直接向这个地址汇款，作为给你的MVM钱包充值的另一种方式。
 
    ![](../assets/9-9.png)
 
@@ -94,19 +94,19 @@ Next, you need to transfer some assets to the MVM address. It's done using the o
 
 
 
-4. After confirming deposit, wait for a bit and you will see a change of the balance in your MetaMask wallet. it is recommended that you only deposit a small amount as a test for the first time.
+4. 确认存款后，等待一段时间，你会看到MetaMask钱包里的余额发生变化。 建议你第一次只存一小笔钱作为测试。
 
    ![](../assets/11-11.png)
 
 
 
-## Step Three: Connect your MetaMask wallet to 4swap and start trading
+## 第三步：将您的MetaMask钱包连接到4swap并开始交易
 
 
-After depositing assets to the MVM address, now you are ready to trade them through 4swap.
+将资产存入MVM地址后，现在你已完成通过4swap进行交易的准备。
 
 
-1. Connect your MetaMask wallet to [4swap](https://4swap.org/)
+1. 将您的MetaMask钱包连接到[4swap](https://4swap.org/)。
 
    ![](../assets/12-12.png)
 
@@ -114,25 +114,25 @@ After depositing assets to the MVM address, now you are ready to trade them thro
 
 
 
-2. Click “Swap” after choosing the currency and entering the quantity.
+2. 选择代币并输入数量后，点击 "交换"。
 
    ![](../assets/14-14.png)
 
 
 
-3. Give it a while for the transaction to be processed.
+3. 给它一些时间来处理交易。
 
    ![](../assets/15-15.png)
 
 
-Congratuations! By following the above steps, you will be able to successfully swap in 4swap using your MetaMask wallet. Enjoy the lightening fast, gas-fee-free trading experience!
+恭喜！ 按照上述步骤，你将能够在4swap中使用MetaMask钱包成功进行资产交换。 享受闪电般的快速、免gas费的交易体验!
 
 
-## Join the Pando Community
+## 加入Pando社区
 
 
 
-Welcome to join our community and follow the latest community trends or event information.
+欢迎加入我们的社区，关注最新的社区趋势或活动信息。
 
 - Twitter: [@4swapOrg](https://twitter.com/4swapOrg)
 
@@ -142,12 +142,12 @@ Welcome to join our community and follow the latest community trends or event in
 
 - Reddit: https://www.reddit.com/r/pando/
 
-If you have already downloaded [Mixin Messenger](https://mixin.one/messenger), feel free to join our Mixin community.
+如果您已经下载了[Mixin Messenger](https://mixin.one/messenger)，随时欢迎加入我们的Mixin社区。
 
 
-4swap Community: 7000103925
+4swap社区: 7000103925
 
-Pando Community: 7000104110
+Pando 社区: 7000104110
 
 
-If you have problems using Pando, you can check [Pando documentation](https://docs.pando.im/) or ask questions in the community. The administrator will be happy to help you.
+如果您在使用Pando时遇到问题，您可以查看[Pando文档](https://docs.pando.im/)或在社区中提问。 管理员将很乐意帮助你。

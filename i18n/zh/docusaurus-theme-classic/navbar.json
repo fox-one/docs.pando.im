@@ -20,7 +20,11 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.Website": {
-    "message": "Website",
+    "message": "网站",
     "description": "Navbar item with label Website"
+  },
+  "item.label.Manuals": {
+    "message": "Manuals",
+    "description": "Navbar item with label Manuals"
   }
 }

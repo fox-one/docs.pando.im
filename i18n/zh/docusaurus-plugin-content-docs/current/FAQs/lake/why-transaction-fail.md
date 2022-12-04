@@ -1,5 +1,5 @@
 ---
-title: Why did my transaction fail?
+title: 为什么我的交易失败？
 date: 2021-08-15 22:33:07
 ---
 
@@ -8,10 +8,10 @@ import { Improvement, } from "@site/src/components/admonitions";
 <Improvement />
 
 
-Common transaction failures are caused by the transaction exceeding slippage. Please refresh the page to obtain the latest transaction pair data.
+常见的交易失败是由于交易的超额滑点造成的。 请刷新页面以获取交易对的最新数据。
 
-The information displayed by Pando Lake on the web page is the estimated information at the moment you enter the quantity. When you actually pay, it may happen that due to the transaction behavior of others, the actual amount of assets you will get when you pay is different from the estimated amount. There is a large difference in quantity, Pando Lake will actively reject this kind of transaction with a large difference between the expected and actual results to reduce the loss caused by the difference between the estimated and the actual value.
+Pando Lake在网页上显示的信息是您输入数量时的估计信息。 当您实际支付时，可能会出现由于他人的交易行为导致您支付时实际获得的资产数量与预估金额不同的情况。 如果数量差异过大，Pando Lake会主动拒绝这类预期与实际结果相差较大的交易，以减少因预估值与实际值的差异所造成的损失。
 
-We provide a parameter name slippage, which can be set on the gear ⚙ icon button on the right side of the transaction button. The slippage is the difference between the estimated information and the actual transaction result during Pando Lake transactions.
+我们提供了一个名称为滑点的参数，可以在交易按钮右侧的齿轮⚙图标按钮上设置。 滑点是指在Pando Lake交易期间，预估信息与实际交易结果之间的差异。
 
-The greater the slippage, the higher the tolerance for the expected difference in the transaction, and the success rate of the transaction will increase, but it may also result in greater losses. The smaller the slippage, the lower the tolerance for the expected difference of the transaction, the lower the transaction success rate, but each order will be more in line with the estimated situation you see on the web page. The default value of slippage is 1%, that is, when the actual transaction differs from the estimated transaction amount you see on the webpage by more than 1%, the Pando Lake engine will reject the transaction.
+滑点越大，对交易预期差异的容忍度越高，交易的成功率就会提高，但也可能造成较大的损失。 滑点越小，对交易预期差异的容忍度越低，交易成功率越低，但每笔订单会更符合您在网页上看到的估计情况。 滑点的默认值为 1%，即当实际交易与您在网页上看到的预估交易金额相差 1% 以上时，Pando Lake 引擎将拒绝该交易。

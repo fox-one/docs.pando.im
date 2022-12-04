@@ -1,14 +1,14 @@
 ---
-title: How to deal with "Mixin server encounters errors" problem
+title: 如何处理 "Mixin服务器遇到错误 "的问题
 date: 2022-09-21 12:33:07
 ---
 
-When you see "Mixin server encounters errors" in Pando product, one possible situation is that the crypto currency you are going to pay has too much utxo, which quantity has exceeded 256, is not enough to complete the payment of the transaction. In other words, you need to combine the change into whole money before paying.
+当你在Pando产品中看到 "Mixin服务器遇到错误 "时，一种可能的情况是你要支付的加密货币有太多的utxo，其数量已经超过256，不足以完成交易的支付。 换句话说，你需要在付款前将零钱合并成整钱。
 
 ![](../assets/bug.png)
 
-You can combine the change by paying more times until has enough whole money to pay. Also you can transfer the crypto currency you are going to pay to a new Mixin wallet, and then transfer it back and pay to Pando again. This is the equivalent of converting change to whole money.
+你可以通过支付更多的次数来合并零钱，直到有足够的整钱来支付。 此外，你还可以将你要支付的加密货币转移到一个新的Mixin钱包，然后再转回来，再次支付给Pando。 这相当于把零钱换成整钱。
 
-You can establish a new Mixin Wallet easily by [fennec](https://pando.im/wallet/).
+你可以通过[fennec](https://pando.im/wallet/)轻松建立一个新的Mixin钱包。
 
-[Learn more details about fennec](https://docs.pando.im/docs/apps/wallets/#fennec)
+[了解更多关于fennec 的详细信息](https://docs.pando.im/docs/apps/wallets/#fennec)

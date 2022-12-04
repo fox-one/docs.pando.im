@@ -1,30 +1,30 @@
 ---
-title: Which tokens are supported?
+title: 支持哪些代币？
 date: 2021-08-15 22:33:07
 ---
 
 
-In theory, we can provide support for the assets supported by Mixin Network, but the current list of assets we choose to support is based on the following rules:
+理论上，我们可以支持 Mixin Network 支持的所有资产，但目前我们选择支持的资产列表基于以下规则：
 
-- Strong ecosystem or high reputation in the blockchain industry.
+- 强大的生态系统或在区块链行业有很高的声誉。
 
-- Considerable community base in the Mixin ecosystem.
+- 在 Mixin 生态系统中有相当大的社区基础。
 
-- The project owner is willing to provide assets as the initial liquidity market maker, and the net value reaches the standard recognized by the Fox.ONE team.
+- 项目方愿意提供资产作为初始流动性做市商，并且净值达到Fox.ONE团队认可的标准。
 
-### List of supported tokens
+### 可支持的代币列表
 
 
-| Coin/Token  |               The Explorer Address/The Contract Address               |
+|    币/代币     |                            Explorer地址/合约地址                            |
 |:-----------:|:---------------------------------------------------------------------:|
 |     BTC     |                  https://www.blockchain.com/explorer                  |
 |     ETH     |                         https://etherscan.io/                         |
 |     EOS     |                         https://eosflare.io/                          |
 | USDT（Erc20） | https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7 |
 |    USDC     | https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 |
-|     BOX     | https://etherscan.io/token/0x045414e728067ab3da4bceafc0d992d59183463a |
+|     BOX     | https://therscan.io/token/0x045414e728067ab3da4bceafc0d992d59183463a  |
 | Mobilecoin  |                        https://mobilecoin.com/                        |
-|    pUSD     | https://etherscan.io/token/0xdbaef6da45984a9329c2640d19dcb9f62dc2ab66 |
+|    pUSD     | https://therscan.io/token/0xdbaef6da45984a9329c2640dc19dcb9f62dc2ab66 |
 |     XIN     | https://etherscan.io/token/0xa974c709cfb4566686553a20790685a47aceaa33 |
 |     RUM     | https://etherscan.io/token/0x09b43d10656724373b2184c82e0ad6439c7b419a |
 |    LUNA     | https://etherscan.io/token/0x4475ecc4ed22f55b44f942e43f04225f902c9428 |

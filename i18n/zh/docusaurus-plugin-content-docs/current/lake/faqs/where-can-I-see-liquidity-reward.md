@@ -8,4 +8,4 @@ date: 2021-09-13 00:00:02
 
 
 
-The revenue details can be viewed on the "Me" page.
+收入详情可以在“我的”页面查看。

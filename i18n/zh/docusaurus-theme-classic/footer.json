@@ -29,10 +29,14 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/fox-one/pando"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/fox-one/docs.pando.im/"
   },
   "copyright": {
     "message": "版权 © 2020 - 2021 Pando",
     "description": "The footer copyright"
+  },
+  "link.item.label.Pando.im": {
+    "message": "Pando.im",
+    "description": "The label of footer link with label=Pando.im linking to https://pando.im"
   }
 }

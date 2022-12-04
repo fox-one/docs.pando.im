@@ -46,5 +46,13 @@
   "sidebar.docs.category.Resources": {
     "message": "Resources",
     "description": "The label for category Resources in sidebar docs"
+  },
+  "sidebar.docs.doc.Pando Lots": {
+    "message": "Pando Lots",
+    "description": "The label for the doc item Pando Lots in sidebar docs, linking to the doc lots/intro"
+  },
+  "sidebar.docs.doc.Talkee": {
+    "message": "Talkee",
+    "description": "The label for the doc item Talkee in sidebar docs, linking to the doc talkee/intro"
   }
 }

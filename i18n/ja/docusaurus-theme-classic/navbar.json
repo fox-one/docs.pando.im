@@ -22,5 +22,9 @@
   "item.label.Website": {
     "message": "Website",
     "description": "Navbar item with label Website"
+  },
+  "item.label.Manuals": {
+    "message": "Manuals",
+    "description": "Navbar item with label Manuals"
   }
 }
