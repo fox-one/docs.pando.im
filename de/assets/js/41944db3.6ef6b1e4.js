@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[7495],{9212:e=>{e.exports=JSON.parse('{"permalink":"/de/blog","page":1,"postsPerPage":10,"totalPages":2,"totalCount":13,"nextPage":"/de/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

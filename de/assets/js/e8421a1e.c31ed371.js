@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[7524],{1024:a=>{a.exports=JSON.parse('{"label":"event award","permalink":"/de/blog/tags/event-award","allTagsPath":"/de/blog/tags","count":1}')}}]);

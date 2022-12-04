@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpando_docs=self.webpackChunkpando_docs||[]).push([[6669],{8961:s=>{s.exports=JSON.parse('{"label":"product updates","permalink":"/es/blog/tags/product-updates","allTagsPath":"/es/blog/tags","count":2}')}}]);
