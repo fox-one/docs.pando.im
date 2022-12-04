@@ -43,11 +43,6 @@ module.exports = {
           activeBaseRegex: `/developer/`,
         },
         {
-          href: 'https://pando.im',
-          label: 'Website',
-          position: 'right',
-        },
-        {
           type: 'localeDropdown',
           position: 'right',
           dropdownItemsAfter: [
@@ -62,19 +57,6 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'User Manuals',
-              to: '/docs/intro',
-            },
-            {
-              label: 'Developer',
-              to: '/developer/intro',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
@@ -95,13 +77,17 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/fox-one/docs.pando.im/',
             },
+            {
+              href: 'https://pando.im',
+              label: 'Pando.im',
+            },
           ],
         },
       ],
       copyright: `Copyright © 2020 - Present, Pando`,
     },
     prism: {
-      theme: lightCodeTheme,
+      theme: darkCodeTheme,
       darkTheme: darkCodeTheme,
     },
     // not working, so i write script in global.js
@@ -128,23 +114,13 @@ module.exports = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es', 'ja', 'ko', 'de', 'zh'],
+    locales: ['en', 'ja', 'zh'],
     localeConfigs: {
       en: {
         label: 'English',
-        direction: 'ltr',
-      },
-      es: {
-        label: 'Español',
       },
       ja: {
         label: '日本語',
-      },
-      ko: {
-        label: '한국어',
-      },
-      de: {
-        label: 'Deutsch',
       },
       zh: {
         label: '中文',
@@ -160,6 +136,7 @@ module.exports = {
           routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebar.docs.js'),
           breadcrumbs: true,
+          showLastUpdateTime: false,
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/theme.scss'), ],

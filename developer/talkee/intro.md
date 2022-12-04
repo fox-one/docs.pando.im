@@ -3,11 +3,9 @@ title: Talkee Overview
 date: 2022-12-03 14:38:07
 ---
 
-Talkee is a comment hosting service for web sites and web3 applications.
+Talkee is a comment hosting service for web sites and web3 applications. It can be embedded in any web based applications. People can connect their wallets to leave comments.
 
-It can be embedded in any web based applications. People can connect their wallets to leave comments.
-
-The host can distribute rewards to the commenters according to the some specific rules.
+The host can distribute crypto rewards to the commenters according to the some specific rules.
 
 ## Usage and Pricing
 

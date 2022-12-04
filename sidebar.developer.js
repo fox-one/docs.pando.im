@@ -61,14 +61,14 @@ module.exports = {
       items: ["rings/overview", "rings/design", "rings/guide", "rings/apis"],
     },
     {
-      type: "category",
+      type: "doc",
       label: "Pando Lots",
-      items: ["lots/overview", "lots/apply"],
+      id: "lots/intro",
     },
     {
-      type: "category",
+      type: "doc",
       label: "Talkee",
-      items: ["talkee/overview"],
+      id:"talkee/intro",
     },
     {
       type: "category",
