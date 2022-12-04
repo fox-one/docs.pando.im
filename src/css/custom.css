@@ -55,6 +55,10 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   --ifm-h3-font-size: 1.2rem;
 }
 
+.markdown img {
+  border-radius: 4px;
+}
+
 .footer {
   font-size: 12px;
 }
