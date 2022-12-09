@@ -1,6 +1,5 @@
 ---
 title: How to connect to 4swap using OneKey Wallet
-
 date: 2022-12-08 22:33:07
 ---
 
@@ -8,7 +7,7 @@ Before connecting 4swap transactions with OneKey, you can review [the official d
 
 ### Step One: Connect the MVM Bridge by OneKey wallet
 
-1. Go to [MVM Bridge](bridge.mvm.app) and and link the OneKey wallet (Choose WalletConnect). You can deposit or withdraw cryptocurrency via bridge.
+1. Go to [MVM Bridge](https://bridge.mvm.app/) and and link the OneKey wallet (Choose WalletConnect). You can deposit or withdraw cryptocurrency via bridge.
 
    ![](../assets/onekey1.jpeg)
 
@@ -47,9 +46,9 @@ Before connecting 4swap transactions with OneKey, you can review [the official d
 
 Welcome to join our community and follow the latest community trends or event information.
 
-Twitter: @4swapOrg
+Twitter: [@4swapOrg](https://twitter.com/4swapOrg)
 
-Telegram: t.me/its_4swapOrg
+Telegram: https://t.me/pandoim
 
 Discord: https://discord.com/invite/ek45g3Cymd
 
