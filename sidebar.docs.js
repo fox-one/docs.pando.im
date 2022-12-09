@@ -12,6 +12,7 @@ module.exports = {
           items: [
             'lake/tutorials/get-started',
             'lake/tutorials/connect-to-fourswap-using-metamask',
+            'lake/tutorials/connect-to-4swap-using-onekey',
             'lake/tutorials/providing-liquidity',
             'lake/tutorials/swapping',
             'lake/tutorials/removing-liquidity',
