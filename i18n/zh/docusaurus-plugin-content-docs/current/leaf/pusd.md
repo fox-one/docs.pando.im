@@ -5,7 +5,7 @@ date: 2021-08-12 22:33:07
 
 Pando USD(pUSD)于2020年12月25日，由BigONE、Exin、FOX、Poolin和Mixin团队共同发布。 Pando USD是一种锚定美元的稳定币。 您可以认为1pUSD等于1美元。
 
-pUSD的总供应量为**1,000,000,000**，其中**999,975,000,000**被**锁定**在5/6 [Mixin 多签组](https://docs.pando.im/docs/security/mtg)，由 BigONE, Exin, FOX, Poolin 和 Team Mixin 管理。 其余 **25,000,000** 在 [Pando Leaf](https://leaf.pando.im) 向公众发布，这是一个4/6 多签的Mixin Trusted Group。
+pUSD的总供应量为**1,000,000,000,000**，其中**999,975,000,000**被**锁定**在5/6 [Mixin 多签组](https://docs.pando.im/docs/security/mtg)，由 BigONE, Exin, FOX, Poolin 和 Team Mixin 管理。 其余 **25,000,000** 在 [Pando Leaf](https://leaf.pando.im) 向公众发布，这是一个4/6 多签的Mixin Trusted Group。
 
 目前的抵押品为价值约 4300 万美元的加密货币，抵押铸造了约 1100 万 pUSD。 请 [点此查看](https://leaf.pando.im/#/market) 实时的市场情况。 pUSD MTG 机制确保 pUSD 的抵押率始终高于 **200%**。
 
