@@ -17,4 +17,4 @@ Please visit [this page](https://fox-one.github.io/talkee-vue/?path=/story/talke
 
 ## Who's using Talkee
 
-Coinpost - https://coinpost.io. Coinpost is a crypto media. Talkee is used to collect comments from the readers and distribute Bitcoin to the top commenters.
+Coinpost - https://coinpost.jp. Coinpost is a crypto media. Talkee is used to collect comments from the readers and distribute Bitcoin to the top commenters.
