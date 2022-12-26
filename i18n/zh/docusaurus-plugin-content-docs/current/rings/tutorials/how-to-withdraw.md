@@ -21,12 +21,6 @@ date: 2021-09-04 12:33:07
 
 ![](../assets/withdraw2.jpg)
 
-````mdx-code-block
-:::info
-您可能需要 [Pando Seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) 去协助这项操作。
-:::
-````
-
 如果您没有剩余的未抵押金额，并且您的抵押金额没有完全用于借款，系统将直接为您从抵押金额中提取，只需一步即可完成提取。
 
 如果您有未偿借款，您可能无法提取与您提供的相同金额。 在这种情况下，请先退还部分或全部借款金额。

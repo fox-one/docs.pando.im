@@ -11,7 +11,3 @@ date: 2021-09-04 12:33:07
 
 ![](../assets/unpledge1.jpg)
 
-````mdx-code-block
-您可能需要 [Pando Seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) 来协助此操作。
-:::
-````

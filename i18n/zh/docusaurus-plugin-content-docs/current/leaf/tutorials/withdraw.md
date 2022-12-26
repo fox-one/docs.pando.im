@@ -18,11 +18,6 @@ date: 2021-08-13 12:33:07
 :::
 ````
 
-````mdx-code-block
-:::info
-您可能需要 [Pando Seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) 去执行这项操作。
-:::
-````
 
 
 

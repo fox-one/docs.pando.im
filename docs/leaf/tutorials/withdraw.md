@@ -21,11 +21,6 @@ Please be noted that withdrawing collateral without first paying back your gener
 :::
 ````
 
-````mdx-code-block
-:::info
-You may need [pando seed](https://docs.pando.im/docs/leaf/key-concepts/pando-seed) to assist in this operation.
-:::
-````
 
 
 

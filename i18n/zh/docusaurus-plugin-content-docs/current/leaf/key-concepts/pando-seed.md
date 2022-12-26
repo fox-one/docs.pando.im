@@ -3,6 +3,14 @@ title: Pando Seed
 date: 2021-10-12 22:33:07
 ---
 
+````mdx-code-block
+:::info
+
+Pando Seed token is deprecated. Please see [this announcement](https://pando.im/news/2022/2022-12-26-deprecation-pando-seed) for more details.
+
+:::
+````
+
 Pando Seed(PS)于2021年8月4日，由BigONE、Exin、FOX、Poolin和Mixin团队共同发布。 PS的总供应量是 **10,000,000,000,000,000**。
 
 ## 领取 PS
