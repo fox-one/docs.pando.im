@@ -37,10 +37,9 @@ module.exports = {
           label: 'Manuals',
         },
         {
-          to: '/developer/intro',
+          to: 'https://developers.pando.im',
           label: 'Developer',
-          position: 'left',
-          activeBaseRegex: `/developer/`,
+          position: 'right',
         },
         {
           type: 'localeDropdown',
@@ -107,7 +106,7 @@ module.exports = {
         editCurrentVersion: false,
         sidebarPath: require.resolve('./sidebar.developer.js'),
         showLastUpdateAuthor: false,
-        showLastUpdateTime: true,
+        showLastUpdateTime: false,
       },
     ],
     'docusaurus-plugin-sass'

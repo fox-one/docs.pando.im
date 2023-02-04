@@ -1,6 +1,5 @@
 ---
 title: Technical Design
-
 date: 2021-07-12 23:33:07
 ---
 

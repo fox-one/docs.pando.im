@@ -41,12 +41,6 @@ function HomepageHeader() {
               to="/docs/intro">
               Manuals
             </Link>
-            <br/>
-            <Link
-              className={clsx('button button--secondary button--lg', styles.button)}
-              to="/developer/intro">
-              Developer Docs
-            </Link>
           </div>
         </div>
       </div>
